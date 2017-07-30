@@ -3,18 +3,22 @@
  Created:	2017/7/30 20:22:00
  Author:	liute
 */
+#include <HX711.h>
 #include <IRremote.h>
 int latchPin = 8;//D8连接74HC595芯片的使能引脚
 int clockPin = 3;//D3连接时钟引脚
 int dataPin = 9;//D9连接数据引脚
 int RECV_Pin = 2;//D2链接红外接收器
+int steelyardPinA_1 = 41;//
+int steelyardPinA_2 = 42;
 IRrecv irrecv(RECV_Pin);
 decode_results results;
 //代表数字0~9
 byte Tab[] = { 0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90 };
 const int abc = 0;
 int lastNumber = 0;
-
+float Weight_1 = 0;
+//红外指令对照表
 enum IRCommands
 {
 	IR_Zero = 0xFD30CF,
@@ -27,10 +31,15 @@ void setup()
 	Serial.begin(115200);
 	Serial1.begin(115200);
 	while (!Serial);
+	Serial.write("Welcome to use!");
+	Init_Hx711();
 	irrecv.enableIRIn();
 	pinMode(latchPin, OUTPUT);
 	pinMode(dataPin, OUTPUT);
 	pinMode(clockPin, OUTPUT);
+
+	delay(2000);
+	Get_Maopi();
 }
 
 void loop()
@@ -78,18 +87,30 @@ void checkState() {
 		irrecv.resume();
 	}
 }
+//模式0：串口互传模式
 void state_Zero() {
 	while (Serial.available())
 		Serial1.write(Serial.read());
 	while (Serial1.available())
 		Serial.write(Serial1.read());
 }
+//模式1:称重模式
 void state_One() {
-	Serial.println(">111");
+	Weight_1 = Get_Weight();	//计算放在传感器上的重物重量
+	float w1 = Weight_1 * 4.44444;
+	Serial.print(float(Weight_1 / 1000)*4.44444, 3);	//串口显示重量
+	Serial.print(" kg\n");	//显示单位
+	Serial.print("\n");		//显示单位
+	Serial1.print(w1);
+	Serial1.print(" g\n");
+	Serial1.println("**********************");
+	delay(1000);				//延时1s
 }
+//模式2:
 void state_Two() {
 
 }
+//模式3:
 void state_Three() {
 
 }
