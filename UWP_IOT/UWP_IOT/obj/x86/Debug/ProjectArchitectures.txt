@@ -1,0 +1,1 @@
+C:\Users\liute\Source\Repos\Minedrink\UWP_IOT\UWP_IOT\Minedrink_UWP.csproj;x86
