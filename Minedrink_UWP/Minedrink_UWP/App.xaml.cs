@@ -75,19 +75,19 @@ namespace Minedrink_UWP
                 });
             }
 
-            MainPage shell = Window.Current.Content as MainPage;
+            MainPage mainPage = Window.Current.Content as MainPage;
 
             // Do not repeat app initialization when the Window already has content,
             // just ensure that the window is active
-            if (shell == null)
+            if (mainPage == null)
             {
                 // Create a AppShell to act as the navigation context and navigate to the first page
-                shell = new MainPage();
+                mainPage = new MainPage();
 
                 // Set the default language
-                shell.Language = Windows.Globalization.ApplicationLanguages.Languages[0];
+                mainPage.Language = Windows.Globalization.ApplicationLanguages.Languages[0];
 
-                shell.AppFrame.NavigationFailed += OnNavigationFailed;
+                mainPage.AppFrame.NavigationFailed += OnNavigationFailed;
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
@@ -96,13 +96,14 @@ namespace Minedrink_UWP
             }
 
             // Place our app shell in the current Window
-            Window.Current.Content = shell;
+            Window.Current.Content = mainPage;
 
-            if (shell.AppFrame.Content == null)
+            if (mainPage.AppFrame.Content == null)
             {
                 // When the navigation stack isn't restored, navigate to the first page
                 // suppressing the initial entrance animation.
-                shell.AppFrame.Navigate(typeof(LandingPage), e.Arguments, new Windows.UI.Xaml.Media.Animation.SuppressNavigationTransitionInfo());
+                mainPage.NavMenuList_Init();
+                mainPage.AppFrame.Navigate(typeof(ConfigPage), e.Arguments, new Windows.UI.Xaml.Media.Animation.SuppressNavigationTransitionInfo());
             }
 
             // Ensure the current window is active

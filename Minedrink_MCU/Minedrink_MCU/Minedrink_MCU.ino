@@ -6,9 +6,10 @@
 #include <HX711.h>
 #include <IRremote.h>
 int latchPin = 8;//D8连接74HC595芯片的使能引脚
-int clockPin = 3;//D3连接时钟引脚
+int clockPin = 7;//D3连接时钟引脚
 int dataPin = 9;//D9连接数据引脚
 int RECV_Pin = 2;//D2链接红外接收器
+int test_Pin = 53;
 int steelyardPinA_1 = 41;//
 int steelyardPinA_2 = 42;
 IRrecv irrecv(RECV_Pin);
@@ -31,15 +32,23 @@ void setup()
 	Serial.begin(115200);
 	Serial1.begin(115200);
 	while (!Serial);
-	Serial.write("Welcome to use!");
+	
 	Init_Hx711();
+	
 	irrecv.enableIRIn();
+	Serial.write("Welcome to use!");
 	pinMode(latchPin, OUTPUT);
 	pinMode(dataPin, OUTPUT);
 	pinMode(clockPin, OUTPUT);
-
+	pinMode(test_Pin, INPUT);
 	delay(2000);
+	
+	int a1 = digitalRead(test_Pin);
+	
+	
 	Get_Maopi();
+	Serial.write("Setup OK!");
+	
 }
 
 void loop()
@@ -65,6 +74,7 @@ void loop()
 void checkState() {
 	if (irrecv.decode(&results))
 	{
+		Serial.print("recivie IRComm:");
 		Serial.println(results.value, HEX);//DEC OTC
 		switch (results.value)
 		{
@@ -101,9 +111,12 @@ void state_One() {
 	Serial.print(float(Weight_1 / 1000)*4.44444, 3);	//串口显示重量
 	Serial.print(" kg\n");	//显示单位
 	Serial.print("\n");		//显示单位
-	Serial1.print(w1);
+	Serial1.write((long)w1);
+	Serial1.write(" g\n");
+	Serial1.write("***********************");
+	/*Serial1.print(w1);
 	Serial1.print(" g\n");
-	Serial1.println("**********************");
+	Serial1.println("**********************");*/
 	delay(1000);				//延时1s
 }
 //模式2:
@@ -116,6 +129,8 @@ void state_Three() {
 }
 //记录并改变显示数值
 void changeNumber(int nummber) {
+	Serial.print("change to Mode NO.");
+	Serial.println(nummber);
 	lastNumber = nummber;
 	showNumber(lastNumber);
 }

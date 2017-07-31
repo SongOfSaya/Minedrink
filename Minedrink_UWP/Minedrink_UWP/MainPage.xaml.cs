@@ -252,6 +252,10 @@ namespace Minedrink_UWP
                 }
             }
         }
+        public void NavMenuList_Init()
+        {
+            navlist.First().IsSelected = true;
+        }
         /// <summary>
         /// Ensures the nav menu reflects reality when navigation is triggered outside of
         /// the nav menu buttons.确保导航菜单在导航按钮之外触发正确
