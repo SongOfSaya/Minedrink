@@ -15,14 +15,13 @@
     d:DesignHeight="300"
     d:DesignWidth="400">
 
-    <Grid x:ConnectionId='2' x:Name="grid"                                 >
-        <Grid x:ConnectionId='3' x:Name="titleBar">
-            <ContentPresenter x:ConnectionId='4' x:Name="content"
-                                                                                   
-                                                                                       
-                                                       
-                                                              />
-        </Grid>
+    <Grid x:ConnectionId='2' x:Name="titleBar">
+        <ContentPresenter x:ConnectionId='3' x:Name="content"
+                                                                                 
+                                                                                     
+                                                     
+                                                            />
     </Grid>
+
 </UserControl>
 

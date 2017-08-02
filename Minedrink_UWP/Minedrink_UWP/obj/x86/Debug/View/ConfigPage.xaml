@@ -4,12 +4,52 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Minedrink_UWP.View"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:c="using:Minedrink_UWP.Contorl"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-    
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button Content="ConfigPage" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions >
+            <RowDefinition Height="48"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="384"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel x:ConnectionId='1' x:Name="ArduinoListBtnPanel" Grid.Row="0"
+                    Grid.Column="0" BorderBrush="Gray"
+                    BorderThickness="1" Orientation="Horizontal"
+                    HorizontalAlignment ="Right">
+            <Button Content="刷新" HorizontalAlignment="Right" VerticalAlignment="Stretch"/>
+            <Button Content="编辑" HorizontalAlignment="Right" VerticalAlignment="Stretch" HorizontalContentAlignment="Right"/>
+        </StackPanel>
+        <ListView x:ConnectionId='2' x:Name="arduinoList" Grid.Row="1" Grid.Column="0" 
+                  HorizontalAlignment="Stretch" VerticalAlignment="Top">
+            <ListView.ItemTemplate>
+                <DataTemplate                      >
+                    <Grid x:ConnectionId='3'>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="48"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="ms-appx:///Assets/partially-cloudy.png" Stretch="Fill"  
+                               Width="44" Height="44" HorizontalAlignment="Right"/>
+                        <TextBlock x:ConnectionId='4' Grid.Column="1"                />
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            <x:String>Item 1</x:String>
+            <x:String>Item 2</x:String>
+            <x:String>Item 3</x:String>
+            <x:String>Item 4</x:String>
+            <x:String>Item 5</x:String>
+        </ListView>
+        <Image Source="ms-appx:///Assets/partially-cloudy.png" HorizontalAlignment="Left" Height="100" Margin="0,302,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100"/>
+
+        <!--<Button Content="ConfigPage" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <c:NotifyFoot x:Name="config_noti" Grid.Row="3" Grid.ColumnSpan="2">
+        </c:NotifyFoot>-->
     </Grid>
 </Page>
 

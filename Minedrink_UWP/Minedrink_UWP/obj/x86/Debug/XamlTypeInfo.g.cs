@@ -132,51 +132,53 @@ namespace Minedrink_UWP.Minedrink_UWP_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[21];
-            _typeNameTable[0] = "Minedrink_UWP.Contorl.PageHeader";
+            _typeNameTable = new string[22];
+            _typeNameTable[0] = "Minedrink_UWP.Contorl.NotifyFoot";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[2] = "Windows.UI.Xaml.UIElement";
-            _typeNameTable[3] = "Minedrink_UWP.Triggers.IsTenFootTrigger";
-            _typeNameTable[4] = "Windows.UI.Xaml.StateTriggerBase";
-            _typeNameTable[5] = "Boolean";
-            _typeNameTable[6] = "Minedrink_UWP.NavMenuListView";
-            _typeNameTable[7] = "Windows.UI.Xaml.Controls.ListView";
-            _typeNameTable[8] = "Windows.UI.Xaml.Controls.ItemsControl";
-            _typeNameTable[9] = "Minedrink_UWP.MainPage";
-            _typeNameTable[10] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[11] = "Windows.Foundation.Rect";
-            _typeNameTable[12] = "Windows.UI.Xaml.Controls.Frame";
-            _typeNameTable[13] = "Windows.UI.Color";
-            _typeNameTable[14] = "System.ValueType";
-            _typeNameTable[15] = "Object";
-            _typeNameTable[16] = "Byte";
-            _typeNameTable[17] = "Minedrink_UWP.View.ConfigPage";
-            _typeNameTable[18] = "Minedrink_UWP.View.LandingPage";
-            _typeNameTable[19] = "Minedrink_UWP.View.MonitorPage";
-            _typeNameTable[20] = "Minedrink_UWP.View.OverviewPage";
+            _typeNameTable[2] = "Minedrink_UWP.Contorl.PageHeader";
+            _typeNameTable[3] = "Windows.UI.Xaml.UIElement";
+            _typeNameTable[4] = "Minedrink_UWP.Triggers.IsTenFootTrigger";
+            _typeNameTable[5] = "Windows.UI.Xaml.StateTriggerBase";
+            _typeNameTable[6] = "Boolean";
+            _typeNameTable[7] = "Minedrink_UWP.NavMenuListView";
+            _typeNameTable[8] = "Windows.UI.Xaml.Controls.ListView";
+            _typeNameTable[9] = "Windows.UI.Xaml.Controls.ItemsControl";
+            _typeNameTable[10] = "Minedrink_UWP.MainPage";
+            _typeNameTable[11] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[12] = "Windows.Foundation.Rect";
+            _typeNameTable[13] = "Windows.UI.Xaml.Controls.Frame";
+            _typeNameTable[14] = "Windows.UI.Color";
+            _typeNameTable[15] = "System.ValueType";
+            _typeNameTable[16] = "Object";
+            _typeNameTable[17] = "Byte";
+            _typeNameTable[18] = "Minedrink_UWP.View.ConfigPage";
+            _typeNameTable[19] = "Minedrink_UWP.View.LandingPage";
+            _typeNameTable[20] = "Minedrink_UWP.View.MonitorPage";
+            _typeNameTable[21] = "Minedrink_UWP.View.OverviewPage";
 
-            _typeTable = new global::System.Type[21];
-            _typeTable[0] = typeof(global::Minedrink_UWP.Contorl.PageHeader);
+            _typeTable = new global::System.Type[22];
+            _typeTable[0] = typeof(global::Minedrink_UWP.Contorl.NotifyFoot);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[2] = typeof(global::Windows.UI.Xaml.UIElement);
-            _typeTable[3] = typeof(global::Minedrink_UWP.Triggers.IsTenFootTrigger);
-            _typeTable[4] = typeof(global::Windows.UI.Xaml.StateTriggerBase);
-            _typeTable[5] = typeof(global::System.Boolean);
-            _typeTable[6] = typeof(global::Minedrink_UWP.NavMenuListView);
-            _typeTable[7] = typeof(global::Windows.UI.Xaml.Controls.ListView);
-            _typeTable[8] = typeof(global::Windows.UI.Xaml.Controls.ItemsControl);
-            _typeTable[9] = typeof(global::Minedrink_UWP.MainPage);
-            _typeTable[10] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[11] = typeof(global::Windows.Foundation.Rect);
-            _typeTable[12] = typeof(global::Windows.UI.Xaml.Controls.Frame);
-            _typeTable[13] = typeof(global::Windows.UI.Color);
-            _typeTable[14] = typeof(global::System.ValueType);
-            _typeTable[15] = typeof(global::System.Object);
-            _typeTable[16] = typeof(global::System.Byte);
-            _typeTable[17] = typeof(global::Minedrink_UWP.View.ConfigPage);
-            _typeTable[18] = typeof(global::Minedrink_UWP.View.LandingPage);
-            _typeTable[19] = typeof(global::Minedrink_UWP.View.MonitorPage);
-            _typeTable[20] = typeof(global::Minedrink_UWP.View.OverviewPage);
+            _typeTable[2] = typeof(global::Minedrink_UWP.Contorl.PageHeader);
+            _typeTable[3] = typeof(global::Windows.UI.Xaml.UIElement);
+            _typeTable[4] = typeof(global::Minedrink_UWP.Triggers.IsTenFootTrigger);
+            _typeTable[5] = typeof(global::Windows.UI.Xaml.StateTriggerBase);
+            _typeTable[6] = typeof(global::System.Boolean);
+            _typeTable[7] = typeof(global::Minedrink_UWP.NavMenuListView);
+            _typeTable[8] = typeof(global::Windows.UI.Xaml.Controls.ListView);
+            _typeTable[9] = typeof(global::Windows.UI.Xaml.Controls.ItemsControl);
+            _typeTable[10] = typeof(global::Minedrink_UWP.MainPage);
+            _typeTable[11] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[12] = typeof(global::Windows.Foundation.Rect);
+            _typeTable[13] = typeof(global::Windows.UI.Xaml.Controls.Frame);
+            _typeTable[14] = typeof(global::Windows.UI.Color);
+            _typeTable[15] = typeof(global::System.ValueType);
+            _typeTable[16] = typeof(global::System.Object);
+            _typeTable[17] = typeof(global::System.Byte);
+            _typeTable[18] = typeof(global::Minedrink_UWP.View.ConfigPage);
+            _typeTable[19] = typeof(global::Minedrink_UWP.View.LandingPage);
+            _typeTable[20] = typeof(global::Minedrink_UWP.View.MonitorPage);
+            _typeTable[21] = typeof(global::Minedrink_UWP.View.OverviewPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -211,14 +213,15 @@ namespace Minedrink_UWP.Minedrink_UWP_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_PageHeader() { return new global::Minedrink_UWP.Contorl.PageHeader(); }
-        private object Activate_3_IsTenFootTrigger() { return new global::Minedrink_UWP.Triggers.IsTenFootTrigger(); }
-        private object Activate_6_NavMenuListView() { return new global::Minedrink_UWP.NavMenuListView(); }
-        private object Activate_9_MainPage() { return new global::Minedrink_UWP.MainPage(); }
-        private object Activate_17_ConfigPage() { return new global::Minedrink_UWP.View.ConfigPage(); }
-        private object Activate_18_LandingPage() { return new global::Minedrink_UWP.View.LandingPage(); }
-        private object Activate_19_MonitorPage() { return new global::Minedrink_UWP.View.MonitorPage(); }
-        private object Activate_20_OverviewPage() { return new global::Minedrink_UWP.View.OverviewPage(); }
+        private object Activate_0_NotifyFoot() { return new global::Minedrink_UWP.Contorl.NotifyFoot(); }
+        private object Activate_2_PageHeader() { return new global::Minedrink_UWP.Contorl.PageHeader(); }
+        private object Activate_4_IsTenFootTrigger() { return new global::Minedrink_UWP.Triggers.IsTenFootTrigger(); }
+        private object Activate_7_NavMenuListView() { return new global::Minedrink_UWP.NavMenuListView(); }
+        private object Activate_10_MainPage() { return new global::Minedrink_UWP.MainPage(); }
+        private object Activate_18_ConfigPage() { return new global::Minedrink_UWP.View.ConfigPage(); }
+        private object Activate_19_LandingPage() { return new global::Minedrink_UWP.View.LandingPage(); }
+        private object Activate_20_MonitorPage() { return new global::Minedrink_UWP.View.MonitorPage(); }
+        private object Activate_21_OverviewPage() { return new global::Minedrink_UWP.View.OverviewPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -230,10 +233,9 @@ namespace Minedrink_UWP.Minedrink_UWP_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  Minedrink_UWP.Contorl.PageHeader
+            case 0:   //  Minedrink_UWP.Contorl.NotifyFoot
                 userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_0_PageHeader;
-                userType.AddMemberName("HeaderContent");
+                userType.Activator = Activate_0_NotifyFoot;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -242,63 +244,71 @@ namespace Minedrink_UWP.Minedrink_UWP_XamlTypeInfo
                 xamlType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 2:   //  Windows.UI.Xaml.UIElement
+            case 2:   //  Minedrink_UWP.Contorl.PageHeader
+                userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_2_PageHeader;
+                userType.AddMemberName("HeaderContent");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 3:   //  Windows.UI.Xaml.UIElement
                 xamlType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  Minedrink_UWP.Triggers.IsTenFootTrigger
+            case 4:   //  Minedrink_UWP.Triggers.IsTenFootTrigger
                 userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.StateTriggerBase"));
-                userType.Activator = Activate_3_IsTenFootTrigger;
+                userType.Activator = Activate_4_IsTenFootTrigger;
                 userType.AddMemberName("IsTenFoot");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  Windows.UI.Xaml.StateTriggerBase
+            case 5:   //  Windows.UI.Xaml.StateTriggerBase
                 xamlType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 5:   //  Boolean
+            case 6:   //  Boolean
                 xamlType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 6:   //  Minedrink_UWP.NavMenuListView
+            case 7:   //  Minedrink_UWP.NavMenuListView
                 userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ListView"));
-                userType.Activator = Activate_6_NavMenuListView;
+                userType.Activator = Activate_7_NavMenuListView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 7:   //  Windows.UI.Xaml.Controls.ListView
+            case 8:   //  Windows.UI.Xaml.Controls.ListView
                 xamlType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 8:   //  Windows.UI.Xaml.Controls.ItemsControl
+            case 9:   //  Windows.UI.Xaml.Controls.ItemsControl
                 xamlType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 9:   //  Minedrink_UWP.MainPage
+            case 10:   //  Minedrink_UWP.MainPage
                 userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_MainPage;
+                userType.Activator = Activate_10_MainPage;
                 userType.AddMemberName("TogglePaneButtonRect");
                 userType.AddMemberName("AppFrame");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 10:   //  Windows.UI.Xaml.Controls.Page
+            case 11:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 11:   //  Windows.Foundation.Rect
+            case 12:   //  Windows.Foundation.Rect
                 xamlType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 12:   //  Windows.UI.Xaml.Controls.Frame
+            case 13:   //  Windows.UI.Xaml.Controls.Frame
                 xamlType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 13:   //  Windows.UI.Color
+            case 14:   //  Windows.UI.Color
                 userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.AddMemberName("A");
                 userType.AddMemberName("B");
@@ -307,45 +317,45 @@ namespace Minedrink_UWP.Minedrink_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 14:   //  System.ValueType
+            case 15:   //  System.ValueType
                 userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 15:   //  Object
+            case 16:   //  Object
                 xamlType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 16:   //  Byte
+            case 17:   //  Byte
                 userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 17:   //  Minedrink_UWP.View.ConfigPage
+            case 18:   //  Minedrink_UWP.View.ConfigPage
                 userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_17_ConfigPage;
+                userType.Activator = Activate_18_ConfigPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 18:   //  Minedrink_UWP.View.LandingPage
+            case 19:   //  Minedrink_UWP.View.LandingPage
                 userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_18_LandingPage;
+                userType.Activator = Activate_19_LandingPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 19:   //  Minedrink_UWP.View.MonitorPage
+            case 20:   //  Minedrink_UWP.View.MonitorPage
                 userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_19_MonitorPage;
+                userType.Activator = Activate_20_MonitorPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 20:   //  Minedrink_UWP.View.OverviewPage
+            case 21:   //  Minedrink_UWP.View.OverviewPage
                 userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_20_OverviewPage;
+                userType.Activator = Activate_21_OverviewPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

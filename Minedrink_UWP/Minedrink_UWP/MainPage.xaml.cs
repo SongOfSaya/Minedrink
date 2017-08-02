@@ -350,4 +350,36 @@ namespace Minedrink_UWP
             deferral.Complete();
         }
     }
+    public enum NotifyType
+    {
+        StatusMessage,
+        ErrorMessage
+    };
+    //private void UpdateStatus(string strMessage, NotifyType type)
+    //{
+    //    switch (type)
+    //    {
+    //        case NotifyType.StatusMessage:
+    //            StatusBorder.Background = new SolidColorBrush(Windows.UI.Colors.Green);
+    //            break;
+    //        case NotifyType.ErrorMessage:
+    //            StatusBorder.Background = new SolidColorBrush(Windows.UI.Colors.Red);
+    //            break;
+    //    }
+
+    //    StatusBlock.Text = strMessage;
+
+    //    // Collapse the StatusBlock if it has no text to conserve real estate.
+    //    StatusBorder.Visibility = (StatusBlock.Text != String.Empty) ? Visibility.Visible : Visibility.Collapsed;
+    //    if (StatusBlock.Text != String.Empty)
+    //    {
+    //        StatusBorder.Visibility = Visibility.Visible;
+    //        StatusPanel.Visibility = Visibility.Visible;
+    //    }
+    //    else
+    //    {
+    //        StatusBorder.Visibility = Visibility.Collapsed;
+    //        StatusPanel.Visibility = Visibility.Collapsed;
+    //    }
+    //}
 }

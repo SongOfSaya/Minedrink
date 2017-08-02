@@ -370,8 +370,11 @@
     <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\System.Xml.XmlSerializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\Assets\Arduino.png">
+      <PackagePath>Assets\Arduino.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\Assets\partially-cloudy.png">
+      <PackagePath>Assets\partially-cloudy.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -399,6 +402,9 @@
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\bin\x86\Debug\Minedrink_UWP.xr.xml">
       <PackagePath>Minedrink_UWP.xr.xml</PackagePath>

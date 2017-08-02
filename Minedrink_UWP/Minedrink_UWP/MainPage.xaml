@@ -135,7 +135,7 @@
                    LightDismissOverlayMode="On"
                    IsTabStop="False">
             <SplitView.Pane>
-                <Grid>
+                <Grid Background="BurlyWood">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*" />
                         <RowDefinition Height="Auto" />
@@ -196,6 +196,9 @@
                             </NavigationThemeTransition>
                         </TransitionCollection>
                     </Frame.ContentTransitions>
+
+                    
+
                 </Frame>
             </SplitView.Content>
         </SplitView>

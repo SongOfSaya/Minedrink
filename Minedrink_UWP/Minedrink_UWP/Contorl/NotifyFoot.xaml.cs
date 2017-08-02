@@ -13,20 +13,15 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// https://go.microsoft.com/fwlink/?LinkId=234238 上介绍了“空白页”项模板
+// The User Control item template is documented at https://go.microsoft.com/fwlink/?LinkId=234236
 
-namespace Minedrink_UWP.View
+namespace Minedrink_UWP.Contorl
 {
-    /// <summary>
-    /// 可用于自身或导航至 Frame 内部的空白页。
-    /// </summary>
-    public sealed partial class ConfigPage : Page
+    public sealed partial class NotifyFoot : UserControl
     {
-        public ConfigPage()
+        public NotifyFoot()
         {
             this.InitializeComponent();
-            arduinoList.Items.Add("代码添加项");
-
         }
     }
 }
