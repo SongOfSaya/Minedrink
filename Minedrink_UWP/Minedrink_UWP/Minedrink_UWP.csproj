@@ -104,11 +104,15 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\Arduino.cs" />
     <Compile Include="NavMenuItem.cs" />
     <Compile Include="NavMenuListView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SystemInformationHelpers.cs" />
     <Compile Include="Triggers\IsTenFootTrigger.cs" />
+    <Compile Include="View\ArduinoPage.xaml.cs">
+      <DependentUpon>ArduinoPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\ConfigPage.xaml.cs">
       <DependentUpon>ConfigPage.xaml</DependentUpon>
     </Compile>
@@ -164,6 +168,10 @@
     <Page Include="Styles\TenFootStylesheet.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\ArduinoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\ConfigPage.xaml">
       <Generator>MSBuild:Compile</Generator>

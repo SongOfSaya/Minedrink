@@ -5,6 +5,7 @@
     xmlns:local="using:Minedrink_UWP.View"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:c="using:Minedrink_UWP.Contorl"
+    xmlns:data="using:Minedrink_UWP.Model"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
@@ -14,7 +15,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="384"/>
+            <ColumnDefinition Width="256"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <StackPanel x:Name="ArduinoListBtnPanel" Grid.Row="0"
@@ -23,19 +24,46 @@
                     HorizontalAlignment ="Right">
             <Button Content="刷新" HorizontalAlignment="Right" VerticalAlignment="Stretch"/>
             <Button Content="编辑" HorizontalAlignment="Right" VerticalAlignment="Stretch" HorizontalContentAlignment="Right"/>
+            <Button Content="新增" HorizontalAlignment="Right" VerticalAlignment="Stretch" Click="AddItemBtn_Click"/>
         </StackPanel>
-        <ListView x:Name="arduinoList" Grid.Row="1" Grid.Column="0" 
-                  HorizontalAlignment="Stretch" VerticalAlignment="Top">
+        <ListView x:Name="ArduinoListView"
+                  Grid.Row="1"
+                  HorizontalAlignment="Stretch" 
+                  VerticalAlignment="Top"
+                  SelectionMode="Extended"
+                  SelectionChanged="ArduinoListView_SelectionChanged"
+                  ItemClick="ArduinoListView_ItemClick"
+                  ShowsScrollingPlaceholders="False">
             <ListView.ItemTemplate>
-                <DataTemplate x:DataType="x:String">
+                <DataTemplate x:DataType="data:Arduino">
                     <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="48"/>
-                            <ColumnDefinition/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
-                        <Image Source="ms-appx:///Assets/partially-cloudy.png" Stretch="Fill"  
-                               Width="44" Height="44" HorizontalAlignment="Right"/>
-                        <TextBlock Grid.Column="1" Text="{x:Bind}"/>
+                        <Ellipse x:Name="Ellipse"
+                         Grid.RowSpan="2"
+                         Width ="32"
+                         Height="32"
+                         Margin="6"
+                         VerticalAlignment="Center"
+                         HorizontalAlignment="Center"
+                         Fill="LightGray"/>
+                        <TextBlock Grid.Column="1"
+                           Text="{x:Bind Name}" 
+                           x:Phase="1"  
+                           Style="{ThemeResource BaseTextBlockStyle}"
+                           Margin="12,6,0,0"/>
+                        <TextBlock  Grid.Column="1"
+                            Grid.Row="1"
+                            Text="{x:Bind ID}" 
+                            x:Phase="2"
+                            Style="{ThemeResource BodyTextBlockStyle}"
+                            Margin="12,0,0,6"/>
                     </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>
@@ -45,8 +73,37 @@
             <x:String>Item 4</x:String>
             <x:String>Item 5</x:String>
         </ListView>
-        <Image Source="ms-appx:///Assets/partially-cloudy.png" HorizontalAlignment="Left" Height="100" Margin="0,302,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100" Stretch="UniformToFill"/>
-
+        <ContentPresenter
+                x:Name="DetailContentPresenter"
+                Grid.Column="1"
+                Grid.RowSpan="2"
+                BorderThickness="1,0,0,0"
+                Padding="24,0"
+                BorderBrush="{ThemeResource SystemControlForegroundBaseLowBrush}"
+                Content="{x:Bind ArduinoListView.SelectedItem, Mode=OneWay}">
+            <ContentPresenter.ContentTemplate>
+                <DataTemplate x:DataType="data:Arduino">
+                    <StackPanel>
+                        <TextBlock Style="{ThemeResource TitleTextBlockStyle}"
+                                   Margin="0,8"       
+                                   Text="{x:Bind Name}"/>
+                        <TextBlock Style="{ThemeResource BodyTextBlockStyle}"
+                                   Margin="0,9" 
+                                   Text="{x:Bind ID}" />
+                        <!--<TextBlock Style="{ThemeResource BodyTextBlockStyle}" 
+                                   Margin="0,9" 
+                                   Text="{x:Bind PhoneNumber}" />
+                        <TextBlock Style="{ThemeResource BodyTextBlockStyle}" 
+                                   Margin="0,9" 
+                                   TextWrapping="WrapWholeWords"
+                                   Text="{x:Bind Biography}" />-->
+                    </StackPanel>
+                </DataTemplate>
+            </ContentPresenter.ContentTemplate>
+            <ContentPresenter.ContentTransitions>
+                <TransitionCollection/>
+            </ContentPresenter.ContentTransitions>
+        </ContentPresenter>
         <!--<Button Content="ConfigPage" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <c:NotifyFoot x:Name="config_noti" Grid.Row="3" Grid.ColumnSpan="2">
         </c:NotifyFoot>-->

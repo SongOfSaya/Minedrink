@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-02T14:57:06.087</Modified>
+      <Modified>2017-08-03T16:28:14.218</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\bin\x86\Debug\Minedrink_UWP.exe">
       <PackagePath>entrypoint\Minedrink_UWP.exe</PackagePath>
-      <Modified>2017-08-02T14:57:05.546</Modified>
+      <Modified>2017-08-03T16:28:13.712</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -497,11 +497,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\Assets\Arduino.png">
       <PackagePath>Assets\Arduino.png</PackagePath>
-      <Modified>2017-08-02T14:41:38.614</Modified>
+      <Modified>2017-08-03T06:58:34.942</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\Assets\partially-cloudy.png">
       <PackagePath>Assets\partially-cloudy.png</PackagePath>
-      <Modified>2017-08-02T14:52:18.139</Modified>
+      <Modified>2017-08-03T06:58:34.942</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -543,7 +543,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\bin\x86\Debug\Minedrink_UWP.xr.xml">
       <PackagePath>Minedrink_UWP.xr.xml</PackagePath>
-      <Modified>2017-08-02T14:55:54.705</Modified>
+      <Modified>2017-08-03T15:38:32.692</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -552,11 +552,11 @@
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-02T14:57:05.915</Modified>
+      <Modified>2017-08-03T16:28:14.070</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\bin\x86\Debug\Core\Minedrink_UWP.exe">
       <PackagePath>Minedrink_UWP.exe</PackagePath>
-      <Modified>2017-08-02T14:57:06.082</Modified>
+      <Modified>2017-08-03T16:28:14.214</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -248,3 +248,8 @@ C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\
 C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\Contorl\NotifyFoot.xaml
 C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\Contorl\NotifyFoot.xbf
 C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\bin\x86\Debug\Contorl\NotifyFoot.xbf
+C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\View\ArduinoPage.g.i.cs
+C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\View\ArduinoPage.g.cs
+C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\View\ArduinoPage.xaml
+C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\View\ArduinoPage.xbf
+C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\bin\x86\Debug\View\ArduinoPage.xbf

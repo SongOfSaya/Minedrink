@@ -38,6 +38,8 @@
       <RootMethod Name="SetColumnSpan" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
+      <RootMethod Name="GetRowSpan" />
+      <RootMethod Name="SetRowSpan" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Border">
       <RootProperty Name="Margin" />
@@ -77,6 +79,8 @@
       <RootProperty Name="HorizontalContentAlignment" />
       <RootProperty Name="Padding" />
       <RootProperty Name="VerticalContentAlignment" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="BorderBrush" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
       <RootProperty Name="Mode" />
@@ -88,6 +92,8 @@
       <RootProperty Name="TabNavigation" />
       <RootProperty Name="Resources" />
       <RootProperty Name="Content" />
+      <RootProperty Name="Transitions" />
+      <RootProperty Name="BottomAppBar" />
       <RootEvent Name="KeyDown" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
@@ -270,27 +276,41 @@
       <RootProperty Name="ContentMargin" />
     </RootType>
     <RootType FullName="Windows.UI.Color" />
+    <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">
+      <RootProperty Name="PrimaryCommands" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
+      <RootProperty Name="Label" />
+      <RootProperty Name="Icon" />
+      <RootEvent Name="Click" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Children" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Orientation" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Children" />
     </RootType>
+    <RootType FullName="Minedrink_UWP.View.ArduinoPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="SelectionMode" />
+      <RootProperty Name="ShowsScrollingPlaceholders" />
       <RootProperty Name="ItemTemplate" />
       <RootProperty Name="Items" />
+      <RootEvent Name="SelectionChanged" />
+      <RootEvent Name="ItemClick" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Image">
-      <RootProperty Name="Source" />
-      <RootProperty Name="HorizontalAlignment" />
+    <RootType FullName="Windows.UI.Xaml.Shapes.Ellipse">
+      <RootProperty Name="Width" />
       <RootProperty Name="Height" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Stretch" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Fill" />
     </RootType>
     <RootType FullName="System.String" />
     <RootType FullName="Minedrink_UWP.View.ConfigPage" />
