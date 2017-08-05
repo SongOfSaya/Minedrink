@@ -10,6 +10,15 @@ using Windows.UI.Xaml.Automation;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Navigation;
+using System.Diagnostics;
+using Windows.ApplicationModel.Core;
+using Windows.Networking;
+using Minedrink_UWP.Model;
+using Windows.Networking.Connectivity;
+using Windows.Networking.Sockets;
+using System.IO;
+using Windows.Storage.Streams;
+using System.Threading.Tasks;
 
 // https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x804 上介绍了“空白页”项模板
 
@@ -52,7 +61,6 @@ namespace Minedrink_UWP
 
         public MainPage()
         {
-            
             this.InitializeComponent();
             this.Loaded += (sender, args) =>
             {
@@ -60,7 +68,9 @@ namespace Minedrink_UWP
                 this.CheckTogglePaneButtonSizeChanged();
                 var titleBar = Windows.ApplicationModel.Core.CoreApplication.GetCurrentView().TitleBar;
                 titleBar.IsVisibleChanged += TitleBar_IsVisibleChanged;
+                StartListener();
             };
+            
             this.RootSplitView.RegisterPropertyChangedCallback(SplitView.DisplayModeProperty, (s, a) => 
             {
                 //确保当SplitView的显示模式改变时，更新TogglePaneButton的尺寸
@@ -321,6 +331,97 @@ namespace Minedrink_UWP
             FeedbackNavPaneButton.IsTabStop = true;
             SettingsNavPaneButton.IsTabStop = true;
         }
+        private async void StartListener()
+        {
+            //覆盖这里的监听器是安全的，因为它将被删除，一旦它的所有引用都消失了。
+            //然而，在许多情况下，这是一个危险的模式，半随机地覆盖数据（每次用户点击按钮），
+            //所以我们在这里阻止它。
+            if (CoreApplication.Properties.ContainsKey("listener"))
+            {
+                Debug.WriteLine("监听器已存在");
+                return;
+            }
+            CoreApplication.Properties.Remove("serverAddress");
+            CoreApplication.Properties.Remove("adapter");
+
+            //LocalHostItem selectedLocalHost = null;
+            //selectedLocalHost = new LocalHostItem(NetworkInformation.GetHostNames().First());
+            //Debug.WriteLine("建立地址:" + selectedLocalHost);
+            //用户选择了一个地址。 为演示目的，我们确保连接将使用相同的地址。
+            //CoreApplication.Properties.Add("serverAddress", selectedLocalHost.LocalHost.CanonicalName);
+            StreamSocketListener listener = new StreamSocketListener();
+            listener.ConnectionReceived += Listener_ConnectionReceived;
+            //如果需要，调整监听器的控制选项，然后再进行绑定操作。这些选项将被自动应用到连接的StreamSockets，
+            //这些连接是由传入的连接引起的（即作为ConnectionReceived事件处理程序的参数传递的）。
+            //参考StreamSocketListenerControl类'MSDN 有关控制选项的完整列表的文档。
+            listener.Control.KeepAlive = false;
+            //保存Socket,以便随后使用
+            CoreApplication.Properties.Add("listener", listener);
+            //开始监听操作
+            try
+            {
+                await listener.BindServiceNameAsync("22112");
+                Debug.WriteLine("Listening......");
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        private async void Listener_ConnectionReceived(StreamSocketListener sender, StreamSocketListenerConnectionReceivedEventArgs args)
+        {
+            //DataReader reader = new DataReader(args.Socket.InputStream);
+            //try
+            //{
+            //    while (true)
+            //    {
+            //        // Read first 4 bytes (length of the subsequent string).
+            //        uint sizeFieldCount = await reader.LoadAsync(sizeof(uint));
+            //        if (sizeFieldCount != sizeof(uint))
+            //        {
+            //            // The underlying socket was closed before we were able to read the whole data.
+            //            return;
+            //        }
+
+            //        // Read the string.
+            //        uint stringLength = reader.ReadUInt32();
+            //        uint actualStringLength = await reader.LoadAsync(stringLength);
+            //        if (stringLength != actualStringLength)
+            //        {
+            //            // The underlying socket was closed before we were able to read the whole data.
+            //            return;
+            //        }
+
+
+            //    }
+            //}
+            //catch (Exception exception)
+            //{
+
+            //}
+
+            //从远程客户端读取信息
+            Stream inStream = args.Socket.InputStream.AsStreamForRead();
+            StreamReader reader = new StreamReader(inStream);
+            
+            
+            //将信息送回
+            Stream outStream = args.Socket.OutputStream.AsStreamForWrite();
+            StreamWriter writer = new StreamWriter(outStream);
+
+            while (true)
+            {
+                string request = await reader.ReadLineAsync();
+                Debug.WriteLine("IN:" + request);
+                //TODO:断开连接后会引发System.NullReferenceException
+                await writer.WriteLineAsync(request);
+                await writer.FlushAsync();
+                //await Task.Delay(100);
+            }
+        }
+
         /// <summary>
         /// An event to notify listeners when the hamburger button may occlude other content in the app.
         /// The custom "PageHeader" user control is using this.
@@ -382,4 +483,5 @@ namespace Minedrink_UWP
     //        StatusPanel.Visibility = Visibility.Collapsed;
     //    }
     //}
+    
 }

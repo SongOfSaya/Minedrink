@@ -1,24 +1,24 @@
-/*
+ï»¿/*
  Name:		Minedrink_MCU.ino
  Created:	2017/7/30 20:22:00
  Author:	liute
 */
 #include <HX711.h>
 #include <IRremote.h>
-int latchPin = 8;//D8Á¬½Ó74HC595Ð¾Æ¬µÄÊ¹ÄÜÒý½Å
-int clockPin = 3;//D3Á¬½ÓÊ±ÖÓÒý½Å
-int dataPin = 9;//D9Á¬½ÓÊý¾ÝÒý½Å
-int RECV_Pin = 2;//D2Á´½ÓºìÍâ½ÓÊÕÆ÷
+int latchPin = 8;//D8ï¿½ï¿½ï¿½ï¿½74HC595Ð¾Æ¬ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+int clockPin = 3;//D3ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+int dataPin = 9;//D9ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+int RECV_Pin = 2;//D2ï¿½ï¿½ï¿½Óºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 int steelyardPinA_1 = 41;//
 int steelyardPinA_2 = 42;
 IRrecv irrecv(RECV_Pin);
 decode_results results;
-//´ú±íÊý×Ö0~9
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0~9
 byte Tab[] = { 0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90 };
 const int abc = 0;
 int lastNumber = 0;
 float Weight_1 = 0;
-//ºìÍâÖ¸Áî¶ÔÕÕ±í
+//ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Õ±ï¿½
 enum IRCommands
 {
 	IR_Zero = 0xFD30CF,
@@ -31,20 +31,22 @@ void setup()
 	Serial.begin(115200);
 	Serial1.begin(115200);
 	while (!Serial);
-	Serial.write("Welcome to use!");
-	Init_Hx711();
-	irrecv.enableIRIn();
+	//Serial.println("Welcome to use!");
+	//Init_Hx711();
+	//irrecv.enableIRIn();
 	pinMode(latchPin, OUTPUT);
 	pinMode(dataPin, OUTPUT);
 	pinMode(clockPin, OUTPUT);
 
-	delay(2000);
-	Get_Maopi();
+	delay(1000);
+	//Get_Maopi();
+	Serial.println("setup() OK!");
 }
 
 void loop()
 {
-	checkState();
+	showNumber(1);
+	/*checkState();
 	switch (lastNumber)
 	{
 	case 0:
@@ -59,9 +61,9 @@ void loop()
 	case 3:
 		state_Three();
 		break;
-	}
+	}*/
 }
-//¼ì²é×´Ì¬²¢ÏÔÊ¾¶ÔÓ¦Êý×Ö
+//ï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½
 void checkState() {
 	if (irrecv.decode(&results))
 	{
@@ -87,24 +89,24 @@ void checkState() {
 		irrecv.resume();
 	}
 }
-//Ä£Ê½0£º´®¿Ú»¥´«Ä£Ê½
+//Ä£Ê½0ï¿½ï¿½ï¿½ï¿½ï¿½Ú»ï¿½ï¿½ï¿½Ä£Ê½
 void state_Zero() {
 	while (Serial.available())
 		Serial1.write(Serial.read());
 	while (Serial1.available())
 		Serial.write(Serial1.read());
 }
-//Ä£Ê½1:³ÆÖØÄ£Ê½
+//Ä£Ê½1:ï¿½ï¿½ï¿½ï¿½Ä£Ê½
 void state_One() {
-	Weight_1 = Get_Weight();	//¼ÆËã·ÅÔÚ´«¸ÐÆ÷ÉÏµÄÖØÎïÖØÁ¿
+	Weight_1 = Get_Weight();	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	float w1 = Weight_1 * 4.44444;
-	Serial.print(float(Weight_1 / 1000)*4.44444, 3);	//´®¿ÚÏÔÊ¾ÖØÁ¿
-	Serial.print(" kg\n");	//ÏÔÊ¾µ¥Î»
-	Serial.print("\n");		//ÏÔÊ¾µ¥Î»
+	Serial.print(float(Weight_1 / 1000)*4.44444, 3);	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½
+	Serial.print(" kg\n");	//ï¿½ï¿½Ê¾ï¿½ï¿½Î»
+	Serial.print("\n");		//ï¿½ï¿½Ê¾ï¿½ï¿½Î»
 	Serial1.print(w1);
 	Serial1.print(" g\n");
 	Serial1.println("**********************");
-	delay(1000);				//ÑÓÊ±1s
+	delay(1000);				//ï¿½ï¿½Ê±1s
 }
 //Ä£Ê½2:
 void state_Two() {
@@ -114,12 +116,12 @@ void state_Two() {
 void state_Three() {
 
 }
-//¼ÇÂ¼²¢¸Ä±äÏÔÊ¾ÊýÖµ
+//ï¿½ï¿½Â¼ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Öµ
 void changeNumber(int nummber) {
 	lastNumber = nummber;
 	showNumber(lastNumber);
 }
-//¿ØÖÆLEDÏÔÊ¾Ö¸¶¨Êý×ÖÒ»¶¨Ê±¼ä
+//ï¿½ï¿½ï¿½ï¿½LEDï¿½ï¿½Ê¾Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ê±ï¿½ï¿½
 void showNumber(int number) {
 	digitalWrite(latchPin, LOW);
 	shiftOut(dataPin, clockPin, MSBFIRST, Tab[number]);
@@ -129,15 +131,15 @@ void showNumber(int number) {
 
 
 //}
-//ºìÉ«°´Å¥    0xff00|FD00FF
+//ï¿½ï¿½É«ï¿½ï¿½Å¥    0xff00|FD00FF
 //VOL +       0xfe01|FD807F
 //FUNC / STOP 0xfd02|FD40BF
-//×ó2¸öÈý½Ç   0xfb04|FD20DF
-//ÔÝÍ£¼ü      0xfa05|FDA05F
-//ÓÒ2¸öÈý½Ç   0xf906|FD609F
-//ÏòÏÂÈý½Ç    0xf708|FD10EF
+//ï¿½ï¿½2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½   0xfb04|FD20DF
+//ï¿½ï¿½Í£ï¿½ï¿½      0xfa05|FDA05F
+//ï¿½ï¿½2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½   0xf906|FD609F
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½    0xf708|FD10EF
 //VOL -       0xf609|FD906F
-//ÏòÉÏÈý½Ç    0xf50a|FD50AF
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½    0xf50a|FD50AF
 //0           0xf30c|FD30CF
 //EQ          0xf20d|FDB04F
 //ST / REPT   0xf10e|FD708F
