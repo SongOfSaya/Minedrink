@@ -20,6 +20,24 @@ float Weight_1 = 0;		//一号秤的读数
 bool isConn = false;    //是否成功建立TCP链接
 int connTryNum = 0;     //TCP呼叫计数;
 String commStr = "";		//通过WIFI接受到的指令
+int weightSensorsLenth = 1;
+Hx711_Senor weightSensors[15] =  {
+	{ 41,43,430,0,0 },
+	{ 0,0,0,0,0 },
+	{ 0,0,0,0,0 },
+	{ 0,0,0,0,0 },
+	{ 0,0,0,0,0 },
+	{ 0,0,0,0,0 },
+	{ 0,0,0,0,0 },
+	{ 0,0,0,0,0 },
+	{ 0,0,0,0,0 },
+	{ 0,0,0,0,0 },
+	{ 0,0,0,0,0 },
+	{ 0,0,0,0,0 },
+	{ 0,0,0,0,0 },
+	{ 0,0,0,0,0 },
+	{ 0,0,0,0,0 } };
+int ints[5] = { 1,2,3,4,5 };
 enum IRCommands         //红外指令对照表
 {
 
@@ -33,7 +51,10 @@ void setup()
 	Serial.begin(115200);
 	Serial1.begin(115200);
 	while (!Serial);
-	
+	delay(100);
+	//initSensors();
+	Serial.print("XXDT=");
+	Serial.println(weightSensors[0].dt);
 	Init_Hx711();
 	irrecv.enableIRIn();
 	pinMode(latchPin, OUTPUT);
@@ -41,7 +62,7 @@ void setup()
 	pinMode(clockPin, OUTPUT);
 	pinMode(LED_BUILTIN, OUTPUT);
 	delay(1000);
-	Get_Maopi();
+	Get_Maopi(0);
 	digitalWrite(LED_BUILTIN, HIGH);
 	Serial.write("Welcome to use!");
 }
@@ -108,7 +129,7 @@ void state_Zero() {
 }
 //模式1:称重模式
 void state_One() {
-	Weight_1 = Get_Weight();	//计算放在传感器上的重物重量
+	Weight_1 = Get_Weight(0);	//计算放在传感器上的重物重量
 	float w1 = Weight_1 * 4.44444;
 	Serial.print(float(Weight_1 / 1000)*4.44444, 3);	//串口显示重量
 	Serial.print(" kg\n");	//显示单位
@@ -117,7 +138,6 @@ void state_One() {
 	Serial1.print(" g\n");
 	Serial1.println("**********************");
 	delay(1000);				//延时1s
-	sizeof(senors);
 }
 //模式2:主动与TCP Server建立连接
 void state_Two() {
@@ -178,7 +198,13 @@ void showNumber(int number) {
 	digitalWrite(latchPin, HIGH);
 	delay(80);
 }
-
+//初始化所有传感器的数据
+void initSensors() {
+	weightSensorsLenth = 1;
+	weightSensors[0].sck = 41;
+	weightSensors[0].dt = 43;
+	
+}
 
 //}
 //红色按钮    0xff00|FD00FF
