@@ -1,7 +1,8 @@
 ﻿/*
 Name:		Minedrink_MCU.ino
 Created:	2017/7/30 20:22:00
-Author:	liute
+Author:	Sora
+Email:	Liutengfei833@hotmail.com
 */
 #include <HX711.h>
 #include <IRremote.h>
@@ -95,19 +96,19 @@ void checkState() {
 		switch (results.value)
 		{
 		case IR_Zero:
-			Serial.println("Mode:0");
+			Serial.println("To Mode:0");
 			changeNumber(0);
 			break;
 		case IR_One:
-			Serial.println("Mode:1");
+			Serial.println("To Mode:1");
 			changeNumber(1);
 			break;
 		case IR_TWO:
-			Serial.println("Mode:2");
+			Serial.println("To Mode:2");
 			changeNumber(2);
 			break;
 		case IR_Three:
-			Serial.println("Mode:3");
+			Serial.println("To Mode:3");
 			changeNumber(3);
 			break;
 		default:
@@ -130,6 +131,14 @@ void state_Zero() {
 }
 //模式1:称重模式
 void state_One() {
+	/*String resualtStr = "";
+	for (size_t i = 0; i < weightSensorsLenth; i++)
+	{
+		Get_Weight(i);
+		resualtStr += "";
+	}*/
+
+	//原始版
 	Weight_1 = Get_Weight(0);	//计算放在传感器上的重物重量
 	float w1 = Weight_1 * 4.44444;
 	Serial.print(float(Weight_1 / 1000)*4.44444, 3);	//串口显示重量
