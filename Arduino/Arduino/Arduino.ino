@@ -20,9 +20,10 @@ float Weight_1 = 0;		//一号秤的读数
 bool isConn = false;    //是否成功建立TCP链接
 int connTryNum = 0;     //TCP呼叫计数;
 String commStr = "";		//通过WIFI接受到的指令
-int weightSensorsLenth = 1;
+int weightSensorsLenth = 1;	//重量传感器的可用数量
+//重量传感器参数,分别为SCK,DT,GapValue,resualt, offset
 Hx711_Senor weightSensors[15] =  {
-	{ 41,43,430,0,0 },
+	{ 41,43,430,0,8422741 },
 	{ 0,0,0,0,0 },
 	{ 0,0,0,0,0 },
 	{ 0,0,0,0,0 },
