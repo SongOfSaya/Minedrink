@@ -360,7 +360,7 @@ namespace Minedrink_UWP
             //开始监听操作
             try
             {
-                await listener.BindServiceNameAsync("22112");
+                await listener.BindServiceNameAsync("8080");
                 Debug.WriteLine("Listening......");
             }
             catch (Exception)

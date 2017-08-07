@@ -74,10 +74,10 @@ namespace Minedrink_UWP
             {
                 switch(connectionId)
                 {
-                    case 4: // MainPage.xaml line 47
+                    case 4:
                         this.obj4 = (global::Windows.UI.Xaml.Controls.FontIcon)target;
                         break;
-                    case 5: // MainPage.xaml line 50
+                    case 5:
                         this.obj5 = (global::Windows.UI.Xaml.Controls.TextBlock)target;
                         break;
                     default:
@@ -144,11 +144,6 @@ namespace Minedrink_UWP
             {
             }
 
-            public void DisconnectUnloadedObject(int connectionId)
-            {
-                throw new global::System.ArgumentException("No unloadable elements to disconnect.");
-            }
-
             public bool SetDataRoot(global::System.Object newDataRoot)
             {
                 if (newDataRoot != null)
@@ -175,7 +170,6 @@ namespace Minedrink_UWP
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
-                    // MainPage.xaml line 47
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_FontIcon_Glyph(this.obj4, obj.ToString(), null);
                 }
             }
@@ -183,9 +177,7 @@ namespace Minedrink_UWP
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
-                    // MainPage.xaml line 47
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_ToolTipService_ToolTip(this.obj4, obj, null);
-                    // MainPage.xaml line 50
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_TextBlock_Text(this.obj5, obj, null);
                 }
             }
@@ -221,22 +213,22 @@ namespace Minedrink_UWP
             {
                 switch(connectionId)
                 {
-                    case 7: // MainPage.xaml line 20
+                    case 7:
                         this.obj7 = (global::Windows.UI.Xaml.Shapes.Rectangle)target;
                         (this.obj7).RegisterPropertyChangedCallback(global::Windows.UI.Xaml.UIElement.VisibilityProperty,
                             (global::Windows.UI.Xaml.DependencyObject sender, global::Windows.UI.Xaml.DependencyProperty prop) =>
                             {
-                            if (this.initialized)
-                            {
-                                // Update Two Way binding
-                                this.dataRoot.SelectedVis = this.obj7.Visibility;
-                            }
-                        });
+                                if (this.initialized)
+                                {
+                                    // Update Two Way binding
+                                    this.dataRoot.SelectedVis = this.obj7.Visibility;
+                                }
+                            });
                         break;
-                    case 8: // MainPage.xaml line 31
+                    case 8:
                         this.obj8 = (global::Windows.UI.Xaml.Controls.FontIcon)target;
                         break;
-                    case 9: // MainPage.xaml line 33
+                    case 9:
                         this.obj9 = (global::Windows.UI.Xaml.Controls.TextBlock)target;
                         break;
                     default:
@@ -306,11 +298,6 @@ namespace Minedrink_UWP
                 this.initialized = false;
             }
 
-            public void DisconnectUnloadedObject(int connectionId)
-            {
-                throw new global::System.ArgumentException("No unloadable elements to disconnect.");
-            }
-
             public bool SetDataRoot(global::System.Object newDataRoot)
             {
                 this.bindingsTracking.ReleaseAllListeners();
@@ -343,7 +330,6 @@ namespace Minedrink_UWP
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
-                    // MainPage.xaml line 20
                     XamlBindingSetters.Set_Windows_UI_Xaml_UIElement_Visibility(this.obj7, obj);
                 }
             }
@@ -351,7 +337,6 @@ namespace Minedrink_UWP
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
-                    // MainPage.xaml line 31
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_FontIcon_Glyph(this.obj8, obj.ToString(), null);
                 }
             }
@@ -359,9 +344,7 @@ namespace Minedrink_UWP
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
-                    // MainPage.xaml line 31
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_ToolTipService_ToolTip(this.obj8, obj, null);
-                    // MainPage.xaml line 33
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_TextBlock_Text(this.obj9, obj, null);
                 }
             }
@@ -369,26 +352,11 @@ namespace Minedrink_UWP
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
             private class MainPage_obj6_BindingsTracking
             {
-                private global::System.WeakReference<MainPage_obj6_Bindings> weakRefToBindingObj; 
+                private global::System.WeakReference<MainPage_obj6_Bindings> WeakRefToBindingObj; 
 
                 public MainPage_obj6_BindingsTracking(MainPage_obj6_Bindings obj)
                 {
-                    weakRefToBindingObj = new global::System.WeakReference<MainPage_obj6_Bindings>(obj);
-                }
-
-                public MainPage_obj6_Bindings TryGetBindingObject()
-                {
-                    MainPage_obj6_Bindings bindingObject = null;
-                    if (weakRefToBindingObj != null)
-                    {
-                        weakRefToBindingObj.TryGetTarget(out bindingObject);
-                        if (bindingObject == null)
-                        {
-                            weakRefToBindingObj = null;
-                            ReleaseAllListeners();
-                        }
-                    }
-                    return bindingObject;
+                    WeakRefToBindingObj = new global::System.WeakReference<MainPage_obj6_Bindings>(obj);
                 }
 
                 public void ReleaseAllListeners()
@@ -398,8 +366,8 @@ namespace Minedrink_UWP
 
                 public void PropertyChanged_(object sender, global::System.ComponentModel.PropertyChangedEventArgs e)
                 {
-                    MainPage_obj6_Bindings bindings = TryGetBindingObject();
-                    if (bindings != null)
+                    MainPage_obj6_Bindings bindings;
+                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
                     {
                         string propName = e.PropertyName;
                         global::Minedrink_UWP.NavMenuItem obj = sender as global::Minedrink_UWP.NavMenuItem;
@@ -430,8 +398,8 @@ namespace Minedrink_UWP
                 }
                 public void UpdateChildListeners_(global::Minedrink_UWP.NavMenuItem obj)
                 {
-                    MainPage_obj6_Bindings bindings = TryGetBindingObject();
-                    if (bindings != null)
+                    MainPage_obj6_Bindings bindings;
+                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
                     {
                         if (bindings.dataRoot != null)
                         {
@@ -455,61 +423,73 @@ namespace Minedrink_UWP
         {
             switch(connectionId)
             {
-            case 1: // MainPage.xaml line 1
+            case 1:
                 {
                     global::Windows.UI.Xaml.Controls.Page element1 = (global::Windows.UI.Xaml.Controls.Page)(target);
+                    #line 10 "..\..\..\MainPage.xaml"
                     ((global::Windows.UI.Xaml.Controls.Page)element1).KeyDown += this.MainPage_KeyDown;
+                    #line default
                 }
                 break;
-            case 2: // MainPage.xaml line 39
+            case 2:
                 {
                     this.NavMenuItem10ftTemplate = (global::Windows.UI.Xaml.DataTemplate)(target);
                 }
                 break;
-            case 10: // MainPage.xaml line 57
+            case 10:
                 {
                     this.LayoutRoot = (global::Windows.UI.Xaml.Controls.Grid)(target);
                 }
                 break;
-            case 11: // MainPage.xaml line 120
+            case 11:
                 {
                     this.TogglePaneButton = (global::Windows.UI.Xaml.Controls.Primitives.ToggleButton)(target);
+                    #line 125 "..\..\..\MainPage.xaml"
                     ((global::Windows.UI.Xaml.Controls.Primitives.ToggleButton)this.TogglePaneButton).Unchecked += this.TogglePaneButton_Unchecked;
+                    #line 126 "..\..\..\MainPage.xaml"
                     ((global::Windows.UI.Xaml.Controls.Primitives.ToggleButton)this.TogglePaneButton).Checked += this.TogglePaneButton_Checked;
+                    #line default
                 }
                 break;
-            case 12: // MainPage.xaml line 130
+            case 12:
                 {
                     this.RootSplitView = (global::Windows.UI.Xaml.Controls.SplitView)(target);
+                    #line 134 "..\..\..\MainPage.xaml"
                     ((global::Windows.UI.Xaml.Controls.SplitView)this.RootSplitView).PaneClosed += this.RootSplitView_PaneClosed;
+                    #line default
                 }
                 break;
-            case 13: // MainPage.xaml line 151
+            case 13:
                 {
                     this.NavMenuList = (global::Minedrink_UWP.NavMenuListView)(target);
+                    #line 155 "..\..\..\MainPage.xaml"
                     ((global::Minedrink_UWP.NavMenuListView)this.NavMenuList).ContainerContentChanging += this.NavMenuList_ContainerContentChanging;
+                    #line 158 "..\..\..\MainPage.xaml"
                     ((global::Minedrink_UWP.NavMenuListView)this.NavMenuList).ItemInvoked += this.NavMenuList_ItemInvoked;
+                    #line default
                 }
                 break;
-            case 14: // MainPage.xaml line 160
+            case 14:
                 {
                     this.NavPaneDivider = (global::Windows.UI.Xaml.Shapes.Rectangle)(target);
                 }
                 break;
-            case 15: // MainPage.xaml line 166
+            case 15:
                 {
                     this.FeedbackNavPaneButton = (global::Windows.UI.Xaml.Controls.Button)(target);
                 }
                 break;
-            case 16: // MainPage.xaml line 174
+            case 16:
                 {
                     this.SettingsNavPaneButton = (global::Windows.UI.Xaml.Controls.Button)(target);
                 }
                 break;
-            case 17: // MainPage.xaml line 187
+            case 17:
                 {
                     this.frame = (global::Windows.UI.Xaml.Controls.Frame)(target);
+                    #line 189 "..\..\..\MainPage.xaml"
                     ((global::Windows.UI.Xaml.Controls.Frame)this.frame).Navigating += this.frame_Navigating;
+                    #line default
                 }
                 break;
             default:
@@ -518,9 +498,6 @@ namespace Minedrink_UWP
             this._contentLoaded = true;
         }
 
-        /// <summary>
-        /// GetBindingConnector(int connectionId, object target)
-        /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public global::Windows.UI.Xaml.Markup.IComponentConnector GetBindingConnector(int connectionId, object target)
@@ -528,8 +505,8 @@ namespace Minedrink_UWP
             global::Windows.UI.Xaml.Markup.IComponentConnector returnValue = null;
             switch(connectionId)
             {
-            case 3: // MainPage.xaml line 40
-                {                    
+            case 3:
+                {
                     global::Windows.UI.Xaml.Controls.Grid element3 = (global::Windows.UI.Xaml.Controls.Grid)target;
                     MainPage_obj3_Bindings bindings = new MainPage_obj3_Bindings();
                     returnValue = bindings;
@@ -538,8 +515,8 @@ namespace Minedrink_UWP
                     global::Windows.UI.Xaml.DataTemplate.SetExtensionInstance(element3, bindings);
                 }
                 break;
-            case 6: // MainPage.xaml line 15
-                {                    
+            case 6:
+                {
                     global::Windows.UI.Xaml.Controls.Grid element6 = (global::Windows.UI.Xaml.Controls.Grid)target;
                     MainPage_obj6_Bindings bindings = new MainPage_obj6_Bindings();
                     returnValue = bindings;
