@@ -406,18 +406,41 @@ namespace Minedrink_UWP
             Stream inStream = args.Socket.InputStream.AsStreamForRead();
             StreamReader reader = new StreamReader(inStream);
             
-            
+
             //将信息送回
             Stream outStream = args.Socket.OutputStream.AsStreamForWrite();
             StreamWriter writer = new StreamWriter(outStream);
 
             while (true)
             {
-                string request = await reader.ReadLineAsync();
-                Debug.WriteLine("IN:" + request);
+                string inStr = await reader.ReadLineAsync();
+                string outStr = null;
+                Debug.WriteLine("IN:" + inStr);
+                if (inStr.StartsWith("#"))
+                {
+                    string codeStr = inStr.Substring(0, 8);
+                    CommCode code = CommHandle.StringConvertToEnum(codeStr);
+                    
+                    switch (code)
+                    {
+                        case CommCode.TCPCONN:
+                            outStr = TCPCOMMHandle();
+                            break;
+                        case CommCode.AS:
+                            break;
+                        case CommCode.ERROR:
+                            Debug.WriteLine("错误的指令:" + codeStr);
+                            break;
+                        default:
+                            break;
+                    }
+                }
                 //TODO:断开连接后会引发System.NullReferenceException
-                await writer.WriteLineAsync(request);
-                await writer.FlushAsync();
+                if (outStr != null)
+                {
+                    await writer.WriteLineAsync(inStr);
+                    await writer.FlushAsync();
+                }
                 //await Task.Delay(100);
             }
         }
@@ -449,6 +472,12 @@ namespace Minedrink_UWP
             var deferral = e.SuspendingOperation.GetDeferral();
             //TODO: Save application state and stop any background activity
             deferral.Complete();
+        }
+        private string TCPCOMMHandle()
+        {
+            string result = "#TCPOK**";
+
+            return result;
         }
     }
     public enum NotifyType

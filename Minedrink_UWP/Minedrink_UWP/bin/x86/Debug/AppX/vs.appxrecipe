@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-07T13:10:48.994</Modified>
+      <Modified>2017-08-07T19:10:19.963</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\bin\x86\Debug\Minedrink_UWP.exe">
       <PackagePath>entrypoint\Minedrink_UWP.exe</PackagePath>
-      <Modified>2017-08-07T13:10:48.436</Modified>
+      <Modified>2017-08-07T19:10:19.092</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -552,11 +552,11 @@
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-07T13:10:48.825</Modified>
+      <Modified>2017-08-07T19:10:19.638</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\bin\x86\Debug\Core\Minedrink_UWP.exe">
       <PackagePath>Minedrink_UWP.exe</PackagePath>
-      <Modified>2017-08-07T13:10:48.990</Modified>
+      <Modified>2017-08-07T19:10:19.950</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

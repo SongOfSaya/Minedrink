@@ -134,7 +134,7 @@ void state_Zero() {
 //模式1:称重模式
 void state_One() {
 	//{"ID":10, "Mills" : 1243, "Mode" : 1, "Sensors" : [{"ID":1085, "Result" : 123.44}, { "ID":1086,"Result" : 1234.4 }]}
-
+	Serial1.flush();
 	String resualtStr = "{\"ID\":";
 	resualtStr += ID;
 	resualtStr += ",\"Mills\":";
@@ -158,6 +158,7 @@ void state_One() {
 			resualtStr += "}]}";
 		}
 	}
+	Serial.print("S0:");
 	Serial.println(resualtStr);
 	Serial1.println(resualtStr);
 	delay(1000);
@@ -174,22 +175,40 @@ void state_One() {
 }
 //模式2:主动与TCP Server建立连接
 void state_Two() {
-	
-	if (!isConn && connTryNum == 0)//如果未执行过AT指令则执行
+	Serial.flush();
+	Serial1.flush();
+	if (!isConn)//如果未执行过AT指令则执行
 	{
 		Serial.print("BEGIN TCPCONN");
 		Serial1.print("+++");
 		delay(1000);	//延时过小时(100)会出现失灵的情况
 		Serial1.print("AT+TCPCLICONN=192.168.2.193:8080");
-		delay(100);
+		delay(1000);
 		Serial1.print("AT+EXIT");
-	}
-
-	if (!isConn && connTryNum < 10) //呼叫10次直到超时或确定链接建立
-	{
+		delay(1000);
 		Serial1.println("#TCPOK?");
-		connTryNum++;
+		delay(100);
+		Serial1.println("XX");
+		isConn = true;
 	}
+	if (connTryNum < 1000)
+	{
+		Serial1.println("#TCPCONN");
+		connTryNum++;
+		delay(100);
+	}
+	else
+	{
+		isConn = false;
+		Serial.println("TCP CON'T CONN");
+		//changeNumber(0);
+	}
+	
+	//if (!isConn && connTryNum < 10) //呼叫10次直到超时或确定链接建立
+	//{
+	//	Serial1.println("#TCPOK?");
+	//	connTryNum++;
+	//}
 	/*else if (!isConn && connTryNum > 100)
 	{
 		Serial.println("#TCP CAN'T CONN");
@@ -198,24 +217,40 @@ void state_Two() {
 		int charNum = Serial1.read();
 		if (charNum == '#')	//接收到指令
 		{
-		   	/*commStr = Serial1.readString();*/
-			commStr = Serial1.readStringUntil(';');
+			commStr = "#";
+			for (size_t i = 0; i < 7; i++)
+			{
+				charNum = Serial1.read();
+				commStr += (char)charNum;
+			}
+			Serial.print("commstr = ");
 			Serial.println(commStr);
-			if (commStr == "TCPOK")
+			if (commStr == "#TCPOK**")
 			{
 				isConn = true;
 				changeNumber(1);
 			}
 		}
 		Serial.write(charNum);
+		
 	}
 }
 //模式3:
 void state_Three() {
 	if (isConn || connTryNum != 0)
 	{
+		Serial.flush();
+		Serial1.flush();
 		isConn = false;
 		connTryNum = 0;
+		Serial1.print("+++");
+		delay(1000);	//延时过小时(100)会出现失灵的情况
+		Serial1.print("AT+REBOOT");
+		delay(1000);
+		Serial1.print("AT+EXIT");
+		Serial.println("Reset Arduino!");
+		Serial.flush();
+		Serial1.flush();
 	}
 }
 
