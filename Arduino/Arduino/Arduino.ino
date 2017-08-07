@@ -6,6 +6,7 @@ Email:	Liutengfei833@hotmail.com
 */
 #include <HX711.h>
 #include <IRremote.h>
+const int ID = 10;
 int latchPin = 8;       //D8连接74HC595芯片的使能引脚
 int clockPin = 3;       //D3连接时钟引脚
 int dataPin = 9;        //D9连接数据引脚
@@ -22,6 +23,7 @@ bool isConn = false;    //是否成功建立TCP链接
 int connTryNum = 0;     //TCP呼叫计数;
 String commStr = "";		//通过WIFI接受到的指令
 int weightSensorsLenth = 1;	//重量传感器的可用数量
+
 //重量传感器参数,分别为SCK,DT,GapValue,resualt, offset
 Hx711_Senor weightSensors[15] =  {
 	{ 41,43,430,0,8422741 },
@@ -131,23 +133,44 @@ void state_Zero() {
 }
 //模式1:称重模式
 void state_One() {
-	/*String resualtStr = "";
+	//{"ID":10, "Mills" : 1243, "Mode" : 1, "Sensors" : [{"ID":1085, "Result" : 123.44}, { "ID":1086,"Result" : 1234.4 }]}
+
+	String resualtStr = "{\"ID\":";
+	resualtStr += ID;
+	resualtStr += ",\"Mills\":";
+	resualtStr += millis();
+	resualtStr += ",\"Mode\":";
+	resualtStr += modeNumber;
+	resualtStr += ",\"Sensors\":[";
 	for (size_t i = 0; i < weightSensorsLenth; i++)
 	{
 		Get_Weight(i);
-		resualtStr += "";
-	}*/
-
+		resualtStr += "{\"ID\":";
+		resualtStr += weightSensors[i].sck;
+		resualtStr += ",\"Result\":";
+		resualtStr += weightSensors[i].result;
+		if ((weightSensorsLenth - i) > 1)
+		{
+			resualtStr += "},";
+		}
+		else
+		{
+			resualtStr += "}]}";
+		}
+	}
+	Serial.println(resualtStr);
+	Serial1.println(resualtStr);
+	delay(1000);
 	//原始版
-	Weight_1 = Get_Weight(0);	//计算放在传感器上的重物重量
-	float w1 = Weight_1 * 4.44444;
-	Serial.print(float(Weight_1 / 1000)*4.44444, 3);	//串口显示重量
-	Serial.print(" kg\n");	//显示单位
-	Serial.print("\n");		//显示单位
-	Serial1.print(w1);
-	Serial1.print(" g\n");
-	Serial1.println("**********************");
-	delay(1000);				//延时1s
+	//Weight_1 = Get_Weight(0);	//计算放在传感器上的重物重量
+	//float w1 = Weight_1 * 4.44444;
+	//Serial.print(float(Weight_1 / 1000)*4.44444, 3);	//串口显示重量
+	//Serial.print(" kg\n");	//显示单位
+	//Serial.print("\n");		//显示单位
+	//Serial1.print(w1);
+	//Serial1.print(" g\n");
+	//Serial1.println("**********************");
+	//delay(1000);				//延时1s
 }
 //模式2:主动与TCP Server建立连接
 void state_Two() {
@@ -189,7 +212,7 @@ void state_Two() {
 }
 //模式3:
 void state_Three() {
-	if (isConn)
+	if (isConn || connTryNum != 0)
 	{
 		isConn = false;
 		connTryNum = 0;
