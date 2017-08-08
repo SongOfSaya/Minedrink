@@ -17,7 +17,7 @@ IRrecv irrecv(RECV_Pin);
 decode_results results;
 //代表数字0~9
 byte Tab[] = { 0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90 };
-int modeNumber = 0;		//Arduino的状态值
+int modeNumber = 1;		//Arduino的状态值
 float Weight_1 = 0;		//一号秤的读数
 bool isConn = false;    //是否成功建立TCP链接
 int connTryNum = 0;     //TCP呼叫计数;
@@ -65,7 +65,7 @@ void setup()
 	pinMode(dataPin, OUTPUT);
 	pinMode(clockPin, OUTPUT);
 	pinMode(LED_BUILTIN, OUTPUT);
-	delay(1000);
+	delay(100);
 	Get_Maopi(0);
 	digitalWrite(LED_BUILTIN, HIGH);
 	Serial.write("Welcome to use!");
@@ -73,11 +73,12 @@ void setup()
 
 void loop()
 {
+	SerialListener();
 	checkState();
 	switch (modeNumber)
 	{
 	case 0:
-		state_Zero();
+		state_One();
 		break;
 	case 1:
 		state_One();
@@ -90,7 +91,7 @@ void loop()
 		break;
 	}
 }
-//检查状态并显示对应数字
+//接收并处理红外指令
 void checkState() {
 	if (irrecv.decode(&results))
 	{
@@ -98,19 +99,15 @@ void checkState() {
 		switch (results.value)
 		{
 		case IR_Zero:
-			Serial.println("To Mode:0");
 			changeNumber(0);
 			break;
 		case IR_One:
-			Serial.println("To Mode:1");
 			changeNumber(1);
 			break;
 		case IR_TWO:
-			Serial.println("To Mode:2");
 			changeNumber(2);
 			break;
 		case IR_Three:
-			Serial.println("To Mode:3");
 			changeNumber(3);
 			break;
 		default:
@@ -134,7 +131,6 @@ void state_Zero() {
 //模式1:称重模式
 void state_One() {
 	//{"ID":10, "Mills" : 1243, "Mode" : 1, "Sensors" : [{"ID":1085, "Result" : 123.44}, { "ID":1086,"Result" : 1234.4 }]}
-	Serial1.flush();
 	String resualtStr = "{\"ID\":";
 	resualtStr += ID;
 	resualtStr += ",\"Mills\":";
@@ -158,10 +154,9 @@ void state_One() {
 			resualtStr += "}]}";
 		}
 	}
-	Serial.print("S0:");
 	Serial.println(resualtStr);
-	Serial1.println(resualtStr);
-	delay(1000);
+	Serial.flush();
+	delay(500);
 	//原始版
 	//Weight_1 = Get_Weight(0);	//计算放在传感器上的重物重量
 	//float w1 = Weight_1 * 4.44444;
@@ -175,87 +170,119 @@ void state_One() {
 }
 //模式2:主动与TCP Server建立连接
 void state_Two() {
-	Serial.flush();
-	Serial1.flush();
-	if (!isConn)//如果未执行过AT指令则执行
-	{
-		Serial.print("BEGIN TCPCONN");
-		Serial1.print("+++");
-		delay(1000);	//延时过小时(100)会出现失灵的情况
-		Serial1.print("AT+TCPCLICONN=192.168.2.193:8080");
-		delay(1000);
-		Serial1.print("AT+EXIT");
-		delay(1000);
-		Serial1.println("#TCPOK?");
-		delay(100);
-		Serial1.println("XX");
-		isConn = true;
-	}
-	if (connTryNum < 1000)
-	{
-		Serial1.println("#TCPCONN");
-		connTryNum++;
-		delay(100);
-	}
-	else
-	{
-		isConn = false;
-		Serial.println("TCP CON'T CONN");
-		//changeNumber(0);
-	}
 	
-	//if (!isConn && connTryNum < 10) //呼叫10次直到超时或确定链接建立
+	//Serial.flush();
+	//Serial1.flush();
+	//if (!isConn)//如果未执行过AT指令则执行
 	//{
+	//	Serial.print("BEGIN TCPCONN");
+	//	Serial1.print("+++");
+	//	delay(1000);	//延时过小时(100)会出现失灵的情况
+	//	Serial1.print("AT+TCPCLICONN=192.168.2.193:8080");
+	//	delay(1000);
+	//	Serial1.print("AT+EXIT");
+	//	delay(1000);
 	//	Serial1.println("#TCPOK?");
-	//	connTryNum++;
+	//	delay(100);
+	//	Serial1.println("XX");
+	//	isConn = true;
 	//}
-	/*else if (!isConn && connTryNum > 100)
+	//if (connTryNum < 1000)
+	//{
+	//	Serial1.println("#TCPCONN");
+	//	connTryNum++;
+	//	delay(100);
+	//}
+	//else
+	//{
+	//	isConn = false;
+	//	Serial.println("TCP CON'T CONN");
+	//	//changeNumber(0);
+	//}
+	//
+	////if (!isConn && connTryNum < 10) //呼叫10次直到超时或确定链接建立
+	////{
+	////	Serial1.println("#TCPOK?");
+	////	connTryNum++;
+	////}
+	///*else if (!isConn && connTryNum > 100)
+	//{
+	//	Serial.println("#TCP CAN'T CONN");
+	//}*/
+	//while (Serial1.available()) {
+	//	int charNum = Serial1.read();
+	//	if (charNum == '#')	//接收到指令
+	//	{
+	//		commStr = "#";
+	//		for (size_t i = 0; i < 7; i++)
+	//		{
+	//			charNum = Serial1.read();
+	//			commStr += (char)charNum;
+	//		}
+	//		Serial.print("commstr = ");
+	//		Serial.println(commStr);
+	//		if (commStr == "#TCPOK**")
+	//		{
+	//			isConn = true;
+	//			changeNumber(1);
+	//		}
+	//	}
+	//	Serial.write(charNum);
+	//	
+	//}
+}
+//模式3:
+void state_Three() {
+	delay(5);
+	//if (isConn || connTryNum != 0)
+	//{
+	//	Serial.flush();
+	//	Serial1.flush();
+	//	isConn = false;
+	//	connTryNum = 0;
+	//	Serial1.print("+++");
+	//	delay(1000);	//延时过小时(100)会出现失灵的情况
+	//	Serial1.print("AT+REBOOT");
+	//	delay(1000);
+	//	Serial1.print("AT+EXIT");
+	//	Serial.println("Reset Arduino!");
+	//	Serial.flush();
+	//	Serial1.flush();
+	//}
+}
+void SerialListener() {
+	while (Serial.available())
 	{
-		Serial.println("#TCP CAN'T CONN");
-	}*/
-	while (Serial1.available()) {
-		int charNum = Serial1.read();
+		
+		int charNum = Serial.read();
 		if (charNum == '#')	//接收到指令
 		{
 			commStr = "#";
 			for (size_t i = 0; i < 7; i++)
 			{
-				charNum = Serial1.read();
+				
+				charNum = Serial.read();
 				commStr += (char)charNum;
 			}
-			Serial.print("commstr = ");
-			Serial.println(commStr);
+			
 			if (commStr == "#TCPOK**")
 			{
-				isConn = true;
-				changeNumber(1);
+				Serial.print("A:RIGHTCOMM=");
 			}
+			else
+			{
+				Serial.print("A:ERRORCOMM=");
+			}
+			Serial.println(commStr);
 		}
-		Serial.write(charNum);
-		
 	}
+	delay(5);
 }
-//模式3:
-void state_Three() {
-	if (isConn || connTryNum != 0)
-	{
-		Serial.flush();
-		Serial1.flush();
-		isConn = false;
-		connTryNum = 0;
-		Serial1.print("+++");
-		delay(1000);	//延时过小时(100)会出现失灵的情况
-		Serial1.print("AT+REBOOT");
-		delay(1000);
-		Serial1.print("AT+EXIT");
-		Serial.println("Reset Arduino!");
-		Serial.flush();
-		Serial1.flush();
-	}
-}
-
 //记录并改变显示数值
 void changeNumber(int nummber) {
+	String str = "#TOMODEX=";
+	str += nummber;
+	Serial.println(str);
 	modeNumber = nummber;
 	showNumber(modeNumber);
 }
