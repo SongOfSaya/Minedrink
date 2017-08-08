@@ -24,10 +24,12 @@ namespace Minedrink_UWP.View
         {
             switch(connectionId)
             {
-            case 1: // View\ArduinoPage.xaml line 18
+            case 1:
                 {
                     global::Windows.UI.Xaml.Controls.AppBarButton element1 = (global::Windows.UI.Xaml.Controls.AppBarButton)(target);
+                    #line 18 "..\..\..\View\ArduinoPage.xaml"
                     ((global::Windows.UI.Xaml.Controls.AppBarButton)element1).Click += this.DeleteItem_Click;
+                    #line default
                 }
                 break;
             default:
@@ -36,9 +38,6 @@ namespace Minedrink_UWP.View
             this._contentLoaded = true;
         }
 
-        /// <summary>
-        /// GetBindingConnector(int connectionId, object target)
-        /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public global::Windows.UI.Xaml.Markup.IComponentConnector GetBindingConnector(int connectionId, object target)

@@ -62,10 +62,10 @@ namespace Minedrink_UWP.View
             {
                 switch(connectionId)
                 {
-                    case 6: // View\ConfigPage.xaml line 87
+                    case 6:
                         this.obj6 = (global::Windows.UI.Xaml.Controls.TextBlock)target;
                         break;
-                    case 7: // View\ConfigPage.xaml line 90
+                    case 7:
                         this.obj7 = (global::Windows.UI.Xaml.Controls.TextBlock)target;
                         break;
                     default:
@@ -132,11 +132,6 @@ namespace Minedrink_UWP.View
             {
             }
 
-            public void DisconnectUnloadedObject(int connectionId)
-            {
-                throw new global::System.ArgumentException("No unloadable elements to disconnect.");
-            }
-
             public bool SetDataRoot(global::System.Object newDataRoot)
             {
                 if (newDataRoot != null)
@@ -163,7 +158,6 @@ namespace Minedrink_UWP.View
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
-                    // View\ConfigPage.xaml line 87
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_TextBlock_Text(this.obj6, obj, null);
                 }
             }
@@ -171,7 +165,6 @@ namespace Minedrink_UWP.View
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
-                    // View\ConfigPage.xaml line 90
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_TextBlock_Text(this.obj7, obj, null);
                 }
             }
@@ -203,10 +196,10 @@ namespace Minedrink_UWP.View
             {
                 switch(connectionId)
                 {
-                    case 9: // View\ConfigPage.xaml line 56
+                    case 9:
                         this.obj9 = (global::Windows.UI.Xaml.Controls.TextBlock)target;
                         break;
-                    case 10: // View\ConfigPage.xaml line 61
+                    case 10:
                         this.obj10 = (global::Windows.UI.Xaml.Controls.TextBlock)target;
                         break;
                     default:
@@ -245,11 +238,11 @@ namespace Minedrink_UWP.View
                         this.initialized = true;
                         break;
                     case 1:
-                        global::Windows.UI.Xaml.Markup.XamlBindingHelper.ResumeRendering(this.obj9);
+                        Windows.UI.Xaml.Markup.XamlBindingHelper.ResumeRendering(this.obj9);
                         nextPhase = 2;
                         break;
                     case 2:
-                        global::Windows.UI.Xaml.Markup.XamlBindingHelper.ResumeRendering(this.obj10);
+                        Windows.UI.Xaml.Markup.XamlBindingHelper.ResumeRendering(this.obj10);
                         nextPhase = -1;
                         break;
                 }
@@ -259,8 +252,8 @@ namespace Minedrink_UWP.View
 
             public void ResetTemplate()
             {
-                global::Windows.UI.Xaml.Markup.XamlBindingHelper.SuspendRendering(this.obj9);
-                global::Windows.UI.Xaml.Markup.XamlBindingHelper.SuspendRendering(this.obj10);
+                Windows.UI.Xaml.Markup.XamlBindingHelper.SuspendRendering(this.obj9);
+                Windows.UI.Xaml.Markup.XamlBindingHelper.SuspendRendering(this.obj10);
             }
 
             // IConfigPage_Bindings
@@ -281,11 +274,6 @@ namespace Minedrink_UWP.View
 
             public void StopTracking()
             {
-            }
-
-            public void DisconnectUnloadedObject(int connectionId)
-            {
-                throw new global::System.ArgumentException("No unloadable elements to disconnect.");
             }
 
             public bool SetDataRoot(global::System.Object newDataRoot)
@@ -317,7 +305,6 @@ namespace Minedrink_UWP.View
             {
                 if ((phase & ((1 << 1) | NOT_PHASED )) != 0)
                 {
-                    // View\ConfigPage.xaml line 56
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_TextBlock_Text(this.obj9, obj, null);
                 }
             }
@@ -325,7 +312,6 @@ namespace Minedrink_UWP.View
             {
                 if ((phase & ((1 << 2) | NOT_PHASED )) != 0)
                 {
-                    // View\ConfigPage.xaml line 61
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_TextBlock_Text(this.obj10, obj, null);
                 }
             }
@@ -357,7 +343,7 @@ namespace Minedrink_UWP.View
             {
                 switch(connectionId)
                 {
-                    case 4: // View\ConfigPage.xaml line 76
+                    case 4:
                         this.obj4 = (global::Windows.UI.Xaml.Controls.ContentPresenter)target;
                         break;
                     default:
@@ -385,11 +371,6 @@ namespace Minedrink_UWP.View
             {
                 this.bindingsTracking.ReleaseAllListeners();
                 this.initialized = false;
-            }
-
-            public void DisconnectUnloadedObject(int connectionId)
-            {
-                throw new global::System.ArgumentException("No unloadable elements to disconnect.");
             }
 
             public bool SetDataRoot(global::System.Object newDataRoot)
@@ -434,7 +415,6 @@ namespace Minedrink_UWP.View
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
-                    // View\ConfigPage.xaml line 76
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_ContentPresenter_Content(this.obj4, obj, null);
                 }
             }
@@ -442,26 +422,11 @@ namespace Minedrink_UWP.View
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
             private class ConfigPage_obj1_BindingsTracking
             {
-                private global::System.WeakReference<ConfigPage_obj1_Bindings> weakRefToBindingObj; 
+                private global::System.WeakReference<ConfigPage_obj1_Bindings> WeakRefToBindingObj; 
 
                 public ConfigPage_obj1_BindingsTracking(ConfigPage_obj1_Bindings obj)
                 {
-                    weakRefToBindingObj = new global::System.WeakReference<ConfigPage_obj1_Bindings>(obj);
-                }
-
-                public ConfigPage_obj1_Bindings TryGetBindingObject()
-                {
-                    ConfigPage_obj1_Bindings bindingObject = null;
-                    if (weakRefToBindingObj != null)
-                    {
-                        weakRefToBindingObj.TryGetTarget(out bindingObject);
-                        if (bindingObject == null)
-                        {
-                            weakRefToBindingObj = null;
-                            ReleaseAllListeners();
-                        }
-                    }
-                    return bindingObject;
+                    WeakRefToBindingObj = new global::System.WeakReference<ConfigPage_obj1_Bindings>(obj);
                 }
 
                 public void ReleaseAllListeners()
@@ -471,8 +436,8 @@ namespace Minedrink_UWP.View
 
                 public void DependencyPropertyChanged_ArduinoListView_SelectedItem(global::Windows.UI.Xaml.DependencyObject sender, global::Windows.UI.Xaml.DependencyProperty prop)
                 {
-                    ConfigPage_obj1_Bindings bindings = TryGetBindingObject();
-                    if (bindings != null)
+                    ConfigPage_obj1_Bindings bindings;
+                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
                     {
                         global::Windows.UI.Xaml.Controls.ListView obj = sender as global::Windows.UI.Xaml.Controls.ListView;
                         if (obj != null)
@@ -510,27 +475,32 @@ namespace Minedrink_UWP.View
         {
             switch(connectionId)
             {
-            case 2: // View\ConfigPage.xaml line 21
+            case 2:
                 {
                     this.ArduinoListBtnPanel = (global::Windows.UI.Xaml.Controls.StackPanel)(target);
                 }
                 break;
-            case 3: // View\ConfigPage.xaml line 29
+            case 3:
                 {
                     this.ArduinoListView = (global::Windows.UI.Xaml.Controls.ListView)(target);
+                    #line 34 "..\..\..\View\ConfigPage.xaml"
                     ((global::Windows.UI.Xaml.Controls.ListView)this.ArduinoListView).SelectionChanged += this.ArduinoListView_SelectionChanged;
+                    #line 35 "..\..\..\View\ConfigPage.xaml"
                     ((global::Windows.UI.Xaml.Controls.ListView)this.ArduinoListView).ItemClick += this.ArduinoListView_ItemClick;
+                    #line default
                 }
                 break;
-            case 4: // View\ConfigPage.xaml line 76
+            case 4:
                 {
                     this.DetailContentPresenter = (global::Windows.UI.Xaml.Controls.ContentPresenter)(target);
                 }
                 break;
-            case 11: // View\ConfigPage.xaml line 27
+            case 11:
                 {
                     global::Windows.UI.Xaml.Controls.Button element11 = (global::Windows.UI.Xaml.Controls.Button)(target);
+                    #line 27 "..\..\..\View\ConfigPage.xaml"
                     ((global::Windows.UI.Xaml.Controls.Button)element11).Click += this.AddItemBtn_Click;
+                    #line default
                 }
                 break;
             default:
@@ -539,9 +509,6 @@ namespace Minedrink_UWP.View
             this._contentLoaded = true;
         }
 
-        /// <summary>
-        /// GetBindingConnector(int connectionId, object target)
-        /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public global::Windows.UI.Xaml.Markup.IComponentConnector GetBindingConnector(int connectionId, object target)
@@ -549,8 +516,8 @@ namespace Minedrink_UWP.View
             global::Windows.UI.Xaml.Markup.IComponentConnector returnValue = null;
             switch(connectionId)
             {
-            case 1: // View\ConfigPage.xaml line 1
-                {                    
+            case 1:
+                {
                     global::Windows.UI.Xaml.Controls.Page element1 = (global::Windows.UI.Xaml.Controls.Page)target;
                     ConfigPage_obj1_Bindings bindings = new ConfigPage_obj1_Bindings();
                     returnValue = bindings;
@@ -559,8 +526,8 @@ namespace Minedrink_UWP.View
                     element1.Loading += bindings.Loading;
                 }
                 break;
-            case 5: // View\ConfigPage.xaml line 86
-                {                    
+            case 5:
+                {
                     global::Windows.UI.Xaml.Controls.StackPanel element5 = (global::Windows.UI.Xaml.Controls.StackPanel)target;
                     ConfigPage_obj5_Bindings bindings = new ConfigPage_obj5_Bindings();
                     returnValue = bindings;
@@ -569,8 +536,8 @@ namespace Minedrink_UWP.View
                     global::Windows.UI.Xaml.DataTemplate.SetExtensionInstance(element5, bindings);
                 }
                 break;
-            case 8: // View\ConfigPage.xaml line 39
-                {                    
+            case 8:
+                {
                     global::Windows.UI.Xaml.Controls.Grid element8 = (global::Windows.UI.Xaml.Controls.Grid)target;
                     ConfigPage_obj8_Bindings bindings = new ConfigPage_obj8_Bindings();
                     returnValue = bindings;

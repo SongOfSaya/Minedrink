@@ -1,4 +1,5 @@
-﻿using Minedrink_UWP.Model;
+﻿using Minedrink_UWP.Contorl;
+using Minedrink_UWP.Model;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -25,25 +26,27 @@ namespace Minedrink_UWP.View
     public sealed partial class ConfigPage : Page
     {
         private Arduino selectedArduino;
-        private ObservableCollection<Arduino> arduinos;
+        public ObservableCollection<Arduino> Arduinos { get; private set; }
+        public static ConfigPage Current = null;
         public ConfigPage()
         {
             this.InitializeComponent();
             this.Loaded += ConfigPage_Loaded;
+            Current = this;
             ArduinoListView.Items.Add("代码添加项");
 
-            arduinos = Arduino.GetArduinos(10);
-            if (arduinos.Count >0)
+            Arduinos = Arduino.GetArduinos(2);
+            if (Arduinos.Count >0)
             {
-                ArduinoListView.ItemsSource = arduinos;
+                ArduinoListView.ItemsSource = Arduinos;
             }
         }
         
         private void ConfigPage_Loaded(object sender, RoutedEventArgs e)
         {
-            if (selectedArduino == null && arduinos.Count > 0)
+            if (selectedArduino == null && Arduinos.Count > 0)
             {
-                selectedArduino = arduinos[0];
+                selectedArduino = Arduinos[0];
                 ArduinoListView.SelectedIndex = 0;
             }
             if (true)
@@ -72,17 +75,25 @@ namespace Minedrink_UWP.View
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void AddItemBtn_Click(object sender, RoutedEventArgs e)
+        private async void AddItemBtn_Click(object sender, RoutedEventArgs e)
         {
-            Arduino newone = Arduino.GetNewArduino();
-            arduinos.Add(newone);
+            AddArduinoDialog dialog = new AddArduinoDialog();
+            await dialog.ShowAsync();
+            //ContentDialogExample dialog = new ContentDialogExample();
+            //await dialog.ShowAsync();
 
-            if (ArduinoListView.SelectedIndex == -1)
-            {
-                ArduinoListView.SelectedIndex = 0;
-                selectedArduino = ArduinoListView.SelectedItem as Arduino;
-                DetailContentPresenter.Visibility = Visibility.Visible;
-            }
+            //if (dialog.Result == SignInResult.SignInOK)
+            //{
+            //    DialogResult.Text = "Dialog result successful.";
+            //}
+            //else if (dialog.Result == SignInResult.SignInCancel)
+            //{
+            //    DialogResult.Text = "Dialog result canceled.";
+            //}
+            //else if (dialog.Result == SignInResult.Nothing)
+            //{
+            //    DialogResult.Text = "Dialog dismissed.";
+            //}
         }
     }
 }

@@ -132,55 +132,89 @@ namespace Minedrink_UWP.Minedrink_UWP_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[23];
-            _typeNameTable[0] = "Minedrink_UWP.Contorl.NotifyFoot";
-            _typeNameTable[1] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[2] = "Minedrink_UWP.Contorl.PageHeader";
-            _typeNameTable[3] = "Windows.UI.Xaml.UIElement";
-            _typeNameTable[4] = "Minedrink_UWP.Triggers.IsTenFootTrigger";
-            _typeNameTable[5] = "Windows.UI.Xaml.StateTriggerBase";
-            _typeNameTable[6] = "Boolean";
-            _typeNameTable[7] = "Minedrink_UWP.NavMenuListView";
-            _typeNameTable[8] = "Windows.UI.Xaml.Controls.ListView";
-            _typeNameTable[9] = "Windows.UI.Xaml.Controls.ItemsControl";
-            _typeNameTable[10] = "Minedrink_UWP.MainPage";
-            _typeNameTable[11] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[12] = "Windows.Foundation.Rect";
-            _typeNameTable[13] = "Windows.UI.Xaml.Controls.Frame";
-            _typeNameTable[14] = "Windows.UI.Color";
-            _typeNameTable[15] = "System.ValueType";
-            _typeNameTable[16] = "Object";
-            _typeNameTable[17] = "Byte";
-            _typeNameTable[18] = "Minedrink_UWP.View.ArduinoPage";
-            _typeNameTable[19] = "Minedrink_UWP.View.ConfigPage";
-            _typeNameTable[20] = "Minedrink_UWP.View.LandingPage";
-            _typeNameTable[21] = "Minedrink_UWP.View.MonitorPage";
-            _typeNameTable[22] = "Minedrink_UWP.View.OverviewPage";
+            _typeNameTable = new string[40];
+            _typeNameTable[0] = "Minedrink_UWP.Contorl.AddArduinoDialog";
+            _typeNameTable[1] = "Windows.UI.Xaml.Controls.ContentDialog";
+            _typeNameTable[2] = "Windows.UI.Xaml.Controls.ContentControl";
+            _typeNameTable[3] = "Minedrink_UWP.Contorl.SignInResult";
+            _typeNameTable[4] = "System.Enum";
+            _typeNameTable[5] = "System.ValueType";
+            _typeNameTable[6] = "Object";
+            _typeNameTable[7] = "Minedrink_UWP.Contorl.NotifyFoot";
+            _typeNameTable[8] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[9] = "Minedrink_UWP.Contorl.PageHeader";
+            _typeNameTable[10] = "Windows.UI.Xaml.UIElement";
+            _typeNameTable[11] = "Minedrink_UWP.Triggers.IsTenFootTrigger";
+            _typeNameTable[12] = "Windows.UI.Xaml.StateTriggerBase";
+            _typeNameTable[13] = "Boolean";
+            _typeNameTable[14] = "Minedrink_UWP.NavMenuListView";
+            _typeNameTable[15] = "Windows.UI.Xaml.Controls.ListView";
+            _typeNameTable[16] = "Windows.UI.Xaml.Controls.ItemsControl";
+            _typeNameTable[17] = "Minedrink_UWP.MainPage";
+            _typeNameTable[18] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[19] = "Windows.Foundation.Rect";
+            _typeNameTable[20] = "Windows.UI.Xaml.Controls.Frame";
+            _typeNameTable[21] = "Windows.UI.Color";
+            _typeNameTable[22] = "Byte";
+            _typeNameTable[23] = "Minedrink_UWP.View.ArduinoPage";
+            _typeNameTable[24] = "Minedrink_UWP.View.ConfigPage";
+            _typeNameTable[25] = "System.Collections.ObjectModel.ObservableCollection`1<Minedrink_UWP.Model.Arduino>";
+            _typeNameTable[26] = "System.Collections.ObjectModel.Collection`1<Minedrink_UWP.Model.Arduino>";
+            _typeNameTable[27] = "Minedrink_UWP.Model.Arduino";
+            _typeNameTable[28] = "String";
+            _typeNameTable[29] = "System.IO.StreamWriter";
+            _typeNameTable[30] = "System.IO.TextWriter";
+            _typeNameTable[31] = "System.IO.StreamReader";
+            _typeNameTable[32] = "System.IO.TextReader";
+            _typeNameTable[33] = "Windows.Networking.Sockets.StreamSocket";
+            _typeNameTable[34] = "System.Collections.Generic.List`1<String>";
+            _typeNameTable[35] = "Windows.UI.Colors";
+            _typeNameTable[36] = "Int32";
+            _typeNameTable[37] = "Minedrink_UWP.View.LandingPage";
+            _typeNameTable[38] = "Minedrink_UWP.View.MonitorPage";
+            _typeNameTable[39] = "Minedrink_UWP.View.OverviewPage";
 
-            _typeTable = new global::System.Type[23];
-            _typeTable[0] = typeof(global::Minedrink_UWP.Contorl.NotifyFoot);
-            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[2] = typeof(global::Minedrink_UWP.Contorl.PageHeader);
-            _typeTable[3] = typeof(global::Windows.UI.Xaml.UIElement);
-            _typeTable[4] = typeof(global::Minedrink_UWP.Triggers.IsTenFootTrigger);
-            _typeTable[5] = typeof(global::Windows.UI.Xaml.StateTriggerBase);
-            _typeTable[6] = typeof(global::System.Boolean);
-            _typeTable[7] = typeof(global::Minedrink_UWP.NavMenuListView);
-            _typeTable[8] = typeof(global::Windows.UI.Xaml.Controls.ListView);
-            _typeTable[9] = typeof(global::Windows.UI.Xaml.Controls.ItemsControl);
-            _typeTable[10] = typeof(global::Minedrink_UWP.MainPage);
-            _typeTable[11] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[12] = typeof(global::Windows.Foundation.Rect);
-            _typeTable[13] = typeof(global::Windows.UI.Xaml.Controls.Frame);
-            _typeTable[14] = typeof(global::Windows.UI.Color);
-            _typeTable[15] = typeof(global::System.ValueType);
-            _typeTable[16] = typeof(global::System.Object);
-            _typeTable[17] = typeof(global::System.Byte);
-            _typeTable[18] = typeof(global::Minedrink_UWP.View.ArduinoPage);
-            _typeTable[19] = typeof(global::Minedrink_UWP.View.ConfigPage);
-            _typeTable[20] = typeof(global::Minedrink_UWP.View.LandingPage);
-            _typeTable[21] = typeof(global::Minedrink_UWP.View.MonitorPage);
-            _typeTable[22] = typeof(global::Minedrink_UWP.View.OverviewPage);
+            _typeTable = new global::System.Type[40];
+            _typeTable[0] = typeof(global::Minedrink_UWP.Contorl.AddArduinoDialog);
+            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.ContentDialog);
+            _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
+            _typeTable[3] = typeof(global::Minedrink_UWP.Contorl.SignInResult);
+            _typeTable[4] = typeof(global::System.Enum);
+            _typeTable[5] = typeof(global::System.ValueType);
+            _typeTable[6] = typeof(global::System.Object);
+            _typeTable[7] = typeof(global::Minedrink_UWP.Contorl.NotifyFoot);
+            _typeTable[8] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[9] = typeof(global::Minedrink_UWP.Contorl.PageHeader);
+            _typeTable[10] = typeof(global::Windows.UI.Xaml.UIElement);
+            _typeTable[11] = typeof(global::Minedrink_UWP.Triggers.IsTenFootTrigger);
+            _typeTable[12] = typeof(global::Windows.UI.Xaml.StateTriggerBase);
+            _typeTable[13] = typeof(global::System.Boolean);
+            _typeTable[14] = typeof(global::Minedrink_UWP.NavMenuListView);
+            _typeTable[15] = typeof(global::Windows.UI.Xaml.Controls.ListView);
+            _typeTable[16] = typeof(global::Windows.UI.Xaml.Controls.ItemsControl);
+            _typeTable[17] = typeof(global::Minedrink_UWP.MainPage);
+            _typeTable[18] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[19] = typeof(global::Windows.Foundation.Rect);
+            _typeTable[20] = typeof(global::Windows.UI.Xaml.Controls.Frame);
+            _typeTable[21] = typeof(global::Windows.UI.Color);
+            _typeTable[22] = typeof(global::System.Byte);
+            _typeTable[23] = typeof(global::Minedrink_UWP.View.ArduinoPage);
+            _typeTable[24] = typeof(global::Minedrink_UWP.View.ConfigPage);
+            _typeTable[25] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Minedrink_UWP.Model.Arduino>);
+            _typeTable[26] = typeof(global::System.Collections.ObjectModel.Collection<global::Minedrink_UWP.Model.Arduino>);
+            _typeTable[27] = typeof(global::Minedrink_UWP.Model.Arduino);
+            _typeTable[28] = typeof(global::System.String);
+            _typeTable[29] = typeof(global::System.IO.StreamWriter);
+            _typeTable[30] = typeof(global::System.IO.TextWriter);
+            _typeTable[31] = typeof(global::System.IO.StreamReader);
+            _typeTable[32] = typeof(global::System.IO.TextReader);
+            _typeTable[33] = typeof(global::Windows.Networking.Sockets.StreamSocket);
+            _typeTable[34] = typeof(global::System.Collections.Generic.List<global::System.String>);
+            _typeTable[35] = typeof(global::Windows.UI.Colors);
+            _typeTable[36] = typeof(global::System.Int32);
+            _typeTable[37] = typeof(global::Minedrink_UWP.View.LandingPage);
+            _typeTable[38] = typeof(global::Minedrink_UWP.View.MonitorPage);
+            _typeTable[39] = typeof(global::Minedrink_UWP.View.OverviewPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -215,16 +249,40 @@ namespace Minedrink_UWP.Minedrink_UWP_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_NotifyFoot() { return new global::Minedrink_UWP.Contorl.NotifyFoot(); }
-        private object Activate_2_PageHeader() { return new global::Minedrink_UWP.Contorl.PageHeader(); }
-        private object Activate_4_IsTenFootTrigger() { return new global::Minedrink_UWP.Triggers.IsTenFootTrigger(); }
-        private object Activate_7_NavMenuListView() { return new global::Minedrink_UWP.NavMenuListView(); }
-        private object Activate_10_MainPage() { return new global::Minedrink_UWP.MainPage(); }
-        private object Activate_18_ArduinoPage() { return new global::Minedrink_UWP.View.ArduinoPage(); }
-        private object Activate_19_ConfigPage() { return new global::Minedrink_UWP.View.ConfigPage(); }
-        private object Activate_20_LandingPage() { return new global::Minedrink_UWP.View.LandingPage(); }
-        private object Activate_21_MonitorPage() { return new global::Minedrink_UWP.View.MonitorPage(); }
-        private object Activate_22_OverviewPage() { return new global::Minedrink_UWP.View.OverviewPage(); }
+        private object Activate_0_AddArduinoDialog() { return new global::Minedrink_UWP.Contorl.AddArduinoDialog(); }
+        private object Activate_7_NotifyFoot() { return new global::Minedrink_UWP.Contorl.NotifyFoot(); }
+        private object Activate_9_PageHeader() { return new global::Minedrink_UWP.Contorl.PageHeader(); }
+        private object Activate_11_IsTenFootTrigger() { return new global::Minedrink_UWP.Triggers.IsTenFootTrigger(); }
+        private object Activate_14_NavMenuListView() { return new global::Minedrink_UWP.NavMenuListView(); }
+        private object Activate_17_MainPage() { return new global::Minedrink_UWP.MainPage(); }
+        private object Activate_23_ArduinoPage() { return new global::Minedrink_UWP.View.ArduinoPage(); }
+        private object Activate_24_ConfigPage() { return new global::Minedrink_UWP.View.ConfigPage(); }
+        private object Activate_25_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Minedrink_UWP.Model.Arduino>(); }
+        private object Activate_26_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Minedrink_UWP.Model.Arduino>(); }
+        private object Activate_27_Arduino() { return new global::Minedrink_UWP.Model.Arduino(); }
+        private object Activate_33_StreamSocket() { return new global::Windows.Networking.Sockets.StreamSocket(); }
+        private object Activate_34_List() { return new global::System.Collections.Generic.List<global::System.String>(); }
+        private object Activate_37_LandingPage() { return new global::Minedrink_UWP.View.LandingPage(); }
+        private object Activate_38_MonitorPage() { return new global::Minedrink_UWP.View.MonitorPage(); }
+        private object Activate_39_OverviewPage() { return new global::Minedrink_UWP.View.OverviewPage(); }
+        private void VectorAdd_25_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Minedrink_UWP.Model.Arduino>)instance;
+            var newItem = (global::Minedrink_UWP.Model.Arduino)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_26_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Minedrink_UWP.Model.Arduino>)instance;
+            var newItem = (global::Minedrink_UWP.Model.Arduino)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_34_List(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::System.String>)instance;
+            var newItem = (global::System.String)item;
+            collection.Add(newItem);
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -236,82 +294,122 @@ namespace Minedrink_UWP.Minedrink_UWP_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  Minedrink_UWP.Contorl.NotifyFoot
-                userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_0_NotifyFoot;
+            case 0:   //  Minedrink_UWP.Contorl.AddArduinoDialog
+                userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ContentDialog"));
+                userType.Activator = Activate_0_AddArduinoDialog;
+                userType.AddMemberName("Result");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 1:   //  Windows.UI.Xaml.Controls.UserControl
+            case 1:   //  Windows.UI.Xaml.Controls.ContentDialog
                 xamlType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 2:   //  Minedrink_UWP.Contorl.PageHeader
+            case 2:   //  Windows.UI.Xaml.Controls.ContentControl
+                xamlType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 3:   //  Minedrink_UWP.Contorl.SignInResult
+                userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("SignInOK", global::Minedrink_UWP.Contorl.SignInResult.SignInOK);
+                userType.AddEnumValue("SignInFail", global::Minedrink_UWP.Contorl.SignInResult.SignInFail);
+                userType.AddEnumValue("SignInCancel", global::Minedrink_UWP.Contorl.SignInResult.SignInCancel);
+                userType.AddEnumValue("Nothing", global::Minedrink_UWP.Contorl.SignInResult.Nothing);
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  System.Enum
+                userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                xamlType = userType;
+                break;
+
+            case 5:   //  System.ValueType
+                userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                xamlType = userType;
+                break;
+
+            case 6:   //  Object
+                xamlType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 7:   //  Minedrink_UWP.Contorl.NotifyFoot
                 userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_2_PageHeader;
+                userType.Activator = Activate_7_NotifyFoot;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 8:   //  Windows.UI.Xaml.Controls.UserControl
+                xamlType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 9:   //  Minedrink_UWP.Contorl.PageHeader
+                userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_9_PageHeader;
                 userType.AddMemberName("HeaderContent");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 3:   //  Windows.UI.Xaml.UIElement
+            case 10:   //  Windows.UI.Xaml.UIElement
                 xamlType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 4:   //  Minedrink_UWP.Triggers.IsTenFootTrigger
+            case 11:   //  Minedrink_UWP.Triggers.IsTenFootTrigger
                 userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.StateTriggerBase"));
-                userType.Activator = Activate_4_IsTenFootTrigger;
+                userType.Activator = Activate_11_IsTenFootTrigger;
                 userType.AddMemberName("IsTenFoot");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  Windows.UI.Xaml.StateTriggerBase
+            case 12:   //  Windows.UI.Xaml.StateTriggerBase
                 xamlType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 6:   //  Boolean
+            case 13:   //  Boolean
                 xamlType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 7:   //  Minedrink_UWP.NavMenuListView
+            case 14:   //  Minedrink_UWP.NavMenuListView
                 userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ListView"));
-                userType.Activator = Activate_7_NavMenuListView;
+                userType.Activator = Activate_14_NavMenuListView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 8:   //  Windows.UI.Xaml.Controls.ListView
+            case 15:   //  Windows.UI.Xaml.Controls.ListView
                 xamlType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 9:   //  Windows.UI.Xaml.Controls.ItemsControl
+            case 16:   //  Windows.UI.Xaml.Controls.ItemsControl
                 xamlType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 10:   //  Minedrink_UWP.MainPage
+            case 17:   //  Minedrink_UWP.MainPage
                 userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_10_MainPage;
+                userType.Activator = Activate_17_MainPage;
                 userType.AddMemberName("TogglePaneButtonRect");
                 userType.AddMemberName("AppFrame");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 11:   //  Windows.UI.Xaml.Controls.Page
+            case 18:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 12:   //  Windows.Foundation.Rect
+            case 19:   //  Windows.Foundation.Rect
                 xamlType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 13:   //  Windows.UI.Xaml.Controls.Frame
+            case 20:   //  Windows.UI.Xaml.Controls.Frame
                 xamlType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 14:   //  Windows.UI.Color
+            case 21:   //  Windows.UI.Color
                 userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.AddMemberName("A");
                 userType.AddMemberName("B");
@@ -320,52 +418,124 @@ namespace Minedrink_UWP.Minedrink_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 15:   //  System.ValueType
-                userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                xamlType = userType;
-                break;
-
-            case 16:   //  Object
-                xamlType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 17:   //  Byte
+            case 22:   //  Byte
                 userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 18:   //  Minedrink_UWP.View.ArduinoPage
+            case 23:   //  Minedrink_UWP.View.ArduinoPage
                 userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_18_ArduinoPage;
+                userType.Activator = Activate_23_ArduinoPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 19:   //  Minedrink_UWP.View.ConfigPage
+            case 24:   //  Minedrink_UWP.View.ConfigPage
                 userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_19_ConfigPage;
+                userType.Activator = Activate_24_ConfigPage;
+                userType.AddMemberName("Arduinos");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 20:   //  Minedrink_UWP.View.LandingPage
-                userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_20_LandingPage;
+            case 25:   //  System.Collections.ObjectModel.ObservableCollection`1<Minedrink_UWP.Model.Arduino>
+                userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Minedrink_UWP.Model.Arduino>"));
+                userType.CollectionAdd = VectorAdd_25_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 26:   //  System.Collections.ObjectModel.Collection`1<Minedrink_UWP.Model.Arduino>
+                userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_26_Collection;
+                userType.CollectionAdd = VectorAdd_26_Collection;
+                xamlType = userType;
+                break;
+
+            case 27:   //  Minedrink_UWP.Model.Arduino
+                userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_27_Arduino;
+                userType.AddMemberName("ID");
+                userType.AddMemberName("OutStream");
+                userType.AddMemberName("InStream");
+                userType.AddMemberName("ClientSocket");
+                userType.AddMemberName("Name");
+                userType.AddMemberName("Mode");
+                userType.AddMemberName("SensorList");
+                userType.AddMemberName("Color");
+                userType.AddMemberName("IP");
+                userType.AddMemberName("Arduinos");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 21:   //  Minedrink_UWP.View.MonitorPage
+            case 28:   //  String
+                xamlType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 29:   //  System.IO.StreamWriter
+                userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.IO.TextWriter"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 30:   //  System.IO.TextWriter
+                userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                xamlType = userType;
+                break;
+
+            case 31:   //  System.IO.StreamReader
+                userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.IO.TextReader"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 32:   //  System.IO.TextReader
+                userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                xamlType = userType;
+                break;
+
+            case 33:   //  Windows.Networking.Sockets.StreamSocket
+                userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 34:   //  System.Collections.Generic.List`1<String>
+                userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.CollectionAdd = VectorAdd_34_List;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 35:   //  Windows.UI.Colors
+                userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 36:   //  Int32
+                xamlType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 37:   //  Minedrink_UWP.View.LandingPage
                 userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_21_MonitorPage;
+                userType.Activator = Activate_37_LandingPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 22:   //  Minedrink_UWP.View.OverviewPage
+            case 38:   //  Minedrink_UWP.View.MonitorPage
                 userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_22_OverviewPage;
+                userType.Activator = Activate_38_MonitorPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 39:   //  Minedrink_UWP.View.OverviewPage
+                userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_39_OverviewPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -374,75 +544,164 @@ namespace Minedrink_UWP.Minedrink_UWP_XamlTypeInfo
         }
 
 
-        private object get_0_PageHeader_HeaderContent(object instance)
+        private object get_0_AddArduinoDialog_Result(object instance)
+        {
+            var that = (global::Minedrink_UWP.Contorl.AddArduinoDialog)instance;
+            return that.Result;
+        }
+        private object get_1_PageHeader_HeaderContent(object instance)
         {
             var that = (global::Minedrink_UWP.Contorl.PageHeader)instance;
             return that.HeaderContent;
         }
-        private void set_0_PageHeader_HeaderContent(object instance, object Value)
+        private void set_1_PageHeader_HeaderContent(object instance, object Value)
         {
             var that = (global::Minedrink_UWP.Contorl.PageHeader)instance;
             that.HeaderContent = (global::Windows.UI.Xaml.UIElement)Value;
         }
-        private object get_1_IsTenFootTrigger_IsTenFoot(object instance)
+        private object get_2_IsTenFootTrigger_IsTenFoot(object instance)
         {
             var that = (global::Minedrink_UWP.Triggers.IsTenFootTrigger)instance;
             return that.IsTenFoot;
         }
-        private void set_1_IsTenFootTrigger_IsTenFoot(object instance, object Value)
+        private void set_2_IsTenFootTrigger_IsTenFoot(object instance, object Value)
         {
             var that = (global::Minedrink_UWP.Triggers.IsTenFootTrigger)instance;
             that.IsTenFoot = (global::System.Boolean)Value;
         }
-        private object get_2_MainPage_TogglePaneButtonRect(object instance)
+        private object get_3_MainPage_TogglePaneButtonRect(object instance)
         {
             var that = (global::Minedrink_UWP.MainPage)instance;
             return that.TogglePaneButtonRect;
         }
-        private object get_3_MainPage_AppFrame(object instance)
+        private object get_4_MainPage_AppFrame(object instance)
         {
             var that = (global::Minedrink_UWP.MainPage)instance;
             return that.AppFrame;
         }
-        private object get_4_Color_A(object instance)
+        private object get_5_Color_A(object instance)
         {
             var that = (global::Windows.UI.Color)instance;
             return that.A;
         }
-        private void set_4_Color_A(object instance, object Value)
+        private void set_5_Color_A(object instance, object Value)
         {
             var that = (global::Windows.UI.Color)instance;
             that.A = (global::System.Byte)Value;
         }
-        private object get_5_Color_B(object instance)
+        private object get_6_Color_B(object instance)
         {
             var that = (global::Windows.UI.Color)instance;
             return that.B;
         }
-        private void set_5_Color_B(object instance, object Value)
+        private void set_6_Color_B(object instance, object Value)
         {
             var that = (global::Windows.UI.Color)instance;
             that.B = (global::System.Byte)Value;
         }
-        private object get_6_Color_G(object instance)
+        private object get_7_Color_G(object instance)
         {
             var that = (global::Windows.UI.Color)instance;
             return that.G;
         }
-        private void set_6_Color_G(object instance, object Value)
+        private void set_7_Color_G(object instance, object Value)
         {
             var that = (global::Windows.UI.Color)instance;
             that.G = (global::System.Byte)Value;
         }
-        private object get_7_Color_R(object instance)
+        private object get_8_Color_R(object instance)
         {
             var that = (global::Windows.UI.Color)instance;
             return that.R;
         }
-        private void set_7_Color_R(object instance, object Value)
+        private void set_8_Color_R(object instance, object Value)
         {
             var that = (global::Windows.UI.Color)instance;
             that.R = (global::System.Byte)Value;
+        }
+        private object get_9_ConfigPage_Arduinos(object instance)
+        {
+            var that = (global::Minedrink_UWP.View.ConfigPage)instance;
+            return that.Arduinos;
+        }
+        private object get_10_Arduino_ID(object instance)
+        {
+            var that = (global::Minedrink_UWP.Model.Arduino)instance;
+            return that.ID;
+        }
+        private void set_10_Arduino_ID(object instance, object Value)
+        {
+            var that = (global::Minedrink_UWP.Model.Arduino)instance;
+            that.ID = (global::System.String)Value;
+        }
+        private object get_11_Arduino_OutStream(object instance)
+        {
+            var that = (global::Minedrink_UWP.Model.Arduino)instance;
+            return that.OutStream;
+        }
+        private object get_12_Arduino_InStream(object instance)
+        {
+            var that = (global::Minedrink_UWP.Model.Arduino)instance;
+            return that.InStream;
+        }
+        private object get_13_Arduino_ClientSocket(object instance)
+        {
+            var that = (global::Minedrink_UWP.Model.Arduino)instance;
+            return that.ClientSocket;
+        }
+        private object get_14_Arduino_Name(object instance)
+        {
+            var that = (global::Minedrink_UWP.Model.Arduino)instance;
+            return that.Name;
+        }
+        private void set_14_Arduino_Name(object instance, object Value)
+        {
+            var that = (global::Minedrink_UWP.Model.Arduino)instance;
+            that.Name = (global::System.String)Value;
+        }
+        private object get_15_Arduino_Mode(object instance)
+        {
+            var that = (global::Minedrink_UWP.Model.Arduino)instance;
+            return that.Mode;
+        }
+        private void set_15_Arduino_Mode(object instance, object Value)
+        {
+            var that = (global::Minedrink_UWP.Model.Arduino)instance;
+            that.Mode = (global::System.String)Value;
+        }
+        private object get_16_Arduino_SensorList(object instance)
+        {
+            var that = (global::Minedrink_UWP.Model.Arduino)instance;
+            return that.SensorList;
+        }
+        private void set_16_Arduino_SensorList(object instance, object Value)
+        {
+            var that = (global::Minedrink_UWP.Model.Arduino)instance;
+            that.SensorList = (global::System.Collections.Generic.List<global::System.String>)Value;
+        }
+        private object get_17_Arduino_Color(object instance)
+        {
+            var that = (global::Minedrink_UWP.Model.Arduino)instance;
+            return that.Color;
+        }
+        private void set_17_Arduino_Color(object instance, object Value)
+        {
+            var that = (global::Minedrink_UWP.Model.Arduino)instance;
+            that.Color = (global::Windows.UI.Colors)Value;
+        }
+        private object get_18_Arduino_IP(object instance)
+        {
+            var that = (global::Minedrink_UWP.Model.Arduino)instance;
+            return that.IP;
+        }
+        private void set_18_Arduino_IP(object instance, object Value)
+        {
+            var that = (global::Minedrink_UWP.Model.Arduino)instance;
+            that.IP = (global::System.String)Value;
+        }
+        private object get_19_Arduino_Arduinos(object instance)
+        {
+            return global::Minedrink_UWP.Model.Arduino.GetArduinos((global::System.Int32)instance);
         }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
@@ -452,54 +711,128 @@ namespace Minedrink_UWP.Minedrink_UWP_XamlTypeInfo
 
             switch (longMemberName)
             {
+            case "Minedrink_UWP.Contorl.AddArduinoDialog.Result":
+                userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.Contorl.AddArduinoDialog");
+                xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "Result", "Minedrink_UWP.Contorl.SignInResult");
+                xamlMember.Getter = get_0_AddArduinoDialog_Result;
+                xamlMember.SetIsReadOnly();
+                break;
             case "Minedrink_UWP.Contorl.PageHeader.HeaderContent":
                 userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.Contorl.PageHeader");
                 xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "HeaderContent", "Windows.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_0_PageHeader_HeaderContent;
-                xamlMember.Setter = set_0_PageHeader_HeaderContent;
+                xamlMember.Getter = get_1_PageHeader_HeaderContent;
+                xamlMember.Setter = set_1_PageHeader_HeaderContent;
                 break;
             case "Minedrink_UWP.Triggers.IsTenFootTrigger.IsTenFoot":
                 userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.Triggers.IsTenFootTrigger");
                 xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "IsTenFoot", "Boolean");
-                xamlMember.Getter = get_1_IsTenFootTrigger_IsTenFoot;
-                xamlMember.Setter = set_1_IsTenFootTrigger_IsTenFoot;
+                xamlMember.Getter = get_2_IsTenFootTrigger_IsTenFoot;
+                xamlMember.Setter = set_2_IsTenFootTrigger_IsTenFoot;
                 break;
             case "Minedrink_UWP.MainPage.TogglePaneButtonRect":
                 userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.MainPage");
                 xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "TogglePaneButtonRect", "Windows.Foundation.Rect");
-                xamlMember.Getter = get_2_MainPage_TogglePaneButtonRect;
+                xamlMember.Getter = get_3_MainPage_TogglePaneButtonRect;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Minedrink_UWP.MainPage.AppFrame":
                 userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.MainPage");
                 xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "AppFrame", "Windows.UI.Xaml.Controls.Frame");
-                xamlMember.Getter = get_3_MainPage_AppFrame;
+                xamlMember.Getter = get_4_MainPage_AppFrame;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Windows.UI.Color.A":
                 userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Color");
                 xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "A", "Byte");
-                xamlMember.Getter = get_4_Color_A;
-                xamlMember.Setter = set_4_Color_A;
+                xamlMember.Getter = get_5_Color_A;
+                xamlMember.Setter = set_5_Color_A;
                 break;
             case "Windows.UI.Color.B":
                 userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Color");
                 xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "B", "Byte");
-                xamlMember.Getter = get_5_Color_B;
-                xamlMember.Setter = set_5_Color_B;
+                xamlMember.Getter = get_6_Color_B;
+                xamlMember.Setter = set_6_Color_B;
                 break;
             case "Windows.UI.Color.G":
                 userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Color");
                 xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "G", "Byte");
-                xamlMember.Getter = get_6_Color_G;
-                xamlMember.Setter = set_6_Color_G;
+                xamlMember.Getter = get_7_Color_G;
+                xamlMember.Setter = set_7_Color_G;
                 break;
             case "Windows.UI.Color.R":
                 userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Color");
                 xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "R", "Byte");
-                xamlMember.Getter = get_7_Color_R;
-                xamlMember.Setter = set_7_Color_R;
+                xamlMember.Getter = get_8_Color_R;
+                xamlMember.Setter = set_8_Color_R;
+                break;
+            case "Minedrink_UWP.View.ConfigPage.Arduinos":
+                userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.View.ConfigPage");
+                xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "Arduinos", "System.Collections.ObjectModel.ObservableCollection`1<Minedrink_UWP.Model.Arduino>");
+                xamlMember.Getter = get_9_ConfigPage_Arduinos;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Minedrink_UWP.Model.Arduino.ID":
+                userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.Model.Arduino");
+                xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "ID", "String");
+                xamlMember.Getter = get_10_Arduino_ID;
+                xamlMember.Setter = set_10_Arduino_ID;
+                break;
+            case "Minedrink_UWP.Model.Arduino.OutStream":
+                userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.Model.Arduino");
+                xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "OutStream", "System.IO.StreamWriter");
+                xamlMember.Getter = get_11_Arduino_OutStream;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Minedrink_UWP.Model.Arduino.InStream":
+                userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.Model.Arduino");
+                xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "InStream", "System.IO.StreamReader");
+                xamlMember.Getter = get_12_Arduino_InStream;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Minedrink_UWP.Model.Arduino.ClientSocket":
+                userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.Model.Arduino");
+                xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "ClientSocket", "Windows.Networking.Sockets.StreamSocket");
+                xamlMember.Getter = get_13_Arduino_ClientSocket;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Minedrink_UWP.Model.Arduino.Name":
+                userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.Model.Arduino");
+                xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "Name", "String");
+                xamlMember.Getter = get_14_Arduino_Name;
+                xamlMember.Setter = set_14_Arduino_Name;
+                break;
+            case "Minedrink_UWP.Model.Arduino.Mode":
+                userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.Model.Arduino");
+                xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "Mode", "String");
+                xamlMember.Getter = get_15_Arduino_Mode;
+                xamlMember.Setter = set_15_Arduino_Mode;
+                break;
+            case "Minedrink_UWP.Model.Arduino.SensorList":
+                userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.Model.Arduino");
+                xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "SensorList", "System.Collections.Generic.List`1<String>");
+                xamlMember.Getter = get_16_Arduino_SensorList;
+                xamlMember.Setter = set_16_Arduino_SensorList;
+                break;
+            case "Minedrink_UWP.Model.Arduino.Color":
+                userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.Model.Arduino");
+                xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "Color", "Windows.UI.Colors");
+                xamlMember.Getter = get_17_Arduino_Color;
+                xamlMember.Setter = set_17_Arduino_Color;
+                break;
+            case "Minedrink_UWP.Model.Arduino.IP":
+                userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.Model.Arduino");
+                xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "IP", "String");
+                xamlMember.Getter = get_18_Arduino_IP;
+                xamlMember.Setter = set_18_Arduino_IP;
+                break;
+            case "Minedrink_UWP.Model.Arduino.Arduinos":
+                userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.Model.Arduino");
+                xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "Arduinos", "System.Collections.ObjectModel.ObservableCollection`1<Minedrink_UWP.Model.Arduino>");
+                xamlMember.SetTargetTypeName("Int32");
+                xamlMember.SetIsAttachable();
+                xamlMember.Getter = get_19_Arduino_Arduinos;
+                xamlMember.SetIsReadOnly();
                 break;
             }
             return xamlMember;

@@ -68,7 +68,6 @@ namespace Minedrink_UWP
                 this.CheckTogglePaneButtonSizeChanged();
                 var titleBar = Windows.ApplicationModel.Core.CoreApplication.GetCurrentView().TitleBar;
                 titleBar.IsVisibleChanged += TitleBar_IsVisibleChanged;
-                StartListener();
             };
             
             this.RootSplitView.RegisterPropertyChangedCallback(SplitView.DisplayModeProperty, (s, a) => 
@@ -331,119 +330,119 @@ namespace Minedrink_UWP
             FeedbackNavPaneButton.IsTabStop = true;
             SettingsNavPaneButton.IsTabStop = true;
         }
-        private async void StartListener()
-        {
-            //覆盖这里的监听器是安全的，因为它将被删除，一旦它的所有引用都消失了。
-            //然而，在许多情况下，这是一个危险的模式，半随机地覆盖数据（每次用户点击按钮），
-            //所以我们在这里阻止它。
-            if (CoreApplication.Properties.ContainsKey("listener"))
-            {
-                Debug.WriteLine("监听器已存在");
-                return;
-            }
-            CoreApplication.Properties.Remove("serverAddress");
-            CoreApplication.Properties.Remove("adapter");
+        //private async void StartListener()
+        //{
+        //    //覆盖这里的监听器是安全的，因为它将被删除，一旦它的所有引用都消失了。
+        //    //然而，在许多情况下，这是一个危险的模式，半随机地覆盖数据（每次用户点击按钮），
+        //    //所以我们在这里阻止它。
+        //    if (CoreApplication.Properties.ContainsKey("listener"))
+        //    {
+        //        Debug.WriteLine("监听器已存在");
+        //        return;
+        //    }
+        //    CoreApplication.Properties.Remove("serverAddress");
+        //    CoreApplication.Properties.Remove("adapter");
 
-            //LocalHostItem selectedLocalHost = null;
-            //selectedLocalHost = new LocalHostItem(NetworkInformation.GetHostNames().First());
-            //Debug.WriteLine("建立地址:" + selectedLocalHost);
-            //用户选择了一个地址。 为演示目的，我们确保连接将使用相同的地址。
-            //CoreApplication.Properties.Add("serverAddress", selectedLocalHost.LocalHost.CanonicalName);
-            StreamSocketListener listener = new StreamSocketListener();
-            listener.ConnectionReceived += Listener_ConnectionReceived;
-            //如果需要，调整监听器的控制选项，然后再进行绑定操作。这些选项将被自动应用到连接的StreamSockets，
-            //这些连接是由传入的连接引起的（即作为ConnectionReceived事件处理程序的参数传递的）。
-            //参考StreamSocketListenerControl类'MSDN 有关控制选项的完整列表的文档。
-            listener.Control.KeepAlive = false;
-            //保存Socket,以便随后使用
-            CoreApplication.Properties.Add("listener", listener);
-            //开始监听操作
-            try
-            {
-                await listener.BindServiceNameAsync("8080");
-                Debug.WriteLine("Listening......");
-            }
-            catch (Exception)
-            {
+        //    //LocalHostItem selectedLocalHost = null;
+        //    //selectedLocalHost = new LocalHostItem(NetworkInformation.GetHostNames().First());
+        //    //Debug.WriteLine("建立地址:" + selectedLocalHost);
+        //    //用户选择了一个地址。 为演示目的，我们确保连接将使用相同的地址。
+        //    //CoreApplication.Properties.Add("serverAddress", selectedLocalHost.LocalHost.CanonicalName);
+        //    StreamSocketListener listener = new StreamSocketListener();
+        //    listener.ConnectionReceived += Listener_ConnectionReceived;
+        //    //如果需要，调整监听器的控制选项，然后再进行绑定操作。这些选项将被自动应用到连接的StreamSockets，
+        //    //这些连接是由传入的连接引起的（即作为ConnectionReceived事件处理程序的参数传递的）。
+        //    //参考StreamSocketListenerControl类'MSDN 有关控制选项的完整列表的文档。
+        //    listener.Control.KeepAlive = false;
+        //    //保存Socket,以便随后使用
+        //    CoreApplication.Properties.Add("listener", listener);
+        //    //开始监听操作
+        //    try
+        //    {
+        //        await listener.BindServiceNameAsync("8080");
+        //        Debug.WriteLine("Listening......");
+        //    }
+        //    catch (Exception)
+        //    {
 
-                throw;
-            }
-        }
+        //        throw;
+        //    }
+        //}
 
-        private async void Listener_ConnectionReceived(StreamSocketListener sender, StreamSocketListenerConnectionReceivedEventArgs args)
-        {
-            //DataReader reader = new DataReader(args.Socket.InputStream);
-            //try
-            //{
-            //    while (true)
-            //    {
-            //        // Read first 4 bytes (length of the subsequent string).
-            //        uint sizeFieldCount = await reader.LoadAsync(sizeof(uint));
-            //        if (sizeFieldCount != sizeof(uint))
-            //        {
-            //            // The underlying socket was closed before we were able to read the whole data.
-            //            return;
-            //        }
+        //private async void Listener_ConnectionReceived(StreamSocketListener sender, StreamSocketListenerConnectionReceivedEventArgs args)
+        //{
+        //    //DataReader reader = new DataReader(args.Socket.InputStream);
+        //    //try
+        //    //{
+        //    //    while (true)
+        //    //    {
+        //    //        // Read first 4 bytes (length of the subsequent string).
+        //    //        uint sizeFieldCount = await reader.LoadAsync(sizeof(uint));
+        //    //        if (sizeFieldCount != sizeof(uint))
+        //    //        {
+        //    //            // The underlying socket was closed before we were able to read the whole data.
+        //    //            return;
+        //    //        }
 
-            //        // Read the string.
-            //        uint stringLength = reader.ReadUInt32();
-            //        uint actualStringLength = await reader.LoadAsync(stringLength);
-            //        if (stringLength != actualStringLength)
-            //        {
-            //            // The underlying socket was closed before we were able to read the whole data.
-            //            return;
-            //        }
+        //    //        // Read the string.
+        //    //        uint stringLength = reader.ReadUInt32();
+        //    //        uint actualStringLength = await reader.LoadAsync(stringLength);
+        //    //        if (stringLength != actualStringLength)
+        //    //        {
+        //    //            // The underlying socket was closed before we were able to read the whole data.
+        //    //            return;
+        //    //        }
 
 
-            //    }
-            //}
-            //catch (Exception exception)
-            //{
+        //    //    }
+        //    //}
+        //    //catch (Exception exception)
+        //    //{
 
-            //}
+        //    //}
 
-            //从远程客户端读取信息
-            Stream inStream = args.Socket.InputStream.AsStreamForRead();
-            StreamReader reader = new StreamReader(inStream);
+        //    //从远程客户端读取信息
+        //    Stream inStream = args.Socket.InputStream.AsStreamForRead();
+        //    StreamReader reader = new StreamReader(inStream);
             
 
-            //将信息送回
-            Stream outStream = args.Socket.OutputStream.AsStreamForWrite();
-            StreamWriter writer = new StreamWriter(outStream);
+        //    //将信息送回
+        //    Stream outStream = args.Socket.OutputStream.AsStreamForWrite();
+        //    StreamWriter writer = new StreamWriter(outStream);
 
-            while (true)
-            {
-                string inStr = await reader.ReadLineAsync();
-                string outStr = null;
-                Debug.WriteLine("IN:" + inStr);
-                if (inStr.StartsWith("#"))
-                {
-                    string codeStr = inStr.Substring(0, 8);
-                    CommCode code = CommHandle.StringConvertToEnum(codeStr);
+        //    while (true)
+        //    {
+        //        string inStr = await reader.ReadLineAsync();
+        //        string outStr = null;
+        //        Debug.WriteLine("IN:" + inStr);
+        //        if (inStr.StartsWith("#"))
+        //        {
+        //            string codeStr = inStr.Substring(0, 8);
+        //            CommCode code = CommHandle.StringConvertToEnum(codeStr);
                     
-                    switch (code)
-                    {
-                        case CommCode.TCPCONN:
-                            outStr = TCPCOMMHandle();
-                            break;
-                        case CommCode.AS:
-                            break;
-                        case CommCode.ERROR:
-                            Debug.WriteLine("错误的指令:" + codeStr);
-                            break;
-                        default:
-                            break;
-                    }
-                }
-                //TODO:断开连接后会引发System.NullReferenceException
-                if (outStr != null)
-                {
-                    await writer.WriteLineAsync(inStr);
-                    await writer.FlushAsync();
-                }
-                //await Task.Delay(100);
-            }
-        }
+        //            switch (code)
+        //            {
+        //                case CommCode.TCPCONN:
+        //                    outStr = TCPCOMMHandle();
+        //                    break;
+        //                case CommCode.AS:
+        //                    break;
+        //                case CommCode.ERROR:
+        //                    Debug.WriteLine("错误的指令:" + codeStr);
+        //                    break;
+        //                default:
+        //                    break;
+        //            }
+        //        }
+        //        //TODO:断开连接后会引发System.NullReferenceException
+        //        if (outStr != null)
+        //        {
+        //            await writer.WriteLineAsync(inStr);
+        //            await writer.FlushAsync();
+        //        }
+        //        //await Task.Delay(100);
+        //    }
+        //}
 
         /// <summary>
         /// An event to notify listeners when the hamburger button may occlude other content in the app.

@@ -24,12 +24,12 @@ namespace Minedrink_UWP.Contorl
         {
             switch(connectionId)
             {
-            case 1: // Contorl\NotifyFoot.xaml line 16
+            case 1:
                 {
                     this.StatusBorder = (global::Windows.UI.Xaml.Controls.Border)(target);
                 }
                 break;
-            case 2: // Contorl\NotifyFoot.xaml line 18
+            case 2:
                 {
                     this.StatusBlock = (global::Windows.UI.Xaml.Controls.TextBlock)(target);
                 }
@@ -40,9 +40,6 @@ namespace Minedrink_UWP.Contorl
             this._contentLoaded = true;
         }
 
-        /// <summary>
-        /// GetBindingConnector(int connectionId, object target)
-        /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public global::Windows.UI.Xaml.Markup.IComponentConnector GetBindingConnector(int connectionId, object target)

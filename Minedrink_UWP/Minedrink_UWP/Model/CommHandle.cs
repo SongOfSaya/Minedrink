@@ -13,8 +13,8 @@ namespace Minedrink_UWP.Model
             CommCode commCode = CommCode.ERROR;
             switch (str)
             {
-                case "#TCPCONN":
-                    commCode = CommCode.TCPCONN;
+                case "#TCPDONE":
+                    commCode = CommCode.TCPDONE;
                     break;
                 default:
                     commCode = CommCode.ERROR;
@@ -27,7 +27,7 @@ namespace Minedrink_UWP.Model
     }
     public enum CommCode
     {
-        TCPCONN,
+        TCPDONE,
         AS,
         ERROR
     }

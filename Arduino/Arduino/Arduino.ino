@@ -265,15 +265,17 @@ void SerialListener() {
 				commStr += (char)charNum;
 			}
 			
-			if (commStr == "#TCPOK**")
+			if (commStr == "#TCPCONN")
 			{
-				Serial.print("A:RIGHTCOMM=");
+				Serial.println("#TCPDONE");
+				String rightmassage = "A:RIGHTCOMM=" + commStr;
+				Serial.println(rightmassage);
 			}
 			else
 			{
-				Serial.print("A:ERRORCOMM=");
+				String errmassage = "A:ERRORCOMM=" + commStr;
+				Serial.print(errmassage);
 			}
-			Serial.println(commStr);
 		}
 	}
 	delay(5);

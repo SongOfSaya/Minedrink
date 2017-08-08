@@ -95,6 +95,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Contorl\AddArduinoDialog.xaml.cs">
+      <DependentUpon>AddArduinoDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Contorl\NotifyFoot.xaml.cs">
       <DependentUpon>NotifyFoot.xaml</DependentUpon>
     </Compile>
@@ -151,6 +154,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Contorl\AddArduinoDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Contorl\NotifyFoot.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
