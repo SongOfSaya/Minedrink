@@ -86,7 +86,7 @@
                     <StackPanel>
                         <TextBlock Style="{ThemeResource TitleTextBlockStyle}"
                                    Margin="0,8"       
-                                   Text="{x:Bind Name}"/>
+                                   Text="CONFIGPIG"/>
                         <TextBlock Style="{ThemeResource BodyTextBlockStyle}"
                                    Margin="0,9" 
                                    Text="{x:Bind ID}" />
@@ -108,4 +108,5 @@
         <c:NotifyFoot x:Name="config_noti" Grid.Row="3" Grid.ColumnSpan="2">
         </c:NotifyFoot>-->
     </Grid>
+    
 </Page>

@@ -24,7 +24,7 @@
                     HorizontalAlignment ="Right">
             <Button Content="刷新" HorizontalAlignment="Right" VerticalAlignment="Stretch"/>
             <Button Content="编辑" HorizontalAlignment="Right" VerticalAlignment="Stretch" HorizontalContentAlignment="Right"/>
-            <Button x:ConnectionId='11' Content="新增" HorizontalAlignment="Right" VerticalAlignment="Stretch"                         />
+            <Button x:ConnectionId='10' Content="新增" HorizontalAlignment="Right" VerticalAlignment="Stretch"                         />
         </StackPanel>
         <ListView x:ConnectionId='3' x:Name="ArduinoListView"
                   Grid.Row="1"
@@ -36,7 +36,7 @@
                   ShowsScrollingPlaceholders="False">
             <ListView.ItemTemplate>
                 <DataTemplate                          >
-                    <Grid x:ConnectionId='8'>
+                    <Grid x:ConnectionId='7'>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="*"/>
@@ -53,12 +53,12 @@
                          VerticalAlignment="Center"
                          HorizontalAlignment="Center"
                          Fill="LightGray"/>
-                        <TextBlock x:ConnectionId='9' Grid.Column="1"
+                        <TextBlock x:ConnectionId='8' Grid.Column="1"
                                                 
                                         
                            Style="{ThemeResource BaseTextBlockStyle}"
                            Margin="12,6,0,0"/>
-                        <TextBlock x:ConnectionId='10'  Grid.Column="1"
+                        <TextBlock x:ConnectionId='9'  Grid.Column="1"
                             Grid.Row="1"
                                                
                                        
@@ -84,10 +84,10 @@
             <ContentPresenter.ContentTemplate>
                 <DataTemplate                          >
                     <StackPanel x:ConnectionId='5'>
-                        <TextBlock x:ConnectionId='6' Style="{ThemeResource TitleTextBlockStyle}"
+                        <TextBlock Style="{ThemeResource TitleTextBlockStyle}"
                                    Margin="0,8"       
-                                                       />
-                        <TextBlock x:ConnectionId='7' Style="{ThemeResource BodyTextBlockStyle}"
+                                   Text="CONFIGPIG"/>
+                        <TextBlock x:ConnectionId='6' Style="{ThemeResource BodyTextBlockStyle}"
                                    Margin="0,9" 
                                                       />
                         <!--<TextBlock Style="{ThemeResource BodyTextBlockStyle}" 
@@ -108,5 +108,6 @@
         <c:NotifyFoot x:Name="config_noti" Grid.Row="3" Grid.ColumnSpan="2">
         </c:NotifyFoot>-->
     </Grid>
+    
 </Page>
 

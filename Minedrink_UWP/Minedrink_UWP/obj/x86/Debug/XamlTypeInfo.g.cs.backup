@@ -895,7 +895,6 @@ namespace Minedrink_UWP.Minedrink_UWP_XamlTypeInfo
     internal delegate object Activator();
     internal delegate void AddToCollection(object instance, object item);
     internal delegate void AddToDictionary(object instance, object key, object item);
-    internal delegate object CreateFromStringMethod(string args);
 
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -980,16 +979,12 @@ namespace Minedrink_UWP.Minedrink_UWP_XamlTypeInfo
 
         override public void RunInitializer() 
         {
-            global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(UnderlyingType.TypeHandle);
+            System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(UnderlyingType.TypeHandle);
         }
 
         override public object CreateFromString(string input)
         {
-            if (CreateFromStringMethod != null)
-            {
-                return this.CreateFromStringMethod(input);
-            }
-            else if (_enumValues != null)
+            if (_enumValues != null)
             {
                 int value = 0;
 
@@ -1044,7 +1039,6 @@ namespace Minedrink_UWP.Minedrink_UWP_XamlTypeInfo
         public Activator Activator { get; set; }
         public AddToCollection CollectionAdd { get; set; }
         public AddToDictionary DictionaryAdd { get; set; }
-        public CreateFromStringMethod CreateFromStringMethod {get; set; }
 
         public void SetContentPropertyName(string contentPropertyName)
         {

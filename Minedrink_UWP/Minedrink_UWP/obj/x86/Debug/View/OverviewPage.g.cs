@@ -25,6 +25,9 @@ namespace Minedrink_UWP.View
             this._contentLoaded = true;
         }
 
+        /// <summary>
+        /// GetBindingConnector(int connectionId, object target)
+        /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public global::Windows.UI.Xaml.Markup.IComponentConnector GetBindingConnector(int connectionId, object target)

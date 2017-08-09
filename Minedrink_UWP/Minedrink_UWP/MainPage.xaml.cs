@@ -240,7 +240,7 @@ namespace Minedrink_UWP
             }
         }
         /// <summary>
-        /// 选中导航项后调用
+        /// 选中导航按钮项后调用
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>

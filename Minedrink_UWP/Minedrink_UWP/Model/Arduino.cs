@@ -30,9 +30,9 @@ namespace Minedrink_UWP.Model
         //运行模式
         public string Mode { get; set; }
         //传感器列表
-        private List<string> sensorList;
+        private List<WeightSensor> sensorList;
 
-        public List<string> SensorList
+        public List<WeightSensor> SensorList
         {
             get { return sensorList; }
             set { sensorList = value; }
@@ -55,15 +55,36 @@ namespace Minedrink_UWP.Model
             OutStream = sw;
             Update();
         }
-        protected async void Update()
+        private async void Update()
         {
             while (true)
             {
                 string response = await InStream.ReadLineAsync();
+                if (response.StartsWith("#"))
+                {
+                    string codeStr = response.Substring(0, 8);
+                    CommCode code = CommHandle.StringConvertToEnum(codeStr);
+
+                    switch (code)
+                    {
+                        case CommCode.ERROR:
+                            Debug.WriteLine("错误的指令:" + codeStr);
+                            break;
+                        default:
+                            break;
+                    }
+                }
                 Debug.WriteLine("UPDATE:" + response);
             }
         }
+
         #region Public Methods
+        public async void RefreshSensorsInfo()
+        {
+            string str = "#GETSENS";
+            await OutStream.WriteLineAsync(str);
+            await OutStream.FlushAsync();
+        }
         public static ObservableCollection<Arduino> GetArduinos(int numberOfArduino)
         {
             ObservableCollection<Arduino> arduinos = new ObservableCollection<Arduino>();

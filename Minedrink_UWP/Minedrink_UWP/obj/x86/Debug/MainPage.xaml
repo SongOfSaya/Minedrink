@@ -9,7 +9,14 @@
     TabNavigation="Cycle"
                               
     mc:Ignorable="d">
-
+    <!--<Page.TopAppBar>
+        <CommandBar x:Name="TopAppBar" IsOpen="True" OverflowButtonVisibility="Visible"
+                Background="Red" Height="25" IsSticky="True" >
+            <CommandBar.Content>
+                <TextBlock Name="NotifyTextBlock" Margin="400,0,0,0" HorizontalAlignment="Right" Text="这里是一个系统通知"></TextBlock>
+            </CommandBar.Content>
+        </CommandBar>
+    </Page.TopAppBar>-->
     <Page.Resources>
         <DataTemplate x:Key="NavMenuItemTemplate"                               >
             <Grid x:ConnectionId='6'>
@@ -50,6 +57,7 @@
                 <TextBlock x:ConnectionId='5' x:Name="Text" Grid.Column="1"                      
                            Style="{StaticResource BodyTextBlockStyle}"
                            TextWrapping="NoWrap" VerticalAlignment="Center" Margin="0,0,16,0"/>
+                
             </Grid>
         </DataTemplate>
     </Page.Resources>

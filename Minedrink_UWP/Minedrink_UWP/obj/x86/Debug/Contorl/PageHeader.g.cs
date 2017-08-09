@@ -63,7 +63,7 @@ namespace Minedrink_UWP.Contorl
             {
                 switch(connectionId)
                 {
-                    case 3:
+                    case 3: // Contorl\PageHeader.xaml line 19
                         this.obj3 = (global::Windows.UI.Xaml.Controls.ContentPresenter)target;
                         break;
                     default:
@@ -89,6 +89,11 @@ namespace Minedrink_UWP.Contorl
 
             public void StopTracking()
             {
+            }
+
+            public void DisconnectUnloadedObject(int connectionId)
+            {
+                throw new global::System.ArgumentException("No unloadable elements to disconnect.");
             }
 
             public bool SetDataRoot(global::System.Object newDataRoot)
@@ -124,6 +129,7 @@ namespace Minedrink_UWP.Contorl
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
+                    // Contorl\PageHeader.xaml line 19
                     XamlBindingSetters.Set_Windows_UI_Xaml_FrameworkElement_VerticalAlignment(this.obj3, obj);
                 }
             }
@@ -131,6 +137,7 @@ namespace Minedrink_UWP.Contorl
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
+                    // Contorl\PageHeader.xaml line 19
                     XamlBindingSetters.Set_Windows_UI_Xaml_FrameworkElement_HorizontalAlignment(this.obj3, obj);
                 }
             }
@@ -138,6 +145,7 @@ namespace Minedrink_UWP.Contorl
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
+                    // Contorl\PageHeader.xaml line 19
                     XamlBindingSetters.Set_Windows_UI_Xaml_FrameworkElement_Margin(this.obj3, obj);
                 }
             }
@@ -145,6 +153,7 @@ namespace Minedrink_UWP.Contorl
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
+                    // Contorl\PageHeader.xaml line 19
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_ContentPresenter_Content(this.obj3, obj, null);
                 }
             }
@@ -158,17 +167,17 @@ namespace Minedrink_UWP.Contorl
         {
             switch(connectionId)
             {
-            case 1:
+            case 1: // Contorl\PageHeader.xaml line 1
                 {
                     this.Root = (global::Windows.UI.Xaml.Controls.UserControl)(target);
                 }
                 break;
-            case 2:
+            case 2: // Contorl\PageHeader.xaml line 18
                 {
                     this.titleBar = (global::Windows.UI.Xaml.Controls.Grid)(target);
                 }
                 break;
-            case 3:
+            case 3: // Contorl\PageHeader.xaml line 19
                 {
                     this.content = (global::Windows.UI.Xaml.Controls.ContentPresenter)(target);
                 }
@@ -179,6 +188,9 @@ namespace Minedrink_UWP.Contorl
             this._contentLoaded = true;
         }
 
+        /// <summary>
+        /// GetBindingConnector(int connectionId, object target)
+        /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public global::Windows.UI.Xaml.Markup.IComponentConnector GetBindingConnector(int connectionId, object target)
@@ -186,8 +198,8 @@ namespace Minedrink_UWP.Contorl
             global::Windows.UI.Xaml.Markup.IComponentConnector returnValue = null;
             switch(connectionId)
             {
-            case 1:
-                {
+            case 1: // Contorl\PageHeader.xaml line 1
+                {                    
                     global::Windows.UI.Xaml.Controls.UserControl element1 = (global::Windows.UI.Xaml.Controls.UserControl)target;
                     PageHeader_obj1_Bindings bindings = new PageHeader_obj1_Bindings();
                     returnValue = bindings;

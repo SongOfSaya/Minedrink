@@ -13,11 +13,7 @@
         </TransitionCollection>
     </Page.Transitions>
 
-    <Page.BottomAppBar>
-        <CommandBar>
-            <AppBarButton x:ConnectionId='1' Label="Delete Item" Icon="Delete"                          />
-        </CommandBar>
-    </Page.BottomAppBar>
+    
 
     <StackPanel Padding="24,0" Grid.Row="1" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock Style="{ThemeResource TitleTextBlockStyle}"
@@ -35,5 +31,25 @@
                                    Margin="0,9" 
                                    Text="{x:Bind SelectedContact.PhoneNumber}" />-->
     </StackPanel>
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarToggleButton Icon="Shuffle" Label="Shuffle"  />
+            <AppBarToggleButton Icon="RepeatAll" Label="Repeat" />
+            <AppBarSeparator/>
+            <AppBarButton Icon="Back" Label="Back" />
+            <AppBarButton Icon="Stop" Label="Stop" />
+            <AppBarButton Icon="Play" Label="Play" />
+            <AppBarButton Icon="Forward" Label="Forward" />
+
+            <CommandBar.SecondaryCommands>
+                <AppBarButton Icon="Like" Label="Like"/>
+                <AppBarButton Icon="Dislike" Label="Dislike"/>
+            </CommandBar.SecondaryCommands>
+
+            <CommandBar.Content>
+                <TextBlock Text="Now playing..." Margin="12,14"/>
+            </CommandBar.Content>
+        </CommandBar>
+    </Page.BottomAppBar>
 </Page>
 
