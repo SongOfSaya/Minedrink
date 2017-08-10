@@ -124,7 +124,7 @@ namespace Minedrink_UWP
                 Thickness margin = NavMenuList.Margin;
                 NavMenuList.Margin = new Thickness(margin.Left, margin.Top + extraPadding, margin.Right, margin.Bottom);
                 margin = AppFrame.Margin;
-                AppFrame.Margin = new Thickness(margin.Left, margin.Top + extraPadding, margin.Right, margin.Bottom);
+                //AppFrame.Margin = new Thickness(margin.Left, margin.Top + extraPadding, margin.Right, margin.Bottom);
                 margin = TogglePaneButton.Margin;
                 TogglePaneButton.Margin = new Thickness(margin.Left, margin.Top + extraPadding, margin.Right, margin.Bottom);
             }
@@ -469,7 +469,7 @@ namespace Minedrink_UWP
         private void OnSuspending(object sender, SuspendingEventArgs e)
         {
             var deferral = e.SuspendingOperation.GetDeferral();
-            //TODO: Save application state and stop any background activity
+            // Save application state and stop any background activity
             deferral.Complete();
         }
         private string TCPCOMMHandle()

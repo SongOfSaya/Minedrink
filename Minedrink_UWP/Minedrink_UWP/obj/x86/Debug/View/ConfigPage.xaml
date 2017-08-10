@@ -8,8 +8,45 @@
     xmlns:data="using:Minedrink_UWP.Model"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <DataTemplate x:Key="SensorsListVItemDT"                               >
+            <StackPanel Name="SinggleAdn" Orientation="Horizontal">
+                <TextBlock></TextBlock>
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="ArduinoListViewDT"                          >
+            <Grid x:ConnectionId='2'>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Ellipse x:Name="Ellipse"
+                         Grid.RowSpan="2"
+                         Width ="32"
+                         Height="32"
+                         Margin="6"
+                         VerticalAlignment="Center"
+                         HorizontalAlignment="Center"
+                         Fill="LightGray"/>
+                <TextBlock x:ConnectionId='3' Grid.Column="1"
+                                                
+                                        
+                           Style="{ThemeResource BaseTextBlockStyle}"
+                           Margin="12,6,0,0"/>
+                <TextBlock x:ConnectionId='4'  Grid.Column="1"
+                            Grid.Row="1"
+                                               
+                                       
+                            Style="{ThemeResource BodyTextBlockStyle}"
+                            Margin="12,0,0,6"/>
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+    <Grid Background="#FFEEEEEE">
         <Grid.RowDefinitions >
             <RowDefinition Height="48"/>
             <RowDefinition Height="*"/>
@@ -18,62 +55,30 @@
             <ColumnDefinition Width="256"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <StackPanel x:ConnectionId='2' x:Name="ArduinoListBtnPanel" Grid.Row="0"
+        <StackPanel x:ConnectionId='5' x:Name="ArduinoListBtnPanel" Grid.Row="0"
                     Grid.Column="0" BorderBrush="Gray"
                     BorderThickness="1" Orientation="Horizontal"
                     HorizontalAlignment ="Right">
-            <Button Content="刷新" HorizontalAlignment="Right" VerticalAlignment="Stretch"/>
-            <Button Content="编辑" HorizontalAlignment="Right" VerticalAlignment="Stretch" HorizontalContentAlignment="Right"/>
-            <Button x:ConnectionId='10' Content="新增" HorizontalAlignment="Right" VerticalAlignment="Stretch"                         />
+            <Button x:ConnectionId='12' Content="打开" HorizontalAlignment="Right" VerticalAlignment="Stretch"                          />
+            <Button Content="编辑" HorizontalAlignment="Right" VerticalAlignment="Stretch" />
+            <Button x:ConnectionId='13' Content="新增" HorizontalAlignment="Right" VerticalAlignment="Stretch"                         />
         </StackPanel>
-        <ListView x:ConnectionId='3' x:Name="ArduinoListView"
+        <ListView x:ConnectionId='6' x:Name="ArduinoListView"
                   Grid.Row="1"
                   HorizontalAlignment="Stretch" 
                   VerticalAlignment="Top"
-                  SelectionMode="Extended"
-                                                                     
+                  ItemContainerTransitions="{x:Null}"
+                  IsItemClickEnabled="True"
                                                        
-                  ShowsScrollingPlaceholders="False">
-            <ListView.ItemTemplate>
-                <DataTemplate                          >
-                    <Grid x:ConnectionId='7'>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                        <Ellipse x:Name="Ellipse"
-                         Grid.RowSpan="2"
-                         Width ="32"
-                         Height="32"
-                         Margin="6"
-                         VerticalAlignment="Center"
-                         HorizontalAlignment="Center"
-                         Fill="LightGray"/>
-                        <TextBlock x:ConnectionId='8' Grid.Column="1"
-                                                
-                                        
-                           Style="{ThemeResource BaseTextBlockStyle}"
-                           Margin="12,6,0,0"/>
-                        <TextBlock x:ConnectionId='9'  Grid.Column="1"
-                            Grid.Row="1"
-                                               
-                                       
-                            Style="{ThemeResource BodyTextBlockStyle}"
-                            Margin="12,0,0,6"/>
-                    </Grid>
-                </DataTemplate>
-            </ListView.ItemTemplate>
+                  ShowsScrollingPlaceholders="False"
+                  ItemTemplate="{StaticResource ArduinoListViewDT}">
             <x:String>Item 1</x:String>
             <x:String>Item 2</x:String>
             <x:String>Item 3</x:String>
             <x:String>Item 4</x:String>
             <x:String>Item 5</x:String>
         </ListView>
-        <ContentPresenter x:ConnectionId='4'
+        <ContentPresenter x:ConnectionId='7'
                 x:Name="DetailContentPresenter"
                 Grid.Column="1"
                 Grid.RowSpan="2"
@@ -83,11 +88,11 @@
                                                                             >
             <ContentPresenter.ContentTemplate>
                 <DataTemplate                          >
-                    <StackPanel x:ConnectionId='5'>
+                    <StackPanel x:ConnectionId='10'>
                         <TextBlock Style="{ThemeResource TitleTextBlockStyle}"
                                    Margin="0,8"       
                                    Text="CONFIGPIG"/>
-                        <TextBlock x:ConnectionId='6' Style="{ThemeResource BodyTextBlockStyle}"
+                        <TextBlock x:ConnectionId='11' Style="{ThemeResource BodyTextBlockStyle}"
                                    Margin="0,9" 
                                                       />
                         <!--<TextBlock Style="{ThemeResource BodyTextBlockStyle}" 
@@ -97,17 +102,46 @@
                                    Margin="0,9" 
                                    TextWrapping="WrapWholeWords"
                                    Text="{x:Bind Biography}" />-->
+                        <ListView>
+                            <x:String>abc</x:String>
+                            <x:String>def</x:String>
+                            <x:String>ghr</x:String>
+                            <!--此处设置Sensors的显示-->
+                        </ListView>
                     </StackPanel>
                 </DataTemplate>
+
             </ContentPresenter.ContentTemplate>
             <ContentPresenter.ContentTransitions>
-                <TransitionCollection/>
+                <TransitionCollection>
+                    <EntranceThemeTransition />
+                </TransitionCollection>
             </ContentPresenter.ContentTransitions>
         </ContentPresenter>
-        <!--<Button Content="ConfigPage" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <c:NotifyFoot x:Name="config_noti" Grid.Row="3" Grid.ColumnSpan="2">
+        <CommandBar x:ConnectionId='8' Name="ArduinoNotifyBar" Grid.Column="1"
+                    IsOpen="True"
+                    Background="{ThemeResource AppBarToggleButtonBackgroundCheckedPointerOver}"
+                    ClosedDisplayMode="Hidden"
+                    CompositeMode="MinBlend"
+                    OverflowButtonVisibility ="Collapsed"
+                    LightDismissOverlayMode="Auto"
+                    ManipulationMode="All"
+                    IsSticky="True"
+                    Height="25">
+            <AppBarButton Content="1233"></AppBarButton>
+            <CommandBar.Content>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock x:ConnectionId='9' Name="NotyfyTextBlock" Margin="200,0,0,0" Text="这里是一个系统通知"></TextBlock>
+                </StackPanel>
+                
+            </CommandBar.Content>
+        </CommandBar>
+        <Grid>
+            
+        </Grid>
+        <!--<c:NotifyFoot x:Name="config_noti" Grid.Row="3" Grid.ColumnSpan="2">
         </c:NotifyFoot>-->
     </Grid>
-    
+
 </Page>
 

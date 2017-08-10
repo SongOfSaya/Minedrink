@@ -5,7 +5,6 @@ C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\bin\x86\Debug\
 C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\bin\x86\Debug\MainPage.xbf
 C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\bin\x86\Debug\Styles\Styles.xbf
 C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\bin\x86\Debug\Styles\TenFootStylesheet.xbf
-C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\bin\x86\Debug\View\ArduinoPage.xbf
 C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\bin\x86\Debug\View\ConfigPage.xbf
 C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\bin\x86\Debug\View\LandingPage.xbf
 C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\bin\x86\Debug\View\MonitorPage.xbf
@@ -142,8 +141,6 @@ C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\
 C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\Contorl\PageHeader.g.cs
 C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\MainPage.g.i.cs
 C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\MainPage.g.cs
-C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\View\ArduinoPage.g.i.cs
-C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\View\ArduinoPage.g.cs
 C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\View\ConfigPage.g.i.cs
 C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\View\ConfigPage.g.cs
 C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\View\LandingPage.g.i.cs
@@ -160,7 +157,6 @@ C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\
 C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\MainPage.xaml
 C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\Styles\Styles.xaml
 C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\Styles\TenFootStylesheet.xaml
-C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\View\ArduinoPage.xaml
 C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\View\ConfigPage.xaml
 C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\View\LandingPage.xaml
 C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\View\MonitorPage.xaml
@@ -172,7 +168,6 @@ C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\
 C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\MainPage.xbf
 C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\Styles\Styles.xbf
 C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\Styles\TenFootStylesheet.xbf
-C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\View\ArduinoPage.xbf
 C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\View\ConfigPage.xbf
 C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\View\LandingPage.xbf
 C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\View\MonitorPage.xbf

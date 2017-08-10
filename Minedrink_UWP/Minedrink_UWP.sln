@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minedrink_UWP", "Minedrink_UWP\Minedrink_UWP.csproj", "{AEA42C3E-CEF1-4D39-92D9-F039449D9F1D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProjectForSMS", "UnitTestProjectForSMS\UnitTestProjectForSMS.csproj", "{A78CDF90-4054-4DD5-9951-116CE49364BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -33,6 +35,24 @@ Global
 		{AEA42C3E-CEF1-4D39-92D9-F039449D9F1D}.Release|x86.ActiveCfg = Release|x86
 		{AEA42C3E-CEF1-4D39-92D9-F039449D9F1D}.Release|x86.Build.0 = Release|x86
 		{AEA42C3E-CEF1-4D39-92D9-F039449D9F1D}.Release|x86.Deploy.0 = Release|x86
+		{A78CDF90-4054-4DD5-9951-116CE49364BF}.Debug|ARM.ActiveCfg = Debug|ARM
+		{A78CDF90-4054-4DD5-9951-116CE49364BF}.Debug|ARM.Build.0 = Debug|ARM
+		{A78CDF90-4054-4DD5-9951-116CE49364BF}.Debug|ARM.Deploy.0 = Debug|ARM
+		{A78CDF90-4054-4DD5-9951-116CE49364BF}.Debug|x64.ActiveCfg = Debug|x64
+		{A78CDF90-4054-4DD5-9951-116CE49364BF}.Debug|x64.Build.0 = Debug|x64
+		{A78CDF90-4054-4DD5-9951-116CE49364BF}.Debug|x64.Deploy.0 = Debug|x64
+		{A78CDF90-4054-4DD5-9951-116CE49364BF}.Debug|x86.ActiveCfg = Debug|x86
+		{A78CDF90-4054-4DD5-9951-116CE49364BF}.Debug|x86.Build.0 = Debug|x86
+		{A78CDF90-4054-4DD5-9951-116CE49364BF}.Debug|x86.Deploy.0 = Debug|x86
+		{A78CDF90-4054-4DD5-9951-116CE49364BF}.Release|ARM.ActiveCfg = Release|ARM
+		{A78CDF90-4054-4DD5-9951-116CE49364BF}.Release|ARM.Build.0 = Release|ARM
+		{A78CDF90-4054-4DD5-9951-116CE49364BF}.Release|ARM.Deploy.0 = Release|ARM
+		{A78CDF90-4054-4DD5-9951-116CE49364BF}.Release|x64.ActiveCfg = Release|x64
+		{A78CDF90-4054-4DD5-9951-116CE49364BF}.Release|x64.Build.0 = Release|x64
+		{A78CDF90-4054-4DD5-9951-116CE49364BF}.Release|x64.Deploy.0 = Release|x64
+		{A78CDF90-4054-4DD5-9951-116CE49364BF}.Release|x86.ActiveCfg = Release|x86
+		{A78CDF90-4054-4DD5-9951-116CE49364BF}.Release|x86.Build.0 = Release|x86
+		{A78CDF90-4054-4DD5-9951-116CE49364BF}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

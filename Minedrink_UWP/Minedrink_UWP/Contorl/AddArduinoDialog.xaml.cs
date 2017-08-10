@@ -73,16 +73,16 @@ namespace Minedrink_UWP.Contorl
                     if (inStr.StartsWith("#"))
                     {
                         string codeStr = inStr.Substring(0, 8);
-                        CommCode code = CommHandle.StringConvertToEnum(codeStr);
+                        RXCommCode code = CommHandle.StringConvertToEnum(codeStr);
 
                         switch (code)
                         {
-                            case CommCode.TCPDONE:
+                            case RXCommCode.TcpDone:
                                 Arduino arduino = new Arduino(clientSocket, write,reader);
                                 ConfigPage.Current.Arduinos.Add(arduino);
                                 tcpDone = true;
                                 break;
-                            case CommCode.ERROR:
+                            case RXCommCode.ERROR:
                                 Debug.WriteLine("错误的指令:" + codeStr);
                                 break;
                             default:

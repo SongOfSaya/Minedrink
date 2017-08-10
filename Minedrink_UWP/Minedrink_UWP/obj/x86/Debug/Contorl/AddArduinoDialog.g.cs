@@ -24,34 +24,37 @@ namespace Minedrink_UWP.Contorl
         {
             switch(connectionId)
             {
-            case 1: // Contorl\AddArduinoDialog.xaml line 1
+            case 1:
                 {
                     global::Windows.UI.Xaml.Controls.ContentDialog element1 = (global::Windows.UI.Xaml.Controls.ContentDialog)(target);
+                    #line 12 "..\..\..\Contorl\AddArduinoDialog.xaml"
                     ((global::Windows.UI.Xaml.Controls.ContentDialog)element1).PrimaryButtonClick += this.ContentDialog_PrimaryButtonClick;
+                    #line 13 "..\..\..\Contorl\AddArduinoDialog.xaml"
                     ((global::Windows.UI.Xaml.Controls.ContentDialog)element1).SecondaryButtonClick += this.ContentDialog_SecondaryButtonClick;
+                    #line default
                 }
                 break;
-            case 2: // Contorl\AddArduinoDialog.xaml line 16
+            case 2:
                 {
                     this.arduinoNameTextBox = (global::Windows.UI.Xaml.Controls.TextBox)(target);
                 }
                 break;
-            case 3: // Contorl\AddArduinoDialog.xaml line 17
+            case 3:
                 {
                     this.arduinoIPTextBox = (global::Windows.UI.Xaml.Controls.TextBox)(target);
                 }
                 break;
-            case 4: // Contorl\AddArduinoDialog.xaml line 18
+            case 4:
                 {
                     this.arduinoPortTextBox = (global::Windows.UI.Xaml.Controls.TextBox)(target);
                 }
                 break;
-            case 5: // Contorl\AddArduinoDialog.xaml line 19
+            case 5:
                 {
                     this.arduinoSaveCheckBox = (global::Windows.UI.Xaml.Controls.CheckBox)(target);
                 }
                 break;
-            case 6: // Contorl\AddArduinoDialog.xaml line 21
+            case 6:
                 {
                     this.addInfo = (global::Windows.UI.Xaml.Controls.TextBlock)(target);
                 }
@@ -62,9 +65,6 @@ namespace Minedrink_UWP.Contorl
             this._contentLoaded = true;
         }
 
-        /// <summary>
-        /// GetBindingConnector(int connectionId, object target)
-        /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public global::Windows.UI.Xaml.Markup.IComponentConnector GetBindingConnector(int connectionId, object target)

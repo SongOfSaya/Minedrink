@@ -26,11 +26,10 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Children" />
-      <RootProperty Name="Padding" />
-      <RootProperty Name="Background" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="Orientation" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
-      <RootProperty Name="Orientation" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Name" />
@@ -52,6 +51,7 @@
       <RootProperty Name="Style" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="FontSize" />
+      <RootProperty Name="Name" />
       <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="Minedrink_UWP.Contorl.AddArduinoDialog" />
@@ -122,8 +122,6 @@
       <RootProperty Name="TabNavigation" />
       <RootProperty Name="Resources" />
       <RootProperty Name="Content" />
-      <RootProperty Name="Transitions" />
-      <RootProperty Name="BottomAppBar" />
       <RootEvent Name="KeyDown" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
@@ -219,7 +217,6 @@
       <RootProperty Name="Content" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="HorizontalContentAlignment" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Frame">
@@ -307,31 +304,6 @@
       <RootProperty Name="ContentMargin" />
     </RootType>
     <RootType FullName="Windows.UI.Color" />
-    <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">
-      <RootProperty Name="PrimaryCommands" />
-      <RootProperty Name="SecondaryCommands" />
-      <RootProperty Name="Content" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.AppBarToggleButton">
-      <RootProperty Name="Icon" />
-      <RootProperty Name="Label" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.AppBarSeparator" />
-    <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
-      <RootProperty Name="Icon" />
-      <RootProperty Name="Label" />
-    </RootType>
-    <RootType FullName="Minedrink_UWP.View.ArduinoPage" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="SelectionMode" />
-      <RootProperty Name="ShowsScrollingPlaceholders" />
-      <RootProperty Name="ItemTemplate" />
-      <RootProperty Name="Items" />
-      <RootEvent Name="SelectionChanged" />
-      <RootEvent Name="ItemClick" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Ellipse">
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
@@ -340,7 +312,36 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Fill" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="ItemContainerTransitions" />
+      <RootProperty Name="IsItemClickEnabled" />
+      <RootProperty Name="ShowsScrollingPlaceholders" />
+      <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="Items" />
+      <RootEvent Name="ItemClick" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">
+      <RootProperty Name="Name" />
+      <RootProperty Name="IsOpen" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="ClosedDisplayMode" />
+      <RootProperty Name="CompositeMode" />
+      <RootProperty Name="OverflowButtonVisibility" />
+      <RootProperty Name="LightDismissOverlayMode" />
+      <RootProperty Name="ManipulationMode" />
+      <RootProperty Name="IsSticky" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="PrimaryCommands" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
+      <RootProperty Name="Content" />
+    </RootType>
     <RootType FullName="System.String" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.EntranceThemeTransition" />
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.NullExtension" />
     <RootType FullName="Minedrink_UWP.View.ConfigPage" />
     <RootType FullName="Minedrink_UWP.View.LandingPage" />
     <RootType FullName="Minedrink_UWP.View.MonitorPage" />

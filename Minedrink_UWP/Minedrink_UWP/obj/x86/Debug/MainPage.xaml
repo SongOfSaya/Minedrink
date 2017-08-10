@@ -9,14 +9,6 @@
     TabNavigation="Cycle"
                               
     mc:Ignorable="d">
-    <!--<Page.TopAppBar>
-        <CommandBar x:Name="TopAppBar" IsOpen="True" OverflowButtonVisibility="Visible"
-                Background="Red" Height="25" IsSticky="True" >
-            <CommandBar.Content>
-                <TextBlock Name="NotifyTextBlock" Margin="400,0,0,0" HorizontalAlignment="Right" Text="这里是一个系统通知"></TextBlock>
-            </CommandBar.Content>
-        </CommandBar>
-    </Page.TopAppBar>-->
     <Page.Resources>
         <DataTemplate x:Key="NavMenuItemTemplate"                               >
             <Grid x:ConnectionId='6'>
@@ -193,7 +185,7 @@
             OnNavigatingToPage we synchronize the selected item in the nav menu with the current page-->
             <SplitView.Content >
                 <Frame x:ConnectionId='17' x:Name="frame"
-                       Margin="0,4,0,0"
+                       Margin="0,0,0,0"
                                                     >
                     <Frame.ContentTransitions>
                         <TransitionCollection>

@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.Data.Json;
 using Windows.Networking.Sockets;
 using Windows.UI;
 
@@ -16,7 +17,7 @@ namespace Minedrink_UWP.Model
         private static Random random = new Random();
         
         #region Properties
-        public string ID { get; set; }
+        public int ID { get; set; }
         private string name;
         //与Arduino建立的TCP输入输出流
         public StreamWriter OutStream { get; private set; }
@@ -45,7 +46,7 @@ namespace Minedrink_UWP.Model
 
         public Arduino()
         {
-            ID = "构造函数的ID";
+            ID = 1235;
             Name = "主料区-构造函数";
         }
         public Arduino(StreamSocket socket, StreamWriter sw, StreamReader sr)
@@ -54,23 +55,35 @@ namespace Minedrink_UWP.Model
             InStream = sr;
             OutStream = sw;
             Update();
+            SendCommCode(TXCommCode.GetAllInfo);
         }
+        //{"ID":10, "Mills" : 1243, "Mode" : 1, "Sensors" : [{"ID":1085, "Result" : 123.44}, { "ID":1086,"Result" : 1234.4 }]}
         private async void Update()
         {
             while (true)
-            {
+            { 
                 string response = await InStream.ReadLineAsync();
                 if (response.StartsWith("#"))
                 {
                     string codeStr = response.Substring(0, 8);
-                    CommCode code = CommHandle.StringConvertToEnum(codeStr);
+                    RXCommCode code = CommHandle.StringConvertToEnum(codeStr);
 
                     switch (code)
                     {
-                        case CommCode.ERROR:
+                        case RXCommCode.ERROR:
                             Debug.WriteLine("错误的指令:" + codeStr);
                             break;
+                        case RXCommCode.AllInfo:
+                            string json = response.Remove(0, 9);
+                            if (CheckJson())
+                            {
+                                ReadAllInfo(json);
+                            }
+                            break;
+                        case RXCommCode.Update:
+                            break;
                         default:
+
                             break;
                     }
                 }
@@ -78,10 +91,22 @@ namespace Minedrink_UWP.Model
             }
         }
 
-        #region Public Methods
-        public async void RefreshSensorsInfo()
+        public void ReadAllInfo(string jsonString)
         {
-            string str = "#GETSENS";
+            var rootObject = JsonObject.Parse(jsonString);
+            ID = (int)(rootObject["ID"].GetNumber());
+            Debug.WriteLine(rootObject["ID"]);
+        }
+
+        private bool CheckJson()
+        {
+            return true;
+        }
+
+        #region Public Methods
+        public async void SendCommCode(TXCommCode txCommCode)
+        {
+            string str = CommHandle.TXCCodeConverToString(txCommCode);
             await OutStream.WriteLineAsync(str);
             await OutStream.FlushAsync();
         }
@@ -108,7 +133,7 @@ namespace Minedrink_UWP.Model
         {
             return new Arduino()
             {
-                ID = random.Next().ToString(),
+                ID = random.Next(),
                 name = "辅料区"
             };
         }

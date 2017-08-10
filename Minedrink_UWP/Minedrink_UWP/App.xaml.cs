@@ -91,7 +91,7 @@ namespace Minedrink_UWP
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
-                    //TODO: Load state from previously suspended application
+                    // Load state from previously suspended application
                 }
             }
 
@@ -130,7 +130,7 @@ namespace Minedrink_UWP
 
         //        if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
         //        {
-        //            //TODO: 从之前挂起的应用程序加载状态
+        //            //从之前挂起的应用程序加载状态
         //        }
 
         //        // 将框架放在当前窗口中
@@ -171,7 +171,7 @@ namespace Minedrink_UWP
         private void OnSuspending(object sender, SuspendingEventArgs e)
         {
             var deferral = e.SuspendingOperation.GetDeferral();
-            //TODO: 保存应用程序状态并停止任何后台活动
+            // 保存应用程序状态并停止任何后台活动
             deferral.Complete();
         }
     }

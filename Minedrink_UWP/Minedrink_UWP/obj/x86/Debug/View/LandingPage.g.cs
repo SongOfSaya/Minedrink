@@ -24,12 +24,12 @@ namespace Minedrink_UWP.View
         {
             switch(connectionId)
             {
-            case 1: // View\LandingPage.xaml line 19
+            case 1:
                 {
                     this.pageHeader = (global::Minedrink_UWP.Contorl.PageHeader)(target);
                 }
                 break;
-            case 2: // View\LandingPage.xaml line 21
+            case 2:
                 {
                     this.title = (global::Windows.UI.Xaml.Controls.TextBlock)(target);
                 }
@@ -40,9 +40,6 @@ namespace Minedrink_UWP.View
             this._contentLoaded = true;
         }
 
-        /// <summary>
-        /// GetBindingConnector(int connectionId, object target)
-        /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public global::Windows.UI.Xaml.Markup.IComponentConnector GetBindingConnector(int connectionId, object target)
