@@ -1,0 +1,17 @@
+App.xbf
+Styles\_Colors.xbf
+Styles\_FontSizes.xbf
+Styles\_Thickness.xbf
+Styles\TextBlock.xbf
+Views\ArduinoManageDetailControl.xbf
+Views\ArduinoManageDetailPage.xbf
+Views\ArduinoManagePage.xbf
+Views\ChartPage.xbf
+Views\GridPage.xbf
+Views\MainPage.xbf
+Views\MapPage.xbf
+Views\MediaPlayerPage.xbf
+Views\SettingsPage.xbf
+Views\ShellPage.xbf
+Views\TabbedPage.xbf
+Views\WebViewPage.xbf
