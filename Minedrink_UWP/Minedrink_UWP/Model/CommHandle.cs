@@ -5,9 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Minedrink_UWP.Model
-{
+{   
     /// <summary>
     /// 接收到的指令枚举
+    /// Tcp
+    /// 
     /// </summary>
     public enum RXCommCode
     {
@@ -26,6 +28,12 @@ namespace Minedrink_UWP.Model
         SetArduinoProp,
         Error,
     }
+    /// <summary>
+    ///▶ 每行指令数≤1。
+	///▶ 含有指令的行必须以"#"开头，"\n"结尾。
+	///▶ 指令格式固定为:# + 7个字符（数字或大小写字母或*）。 如：#Abc123*
+    ///▶ #为指令关键字，勿作他用。
+    /// </summary>
     public class CommHandle
     {
         public static RXCommCode StringConvertToEnum(string str)

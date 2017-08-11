@@ -109,6 +109,7 @@
     </Compile>
     <Compile Include="Model\Arduino.cs" />
     <Compile Include="Model\CommHandle.cs" />
+    <Compile Include="Model\JsonDefine.cs" />
     <Compile Include="Model\LocalHostItem.cs" />
     <Compile Include="Model\WeightSensor.cs" />
     <Compile Include="NavMenuItem.cs" />
