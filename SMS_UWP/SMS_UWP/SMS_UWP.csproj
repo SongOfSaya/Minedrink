@@ -12,7 +12,7 @@
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.15063.0</TargetPlatformVersion>
-    <TargetPlatformMinVersion>10.0.10586.0</TargetPlatformMinVersion>
+    <TargetPlatformMinVersion>10.0.14393.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -129,7 +129,7 @@
     <Compile Include="Services\SampleDataService.cs" />
     <Compile Include="Services\ThemeSelectorService.cs" />
     <Compile Include="ViewModels\ArduinoManageDetailViewModel.cs" />
-    <Compile Include="ViewModels\ArduinoManageViewModel.cs" />
+    <Compile Include="ViewModels\VM_AduMGMT.cs" />
     <Compile Include="ViewModels\ChartViewModel.cs" />
     <Compile Include="ViewModels\GridViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
@@ -141,14 +141,18 @@
     <Compile Include="ViewModels\TabbedViewModel.cs" />
     <Compile Include="ViewModels\ViewModelLocator.cs" />
     <Compile Include="ViewModels\WebViewViewModel.cs" />
+    <Compile Include="Models\M_AduHostName.cs" />
+    <Compile Include="Views\V_AddAduDialog_C.xaml.cs">
+      <DependentUpon>V_AddAduDialog_C.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ArduinoManageDetailControl.xaml.cs">
       <DependentUpon>ArduinoManageDetailControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ArduinoManageDetailPage.xaml.cs">
       <DependentUpon>ArduinoManageDetailPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\ArduinoManagePage.xaml.cs">
-      <DependentUpon>ArduinoManagePage.xaml</DependentUpon>
+    <Compile Include="Views\V_AduMGMT_P.xaml.cs">
+      <DependentUpon>V_AduMGMT_P.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ChartPage.xaml.cs">
       <DependentUpon>ChartPage.xaml</DependentUpon>
@@ -205,6 +209,10 @@
       <Generator>MSBuild:Compile</Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Page>
+    <Page Include="Views\V_AddAduDialog_C.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\ArduinoManageDetailControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -213,7 +221,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\ArduinoManagePage.xaml">
+    <Page Include="Views\V_AduMGMT_P.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -278,6 +286,7 @@
   <ItemGroup>
     <None Include=".editorconfig" />
     <None Include="SMS_UWP_TemporaryKey.pfx" />
+    <PRIResource Include="Strings\zh-cn\Resources.resw" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

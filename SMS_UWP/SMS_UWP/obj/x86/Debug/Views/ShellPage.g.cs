@@ -15,7 +15,8 @@ namespace SMS_UWP.Views
         global::Windows.UI.Xaml.Markup.IComponentConnector,
         global::Windows.UI.Xaml.Markup.IComponentConnector2
     {
-        internal class XamlBindingSetters
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
+        private static class XamlBindingSetters
         {
             public static void Set_Microsoft_Toolkit_Uwp_UI_Controls_HamburgerMenu_DisplayMode(global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu obj, global::Windows.UI.Xaml.Controls.SplitViewDisplayMode value)
             {
@@ -79,6 +80,7 @@ namespace SMS_UWP.Views
             }
         };
 
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         private class ShellPage_obj2_Bindings :
             global::Windows.UI.Xaml.IDataTemplateExtension,
             global::Windows.UI.Xaml.Markup.IComponentConnector,
@@ -124,13 +126,10 @@ namespace SMS_UWP.Views
 
             public void DataContextChangedHandler(global::Windows.UI.Xaml.FrameworkElement sender, global::Windows.UI.Xaml.DataContextChangedEventArgs args)
             {
-                 global::SMS_UWP.ViewModels.ShellNavigationItem data = args.NewValue as global::SMS_UWP.ViewModels.ShellNavigationItem;
-                 if (args.NewValue != null && data == null)
+                 if (this.SetDataRoot(args.NewValue))
                  {
-                    throw new global::System.ArgumentException("Incorrect type passed into template. Based on the x:DataType global::SMS_UWP.ViewModels.ShellNavigationItem was expected.");
+                    this.Update();
                  }
-                 this.SetDataRoot(data);
-                 this.Update();
             }
 
             // IDataTemplateExtension
@@ -147,7 +146,7 @@ namespace SMS_UWP.Views
                 {
                     case 0:
                         nextPhase = -1;
-                        this.SetDataRoot(args.Item as global::SMS_UWP.ViewModels.ShellNavigationItem);
+                        this.SetDataRoot(args.Item);
                         if (!removedDataContextHandler)
                         {
                             removedDataContextHandler = true;
@@ -187,12 +186,15 @@ namespace SMS_UWP.Views
                 this.initialized = false;
             }
 
-            // ShellPage_obj2_Bindings
-
-            public void SetDataRoot(global::SMS_UWP.ViewModels.ShellNavigationItem newDataRoot)
+            public bool SetDataRoot(global::System.Object newDataRoot)
             {
                 this.bindingsTracking.ReleaseAllListeners();
-                this.dataRoot = newDataRoot;
+                if (newDataRoot != null)
+                {
+                    this.dataRoot = (global::SMS_UWP.ViewModels.ShellNavigationItem)newDataRoot;
+                    return true;
+                }
+                return false;
             }
 
             // Update methods for each path node used in binding steps.
@@ -221,36 +223,37 @@ namespace SMS_UWP.Views
             }
             private void Update_SelectedVis(global::Windows.UI.Xaml.Visibility obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_UIElement_Visibility(this.obj3, obj);
                 }
             }
             private void Update_Icon(global::Windows.UI.Xaml.Controls.IconElement obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED )) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Viewbox_Child(this.obj4, obj, null);
                 }
             }
             private void Update_SelectedForeground(global::Windows.UI.Xaml.Media.SolidColorBrush obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_TextBlock_Foreground(this.obj5, obj, null);
                 }
             }
             private void Update_Label(global::System.String obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED )) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_TextBlock_Text(this.obj5, obj, null);
                 }
             }
 
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
             private class ShellPage_obj2_BindingsTracking
             {
-                global::System.WeakReference<ShellPage_obj2_Bindings> WeakRefToBindingObj; 
+                private global::System.WeakReference<ShellPage_obj2_Bindings> WeakRefToBindingObj; 
 
                 public ShellPage_obj2_BindingsTracking(ShellPage_obj2_Bindings obj)
                 {
@@ -265,7 +268,7 @@ namespace SMS_UWP.Views
                 public void PropertyChanged_(object sender, global::System.ComponentModel.PropertyChangedEventArgs e)
                 {
                     ShellPage_obj2_Bindings bindings;
-                    if(WeakRefToBindingObj.TryGetTarget(out bindings))
+                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
                     {
                         string propName = e.PropertyName;
                         global::SMS_UWP.ViewModels.ShellNavigationItem obj = sender as global::SMS_UWP.ViewModels.ShellNavigationItem;
@@ -273,8 +276,8 @@ namespace SMS_UWP.Views
                         {
                             if (obj != null)
                             {
-                                    bindings.Update_SelectedVis(obj.SelectedVis, DATA_CHANGED);
-                                    bindings.Update_SelectedForeground(obj.SelectedForeground, DATA_CHANGED);
+                                bindings.Update_SelectedVis(obj.SelectedVis, DATA_CHANGED);
+                                bindings.Update_SelectedForeground(obj.SelectedForeground, DATA_CHANGED);
                             }
                         }
                         else
@@ -306,7 +309,7 @@ namespace SMS_UWP.Views
                 public void UpdateChildListeners_(global::SMS_UWP.ViewModels.ShellNavigationItem obj)
                 {
                     ShellPage_obj2_Bindings bindings;
-                    if(WeakRefToBindingObj.TryGetTarget(out bindings))
+                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
                     {
                         if (bindings.dataRoot != null)
                         {
@@ -322,6 +325,7 @@ namespace SMS_UWP.Views
             }
         }
 
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         private class ShellPage_obj1_Bindings :
             global::Windows.UI.Xaml.Markup.IComponentConnector,
             IShellPage_Bindings
@@ -358,7 +362,7 @@ namespace SMS_UWP.Views
                                 if (this.initialized)
                                 {
                                     // Update Two Way binding
-                                    this.dataRoot.ViewModel.IsPaneOpen = (this.obj6).IsPaneOpen;
+                                    this.dataRoot.ViewModel.IsPaneOpen = this.obj6.IsPaneOpen;
                                 }
                             });
                         break;
@@ -398,12 +402,15 @@ namespace SMS_UWP.Views
                 this.initialized = false;
             }
 
-            // ShellPage_obj1_Bindings
-
-            public void SetDataRoot(global::SMS_UWP.Views.ShellPage newDataRoot)
+            public bool SetDataRoot(global::System.Object newDataRoot)
             {
                 this.bindingsTracking.ReleaseAllListeners();
-                this.dataRoot = newDataRoot;
+                if (newDataRoot != null)
+                {
+                    this.dataRoot = (global::SMS_UWP.Views.ShellPage)newDataRoot;
+                    return true;
+                }
+                return false;
             }
 
             public void Loading(global::Windows.UI.Xaml.FrameworkElement src, object data)
@@ -443,35 +450,35 @@ namespace SMS_UWP.Views
             }
             private void Update_ViewModel_DisplayMode(global::Windows.UI.Xaml.Controls.SplitViewDisplayMode obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
                     XamlBindingSetters.Set_Microsoft_Toolkit_Uwp_UI_Controls_HamburgerMenu_DisplayMode(this.obj6, obj);
                 }
             }
             private void Update_ViewModel_IsPaneOpen(global::System.Boolean obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
                     XamlBindingSetters.Set_Microsoft_Toolkit_Uwp_UI_Controls_HamburgerMenu_IsPaneOpen(this.obj6, obj);
                 }
             }
             private void Update_ViewModel_PrimaryItems(global::System.Collections.ObjectModel.ObservableCollection<global::SMS_UWP.ViewModels.ShellNavigationItem> obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED )) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
                     XamlBindingSetters.Set_Microsoft_Toolkit_Uwp_UI_Controls_HamburgerMenu_ItemsSource(this.obj6, obj, null);
                 }
             }
             private void Update_ViewModel_SecondaryItems(global::System.Collections.ObjectModel.ObservableCollection<global::SMS_UWP.ViewModels.ShellNavigationItem> obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED )) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
                     XamlBindingSetters.Set_Microsoft_Toolkit_Uwp_UI_Controls_HamburgerMenu_OptionsItemsSource(this.obj6, obj, null);
                 }
             }
             private void Update_ViewModel_ItemSelectedCommand(global::System.Windows.Input.ICommand obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED )) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
                     XamlBindingSetters.Set_Microsoft_Xaml_Interactions_Core_InvokeCommandAction_Command(this.obj7, obj, null);
                     XamlBindingSetters.Set_Microsoft_Xaml_Interactions_Core_InvokeCommandAction_Command(this.obj8, obj, null);
@@ -479,15 +486,16 @@ namespace SMS_UWP.Views
             }
             private void Update_ViewModel_StateChangedCommand(global::System.Windows.Input.ICommand obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED )) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
                     XamlBindingSetters.Set_Microsoft_Xaml_Interactions_Core_InvokeCommandAction_Command(this.obj11, obj, null);
                 }
             }
 
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
             private class ShellPage_obj1_BindingsTracking
             {
-                global::System.WeakReference<ShellPage_obj1_Bindings> WeakRefToBindingObj; 
+                private global::System.WeakReference<ShellPage_obj1_Bindings> WeakRefToBindingObj; 
 
                 public ShellPage_obj1_BindingsTracking(ShellPage_obj1_Bindings obj)
                 {
@@ -502,7 +510,7 @@ namespace SMS_UWP.Views
                 public void PropertyChanged_ViewModel(object sender, global::System.ComponentModel.PropertyChangedEventArgs e)
                 {
                     ShellPage_obj1_Bindings bindings;
-                    if(WeakRefToBindingObj.TryGetTarget(out bindings))
+                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
                     {
                         string propName = e.PropertyName;
                         global::SMS_UWP.ViewModels.ShellViewModel obj = sender as global::SMS_UWP.ViewModels.ShellViewModel;
@@ -510,8 +518,8 @@ namespace SMS_UWP.Views
                         {
                             if (obj != null)
                             {
-                                    bindings.Update_ViewModel_DisplayMode(obj.DisplayMode, DATA_CHANGED);
-                                    bindings.Update_ViewModel_IsPaneOpen(obj.IsPaneOpen, DATA_CHANGED);
+                                bindings.Update_ViewModel_DisplayMode(obj.DisplayMode, DATA_CHANGED);
+                                bindings.Update_ViewModel_IsPaneOpen(obj.IsPaneOpen, DATA_CHANGED);
                             }
                         }
                         else
@@ -626,7 +634,7 @@ namespace SMS_UWP.Views
                     global::Windows.UI.Xaml.Controls.Grid element2 = (global::Windows.UI.Xaml.Controls.Grid)target;
                     ShellPage_obj2_Bindings bindings = new ShellPage_obj2_Bindings();
                     returnValue = bindings;
-                    bindings.SetDataRoot((global::SMS_UWP.ViewModels.ShellNavigationItem) element2.DataContext);
+                    bindings.SetDataRoot(element2.DataContext);
                     element2.DataContextChanged += bindings.DataContextChangedHandler;
                     global::Windows.UI.Xaml.DataTemplate.SetExtensionInstance(element2, bindings);
                 }

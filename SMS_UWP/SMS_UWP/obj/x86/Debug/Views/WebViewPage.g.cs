@@ -15,7 +15,8 @@ namespace SMS_UWP.Views
         global::Windows.UI.Xaml.Markup.IComponentConnector,
         global::Windows.UI.Xaml.Markup.IComponentConnector2
     {
-        internal class XamlBindingSetters
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
+        private static class XamlBindingSetters
         {
             public static void Set_Windows_UI_Xaml_Controls_WebView_Source(global::Windows.UI.Xaml.Controls.WebView obj, global::System.Uri value, string targetNullValue)
             {
@@ -51,6 +52,7 @@ namespace SMS_UWP.Views
             }
         };
 
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         private class WebViewPage_obj1_Bindings :
             global::Windows.UI.Xaml.Markup.IComponentConnector,
             IWebViewPage_Bindings
@@ -146,12 +148,15 @@ namespace SMS_UWP.Views
                 this.initialized = false;
             }
 
-            // WebViewPage_obj1_Bindings
-
-            public void SetDataRoot(global::SMS_UWP.Views.WebViewPage newDataRoot)
+            public bool SetDataRoot(global::System.Object newDataRoot)
             {
                 this.bindingsTracking.ReleaseAllListeners();
-                this.dataRoot = newDataRoot;
+                if (newDataRoot != null)
+                {
+                    this.dataRoot = (global::SMS_UWP.Views.WebViewPage)newDataRoot;
+                    return true;
+                }
+                return false;
             }
 
             public void Loading(global::Windows.UI.Xaml.FrameworkElement src, object data)
@@ -208,85 +213,86 @@ namespace SMS_UWP.Views
             }
             private void Update_ViewModel_Source(global::System.Uri obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_WebView_Source(this.obj2, obj, null);
                 }
             }
             private void Update_ViewModel_IsLoadingVisibility(global::Windows.UI.Xaml.Visibility obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_UIElement_Visibility(this.obj3, obj);
                 }
             }
             private void Update_ViewModel_FailedMesageVisibility(global::Windows.UI.Xaml.Visibility obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_UIElement_Visibility(this.obj4, obj);
                 }
             }
             private void Update_ViewModel_RefreshCommand(global::System.Windows.Input.ICommand obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED )) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Primitives_ButtonBase_Command(this.obj5, obj, null);
                 }
             }
             private void Update_ViewModel_OpenInBrowserCommand(global::System.Windows.Input.ICommand obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED )) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Primitives_ButtonBase_Command(this.obj6, obj, null);
                 }
             }
             private void Update_ViewModel_BrowserBackCommand(global::System.Windows.Input.ICommand obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Primitives_ButtonBase_Command(this.obj7, obj, null);
                 }
             }
             private void Update_ViewModel_BrowserForwardCommand(global::System.Windows.Input.ICommand obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Primitives_ButtonBase_Command(this.obj8, obj, null);
                 }
             }
             private void Update_ViewModel_RetryCommand(global::System.Windows.Input.ICommand obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED )) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Primitives_ButtonBase_Command(this.obj9, obj, null);
                 }
             }
             private void Update_ViewModel_IsLoading(global::System.Boolean obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_ProgressRing_IsActive(this.obj10, obj);
                 }
             }
             private void Update_ViewModel_NavFailedCommand(global::System.Windows.Input.ICommand obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED )) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
                     XamlBindingSetters.Set_Microsoft_Xaml_Interactions_Core_InvokeCommandAction_Command(this.obj11, obj, null);
                 }
             }
             private void Update_ViewModel_NavCompletedCommand(global::System.Windows.Input.ICommand obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED )) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
                     XamlBindingSetters.Set_Microsoft_Xaml_Interactions_Core_InvokeCommandAction_Command(this.obj12, obj, null);
                 }
             }
 
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
             private class WebViewPage_obj1_BindingsTracking
             {
-                global::System.WeakReference<WebViewPage_obj1_Bindings> WeakRefToBindingObj; 
+                private global::System.WeakReference<WebViewPage_obj1_Bindings> WeakRefToBindingObj; 
 
                 public WebViewPage_obj1_BindingsTracking(WebViewPage_obj1_Bindings obj)
                 {
@@ -301,7 +307,7 @@ namespace SMS_UWP.Views
                 public void PropertyChanged_ViewModel(object sender, global::System.ComponentModel.PropertyChangedEventArgs e)
                 {
                     WebViewPage_obj1_Bindings bindings;
-                    if(WeakRefToBindingObj.TryGetTarget(out bindings))
+                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
                     {
                         string propName = e.PropertyName;
                         global::SMS_UWP.ViewModels.WebViewViewModel obj = sender as global::SMS_UWP.ViewModels.WebViewViewModel;
@@ -309,12 +315,12 @@ namespace SMS_UWP.Views
                         {
                             if (obj != null)
                             {
-                                    bindings.Update_ViewModel_Source(obj.Source, DATA_CHANGED);
-                                    bindings.Update_ViewModel_IsLoadingVisibility(obj.IsLoadingVisibility, DATA_CHANGED);
-                                    bindings.Update_ViewModel_FailedMesageVisibility(obj.FailedMesageVisibility, DATA_CHANGED);
-                                    bindings.Update_ViewModel_BrowserBackCommand(obj.BrowserBackCommand, DATA_CHANGED);
-                                    bindings.Update_ViewModel_BrowserForwardCommand(obj.BrowserForwardCommand, DATA_CHANGED);
-                                    bindings.Update_ViewModel_IsLoading(obj.IsLoading, DATA_CHANGED);
+                                bindings.Update_ViewModel_Source(obj.Source, DATA_CHANGED);
+                                bindings.Update_ViewModel_IsLoadingVisibility(obj.IsLoadingVisibility, DATA_CHANGED);
+                                bindings.Update_ViewModel_FailedMesageVisibility(obj.FailedMesageVisibility, DATA_CHANGED);
+                                bindings.Update_ViewModel_BrowserBackCommand(obj.BrowserBackCommand, DATA_CHANGED);
+                                bindings.Update_ViewModel_BrowserForwardCommand(obj.BrowserForwardCommand, DATA_CHANGED);
+                                bindings.Update_ViewModel_IsLoading(obj.IsLoading, DATA_CHANGED);
                             }
                         }
                         else

@@ -17,7 +17,6 @@
         <TextBox Name="arduinoIPTextBox"  Header="IP"  Text="192.168.2.109" PlaceholderText="请输入目标IP"/>
         <TextBox Name="arduinoPortTextBox" Header="端口" Text="1000" PlaceholderText="请输入目标端口号"/>
         <CheckBox Name="arduinoSaveCheckBox" Content="保存此次配置信息" IsChecked="True" />
-
         <TextBlock x:Name="addInfo"/>
     </StackPanel>
 </ContentDialog>

@@ -163,12 +163,13 @@ namespace SMS_UWP.ViewModels
             _primaryItems.Clear();
             _secondaryItems.Clear();
 
-            // TODO WTS: Change the symbols for each item as appropriate for your app
+            // TODO WTS: 可查看Symbol
+            //Change the symbols for each item as appropriate for your app
             // More on Segoe UI Symbol icons: https://docs.microsoft.com/windows/uwp/style/segoe-ui-symbol-font
             // Or to use an IconElement instead of a Symbol see https://github.com/Microsoft/WindowsTemplateStudio/blob/master/docs/projectTypes/navigationpane.md
             // Edit String/en-US/Resources.resw: Add a menu item title for each page
             _primaryItems.Add(new ShellNavigationItem("Shell_Main".GetLocalized(), Symbol.Document, typeof(MainViewModel).FullName));
-            _primaryItems.Add(new ShellNavigationItem("Shell_ArduinoManage".GetLocalized(), Symbol.Document, typeof(ArduinoManageViewModel).FullName));
+            _primaryItems.Add(new ShellNavigationItem("Shell_ArduinoManage".GetLocalized(), Symbol.Document, typeof(VM_AduMGMT).FullName));
             _primaryItems.Add(new ShellNavigationItem("Shell_Tabbed".GetLocalized(), Symbol.Document, typeof(TabbedViewModel).FullName));
             _primaryItems.Add(new ShellNavigationItem("Shell_MediaPlayer".GetLocalized(), Symbol.Document, typeof(MediaPlayerViewModel).FullName));
             _primaryItems.Add(new ShellNavigationItem("Shell_WebView".GetLocalized(), Symbol.Document, typeof(WebViewViewModel).FullName));

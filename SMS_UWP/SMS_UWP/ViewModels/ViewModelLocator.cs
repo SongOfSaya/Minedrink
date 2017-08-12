@@ -20,7 +20,7 @@ namespace SMS_UWP.ViewModels
             SimpleIoc.Default.Register(() => _navigationService);
             SimpleIoc.Default.Register<ShellViewModel>();
             Register<MainViewModel, MainPage>();
-            Register<ArduinoManageViewModel, ArduinoManagePage>();
+            Register<VM_AduMGMT, V_AduMGMT_P>();
             Register<ArduinoManageDetailViewModel, ArduinoManageDetailPage>();
             Register<TabbedViewModel, TabbedPage>();
             Register<MediaPlayerViewModel, MediaPlayerPage>();
@@ -47,7 +47,7 @@ namespace SMS_UWP.ViewModels
 
         public ArduinoManageDetailViewModel ArduinoManageDetailViewModel => ServiceLocator.Current.GetInstance<ArduinoManageDetailViewModel>();
 
-        public ArduinoManageViewModel ArduinoManageViewModel => ServiceLocator.Current.GetInstance<ArduinoManageViewModel>();
+        public VM_AduMGMT ArduinoManageViewModel => ServiceLocator.Current.GetInstance<VM_AduMGMT>();
 
         public MainViewModel MainViewModel => ServiceLocator.Current.GetInstance<MainViewModel>();
 

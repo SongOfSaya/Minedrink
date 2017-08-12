@@ -15,7 +15,8 @@ namespace SMS_UWP.Views
         global::Windows.UI.Xaml.Markup.IComponentConnector,
         global::Windows.UI.Xaml.Markup.IComponentConnector2
     {
-        internal class XamlBindingSetters
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
+        private static class XamlBindingSetters
         {
             public static void Set_SMS_UWP_Views_ArduinoManageDetailControl_MasterMenuItem(global::SMS_UWP.Views.ArduinoManageDetailControl obj, global::SMS_UWP.Models.Order value, string targetNullValue)
             {
@@ -35,6 +36,7 @@ namespace SMS_UWP.Views
             }
         };
 
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         private class ArduinoManageDetailPage_obj1_Bindings :
             global::Windows.UI.Xaml.Markup.IComponentConnector,
             IArduinoManageDetailPage_Bindings
@@ -89,11 +91,14 @@ namespace SMS_UWP.Views
             {
             }
 
-            // ArduinoManageDetailPage_obj1_Bindings
-
-            public void SetDataRoot(global::SMS_UWP.Views.ArduinoManageDetailPage newDataRoot)
+            public bool SetDataRoot(global::System.Object newDataRoot)
             {
-                this.dataRoot = newDataRoot;
+                if (newDataRoot != null)
+                {
+                    this.dataRoot = (global::SMS_UWP.Views.ArduinoManageDetailPage)newDataRoot;
+                    return true;
+                }
+                return false;
             }
 
             public void Loading(global::Windows.UI.Xaml.FrameworkElement src, object data)
@@ -125,14 +130,14 @@ namespace SMS_UWP.Views
             }
             private void Update_ViewModel_Item(global::SMS_UWP.Models.Order obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED )) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
                     XamlBindingSetters.Set_SMS_UWP_Views_ArduinoManageDetailControl_MasterMenuItem(this.obj3, obj, null);
                 }
             }
             private void Update_ViewModel_StateChangedCommand(global::System.Windows.Input.ICommand obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED )) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
                     XamlBindingSetters.Set_Microsoft_Xaml_Interactions_Core_InvokeCommandAction_Command(this.obj5, obj, null);
                 }

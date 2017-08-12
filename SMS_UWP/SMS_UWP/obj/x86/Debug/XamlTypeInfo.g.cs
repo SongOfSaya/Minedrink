@@ -156,7 +156,7 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[238];
+            _typeNameTable = new string[240];
             _typeNameTable[0] = "SMS_UWP.ViewModels.ViewModelLocator";
             _typeNameTable[1] = "Object";
             _typeNameTable[2] = "SMS_UWP.ViewModels.SettingsViewModel";
@@ -169,234 +169,236 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
             _typeNameTable[9] = "SMS_UWP.ViewModels.MediaPlayerViewModel";
             _typeNameTable[10] = "SMS_UWP.ViewModels.TabbedViewModel";
             _typeNameTable[11] = "SMS_UWP.ViewModels.ArduinoManageDetailViewModel";
-            _typeNameTable[12] = "SMS_UWP.ViewModels.ArduinoManageViewModel";
+            _typeNameTable[12] = "SMS_UWP.ViewModels.VM_AduMGMT";
             _typeNameTable[13] = "SMS_UWP.ViewModels.MainViewModel";
             _typeNameTable[14] = "SMS_UWP.ViewModels.ShellViewModel";
-            _typeNameTable[15] = "SMS_UWP.Views.ArduinoManageDetailControl";
-            _typeNameTable[16] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[17] = "SMS_UWP.Models.Order";
-            _typeNameTable[18] = "Microsoft.Xaml.Interactivity.Interaction";
-            _typeNameTable[19] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
-            _typeNameTable[20] = "Windows.UI.Xaml.DependencyObjectCollection";
-            _typeNameTable[21] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[22] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
-            _typeNameTable[23] = "Microsoft.Xaml.Interactivity.Trigger";
-            _typeNameTable[24] = "Microsoft.Xaml.Interactivity.Behavior";
-            _typeNameTable[25] = "Microsoft.Xaml.Interactivity.ActionCollection";
-            _typeNameTable[26] = "String";
-            _typeNameTable[27] = "Microsoft.Xaml.Interactions.Core.InvokeCommandAction";
-            _typeNameTable[28] = "System.Windows.Input.ICommand";
-            _typeNameTable[29] = "Windows.UI.Xaml.Data.IValueConverter";
-            _typeNameTable[30] = "SMS_UWP.Views.ArduinoManageDetailPage";
-            _typeNameTable[31] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[32] = "SMS_UWP.Views.ArduinoManagePage";
-            _typeNameTable[33] = "Telerik.UI.Xaml.Controls.Chart.RadCartesianChart";
-            _typeNameTable[34] = "Telerik.UI.Xaml.Controls.Chart.RadChartBase";
-            _typeNameTable[35] = "Telerik.UI.Xaml.Controls.Chart.PresenterBase";
-            _typeNameTable[36] = "Telerik.UI.Xaml.Controls.RadControl";
-            _typeNameTable[37] = "Windows.UI.Xaml.Controls.Control";
-            _typeNameTable[38] = "Telerik.UI.Xaml.Controls.Chart.CartesianSeriesCollection";
-            _typeNameTable[39] = "Telerik.UI.Xaml.Controls.Chart.PresenterCollection`1<Telerik.UI.Xaml.Controls.Chart.CartesianSeries>";
-            _typeNameTable[40] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.CartesianSeries>";
-            _typeNameTable[41] = "Telerik.UI.Xaml.Controls.Chart.CartesianSeries";
-            _typeNameTable[42] = "Telerik.UI.Xaml.Controls.Chart.PointTemplateSeries";
-            _typeNameTable[43] = "Telerik.UI.Xaml.Controls.Chart.ChartSeries";
-            _typeNameTable[44] = "Telerik.UI.Xaml.Controls.Chart.ChartElementPresenter";
-            _typeNameTable[45] = "Telerik.UI.Xaml.Controls.Chart.CartesianAxis";
-            _typeNameTable[46] = "Telerik.UI.Xaml.Controls.Chart.LineAxis";
-            _typeNameTable[47] = "Telerik.UI.Xaml.Controls.Chart.Axis";
-            _typeNameTable[48] = "Windows.UI.Xaml.Style";
-            _typeNameTable[49] = "Windows.UI.Xaml.DataTemplate";
-            _typeNameTable[50] = "Windows.UI.Xaml.Controls.DataTemplateSelector";
-            _typeNameTable[51] = "System.Collections.ObjectModel.ObservableCollection`1<Windows.UI.Xaml.DataTemplate>";
-            _typeNameTable[52] = "System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.DataTemplate>";
-            _typeNameTable[53] = "Boolean";
-            _typeNameTable[54] = "Int32";
-            _typeNameTable[55] = "System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>";
-            _typeNameTable[56] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>";
-            _typeNameTable[57] = "Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition";
-            _typeNameTable[58] = "Telerik.UI.Xaml.Controls.Chart.DataPointBinding";
-            _typeNameTable[59] = "Windows.UI.Xaml.Thickness";
-            _typeNameTable[60] = "Windows.UI.Xaml.HorizontalAlignment";
-            _typeNameTable[61] = "Windows.UI.Xaml.VerticalAlignment";
-            _typeNameTable[62] = "Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelStrategy";
-            _typeNameTable[63] = "System.Collections.IEnumerable";
-            _typeNameTable[64] = "Telerik.UI.Xaml.Controls.Chart.IndicatorCollection";
-            _typeNameTable[65] = "Telerik.UI.Xaml.Controls.Chart.PresenterCollection`1<Telerik.UI.Xaml.Controls.Chart.IndicatorBase>";
-            _typeNameTable[66] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.IndicatorBase>";
-            _typeNameTable[67] = "Telerik.UI.Xaml.Controls.Chart.IndicatorBase";
-            _typeNameTable[68] = "Telerik.Charting.DataPointCollection`1<Telerik.Charting.CategoricalDataPoint>";
-            _typeNameTable[69] = "Telerik.Core.ElementCollection`1<Telerik.Charting.CategoricalDataPoint>";
-            _typeNameTable[70] = "System.Collections.ObjectModel.Collection`1<Telerik.Charting.CategoricalDataPoint>";
-            _typeNameTable[71] = "Telerik.Charting.CategoricalDataPoint";
-            _typeNameTable[72] = "Telerik.Charting.CategoricalDataPointBase";
-            _typeNameTable[73] = "Telerik.Charting.DataPoint";
-            _typeNameTable[74] = "Telerik.Core.Node";
-            _typeNameTable[75] = "Telerik.Core.PropertyBagObject";
-            _typeNameTable[76] = "Double";
-            _typeNameTable[77] = "Telerik.Core.IElementPresenter";
-            _typeNameTable[78] = "Telerik.Core.NodeState";
-            _typeNameTable[79] = "System.Enum";
-            _typeNameTable[80] = "System.ValueType";
-            _typeNameTable[81] = "Telerik.Core.RadRect";
-            _typeNameTable[82] = "Telerik.Core.Element";
-            _typeNameTable[83] = "Telerik.UI.Xaml.Controls.Chart.CartesianAnnotationCollection";
-            _typeNameTable[84] = "Telerik.UI.Xaml.Controls.Chart.PresenterCollection`1<Telerik.UI.Xaml.Controls.Chart.CartesianChartAnnotation>";
-            _typeNameTable[85] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.CartesianChartAnnotation>";
-            _typeNameTable[86] = "Telerik.UI.Xaml.Controls.Chart.CartesianChartAnnotation";
-            _typeNameTable[87] = "Telerik.UI.Xaml.Controls.Chart.ChartAnnotation";
-            _typeNameTable[88] = "Telerik.UI.Xaml.Controls.Chart.CartesianChartGrid";
-            _typeNameTable[89] = "Telerik.UI.Xaml.Controls.Chart.ChartGrid";
-            _typeNameTable[90] = "Telerik.UI.Xaml.Controls.Chart.ChartSeriesProvider";
-            _typeNameTable[91] = "Telerik.UI.Xaml.Controls.Chart.ChartPalette";
-            _typeNameTable[92] = "Telerik.UI.Xaml.Controls.Chart.PredefinedPaletteName";
-            _typeNameTable[93] = "Telerik.UI.Xaml.Controls.Chart.ContainerVisualsFactory";
-            _typeNameTable[94] = "Telerik.UI.Xaml.Controls.Chart.ChartBehaviorCollection";
-            _typeNameTable[95] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.ChartBehavior>";
-            _typeNameTable[96] = "Telerik.UI.Xaml.Controls.Chart.ChartBehavior";
-            _typeNameTable[97] = "Windows.Foundation.Size";
-            _typeNameTable[98] = "Windows.Foundation.Point";
-            _typeNameTable[99] = "Telerik.UI.Xaml.Controls.Chart.CategoricalAxis";
-            _typeNameTable[100] = "Telerik.Charting.AxisPlotMode";
-            _typeNameTable[101] = "Telerik.Charting.AxisHorizontalLocation";
-            _typeNameTable[102] = "Telerik.Charting.AxisVerticalLocation";
-            _typeNameTable[103] = "Telerik.Charting.IContentFormatter";
-            _typeNameTable[104] = "Telerik.Charting.ILabelCreator";
-            _typeNameTable[105] = "Telerik.Charting.AxisLastLabelVisibility";
-            _typeNameTable[106] = "Telerik.Charting.AxisLabelFitMode";
-            _typeNameTable[107] = "Telerik.UI.Xaml.Controls.Chart.LinearAxis";
-            _typeNameTable[108] = "Telerik.UI.Xaml.Controls.Chart.NumericalAxis";
-            _typeNameTable[109] = "Telerik.Charting.NumericalAxisRangeExtendDirection";
-            _typeNameTable[110] = "Telerik.Core.ValueRange`1<Double>";
-            _typeNameTable[111] = "Telerik.UI.Xaml.Controls.Chart.BarSeries";
-            _typeNameTable[112] = "Telerik.UI.Xaml.Controls.Chart.CategoricalSeries";
-            _typeNameTable[113] = "Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase";
-            _typeNameTable[114] = "Telerik.UI.Xaml.Controls.Chart.SeriesPaletteMode";
-            _typeNameTable[115] = "Telerik.Charting.ChartSeriesCombineMode";
-            _typeNameTable[116] = "Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding";
-            _typeNameTable[117] = "SMS_UWP.Views.ChartPage";
-            _typeNameTable[118] = "Telerik.UI.Xaml.Controls.Grid.RadDataGrid";
-            _typeNameTable[119] = "Telerik.UI.Xaml.Controls.Grid.Primitives.ColumnDataOperationsMode";
-            _typeNameTable[120] = "Telerik.UI.Xaml.Controls.Grid.DataGridColumnCollection";
-            _typeNameTable[121] = "System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Grid.DataGridColumn>";
-            _typeNameTable[122] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Grid.DataGridColumn>";
-            _typeNameTable[123] = "Telerik.UI.Xaml.Controls.Grid.DataGridColumn";
-            _typeNameTable[124] = "Telerik.UI.Xaml.Controls.Primitives.RadDependencyObject";
-            _typeNameTable[125] = "Windows.UI.Xaml.Controls.StyleSelector";
-            _typeNameTable[126] = "Telerik.UI.Xaml.Controls.Grid.DataGridColumnSizeMode";
-            _typeNameTable[127] = "Telerik.UI.Xaml.Controls.Grid.SortDirection";
-            _typeNameTable[128] = "Telerik.UI.Xaml.Controls.Grid.DataGridUserFilterMode";
-            _typeNameTable[129] = "Telerik.UI.Xaml.Controls.Grid.DataGridUserColumnReorderMode";
-            _typeNameTable[130] = "Telerik.UI.Xaml.Controls.Grid.DataGridColumnResizeHandleDisplayMode";
-            _typeNameTable[131] = "Telerik.UI.Xaml.Controls.Grid.DataGridUserSortMode";
-            _typeNameTable[132] = "Telerik.UI.Xaml.Controls.Grid.DataGridUserGroupMode";
-            _typeNameTable[133] = "Telerik.UI.Xaml.Controls.Grid.DataGridGroupHeaderDisplayMode";
-            _typeNameTable[134] = "Telerik.UI.Xaml.Controls.Primitives.CommandCollection`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>";
-            _typeNameTable[135] = "Telerik.UI.Xaml.Controls.Primitives.AttachableObjectCollection`2<Telerik.UI.Xaml.Controls.Grid.RadDataGrid, Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>>";
-            _typeNameTable[136] = "System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>>";
-            _typeNameTable[137] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>>";
-            _typeNameTable[138] = "Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>";
-            _typeNameTable[139] = "Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>";
-            _typeNameTable[140] = "Telerik.UI.Xaml.Controls.Grid.Commands.CommandService";
-            _typeNameTable[141] = "Telerik.UI.Xaml.Controls.Primitives.CommandServiceBase`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>";
-            _typeNameTable[142] = "Telerik.UI.Xaml.Controls.Primitives.ServiceBase`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>";
-            _typeNameTable[143] = "Telerik.UI.Xaml.Controls.Grid.DataGridDragBehavior";
-            _typeNameTable[144] = "Telerik.UI.Xaml.Controls.Grid.GroupPanelPosition";
-            _typeNameTable[145] = "Telerik.Core.Data.BatchLoadingMode";
-            _typeNameTable[146] = "Telerik.Data.Core.SortDescriptorCollection";
-            _typeNameTable[147] = "Telerik.Data.Core.DataDescriptorCollection`1<Telerik.Data.Core.SortDescriptorBase>";
-            _typeNameTable[148] = "System.Collections.ObjectModel.ObservableCollection`1<Telerik.Data.Core.SortDescriptorBase>";
-            _typeNameTable[149] = "System.Collections.ObjectModel.Collection`1<Telerik.Data.Core.SortDescriptorBase>";
-            _typeNameTable[150] = "Telerik.Data.Core.SortDescriptorBase";
-            _typeNameTable[151] = "Telerik.Data.Core.OrderedDescriptor";
-            _typeNameTable[152] = "Telerik.Data.Core.DataDescriptor";
-            _typeNameTable[153] = "Telerik.Core.ViewModelBase";
-            _typeNameTable[154] = "System.Collections.IComparer";
-            _typeNameTable[155] = "Telerik.Data.Core.SortOrder";
-            _typeNameTable[156] = "Telerik.Data.Core.GroupDescriptorCollection";
-            _typeNameTable[157] = "Telerik.Data.Core.DataDescriptorCollection`1<Telerik.Data.Core.GroupDescriptorBase>";
-            _typeNameTable[158] = "System.Collections.ObjectModel.ObservableCollection`1<Telerik.Data.Core.GroupDescriptorBase>";
-            _typeNameTable[159] = "System.Collections.ObjectModel.Collection`1<Telerik.Data.Core.GroupDescriptorBase>";
-            _typeNameTable[160] = "Telerik.Data.Core.GroupDescriptorBase";
-            _typeNameTable[161] = "Telerik.Data.Core.FilterDescriptorCollection";
-            _typeNameTable[162] = "Telerik.Data.Core.DataDescriptorCollection`1<Telerik.Data.Core.FilterDescriptorBase>";
-            _typeNameTable[163] = "System.Collections.ObjectModel.ObservableCollection`1<Telerik.Data.Core.FilterDescriptorBase>";
-            _typeNameTable[164] = "System.Collections.ObjectModel.Collection`1<Telerik.Data.Core.FilterDescriptorBase>";
-            _typeNameTable[165] = "Telerik.Data.Core.FilterDescriptorBase";
-            _typeNameTable[166] = "Telerik.Data.Core.AggregateDescriptorCollection";
-            _typeNameTable[167] = "Telerik.Data.Core.DataDescriptorCollection`1<Telerik.Data.Core.AggregateDescriptorBase>";
-            _typeNameTable[168] = "System.Collections.ObjectModel.ObservableCollection`1<Telerik.Data.Core.AggregateDescriptorBase>";
-            _typeNameTable[169] = "System.Collections.ObjectModel.Collection`1<Telerik.Data.Core.AggregateDescriptorBase>";
-            _typeNameTable[170] = "Telerik.Data.Core.AggregateDescriptorBase";
-            _typeNameTable[171] = "Windows.UI.Xaml.Media.Brush";
-            _typeNameTable[172] = "Telerik.UI.Xaml.Controls.Primitives.ObjectSelector`1<Windows.UI.Xaml.Media.Brush>";
-            _typeNameTable[173] = "Telerik.UI.Xaml.Controls.Primitives.GridLinesVisibility";
-            _typeNameTable[174] = "Telerik.UI.Xaml.Controls.Grid.DataGridUserEditMode";
-            _typeNameTable[175] = "Telerik.UI.Xaml.Controls.Grid.IGridExternalEditor";
-            _typeNameTable[176] = "Telerik.UI.Xaml.Controls.Grid.HitTestService";
-            _typeNameTable[177] = "Telerik.UI.Xaml.Controls.Grid.DataGridSelectionUnit";
-            _typeNameTable[178] = "Telerik.UI.Xaml.Controls.Grid.DataGridSelectionMode";
-            _typeNameTable[179] = "System.Collections.ObjectModel.ObservableCollection`1<Object>";
-            _typeNameTable[180] = "System.Collections.ObjectModel.Collection`1<Object>";
-            _typeNameTable[181] = "SMS_UWP.Views.GridPage";
-            _typeNameTable[182] = "SMS_UWP.Views.MainPage";
-            _typeNameTable[183] = "SMS_UWP.Views.MapPage";
-            _typeNameTable[184] = "SMS_UWP.Views.MediaPlayerPage";
-            _typeNameTable[185] = "SMS_UWP.Helpers.EnumToBooleanConverter";
-            _typeNameTable[186] = "System.Type";
-            _typeNameTable[187] = "SMS_UWP.Views.SettingsPage";
-            _typeNameTable[188] = "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu";
-            _typeNameTable[189] = "Windows.UI.Xaml.Controls.ContentControl";
-            _typeNameTable[190] = "Windows.UI.Xaml.Controls.SplitViewDisplayMode";
-            _typeNameTable[191] = "Windows.UI.Xaml.Controls.ItemCollection";
-            _typeNameTable[192] = "Windows.UI.Xaml.Visibility";
-            _typeNameTable[193] = "Windows.UI.Xaml.Controls.SplitViewPanePlacement";
-            _typeNameTable[194] = "SMS_UWP.Views.ShellPage";
-            _typeNameTable[195] = "SMS_UWP.Views.TabbedPage";
-            _typeNameTable[196] = "SMS_UWP.Views.WebViewPage";
-            _typeNameTable[197] = "Telerik.UI.Drawing.D2DResource";
-            _typeNameTable[198] = "Telerik.UI.Drawing.D2DBrush";
-            _typeNameTable[199] = "Telerik.UI.Drawing.D2DTextStyle";
-            _typeNameTable[200] = "Telerik.UI.Drawing.FontWeightName";
-            _typeNameTable[201] = "Windows.UI.Xaml.TextAlignment";
-            _typeNameTable[202] = "Windows.UI.Text.FontStyle";
-            _typeNameTable[203] = "Telerik.UI.Drawing.D2DShapeStyle";
-            _typeNameTable[204] = "Telerik.UI.Drawing.D2DSolidColorBrush";
-            _typeNameTable[205] = "Windows.UI.Color";
-            _typeNameTable[206] = "Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition";
-            _typeNameTable[207] = "Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelLocation";
-            _typeNameTable[208] = "Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection";
-            _typeNameTable[209] = "System.Collections.Generic.List`1<Windows.UI.Xaml.Media.Brush>";
-            _typeNameTable[210] = "Telerik.UI.Xaml.Controls.Data.HexView.AngledHexLayoutDefinition";
-            _typeNameTable[211] = "Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase";
-            _typeNameTable[212] = "Windows.UI.Xaml.Controls.Orientation";
-            _typeNameTable[213] = "Telerik.UI.Xaml.Controls.Data.HexView.FlatLooseHexLayoutDefinition";
-            _typeNameTable[214] = "Telerik.UI.Xaml.Controls.Data.HexView.FlatTightHexLayoutDefinition";
-            _typeNameTable[215] = "Telerik.UI.Xaml.Controls.Input.HighlightStyle";
-            _typeNameTable[216] = "Windows.UI.Xaml.Media.FontFamily";
-            _typeNameTable[217] = "Telerik.UI.Xaml.Controls.Input.FontWeightName";
-            _typeNameTable[218] = "Telerik.UI.Xaml.Controls.Input.CalendarCellStyle";
-            _typeNameTable[219] = "Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu";
-            _typeNameTable[220] = "System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>";
-            _typeNameTable[221] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>";
-            _typeNameTable[222] = "Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem";
-            _typeNameTable[223] = "Telerik.UI.Xaml.Controls.Primitives.Menu.CommandService";
-            _typeNameTable[224] = "Telerik.UI.Xaml.Controls.Primitives.CommandServiceBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>";
-            _typeNameTable[225] = "Telerik.UI.Xaml.Controls.Primitives.ServiceBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>";
-            _typeNameTable[226] = "Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>";
-            _typeNameTable[227] = "Telerik.UI.Xaml.Controls.Primitives.CommandCollection`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>";
-            _typeNameTable[228] = "Telerik.UI.Xaml.Controls.Primitives.AttachableObjectCollection`2<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu, Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>";
-            _typeNameTable[229] = "System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>";
-            _typeNameTable[230] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>";
-            _typeNameTable[231] = "Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>";
-            _typeNameTable[232] = "Windows.UI.Xaml.FrameworkElement";
-            _typeNameTable[233] = "Telerik.UI.Xaml.Controls.Primitives.RadialMenuTriggerBehavior";
-            _typeNameTable[234] = "Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Windows.UI.Xaml.FrameworkElement>";
-            _typeNameTable[235] = "Telerik.UI.Xaml.Controls.Primitives.RadialMenuAttachTriggers";
-            _typeNameTable[236] = "Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter";
-            _typeNameTable[237] = "Windows.UI.Xaml.Media.Animation.Storyboard";
+            _typeNameTable[15] = "Microsoft.Xaml.Interactivity.Interaction";
+            _typeNameTable[16] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
+            _typeNameTable[17] = "Windows.UI.Xaml.DependencyObjectCollection";
+            _typeNameTable[18] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[19] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
+            _typeNameTable[20] = "Microsoft.Xaml.Interactivity.Trigger";
+            _typeNameTable[21] = "Microsoft.Xaml.Interactivity.Behavior";
+            _typeNameTable[22] = "Microsoft.Xaml.Interactivity.ActionCollection";
+            _typeNameTable[23] = "String";
+            _typeNameTable[24] = "Microsoft.Xaml.Interactions.Core.InvokeCommandAction";
+            _typeNameTable[25] = "System.Windows.Input.ICommand";
+            _typeNameTable[26] = "Windows.UI.Xaml.Data.IValueConverter";
+            _typeNameTable[27] = "SMS_UWP.Views.V_AddAduDialog_C";
+            _typeNameTable[28] = "Windows.UI.Xaml.Controls.ContentDialog";
+            _typeNameTable[29] = "Windows.UI.Xaml.Controls.ContentControl";
+            _typeNameTable[30] = "SMS_UWP.Views.ArduinoManageDetailControl";
+            _typeNameTable[31] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[32] = "SMS_UWP.Models.Order";
+            _typeNameTable[33] = "SMS_UWP.Views.ArduinoManageDetailPage";
+            _typeNameTable[34] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[35] = "SMS_UWP.Views.V_AduMGMT_P";
+            _typeNameTable[36] = "Telerik.UI.Xaml.Controls.Chart.RadCartesianChart";
+            _typeNameTable[37] = "Telerik.UI.Xaml.Controls.Chart.RadChartBase";
+            _typeNameTable[38] = "Telerik.UI.Xaml.Controls.Chart.PresenterBase";
+            _typeNameTable[39] = "Telerik.UI.Xaml.Controls.RadControl";
+            _typeNameTable[40] = "Windows.UI.Xaml.Controls.Control";
+            _typeNameTable[41] = "Telerik.UI.Xaml.Controls.Chart.CartesianSeriesCollection";
+            _typeNameTable[42] = "Telerik.UI.Xaml.Controls.Chart.PresenterCollection`1<Telerik.UI.Xaml.Controls.Chart.CartesianSeries>";
+            _typeNameTable[43] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.CartesianSeries>";
+            _typeNameTable[44] = "Telerik.UI.Xaml.Controls.Chart.CartesianSeries";
+            _typeNameTable[45] = "Telerik.UI.Xaml.Controls.Chart.PointTemplateSeries";
+            _typeNameTable[46] = "Telerik.UI.Xaml.Controls.Chart.ChartSeries";
+            _typeNameTable[47] = "Telerik.UI.Xaml.Controls.Chart.ChartElementPresenter";
+            _typeNameTable[48] = "Telerik.UI.Xaml.Controls.Chart.CartesianAxis";
+            _typeNameTable[49] = "Telerik.UI.Xaml.Controls.Chart.LineAxis";
+            _typeNameTable[50] = "Telerik.UI.Xaml.Controls.Chart.Axis";
+            _typeNameTable[51] = "Windows.UI.Xaml.Style";
+            _typeNameTable[52] = "Windows.UI.Xaml.DataTemplate";
+            _typeNameTable[53] = "Windows.UI.Xaml.Controls.DataTemplateSelector";
+            _typeNameTable[54] = "System.Collections.ObjectModel.ObservableCollection`1<Windows.UI.Xaml.DataTemplate>";
+            _typeNameTable[55] = "System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.DataTemplate>";
+            _typeNameTable[56] = "Boolean";
+            _typeNameTable[57] = "Int32";
+            _typeNameTable[58] = "System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>";
+            _typeNameTable[59] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>";
+            _typeNameTable[60] = "Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition";
+            _typeNameTable[61] = "Telerik.UI.Xaml.Controls.Chart.DataPointBinding";
+            _typeNameTable[62] = "Windows.UI.Xaml.Thickness";
+            _typeNameTable[63] = "Windows.UI.Xaml.HorizontalAlignment";
+            _typeNameTable[64] = "Windows.UI.Xaml.VerticalAlignment";
+            _typeNameTable[65] = "Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelStrategy";
+            _typeNameTable[66] = "System.Collections.IEnumerable";
+            _typeNameTable[67] = "Telerik.UI.Xaml.Controls.Chart.IndicatorCollection";
+            _typeNameTable[68] = "Telerik.UI.Xaml.Controls.Chart.PresenterCollection`1<Telerik.UI.Xaml.Controls.Chart.IndicatorBase>";
+            _typeNameTable[69] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.IndicatorBase>";
+            _typeNameTable[70] = "Telerik.UI.Xaml.Controls.Chart.IndicatorBase";
+            _typeNameTable[71] = "Telerik.Charting.DataPointCollection`1<Telerik.Charting.CategoricalDataPoint>";
+            _typeNameTable[72] = "Telerik.Core.ElementCollection`1<Telerik.Charting.CategoricalDataPoint>";
+            _typeNameTable[73] = "System.Collections.ObjectModel.Collection`1<Telerik.Charting.CategoricalDataPoint>";
+            _typeNameTable[74] = "Telerik.Charting.CategoricalDataPoint";
+            _typeNameTable[75] = "Telerik.Charting.CategoricalDataPointBase";
+            _typeNameTable[76] = "Telerik.Charting.DataPoint";
+            _typeNameTable[77] = "Telerik.Core.Node";
+            _typeNameTable[78] = "Telerik.Core.PropertyBagObject";
+            _typeNameTable[79] = "Double";
+            _typeNameTable[80] = "Telerik.Core.IElementPresenter";
+            _typeNameTable[81] = "Telerik.Core.NodeState";
+            _typeNameTable[82] = "System.Enum";
+            _typeNameTable[83] = "System.ValueType";
+            _typeNameTable[84] = "Telerik.Core.RadRect";
+            _typeNameTable[85] = "Telerik.Core.Element";
+            _typeNameTable[86] = "Telerik.UI.Xaml.Controls.Chart.CartesianAnnotationCollection";
+            _typeNameTable[87] = "Telerik.UI.Xaml.Controls.Chart.PresenterCollection`1<Telerik.UI.Xaml.Controls.Chart.CartesianChartAnnotation>";
+            _typeNameTable[88] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.CartesianChartAnnotation>";
+            _typeNameTable[89] = "Telerik.UI.Xaml.Controls.Chart.CartesianChartAnnotation";
+            _typeNameTable[90] = "Telerik.UI.Xaml.Controls.Chart.ChartAnnotation";
+            _typeNameTable[91] = "Telerik.UI.Xaml.Controls.Chart.CartesianChartGrid";
+            _typeNameTable[92] = "Telerik.UI.Xaml.Controls.Chart.ChartGrid";
+            _typeNameTable[93] = "Telerik.UI.Xaml.Controls.Chart.ChartSeriesProvider";
+            _typeNameTable[94] = "Telerik.UI.Xaml.Controls.Chart.ChartPalette";
+            _typeNameTable[95] = "Telerik.UI.Xaml.Controls.Chart.PredefinedPaletteName";
+            _typeNameTable[96] = "Telerik.UI.Xaml.Controls.Chart.ContainerVisualsFactory";
+            _typeNameTable[97] = "Telerik.UI.Xaml.Controls.Chart.ChartBehaviorCollection";
+            _typeNameTable[98] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.ChartBehavior>";
+            _typeNameTable[99] = "Telerik.UI.Xaml.Controls.Chart.ChartBehavior";
+            _typeNameTable[100] = "Windows.Foundation.Size";
+            _typeNameTable[101] = "Windows.Foundation.Point";
+            _typeNameTable[102] = "Telerik.UI.Xaml.Controls.Chart.CategoricalAxis";
+            _typeNameTable[103] = "Telerik.Charting.AxisPlotMode";
+            _typeNameTable[104] = "Telerik.Charting.AxisHorizontalLocation";
+            _typeNameTable[105] = "Telerik.Charting.AxisVerticalLocation";
+            _typeNameTable[106] = "Telerik.Charting.IContentFormatter";
+            _typeNameTable[107] = "Telerik.Charting.ILabelCreator";
+            _typeNameTable[108] = "Telerik.Charting.AxisLastLabelVisibility";
+            _typeNameTable[109] = "Telerik.Charting.AxisLabelFitMode";
+            _typeNameTable[110] = "Telerik.UI.Xaml.Controls.Chart.LinearAxis";
+            _typeNameTable[111] = "Telerik.UI.Xaml.Controls.Chart.NumericalAxis";
+            _typeNameTable[112] = "Telerik.Charting.NumericalAxisRangeExtendDirection";
+            _typeNameTable[113] = "Telerik.Core.ValueRange`1<Double>";
+            _typeNameTable[114] = "Telerik.UI.Xaml.Controls.Chart.BarSeries";
+            _typeNameTable[115] = "Telerik.UI.Xaml.Controls.Chart.CategoricalSeries";
+            _typeNameTable[116] = "Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase";
+            _typeNameTable[117] = "Telerik.UI.Xaml.Controls.Chart.SeriesPaletteMode";
+            _typeNameTable[118] = "Telerik.Charting.ChartSeriesCombineMode";
+            _typeNameTable[119] = "Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding";
+            _typeNameTable[120] = "SMS_UWP.Views.ChartPage";
+            _typeNameTable[121] = "Telerik.UI.Xaml.Controls.Grid.RadDataGrid";
+            _typeNameTable[122] = "Telerik.UI.Xaml.Controls.Grid.Primitives.ColumnDataOperationsMode";
+            _typeNameTable[123] = "Telerik.UI.Xaml.Controls.Grid.DataGridColumnCollection";
+            _typeNameTable[124] = "System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Grid.DataGridColumn>";
+            _typeNameTable[125] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Grid.DataGridColumn>";
+            _typeNameTable[126] = "Telerik.UI.Xaml.Controls.Grid.DataGridColumn";
+            _typeNameTable[127] = "Telerik.UI.Xaml.Controls.Primitives.RadDependencyObject";
+            _typeNameTable[128] = "Windows.UI.Xaml.Controls.StyleSelector";
+            _typeNameTable[129] = "Telerik.UI.Xaml.Controls.Grid.DataGridColumnSizeMode";
+            _typeNameTable[130] = "Telerik.UI.Xaml.Controls.Grid.SortDirection";
+            _typeNameTable[131] = "Telerik.UI.Xaml.Controls.Grid.DataGridUserFilterMode";
+            _typeNameTable[132] = "Telerik.UI.Xaml.Controls.Grid.DataGridUserColumnReorderMode";
+            _typeNameTable[133] = "Telerik.UI.Xaml.Controls.Grid.DataGridColumnResizeHandleDisplayMode";
+            _typeNameTable[134] = "Telerik.UI.Xaml.Controls.Grid.DataGridUserSortMode";
+            _typeNameTable[135] = "Telerik.UI.Xaml.Controls.Grid.DataGridUserGroupMode";
+            _typeNameTable[136] = "Telerik.UI.Xaml.Controls.Grid.DataGridGroupHeaderDisplayMode";
+            _typeNameTable[137] = "Telerik.UI.Xaml.Controls.Primitives.CommandCollection`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>";
+            _typeNameTable[138] = "Telerik.UI.Xaml.Controls.Primitives.AttachableObjectCollection`2<Telerik.UI.Xaml.Controls.Grid.RadDataGrid, Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>>";
+            _typeNameTable[139] = "System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>>";
+            _typeNameTable[140] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>>";
+            _typeNameTable[141] = "Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>";
+            _typeNameTable[142] = "Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>";
+            _typeNameTable[143] = "Telerik.UI.Xaml.Controls.Grid.Commands.CommandService";
+            _typeNameTable[144] = "Telerik.UI.Xaml.Controls.Primitives.CommandServiceBase`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>";
+            _typeNameTable[145] = "Telerik.UI.Xaml.Controls.Primitives.ServiceBase`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>";
+            _typeNameTable[146] = "Telerik.UI.Xaml.Controls.Grid.DataGridDragBehavior";
+            _typeNameTable[147] = "Telerik.UI.Xaml.Controls.Grid.GroupPanelPosition";
+            _typeNameTable[148] = "Telerik.Core.Data.BatchLoadingMode";
+            _typeNameTable[149] = "Telerik.Data.Core.SortDescriptorCollection";
+            _typeNameTable[150] = "Telerik.Data.Core.DataDescriptorCollection`1<Telerik.Data.Core.SortDescriptorBase>";
+            _typeNameTable[151] = "System.Collections.ObjectModel.ObservableCollection`1<Telerik.Data.Core.SortDescriptorBase>";
+            _typeNameTable[152] = "System.Collections.ObjectModel.Collection`1<Telerik.Data.Core.SortDescriptorBase>";
+            _typeNameTable[153] = "Telerik.Data.Core.SortDescriptorBase";
+            _typeNameTable[154] = "Telerik.Data.Core.OrderedDescriptor";
+            _typeNameTable[155] = "Telerik.Data.Core.DataDescriptor";
+            _typeNameTable[156] = "Telerik.Core.ViewModelBase";
+            _typeNameTable[157] = "System.Collections.IComparer";
+            _typeNameTable[158] = "Telerik.Data.Core.SortOrder";
+            _typeNameTable[159] = "Telerik.Data.Core.GroupDescriptorCollection";
+            _typeNameTable[160] = "Telerik.Data.Core.DataDescriptorCollection`1<Telerik.Data.Core.GroupDescriptorBase>";
+            _typeNameTable[161] = "System.Collections.ObjectModel.ObservableCollection`1<Telerik.Data.Core.GroupDescriptorBase>";
+            _typeNameTable[162] = "System.Collections.ObjectModel.Collection`1<Telerik.Data.Core.GroupDescriptorBase>";
+            _typeNameTable[163] = "Telerik.Data.Core.GroupDescriptorBase";
+            _typeNameTable[164] = "Telerik.Data.Core.FilterDescriptorCollection";
+            _typeNameTable[165] = "Telerik.Data.Core.DataDescriptorCollection`1<Telerik.Data.Core.FilterDescriptorBase>";
+            _typeNameTable[166] = "System.Collections.ObjectModel.ObservableCollection`1<Telerik.Data.Core.FilterDescriptorBase>";
+            _typeNameTable[167] = "System.Collections.ObjectModel.Collection`1<Telerik.Data.Core.FilterDescriptorBase>";
+            _typeNameTable[168] = "Telerik.Data.Core.FilterDescriptorBase";
+            _typeNameTable[169] = "Telerik.Data.Core.AggregateDescriptorCollection";
+            _typeNameTable[170] = "Telerik.Data.Core.DataDescriptorCollection`1<Telerik.Data.Core.AggregateDescriptorBase>";
+            _typeNameTable[171] = "System.Collections.ObjectModel.ObservableCollection`1<Telerik.Data.Core.AggregateDescriptorBase>";
+            _typeNameTable[172] = "System.Collections.ObjectModel.Collection`1<Telerik.Data.Core.AggregateDescriptorBase>";
+            _typeNameTable[173] = "Telerik.Data.Core.AggregateDescriptorBase";
+            _typeNameTable[174] = "Windows.UI.Xaml.Media.Brush";
+            _typeNameTable[175] = "Telerik.UI.Xaml.Controls.Primitives.ObjectSelector`1<Windows.UI.Xaml.Media.Brush>";
+            _typeNameTable[176] = "Telerik.UI.Xaml.Controls.Primitives.GridLinesVisibility";
+            _typeNameTable[177] = "Telerik.UI.Xaml.Controls.Grid.DataGridUserEditMode";
+            _typeNameTable[178] = "Telerik.UI.Xaml.Controls.Grid.IGridExternalEditor";
+            _typeNameTable[179] = "Telerik.UI.Xaml.Controls.Grid.HitTestService";
+            _typeNameTable[180] = "Telerik.UI.Xaml.Controls.Grid.DataGridSelectionUnit";
+            _typeNameTable[181] = "Telerik.UI.Xaml.Controls.Grid.DataGridSelectionMode";
+            _typeNameTable[182] = "System.Collections.ObjectModel.ObservableCollection`1<Object>";
+            _typeNameTable[183] = "System.Collections.ObjectModel.Collection`1<Object>";
+            _typeNameTable[184] = "SMS_UWP.Views.GridPage";
+            _typeNameTable[185] = "SMS_UWP.Views.MainPage";
+            _typeNameTable[186] = "SMS_UWP.Views.MapPage";
+            _typeNameTable[187] = "SMS_UWP.Views.MediaPlayerPage";
+            _typeNameTable[188] = "SMS_UWP.Helpers.EnumToBooleanConverter";
+            _typeNameTable[189] = "System.Type";
+            _typeNameTable[190] = "SMS_UWP.Views.SettingsPage";
+            _typeNameTable[191] = "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu";
+            _typeNameTable[192] = "Windows.UI.Xaml.Controls.SplitViewDisplayMode";
+            _typeNameTable[193] = "Windows.UI.Xaml.Controls.ItemCollection";
+            _typeNameTable[194] = "Windows.UI.Xaml.Visibility";
+            _typeNameTable[195] = "Windows.UI.Xaml.Controls.SplitViewPanePlacement";
+            _typeNameTable[196] = "SMS_UWP.Views.ShellPage";
+            _typeNameTable[197] = "SMS_UWP.Views.TabbedPage";
+            _typeNameTable[198] = "SMS_UWP.Views.WebViewPage";
+            _typeNameTable[199] = "Telerik.UI.Drawing.D2DResource";
+            _typeNameTable[200] = "Telerik.UI.Drawing.D2DBrush";
+            _typeNameTable[201] = "Telerik.UI.Drawing.D2DTextStyle";
+            _typeNameTable[202] = "Telerik.UI.Drawing.FontWeightName";
+            _typeNameTable[203] = "Windows.UI.Xaml.TextAlignment";
+            _typeNameTable[204] = "Windows.UI.Text.FontStyle";
+            _typeNameTable[205] = "Telerik.UI.Drawing.D2DShapeStyle";
+            _typeNameTable[206] = "Telerik.UI.Drawing.D2DSolidColorBrush";
+            _typeNameTable[207] = "Windows.UI.Color";
+            _typeNameTable[208] = "Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition";
+            _typeNameTable[209] = "Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelLocation";
+            _typeNameTable[210] = "Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection";
+            _typeNameTable[211] = "System.Collections.Generic.List`1<Windows.UI.Xaml.Media.Brush>";
+            _typeNameTable[212] = "Telerik.UI.Xaml.Controls.Data.HexView.AngledHexLayoutDefinition";
+            _typeNameTable[213] = "Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase";
+            _typeNameTable[214] = "Windows.UI.Xaml.Controls.Orientation";
+            _typeNameTable[215] = "Telerik.UI.Xaml.Controls.Data.HexView.FlatLooseHexLayoutDefinition";
+            _typeNameTable[216] = "Telerik.UI.Xaml.Controls.Data.HexView.FlatTightHexLayoutDefinition";
+            _typeNameTable[217] = "Telerik.UI.Xaml.Controls.Input.HighlightStyle";
+            _typeNameTable[218] = "Windows.UI.Xaml.Media.FontFamily";
+            _typeNameTable[219] = "Telerik.UI.Xaml.Controls.Input.FontWeightName";
+            _typeNameTable[220] = "Telerik.UI.Xaml.Controls.Input.CalendarCellStyle";
+            _typeNameTable[221] = "Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu";
+            _typeNameTable[222] = "System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>";
+            _typeNameTable[223] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>";
+            _typeNameTable[224] = "Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem";
+            _typeNameTable[225] = "Telerik.UI.Xaml.Controls.Primitives.Menu.CommandService";
+            _typeNameTable[226] = "Telerik.UI.Xaml.Controls.Primitives.CommandServiceBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>";
+            _typeNameTable[227] = "Telerik.UI.Xaml.Controls.Primitives.ServiceBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>";
+            _typeNameTable[228] = "Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>";
+            _typeNameTable[229] = "Telerik.UI.Xaml.Controls.Primitives.CommandCollection`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>";
+            _typeNameTable[230] = "Telerik.UI.Xaml.Controls.Primitives.AttachableObjectCollection`2<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu, Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>";
+            _typeNameTable[231] = "System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>";
+            _typeNameTable[232] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>";
+            _typeNameTable[233] = "Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>";
+            _typeNameTable[234] = "Windows.UI.Xaml.FrameworkElement";
+            _typeNameTable[235] = "Telerik.UI.Xaml.Controls.Primitives.RadialMenuTriggerBehavior";
+            _typeNameTable[236] = "Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Windows.UI.Xaml.FrameworkElement>";
+            _typeNameTable[237] = "Telerik.UI.Xaml.Controls.Primitives.RadialMenuAttachTriggers";
+            _typeNameTable[238] = "Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter";
+            _typeNameTable[239] = "Windows.UI.Xaml.Media.Animation.Storyboard";
 
-            _typeTable = new global::System.Type[238];
+            _typeTable = new global::System.Type[240];
             _typeTable[0] = typeof(global::SMS_UWP.ViewModels.ViewModelLocator);
             _typeTable[1] = typeof(global::System.Object);
             _typeTable[2] = typeof(global::SMS_UWP.ViewModels.SettingsViewModel);
@@ -409,232 +411,234 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
             _typeTable[9] = typeof(global::SMS_UWP.ViewModels.MediaPlayerViewModel);
             _typeTable[10] = typeof(global::SMS_UWP.ViewModels.TabbedViewModel);
             _typeTable[11] = typeof(global::SMS_UWP.ViewModels.ArduinoManageDetailViewModel);
-            _typeTable[12] = typeof(global::SMS_UWP.ViewModels.ArduinoManageViewModel);
+            _typeTable[12] = typeof(global::SMS_UWP.ViewModels.VM_AduMGMT);
             _typeTable[13] = typeof(global::SMS_UWP.ViewModels.MainViewModel);
             _typeTable[14] = typeof(global::SMS_UWP.ViewModels.ShellViewModel);
-            _typeTable[15] = typeof(global::SMS_UWP.Views.ArduinoManageDetailControl);
-            _typeTable[16] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[17] = typeof(global::SMS_UWP.Models.Order);
-            _typeTable[18] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
-            _typeTable[19] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
-            _typeTable[20] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
-            _typeTable[21] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[22] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
-            _typeTable[23] = typeof(global::Microsoft.Xaml.Interactivity.Trigger);
-            _typeTable[24] = typeof(global::Microsoft.Xaml.Interactivity.Behavior);
-            _typeTable[25] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
-            _typeTable[26] = typeof(global::System.String);
-            _typeTable[27] = typeof(global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction);
-            _typeTable[28] = typeof(global::System.Windows.Input.ICommand);
-            _typeTable[29] = typeof(global::Windows.UI.Xaml.Data.IValueConverter);
-            _typeTable[30] = typeof(global::SMS_UWP.Views.ArduinoManageDetailPage);
-            _typeTable[31] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[32] = typeof(global::SMS_UWP.Views.ArduinoManagePage);
-            _typeTable[33] = typeof(global::Telerik.UI.Xaml.Controls.Chart.RadCartesianChart);
-            _typeTable[34] = typeof(global::Telerik.UI.Xaml.Controls.Chart.RadChartBase);
-            _typeTable[35] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PresenterBase);
-            _typeTable[36] = typeof(global::Telerik.UI.Xaml.Controls.RadControl);
-            _typeTable[37] = typeof(global::Windows.UI.Xaml.Controls.Control);
-            _typeTable[38] = typeof(global::Telerik.UI.Xaml.Controls.Chart.CartesianSeriesCollection);
-            _typeTable[39] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PresenterCollection<global::Telerik.UI.Xaml.Controls.Chart.CartesianSeries>);
-            _typeTable[40] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.CartesianSeries>);
-            _typeTable[41] = typeof(global::Telerik.UI.Xaml.Controls.Chart.CartesianSeries);
-            _typeTable[42] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PointTemplateSeries);
-            _typeTable[43] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartSeries);
-            _typeTable[44] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartElementPresenter);
-            _typeTable[45] = typeof(global::Telerik.UI.Xaml.Controls.Chart.CartesianAxis);
-            _typeTable[46] = typeof(global::Telerik.UI.Xaml.Controls.Chart.LineAxis);
-            _typeTable[47] = typeof(global::Telerik.UI.Xaml.Controls.Chart.Axis);
-            _typeTable[48] = typeof(global::Windows.UI.Xaml.Style);
-            _typeTable[49] = typeof(global::Windows.UI.Xaml.DataTemplate);
-            _typeTable[50] = typeof(global::Windows.UI.Xaml.Controls.DataTemplateSelector);
-            _typeTable[51] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Windows.UI.Xaml.DataTemplate>);
-            _typeTable[52] = typeof(global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.DataTemplate>);
-            _typeTable[53] = typeof(global::System.Boolean);
-            _typeTable[54] = typeof(global::System.Int32);
-            _typeTable[55] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>);
-            _typeTable[56] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>);
-            _typeTable[57] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition);
-            _typeTable[58] = typeof(global::Telerik.UI.Xaml.Controls.Chart.DataPointBinding);
-            _typeTable[59] = typeof(global::Windows.UI.Xaml.Thickness);
-            _typeTable[60] = typeof(global::Windows.UI.Xaml.HorizontalAlignment);
-            _typeTable[61] = typeof(global::Windows.UI.Xaml.VerticalAlignment);
-            _typeTable[62] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelStrategy);
-            _typeTable[63] = typeof(global::System.Collections.IEnumerable);
-            _typeTable[64] = typeof(global::Telerik.UI.Xaml.Controls.Chart.IndicatorCollection);
-            _typeTable[65] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PresenterCollection<global::Telerik.UI.Xaml.Controls.Chart.IndicatorBase>);
-            _typeTable[66] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.IndicatorBase>);
-            _typeTable[67] = typeof(global::Telerik.UI.Xaml.Controls.Chart.IndicatorBase);
-            _typeTable[68] = typeof(global::Telerik.Charting.DataPointCollection<global::Telerik.Charting.CategoricalDataPoint>);
-            _typeTable[69] = typeof(global::Telerik.Core.ElementCollection<global::Telerik.Charting.CategoricalDataPoint>);
-            _typeTable[70] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.Charting.CategoricalDataPoint>);
-            _typeTable[71] = typeof(global::Telerik.Charting.CategoricalDataPoint);
-            _typeTable[72] = typeof(global::Telerik.Charting.CategoricalDataPointBase);
-            _typeTable[73] = typeof(global::Telerik.Charting.DataPoint);
-            _typeTable[74] = typeof(global::Telerik.Core.Node);
-            _typeTable[75] = typeof(global::Telerik.Core.PropertyBagObject);
-            _typeTable[76] = typeof(global::System.Double);
-            _typeTable[77] = typeof(global::Telerik.Core.IElementPresenter);
-            _typeTable[78] = typeof(global::Telerik.Core.NodeState);
-            _typeTable[79] = typeof(global::System.Enum);
-            _typeTable[80] = typeof(global::System.ValueType);
-            _typeTable[81] = typeof(global::Telerik.Core.RadRect);
-            _typeTable[82] = typeof(global::Telerik.Core.Element);
-            _typeTable[83] = typeof(global::Telerik.UI.Xaml.Controls.Chart.CartesianAnnotationCollection);
-            _typeTable[84] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PresenterCollection<global::Telerik.UI.Xaml.Controls.Chart.CartesianChartAnnotation>);
-            _typeTable[85] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.CartesianChartAnnotation>);
-            _typeTable[86] = typeof(global::Telerik.UI.Xaml.Controls.Chart.CartesianChartAnnotation);
-            _typeTable[87] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotation);
-            _typeTable[88] = typeof(global::Telerik.UI.Xaml.Controls.Chart.CartesianChartGrid);
-            _typeTable[89] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartGrid);
-            _typeTable[90] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesProvider);
-            _typeTable[91] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartPalette);
-            _typeTable[92] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PredefinedPaletteName);
-            _typeTable[93] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ContainerVisualsFactory);
-            _typeTable[94] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartBehaviorCollection);
-            _typeTable[95] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.ChartBehavior>);
-            _typeTable[96] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartBehavior);
-            _typeTable[97] = typeof(global::Windows.Foundation.Size);
-            _typeTable[98] = typeof(global::Windows.Foundation.Point);
-            _typeTable[99] = typeof(global::Telerik.UI.Xaml.Controls.Chart.CategoricalAxis);
-            _typeTable[100] = typeof(global::Telerik.Charting.AxisPlotMode);
-            _typeTable[101] = typeof(global::Telerik.Charting.AxisHorizontalLocation);
-            _typeTable[102] = typeof(global::Telerik.Charting.AxisVerticalLocation);
-            _typeTable[103] = typeof(global::Telerik.Charting.IContentFormatter);
-            _typeTable[104] = typeof(global::Telerik.Charting.ILabelCreator);
-            _typeTable[105] = typeof(global::Telerik.Charting.AxisLastLabelVisibility);
-            _typeTable[106] = typeof(global::Telerik.Charting.AxisLabelFitMode);
-            _typeTable[107] = typeof(global::Telerik.UI.Xaml.Controls.Chart.LinearAxis);
-            _typeTable[108] = typeof(global::Telerik.UI.Xaml.Controls.Chart.NumericalAxis);
-            _typeTable[109] = typeof(global::Telerik.Charting.NumericalAxisRangeExtendDirection);
-            _typeTable[110] = typeof(global::Telerik.Core.ValueRange<global::System.Double>);
-            _typeTable[111] = typeof(global::Telerik.UI.Xaml.Controls.Chart.BarSeries);
-            _typeTable[112] = typeof(global::Telerik.UI.Xaml.Controls.Chart.CategoricalSeries);
-            _typeTable[113] = typeof(global::Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase);
-            _typeTable[114] = typeof(global::Telerik.UI.Xaml.Controls.Chart.SeriesPaletteMode);
-            _typeTable[115] = typeof(global::Telerik.Charting.ChartSeriesCombineMode);
-            _typeTable[116] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding);
-            _typeTable[117] = typeof(global::SMS_UWP.Views.ChartPage);
-            _typeTable[118] = typeof(global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid);
-            _typeTable[119] = typeof(global::Telerik.UI.Xaml.Controls.Grid.Primitives.ColumnDataOperationsMode);
-            _typeTable[120] = typeof(global::Telerik.UI.Xaml.Controls.Grid.DataGridColumnCollection);
-            _typeTable[121] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Grid.DataGridColumn>);
-            _typeTable[122] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Grid.DataGridColumn>);
-            _typeTable[123] = typeof(global::Telerik.UI.Xaml.Controls.Grid.DataGridColumn);
-            _typeTable[124] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.RadDependencyObject);
-            _typeTable[125] = typeof(global::Windows.UI.Xaml.Controls.StyleSelector);
-            _typeTable[126] = typeof(global::Telerik.UI.Xaml.Controls.Grid.DataGridColumnSizeMode);
-            _typeTable[127] = typeof(global::Telerik.UI.Xaml.Controls.Grid.SortDirection);
-            _typeTable[128] = typeof(global::Telerik.UI.Xaml.Controls.Grid.DataGridUserFilterMode);
-            _typeTable[129] = typeof(global::Telerik.UI.Xaml.Controls.Grid.DataGridUserColumnReorderMode);
-            _typeTable[130] = typeof(global::Telerik.UI.Xaml.Controls.Grid.DataGridColumnResizeHandleDisplayMode);
-            _typeTable[131] = typeof(global::Telerik.UI.Xaml.Controls.Grid.DataGridUserSortMode);
-            _typeTable[132] = typeof(global::Telerik.UI.Xaml.Controls.Grid.DataGridUserGroupMode);
-            _typeTable[133] = typeof(global::Telerik.UI.Xaml.Controls.Grid.DataGridGroupHeaderDisplayMode);
-            _typeTable[134] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.CommandCollection<global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid>);
-            _typeTable[135] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.AttachableObjectCollection<global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid, global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid>>);
-            _typeTable[136] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid>>);
-            _typeTable[137] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid>>);
-            _typeTable[138] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid>);
-            _typeTable[139] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.AttachableObject<global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid>);
-            _typeTable[140] = typeof(global::Telerik.UI.Xaml.Controls.Grid.Commands.CommandService);
-            _typeTable[141] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.CommandServiceBase<global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid>);
-            _typeTable[142] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.ServiceBase<global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid>);
-            _typeTable[143] = typeof(global::Telerik.UI.Xaml.Controls.Grid.DataGridDragBehavior);
-            _typeTable[144] = typeof(global::Telerik.UI.Xaml.Controls.Grid.GroupPanelPosition);
-            _typeTable[145] = typeof(global::Telerik.Core.Data.BatchLoadingMode);
-            _typeTable[146] = typeof(global::Telerik.Data.Core.SortDescriptorCollection);
-            _typeTable[147] = typeof(global::Telerik.Data.Core.DataDescriptorCollection<global::Telerik.Data.Core.SortDescriptorBase>);
-            _typeTable[148] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.Data.Core.SortDescriptorBase>);
-            _typeTable[149] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.Data.Core.SortDescriptorBase>);
-            _typeTable[150] = typeof(global::Telerik.Data.Core.SortDescriptorBase);
-            _typeTable[151] = typeof(global::Telerik.Data.Core.OrderedDescriptor);
-            _typeTable[152] = typeof(global::Telerik.Data.Core.DataDescriptor);
-            _typeTable[153] = typeof(global::Telerik.Core.ViewModelBase);
-            _typeTable[154] = typeof(global::System.Collections.IComparer);
-            _typeTable[155] = typeof(global::Telerik.Data.Core.SortOrder);
-            _typeTable[156] = typeof(global::Telerik.Data.Core.GroupDescriptorCollection);
-            _typeTable[157] = typeof(global::Telerik.Data.Core.DataDescriptorCollection<global::Telerik.Data.Core.GroupDescriptorBase>);
-            _typeTable[158] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.Data.Core.GroupDescriptorBase>);
-            _typeTable[159] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.Data.Core.GroupDescriptorBase>);
-            _typeTable[160] = typeof(global::Telerik.Data.Core.GroupDescriptorBase);
-            _typeTable[161] = typeof(global::Telerik.Data.Core.FilterDescriptorCollection);
-            _typeTable[162] = typeof(global::Telerik.Data.Core.DataDescriptorCollection<global::Telerik.Data.Core.FilterDescriptorBase>);
-            _typeTable[163] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.Data.Core.FilterDescriptorBase>);
-            _typeTable[164] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.Data.Core.FilterDescriptorBase>);
-            _typeTable[165] = typeof(global::Telerik.Data.Core.FilterDescriptorBase);
-            _typeTable[166] = typeof(global::Telerik.Data.Core.AggregateDescriptorCollection);
-            _typeTable[167] = typeof(global::Telerik.Data.Core.DataDescriptorCollection<global::Telerik.Data.Core.AggregateDescriptorBase>);
-            _typeTable[168] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.Data.Core.AggregateDescriptorBase>);
-            _typeTable[169] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.Data.Core.AggregateDescriptorBase>);
-            _typeTable[170] = typeof(global::Telerik.Data.Core.AggregateDescriptorBase);
-            _typeTable[171] = typeof(global::Windows.UI.Xaml.Media.Brush);
-            _typeTable[172] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.ObjectSelector<global::Windows.UI.Xaml.Media.Brush>);
-            _typeTable[173] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.GridLinesVisibility);
-            _typeTable[174] = typeof(global::Telerik.UI.Xaml.Controls.Grid.DataGridUserEditMode);
-            _typeTable[175] = typeof(global::Telerik.UI.Xaml.Controls.Grid.IGridExternalEditor);
-            _typeTable[176] = typeof(global::Telerik.UI.Xaml.Controls.Grid.HitTestService);
-            _typeTable[177] = typeof(global::Telerik.UI.Xaml.Controls.Grid.DataGridSelectionUnit);
-            _typeTable[178] = typeof(global::Telerik.UI.Xaml.Controls.Grid.DataGridSelectionMode);
-            _typeTable[179] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::System.Object>);
-            _typeTable[180] = typeof(global::System.Collections.ObjectModel.Collection<global::System.Object>);
-            _typeTable[181] = typeof(global::SMS_UWP.Views.GridPage);
-            _typeTable[182] = typeof(global::SMS_UWP.Views.MainPage);
-            _typeTable[183] = typeof(global::SMS_UWP.Views.MapPage);
-            _typeTable[184] = typeof(global::SMS_UWP.Views.MediaPlayerPage);
-            _typeTable[185] = typeof(global::SMS_UWP.Helpers.EnumToBooleanConverter);
-            _typeTable[186] = typeof(global::System.Type);
-            _typeTable[187] = typeof(global::SMS_UWP.Views.SettingsPage);
-            _typeTable[188] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu);
-            _typeTable[189] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
-            _typeTable[190] = typeof(global::Windows.UI.Xaml.Controls.SplitViewDisplayMode);
-            _typeTable[191] = typeof(global::Windows.UI.Xaml.Controls.ItemCollection);
-            _typeTable[192] = typeof(global::Windows.UI.Xaml.Visibility);
-            _typeTable[193] = typeof(global::Windows.UI.Xaml.Controls.SplitViewPanePlacement);
-            _typeTable[194] = typeof(global::SMS_UWP.Views.ShellPage);
-            _typeTable[195] = typeof(global::SMS_UWP.Views.TabbedPage);
-            _typeTable[196] = typeof(global::SMS_UWP.Views.WebViewPage);
-            _typeTable[197] = typeof(global::Telerik.UI.Drawing.D2DResource);
-            _typeTable[198] = typeof(global::Telerik.UI.Drawing.D2DBrush);
-            _typeTable[199] = typeof(global::Telerik.UI.Drawing.D2DTextStyle);
-            _typeTable[200] = typeof(global::Telerik.UI.Drawing.FontWeightName);
-            _typeTable[201] = typeof(global::Windows.UI.Xaml.TextAlignment);
-            _typeTable[202] = typeof(global::Windows.UI.Text.FontStyle);
-            _typeTable[203] = typeof(global::Telerik.UI.Drawing.D2DShapeStyle);
-            _typeTable[204] = typeof(global::Telerik.UI.Drawing.D2DSolidColorBrush);
-            _typeTable[205] = typeof(global::Windows.UI.Color);
-            _typeTable[206] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition);
-            _typeTable[207] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelLocation);
-            _typeTable[208] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection);
-            _typeTable[209] = typeof(global::System.Collections.Generic.List<global::Windows.UI.Xaml.Media.Brush>);
-            _typeTable[210] = typeof(global::Telerik.UI.Xaml.Controls.Data.HexView.AngledHexLayoutDefinition);
-            _typeTable[211] = typeof(global::Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase);
-            _typeTable[212] = typeof(global::Windows.UI.Xaml.Controls.Orientation);
-            _typeTable[213] = typeof(global::Telerik.UI.Xaml.Controls.Data.HexView.FlatLooseHexLayoutDefinition);
-            _typeTable[214] = typeof(global::Telerik.UI.Xaml.Controls.Data.HexView.FlatTightHexLayoutDefinition);
-            _typeTable[215] = typeof(global::Telerik.UI.Xaml.Controls.Input.HighlightStyle);
-            _typeTable[216] = typeof(global::Windows.UI.Xaml.Media.FontFamily);
-            _typeTable[217] = typeof(global::Telerik.UI.Xaml.Controls.Input.FontWeightName);
-            _typeTable[218] = typeof(global::Telerik.UI.Xaml.Controls.Input.CalendarCellStyle);
-            _typeTable[219] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu);
-            _typeTable[220] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>);
-            _typeTable[221] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>);
-            _typeTable[222] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem);
-            _typeTable[223] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.Menu.CommandService);
-            _typeTable[224] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.CommandServiceBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>);
-            _typeTable[225] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.ServiceBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>);
-            _typeTable[226] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.AttachableObject<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>);
-            _typeTable[227] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.CommandCollection<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>);
-            _typeTable[228] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.AttachableObjectCollection<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu, global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>);
-            _typeTable[229] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>);
-            _typeTable[230] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>);
-            _typeTable[231] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>);
-            _typeTable[232] = typeof(global::Windows.UI.Xaml.FrameworkElement);
-            _typeTable[233] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuTriggerBehavior);
-            _typeTable[234] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.AttachableObject<global::Windows.UI.Xaml.FrameworkElement>);
-            _typeTable[235] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuAttachTriggers);
-            _typeTable[236] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter);
-            _typeTable[237] = typeof(global::Windows.UI.Xaml.Media.Animation.Storyboard);
+            _typeTable[15] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
+            _typeTable[16] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
+            _typeTable[17] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
+            _typeTable[18] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[19] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
+            _typeTable[20] = typeof(global::Microsoft.Xaml.Interactivity.Trigger);
+            _typeTable[21] = typeof(global::Microsoft.Xaml.Interactivity.Behavior);
+            _typeTable[22] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
+            _typeTable[23] = typeof(global::System.String);
+            _typeTable[24] = typeof(global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction);
+            _typeTable[25] = typeof(global::System.Windows.Input.ICommand);
+            _typeTable[26] = typeof(global::Windows.UI.Xaml.Data.IValueConverter);
+            _typeTable[27] = typeof(global::SMS_UWP.Views.V_AddAduDialog_C);
+            _typeTable[28] = typeof(global::Windows.UI.Xaml.Controls.ContentDialog);
+            _typeTable[29] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
+            _typeTable[30] = typeof(global::SMS_UWP.Views.ArduinoManageDetailControl);
+            _typeTable[31] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[32] = typeof(global::SMS_UWP.Models.Order);
+            _typeTable[33] = typeof(global::SMS_UWP.Views.ArduinoManageDetailPage);
+            _typeTable[34] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[35] = typeof(global::SMS_UWP.Views.V_AduMGMT_P);
+            _typeTable[36] = typeof(global::Telerik.UI.Xaml.Controls.Chart.RadCartesianChart);
+            _typeTable[37] = typeof(global::Telerik.UI.Xaml.Controls.Chart.RadChartBase);
+            _typeTable[38] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PresenterBase);
+            _typeTable[39] = typeof(global::Telerik.UI.Xaml.Controls.RadControl);
+            _typeTable[40] = typeof(global::Windows.UI.Xaml.Controls.Control);
+            _typeTable[41] = typeof(global::Telerik.UI.Xaml.Controls.Chart.CartesianSeriesCollection);
+            _typeTable[42] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PresenterCollection<global::Telerik.UI.Xaml.Controls.Chart.CartesianSeries>);
+            _typeTable[43] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.CartesianSeries>);
+            _typeTable[44] = typeof(global::Telerik.UI.Xaml.Controls.Chart.CartesianSeries);
+            _typeTable[45] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PointTemplateSeries);
+            _typeTable[46] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartSeries);
+            _typeTable[47] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartElementPresenter);
+            _typeTable[48] = typeof(global::Telerik.UI.Xaml.Controls.Chart.CartesianAxis);
+            _typeTable[49] = typeof(global::Telerik.UI.Xaml.Controls.Chart.LineAxis);
+            _typeTable[50] = typeof(global::Telerik.UI.Xaml.Controls.Chart.Axis);
+            _typeTable[51] = typeof(global::Windows.UI.Xaml.Style);
+            _typeTable[52] = typeof(global::Windows.UI.Xaml.DataTemplate);
+            _typeTable[53] = typeof(global::Windows.UI.Xaml.Controls.DataTemplateSelector);
+            _typeTable[54] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Windows.UI.Xaml.DataTemplate>);
+            _typeTable[55] = typeof(global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.DataTemplate>);
+            _typeTable[56] = typeof(global::System.Boolean);
+            _typeTable[57] = typeof(global::System.Int32);
+            _typeTable[58] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>);
+            _typeTable[59] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>);
+            _typeTable[60] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition);
+            _typeTable[61] = typeof(global::Telerik.UI.Xaml.Controls.Chart.DataPointBinding);
+            _typeTable[62] = typeof(global::Windows.UI.Xaml.Thickness);
+            _typeTable[63] = typeof(global::Windows.UI.Xaml.HorizontalAlignment);
+            _typeTable[64] = typeof(global::Windows.UI.Xaml.VerticalAlignment);
+            _typeTable[65] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelStrategy);
+            _typeTable[66] = typeof(global::System.Collections.IEnumerable);
+            _typeTable[67] = typeof(global::Telerik.UI.Xaml.Controls.Chart.IndicatorCollection);
+            _typeTable[68] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PresenterCollection<global::Telerik.UI.Xaml.Controls.Chart.IndicatorBase>);
+            _typeTable[69] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.IndicatorBase>);
+            _typeTable[70] = typeof(global::Telerik.UI.Xaml.Controls.Chart.IndicatorBase);
+            _typeTable[71] = typeof(global::Telerik.Charting.DataPointCollection<global::Telerik.Charting.CategoricalDataPoint>);
+            _typeTable[72] = typeof(global::Telerik.Core.ElementCollection<global::Telerik.Charting.CategoricalDataPoint>);
+            _typeTable[73] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.Charting.CategoricalDataPoint>);
+            _typeTable[74] = typeof(global::Telerik.Charting.CategoricalDataPoint);
+            _typeTable[75] = typeof(global::Telerik.Charting.CategoricalDataPointBase);
+            _typeTable[76] = typeof(global::Telerik.Charting.DataPoint);
+            _typeTable[77] = typeof(global::Telerik.Core.Node);
+            _typeTable[78] = typeof(global::Telerik.Core.PropertyBagObject);
+            _typeTable[79] = typeof(global::System.Double);
+            _typeTable[80] = typeof(global::Telerik.Core.IElementPresenter);
+            _typeTable[81] = typeof(global::Telerik.Core.NodeState);
+            _typeTable[82] = typeof(global::System.Enum);
+            _typeTable[83] = typeof(global::System.ValueType);
+            _typeTable[84] = typeof(global::Telerik.Core.RadRect);
+            _typeTable[85] = typeof(global::Telerik.Core.Element);
+            _typeTable[86] = typeof(global::Telerik.UI.Xaml.Controls.Chart.CartesianAnnotationCollection);
+            _typeTable[87] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PresenterCollection<global::Telerik.UI.Xaml.Controls.Chart.CartesianChartAnnotation>);
+            _typeTable[88] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.CartesianChartAnnotation>);
+            _typeTable[89] = typeof(global::Telerik.UI.Xaml.Controls.Chart.CartesianChartAnnotation);
+            _typeTable[90] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotation);
+            _typeTable[91] = typeof(global::Telerik.UI.Xaml.Controls.Chart.CartesianChartGrid);
+            _typeTable[92] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartGrid);
+            _typeTable[93] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesProvider);
+            _typeTable[94] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartPalette);
+            _typeTable[95] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PredefinedPaletteName);
+            _typeTable[96] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ContainerVisualsFactory);
+            _typeTable[97] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartBehaviorCollection);
+            _typeTable[98] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.ChartBehavior>);
+            _typeTable[99] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartBehavior);
+            _typeTable[100] = typeof(global::Windows.Foundation.Size);
+            _typeTable[101] = typeof(global::Windows.Foundation.Point);
+            _typeTable[102] = typeof(global::Telerik.UI.Xaml.Controls.Chart.CategoricalAxis);
+            _typeTable[103] = typeof(global::Telerik.Charting.AxisPlotMode);
+            _typeTable[104] = typeof(global::Telerik.Charting.AxisHorizontalLocation);
+            _typeTable[105] = typeof(global::Telerik.Charting.AxisVerticalLocation);
+            _typeTable[106] = typeof(global::Telerik.Charting.IContentFormatter);
+            _typeTable[107] = typeof(global::Telerik.Charting.ILabelCreator);
+            _typeTable[108] = typeof(global::Telerik.Charting.AxisLastLabelVisibility);
+            _typeTable[109] = typeof(global::Telerik.Charting.AxisLabelFitMode);
+            _typeTable[110] = typeof(global::Telerik.UI.Xaml.Controls.Chart.LinearAxis);
+            _typeTable[111] = typeof(global::Telerik.UI.Xaml.Controls.Chart.NumericalAxis);
+            _typeTable[112] = typeof(global::Telerik.Charting.NumericalAxisRangeExtendDirection);
+            _typeTable[113] = typeof(global::Telerik.Core.ValueRange<global::System.Double>);
+            _typeTable[114] = typeof(global::Telerik.UI.Xaml.Controls.Chart.BarSeries);
+            _typeTable[115] = typeof(global::Telerik.UI.Xaml.Controls.Chart.CategoricalSeries);
+            _typeTable[116] = typeof(global::Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase);
+            _typeTable[117] = typeof(global::Telerik.UI.Xaml.Controls.Chart.SeriesPaletteMode);
+            _typeTable[118] = typeof(global::Telerik.Charting.ChartSeriesCombineMode);
+            _typeTable[119] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding);
+            _typeTable[120] = typeof(global::SMS_UWP.Views.ChartPage);
+            _typeTable[121] = typeof(global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid);
+            _typeTable[122] = typeof(global::Telerik.UI.Xaml.Controls.Grid.Primitives.ColumnDataOperationsMode);
+            _typeTable[123] = typeof(global::Telerik.UI.Xaml.Controls.Grid.DataGridColumnCollection);
+            _typeTable[124] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Grid.DataGridColumn>);
+            _typeTable[125] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Grid.DataGridColumn>);
+            _typeTable[126] = typeof(global::Telerik.UI.Xaml.Controls.Grid.DataGridColumn);
+            _typeTable[127] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.RadDependencyObject);
+            _typeTable[128] = typeof(global::Windows.UI.Xaml.Controls.StyleSelector);
+            _typeTable[129] = typeof(global::Telerik.UI.Xaml.Controls.Grid.DataGridColumnSizeMode);
+            _typeTable[130] = typeof(global::Telerik.UI.Xaml.Controls.Grid.SortDirection);
+            _typeTable[131] = typeof(global::Telerik.UI.Xaml.Controls.Grid.DataGridUserFilterMode);
+            _typeTable[132] = typeof(global::Telerik.UI.Xaml.Controls.Grid.DataGridUserColumnReorderMode);
+            _typeTable[133] = typeof(global::Telerik.UI.Xaml.Controls.Grid.DataGridColumnResizeHandleDisplayMode);
+            _typeTable[134] = typeof(global::Telerik.UI.Xaml.Controls.Grid.DataGridUserSortMode);
+            _typeTable[135] = typeof(global::Telerik.UI.Xaml.Controls.Grid.DataGridUserGroupMode);
+            _typeTable[136] = typeof(global::Telerik.UI.Xaml.Controls.Grid.DataGridGroupHeaderDisplayMode);
+            _typeTable[137] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.CommandCollection<global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid>);
+            _typeTable[138] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.AttachableObjectCollection<global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid, global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid>>);
+            _typeTable[139] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid>>);
+            _typeTable[140] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid>>);
+            _typeTable[141] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid>);
+            _typeTable[142] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.AttachableObject<global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid>);
+            _typeTable[143] = typeof(global::Telerik.UI.Xaml.Controls.Grid.Commands.CommandService);
+            _typeTable[144] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.CommandServiceBase<global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid>);
+            _typeTable[145] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.ServiceBase<global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid>);
+            _typeTable[146] = typeof(global::Telerik.UI.Xaml.Controls.Grid.DataGridDragBehavior);
+            _typeTable[147] = typeof(global::Telerik.UI.Xaml.Controls.Grid.GroupPanelPosition);
+            _typeTable[148] = typeof(global::Telerik.Core.Data.BatchLoadingMode);
+            _typeTable[149] = typeof(global::Telerik.Data.Core.SortDescriptorCollection);
+            _typeTable[150] = typeof(global::Telerik.Data.Core.DataDescriptorCollection<global::Telerik.Data.Core.SortDescriptorBase>);
+            _typeTable[151] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.Data.Core.SortDescriptorBase>);
+            _typeTable[152] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.Data.Core.SortDescriptorBase>);
+            _typeTable[153] = typeof(global::Telerik.Data.Core.SortDescriptorBase);
+            _typeTable[154] = typeof(global::Telerik.Data.Core.OrderedDescriptor);
+            _typeTable[155] = typeof(global::Telerik.Data.Core.DataDescriptor);
+            _typeTable[156] = typeof(global::Telerik.Core.ViewModelBase);
+            _typeTable[157] = typeof(global::System.Collections.IComparer);
+            _typeTable[158] = typeof(global::Telerik.Data.Core.SortOrder);
+            _typeTable[159] = typeof(global::Telerik.Data.Core.GroupDescriptorCollection);
+            _typeTable[160] = typeof(global::Telerik.Data.Core.DataDescriptorCollection<global::Telerik.Data.Core.GroupDescriptorBase>);
+            _typeTable[161] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.Data.Core.GroupDescriptorBase>);
+            _typeTable[162] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.Data.Core.GroupDescriptorBase>);
+            _typeTable[163] = typeof(global::Telerik.Data.Core.GroupDescriptorBase);
+            _typeTable[164] = typeof(global::Telerik.Data.Core.FilterDescriptorCollection);
+            _typeTable[165] = typeof(global::Telerik.Data.Core.DataDescriptorCollection<global::Telerik.Data.Core.FilterDescriptorBase>);
+            _typeTable[166] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.Data.Core.FilterDescriptorBase>);
+            _typeTable[167] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.Data.Core.FilterDescriptorBase>);
+            _typeTable[168] = typeof(global::Telerik.Data.Core.FilterDescriptorBase);
+            _typeTable[169] = typeof(global::Telerik.Data.Core.AggregateDescriptorCollection);
+            _typeTable[170] = typeof(global::Telerik.Data.Core.DataDescriptorCollection<global::Telerik.Data.Core.AggregateDescriptorBase>);
+            _typeTable[171] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.Data.Core.AggregateDescriptorBase>);
+            _typeTable[172] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.Data.Core.AggregateDescriptorBase>);
+            _typeTable[173] = typeof(global::Telerik.Data.Core.AggregateDescriptorBase);
+            _typeTable[174] = typeof(global::Windows.UI.Xaml.Media.Brush);
+            _typeTable[175] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.ObjectSelector<global::Windows.UI.Xaml.Media.Brush>);
+            _typeTable[176] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.GridLinesVisibility);
+            _typeTable[177] = typeof(global::Telerik.UI.Xaml.Controls.Grid.DataGridUserEditMode);
+            _typeTable[178] = typeof(global::Telerik.UI.Xaml.Controls.Grid.IGridExternalEditor);
+            _typeTable[179] = typeof(global::Telerik.UI.Xaml.Controls.Grid.HitTestService);
+            _typeTable[180] = typeof(global::Telerik.UI.Xaml.Controls.Grid.DataGridSelectionUnit);
+            _typeTable[181] = typeof(global::Telerik.UI.Xaml.Controls.Grid.DataGridSelectionMode);
+            _typeTable[182] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::System.Object>);
+            _typeTable[183] = typeof(global::System.Collections.ObjectModel.Collection<global::System.Object>);
+            _typeTable[184] = typeof(global::SMS_UWP.Views.GridPage);
+            _typeTable[185] = typeof(global::SMS_UWP.Views.MainPage);
+            _typeTable[186] = typeof(global::SMS_UWP.Views.MapPage);
+            _typeTable[187] = typeof(global::SMS_UWP.Views.MediaPlayerPage);
+            _typeTable[188] = typeof(global::SMS_UWP.Helpers.EnumToBooleanConverter);
+            _typeTable[189] = typeof(global::System.Type);
+            _typeTable[190] = typeof(global::SMS_UWP.Views.SettingsPage);
+            _typeTable[191] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu);
+            _typeTable[192] = typeof(global::Windows.UI.Xaml.Controls.SplitViewDisplayMode);
+            _typeTable[193] = typeof(global::Windows.UI.Xaml.Controls.ItemCollection);
+            _typeTable[194] = typeof(global::Windows.UI.Xaml.Visibility);
+            _typeTable[195] = typeof(global::Windows.UI.Xaml.Controls.SplitViewPanePlacement);
+            _typeTable[196] = typeof(global::SMS_UWP.Views.ShellPage);
+            _typeTable[197] = typeof(global::SMS_UWP.Views.TabbedPage);
+            _typeTable[198] = typeof(global::SMS_UWP.Views.WebViewPage);
+            _typeTable[199] = typeof(global::Telerik.UI.Drawing.D2DResource);
+            _typeTable[200] = typeof(global::Telerik.UI.Drawing.D2DBrush);
+            _typeTable[201] = typeof(global::Telerik.UI.Drawing.D2DTextStyle);
+            _typeTable[202] = typeof(global::Telerik.UI.Drawing.FontWeightName);
+            _typeTable[203] = typeof(global::Windows.UI.Xaml.TextAlignment);
+            _typeTable[204] = typeof(global::Windows.UI.Text.FontStyle);
+            _typeTable[205] = typeof(global::Telerik.UI.Drawing.D2DShapeStyle);
+            _typeTable[206] = typeof(global::Telerik.UI.Drawing.D2DSolidColorBrush);
+            _typeTable[207] = typeof(global::Windows.UI.Color);
+            _typeTable[208] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition);
+            _typeTable[209] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelLocation);
+            _typeTable[210] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection);
+            _typeTable[211] = typeof(global::System.Collections.Generic.List<global::Windows.UI.Xaml.Media.Brush>);
+            _typeTable[212] = typeof(global::Telerik.UI.Xaml.Controls.Data.HexView.AngledHexLayoutDefinition);
+            _typeTable[213] = typeof(global::Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase);
+            _typeTable[214] = typeof(global::Windows.UI.Xaml.Controls.Orientation);
+            _typeTable[215] = typeof(global::Telerik.UI.Xaml.Controls.Data.HexView.FlatLooseHexLayoutDefinition);
+            _typeTable[216] = typeof(global::Telerik.UI.Xaml.Controls.Data.HexView.FlatTightHexLayoutDefinition);
+            _typeTable[217] = typeof(global::Telerik.UI.Xaml.Controls.Input.HighlightStyle);
+            _typeTable[218] = typeof(global::Windows.UI.Xaml.Media.FontFamily);
+            _typeTable[219] = typeof(global::Telerik.UI.Xaml.Controls.Input.FontWeightName);
+            _typeTable[220] = typeof(global::Telerik.UI.Xaml.Controls.Input.CalendarCellStyle);
+            _typeTable[221] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu);
+            _typeTable[222] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>);
+            _typeTable[223] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>);
+            _typeTable[224] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem);
+            _typeTable[225] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.Menu.CommandService);
+            _typeTable[226] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.CommandServiceBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>);
+            _typeTable[227] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.ServiceBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>);
+            _typeTable[228] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.AttachableObject<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>);
+            _typeTable[229] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.CommandCollection<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>);
+            _typeTable[230] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.AttachableObjectCollection<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu, global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>);
+            _typeTable[231] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>);
+            _typeTable[232] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>);
+            _typeTable[233] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>);
+            _typeTable[234] = typeof(global::Windows.UI.Xaml.FrameworkElement);
+            _typeTable[235] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuTriggerBehavior);
+            _typeTable[236] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.AttachableObject<global::Windows.UI.Xaml.FrameworkElement>);
+            _typeTable[237] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuAttachTriggers);
+            _typeTable[238] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter);
+            _typeTable[239] = typeof(global::Windows.UI.Xaml.Media.Animation.Storyboard);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -679,391 +683,392 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
         private object Activate_9_MediaPlayerViewModel() { return new global::SMS_UWP.ViewModels.MediaPlayerViewModel(); }
         private object Activate_10_TabbedViewModel() { return new global::SMS_UWP.ViewModels.TabbedViewModel(); }
         private object Activate_11_ArduinoManageDetailViewModel() { return new global::SMS_UWP.ViewModels.ArduinoManageDetailViewModel(); }
-        private object Activate_12_ArduinoManageViewModel() { return new global::SMS_UWP.ViewModels.ArduinoManageViewModel(); }
+        private object Activate_12_VM_AduMGMT() { return new global::SMS_UWP.ViewModels.VM_AduMGMT(); }
         private object Activate_13_MainViewModel() { return new global::SMS_UWP.ViewModels.MainViewModel(); }
         private object Activate_14_ShellViewModel() { return new global::SMS_UWP.ViewModels.ShellViewModel(); }
-        private object Activate_15_ArduinoManageDetailControl() { return new global::SMS_UWP.Views.ArduinoManageDetailControl(); }
-        private object Activate_17_Order() { return new global::SMS_UWP.Models.Order(); }
-        private object Activate_19_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
-        private object Activate_22_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
-        private object Activate_25_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
-        private object Activate_27_InvokeCommandAction() { return new global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction(); }
-        private object Activate_30_ArduinoManageDetailPage() { return new global::SMS_UWP.Views.ArduinoManageDetailPage(); }
-        private object Activate_32_ArduinoManagePage() { return new global::SMS_UWP.Views.ArduinoManagePage(); }
-        private object Activate_33_RadCartesianChart() { return new global::Telerik.UI.Xaml.Controls.Chart.RadCartesianChart(); }
-        private object Activate_40_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.CartesianSeries>(); }
-        private object Activate_51_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Windows.UI.Xaml.DataTemplate>(); }
-        private object Activate_52_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.DataTemplate>(); }
-        private object Activate_55_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>(); }
-        private object Activate_56_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>(); }
-        private object Activate_57_ChartSeriesLabelDefinition() { return new global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition(); }
-        private object Activate_66_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.IndicatorBase>(); }
-        private object Activate_70_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.Charting.CategoricalDataPoint>(); }
-        private object Activate_71_CategoricalDataPoint() { return new global::Telerik.Charting.CategoricalDataPoint(); }
-        private object Activate_85_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.CartesianChartAnnotation>(); }
-        private object Activate_88_CartesianChartGrid() { return new global::Telerik.UI.Xaml.Controls.Chart.CartesianChartGrid(); }
-        private object Activate_90_ChartSeriesProvider() { return new global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesProvider(); }
-        private object Activate_91_ChartPalette() { return new global::Telerik.UI.Xaml.Controls.Chart.ChartPalette(); }
-        private object Activate_93_ContainerVisualsFactory() { return new global::Telerik.UI.Xaml.Controls.Chart.ContainerVisualsFactory(); }
-        private object Activate_95_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.ChartBehavior>(); }
-        private object Activate_99_CategoricalAxis() { return new global::Telerik.UI.Xaml.Controls.Chart.CategoricalAxis(); }
-        private object Activate_107_LinearAxis() { return new global::Telerik.UI.Xaml.Controls.Chart.LinearAxis(); }
-        private object Activate_111_BarSeries() { return new global::Telerik.UI.Xaml.Controls.Chart.BarSeries(); }
-        private object Activate_116_PropertyNameDataPointBinding() { return new global::Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding(); }
-        private object Activate_117_ChartPage() { return new global::SMS_UWP.Views.ChartPage(); }
-        private object Activate_118_RadDataGrid() { return new global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid(); }
-        private object Activate_121_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Grid.DataGridColumn>(); }
-        private object Activate_122_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Grid.DataGridColumn>(); }
-        private object Activate_136_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid>>(); }
-        private object Activate_137_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid>>(); }
-        private object Activate_143_DataGridDragBehavior() { return new global::Telerik.UI.Xaml.Controls.Grid.DataGridDragBehavior(); }
-        private object Activate_148_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.Data.Core.SortDescriptorBase>(); }
-        private object Activate_149_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.Data.Core.SortDescriptorBase>(); }
-        private object Activate_158_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.Data.Core.GroupDescriptorBase>(); }
-        private object Activate_159_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.Data.Core.GroupDescriptorBase>(); }
-        private object Activate_163_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.Data.Core.FilterDescriptorBase>(); }
-        private object Activate_164_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.Data.Core.FilterDescriptorBase>(); }
-        private object Activate_168_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.Data.Core.AggregateDescriptorBase>(); }
-        private object Activate_169_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.Data.Core.AggregateDescriptorBase>(); }
-        private object Activate_172_ObjectSelector() { return new global::Telerik.UI.Xaml.Controls.Primitives.ObjectSelector<global::Windows.UI.Xaml.Media.Brush>(); }
-        private object Activate_179_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::System.Object>(); }
-        private object Activate_180_Collection() { return new global::System.Collections.ObjectModel.Collection<global::System.Object>(); }
-        private object Activate_181_GridPage() { return new global::SMS_UWP.Views.GridPage(); }
-        private object Activate_182_MainPage() { return new global::SMS_UWP.Views.MainPage(); }
-        private object Activate_183_MapPage() { return new global::SMS_UWP.Views.MapPage(); }
-        private object Activate_184_MediaPlayerPage() { return new global::SMS_UWP.Views.MediaPlayerPage(); }
-        private object Activate_185_EnumToBooleanConverter() { return new global::SMS_UWP.Helpers.EnumToBooleanConverter(); }
-        private object Activate_187_SettingsPage() { return new global::SMS_UWP.Views.SettingsPage(); }
-        private object Activate_188_HamburgerMenu() { return new global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu(); }
-        private object Activate_194_ShellPage() { return new global::SMS_UWP.Views.ShellPage(); }
-        private object Activate_195_TabbedPage() { return new global::SMS_UWP.Views.TabbedPage(); }
-        private object Activate_196_WebViewPage() { return new global::SMS_UWP.Views.WebViewPage(); }
-        private object Activate_199_D2DTextStyle() { return new global::Telerik.UI.Drawing.D2DTextStyle(); }
-        private object Activate_203_D2DShapeStyle() { return new global::Telerik.UI.Drawing.D2DShapeStyle(); }
-        private object Activate_204_D2DSolidColorBrush() { return new global::Telerik.UI.Drawing.D2DSolidColorBrush(); }
-        private object Activate_206_ChartAnnotationLabelDefinition() { return new global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition(); }
-        private object Activate_208_PaletteEntryCollection() { return new global::Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection(); }
-        private object Activate_209_List() { return new global::System.Collections.Generic.List<global::Windows.UI.Xaml.Media.Brush>(); }
-        private object Activate_210_AngledHexLayoutDefinition() { return new global::Telerik.UI.Xaml.Controls.Data.HexView.AngledHexLayoutDefinition(); }
-        private object Activate_213_FlatLooseHexLayoutDefinition() { return new global::Telerik.UI.Xaml.Controls.Data.HexView.FlatLooseHexLayoutDefinition(); }
-        private object Activate_214_FlatTightHexLayoutDefinition() { return new global::Telerik.UI.Xaml.Controls.Data.HexView.FlatTightHexLayoutDefinition(); }
-        private object Activate_215_HighlightStyle() { return new global::Telerik.UI.Xaml.Controls.Input.HighlightStyle(); }
-        private object Activate_218_CalendarCellStyle() { return new global::Telerik.UI.Xaml.Controls.Input.CalendarCellStyle(); }
-        private object Activate_219_RadRadialMenu() { return new global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu(); }
-        private object Activate_220_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>(); }
-        private object Activate_221_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>(); }
-        private object Activate_222_RadialMenuItem() { return new global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem(); }
-        private object Activate_229_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>(); }
-        private object Activate_230_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>(); }
-        private object Activate_233_RadialMenuTriggerBehavior() { return new global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuTriggerBehavior(); }
-        private object Activate_236_BusyIndicatorAnimationAdapter() { return new global::Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter(); }
-        private void VectorAdd_19_BehaviorCollection(object instance, object item)
+        private object Activate_16_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
+        private object Activate_19_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
+        private object Activate_22_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
+        private object Activate_24_InvokeCommandAction() { return new global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction(); }
+        private object Activate_27_V_AddAduDialog_C() { return new global::SMS_UWP.Views.V_AddAduDialog_C(); }
+        private object Activate_30_ArduinoManageDetailControl() { return new global::SMS_UWP.Views.ArduinoManageDetailControl(); }
+        private object Activate_32_Order() { return new global::SMS_UWP.Models.Order(); }
+        private object Activate_33_ArduinoManageDetailPage() { return new global::SMS_UWP.Views.ArduinoManageDetailPage(); }
+        private object Activate_35_V_AduMGMT_P() { return new global::SMS_UWP.Views.V_AduMGMT_P(); }
+        private object Activate_36_RadCartesianChart() { return new global::Telerik.UI.Xaml.Controls.Chart.RadCartesianChart(); }
+        private object Activate_43_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.CartesianSeries>(); }
+        private object Activate_54_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Windows.UI.Xaml.DataTemplate>(); }
+        private object Activate_55_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.DataTemplate>(); }
+        private object Activate_58_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>(); }
+        private object Activate_59_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>(); }
+        private object Activate_60_ChartSeriesLabelDefinition() { return new global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition(); }
+        private object Activate_69_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.IndicatorBase>(); }
+        private object Activate_73_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.Charting.CategoricalDataPoint>(); }
+        private object Activate_74_CategoricalDataPoint() { return new global::Telerik.Charting.CategoricalDataPoint(); }
+        private object Activate_88_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.CartesianChartAnnotation>(); }
+        private object Activate_91_CartesianChartGrid() { return new global::Telerik.UI.Xaml.Controls.Chart.CartesianChartGrid(); }
+        private object Activate_93_ChartSeriesProvider() { return new global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesProvider(); }
+        private object Activate_94_ChartPalette() { return new global::Telerik.UI.Xaml.Controls.Chart.ChartPalette(); }
+        private object Activate_96_ContainerVisualsFactory() { return new global::Telerik.UI.Xaml.Controls.Chart.ContainerVisualsFactory(); }
+        private object Activate_98_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.ChartBehavior>(); }
+        private object Activate_102_CategoricalAxis() { return new global::Telerik.UI.Xaml.Controls.Chart.CategoricalAxis(); }
+        private object Activate_110_LinearAxis() { return new global::Telerik.UI.Xaml.Controls.Chart.LinearAxis(); }
+        private object Activate_114_BarSeries() { return new global::Telerik.UI.Xaml.Controls.Chart.BarSeries(); }
+        private object Activate_119_PropertyNameDataPointBinding() { return new global::Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding(); }
+        private object Activate_120_ChartPage() { return new global::SMS_UWP.Views.ChartPage(); }
+        private object Activate_121_RadDataGrid() { return new global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid(); }
+        private object Activate_124_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Grid.DataGridColumn>(); }
+        private object Activate_125_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Grid.DataGridColumn>(); }
+        private object Activate_139_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid>>(); }
+        private object Activate_140_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid>>(); }
+        private object Activate_146_DataGridDragBehavior() { return new global::Telerik.UI.Xaml.Controls.Grid.DataGridDragBehavior(); }
+        private object Activate_151_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.Data.Core.SortDescriptorBase>(); }
+        private object Activate_152_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.Data.Core.SortDescriptorBase>(); }
+        private object Activate_161_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.Data.Core.GroupDescriptorBase>(); }
+        private object Activate_162_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.Data.Core.GroupDescriptorBase>(); }
+        private object Activate_166_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.Data.Core.FilterDescriptorBase>(); }
+        private object Activate_167_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.Data.Core.FilterDescriptorBase>(); }
+        private object Activate_171_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.Data.Core.AggregateDescriptorBase>(); }
+        private object Activate_172_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.Data.Core.AggregateDescriptorBase>(); }
+        private object Activate_175_ObjectSelector() { return new global::Telerik.UI.Xaml.Controls.Primitives.ObjectSelector<global::Windows.UI.Xaml.Media.Brush>(); }
+        private object Activate_182_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::System.Object>(); }
+        private object Activate_183_Collection() { return new global::System.Collections.ObjectModel.Collection<global::System.Object>(); }
+        private object Activate_184_GridPage() { return new global::SMS_UWP.Views.GridPage(); }
+        private object Activate_185_MainPage() { return new global::SMS_UWP.Views.MainPage(); }
+        private object Activate_186_MapPage() { return new global::SMS_UWP.Views.MapPage(); }
+        private object Activate_187_MediaPlayerPage() { return new global::SMS_UWP.Views.MediaPlayerPage(); }
+        private object Activate_188_EnumToBooleanConverter() { return new global::SMS_UWP.Helpers.EnumToBooleanConverter(); }
+        private object Activate_190_SettingsPage() { return new global::SMS_UWP.Views.SettingsPage(); }
+        private object Activate_191_HamburgerMenu() { return new global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu(); }
+        private object Activate_196_ShellPage() { return new global::SMS_UWP.Views.ShellPage(); }
+        private object Activate_197_TabbedPage() { return new global::SMS_UWP.Views.TabbedPage(); }
+        private object Activate_198_WebViewPage() { return new global::SMS_UWP.Views.WebViewPage(); }
+        private object Activate_201_D2DTextStyle() { return new global::Telerik.UI.Drawing.D2DTextStyle(); }
+        private object Activate_205_D2DShapeStyle() { return new global::Telerik.UI.Drawing.D2DShapeStyle(); }
+        private object Activate_206_D2DSolidColorBrush() { return new global::Telerik.UI.Drawing.D2DSolidColorBrush(); }
+        private object Activate_208_ChartAnnotationLabelDefinition() { return new global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition(); }
+        private object Activate_210_PaletteEntryCollection() { return new global::Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection(); }
+        private object Activate_211_List() { return new global::System.Collections.Generic.List<global::Windows.UI.Xaml.Media.Brush>(); }
+        private object Activate_212_AngledHexLayoutDefinition() { return new global::Telerik.UI.Xaml.Controls.Data.HexView.AngledHexLayoutDefinition(); }
+        private object Activate_215_FlatLooseHexLayoutDefinition() { return new global::Telerik.UI.Xaml.Controls.Data.HexView.FlatLooseHexLayoutDefinition(); }
+        private object Activate_216_FlatTightHexLayoutDefinition() { return new global::Telerik.UI.Xaml.Controls.Data.HexView.FlatTightHexLayoutDefinition(); }
+        private object Activate_217_HighlightStyle() { return new global::Telerik.UI.Xaml.Controls.Input.HighlightStyle(); }
+        private object Activate_220_CalendarCellStyle() { return new global::Telerik.UI.Xaml.Controls.Input.CalendarCellStyle(); }
+        private object Activate_221_RadRadialMenu() { return new global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu(); }
+        private object Activate_222_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>(); }
+        private object Activate_223_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>(); }
+        private object Activate_224_RadialMenuItem() { return new global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem(); }
+        private object Activate_231_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>(); }
+        private object Activate_232_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>(); }
+        private object Activate_235_RadialMenuTriggerBehavior() { return new global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuTriggerBehavior(); }
+        private object Activate_238_BusyIndicatorAnimationAdapter() { return new global::Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter(); }
+        private void VectorAdd_16_BehaviorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_25_ActionCollection(object instance, object item)
+        private void VectorAdd_22_ActionCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_38_CartesianSeriesCollection(object instance, object item)
+        private void VectorAdd_41_CartesianSeriesCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Chart.CartesianSeries>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Chart.CartesianSeries)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_39_PresenterCollection(object instance, object item)
+        private void VectorAdd_42_PresenterCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Chart.CartesianSeries>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Chart.CartesianSeries)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_40_Collection(object instance, object item)
+        private void VectorAdd_43_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Chart.CartesianSeries>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Chart.CartesianSeries)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_51_ObservableCollection(object instance, object item)
+        private void VectorAdd_54_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DataTemplate>)instance;
             var newItem = (global::Windows.UI.Xaml.DataTemplate)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_52_Collection(object instance, object item)
+        private void VectorAdd_55_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DataTemplate>)instance;
             var newItem = (global::Windows.UI.Xaml.DataTemplate)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_55_ObservableCollection(object instance, object item)
+        private void VectorAdd_58_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_56_Collection(object instance, object item)
+        private void VectorAdd_59_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_64_IndicatorCollection(object instance, object item)
+        private void VectorAdd_67_IndicatorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Chart.IndicatorBase>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Chart.IndicatorBase)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_65_PresenterCollection(object instance, object item)
+        private void VectorAdd_68_PresenterCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Chart.IndicatorBase>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Chart.IndicatorBase)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_66_Collection(object instance, object item)
+        private void VectorAdd_69_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Chart.IndicatorBase>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Chart.IndicatorBase)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_68_DataPointCollection(object instance, object item)
+        private void VectorAdd_71_DataPointCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.Charting.CategoricalDataPoint>)instance;
             var newItem = (global::Telerik.Charting.CategoricalDataPoint)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_69_ElementCollection(object instance, object item)
+        private void VectorAdd_72_ElementCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.Charting.CategoricalDataPoint>)instance;
             var newItem = (global::Telerik.Charting.CategoricalDataPoint)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_70_Collection(object instance, object item)
+        private void VectorAdd_73_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.Charting.CategoricalDataPoint>)instance;
             var newItem = (global::Telerik.Charting.CategoricalDataPoint)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_83_CartesianAnnotationCollection(object instance, object item)
+        private void VectorAdd_86_CartesianAnnotationCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Chart.CartesianChartAnnotation>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Chart.CartesianChartAnnotation)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_84_PresenterCollection(object instance, object item)
+        private void VectorAdd_87_PresenterCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Chart.CartesianChartAnnotation>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Chart.CartesianChartAnnotation)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_85_Collection(object instance, object item)
+        private void VectorAdd_88_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Chart.CartesianChartAnnotation>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Chart.CartesianChartAnnotation)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_94_ChartBehaviorCollection(object instance, object item)
+        private void VectorAdd_97_ChartBehaviorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Chart.ChartBehavior>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Chart.ChartBehavior)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_95_Collection(object instance, object item)
+        private void VectorAdd_98_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Chart.ChartBehavior>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Chart.ChartBehavior)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_120_DataGridColumnCollection(object instance, object item)
+        private void VectorAdd_123_DataGridColumnCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Grid.DataGridColumn>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Grid.DataGridColumn)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_121_ObservableCollection(object instance, object item)
+        private void VectorAdd_124_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Grid.DataGridColumn>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Grid.DataGridColumn)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_122_Collection(object instance, object item)
+        private void VectorAdd_125_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Grid.DataGridColumn>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Grid.DataGridColumn)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_134_CommandCollection(object instance, object item)
+        private void VectorAdd_137_CommandCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid>>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid>)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_135_AttachableObjectCollection(object instance, object item)
+        private void VectorAdd_138_AttachableObjectCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid>>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid>)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_136_ObservableCollection(object instance, object item)
+        private void VectorAdd_139_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid>>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid>)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_137_Collection(object instance, object item)
+        private void VectorAdd_140_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid>>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Grid.RadDataGrid>)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_146_SortDescriptorCollection(object instance, object item)
+        private void VectorAdd_149_SortDescriptorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.Data.Core.SortDescriptorBase>)instance;
             var newItem = (global::Telerik.Data.Core.SortDescriptorBase)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_147_DataDescriptorCollection(object instance, object item)
+        private void VectorAdd_150_DataDescriptorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.Data.Core.SortDescriptorBase>)instance;
             var newItem = (global::Telerik.Data.Core.SortDescriptorBase)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_148_ObservableCollection(object instance, object item)
+        private void VectorAdd_151_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.Data.Core.SortDescriptorBase>)instance;
             var newItem = (global::Telerik.Data.Core.SortDescriptorBase)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_149_Collection(object instance, object item)
+        private void VectorAdd_152_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.Data.Core.SortDescriptorBase>)instance;
             var newItem = (global::Telerik.Data.Core.SortDescriptorBase)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_156_GroupDescriptorCollection(object instance, object item)
+        private void VectorAdd_159_GroupDescriptorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.Data.Core.GroupDescriptorBase>)instance;
             var newItem = (global::Telerik.Data.Core.GroupDescriptorBase)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_157_DataDescriptorCollection(object instance, object item)
+        private void VectorAdd_160_DataDescriptorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.Data.Core.GroupDescriptorBase>)instance;
             var newItem = (global::Telerik.Data.Core.GroupDescriptorBase)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_158_ObservableCollection(object instance, object item)
+        private void VectorAdd_161_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.Data.Core.GroupDescriptorBase>)instance;
             var newItem = (global::Telerik.Data.Core.GroupDescriptorBase)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_159_Collection(object instance, object item)
+        private void VectorAdd_162_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.Data.Core.GroupDescriptorBase>)instance;
             var newItem = (global::Telerik.Data.Core.GroupDescriptorBase)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_161_FilterDescriptorCollection(object instance, object item)
+        private void VectorAdd_164_FilterDescriptorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.Data.Core.FilterDescriptorBase>)instance;
             var newItem = (global::Telerik.Data.Core.FilterDescriptorBase)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_162_DataDescriptorCollection(object instance, object item)
+        private void VectorAdd_165_DataDescriptorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.Data.Core.FilterDescriptorBase>)instance;
             var newItem = (global::Telerik.Data.Core.FilterDescriptorBase)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_163_ObservableCollection(object instance, object item)
+        private void VectorAdd_166_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.Data.Core.FilterDescriptorBase>)instance;
             var newItem = (global::Telerik.Data.Core.FilterDescriptorBase)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_164_Collection(object instance, object item)
+        private void VectorAdd_167_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.Data.Core.FilterDescriptorBase>)instance;
             var newItem = (global::Telerik.Data.Core.FilterDescriptorBase)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_166_AggregateDescriptorCollection(object instance, object item)
+        private void VectorAdd_169_AggregateDescriptorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.Data.Core.AggregateDescriptorBase>)instance;
             var newItem = (global::Telerik.Data.Core.AggregateDescriptorBase)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_167_DataDescriptorCollection(object instance, object item)
+        private void VectorAdd_170_DataDescriptorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.Data.Core.AggregateDescriptorBase>)instance;
             var newItem = (global::Telerik.Data.Core.AggregateDescriptorBase)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_168_ObservableCollection(object instance, object item)
+        private void VectorAdd_171_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.Data.Core.AggregateDescriptorBase>)instance;
             var newItem = (global::Telerik.Data.Core.AggregateDescriptorBase)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_169_Collection(object instance, object item)
+        private void VectorAdd_172_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.Data.Core.AggregateDescriptorBase>)instance;
             var newItem = (global::Telerik.Data.Core.AggregateDescriptorBase)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_179_ObservableCollection(object instance, object item)
+        private void VectorAdd_182_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.Object>)instance;
             var newItem = (global::System.Object)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_180_Collection(object instance, object item)
+        private void VectorAdd_183_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.Object>)instance;
             var newItem = (global::System.Object)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_209_List(object instance, object item)
+        private void VectorAdd_211_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Media.Brush>)instance;
             var newItem = (global::Windows.UI.Xaml.Media.Brush)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_220_ObservableCollection(object instance, object item)
+        private void VectorAdd_222_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_221_Collection(object instance, object item)
+        private void VectorAdd_223_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_227_CommandCollection(object instance, object item)
+        private void VectorAdd_229_CommandCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_228_AttachableObjectCollection(object instance, object item)
+        private void VectorAdd_230_AttachableObjectCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_229_ObservableCollection(object instance, object item)
+        private void VectorAdd_231_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_230_Collection(object instance, object item)
+        private void VectorAdd_232_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase<global::Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>)item;
@@ -1169,7 +1174,7 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 12:   //  SMS_UWP.ViewModels.ArduinoManageViewModel
+            case 12:   //  SMS_UWP.ViewModels.VM_AduMGMT
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("GalaSoft.MvvmLight.ViewModelBase"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
@@ -1190,82 +1195,63 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 15:   //  SMS_UWP.Views.ArduinoManageDetailControl
-                userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_15_ArduinoManageDetailControl;
-                userType.AddMemberName("MasterMenuItem");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 16:   //  Windows.UI.Xaml.Controls.UserControl
-                xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 17:   //  SMS_UWP.Models.Order
-                userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 18:   //  Microsoft.Xaml.Interactivity.Interaction
+            case 15:   //  Microsoft.Xaml.Interactivity.Interaction
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("Behaviors");
                 xamlType = userType;
                 break;
 
-            case 19:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
+            case 16:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_19_BehaviorCollection;
+                userType.CollectionAdd = VectorAdd_16_BehaviorCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 20:   //  Windows.UI.Xaml.DependencyObjectCollection
+            case 17:   //  Windows.UI.Xaml.DependencyObjectCollection
                 xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 21:   //  Windows.UI.Xaml.DependencyObject
+            case 18:   //  Windows.UI.Xaml.DependencyObject
                 xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 22:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
+            case 19:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Trigger"));
-                userType.Activator = Activate_22_EventTriggerBehavior;
+                userType.Activator = Activate_19_EventTriggerBehavior;
                 userType.SetContentPropertyName("Microsoft.Xaml.Interactivity.Trigger.Actions");
                 userType.AddMemberName("EventName");
                 userType.AddMemberName("SourceObject");
                 xamlType = userType;
                 break;
 
-            case 23:   //  Microsoft.Xaml.Interactivity.Trigger
+            case 20:   //  Microsoft.Xaml.Interactivity.Trigger
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior"));
                 userType.SetContentPropertyName("Microsoft.Xaml.Interactivity.Trigger.Actions");
                 userType.AddMemberName("Actions");
                 xamlType = userType;
                 break;
 
-            case 24:   //  Microsoft.Xaml.Interactivity.Behavior
+            case 21:   //  Microsoft.Xaml.Interactivity.Behavior
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.AddMemberName("AssociatedObject");
                 xamlType = userType;
                 break;
 
-            case 25:   //  Microsoft.Xaml.Interactivity.ActionCollection
+            case 22:   //  Microsoft.Xaml.Interactivity.ActionCollection
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_25_ActionCollection;
+                userType.CollectionAdd = VectorAdd_22_ActionCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 26:   //  String
+            case 23:   //  String
                 xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 27:   //  Microsoft.Xaml.Interactions.Core.InvokeCommandAction
+            case 24:   //  Microsoft.Xaml.Interactions.Core.InvokeCommandAction
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_27_InvokeCommandAction;
+                userType.Activator = Activate_24_InvokeCommandAction;
                 userType.AddMemberName("Command");
                 userType.AddMemberName("CommandParameter");
                 userType.AddMemberName("InputConverter");
@@ -1274,37 +1260,71 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 28:   //  System.Windows.Input.ICommand
+            case 25:   //  System.Windows.Input.ICommand
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 29:   //  Windows.UI.Xaml.Data.IValueConverter
+            case 26:   //  Windows.UI.Xaml.Data.IValueConverter
                 xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 30:   //  SMS_UWP.Views.ArduinoManageDetailPage
-                userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_30_ArduinoManageDetailPage;
+            case 27:   //  SMS_UWP.Views.V_AddAduDialog_C
+                userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ContentDialog"));
+                userType.Activator = Activate_27_V_AddAduDialog_C;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 31:   //  Windows.UI.Xaml.Controls.Page
+            case 28:   //  Windows.UI.Xaml.Controls.ContentDialog
                 xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 32:   //  SMS_UWP.Views.ArduinoManagePage
-                userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_32_ArduinoManagePage;
+            case 29:   //  Windows.UI.Xaml.Controls.ContentControl
+                xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 30:   //  SMS_UWP.Views.ArduinoManageDetailControl
+                userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_30_ArduinoManageDetailControl;
+                userType.AddMemberName("MasterMenuItem");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 33:   //  Telerik.UI.Xaml.Controls.Chart.RadCartesianChart
+            case 31:   //  Windows.UI.Xaml.Controls.UserControl
+                xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 32:   //  SMS_UWP.Models.Order
+                userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 33:   //  SMS_UWP.Views.ArduinoManageDetailPage
+                userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_33_ArduinoManageDetailPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 34:   //  Windows.UI.Xaml.Controls.Page
+                xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 35:   //  SMS_UWP.Views.V_AduMGMT_P
+                userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_35_V_AduMGMT_P;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 36:   //  Telerik.UI.Xaml.Controls.Chart.RadCartesianChart
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.RadChartBase"));
-                userType.Activator = Activate_33_RadCartesianChart;
+                userType.Activator = Activate_36_RadCartesianChart;
                 userType.SetContentPropertyName("Telerik.UI.Xaml.Controls.Chart.RadCartesianChart.Series");
                 userType.AddMemberName("Series");
                 userType.AddMemberName("HorizontalAxis");
@@ -1315,7 +1335,7 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 34:   //  Telerik.UI.Xaml.Controls.Chart.RadChartBase
+            case 37:   //  Telerik.UI.Xaml.Controls.Chart.RadChartBase
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PresenterBase"));
                 userType.AddMemberName("SeriesProvider");
                 userType.AddMemberName("ClipToBounds");
@@ -1337,49 +1357,49 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 35:   //  Telerik.UI.Xaml.Controls.Chart.PresenterBase
+            case 38:   //  Telerik.UI.Xaml.Controls.Chart.PresenterBase
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.RadControl"));
                 xamlType = userType;
                 break;
 
-            case 36:   //  Telerik.UI.Xaml.Controls.RadControl
+            case 39:   //  Telerik.UI.Xaml.Controls.RadControl
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
                 userType.AddMemberName("CurrentVisualState");
                 xamlType = userType;
                 break;
 
-            case 37:   //  Windows.UI.Xaml.Controls.Control
+            case 40:   //  Windows.UI.Xaml.Controls.Control
                 xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 38:   //  Telerik.UI.Xaml.Controls.Chart.CartesianSeriesCollection
+            case 41:   //  Telerik.UI.Xaml.Controls.Chart.CartesianSeriesCollection
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PresenterCollection`1<Telerik.UI.Xaml.Controls.Chart.CartesianSeries>"));
-                userType.CollectionAdd = VectorAdd_38_CartesianSeriesCollection;
+                userType.CollectionAdd = VectorAdd_41_CartesianSeriesCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 39:   //  Telerik.UI.Xaml.Controls.Chart.PresenterCollection`1<Telerik.UI.Xaml.Controls.Chart.CartesianSeries>
+            case 42:   //  Telerik.UI.Xaml.Controls.Chart.PresenterCollection`1<Telerik.UI.Xaml.Controls.Chart.CartesianSeries>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.CartesianSeries>"));
-                userType.CollectionAdd = VectorAdd_39_PresenterCollection;
+                userType.CollectionAdd = VectorAdd_42_PresenterCollection;
                 xamlType = userType;
                 break;
 
-            case 40:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.CartesianSeries>
+            case 43:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.CartesianSeries>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_40_Collection;
-                userType.CollectionAdd = VectorAdd_40_Collection;
+                userType.Activator = Activate_43_Collection;
+                userType.CollectionAdd = VectorAdd_43_Collection;
                 xamlType = userType;
                 break;
 
-            case 41:   //  Telerik.UI.Xaml.Controls.Chart.CartesianSeries
+            case 44:   //  Telerik.UI.Xaml.Controls.Chart.CartesianSeries
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PointTemplateSeries"));
                 userType.AddMemberName("HorizontalAxis");
                 userType.AddMemberName("VerticalAxis");
                 xamlType = userType;
                 break;
 
-            case 42:   //  Telerik.UI.Xaml.Controls.Chart.PointTemplateSeries
+            case 45:   //  Telerik.UI.Xaml.Controls.Chart.PointTemplateSeries
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartSeries"));
                 userType.AddMemberName("DefaultVisualStyle");
                 userType.AddMemberName("PointTemplate");
@@ -1390,7 +1410,7 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 43:   //  Telerik.UI.Xaml.Controls.Chart.ChartSeries
+            case 46:   //  Telerik.UI.Xaml.Controls.Chart.ChartSeries
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartElementPresenter"));
                 userType.AddMemberName("IsSelected");
                 userType.AddMemberName("AllowSelect");
@@ -1405,27 +1425,27 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 44:   //  Telerik.UI.Xaml.Controls.Chart.ChartElementPresenter
+            case 47:   //  Telerik.UI.Xaml.Controls.Chart.ChartElementPresenter
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PresenterBase"));
                 userType.AddMemberName("ZIndex");
                 userType.AddMemberName("Chart");
                 xamlType = userType;
                 break;
 
-            case 45:   //  Telerik.UI.Xaml.Controls.Chart.CartesianAxis
+            case 48:   //  Telerik.UI.Xaml.Controls.Chart.CartesianAxis
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.LineAxis"));
                 userType.AddMemberName("HorizontalLocation");
                 userType.AddMemberName("VerticalLocation");
                 xamlType = userType;
                 break;
 
-            case 46:   //  Telerik.UI.Xaml.Controls.Chart.LineAxis
+            case 49:   //  Telerik.UI.Xaml.Controls.Chart.LineAxis
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.Axis"));
                 userType.AddMemberName("IsInverse");
                 xamlType = userType;
                 break;
 
-            case 47:   //  Telerik.UI.Xaml.Controls.Chart.Axis
+            case 50:   //  Telerik.UI.Xaml.Controls.Chart.Axis
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartElementPresenter"));
                 userType.AddMemberName("LineStyle");
                 userType.AddMemberName("MajorTickStyle");
@@ -1449,57 +1469,57 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 48:   //  Windows.UI.Xaml.Style
+            case 51:   //  Windows.UI.Xaml.Style
                 xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 49:   //  Windows.UI.Xaml.DataTemplate
+            case 52:   //  Windows.UI.Xaml.DataTemplate
                 xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 50:   //  Windows.UI.Xaml.Controls.DataTemplateSelector
+            case 53:   //  Windows.UI.Xaml.Controls.DataTemplateSelector
                 xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 51:   //  System.Collections.ObjectModel.ObservableCollection`1<Windows.UI.Xaml.DataTemplate>
+            case 54:   //  System.Collections.ObjectModel.ObservableCollection`1<Windows.UI.Xaml.DataTemplate>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.DataTemplate>"));
-                userType.CollectionAdd = VectorAdd_51_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_54_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 52:   //  System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.DataTemplate>
+            case 55:   //  System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.DataTemplate>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_52_Collection;
-                userType.CollectionAdd = VectorAdd_52_Collection;
+                userType.Activator = Activate_55_Collection;
+                userType.CollectionAdd = VectorAdd_55_Collection;
                 xamlType = userType;
                 break;
 
-            case 53:   //  Boolean
+            case 56:   //  Boolean
                 xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 54:   //  Int32
+            case 57:   //  Int32
                 xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 55:   //  System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>
+            case 58:   //  System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>"));
-                userType.CollectionAdd = VectorAdd_55_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_58_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 56:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>
+            case 59:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_56_Collection;
-                userType.CollectionAdd = VectorAdd_56_Collection;
+                userType.Activator = Activate_59_Collection;
+                userType.CollectionAdd = VectorAdd_59_Collection;
                 xamlType = userType;
                 break;
 
-            case 57:   //  Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition
+            case 60:   //  Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_57_ChartSeriesLabelDefinition;
+                userType.Activator = Activate_60_ChartSeriesLabelDefinition;
                 userType.AddMemberName("Binding");
                 userType.AddMemberName("Format");
                 userType.AddMemberName("Margin");
@@ -1512,96 +1532,96 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 58:   //  Telerik.UI.Xaml.Controls.Chart.DataPointBinding
+            case 61:   //  Telerik.UI.Xaml.Controls.Chart.DataPointBinding
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 59:   //  Windows.UI.Xaml.Thickness
+            case 62:   //  Windows.UI.Xaml.Thickness
                 xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 60:   //  Windows.UI.Xaml.HorizontalAlignment
+            case 63:   //  Windows.UI.Xaml.HorizontalAlignment
                 xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 61:   //  Windows.UI.Xaml.VerticalAlignment
+            case 64:   //  Windows.UI.Xaml.VerticalAlignment
                 xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 62:   //  Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelStrategy
+            case 65:   //  Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelStrategy
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 63:   //  System.Collections.IEnumerable
+            case 66:   //  System.Collections.IEnumerable
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 64:   //  Telerik.UI.Xaml.Controls.Chart.IndicatorCollection
+            case 67:   //  Telerik.UI.Xaml.Controls.Chart.IndicatorCollection
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PresenterCollection`1<Telerik.UI.Xaml.Controls.Chart.IndicatorBase>"));
-                userType.CollectionAdd = VectorAdd_64_IndicatorCollection;
+                userType.CollectionAdd = VectorAdd_67_IndicatorCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 65:   //  Telerik.UI.Xaml.Controls.Chart.PresenterCollection`1<Telerik.UI.Xaml.Controls.Chart.IndicatorBase>
+            case 68:   //  Telerik.UI.Xaml.Controls.Chart.PresenterCollection`1<Telerik.UI.Xaml.Controls.Chart.IndicatorBase>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.IndicatorBase>"));
-                userType.CollectionAdd = VectorAdd_65_PresenterCollection;
+                userType.CollectionAdd = VectorAdd_68_PresenterCollection;
                 xamlType = userType;
                 break;
 
-            case 66:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.IndicatorBase>
+            case 69:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.IndicatorBase>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_66_Collection;
-                userType.CollectionAdd = VectorAdd_66_Collection;
+                userType.Activator = Activate_69_Collection;
+                userType.CollectionAdd = VectorAdd_69_Collection;
                 xamlType = userType;
                 break;
 
-            case 67:   //  Telerik.UI.Xaml.Controls.Chart.IndicatorBase
+            case 70:   //  Telerik.UI.Xaml.Controls.Chart.IndicatorBase
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartSeries"));
                 userType.AddMemberName("DataPoints");
                 userType.AddMemberName("CategoryBinding");
                 xamlType = userType;
                 break;
 
-            case 68:   //  Telerik.Charting.DataPointCollection`1<Telerik.Charting.CategoricalDataPoint>
+            case 71:   //  Telerik.Charting.DataPointCollection`1<Telerik.Charting.CategoricalDataPoint>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.Core.ElementCollection`1<Telerik.Charting.CategoricalDataPoint>"));
-                userType.CollectionAdd = VectorAdd_68_DataPointCollection;
+                userType.CollectionAdd = VectorAdd_71_DataPointCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 69:   //  Telerik.Core.ElementCollection`1<Telerik.Charting.CategoricalDataPoint>
+            case 72:   //  Telerik.Core.ElementCollection`1<Telerik.Charting.CategoricalDataPoint>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Telerik.Charting.CategoricalDataPoint>"));
-                userType.CollectionAdd = VectorAdd_69_ElementCollection;
+                userType.CollectionAdd = VectorAdd_72_ElementCollection;
                 xamlType = userType;
                 break;
 
-            case 70:   //  System.Collections.ObjectModel.Collection`1<Telerik.Charting.CategoricalDataPoint>
+            case 73:   //  System.Collections.ObjectModel.Collection`1<Telerik.Charting.CategoricalDataPoint>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_70_Collection;
-                userType.CollectionAdd = VectorAdd_70_Collection;
+                userType.Activator = Activate_73_Collection;
+                userType.CollectionAdd = VectorAdd_73_Collection;
                 xamlType = userType;
                 break;
 
-            case 71:   //  Telerik.Charting.CategoricalDataPoint
+            case 74:   //  Telerik.Charting.CategoricalDataPoint
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.Charting.CategoricalDataPointBase"));
-                userType.Activator = Activate_71_CategoricalDataPoint;
+                userType.Activator = Activate_74_CategoricalDataPoint;
                 userType.AddMemberName("Value");
                 xamlType = userType;
                 break;
 
-            case 72:   //  Telerik.Charting.CategoricalDataPointBase
+            case 75:   //  Telerik.Charting.CategoricalDataPointBase
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.Charting.DataPoint"));
                 userType.AddMemberName("Category");
                 xamlType = userType;
                 break;
 
-            case 73:   //  Telerik.Charting.DataPoint
+            case 76:   //  Telerik.Charting.DataPoint
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.Core.Node"));
                 userType.AddMemberName("Label");
                 userType.AddMemberName("DataItem");
@@ -1609,7 +1629,7 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 74:   //  Telerik.Core.Node
+            case 77:   //  Telerik.Core.Node
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.Core.PropertyBagObject"));
                 userType.AddMemberName("Presenter");
                 userType.AddMemberName("IsArrangeValid");
@@ -1622,22 +1642,22 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 75:   //  Telerik.Core.PropertyBagObject
+            case 78:   //  Telerik.Core.PropertyBagObject
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 76:   //  Double
+            case 79:   //  Double
                 xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 77:   //  Telerik.Core.IElementPresenter
+            case 80:   //  Telerik.Core.IElementPresenter
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 78:   //  Telerik.Core.NodeState
+            case 81:   //  Telerik.Core.NodeState
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Initial", global::Telerik.Core.NodeState.Initial);
                 userType.AddEnumValue("Loading", global::Telerik.Core.NodeState.Loading);
@@ -1647,79 +1667,79 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 79:   //  System.Enum
+            case 82:   //  System.Enum
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 xamlType = userType;
                 break;
 
-            case 80:   //  System.ValueType
+            case 83:   //  System.ValueType
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 81:   //  Telerik.Core.RadRect
+            case 84:   //  Telerik.Core.RadRect
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 82:   //  Telerik.Core.Element
+            case 85:   //  Telerik.Core.Element
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.Core.Node"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 83:   //  Telerik.UI.Xaml.Controls.Chart.CartesianAnnotationCollection
+            case 86:   //  Telerik.UI.Xaml.Controls.Chart.CartesianAnnotationCollection
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PresenterCollection`1<Telerik.UI.Xaml.Controls.Chart.CartesianChartAnnotation>"));
-                userType.CollectionAdd = VectorAdd_83_CartesianAnnotationCollection;
+                userType.CollectionAdd = VectorAdd_86_CartesianAnnotationCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 84:   //  Telerik.UI.Xaml.Controls.Chart.PresenterCollection`1<Telerik.UI.Xaml.Controls.Chart.CartesianChartAnnotation>
+            case 87:   //  Telerik.UI.Xaml.Controls.Chart.PresenterCollection`1<Telerik.UI.Xaml.Controls.Chart.CartesianChartAnnotation>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.CartesianChartAnnotation>"));
-                userType.CollectionAdd = VectorAdd_84_PresenterCollection;
+                userType.CollectionAdd = VectorAdd_87_PresenterCollection;
                 xamlType = userType;
                 break;
 
-            case 85:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.CartesianChartAnnotation>
+            case 88:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.CartesianChartAnnotation>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_85_Collection;
-                userType.CollectionAdd = VectorAdd_85_Collection;
+                userType.Activator = Activate_88_Collection;
+                userType.CollectionAdd = VectorAdd_88_Collection;
                 xamlType = userType;
                 break;
 
-            case 86:   //  Telerik.UI.Xaml.Controls.Chart.CartesianChartAnnotation
+            case 89:   //  Telerik.UI.Xaml.Controls.Chart.CartesianChartAnnotation
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartAnnotation"));
                 xamlType = userType;
                 break;
 
-            case 87:   //  Telerik.UI.Xaml.Controls.Chart.ChartAnnotation
+            case 90:   //  Telerik.UI.Xaml.Controls.Chart.ChartAnnotation
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartElementPresenter"));
                 userType.AddMemberName("ClipToPlotArea");
                 xamlType = userType;
                 break;
 
-            case 88:   //  Telerik.UI.Xaml.Controls.Chart.CartesianChartGrid
+            case 91:   //  Telerik.UI.Xaml.Controls.Chart.CartesianChartGrid
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartGrid"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 89:   //  Telerik.UI.Xaml.Controls.Chart.ChartGrid
+            case 92:   //  Telerik.UI.Xaml.Controls.Chart.ChartGrid
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartElementPresenter"));
                 xamlType = userType;
                 break;
 
-            case 90:   //  Telerik.UI.Xaml.Controls.Chart.ChartSeriesProvider
+            case 93:   //  Telerik.UI.Xaml.Controls.Chart.ChartSeriesProvider
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 91:   //  Telerik.UI.Xaml.Controls.Chart.ChartPalette
+            case 94:   //  Telerik.UI.Xaml.Controls.Chart.ChartPalette
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_91_ChartPalette;
+                userType.Activator = Activate_94_ChartPalette;
                 userType.AddMemberName("Name");
                 userType.AddMemberName("FillEntries");
                 userType.AddMemberName("SpecialFillEntries");
@@ -1729,7 +1749,7 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 92:   //  Telerik.UI.Xaml.Controls.Chart.PredefinedPaletteName
+            case 95:   //  Telerik.UI.Xaml.Controls.Chart.PredefinedPaletteName
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Telerik.UI.Xaml.Controls.Chart.PredefinedPaletteName.None);
                 userType.AddEnumValue("DefaultDark", global::Telerik.UI.Xaml.Controls.Chart.PredefinedPaletteName.DefaultDark);
@@ -1739,43 +1759,43 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 93:   //  Telerik.UI.Xaml.Controls.Chart.ContainerVisualsFactory
+            case 96:   //  Telerik.UI.Xaml.Controls.Chart.ContainerVisualsFactory
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 94:   //  Telerik.UI.Xaml.Controls.Chart.ChartBehaviorCollection
+            case 97:   //  Telerik.UI.Xaml.Controls.Chart.ChartBehaviorCollection
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.ChartBehavior>"));
-                userType.CollectionAdd = VectorAdd_94_ChartBehaviorCollection;
+                userType.CollectionAdd = VectorAdd_97_ChartBehaviorCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 95:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.ChartBehavior>
+            case 98:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.ChartBehavior>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_95_Collection;
-                userType.CollectionAdd = VectorAdd_95_Collection;
+                userType.Activator = Activate_98_Collection;
+                userType.CollectionAdd = VectorAdd_98_Collection;
                 xamlType = userType;
                 break;
 
-            case 96:   //  Telerik.UI.Xaml.Controls.Chart.ChartBehavior
+            case 99:   //  Telerik.UI.Xaml.Controls.Chart.ChartBehavior
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.AddMemberName("Chart");
                 xamlType = userType;
                 break;
 
-            case 97:   //  Windows.Foundation.Size
+            case 100:   //  Windows.Foundation.Size
                 xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 98:   //  Windows.Foundation.Point
+            case 101:   //  Windows.Foundation.Point
                 xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 99:   //  Telerik.UI.Xaml.Controls.Chart.CategoricalAxis
+            case 102:   //  Telerik.UI.Xaml.Controls.Chart.CategoricalAxis
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.CartesianAxis"));
-                userType.Activator = Activate_99_CategoricalAxis;
+                userType.Activator = Activate_102_CategoricalAxis;
                 userType.AddMemberName("AutoGroup");
                 userType.AddMemberName("MajorTickInterval");
                 userType.AddMemberName("PlotMode");
@@ -1783,7 +1803,7 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 100:   //  Telerik.Charting.AxisPlotMode
+            case 103:   //  Telerik.Charting.AxisPlotMode
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("BetweenTicks", global::Telerik.Charting.AxisPlotMode.BetweenTicks);
                 userType.AddEnumValue("OnTicks", global::Telerik.Charting.AxisPlotMode.OnTicks);
@@ -1791,33 +1811,33 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 101:   //  Telerik.Charting.AxisHorizontalLocation
+            case 104:   //  Telerik.Charting.AxisHorizontalLocation
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Left", global::Telerik.Charting.AxisHorizontalLocation.Left);
                 userType.AddEnumValue("Right", global::Telerik.Charting.AxisHorizontalLocation.Right);
                 xamlType = userType;
                 break;
 
-            case 102:   //  Telerik.Charting.AxisVerticalLocation
+            case 105:   //  Telerik.Charting.AxisVerticalLocation
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Bottom", global::Telerik.Charting.AxisVerticalLocation.Bottom);
                 userType.AddEnumValue("Top", global::Telerik.Charting.AxisVerticalLocation.Top);
                 xamlType = userType;
                 break;
 
-            case 103:   //  Telerik.Charting.IContentFormatter
+            case 106:   //  Telerik.Charting.IContentFormatter
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 104:   //  Telerik.Charting.ILabelCreator
+            case 107:   //  Telerik.Charting.ILabelCreator
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 105:   //  Telerik.Charting.AxisLastLabelVisibility
+            case 108:   //  Telerik.Charting.AxisLastLabelVisibility
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Visible", global::Telerik.Charting.AxisLastLabelVisibility.Visible);
                 userType.AddEnumValue("Hidden", global::Telerik.Charting.AxisLastLabelVisibility.Hidden);
@@ -1825,7 +1845,7 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 106:   //  Telerik.Charting.AxisLabelFitMode
+            case 109:   //  Telerik.Charting.AxisLabelFitMode
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Telerik.Charting.AxisLabelFitMode.None);
                 userType.AddEnumValue("MultiLine", global::Telerik.Charting.AxisLabelFitMode.MultiLine);
@@ -1833,14 +1853,14 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 107:   //  Telerik.UI.Xaml.Controls.Chart.LinearAxis
+            case 110:   //  Telerik.UI.Xaml.Controls.Chart.LinearAxis
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.NumericalAxis"));
-                userType.Activator = Activate_107_LinearAxis;
+                userType.Activator = Activate_110_LinearAxis;
                 userType.AddMemberName("MajorStep");
                 xamlType = userType;
                 break;
 
-            case 108:   //  Telerik.UI.Xaml.Controls.Chart.NumericalAxis
+            case 111:   //  Telerik.UI.Xaml.Controls.Chart.NumericalAxis
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.CartesianAxis"));
                 userType.AddMemberName("Minimum");
                 userType.AddMemberName("Maximum");
@@ -1850,7 +1870,7 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 109:   //  Telerik.Charting.NumericalAxisRangeExtendDirection
+            case 112:   //  Telerik.Charting.NumericalAxisRangeExtendDirection
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Telerik.Charting.NumericalAxisRangeExtendDirection.None);
                 userType.AddEnumValue("Positive", global::Telerik.Charting.NumericalAxisRangeExtendDirection.Positive);
@@ -1859,22 +1879,22 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 110:   //  Telerik.Core.ValueRange`1<Double>
+            case 113:   //  Telerik.Core.ValueRange`1<Double>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 111:   //  Telerik.UI.Xaml.Controls.Chart.BarSeries
+            case 114:   //  Telerik.UI.Xaml.Controls.Chart.BarSeries
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.CategoricalSeries"));
-                userType.Activator = Activate_111_BarSeries;
+                userType.Activator = Activate_114_BarSeries;
                 userType.SetContentPropertyName("Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase.DataPoints");
                 userType.AddMemberName("PaletteMode");
                 userType.AddMemberName("LegendTitleBinding");
                 xamlType = userType;
                 break;
 
-            case 112:   //  Telerik.UI.Xaml.Controls.Chart.CategoricalSeries
+            case 115:   //  Telerik.UI.Xaml.Controls.Chart.CategoricalSeries
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase"));
                 userType.SetContentPropertyName("Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase.DataPoints");
                 userType.AddMemberName("CombineMode");
@@ -1882,7 +1902,7 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 113:   //  Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase
+            case 116:   //  Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.CartesianSeries"));
                 userType.SetContentPropertyName("Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase.DataPoints");
                 userType.AddMemberName("DataPoints");
@@ -1891,14 +1911,14 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 114:   //  Telerik.UI.Xaml.Controls.Chart.SeriesPaletteMode
+            case 117:   //  Telerik.UI.Xaml.Controls.Chart.SeriesPaletteMode
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Series", global::Telerik.UI.Xaml.Controls.Chart.SeriesPaletteMode.Series);
                 userType.AddEnumValue("DataPoint", global::Telerik.UI.Xaml.Controls.Chart.SeriesPaletteMode.DataPoint);
                 xamlType = userType;
                 break;
 
-            case 115:   //  Telerik.Charting.ChartSeriesCombineMode
+            case 118:   //  Telerik.Charting.ChartSeriesCombineMode
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Telerik.Charting.ChartSeriesCombineMode.None);
                 userType.AddEnumValue("Cluster", global::Telerik.Charting.ChartSeriesCombineMode.Cluster);
@@ -1907,23 +1927,23 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 116:   //  Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding
+            case 119:   //  Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.DataPointBinding"));
-                userType.Activator = Activate_116_PropertyNameDataPointBinding;
+                userType.Activator = Activate_119_PropertyNameDataPointBinding;
                 userType.AddMemberName("PropertyName");
                 xamlType = userType;
                 break;
 
-            case 117:   //  SMS_UWP.Views.ChartPage
+            case 120:   //  SMS_UWP.Views.ChartPage
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_117_ChartPage;
+                userType.Activator = Activate_120_ChartPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 118:   //  Telerik.UI.Xaml.Controls.Grid.RadDataGrid
+            case 121:   //  Telerik.UI.Xaml.Controls.Grid.RadDataGrid
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.RadControl"));
-                userType.Activator = Activate_118_RadDataGrid;
+                userType.Activator = Activate_121_RadDataGrid;
                 userType.AddMemberName("ColumnDataOperationsMode");
                 userType.AddMemberName("ItemsSource");
                 userType.AddMemberName("Columns");
@@ -1975,35 +1995,35 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 119:   //  Telerik.UI.Xaml.Controls.Grid.Primitives.ColumnDataOperationsMode
+            case 122:   //  Telerik.UI.Xaml.Controls.Grid.Primitives.ColumnDataOperationsMode
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Inline", global::Telerik.UI.Xaml.Controls.Grid.Primitives.ColumnDataOperationsMode.Inline);
                 userType.AddEnumValue("Flyout", global::Telerik.UI.Xaml.Controls.Grid.Primitives.ColumnDataOperationsMode.Flyout);
                 xamlType = userType;
                 break;
 
-            case 120:   //  Telerik.UI.Xaml.Controls.Grid.DataGridColumnCollection
+            case 123:   //  Telerik.UI.Xaml.Controls.Grid.DataGridColumnCollection
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Grid.DataGridColumn>"));
-                userType.CollectionAdd = VectorAdd_120_DataGridColumnCollection;
+                userType.CollectionAdd = VectorAdd_123_DataGridColumnCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 121:   //  System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Grid.DataGridColumn>
+            case 124:   //  System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Grid.DataGridColumn>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Grid.DataGridColumn>"));
-                userType.Activator = Activate_121_ObservableCollection;
-                userType.CollectionAdd = VectorAdd_121_ObservableCollection;
+                userType.Activator = Activate_124_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_124_ObservableCollection;
                 xamlType = userType;
                 break;
 
-            case 122:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Grid.DataGridColumn>
+            case 125:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Grid.DataGridColumn>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_122_Collection;
-                userType.CollectionAdd = VectorAdd_122_Collection;
+                userType.Activator = Activate_125_Collection;
+                userType.CollectionAdd = VectorAdd_125_Collection;
                 xamlType = userType;
                 break;
 
-            case 123:   //  Telerik.UI.Xaml.Controls.Grid.DataGridColumn
+            case 126:   //  Telerik.UI.Xaml.Controls.Grid.DataGridColumn
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadDependencyObject"));
                 userType.AddMemberName("IsCellFlyoutEnabled");
                 userType.AddMemberName("CellDecorationStyle");
@@ -2027,16 +2047,16 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 124:   //  Telerik.UI.Xaml.Controls.Primitives.RadDependencyObject
+            case 127:   //  Telerik.UI.Xaml.Controls.Primitives.RadDependencyObject
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 xamlType = userType;
                 break;
 
-            case 125:   //  Windows.UI.Xaml.Controls.StyleSelector
+            case 128:   //  Windows.UI.Xaml.Controls.StyleSelector
                 xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 126:   //  Telerik.UI.Xaml.Controls.Grid.DataGridColumnSizeMode
+            case 129:   //  Telerik.UI.Xaml.Controls.Grid.DataGridColumnSizeMode
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Stretch", global::Telerik.UI.Xaml.Controls.Grid.DataGridColumnSizeMode.Stretch);
                 userType.AddEnumValue("Auto", global::Telerik.UI.Xaml.Controls.Grid.DataGridColumnSizeMode.Auto);
@@ -2044,7 +2064,7 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 127:   //  Telerik.UI.Xaml.Controls.Grid.SortDirection
+            case 130:   //  Telerik.UI.Xaml.Controls.Grid.SortDirection
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Telerik.UI.Xaml.Controls.Grid.SortDirection.None);
                 userType.AddEnumValue("Ascending", global::Telerik.UI.Xaml.Controls.Grid.SortDirection.Ascending);
@@ -2052,7 +2072,7 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 128:   //  Telerik.UI.Xaml.Controls.Grid.DataGridUserFilterMode
+            case 131:   //  Telerik.UI.Xaml.Controls.Grid.DataGridUserFilterMode
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Auto", global::Telerik.UI.Xaml.Controls.Grid.DataGridUserFilterMode.Auto);
                 userType.AddEnumValue("Enabled", global::Telerik.UI.Xaml.Controls.Grid.DataGridUserFilterMode.Enabled);
@@ -2060,14 +2080,14 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 129:   //  Telerik.UI.Xaml.Controls.Grid.DataGridUserColumnReorderMode
+            case 132:   //  Telerik.UI.Xaml.Controls.Grid.DataGridUserColumnReorderMode
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Interactive", global::Telerik.UI.Xaml.Controls.Grid.DataGridUserColumnReorderMode.Interactive);
                 userType.AddEnumValue("None", global::Telerik.UI.Xaml.Controls.Grid.DataGridUserColumnReorderMode.None);
                 xamlType = userType;
                 break;
 
-            case 130:   //  Telerik.UI.Xaml.Controls.Grid.DataGridColumnResizeHandleDisplayMode
+            case 133:   //  Telerik.UI.Xaml.Controls.Grid.DataGridColumnResizeHandleDisplayMode
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Telerik.UI.Xaml.Controls.Grid.DataGridColumnResizeHandleDisplayMode.None);
                 userType.AddEnumValue("Always", global::Telerik.UI.Xaml.Controls.Grid.DataGridColumnResizeHandleDisplayMode.Always);
@@ -2075,7 +2095,7 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 131:   //  Telerik.UI.Xaml.Controls.Grid.DataGridUserSortMode
+            case 134:   //  Telerik.UI.Xaml.Controls.Grid.DataGridUserSortMode
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Auto", global::Telerik.UI.Xaml.Controls.Grid.DataGridUserSortMode.Auto);
                 userType.AddEnumValue("None", global::Telerik.UI.Xaml.Controls.Grid.DataGridUserSortMode.None);
@@ -2084,7 +2104,7 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 132:   //  Telerik.UI.Xaml.Controls.Grid.DataGridUserGroupMode
+            case 135:   //  Telerik.UI.Xaml.Controls.Grid.DataGridUserGroupMode
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Auto", global::Telerik.UI.Xaml.Controls.Grid.DataGridUserGroupMode.Auto);
                 userType.AddEnumValue("Enabled", global::Telerik.UI.Xaml.Controls.Grid.DataGridUserGroupMode.Enabled);
@@ -2092,257 +2112,257 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 133:   //  Telerik.UI.Xaml.Controls.Grid.DataGridGroupHeaderDisplayMode
+            case 136:   //  Telerik.UI.Xaml.Controls.Grid.DataGridGroupHeaderDisplayMode
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Frozen", global::Telerik.UI.Xaml.Controls.Grid.DataGridGroupHeaderDisplayMode.Frozen);
                 userType.AddEnumValue("Scrollable", global::Telerik.UI.Xaml.Controls.Grid.DataGridGroupHeaderDisplayMode.Scrollable);
                 xamlType = userType;
                 break;
 
-            case 134:   //  Telerik.UI.Xaml.Controls.Primitives.CommandCollection`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>
+            case 137:   //  Telerik.UI.Xaml.Controls.Primitives.CommandCollection`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.AttachableObjectCollection`2<Telerik.UI.Xaml.Controls.Grid.RadDataGrid, Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>>"));
-                userType.CollectionAdd = VectorAdd_134_CommandCollection;
+                userType.CollectionAdd = VectorAdd_137_CommandCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 135:   //  Telerik.UI.Xaml.Controls.Primitives.AttachableObjectCollection`2<Telerik.UI.Xaml.Controls.Grid.RadDataGrid, Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>>
+            case 138:   //  Telerik.UI.Xaml.Controls.Primitives.AttachableObjectCollection`2<Telerik.UI.Xaml.Controls.Grid.RadDataGrid, Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>>"));
-                userType.CollectionAdd = VectorAdd_135_AttachableObjectCollection;
+                userType.CollectionAdd = VectorAdd_138_AttachableObjectCollection;
                 xamlType = userType;
                 break;
 
-            case 136:   //  System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>>
+            case 139:   //  System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>>"));
-                userType.Activator = Activate_136_ObservableCollection;
-                userType.CollectionAdd = VectorAdd_136_ObservableCollection;
+                userType.Activator = Activate_139_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_139_ObservableCollection;
                 xamlType = userType;
                 break;
 
-            case 137:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>>
+            case 140:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_137_Collection;
-                userType.CollectionAdd = VectorAdd_137_Collection;
+                userType.Activator = Activate_140_Collection;
+                userType.CollectionAdd = VectorAdd_140_Collection;
                 xamlType = userType;
                 break;
 
-            case 138:   //  Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>
+            case 141:   //  Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>"));
                 xamlType = userType;
                 break;
 
-            case 139:   //  Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>
+            case 142:   //  Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadDependencyObject"));
                 userType.AddMemberName("Owner");
                 xamlType = userType;
                 break;
 
-            case 140:   //  Telerik.UI.Xaml.Controls.Grid.Commands.CommandService
+            case 143:   //  Telerik.UI.Xaml.Controls.Grid.Commands.CommandService
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.CommandServiceBase`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 141:   //  Telerik.UI.Xaml.Controls.Primitives.CommandServiceBase`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>
+            case 144:   //  Telerik.UI.Xaml.Controls.Primitives.CommandServiceBase`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.ServiceBase`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>"));
                 xamlType = userType;
                 break;
 
-            case 142:   //  Telerik.UI.Xaml.Controls.Primitives.ServiceBase`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>
+            case 145:   //  Telerik.UI.Xaml.Controls.Primitives.ServiceBase`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>"));
                 xamlType = userType;
                 break;
 
-            case 143:   //  Telerik.UI.Xaml.Controls.Grid.DataGridDragBehavior
+            case 146:   //  Telerik.UI.Xaml.Controls.Grid.DataGridDragBehavior
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 144:   //  Telerik.UI.Xaml.Controls.Grid.GroupPanelPosition
+            case 147:   //  Telerik.UI.Xaml.Controls.Grid.GroupPanelPosition
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Left", global::Telerik.UI.Xaml.Controls.Grid.GroupPanelPosition.Left);
                 userType.AddEnumValue("Bottom", global::Telerik.UI.Xaml.Controls.Grid.GroupPanelPosition.Bottom);
                 xamlType = userType;
                 break;
 
-            case 145:   //  Telerik.Core.Data.BatchLoadingMode
+            case 148:   //  Telerik.Core.Data.BatchLoadingMode
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Auto", global::Telerik.Core.Data.BatchLoadingMode.Auto);
                 userType.AddEnumValue("Explicit", global::Telerik.Core.Data.BatchLoadingMode.Explicit);
                 xamlType = userType;
                 break;
 
-            case 146:   //  Telerik.Data.Core.SortDescriptorCollection
+            case 149:   //  Telerik.Data.Core.SortDescriptorCollection
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.Data.Core.DataDescriptorCollection`1<Telerik.Data.Core.SortDescriptorBase>"));
-                userType.CollectionAdd = VectorAdd_146_SortDescriptorCollection;
+                userType.CollectionAdd = VectorAdd_149_SortDescriptorCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 147:   //  Telerik.Data.Core.DataDescriptorCollection`1<Telerik.Data.Core.SortDescriptorBase>
+            case 150:   //  Telerik.Data.Core.DataDescriptorCollection`1<Telerik.Data.Core.SortDescriptorBase>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.ObservableCollection`1<Telerik.Data.Core.SortDescriptorBase>"));
-                userType.CollectionAdd = VectorAdd_147_DataDescriptorCollection;
+                userType.CollectionAdd = VectorAdd_150_DataDescriptorCollection;
                 xamlType = userType;
                 break;
 
-            case 148:   //  System.Collections.ObjectModel.ObservableCollection`1<Telerik.Data.Core.SortDescriptorBase>
+            case 151:   //  System.Collections.ObjectModel.ObservableCollection`1<Telerik.Data.Core.SortDescriptorBase>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Telerik.Data.Core.SortDescriptorBase>"));
-                userType.Activator = Activate_148_ObservableCollection;
-                userType.CollectionAdd = VectorAdd_148_ObservableCollection;
+                userType.Activator = Activate_151_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_151_ObservableCollection;
                 xamlType = userType;
                 break;
 
-            case 149:   //  System.Collections.ObjectModel.Collection`1<Telerik.Data.Core.SortDescriptorBase>
+            case 152:   //  System.Collections.ObjectModel.Collection`1<Telerik.Data.Core.SortDescriptorBase>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_149_Collection;
-                userType.CollectionAdd = VectorAdd_149_Collection;
+                userType.Activator = Activate_152_Collection;
+                userType.CollectionAdd = VectorAdd_152_Collection;
                 xamlType = userType;
                 break;
 
-            case 150:   //  Telerik.Data.Core.SortDescriptorBase
+            case 153:   //  Telerik.Data.Core.SortDescriptorBase
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.Data.Core.OrderedDescriptor"));
                 userType.AddMemberName("Comparer");
                 xamlType = userType;
                 break;
 
-            case 151:   //  Telerik.Data.Core.OrderedDescriptor
+            case 154:   //  Telerik.Data.Core.OrderedDescriptor
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.Data.Core.DataDescriptor"));
                 userType.AddMemberName("SortOrder");
                 xamlType = userType;
                 break;
 
-            case 152:   //  Telerik.Data.Core.DataDescriptor
+            case 155:   //  Telerik.Data.Core.DataDescriptor
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.Core.ViewModelBase"));
                 xamlType = userType;
                 break;
 
-            case 153:   //  Telerik.Core.ViewModelBase
+            case 156:   //  Telerik.Core.ViewModelBase
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 154:   //  System.Collections.IComparer
+            case 157:   //  System.Collections.IComparer
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 155:   //  Telerik.Data.Core.SortOrder
+            case 158:   //  Telerik.Data.Core.SortOrder
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Ascending", global::Telerik.Data.Core.SortOrder.Ascending);
                 userType.AddEnumValue("Descending", global::Telerik.Data.Core.SortOrder.Descending);
                 xamlType = userType;
                 break;
 
-            case 156:   //  Telerik.Data.Core.GroupDescriptorCollection
+            case 159:   //  Telerik.Data.Core.GroupDescriptorCollection
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.Data.Core.DataDescriptorCollection`1<Telerik.Data.Core.GroupDescriptorBase>"));
-                userType.CollectionAdd = VectorAdd_156_GroupDescriptorCollection;
+                userType.CollectionAdd = VectorAdd_159_GroupDescriptorCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 157:   //  Telerik.Data.Core.DataDescriptorCollection`1<Telerik.Data.Core.GroupDescriptorBase>
+            case 160:   //  Telerik.Data.Core.DataDescriptorCollection`1<Telerik.Data.Core.GroupDescriptorBase>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.ObservableCollection`1<Telerik.Data.Core.GroupDescriptorBase>"));
-                userType.CollectionAdd = VectorAdd_157_DataDescriptorCollection;
+                userType.CollectionAdd = VectorAdd_160_DataDescriptorCollection;
                 xamlType = userType;
                 break;
 
-            case 158:   //  System.Collections.ObjectModel.ObservableCollection`1<Telerik.Data.Core.GroupDescriptorBase>
+            case 161:   //  System.Collections.ObjectModel.ObservableCollection`1<Telerik.Data.Core.GroupDescriptorBase>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Telerik.Data.Core.GroupDescriptorBase>"));
-                userType.Activator = Activate_158_ObservableCollection;
-                userType.CollectionAdd = VectorAdd_158_ObservableCollection;
+                userType.Activator = Activate_161_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_161_ObservableCollection;
                 xamlType = userType;
                 break;
 
-            case 159:   //  System.Collections.ObjectModel.Collection`1<Telerik.Data.Core.GroupDescriptorBase>
+            case 162:   //  System.Collections.ObjectModel.Collection`1<Telerik.Data.Core.GroupDescriptorBase>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_159_Collection;
-                userType.CollectionAdd = VectorAdd_159_Collection;
+                userType.Activator = Activate_162_Collection;
+                userType.CollectionAdd = VectorAdd_162_Collection;
                 xamlType = userType;
                 break;
 
-            case 160:   //  Telerik.Data.Core.GroupDescriptorBase
+            case 163:   //  Telerik.Data.Core.GroupDescriptorBase
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.Data.Core.OrderedDescriptor"));
                 userType.AddMemberName("DisplayContent");
                 xamlType = userType;
                 break;
 
-            case 161:   //  Telerik.Data.Core.FilterDescriptorCollection
+            case 164:   //  Telerik.Data.Core.FilterDescriptorCollection
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.Data.Core.DataDescriptorCollection`1<Telerik.Data.Core.FilterDescriptorBase>"));
-                userType.CollectionAdd = VectorAdd_161_FilterDescriptorCollection;
+                userType.CollectionAdd = VectorAdd_164_FilterDescriptorCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 162:   //  Telerik.Data.Core.DataDescriptorCollection`1<Telerik.Data.Core.FilterDescriptorBase>
+            case 165:   //  Telerik.Data.Core.DataDescriptorCollection`1<Telerik.Data.Core.FilterDescriptorBase>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.ObservableCollection`1<Telerik.Data.Core.FilterDescriptorBase>"));
-                userType.CollectionAdd = VectorAdd_162_DataDescriptorCollection;
+                userType.CollectionAdd = VectorAdd_165_DataDescriptorCollection;
                 xamlType = userType;
                 break;
 
-            case 163:   //  System.Collections.ObjectModel.ObservableCollection`1<Telerik.Data.Core.FilterDescriptorBase>
+            case 166:   //  System.Collections.ObjectModel.ObservableCollection`1<Telerik.Data.Core.FilterDescriptorBase>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Telerik.Data.Core.FilterDescriptorBase>"));
-                userType.Activator = Activate_163_ObservableCollection;
-                userType.CollectionAdd = VectorAdd_163_ObservableCollection;
+                userType.Activator = Activate_166_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_166_ObservableCollection;
                 xamlType = userType;
                 break;
 
-            case 164:   //  System.Collections.ObjectModel.Collection`1<Telerik.Data.Core.FilterDescriptorBase>
+            case 167:   //  System.Collections.ObjectModel.Collection`1<Telerik.Data.Core.FilterDescriptorBase>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_164_Collection;
-                userType.CollectionAdd = VectorAdd_164_Collection;
+                userType.Activator = Activate_167_Collection;
+                userType.CollectionAdd = VectorAdd_167_Collection;
                 xamlType = userType;
                 break;
 
-            case 165:   //  Telerik.Data.Core.FilterDescriptorBase
+            case 168:   //  Telerik.Data.Core.FilterDescriptorBase
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.Data.Core.DataDescriptor"));
                 xamlType = userType;
                 break;
 
-            case 166:   //  Telerik.Data.Core.AggregateDescriptorCollection
+            case 169:   //  Telerik.Data.Core.AggregateDescriptorCollection
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.Data.Core.DataDescriptorCollection`1<Telerik.Data.Core.AggregateDescriptorBase>"));
-                userType.CollectionAdd = VectorAdd_166_AggregateDescriptorCollection;
+                userType.CollectionAdd = VectorAdd_169_AggregateDescriptorCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 167:   //  Telerik.Data.Core.DataDescriptorCollection`1<Telerik.Data.Core.AggregateDescriptorBase>
+            case 170:   //  Telerik.Data.Core.DataDescriptorCollection`1<Telerik.Data.Core.AggregateDescriptorBase>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.ObservableCollection`1<Telerik.Data.Core.AggregateDescriptorBase>"));
-                userType.CollectionAdd = VectorAdd_167_DataDescriptorCollection;
+                userType.CollectionAdd = VectorAdd_170_DataDescriptorCollection;
                 xamlType = userType;
                 break;
 
-            case 168:   //  System.Collections.ObjectModel.ObservableCollection`1<Telerik.Data.Core.AggregateDescriptorBase>
+            case 171:   //  System.Collections.ObjectModel.ObservableCollection`1<Telerik.Data.Core.AggregateDescriptorBase>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Telerik.Data.Core.AggregateDescriptorBase>"));
-                userType.Activator = Activate_168_ObservableCollection;
-                userType.CollectionAdd = VectorAdd_168_ObservableCollection;
+                userType.Activator = Activate_171_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_171_ObservableCollection;
                 xamlType = userType;
                 break;
 
-            case 169:   //  System.Collections.ObjectModel.Collection`1<Telerik.Data.Core.AggregateDescriptorBase>
+            case 172:   //  System.Collections.ObjectModel.Collection`1<Telerik.Data.Core.AggregateDescriptorBase>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_169_Collection;
-                userType.CollectionAdd = VectorAdd_169_Collection;
+                userType.Activator = Activate_172_Collection;
+                userType.CollectionAdd = VectorAdd_172_Collection;
                 xamlType = userType;
                 break;
 
-            case 170:   //  Telerik.Data.Core.AggregateDescriptorBase
+            case 173:   //  Telerik.Data.Core.AggregateDescriptorBase
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.Data.Core.DataDescriptor"));
                 xamlType = userType;
                 break;
 
-            case 171:   //  Windows.UI.Xaml.Media.Brush
+            case 174:   //  Windows.UI.Xaml.Media.Brush
                 xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 172:   //  Telerik.UI.Xaml.Controls.Primitives.ObjectSelector`1<Windows.UI.Xaml.Media.Brush>
+            case 175:   //  Telerik.UI.Xaml.Controls.Primitives.ObjectSelector`1<Windows.UI.Xaml.Media.Brush>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 173:   //  Telerik.UI.Xaml.Controls.Primitives.GridLinesVisibility
+            case 176:   //  Telerik.UI.Xaml.Controls.Primitives.GridLinesVisibility
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Telerik.UI.Xaml.Controls.Primitives.GridLinesVisibility.None);
                 userType.AddEnumValue("Horizontal", global::Telerik.UI.Xaml.Controls.Primitives.GridLinesVisibility.Horizontal);
@@ -2351,7 +2371,7 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 174:   //  Telerik.UI.Xaml.Controls.Grid.DataGridUserEditMode
+            case 177:   //  Telerik.UI.Xaml.Controls.Grid.DataGridUserEditMode
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Telerik.UI.Xaml.Controls.Grid.DataGridUserEditMode.None);
                 userType.AddEnumValue("Inline", global::Telerik.UI.Xaml.Controls.Grid.DataGridUserEditMode.Inline);
@@ -2359,26 +2379,26 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 175:   //  Telerik.UI.Xaml.Controls.Grid.IGridExternalEditor
+            case 178:   //  Telerik.UI.Xaml.Controls.Grid.IGridExternalEditor
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 176:   //  Telerik.UI.Xaml.Controls.Grid.HitTestService
+            case 179:   //  Telerik.UI.Xaml.Controls.Grid.HitTestService
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.ServiceBase`1<Telerik.UI.Xaml.Controls.Grid.RadDataGrid>"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 177:   //  Telerik.UI.Xaml.Controls.Grid.DataGridSelectionUnit
+            case 180:   //  Telerik.UI.Xaml.Controls.Grid.DataGridSelectionUnit
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Row", global::Telerik.UI.Xaml.Controls.Grid.DataGridSelectionUnit.Row);
                 userType.AddEnumValue("Cell", global::Telerik.UI.Xaml.Controls.Grid.DataGridSelectionUnit.Cell);
                 xamlType = userType;
                 break;
 
-            case 178:   //  Telerik.UI.Xaml.Controls.Grid.DataGridSelectionMode
+            case 181:   //  Telerik.UI.Xaml.Controls.Grid.DataGridSelectionMode
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Telerik.UI.Xaml.Controls.Grid.DataGridSelectionMode.None);
                 userType.AddEnumValue("Single", global::Telerik.UI.Xaml.Controls.Grid.DataGridSelectionMode.Single);
@@ -2386,72 +2406,72 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 179:   //  System.Collections.ObjectModel.ObservableCollection`1<Object>
+            case 182:   //  System.Collections.ObjectModel.ObservableCollection`1<Object>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Object>"));
-                userType.CollectionAdd = VectorAdd_179_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_182_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 180:   //  System.Collections.ObjectModel.Collection`1<Object>
+            case 183:   //  System.Collections.ObjectModel.Collection`1<Object>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_180_Collection;
-                userType.CollectionAdd = VectorAdd_180_Collection;
+                userType.Activator = Activate_183_Collection;
+                userType.CollectionAdd = VectorAdd_183_Collection;
                 xamlType = userType;
                 break;
 
-            case 181:   //  SMS_UWP.Views.GridPage
+            case 184:   //  SMS_UWP.Views.GridPage
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_181_GridPage;
+                userType.Activator = Activate_184_GridPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 182:   //  SMS_UWP.Views.MainPage
+            case 185:   //  SMS_UWP.Views.MainPage
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_182_MainPage;
+                userType.Activator = Activate_185_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 183:   //  SMS_UWP.Views.MapPage
+            case 186:   //  SMS_UWP.Views.MapPage
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_183_MapPage;
+                userType.Activator = Activate_186_MapPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 184:   //  SMS_UWP.Views.MediaPlayerPage
+            case 187:   //  SMS_UWP.Views.MediaPlayerPage
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_184_MediaPlayerPage;
+                userType.Activator = Activate_187_MediaPlayerPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 185:   //  SMS_UWP.Helpers.EnumToBooleanConverter
+            case 188:   //  SMS_UWP.Helpers.EnumToBooleanConverter
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_185_EnumToBooleanConverter;
+                userType.Activator = Activate_188_EnumToBooleanConverter;
                 userType.AddMemberName("EnumType");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 186:   //  System.Type
+            case 189:   //  System.Type
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 187:   //  SMS_UWP.Views.SettingsPage
+            case 190:   //  SMS_UWP.Views.SettingsPage
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_187_SettingsPage;
+                userType.Activator = Activate_190_SettingsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 188:   //  Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu
+            case 191:   //  Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ContentControl"));
-                userType.Activator = Activate_188_HamburgerMenu;
+                userType.Activator = Activate_191_HamburgerMenu;
                 userType.AddMemberName("DisplayMode");
                 userType.AddMemberName("IsPaneOpen");
                 userType.AddMemberName("ItemTemplate");
@@ -2480,62 +2500,58 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 189:   //  Windows.UI.Xaml.Controls.ContentControl
+            case 192:   //  Windows.UI.Xaml.Controls.SplitViewDisplayMode
                 xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 190:   //  Windows.UI.Xaml.Controls.SplitViewDisplayMode
+            case 193:   //  Windows.UI.Xaml.Controls.ItemCollection
                 xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 191:   //  Windows.UI.Xaml.Controls.ItemCollection
+            case 194:   //  Windows.UI.Xaml.Visibility
                 xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 192:   //  Windows.UI.Xaml.Visibility
+            case 195:   //  Windows.UI.Xaml.Controls.SplitViewPanePlacement
                 xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 193:   //  Windows.UI.Xaml.Controls.SplitViewPanePlacement
-                xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 194:   //  SMS_UWP.Views.ShellPage
+            case 196:   //  SMS_UWP.Views.ShellPage
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_194_ShellPage;
+                userType.Activator = Activate_196_ShellPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 195:   //  SMS_UWP.Views.TabbedPage
+            case 197:   //  SMS_UWP.Views.TabbedPage
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_195_TabbedPage;
+                userType.Activator = Activate_197_TabbedPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 196:   //  SMS_UWP.Views.WebViewPage
+            case 198:   //  SMS_UWP.Views.WebViewPage
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_196_WebViewPage;
+                userType.Activator = Activate_198_WebViewPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 197:   //  Telerik.UI.Drawing.D2DResource
+            case 199:   //  Telerik.UI.Drawing.D2DResource
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
-            case 198:   //  Telerik.UI.Drawing.D2DBrush
+            case 200:   //  Telerik.UI.Drawing.D2DBrush
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Drawing.D2DResource"));
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
-            case 199:   //  Telerik.UI.Drawing.D2DTextStyle
+            case 201:   //  Telerik.UI.Drawing.D2DTextStyle
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_199_D2DTextStyle;
+                userType.Activator = Activate_201_D2DTextStyle;
                 userType.AddMemberName("Foreground");
                 userType.AddMemberName("FontWeight");
                 userType.AddMemberName("FontSize");
@@ -2547,7 +2563,7 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 200:   //  Telerik.UI.Drawing.FontWeightName
+            case 202:   //  Telerik.UI.Drawing.FontWeightName
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Black", global::Telerik.UI.Drawing.FontWeightName.Black);
                 userType.AddEnumValue("Bold", global::Telerik.UI.Drawing.FontWeightName.Bold);
@@ -2563,11 +2579,11 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 201:   //  Windows.UI.Xaml.TextAlignment
+            case 203:   //  Windows.UI.Xaml.TextAlignment
                 xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 202:   //  Windows.UI.Text.FontStyle
+            case 204:   //  Windows.UI.Text.FontStyle
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Normal", global::Windows.UI.Text.FontStyle.Normal);
                 userType.AddEnumValue("Oblique", global::Windows.UI.Text.FontStyle.Oblique);
@@ -2575,9 +2591,9 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 203:   //  Telerik.UI.Drawing.D2DShapeStyle
+            case 205:   //  Telerik.UI.Drawing.D2DShapeStyle
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_203_D2DShapeStyle;
+                userType.Activator = Activate_205_D2DShapeStyle;
                 userType.AddMemberName("StrokeThickness");
                 userType.AddMemberName("Stroke");
                 userType.AddMemberName("Foreground");
@@ -2586,23 +2602,23 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 204:   //  Telerik.UI.Drawing.D2DSolidColorBrush
+            case 206:   //  Telerik.UI.Drawing.D2DSolidColorBrush
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Drawing.D2DBrush"));
-                userType.Activator = Activate_204_D2DSolidColorBrush;
+                userType.Activator = Activate_206_D2DSolidColorBrush;
                 userType.AddMemberName("Color");
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
-            case 205:   //  Windows.UI.Color
+            case 207:   //  Windows.UI.Color
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 206:   //  Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition
+            case 208:   //  Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_206_ChartAnnotationLabelDefinition;
+                userType.Activator = Activate_208_ChartAnnotationLabelDefinition;
                 userType.AddMemberName("Format");
                 userType.AddMemberName("Template");
                 userType.AddMemberName("DefaultVisualStyle");
@@ -2615,7 +2631,7 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 207:   //  Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelLocation
+            case 209:   //  Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelLocation
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Left", global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelLocation.Left);
                 userType.AddEnumValue("Top", global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelLocation.Top);
@@ -2625,29 +2641,29 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 208:   //  Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection
+            case 210:   //  Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_208_PaletteEntryCollection;
+                userType.Activator = Activate_210_PaletteEntryCollection;
                 userType.SetContentPropertyName("Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection.Brushes");
                 userType.AddMemberName("Brushes");
                 xamlType = userType;
                 break;
 
-            case 209:   //  System.Collections.Generic.List`1<Windows.UI.Xaml.Media.Brush>
+            case 211:   //  System.Collections.Generic.List`1<Windows.UI.Xaml.Media.Brush>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_209_List;
+                userType.CollectionAdd = VectorAdd_211_List;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 210:   //  Telerik.UI.Xaml.Controls.Data.HexView.AngledHexLayoutDefinition
+            case 212:   //  Telerik.UI.Xaml.Controls.Data.HexView.AngledHexLayoutDefinition
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase"));
-                userType.Activator = Activate_210_AngledHexLayoutDefinition;
+                userType.Activator = Activate_212_AngledHexLayoutDefinition;
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
-            case 211:   //  Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase
+            case 213:   //  Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.AddMemberName("Orientation");
                 userType.AddMemberName("ItemLength");
@@ -2656,27 +2672,27 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 212:   //  Windows.UI.Xaml.Controls.Orientation
+            case 214:   //  Windows.UI.Xaml.Controls.Orientation
                 xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 213:   //  Telerik.UI.Xaml.Controls.Data.HexView.FlatLooseHexLayoutDefinition
+            case 215:   //  Telerik.UI.Xaml.Controls.Data.HexView.FlatLooseHexLayoutDefinition
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase"));
-                userType.Activator = Activate_213_FlatLooseHexLayoutDefinition;
+                userType.Activator = Activate_215_FlatLooseHexLayoutDefinition;
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
-            case 214:   //  Telerik.UI.Xaml.Controls.Data.HexView.FlatTightHexLayoutDefinition
+            case 216:   //  Telerik.UI.Xaml.Controls.Data.HexView.FlatTightHexLayoutDefinition
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase"));
-                userType.Activator = Activate_214_FlatTightHexLayoutDefinition;
+                userType.Activator = Activate_216_FlatTightHexLayoutDefinition;
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
-            case 215:   //  Telerik.UI.Xaml.Controls.Input.HighlightStyle
+            case 217:   //  Telerik.UI.Xaml.Controls.Input.HighlightStyle
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_215_HighlightStyle;
+                userType.Activator = Activate_217_HighlightStyle;
                 userType.AddMemberName("FontFamily");
                 userType.AddMemberName("FontWeight");
                 userType.AddMemberName("FontStyle");
@@ -2686,11 +2702,11 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 216:   //  Windows.UI.Xaml.Media.FontFamily
+            case 218:   //  Windows.UI.Xaml.Media.FontFamily
                 xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 217:   //  Telerik.UI.Xaml.Controls.Input.FontWeightName
+            case 219:   //  Telerik.UI.Xaml.Controls.Input.FontWeightName
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Black", global::Telerik.UI.Xaml.Controls.Input.FontWeightName.Black);
                 userType.AddEnumValue("Bold", global::Telerik.UI.Xaml.Controls.Input.FontWeightName.Bold);
@@ -2706,18 +2722,18 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 218:   //  Telerik.UI.Xaml.Controls.Input.CalendarCellStyle
+            case 220:   //  Telerik.UI.Xaml.Controls.Input.CalendarCellStyle
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_218_CalendarCellStyle;
+                userType.Activator = Activate_220_CalendarCellStyle;
                 userType.AddMemberName("ContentStyle");
                 userType.AddMemberName("DecorationStyle");
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
-            case 219:   //  Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu
+            case 221:   //  Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.RadControl"));
-                userType.Activator = Activate_219_RadRadialMenu;
+                userType.Activator = Activate_221_RadRadialMenu;
                 userType.SetContentPropertyName("Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu.Items");
                 userType.AddMemberName("Items");
                 userType.AddMemberName("ShowToolTip");
@@ -2735,23 +2751,23 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 220:   //  System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>
+            case 222:   //  System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>"));
-                userType.CollectionAdd = VectorAdd_220_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_222_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 221:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>
+            case 223:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_221_Collection;
-                userType.CollectionAdd = VectorAdd_221_Collection;
+                userType.Activator = Activate_223_Collection;
+                userType.CollectionAdd = VectorAdd_223_Collection;
                 xamlType = userType;
                 break;
 
-            case 222:   //  Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem
+            case 224:   //  Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadDependencyObject"));
-                userType.Activator = Activate_222_RadialMenuItem;
+                userType.Activator = Activate_224_RadialMenuItem;
                 userType.SetContentPropertyName("Telerik.UI.Xaml.Controls.Primitives.RadialMenuItem.ChildItems");
                 userType.AddMemberName("ChildItems");
                 userType.AddMemberName("ToolTipContent");
@@ -2769,79 +2785,79 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 223:   //  Telerik.UI.Xaml.Controls.Primitives.Menu.CommandService
+            case 225:   //  Telerik.UI.Xaml.Controls.Primitives.Menu.CommandService
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.CommandServiceBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 224:   //  Telerik.UI.Xaml.Controls.Primitives.CommandServiceBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>
+            case 226:   //  Telerik.UI.Xaml.Controls.Primitives.CommandServiceBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.ServiceBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>"));
                 xamlType = userType;
                 break;
 
-            case 225:   //  Telerik.UI.Xaml.Controls.Primitives.ServiceBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>
+            case 227:   //  Telerik.UI.Xaml.Controls.Primitives.ServiceBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>"));
                 xamlType = userType;
                 break;
 
-            case 226:   //  Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>
+            case 228:   //  Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadDependencyObject"));
                 userType.AddMemberName("Owner");
                 xamlType = userType;
                 break;
 
-            case 227:   //  Telerik.UI.Xaml.Controls.Primitives.CommandCollection`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>
+            case 229:   //  Telerik.UI.Xaml.Controls.Primitives.CommandCollection`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.AttachableObjectCollection`2<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu, Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>"));
-                userType.CollectionAdd = VectorAdd_227_CommandCollection;
+                userType.CollectionAdd = VectorAdd_229_CommandCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 228:   //  Telerik.UI.Xaml.Controls.Primitives.AttachableObjectCollection`2<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu, Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>
+            case 230:   //  Telerik.UI.Xaml.Controls.Primitives.AttachableObjectCollection`2<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu, Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>"));
-                userType.CollectionAdd = VectorAdd_228_AttachableObjectCollection;
+                userType.CollectionAdd = VectorAdd_230_AttachableObjectCollection;
                 xamlType = userType;
                 break;
 
-            case 229:   //  System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>
+            case 231:   //  System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>"));
-                userType.Activator = Activate_229_ObservableCollection;
-                userType.CollectionAdd = VectorAdd_229_ObservableCollection;
+                userType.Activator = Activate_231_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_231_ObservableCollection;
                 xamlType = userType;
                 break;
 
-            case 230:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>
+            case 232:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_230_Collection;
-                userType.CollectionAdd = VectorAdd_230_Collection;
+                userType.Activator = Activate_232_Collection;
+                userType.CollectionAdd = VectorAdd_232_Collection;
                 xamlType = userType;
                 break;
 
-            case 231:   //  Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>
+            case 233:   //  Telerik.UI.Xaml.Controls.Primitives.ControlCommandBase`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Telerik.UI.Xaml.Controls.Primitives.RadRadialMenu>"));
                 xamlType = userType;
                 break;
 
-            case 232:   //  Windows.UI.Xaml.FrameworkElement
+            case 234:   //  Windows.UI.Xaml.FrameworkElement
                 xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 233:   //  Telerik.UI.Xaml.Controls.Primitives.RadialMenuTriggerBehavior
+            case 235:   //  Telerik.UI.Xaml.Controls.Primitives.RadialMenuTriggerBehavior
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Windows.UI.Xaml.FrameworkElement>"));
-                userType.Activator = Activate_233_RadialMenuTriggerBehavior;
+                userType.Activator = Activate_235_RadialMenuTriggerBehavior;
                 userType.AddMemberName("AttachTriggers");
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
-            case 234:   //  Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Windows.UI.Xaml.FrameworkElement>
+            case 236:   //  Telerik.UI.Xaml.Controls.Primitives.AttachableObject`1<Windows.UI.Xaml.FrameworkElement>
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.RadDependencyObject"));
                 userType.AddMemberName("Owner");
                 xamlType = userType;
                 break;
 
-            case 235:   //  Telerik.UI.Xaml.Controls.Primitives.RadialMenuAttachTriggers
+            case 237:   //  Telerik.UI.Xaml.Controls.Primitives.RadialMenuAttachTriggers
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuAttachTriggers.None);
                 userType.AddEnumValue("PointerPressed", global::Telerik.UI.Xaml.Controls.Primitives.RadialMenuAttachTriggers.PointerPressed);
@@ -2851,15 +2867,15 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 236:   //  Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter
+            case 238:   //  Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.FrameworkElement"));
-                userType.Activator = Activate_236_BusyIndicatorAnimationAdapter;
+                userType.Activator = Activate_238_BusyIndicatorAnimationAdapter;
                 userType.AddMemberName("Animation");
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
-            case 237:   //  Windows.UI.Xaml.Media.Animation.Storyboard
+            case 239:   //  Windows.UI.Xaml.Media.Animation.Storyboard
                 xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
@@ -2990,103 +3006,103 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
             var that = (global::SMS_UWP.ViewModels.ViewModelLocator)instance;
             return that.ShellViewModel;
         }
-        private object get_11_ArduinoManageDetailControl_MasterMenuItem(object instance)
-        {
-            var that = (global::SMS_UWP.Views.ArduinoManageDetailControl)instance;
-            return that.MasterMenuItem;
-        }
-        private void set_11_ArduinoManageDetailControl_MasterMenuItem(object instance, object Value)
-        {
-            var that = (global::SMS_UWP.Views.ArduinoManageDetailControl)instance;
-            that.MasterMenuItem = (global::SMS_UWP.Models.Order)Value;
-        }
-        private object get_12_Interaction_Behaviors(object instance)
+        private object get_11_Interaction_Behaviors(object instance)
         {
             return global::Microsoft.Xaml.Interactivity.Interaction.GetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance);
         }
-        private void set_12_Interaction_Behaviors(object instance, object Value)
+        private void set_11_Interaction_Behaviors(object instance, object Value)
         {
             global::Microsoft.Xaml.Interactivity.Interaction.SetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance, (global::Microsoft.Xaml.Interactivity.BehaviorCollection)Value);
         }
-        private object get_13_Trigger_Actions(object instance)
+        private object get_12_Trigger_Actions(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactivity.Trigger)instance;
             return that.Actions;
         }
-        private object get_14_EventTriggerBehavior_EventName(object instance)
+        private object get_13_EventTriggerBehavior_EventName(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             return that.EventName;
         }
-        private void set_14_EventTriggerBehavior_EventName(object instance, object Value)
+        private void set_13_EventTriggerBehavior_EventName(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             that.EventName = (global::System.String)Value;
         }
-        private object get_15_EventTriggerBehavior_SourceObject(object instance)
+        private object get_14_EventTriggerBehavior_SourceObject(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             return that.SourceObject;
         }
-        private void set_15_EventTriggerBehavior_SourceObject(object instance, object Value)
+        private void set_14_EventTriggerBehavior_SourceObject(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             that.SourceObject = (global::System.Object)Value;
         }
-        private object get_16_Behavior_AssociatedObject(object instance)
+        private object get_15_Behavior_AssociatedObject(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactivity.Behavior)instance;
             return that.AssociatedObject;
         }
-        private object get_17_InvokeCommandAction_Command(object instance)
+        private object get_16_InvokeCommandAction_Command(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             return that.Command;
         }
-        private void set_17_InvokeCommandAction_Command(object instance, object Value)
+        private void set_16_InvokeCommandAction_Command(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             that.Command = (global::System.Windows.Input.ICommand)Value;
         }
-        private object get_18_InvokeCommandAction_CommandParameter(object instance)
+        private object get_17_InvokeCommandAction_CommandParameter(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             return that.CommandParameter;
         }
-        private void set_18_InvokeCommandAction_CommandParameter(object instance, object Value)
+        private void set_17_InvokeCommandAction_CommandParameter(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             that.CommandParameter = (global::System.Object)Value;
         }
-        private object get_19_InvokeCommandAction_InputConverter(object instance)
+        private object get_18_InvokeCommandAction_InputConverter(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             return that.InputConverter;
         }
-        private void set_19_InvokeCommandAction_InputConverter(object instance, object Value)
+        private void set_18_InvokeCommandAction_InputConverter(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             that.InputConverter = (global::Windows.UI.Xaml.Data.IValueConverter)Value;
         }
-        private object get_20_InvokeCommandAction_InputConverterParameter(object instance)
+        private object get_19_InvokeCommandAction_InputConverterParameter(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             return that.InputConverterParameter;
         }
-        private void set_20_InvokeCommandAction_InputConverterParameter(object instance, object Value)
+        private void set_19_InvokeCommandAction_InputConverterParameter(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             that.InputConverterParameter = (global::System.Object)Value;
         }
-        private object get_21_InvokeCommandAction_InputConverterLanguage(object instance)
+        private object get_20_InvokeCommandAction_InputConverterLanguage(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             return that.InputConverterLanguage;
         }
-        private void set_21_InvokeCommandAction_InputConverterLanguage(object instance, object Value)
+        private void set_20_InvokeCommandAction_InputConverterLanguage(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             that.InputConverterLanguage = (global::System.String)Value;
+        }
+        private object get_21_ArduinoManageDetailControl_MasterMenuItem(object instance)
+        {
+            var that = (global::SMS_UWP.Views.ArduinoManageDetailControl)instance;
+            return that.MasterMenuItem;
+        }
+        private void set_21_ArduinoManageDetailControl_MasterMenuItem(object instance, object Value)
+        {
+            var that = (global::SMS_UWP.Views.ArduinoManageDetailControl)instance;
+            that.MasterMenuItem = (global::SMS_UWP.Models.Order)Value;
         }
         private object get_22_RadCartesianChart_Series(object instance)
         {
@@ -5636,7 +5652,7 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 break;
             case "SMS_UWP.ViewModels.ViewModelLocator.ArduinoManageViewModel":
                 userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SMS_UWP.ViewModels.ViewModelLocator");
-                xamlMember = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlMember(this, "ArduinoManageViewModel", "SMS_UWP.ViewModels.ArduinoManageViewModel");
+                xamlMember = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlMember(this, "ArduinoManageViewModel", "SMS_UWP.ViewModels.VM_AduMGMT");
                 xamlMember.Getter = get_8_ViewModelLocator_ArduinoManageViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
@@ -5652,82 +5668,82 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlMember.Getter = get_10_ViewModelLocator_ShellViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "SMS_UWP.Views.ArduinoManageDetailControl.MasterMenuItem":
-                userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SMS_UWP.Views.ArduinoManageDetailControl");
-                xamlMember = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlMember(this, "MasterMenuItem", "SMS_UWP.Models.Order");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_11_ArduinoManageDetailControl_MasterMenuItem;
-                xamlMember.Setter = set_11_ArduinoManageDetailControl_MasterMenuItem;
-                break;
             case "Microsoft.Xaml.Interactivity.Interaction.Behaviors":
                 userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Interaction");
                 xamlMember = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlMember(this, "Behaviors", "Microsoft.Xaml.Interactivity.BehaviorCollection");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_12_Interaction_Behaviors;
-                xamlMember.Setter = set_12_Interaction_Behaviors;
+                xamlMember.Getter = get_11_Interaction_Behaviors;
+                xamlMember.Setter = set_11_Interaction_Behaviors;
                 break;
             case "Microsoft.Xaml.Interactivity.Trigger.Actions":
                 userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Trigger");
                 xamlMember = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlMember(this, "Actions", "Microsoft.Xaml.Interactivity.ActionCollection");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_13_Trigger_Actions;
+                xamlMember.Getter = get_12_Trigger_Actions;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.EventName":
                 userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
                 xamlMember = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlMember(this, "EventName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_14_EventTriggerBehavior_EventName;
-                xamlMember.Setter = set_14_EventTriggerBehavior_EventName;
+                xamlMember.Getter = get_13_EventTriggerBehavior_EventName;
+                xamlMember.Setter = set_13_EventTriggerBehavior_EventName;
                 break;
             case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.SourceObject":
                 userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
                 xamlMember = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlMember(this, "SourceObject", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_15_EventTriggerBehavior_SourceObject;
-                xamlMember.Setter = set_15_EventTriggerBehavior_SourceObject;
+                xamlMember.Getter = get_14_EventTriggerBehavior_SourceObject;
+                xamlMember.Setter = set_14_EventTriggerBehavior_SourceObject;
                 break;
             case "Microsoft.Xaml.Interactivity.Behavior.AssociatedObject":
                 userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior");
                 xamlMember = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
-                xamlMember.Getter = get_16_Behavior_AssociatedObject;
+                xamlMember.Getter = get_15_Behavior_AssociatedObject;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.Command":
                 userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
                 xamlMember = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlMember(this, "Command", "System.Windows.Input.ICommand");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_17_InvokeCommandAction_Command;
-                xamlMember.Setter = set_17_InvokeCommandAction_Command;
+                xamlMember.Getter = get_16_InvokeCommandAction_Command;
+                xamlMember.Setter = set_16_InvokeCommandAction_Command;
                 break;
             case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.CommandParameter":
                 userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
                 xamlMember = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlMember(this, "CommandParameter", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_18_InvokeCommandAction_CommandParameter;
-                xamlMember.Setter = set_18_InvokeCommandAction_CommandParameter;
+                xamlMember.Getter = get_17_InvokeCommandAction_CommandParameter;
+                xamlMember.Setter = set_17_InvokeCommandAction_CommandParameter;
                 break;
             case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.InputConverter":
                 userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
                 xamlMember = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlMember(this, "InputConverter", "Windows.UI.Xaml.Data.IValueConverter");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_19_InvokeCommandAction_InputConverter;
-                xamlMember.Setter = set_19_InvokeCommandAction_InputConverter;
+                xamlMember.Getter = get_18_InvokeCommandAction_InputConverter;
+                xamlMember.Setter = set_18_InvokeCommandAction_InputConverter;
                 break;
             case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.InputConverterParameter":
                 userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
                 xamlMember = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlMember(this, "InputConverterParameter", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_20_InvokeCommandAction_InputConverterParameter;
-                xamlMember.Setter = set_20_InvokeCommandAction_InputConverterParameter;
+                xamlMember.Getter = get_19_InvokeCommandAction_InputConverterParameter;
+                xamlMember.Setter = set_19_InvokeCommandAction_InputConverterParameter;
                 break;
             case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.InputConverterLanguage":
                 userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
                 xamlMember = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlMember(this, "InputConverterLanguage", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_21_InvokeCommandAction_InputConverterLanguage;
-                xamlMember.Setter = set_21_InvokeCommandAction_InputConverterLanguage;
+                xamlMember.Getter = get_20_InvokeCommandAction_InputConverterLanguage;
+                xamlMember.Setter = set_20_InvokeCommandAction_InputConverterLanguage;
+                break;
+            case "SMS_UWP.Views.ArduinoManageDetailControl.MasterMenuItem":
+                userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SMS_UWP.Views.ArduinoManageDetailControl");
+                xamlMember = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlMember(this, "MasterMenuItem", "SMS_UWP.Models.Order");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_21_ArduinoManageDetailControl_MasterMenuItem;
+                xamlMember.Setter = set_21_ArduinoManageDetailControl_MasterMenuItem;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.RadCartesianChart.Series":
                 userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.RadCartesianChart");

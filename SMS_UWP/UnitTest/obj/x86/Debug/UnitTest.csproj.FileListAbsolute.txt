@@ -1,0 +1,7 @@
+C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\UnitTest.csprojResolveAssemblyReference.cache
+C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\UnitTestApp.g.i.cs
+C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\UnitTestApp.g.cs
+C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\XamlTypeInfo.g.cs
+C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\UnitTestApp.xaml
+C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\UnitTestApp.xbf
+C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\XamlSaveStateFile.xml

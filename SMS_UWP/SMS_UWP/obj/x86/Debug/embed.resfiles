@@ -5,7 +5,6 @@ Styles\_Thickness.xbf
 Styles\TextBlock.xbf
 Views\ArduinoManageDetailControl.xbf
 Views\ArduinoManageDetailPage.xbf
-Views\ArduinoManagePage.xbf
 Views\ChartPage.xbf
 Views\GridPage.xbf
 Views\MainPage.xbf
@@ -14,4 +13,6 @@ Views\MediaPlayerPage.xbf
 Views\SettingsPage.xbf
 Views\ShellPage.xbf
 Views\TabbedPage.xbf
+Views\V_AddAduDialog_C.xbf
+Views\V_AduMGMT_P.xbf
 Views\WebViewPage.xbf

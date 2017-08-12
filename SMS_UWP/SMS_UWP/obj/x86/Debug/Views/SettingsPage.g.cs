@@ -15,7 +15,8 @@ namespace SMS_UWP.Views
         global::Windows.UI.Xaml.Markup.IComponentConnector,
         global::Windows.UI.Xaml.Markup.IComponentConnector2
     {
-        internal class XamlBindingSetters
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
+        private static class XamlBindingSetters
         {
             public static void Set_Windows_UI_Xaml_Controls_TextBlock_Text(global::Windows.UI.Xaml.Controls.TextBlock obj, global::System.String value, string targetNullValue)
             {
@@ -59,6 +60,7 @@ namespace SMS_UWP.Views
             }
         };
 
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         private class SettingsPage_obj1_Bindings :
             global::Windows.UI.Xaml.Markup.IComponentConnector,
             ISettingsPage_Bindings
@@ -98,7 +100,7 @@ namespace SMS_UWP.Views
                                 if (this.initialized)
                                 {
                                     // Update Two Way binding
-                                    this.dataRoot.ViewModel.VersionDescription = (this.obj3).Text;
+                                    this.dataRoot.ViewModel.VersionDescription = this.obj3.Text;
                                 }
                             });
                         break;
@@ -110,7 +112,7 @@ namespace SMS_UWP.Views
                                 if (this.initialized)
                                 {
                                     // Update Two Way binding
-                                    this.dataRoot.ViewModel.ElementTheme = (global::Windows.UI.Xaml.ElementTheme)this.LookupConverter("EnumToBooleanConverter").ConvertBack((this.obj4).IsChecked, typeof(global::Windows.UI.Xaml.ElementTheme), "Light", null);
+                                    this.dataRoot.ViewModel.ElementTheme = (global::Windows.UI.Xaml.ElementTheme)this.LookupConverter("EnumToBooleanConverter").ConvertBack(this.obj4.IsChecked, typeof(global::Windows.UI.Xaml.ElementTheme), "Light", null);
                                 }
                             });
                         break;
@@ -122,7 +124,7 @@ namespace SMS_UWP.Views
                                 if (this.initialized)
                                 {
                                     // Update Two Way binding
-                                    this.dataRoot.ViewModel.ElementTheme = (global::Windows.UI.Xaml.ElementTheme)this.LookupConverter("EnumToBooleanConverter").ConvertBack((this.obj5).IsChecked, typeof(global::Windows.UI.Xaml.ElementTheme), "Dark", null);
+                                    this.dataRoot.ViewModel.ElementTheme = (global::Windows.UI.Xaml.ElementTheme)this.LookupConverter("EnumToBooleanConverter").ConvertBack(this.obj5.IsChecked, typeof(global::Windows.UI.Xaml.ElementTheme), "Dark", null);
                                 }
                             });
                         break;
@@ -134,7 +136,7 @@ namespace SMS_UWP.Views
                                 if (this.initialized)
                                 {
                                     // Update Two Way binding
-                                    this.dataRoot.ViewModel.ElementTheme = (global::Windows.UI.Xaml.ElementTheme)this.LookupConverter("EnumToBooleanConverter").ConvertBack((this.obj6).IsChecked, typeof(global::Windows.UI.Xaml.ElementTheme), "Default", null);
+                                    this.dataRoot.ViewModel.ElementTheme = (global::Windows.UI.Xaml.ElementTheme)this.LookupConverter("EnumToBooleanConverter").ConvertBack(this.obj6.IsChecked, typeof(global::Windows.UI.Xaml.ElementTheme), "Default", null);
                                 }
                             });
                         break;
@@ -146,7 +148,7 @@ namespace SMS_UWP.Views
                                 if (this.initialized)
                                 {
                                     // Update Two Way binding
-                                    this.dataRoot.ViewModel.BtnContent = (this.obj8).Content != null ? (this.obj8).Content.ToString() : null;
+                                    this.dataRoot.ViewModel.BtnContent = (global::System.String)this.obj8.Content;
                                 }
                             });
                         break;
@@ -177,12 +179,15 @@ namespace SMS_UWP.Views
                 this.initialized = false;
             }
 
-            // SettingsPage_obj1_Bindings
-
-            public void SetDataRoot(global::SMS_UWP.Views.SettingsPage newDataRoot)
+            public bool SetDataRoot(global::System.Object newDataRoot)
             {
                 this.bindingsTracking.ReleaseAllListeners();
-                this.dataRoot = newDataRoot;
+                if (newDataRoot != null)
+                {
+                    this.dataRoot = (global::SMS_UWP.Views.SettingsPage)newDataRoot;
+                    return true;
+                }
+                return false;
             }
 
             public void Loading(global::Windows.UI.Xaml.FrameworkElement src, object data)
@@ -247,14 +252,14 @@ namespace SMS_UWP.Views
             }
             private void Update_ViewModel_VersionDescription(global::System.String obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_TextBlock_Text(this.obj3, obj, null);
                 }
             }
             private void Update_ViewModel_ElementTheme(global::Windows.UI.Xaml.ElementTheme obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Primitives_ToggleButton_IsChecked(this.obj4, (global::System.Nullable<global::System.Boolean>)this.LookupConverter("EnumToBooleanConverter").Convert(obj, typeof(global::System.Nullable<global::System.Boolean>), "Light", null), null);
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Primitives_ToggleButton_IsChecked(this.obj5, (global::System.Nullable<global::System.Boolean>)this.LookupConverter("EnumToBooleanConverter").Convert(obj, typeof(global::System.Nullable<global::System.Boolean>), "Dark", null), null);
@@ -263,7 +268,7 @@ namespace SMS_UWP.Views
             }
             private void Update_ViewModel_SwitchThemeCommand(global::System.Windows.Input.ICommand obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED )) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Primitives_ButtonBase_Command(this.obj4, obj, null);
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Primitives_ButtonBase_Command(this.obj5, obj, null);
@@ -272,14 +277,14 @@ namespace SMS_UWP.Views
             }
             private void Update_ViewModel_BtnContent(global::System.String obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_ContentControl_Content(this.obj8, obj, null);
                 }
             }
             private void Update_ViewModel_BtnClickCommand(global::System.Windows.Input.ICommand obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED )) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Primitives_ButtonBase_Command(this.obj8, obj, null);
                 }
@@ -296,15 +301,16 @@ namespace SMS_UWP.Views
             }
             private void Update_NameTextBlock_Text(global::System.String obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED )) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Primitives_ButtonBase_CommandParameter(this.obj8, obj, null);
                 }
             }
 
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
             private class SettingsPage_obj1_BindingsTracking
             {
-                global::System.WeakReference<SettingsPage_obj1_Bindings> WeakRefToBindingObj; 
+                private global::System.WeakReference<SettingsPage_obj1_Bindings> WeakRefToBindingObj; 
 
                 public SettingsPage_obj1_BindingsTracking(SettingsPage_obj1_Bindings obj)
                 {
@@ -319,7 +325,7 @@ namespace SMS_UWP.Views
                 public void PropertyChanged_ViewModel(object sender, global::System.ComponentModel.PropertyChangedEventArgs e)
                 {
                     SettingsPage_obj1_Bindings bindings;
-                    if(WeakRefToBindingObj.TryGetTarget(out bindings))
+                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
                     {
                         string propName = e.PropertyName;
                         global::SMS_UWP.ViewModels.SettingsViewModel obj = sender as global::SMS_UWP.ViewModels.SettingsViewModel;
@@ -327,9 +333,9 @@ namespace SMS_UWP.Views
                         {
                             if (obj != null)
                             {
-                                    bindings.Update_ViewModel_VersionDescription(obj.VersionDescription, DATA_CHANGED);
-                                    bindings.Update_ViewModel_ElementTheme(obj.ElementTheme, DATA_CHANGED);
-                                    bindings.Update_ViewModel_BtnContent(obj.BtnContent, DATA_CHANGED);
+                                bindings.Update_ViewModel_VersionDescription(obj.VersionDescription, DATA_CHANGED);
+                                bindings.Update_ViewModel_ElementTheme(obj.ElementTheme, DATA_CHANGED);
+                                bindings.Update_ViewModel_BtnContent(obj.BtnContent, DATA_CHANGED);
                             }
                         }
                         else

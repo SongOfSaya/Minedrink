@@ -15,7 +15,8 @@ namespace SMS_UWP.Views
         global::Windows.UI.Xaml.Markup.IComponentConnector,
         global::Windows.UI.Xaml.Markup.IComponentConnector2
     {
-        internal class XamlBindingSetters
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
+        private static class XamlBindingSetters
         {
             public static void Set_Windows_UI_Xaml_Controls_MediaPlayerElement_PosterSource(global::Windows.UI.Xaml.Controls.MediaPlayerElement obj, global::Windows.UI.Xaml.Media.ImageSource value, string targetNullValue)
             {
@@ -35,6 +36,7 @@ namespace SMS_UWP.Views
             }
         };
 
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         private class MediaPlayerPage_obj1_Bindings :
             global::Windows.UI.Xaml.Markup.IComponentConnector,
             IMediaPlayerPage_Bindings
@@ -90,12 +92,15 @@ namespace SMS_UWP.Views
                 this.initialized = false;
             }
 
-            // MediaPlayerPage_obj1_Bindings
-
-            public void SetDataRoot(global::SMS_UWP.Views.MediaPlayerPage newDataRoot)
+            public bool SetDataRoot(global::System.Object newDataRoot)
             {
                 this.bindingsTracking.ReleaseAllListeners();
-                this.dataRoot = newDataRoot;
+                if (newDataRoot != null)
+                {
+                    this.dataRoot = (global::SMS_UWP.Views.MediaPlayerPage)newDataRoot;
+                    return true;
+                }
+                return false;
             }
 
             public void Loading(global::Windows.UI.Xaml.FrameworkElement src, object data)
@@ -128,22 +133,23 @@ namespace SMS_UWP.Views
             }
             private void Update_ViewModel_PosterSource(global::System.String obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_MediaPlayerElement_PosterSource(this.obj2, (global::Windows.UI.Xaml.Media.ImageSource) global::Windows.UI.Xaml.Markup.XamlBindingHelper.ConvertValue(typeof(global::Windows.UI.Xaml.Media.ImageSource), obj), null);
                 }
             }
             private void Update_ViewModel_Source(global::Windows.Media.Playback.IMediaPlaybackSource obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_MediaPlayerElement_Source(this.obj2, obj, null);
                 }
             }
 
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
             private class MediaPlayerPage_obj1_BindingsTracking
             {
-                global::System.WeakReference<MediaPlayerPage_obj1_Bindings> WeakRefToBindingObj; 
+                private global::System.WeakReference<MediaPlayerPage_obj1_Bindings> WeakRefToBindingObj; 
 
                 public MediaPlayerPage_obj1_BindingsTracking(MediaPlayerPage_obj1_Bindings obj)
                 {
@@ -158,7 +164,7 @@ namespace SMS_UWP.Views
                 public void PropertyChanged_ViewModel(object sender, global::System.ComponentModel.PropertyChangedEventArgs e)
                 {
                     MediaPlayerPage_obj1_Bindings bindings;
-                    if(WeakRefToBindingObj.TryGetTarget(out bindings))
+                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
                     {
                         string propName = e.PropertyName;
                         global::SMS_UWP.ViewModels.MediaPlayerViewModel obj = sender as global::SMS_UWP.ViewModels.MediaPlayerViewModel;
@@ -166,8 +172,8 @@ namespace SMS_UWP.Views
                         {
                             if (obj != null)
                             {
-                                    bindings.Update_ViewModel_PosterSource(obj.PosterSource, DATA_CHANGED);
-                                    bindings.Update_ViewModel_Source(obj.Source, DATA_CHANGED);
+                                bindings.Update_ViewModel_PosterSource(obj.PosterSource, DATA_CHANGED);
+                                bindings.Update_ViewModel_Source(obj.Source, DATA_CHANGED);
                             }
                         }
                         else

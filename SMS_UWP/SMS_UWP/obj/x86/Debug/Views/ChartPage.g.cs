@@ -15,7 +15,8 @@ namespace SMS_UWP.Views
         global::Windows.UI.Xaml.Markup.IComponentConnector,
         global::Windows.UI.Xaml.Markup.IComponentConnector2
     {
-        internal class XamlBindingSetters
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
+        private static class XamlBindingSetters
         {
             public static void Set_Telerik_UI_Xaml_Controls_Chart_ChartSeries_ItemsSource(global::Telerik.UI.Xaml.Controls.Chart.ChartSeries obj, global::System.Collections.IEnumerable value, string targetNullValue)
             {
@@ -27,6 +28,7 @@ namespace SMS_UWP.Views
             }
         };
 
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         private class ChartPage_obj1_Bindings :
             global::Windows.UI.Xaml.Markup.IComponentConnector,
             IChartPage_Bindings
@@ -77,11 +79,14 @@ namespace SMS_UWP.Views
             {
             }
 
-            // ChartPage_obj1_Bindings
-
-            public void SetDataRoot(global::SMS_UWP.Views.ChartPage newDataRoot)
+            public bool SetDataRoot(global::System.Object newDataRoot)
             {
-                this.dataRoot = newDataRoot;
+                if (newDataRoot != null)
+                {
+                    this.dataRoot = (global::SMS_UWP.Views.ChartPage)newDataRoot;
+                    return true;
+                }
+                return false;
             }
 
             public void Loading(global::Windows.UI.Xaml.FrameworkElement src, object data)
@@ -112,7 +117,7 @@ namespace SMS_UWP.Views
             }
             private void Update_ViewModel_Source(global::System.Collections.ObjectModel.ObservableCollection<global::SMS_UWP.Models.DataPoint> obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED )) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
                     XamlBindingSetters.Set_Telerik_UI_Xaml_Controls_Chart_ChartSeries_ItemsSource(this.obj5, obj, null);
                 }
