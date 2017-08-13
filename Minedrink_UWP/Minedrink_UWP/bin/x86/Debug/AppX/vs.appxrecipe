@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-10T13:46:32.581</Modified>
+      <Modified>2017-08-10T14:40:09.490</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\bin\x86\Debug\Minedrink_UWP.exe">
       <PackagePath>entrypoint\Minedrink_UWP.exe</PackagePath>
-      <Modified>2017-08-10T13:46:32.010</Modified>
+      <Modified>2017-08-10T14:40:08.512</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -543,7 +543,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\bin\x86\Debug\Minedrink_UWP.xr.xml">
       <PackagePath>Minedrink_UWP.xr.xml</PackagePath>
-      <Modified>2017-08-10T13:23:53.409</Modified>
+      <Modified>2017-08-10T14:38:50.131</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -552,11 +552,11 @@
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-10T13:46:32.391</Modified>
+      <Modified>2017-08-10T14:40:09.161</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\bin\x86\Debug\Core\Minedrink_UWP.exe">
       <PackagePath>Minedrink_UWP.exe</PackagePath>
-      <Modified>2017-08-10T13:46:32.576</Modified>
+      <Modified>2017-08-10T14:40:09.482</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -15,9 +15,9 @@ namespace Minedrink_UWP.Model
     public class Arduino
     {
         private static Random random = new Random();
-        
         #region Properties
         public int ID { get; set; }
+        public Colors DisplayColor { get; set; }
         private string name;
         //与Arduino建立的TCP输入输出流
         public StreamWriter OutStream { get; private set; }
@@ -57,7 +57,6 @@ namespace Minedrink_UWP.Model
             Update();
             SendCommCode(TXCommCode.GetAllInfo);
         }
-        //{"ID":10, "Mills" : 1243, "Mode" : 1, "Sensors" : [{"ID":1085, "Result" : 123.44}, { "ID":1086,"Result" : 1234.4 }]}
         private async void Update()
         {
             while (true)
@@ -67,7 +66,7 @@ namespace Minedrink_UWP.Model
                 {
                     string codeStr = response.Substring(0, 8);
                     RXCommCode code = CommHandle.StringConvertToEnum(codeStr);
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
                     switch (code)
                     {
                         case RXCommCode.ERROR:

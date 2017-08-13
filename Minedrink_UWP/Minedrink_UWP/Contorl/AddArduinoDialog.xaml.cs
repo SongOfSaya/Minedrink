@@ -95,7 +95,6 @@ namespace Minedrink_UWP.Contorl
             }
             catch (Exception)
             {
-
                 throw;
             }
             

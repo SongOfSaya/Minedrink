@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Minedrink_UWP",
+    "\\Minedrink_UWP\\Minedrink_UWP",
+    "\\Minedrink_UWP\\Minedrink_UWP\\Contorl",
+    "\\Minedrink_UWP\\Minedrink_UWP\\Model",
+    "\\Minedrink_UWP\\UnitTestProjectForSMS"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\Minedrink_UWP\\Minedrink_UWP\\Styles",
   "PreviewInSolutionExplorer": false
 }
