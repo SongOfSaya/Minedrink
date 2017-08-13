@@ -118,16 +118,21 @@
   <ItemGroup>
     <Compile Include="Activation\ActivationHandler.cs" />
     <Compile Include="Helpers\EnumToBooleanConverter.cs" />
-    <Compile Include="Helpers\Json.cs" />
+    <Compile Include="Helpers\H_CommandCode.cs" />
+    <Compile Include="Helpers\H_Json.cs" />
     <Compile Include="Helpers\SettingsStorageExtensions.cs" />
     <Compile Include="Models\DataPoint.cs" />
+    <Compile Include="Models\M_ArduinoMarkA.cs" />
+    <Compile Include="Models\M_SensorBase.cs" />
+    <Compile Include="Models\M_WeightSensor.cs" />
     <Compile Include="Models\Order.cs" />
-    <Compile Include="Services\ActivationService.cs" />
+    <Compile Include="Services\S_Activation.cs" />
     <Compile Include="Activation\DefaultLaunchActivationHandler.cs" />
-    <Compile Include="Services\LocationService.cs" />
-    <Compile Include="Services\NavigationServiceEx.cs" />
-    <Compile Include="Services\SampleDataService.cs" />
-    <Compile Include="Services\ThemeSelectorService.cs" />
+    <Compile Include="Services\S_Location.cs" />
+    <Compile Include="Services\S_NavigationEx.cs" />
+    <Compile Include="Services\S_SampleData.cs" />
+    <Compile Include="Services\S_ArduinoLink.cs" />
+    <Compile Include="Services\S_ThemeSelector.cs" />
     <Compile Include="ViewModels\ArduinoManageDetailViewModel.cs" />
     <Compile Include="ViewModels\VM_AduMGMT.cs" />
     <Compile Include="ViewModels\ChartViewModel.cs" />

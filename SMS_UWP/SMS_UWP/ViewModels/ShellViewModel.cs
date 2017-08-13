@@ -26,11 +26,11 @@ namespace SMS_UWP.ViewModels
         private const double WideStateMinWindowWidth = 640;
         private const double PanoramicStateMinWindowWidth = 1024;
 
-        public NavigationServiceEx NavigationService
+        public S_NavigationEx NavigationService
         {
             get
             {
-                return Microsoft.Practices.ServiceLocation.ServiceLocator.Current.GetInstance<NavigationServiceEx>();
+                return Microsoft.Practices.ServiceLocation.ServiceLocator.Current.GetInstance<S_NavigationEx>();
             }
         }
 

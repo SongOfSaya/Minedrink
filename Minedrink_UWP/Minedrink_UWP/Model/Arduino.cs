@@ -57,7 +57,6 @@ namespace Minedrink_UWP.Model
             Update();
             SendCommCode(TXCommCode.GetAllInfo);
         }
-        
         private async void Update()
         {
             while (true)

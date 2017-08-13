@@ -11,11 +11,11 @@ namespace SMS_UWP.Activation
     {
         private readonly string _navElement;
 
-        private NavigationServiceEx NavigationService
+        private S_NavigationEx NavigationService
         {
             get
             {
-                return Microsoft.Practices.ServiceLocation.ServiceLocator.Current.GetInstance<NavigationServiceEx>();
+                return Microsoft.Practices.ServiceLocation.ServiceLocator.Current.GetInstance<S_NavigationEx>();
             }
         }
 

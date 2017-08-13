@@ -19,7 +19,7 @@ namespace SMS_UWP.ViewModels
         // TODO WTS: Set your preferred default zoom level
         private const double DefaultZoomLevel = 17;
 
-        private readonly LocationService locationService;
+        private readonly S_Location locationService;
 
         // TODO WTS: Set your preferred default location if a geolock can't be found.
         private readonly BasicGeoposition defaultPosition = new BasicGeoposition()
@@ -46,7 +46,7 @@ namespace SMS_UWP.ViewModels
 
         public MapViewModel()
         {
-            locationService = new LocationService();
+            locationService = new S_Location();
             Center = new Geopoint(defaultPosition);
             ZoomLevel = DefaultZoomLevel;
         }

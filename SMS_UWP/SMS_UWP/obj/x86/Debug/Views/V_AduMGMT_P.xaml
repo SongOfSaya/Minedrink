@@ -80,7 +80,7 @@
             <ListView x:ConnectionId='16'
                 x:Name="MasterListView"
                 Grid.Row="2"
-                                                                         
+                                                                          
                                                                        
                 ItemContainerTransitions="{x:Null}"
                 ItemTemplate="{StaticResource MasterListViewItemTemplate}"

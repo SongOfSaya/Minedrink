@@ -22,7 +22,7 @@ namespace SMS_UWP.Helpers
         public static async Task SaveAsync<T>(this StorageFolder folder, string name, T content)
         {
             var file = await folder.CreateFileAsync(GetFileName(name), CreationCollisionOption.ReplaceExisting);
-            var fileContent = await Json.StringifyAsync(content);
+            var fileContent = await H_Json.StringifyAsync(content);
 
             await FileIO.WriteTextAsync(file, fileContent);
         }
@@ -37,12 +37,12 @@ namespace SMS_UWP.Helpers
             var file = await folder.GetFileAsync($"{name}.json");
             var fileContent = await FileIO.ReadTextAsync(file);
 
-            return await Json.ToObjectAsync<T>(fileContent);
+            return await H_Json.ToObjectAsync<T>(fileContent);
         }
 
         public static async Task SaveAsync<T>(this ApplicationDataContainer settings, string key, T value)
         {
-            settings.Values[key] = await Json.StringifyAsync(value);
+            settings.Values[key] = await H_Json.StringifyAsync(value);
         }
 
         public static async Task<T> ReadAsync<T>(this ApplicationDataContainer settings, string key)
@@ -51,7 +51,7 @@ namespace SMS_UWP.Helpers
 
             if (settings.Values.TryGetValue(key, out obj))
             {
-                return await Json.ToObjectAsync<T>((string)obj);
+                return await H_Json.ToObjectAsync<T>((string)obj);
             }
 
             return default(T);

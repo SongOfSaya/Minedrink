@@ -11,26 +11,30 @@
     DataContext="{Binding  ArduinoManageViewModel, Source={StaticResource Locator}}"
     mc:Ignorable="d"
     Title="新增Arduino"
+    Name="AddAduDialog"
     PrimaryButtonText="确定"
     ExitDisplayModeOnAccessKeyInvoked="False"
     SecondaryButtonText="取消"
-    
+    SecondaryButtonCommand="{x:Bind ViewModel.TestCommand}"
     Height="355" Width="320">
     <!--PrimaryButtonCommand="{x:Bind ViewModel.DialogSubmitCommand}"-->
     <i:Interaction.Behaviors>
-        <ic:EventTriggerBehavior EventName="ContentDialogButtonClickEventArgs">
-            <ic:InvokeCommandAction Command="{x:Bind ViewModel.TestEvenCommand}" />
+        <ic:EventTriggerBehavior EventName="PrimaryButtonClick"  >
+            <ic:InvokeCommandAction Command="{x:Bind ViewModel.TestEvenCommand}">
+            </ic:InvokeCommandAction>
+            <ic:CallMethodAction>
+                
+            </ic:CallMethodAction>
         </ic:EventTriggerBehavior>
     </i:Interaction.Behaviors>
     <!--<ContentDialog.PrimaryButtonCommandParameter>
         <model:M_AduHostName IP="{x:Bind arduinoIPTextBox.Text}" Port="{x:Bind arduinoPortTextBox.Text}"/>
     </ContentDialog.PrimaryButtonCommandParameter>-->
     <StackPanel Height="215" Width="Auto"  VerticalAlignment="Center"  HorizontalAlignment="Stretch">
-        <TextBox Name="arduinoNameTextBox" Header="名称" PlaceholderText="未命名Arduino"/>
-        <TextBox Name="arduinoIPTextBox"  Header="IP"  Text="192.168.2.109" PlaceholderText="请输入目标IP"/>
-        <TextBox Name="arduinoPortTextBox" Header="端口" Text="1000" PlaceholderText="请输入目标端口号"/>
-        <CheckBox Name="arduinoSaveCheckBox" Content="保存此次配置信息" IsChecked="True" />
+        <TextBox Name="ArduinoIPTextBox"  Header="IP"  Text="{x:Bind ViewModel.IPTextBox,Mode=TwoWay}" PlaceholderText="请输入目标IP"/>
+        <TextBox Name="ArduinoPortTextBox" Header="端口" Text="{x:Bind ViewModel.PortTextBox, Mode=TwoWay}" PlaceholderText="请输入目标端口号"/>
+        <CheckBox Name="ArduinoSaveCheckBox" Content="保存此次配置信息" IsChecked="True" />
 
-        <TextBlock x:Name="addInfo"/>
+        <TextBlock x:Name="AddInfo" Text="{x:Bind ViewModel.ConnectInfo, Mode=TwoWay}"/>
     </StackPanel>
 </ContentDialog>

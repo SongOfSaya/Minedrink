@@ -11,7 +11,7 @@ namespace SMS_UWP.ViewModels
 {
     public class ViewModelLocator
     {
-        private NavigationServiceEx _navigationService = new NavigationServiceEx();
+        private S_NavigationEx _navigationService = new S_NavigationEx();
 
         public ViewModelLocator()
         {

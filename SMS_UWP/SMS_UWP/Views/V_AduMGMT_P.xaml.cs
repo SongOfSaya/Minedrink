@@ -23,5 +23,6 @@ namespace SMS_UWP.Views
         {
             await ViewModel.LoadDataAsync(WindowStates.CurrentState);
         }
+        
     }
 }

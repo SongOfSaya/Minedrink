@@ -28,5 +28,6 @@ namespace SMS_UWP.Views
         {
             this.InitializeComponent();
         }
+        
     }
 }

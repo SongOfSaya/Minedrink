@@ -10,5 +10,6 @@ namespace SMS_UWP.Models
     {
         public string IP { get; set; }
         public string Port { get; set; }
+        public EventArgs Eventargs { get; set; }
     }
 }

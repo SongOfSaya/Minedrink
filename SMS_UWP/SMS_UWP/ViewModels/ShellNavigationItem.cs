@@ -109,7 +109,7 @@ namespace SMS_UWP.ViewModels
             Label = label;
             ViewModelName = viewModelName;
 
-            ThemeSelectorService.OnThemeChanged += (s, e) =>
+            S_ThemeSelector.OnThemeChanged += (s, e) =>
             {
                 if (!IsSelected)
                 {
@@ -120,7 +120,7 @@ namespace SMS_UWP.ViewModels
 
         private SolidColorBrush GetStandardTextColorBrush()
         {
-            return ThemeSelectorService.GetSystemControlForegroundForTheme();
+            return S_ThemeSelector.GetSystemControlForegroundForTheme();
         }
 
         public override string ToString()

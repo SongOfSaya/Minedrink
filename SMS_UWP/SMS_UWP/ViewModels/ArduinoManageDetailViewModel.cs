@@ -13,11 +13,11 @@ namespace SMS_UWP.ViewModels
 {
     public class ArduinoManageDetailViewModel : ViewModelBase
     {
-        public NavigationServiceEx NavigationService
+        public S_NavigationEx NavigationService
         {
             get
             {
-                return Microsoft.Practices.ServiceLocation.ServiceLocator.Current.GetInstance<NavigationServiceEx>();
+                return Microsoft.Practices.ServiceLocation.ServiceLocator.Current.GetInstance<S_NavigationEx>();
             }
         }
 

@@ -1,0 +1,2 @@
+C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\SMS_UWP.csproj;x86
+C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\UnitTest.csproj;x86

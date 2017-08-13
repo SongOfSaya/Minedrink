@@ -48,14 +48,14 @@ namespace SMS_UWP.ViewModels
             SwitchThemeCommand = new RelayCommand<ElementTheme>(
                 async (param) =>
                 {
-                    await ThemeSelectorService.SetThemeAsync(param);
+                    await S_ThemeSelector.SetThemeAsync(param);
                 });
             
         }
 
         public void Initialize()
         {
-            ElementTheme = ThemeSelectorService.Theme;
+            ElementTheme = S_ThemeSelector.Theme;
 
             VersionDescription = GetVersionDescription();
             BtnContent = "????????";

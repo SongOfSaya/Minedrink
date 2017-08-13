@@ -11,6 +11,7 @@ namespace SMS_UWP.Helpers
 
         public static string GetLocalized(this string resourceKey)
         {
+            
             return _resLoader.GetString(resourceKey);
         }
     }

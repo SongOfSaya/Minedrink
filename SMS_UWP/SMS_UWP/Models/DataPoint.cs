@@ -9,5 +9,6 @@ namespace SMS_UWP.Models
         public double Value { get; set; }
 
         public string Category { get; set; }
+
     }
 }

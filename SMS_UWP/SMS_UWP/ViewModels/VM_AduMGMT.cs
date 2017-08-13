@@ -19,11 +19,11 @@ namespace SMS_UWP.ViewModels
 {
     public class VM_AduMGMT : ViewModelBase
     {
-        public NavigationServiceEx NavigationService
+        public S_NavigationEx NavigationService
         {
             get
             {
-                return Microsoft.Practices.ServiceLocation.ServiceLocator.Current.GetInstance<NavigationServiceEx>();
+                return Microsoft.Practices.ServiceLocation.ServiceLocator.Current.GetInstance<S_NavigationEx>();
             }
         }
 
@@ -34,7 +34,7 @@ namespace SMS_UWP.ViewModels
 
         private Order _selected;
         private int _testNum = 0;
-
+        //Master中的当前选项
         public Order Selected
         {
             get { return _selected; }
@@ -46,7 +46,27 @@ namespace SMS_UWP.ViewModels
             get { return _dialogIsOpen; }
             set { Set(ref _dialogIsOpen, value); }
         }
-
+        private string _ipTextBox;
+        //输入的IP地址
+        public string IPTextBox
+        {
+            get { return _ipTextBox; }
+            set { Set(ref _ipTextBox, value); }
+        }
+        private string _portTextBox;
+        //用户输入的端口号
+        public string PortTextBox
+        {
+            get { return _portTextBox; }
+            set { Set(ref _portTextBox, value); }
+        }
+        private string _connectInfo;
+        //连接状态的提示信息
+        public string ConnectInfo
+        {
+            get { return _connectInfo; }
+            set { Set(ref _connectInfo, value); }
+        }
         public ICommand ItemClickCommand { get; private set; }
 
         public ICommand StateChangedCommand { get; private set; }
@@ -54,7 +74,7 @@ namespace SMS_UWP.ViewModels
         public ICommand DialogSubmitCommand { get; private set; }
         public ICommand TestCommand { get; private set; }
         public ICommand TestEvenCommand { get; private set; }
-        public ObservableCollection<Order> SampleItems { get; private set; } = new ObservableCollection<Order>();
+        public ObservableCollection<Order> ArduinoItems { get; private set; } = new ObservableCollection<Order>();
 
         public VM_AduMGMT()
         {
@@ -63,29 +83,44 @@ namespace SMS_UWP.ViewModels
             AddAduBtnClickCommand = new RelayCommand(OnAddBtnClick);
             DialogSubmitCommand = new RelayCommand<M_AduHostName>(OnDialogSubmit);
             TestCommand = new RelayCommand(OnTest);
-            TestEvenCommand = new RelayCommand<ContentDialogButtonClickEventArgs>(OnTestEventCommand);
+            TestEvenCommand = new RelayCommand<ContentDialogButtonClickEventArgs>(OnTestEventCommandAsync);
         }
 
-        
+
 
         public async Task LoadDataAsync(VisualState currentState)
         {
             _currentState = currentState;
-            SampleItems.Clear();
-
-            var data = await SampleDataService.GetSampleModelDataAsync();
+            ArduinoItems.Clear();
+            var data = await S_SampleData.GetSampleModelDataAsync();
 
             foreach (var item in data)
             {
-                SampleItems.Add(item);
+                ArduinoItems.Add(item);
             }
 
-            Selected = SampleItems.First();
+            Selected = ArduinoItems.First();
         }
-        private void OnTestEventCommand(ContentDialogButtonClickEventArgs obj)
+        private async void OnTestEventCommandAsync(ContentDialogButtonClickEventArgs obj)
         {
+            Debug.WriteLine("成功拦截到事件;IP:" + IPTextBox + " Port:" + PortTextBox);
+
             obj.Cancel = true;
-            Debug.WriteLine("成功拦截到事件");
+            //TODO:验证输入有效
+            ConnectInfo = "正在连接中...";
+            S_ArduinoLink arduinoLink = new S_ArduinoLink();
+
+            bool isConnect = await arduinoLink.Connection(IPTextBox, PortTextBox);
+            if (isConnect)
+            {
+                ConnectInfo = "连接成功";
+            }
+            else
+            {
+                obj.Cancel = true;
+                ConnectInfo = "连接失败请重试";
+            }
+
         }
         private void OnTest()
         {
@@ -94,6 +129,7 @@ namespace SMS_UWP.ViewModels
         }
         private void OnDialogSubmit(M_AduHostName aduHostName)
         {
+
             Debug.WriteLine("输出如下");
             Debug.WriteLine(aduHostName.IP);
             Debug.WriteLine(aduHostName.Port);
@@ -129,7 +165,7 @@ namespace SMS_UWP.ViewModels
         private void OnStateChanged(VisualStateChangedEventArgs args)
         {
             _currentState = args.NewState;
-           
+
         }
 
         private void OnItemClick(ItemClickEventArgs args)
@@ -144,7 +180,7 @@ namespace SMS_UWP.ViewModels
                 else
                 {
                     Selected = item;
-                    
+
                 }
             }
         }

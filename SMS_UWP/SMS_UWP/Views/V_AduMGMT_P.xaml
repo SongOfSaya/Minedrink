@@ -80,7 +80,7 @@
             <ListView
                 x:Name="MasterListView"
                 Grid.Row="2"
-                ItemsSource="{x:Bind ViewModel.SampleItems, Mode=OneWay}"
+                ItemsSource="{x:Bind ViewModel.ArduinoItems, Mode=OneWay}"
                 SelectedItem="{x:Bind ViewModel.Selected, Mode=OneWay}"
                 ItemContainerTransitions="{x:Null}"
                 ItemTemplate="{StaticResource MasterListViewItemTemplate}"
