@@ -40,6 +40,14 @@ namespace SMS_UWP.ViewModels
             get { return _selected; }
             set { Set(ref _selected, value); }
         }
+        private S_ArduinoLink _selectedArduinoLink;
+
+        public S_ArduinoLink SelectedArduinoLink
+        {
+            get { return _selectedArduinoLink; }
+            set { Set(ref _selectedArduinoLink, value); }
+        }
+
         private bool _dialogIsOpen;
         public bool DialogIsOpen
         {
@@ -67,14 +75,18 @@ namespace SMS_UWP.ViewModels
             get { return _connectInfo; }
             set { Set(ref _connectInfo, value); }
         }
+        //点击命令
         public ICommand ItemClickCommand { get; private set; }
-
+        //状态改变命令
         public ICommand StateChangedCommand { get; private set; }
         public ICommand AddAduBtnClickCommand { get; private set; }
         public ICommand DialogSubmitCommand { get; private set; }
+        //用于测试的命令
         public ICommand TestCommand { get; private set; }
+        //用于测试的事件型命令
         public ICommand TestEvenCommand { get; private set; }
         public ObservableCollection<Order> ArduinoItems { get; private set; } = new ObservableCollection<Order>();
+        public ObservableCollection<S_ArduinoLink> ArduinoLinkItems { get; private set; } = new ObservableCollection<S_ArduinoLink>();
 
         public VM_AduMGMT()
         {
@@ -85,9 +97,27 @@ namespace SMS_UWP.ViewModels
             TestCommand = new RelayCommand(OnTest);
             TestEvenCommand = new RelayCommand<ContentDialogButtonClickEventArgs>(OnTestEventCommandAsync);
         }
-
-
-
+        /// <summary>
+        /// 异步加载Marster所需数据,以及初始化动态数据
+        /// </summary>
+        /// <param name="currentState"></param>
+        /// <returns></returns>
+        public async Task LoadArduinoLinks(VisualState currentState)
+        {
+            _currentState = currentState;
+            ArduinoLinkItems.Clear();
+            var data = S_SampleData.AllObservableArduinoLinks();
+            foreach (var item in data)
+            {
+                ArduinoLinkItems.Add(item);
+            }
+            SelectedArduinoLink = ArduinoLinkItems.First();
+        }
+        /// <summary>
+        /// 异步加载测试用数据,同时为currentState赋初值
+        /// </summary>
+        /// <param name="currentState"></param>
+        /// <returns></returns>
         public async Task LoadDataAsync(VisualState currentState)
         {
             _currentState = currentState;
@@ -104,9 +134,7 @@ namespace SMS_UWP.ViewModels
         private async void OnTestEventCommandAsync(ContentDialogButtonClickEventArgs obj)
         {
             Debug.WriteLine("成功拦截到事件;IP:" + IPTextBox + " Port:" + PortTextBox);
-
-            obj.Cancel = true;
-            //TODO:验证输入有效
+            //TODO:验证输入有效性
             ConnectInfo = "正在连接中...";
             S_ArduinoLink arduinoLink = new S_ArduinoLink();
 
@@ -120,7 +148,6 @@ namespace SMS_UWP.ViewModels
                 obj.Cancel = true;
                 ConnectInfo = "连接失败请重试";
             }
-
         }
         private void OnTest()
         {

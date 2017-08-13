@@ -21,7 +21,8 @@ namespace SMS_UWP.Views
 
         protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
-            await ViewModel.LoadDataAsync(WindowStates.CurrentState);
+            //await ViewModel.LoadDataAsync(WindowStates.CurrentState);
+            await ViewModel.LoadArduinoLinks(WindowStates.CurrentState);
         }
         
     }

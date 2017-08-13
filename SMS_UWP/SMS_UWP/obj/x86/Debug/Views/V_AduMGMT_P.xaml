@@ -7,6 +7,7 @@
     DataContext="{Binding  ArduinoManageViewModel, Source={StaticResource Locator}}"
     xmlns:model="using:SMS_UWP.Models"
     xmlns:views="using:SMS_UWP.Views"
+    xmlns:s="using:SMS_UWP.Services"
     xmlns:ic="using:Microsoft.Xaml.Interactions.Core"
     xmlns:i="using:Microsoft.Xaml.Interactivity"
     mc:Ignorable="d">
@@ -16,7 +17,7 @@
         </TransitionCollection>
     </Page.Transitions>
     <Page.Resources>
-        <DataTemplate x:Key="MasterListViewItemTemplate"                         >
+        <DataTemplate x:Key="MasterListViewItemTemplate"                             >
             <Grid x:ConnectionId='2' Margin="{StaticResource MediumLeftTopRightBottomMargin}">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
@@ -24,12 +25,12 @@
                 </Grid.RowDefinitions>
 
                 <TextBlock x:ConnectionId='3' 
-                                            
+                                                
                     Style="{StaticResource ListTitleStyle}" />
 
                 <TextBlock x:ConnectionId='4'
                     Grid.Row="1"
-                                           
+                                                
                     Style="{StaticResource ListSubTitleStyle}" />
             </Grid>
         </DataTemplate>
@@ -80,8 +81,8 @@
             <ListView x:ConnectionId='16'
                 x:Name="MasterListView"
                 Grid.Row="2"
-                                                                          
-                                                                       
+                                                                              
+                                                                                  
                 ItemContainerTransitions="{x:Null}"
                 ItemTemplate="{StaticResource MasterListViewItemTemplate}"
                 IsItemClickEnabled="True"

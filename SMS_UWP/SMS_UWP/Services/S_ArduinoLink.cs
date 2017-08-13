@@ -13,10 +13,20 @@ namespace SMS_UWP.Services
 {
     public class S_ArduinoLink
     {
-        public M_ArduinoMarkA ArduinoMarkA { get;private set; }
+        public M_ArduinoMarkA Arduino { get; private set; }
+        public int ID
+        {
+            get { return Arduino.ID; }
+            set { Arduino.ID = value; }
+        }
+        public string Name
+        {
+            get { return Arduino.Name; }
+            set { Arduino.Name = value; }
+        }
         public S_ArduinoLink()
         {
-            ArduinoMarkA = new M_ArduinoMarkA();
+            Arduino = new M_ArduinoMarkA();
         }
         /// <summary>
         /// 和远程Arduino的TCPServer建立连接
@@ -44,8 +54,8 @@ namespace SMS_UWP.Services
             {
                 return false;
             }
-            ArduinoMarkA.IP = ip;
-            ArduinoMarkA.Port = port;
+            Arduino.IP = ip;
+            Arduino.Port = port;
             return true;
         }
 
@@ -94,7 +104,7 @@ namespace SMS_UWP.Services
 //                        await write.WriteLineAsync(outStr);
 //await write.FlushAsync();
 //                    }
-                    
+
 
 //                    inStr = await reader.ReadLineAsync();
 //Debug.WriteLine("IN:" + inStr);

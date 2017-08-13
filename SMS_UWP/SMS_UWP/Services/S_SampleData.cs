@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
-
 using SMS_UWP.Models;
+
 
 namespace SMS_UWP.Services
 {
@@ -12,11 +12,50 @@ namespace SMS_UWP.Services
     // TODO WTS: Delete this file once your app is using real data.
     public static class S_SampleData
     {
-        private static IEnumerable<M_ArduinoMarkA> AllArduinos()
+        public static ObservableCollection<S_ArduinoLink> AllObservableArduinoLinks()
         {
-            throw new NotImplementedException();
+            var data = new ObservableCollection<S_ArduinoLink>
+            {
+                new S_ArduinoLink
+                {
+                    ID = 0001,
+                    Name = "主料区"
+                },
+                new S_ArduinoLink
+                {
+                    ID = 0002,
+                    Name = "辅料区"
+                },
+                new S_ArduinoLink
+                {
+                    ID = 0003,
+                    Name = "不知道干嘛的"
+                }
+            };
+            return data;
         }
-
+        public static IEnumerable<S_ArduinoLink> AllArduinoLinks()
+        {
+            var data = new ObservableCollection<S_ArduinoLink>
+            {
+                new S_ArduinoLink
+                {
+                    ID = 0001,
+                    Name = "主料区"
+                },
+                new S_ArduinoLink
+                {
+                    ID = 0002,
+                    Name = "辅料区"
+                },
+                new S_ArduinoLink
+                {
+                    ID = 0003,
+                    Name = "不知道干嘛的"
+                }
+            };
+            return data;
+        }
         private static IEnumerable<Order> AllOrders()
         {
             // The following is order summary data
@@ -138,6 +177,10 @@ namespace SMS_UWP.Services
         public static ObservableCollection<Order> GetGridSampleData()
         {
             return new ObservableCollection<Order>(AllOrders());
+        }
+        public static IEnumerable<S_ArduinoLink> GetAllArduinoLinkAsync()
+        {
+            return AllArduinoLinks();
         }
     }
 }

@@ -14,7 +14,7 @@ namespace SMS_UWP.Models
     public class M_ArduinoMarkA
     {
         public string Name { get; set; }
-        public string ID { get; set; }
+        public int ID { get; set; }
         public long Mills { get; set; }
         public string IP { get; set; }
         public string Port { get; set; }
