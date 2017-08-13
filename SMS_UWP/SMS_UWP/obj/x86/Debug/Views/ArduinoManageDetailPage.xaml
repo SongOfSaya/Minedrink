@@ -14,24 +14,23 @@
         x:Name="ContentArea"
         Background="{ThemeResource SystemControlBackgroundAltHighBrush}">
 
-        <views:ArduinoManageDetailControl x:ConnectionId='3'
-                                                    
+        <views:V_AduMGMT_C
             Margin="{StaticResource MediumLeftRightMargin}" />
 
         <!--  Adaptive triggers  -->
         <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:ConnectionId='4' x:Name="WindowStates">
+            <VisualStateGroup x:ConnectionId='3' x:Name="WindowStates">
                 <i:Interaction.Behaviors>
                     <ic:EventTriggerBehavior EventName="CurrentStateChanged">
-                        <ic:InvokeCommandAction x:ConnectionId='5'                                                 />
+                        <ic:InvokeCommandAction x:ConnectionId='4'                                                 />
                     </ic:EventTriggerBehavior>
                 </i:Interaction.Behaviors>
-                <VisualState x:ConnectionId='6' x:Name="WideState">
+                <VisualState x:ConnectionId='5' x:Name="WideState">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="640"/>
                     </VisualState.StateTriggers>
                 </VisualState>
-                <VisualState x:ConnectionId='7' x:Name="NarrowState">
+                <VisualState x:ConnectionId='6' x:Name="NarrowState">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="0"/>
                     </VisualState.StateTriggers>

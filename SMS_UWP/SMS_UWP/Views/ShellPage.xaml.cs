@@ -10,9 +10,9 @@ namespace SMS_UWP.Views
 {
     public sealed partial class ShellPage : Page
     {
-        private ShellViewModel ViewModel
+        private VM_Shell ViewModel
         {
-            get { return DataContext as ShellViewModel; }
+            get { return DataContext as VM_Shell; }
         }
 
         public ShellPage()

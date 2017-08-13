@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>FF56B364475CEF20196171D01E2E29DA8634A31E82F1375E4B3E195D68419D9C</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>588FA8F2AC26211C12095C1F12774D86966FB852075DE132A8C2B6A73B8D61B3</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>166C783C-F972-4DF8-A379-8C5368A4C70A_1.0.0.0_x86__0h33tvaeqxmgp</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>166C783C-F972-4DF8-A379-8C5368A4C70A_0h33tvaeqxmgp!App</RegisteredUserModeAppID>
     <RegisteredPackageID>166C783C-F972-4DF8-A379-8C5368A4C70A</RegisteredPackageID>
@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-13T14:02:17.833</Modified>
+      <Modified>2017-08-13T20:35:31.765</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\bin\x86\Debug\SMS_UWP.exe">
       <PackagePath>entrypoint\SMS_UWP.exe</PackagePath>
-      <Modified>2017-08-13T13:37:28.506</Modified>
+      <Modified>2017-08-13T20:35:30.284</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\CommonServiceLocator\1.3.0\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll">
       <PackagePath>Microsoft.Practices.ServiceLocation.dll</PackagePath>
@@ -667,7 +667,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\bin\x86\Debug\SMS_UWP.xr.xml">
       <PackagePath>SMS_UWP.xr.xml</PackagePath>
-      <Modified>2017-08-13T11:37:24.670</Modified>
+      <Modified>2017-08-13T20:25:27.669</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -1112,11 +1112,11 @@
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-13T14:02:16.915</Modified>
+      <Modified>2017-08-13T20:35:30.776</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\bin\x86\Debug\Core\SMS_UWP.exe">
       <PackagePath>SMS_UWP.exe</PackagePath>
-      <Modified>2017-08-13T14:02:17.824</Modified>
+      <Modified>2017-08-13T20:35:31.755</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

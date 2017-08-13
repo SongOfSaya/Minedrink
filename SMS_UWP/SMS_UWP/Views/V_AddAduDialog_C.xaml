@@ -23,7 +23,6 @@
             <ic:InvokeCommandAction Command="{x:Bind ViewModel.TestEvenCommand}">
             </ic:InvokeCommandAction>
             <ic:CallMethodAction>
-                
             </ic:CallMethodAction>
         </ic:EventTriggerBehavior>
     </i:Interaction.Behaviors>

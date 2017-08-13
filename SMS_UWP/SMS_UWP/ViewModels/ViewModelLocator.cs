@@ -18,7 +18,7 @@ namespace SMS_UWP.ViewModels
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
 
             SimpleIoc.Default.Register(() => _navigationService);
-            SimpleIoc.Default.Register<ShellViewModel>();
+            SimpleIoc.Default.Register<VM_Shell>();
             Register<MainViewModel, MainPage>();
             Register<VM_AduMGMT, V_AduMGMT_P>();
             Register<ArduinoManageDetailViewModel, ArduinoManageDetailPage>();
@@ -30,7 +30,7 @@ namespace SMS_UWP.ViewModels
             Register<MapViewModel, MapPage>();
             Register<SettingsViewModel, SettingsPage>();
         }
-
+        //变量名称必须与类名严格统一,DataContext依靠变量名赋值
         public SettingsViewModel SettingsViewModel => ServiceLocator.Current.GetInstance<SettingsViewModel>();
 
         public MapViewModel MapViewModel => ServiceLocator.Current.GetInstance<MapViewModel>();
@@ -47,11 +47,11 @@ namespace SMS_UWP.ViewModels
 
         public ArduinoManageDetailViewModel ArduinoManageDetailViewModel => ServiceLocator.Current.GetInstance<ArduinoManageDetailViewModel>();
 
-        public VM_AduMGMT ArduinoManageViewModel => ServiceLocator.Current.GetInstance<VM_AduMGMT>();
+        public VM_AduMGMT VM_AduMGMT => ServiceLocator.Current.GetInstance<VM_AduMGMT>();
 
         public MainViewModel MainViewModel => ServiceLocator.Current.GetInstance<MainViewModel>();
 
-        public ShellViewModel ShellViewModel => ServiceLocator.Current.GetInstance<ShellViewModel>();
+        public VM_Shell VM_Shell => ServiceLocator.Current.GetInstance<VM_Shell>();
 
         public void Register<VM, V>()
             where VM : class

@@ -18,7 +18,7 @@ using Windows.UI.Xaml.Navigation;
 
 namespace SMS_UWP.ViewModels
 {
-    public class ShellViewModel : ViewModelBase
+    public class VM_Shell : ViewModelBase
     {
         private const string PanoramicStateName = "PanoramicState";
         private const string WideStateName = "WideState";

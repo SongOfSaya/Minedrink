@@ -1,10 +1,7 @@
-C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\SMS_UWP.exe
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\App.g.i.cs
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\App.g.cs
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Views\V_AddAduDialog_C.g.i.cs
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Views\V_AddAduDialog_C.g.cs
-C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Views\ArduinoManageDetailControl.g.i.cs
-C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Views\ArduinoManageDetailControl.g.cs
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Views\ArduinoManageDetailPage.g.i.cs
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Views\ArduinoManageDetailPage.g.cs
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Views\V_AduMGMT_P.g.i.cs
@@ -34,7 +31,6 @@ C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Styles\_Font
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Styles\_Thickness.xaml
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Styles\TextBlock.xaml
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Views\V_AddAduDialog_C.xaml
-C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Views\ArduinoManageDetailControl.xaml
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Views\ArduinoManageDetailPage.xaml
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Views\V_AduMGMT_P.xaml
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Views\ChartPage.xaml
@@ -52,7 +48,6 @@ C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Styles\_Font
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Styles\_Thickness.xbf
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Styles\TextBlock.xbf
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Views\V_AddAduDialog_C.xbf
-C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Views\ArduinoManageDetailControl.xbf
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Views\ArduinoManageDetailPage.xbf
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Views\V_AduMGMT_P.xbf
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Views\ChartPage.xbf
@@ -71,7 +66,6 @@ C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\bin\x86\Debug\Styles\_Font
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\bin\x86\Debug\Styles\_Thickness.xbf
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\bin\x86\Debug\Styles\TextBlock.xbf
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\bin\x86\Debug\Views\V_AddAduDialog_C.xbf
-C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\bin\x86\Debug\Views\ArduinoManageDetailControl.xbf
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\bin\x86\Debug\Views\ArduinoManageDetailPage.xbf
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\bin\x86\Debug\Views\V_AduMGMT_P.xbf
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\bin\x86\Debug\Views\ChartPage.xbf
@@ -261,7 +255,7 @@ C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\bin\x86\Debug\Telerik.UI.D
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\bin\x86\Debug\Telerik.UI.Drawing.pdb
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\bin\x86\Debug\Telerik.UI.Drawing.xml
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\bin\x86\Debug\Telerik.UI.Drawing.pri
-C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\SMS_UWP.csprojResolveAssemblyReference.cache
+C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\SMS_UWP.exe
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\SMS_UWP.pdb
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\ResourceHandlingTask.state
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\FxResources.Microsoft.CSharp.SR.resw
@@ -364,3 +358,8 @@ C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Telerik.UI.X
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Telerik.UI.Xaml.Input.UWP.pri.xml
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Telerik.UI.Xaml.Primitives.UWP.pri.xml
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Views\V_AduMGMT_C.g.i.cs
+C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Views\V_AduMGMT_C.g.cs
+C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Views\V_AduMGMT_C.xaml
+C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Views\V_AduMGMT_C.xbf
+C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\bin\x86\Debug\Views\V_AduMGMT_C.xbf

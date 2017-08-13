@@ -1099,7 +1099,7 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 userType.AddMemberName("MediaPlayerViewModel");
                 userType.AddMemberName("TabbedViewModel");
                 userType.AddMemberName("ArduinoManageDetailViewModel");
-                userType.AddMemberName("VM_AduMGMT");
+                userType.AddMemberName("ArduinoManageViewModel");
                 userType.AddMemberName("MainViewModel");
                 userType.AddMemberName("VM_Shell");
                 userType.SetIsLocalType();
@@ -3002,10 +3002,10 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
             var that = (global::SMS_UWP.ViewModels.ViewModelLocator)instance;
             return that.ArduinoManageDetailViewModel;
         }
-        private object get_8_ViewModelLocator_VM_AduMGMT(object instance)
+        private object get_8_ViewModelLocator_ArduinoManageViewModel(object instance)
         {
             var that = (global::SMS_UWP.ViewModels.ViewModelLocator)instance;
-            return that.VM_AduMGMT;
+            return that.ArduinoManageViewModel;
         }
         private object get_9_ViewModelLocator_MainViewModel(object instance)
         {
@@ -5681,10 +5681,10 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlMember.Getter = get_7_ViewModelLocator_ArduinoManageDetailViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "SMS_UWP.ViewModels.ViewModelLocator.VM_AduMGMT":
+            case "SMS_UWP.ViewModels.ViewModelLocator.ArduinoManageViewModel":
                 userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SMS_UWP.ViewModels.ViewModelLocator");
-                xamlMember = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlMember(this, "VM_AduMGMT", "SMS_UWP.ViewModels.VM_AduMGMT");
-                xamlMember.Getter = get_8_ViewModelLocator_VM_AduMGMT;
+                xamlMember = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlMember(this, "ArduinoManageViewModel", "SMS_UWP.ViewModels.VM_AduMGMT");
+                xamlMember.Getter = get_8_ViewModelLocator_ArduinoManageViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "SMS_UWP.ViewModels.ViewModelLocator.MainViewModel":

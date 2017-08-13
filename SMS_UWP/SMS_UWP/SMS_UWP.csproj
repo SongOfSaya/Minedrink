@@ -142,7 +142,7 @@
     <Compile Include="ViewModels\MediaPlayerViewModel.cs" />
     <Compile Include="ViewModels\SettingsViewModel.cs" />
     <Compile Include="ViewModels\ShellNavigationItem.cs" />
-    <Compile Include="ViewModels\ShellViewModel.cs" />
+    <Compile Include="ViewModels\VM_Shell.cs" />
     <Compile Include="ViewModels\TabbedViewModel.cs" />
     <Compile Include="ViewModels\ViewModelLocator.cs" />
     <Compile Include="ViewModels\WebViewViewModel.cs" />
@@ -150,8 +150,8 @@
     <Compile Include="Views\V_AddAduDialog_C.xaml.cs">
       <DependentUpon>V_AddAduDialog_C.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\ArduinoManageDetailControl.xaml.cs">
-      <DependentUpon>ArduinoManageDetailControl.xaml</DependentUpon>
+    <Compile Include="Views\V_AduMGMT_C.xaml.cs">
+      <DependentUpon>V_AduMGMT_C.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ArduinoManageDetailPage.xaml.cs">
       <DependentUpon>ArduinoManageDetailPage.xaml</DependentUpon>
@@ -218,7 +218,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\ArduinoManageDetailControl.xaml">
+    <Page Include="Views\V_AduMGMT_C.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

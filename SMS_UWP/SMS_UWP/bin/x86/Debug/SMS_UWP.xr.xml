@@ -6,6 +6,7 @@
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="ArduinoManageViewModel" />
     <RootPropertyPathName Name="ArduinoManageDetailViewModel" />
+    <RootPropertyPathName Name="VM_AduMGMT" />
     <RootPropertyPathName Name="ChartViewModel" />
     <RootPropertyPathName Name="GridViewModel" />
     <RootPropertyPathName Name="MainViewModel" />
@@ -13,7 +14,7 @@
     <RootPropertyPathName Name="MediaPlayerViewModel" />
     <RootPropertyPathName Name="SettingsViewModel" />
     <RootPropertyPathName Name="Text" />
-    <RootPropertyPathName Name="ShellViewModel" />
+    <RootPropertyPathName Name="VM_Shell" />
     <RootPropertyPathName Name="TabbedViewModel" />
     <RootPropertyPathName Name="WebViewViewModel" />
   </Roots.PropertyPathNames>
@@ -160,9 +161,9 @@
     <RootType FullName="Windows.UI.Xaml.AdaptiveTrigger">
       <RootProperty Name="MinWindowWidth" />
     </RootType>
-    <RootType FullName="SMS_UWP.Views.ArduinoManageDetailControl">
-      <RootProperty Name="MasterMenuItem" />
+    <RootType FullName="SMS_UWP.Views.V_AduMGMT_C">
       <RootProperty Name="Margin" />
+      <RootProperty Name="MasterMenuItem" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="DataContext" />

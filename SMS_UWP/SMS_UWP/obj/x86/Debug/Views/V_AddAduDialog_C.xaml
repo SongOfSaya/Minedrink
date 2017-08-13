@@ -23,7 +23,6 @@
             <ic:InvokeCommandAction x:ConnectionId='2'                                             >
             </ic:InvokeCommandAction>
             <ic:CallMethodAction>
-                
             </ic:CallMethodAction>
         </ic:EventTriggerBehavior>
     </i:Interaction.Behaviors>
