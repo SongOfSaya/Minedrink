@@ -12,13 +12,15 @@ namespace SMS_UWP.Helpers
     public static class H_Json
     {
         //Arduino发给SMS的初始化信息 
-        //无\格式:{"AID":"M01","MIS":1234567,"MOD":4,"CO":12,"SS":[{"SID":"W01","OFF":134,"GV":1,"DT":41,"SCK":43},{"SID":"W02","OFF":12,"GV":44,"DT":1,"SCK":43}]}
-        public const string AllInfoSampleJson = "{\"AID\":\"M01\",\"MIS\":1234567,\"MOD\":4,\"CO\":12,\"SS\":[{\"SID\":\"W01\",\"OFF\":134,\"GV\":1,\"DT\":41,\"SCK\":43},{\"SID\":\"W02\",\"OFF\":12,\"GV\":44,\"DT\":1,\"SCK\":43}]}";
+        //无\格式:{"AID":1001,"NM":"主料区","MIS":61464,"MOD":2,"CO":12,"SS":[{"DT":43,"SCK":41,"OFF":8422741.00,"GV":430.00,"RES":36.00}]}
+        public const string AllInfoSampleJson = "{\"ID\":\"M01\",\"MIS\":1234567,\"MOD\":4,\"CO\":12,\"SS\":[{\"SID\":\"W01\",\"OFF\":134,\"GV\":1,\"DT\":41,\"SCK\":43},{\"SID\":\"W02\",\"OFF\":12,\"GV\":44,\"DT\":1,\"SCK\":43}]}";
         //Arduino周期性发给SMS的json模板 
         //无\格式:{"ID":10, "Mills" : 1243, "Mode" : 1, "Sensors" : [{"ID":1085, "Result" : 123.44}, { "ID":1086,"Result" : 1234.4 }]}
-        public const string UpdateSampleJson = "{\"AID\":10,\"Mills\":1243, \"Mode\":1,\"Sensors\":[{\"ID\":1085,\"Result\":123.44},{\"ID\":1086,\"Result\":1234.4}]}";
+        public const string UpdateSampleJson = "{\"ID\":10,\"Mills\":1243, \"Mode\":1,\"Sensors\":[{\"ID\":1085,\"Result\":123.44},{\"ID\":1086,\"Result\":1234.4}]}";
         //Arduino的ID
-        public const string AID = "AID";
+        public const string AID = "ID";
+        //Arduino的名称
+        public const string Name = "NM";
         //Arduino已运行时间
         public const string Mills = "MIS";
         //Arduino的运行模式
