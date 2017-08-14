@@ -7,14 +7,14 @@ using Windows.UI.Xaml.Navigation;
 
 namespace SMS_UWP.Views
 {
-    public sealed partial class V_AduMGMT_P : Page
+    public sealed partial class V_AduMGMT : Page
     {
         private VM_AduMGMT ViewModel
         {
             get { return DataContext as VM_AduMGMT; }
         }
 
-        public V_AduMGMT_P()
+        public V_AduMGMT()
         {
             InitializeComponent();
         }

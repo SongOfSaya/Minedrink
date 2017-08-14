@@ -10,9 +10,9 @@ Views\MainPage.xbf
 Views\MapPage.xbf
 Views\MediaPlayerPage.xbf
 Views\SettingsPage.xbf
-Views\ShellPage.xbf
 Views\TabbedPage.xbf
 Views\V_AddAduDialog_C.xbf
+Views\V_AduMGMT.xbf
 Views\V_AduMGMT_C.xbf
-Views\V_AduMGMT_P.xbf
+Views\V_Shell.xbf
 Views\WebViewPage.xbf

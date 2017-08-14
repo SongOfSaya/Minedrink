@@ -157,7 +157,7 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
         private void InitTypeTables()
         {
             _typeNameTable = new string[241];
-            _typeNameTable[0] = "SMS_UWP.ViewModels.ViewModelLocator";
+            _typeNameTable[0] = "SMS_UWP.ViewModels.VM_Locator";
             _typeNameTable[1] = "Object";
             _typeNameTable[2] = "SMS_UWP.ViewModels.SettingsViewModel";
             _typeNameTable[3] = "GalaSoft.MvvmLight.ViewModelBase";
@@ -193,7 +193,7 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
             _typeNameTable[33] = "SMS_UWP.Services.S_ArduinoLink";
             _typeNameTable[34] = "SMS_UWP.Views.ArduinoManageDetailPage";
             _typeNameTable[35] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[36] = "SMS_UWP.Views.V_AduMGMT_P";
+            _typeNameTable[36] = "SMS_UWP.Views.V_AduMGMT";
             _typeNameTable[37] = "Telerik.UI.Xaml.Controls.Chart.RadCartesianChart";
             _typeNameTable[38] = "Telerik.UI.Xaml.Controls.Chart.RadChartBase";
             _typeNameTable[39] = "Telerik.UI.Xaml.Controls.Chart.PresenterBase";
@@ -354,7 +354,7 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
             _typeNameTable[194] = "Windows.UI.Xaml.Controls.ItemCollection";
             _typeNameTable[195] = "Windows.UI.Xaml.Visibility";
             _typeNameTable[196] = "Windows.UI.Xaml.Controls.SplitViewPanePlacement";
-            _typeNameTable[197] = "SMS_UWP.Views.ShellPage";
+            _typeNameTable[197] = "SMS_UWP.Views.V_Shell";
             _typeNameTable[198] = "SMS_UWP.Views.TabbedPage";
             _typeNameTable[199] = "SMS_UWP.Views.WebViewPage";
             _typeNameTable[200] = "Telerik.UI.Drawing.D2DResource";
@@ -400,7 +400,7 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
             _typeNameTable[240] = "Windows.UI.Xaml.Media.Animation.Storyboard";
 
             _typeTable = new global::System.Type[241];
-            _typeTable[0] = typeof(global::SMS_UWP.ViewModels.ViewModelLocator);
+            _typeTable[0] = typeof(global::SMS_UWP.ViewModels.VM_Locator);
             _typeTable[1] = typeof(global::System.Object);
             _typeTable[2] = typeof(global::SMS_UWP.ViewModels.SettingsViewModel);
             _typeTable[3] = typeof(global::GalaSoft.MvvmLight.ViewModelBase);
@@ -436,7 +436,7 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
             _typeTable[33] = typeof(global::SMS_UWP.Services.S_ArduinoLink);
             _typeTable[34] = typeof(global::SMS_UWP.Views.ArduinoManageDetailPage);
             _typeTable[35] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[36] = typeof(global::SMS_UWP.Views.V_AduMGMT_P);
+            _typeTable[36] = typeof(global::SMS_UWP.Views.V_AduMGMT);
             _typeTable[37] = typeof(global::Telerik.UI.Xaml.Controls.Chart.RadCartesianChart);
             _typeTable[38] = typeof(global::Telerik.UI.Xaml.Controls.Chart.RadChartBase);
             _typeTable[39] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PresenterBase);
@@ -597,7 +597,7 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
             _typeTable[194] = typeof(global::Windows.UI.Xaml.Controls.ItemCollection);
             _typeTable[195] = typeof(global::Windows.UI.Xaml.Visibility);
             _typeTable[196] = typeof(global::Windows.UI.Xaml.Controls.SplitViewPanePlacement);
-            _typeTable[197] = typeof(global::SMS_UWP.Views.ShellPage);
+            _typeTable[197] = typeof(global::SMS_UWP.Views.V_Shell);
             _typeTable[198] = typeof(global::SMS_UWP.Views.TabbedPage);
             _typeTable[199] = typeof(global::SMS_UWP.Views.WebViewPage);
             _typeTable[200] = typeof(global::Telerik.UI.Drawing.D2DResource);
@@ -675,7 +675,7 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_ViewModelLocator() { return new global::SMS_UWP.ViewModels.ViewModelLocator(); }
+        private object Activate_0_VM_Locator() { return new global::SMS_UWP.ViewModels.VM_Locator(); }
         private object Activate_2_SettingsViewModel() { return new global::SMS_UWP.ViewModels.SettingsViewModel(); }
         private object Activate_4_ObservableObject() { return new global::GalaSoft.MvvmLight.ObservableObject(); }
         private object Activate_5_MapViewModel() { return new global::SMS_UWP.ViewModels.MapViewModel(); }
@@ -697,7 +697,7 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
         private object Activate_31_V_AduMGMT_C() { return new global::SMS_UWP.Views.V_AduMGMT_C(); }
         private object Activate_33_S_ArduinoLink() { return new global::SMS_UWP.Services.S_ArduinoLink(); }
         private object Activate_34_ArduinoManageDetailPage() { return new global::SMS_UWP.Views.ArduinoManageDetailPage(); }
-        private object Activate_36_V_AduMGMT_P() { return new global::SMS_UWP.Views.V_AduMGMT_P(); }
+        private object Activate_36_V_AduMGMT() { return new global::SMS_UWP.Views.V_AduMGMT(); }
         private object Activate_37_RadCartesianChart() { return new global::Telerik.UI.Xaml.Controls.Chart.RadCartesianChart(); }
         private object Activate_44_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.CartesianSeries>(); }
         private object Activate_55_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Windows.UI.Xaml.DataTemplate>(); }
@@ -743,7 +743,7 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
         private object Activate_189_EnumToBooleanConverter() { return new global::SMS_UWP.Helpers.EnumToBooleanConverter(); }
         private object Activate_191_SettingsPage() { return new global::SMS_UWP.Views.SettingsPage(); }
         private object Activate_192_HamburgerMenu() { return new global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu(); }
-        private object Activate_197_ShellPage() { return new global::SMS_UWP.Views.ShellPage(); }
+        private object Activate_197_V_Shell() { return new global::SMS_UWP.Views.V_Shell(); }
         private object Activate_198_TabbedPage() { return new global::SMS_UWP.Views.TabbedPage(); }
         private object Activate_199_WebViewPage() { return new global::SMS_UWP.Views.WebViewPage(); }
         private object Activate_202_D2DTextStyle() { return new global::Telerik.UI.Drawing.D2DTextStyle(); }
@@ -1088,9 +1088,9 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  SMS_UWP.ViewModels.ViewModelLocator
+            case 0:   //  SMS_UWP.ViewModels.VM_Locator
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_0_ViewModelLocator;
+                userType.Activator = Activate_0_VM_Locator;
                 userType.AddMemberName("SettingsViewModel");
                 userType.AddMemberName("MapViewModel");
                 userType.AddMemberName("GridViewModel");
@@ -1326,9 +1326,9 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 36:   //  SMS_UWP.Views.V_AduMGMT_P
+            case 36:   //  SMS_UWP.Views.V_AduMGMT
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_36_V_AduMGMT_P;
+                userType.Activator = Activate_36_V_AduMGMT;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -2527,9 +2527,9 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
                 xamlType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 197:   //  SMS_UWP.Views.ShellPage
+            case 197:   //  SMS_UWP.Views.V_Shell
                 userType = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_197_ShellPage;
+                userType.Activator = Activate_197_V_Shell;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -2962,59 +2962,59 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
             return foundXamlType;
         }
 
-        private object get_0_ViewModelLocator_SettingsViewModel(object instance)
+        private object get_0_VM_Locator_SettingsViewModel(object instance)
         {
-            var that = (global::SMS_UWP.ViewModels.ViewModelLocator)instance;
+            var that = (global::SMS_UWP.ViewModels.VM_Locator)instance;
             return that.SettingsViewModel;
         }
-        private object get_1_ViewModelLocator_MapViewModel(object instance)
+        private object get_1_VM_Locator_MapViewModel(object instance)
         {
-            var that = (global::SMS_UWP.ViewModels.ViewModelLocator)instance;
+            var that = (global::SMS_UWP.ViewModels.VM_Locator)instance;
             return that.MapViewModel;
         }
-        private object get_2_ViewModelLocator_GridViewModel(object instance)
+        private object get_2_VM_Locator_GridViewModel(object instance)
         {
-            var that = (global::SMS_UWP.ViewModels.ViewModelLocator)instance;
+            var that = (global::SMS_UWP.ViewModels.VM_Locator)instance;
             return that.GridViewModel;
         }
-        private object get_3_ViewModelLocator_ChartViewModel(object instance)
+        private object get_3_VM_Locator_ChartViewModel(object instance)
         {
-            var that = (global::SMS_UWP.ViewModels.ViewModelLocator)instance;
+            var that = (global::SMS_UWP.ViewModels.VM_Locator)instance;
             return that.ChartViewModel;
         }
-        private object get_4_ViewModelLocator_WebViewViewModel(object instance)
+        private object get_4_VM_Locator_WebViewViewModel(object instance)
         {
-            var that = (global::SMS_UWP.ViewModels.ViewModelLocator)instance;
+            var that = (global::SMS_UWP.ViewModels.VM_Locator)instance;
             return that.WebViewViewModel;
         }
-        private object get_5_ViewModelLocator_MediaPlayerViewModel(object instance)
+        private object get_5_VM_Locator_MediaPlayerViewModel(object instance)
         {
-            var that = (global::SMS_UWP.ViewModels.ViewModelLocator)instance;
+            var that = (global::SMS_UWP.ViewModels.VM_Locator)instance;
             return that.MediaPlayerViewModel;
         }
-        private object get_6_ViewModelLocator_TabbedViewModel(object instance)
+        private object get_6_VM_Locator_TabbedViewModel(object instance)
         {
-            var that = (global::SMS_UWP.ViewModels.ViewModelLocator)instance;
+            var that = (global::SMS_UWP.ViewModels.VM_Locator)instance;
             return that.TabbedViewModel;
         }
-        private object get_7_ViewModelLocator_ArduinoManageDetailViewModel(object instance)
+        private object get_7_VM_Locator_ArduinoManageDetailViewModel(object instance)
         {
-            var that = (global::SMS_UWP.ViewModels.ViewModelLocator)instance;
+            var that = (global::SMS_UWP.ViewModels.VM_Locator)instance;
             return that.ArduinoManageDetailViewModel;
         }
-        private object get_8_ViewModelLocator_VM_AduMGMT(object instance)
+        private object get_8_VM_Locator_VM_AduMGMT(object instance)
         {
-            var that = (global::SMS_UWP.ViewModels.ViewModelLocator)instance;
+            var that = (global::SMS_UWP.ViewModels.VM_Locator)instance;
             return that.VM_AduMGMT;
         }
-        private object get_9_ViewModelLocator_MainViewModel(object instance)
+        private object get_9_VM_Locator_MainViewModel(object instance)
         {
-            var that = (global::SMS_UWP.ViewModels.ViewModelLocator)instance;
+            var that = (global::SMS_UWP.ViewModels.VM_Locator)instance;
             return that.MainViewModel;
         }
-        private object get_10_ViewModelLocator_VM_Shell(object instance)
+        private object get_10_VM_Locator_VM_Shell(object instance)
         {
-            var that = (global::SMS_UWP.ViewModels.ViewModelLocator)instance;
+            var that = (global::SMS_UWP.ViewModels.VM_Locator)instance;
             return that.VM_Shell;
         }
         private object get_11_Interaction_Behaviors(object instance)
@@ -5633,70 +5633,70 @@ namespace SMS_UWP.SMS_UWP_XamlTypeInfo
 
             switch (longMemberName)
             {
-            case "SMS_UWP.ViewModels.ViewModelLocator.SettingsViewModel":
-                userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SMS_UWP.ViewModels.ViewModelLocator");
+            case "SMS_UWP.ViewModels.VM_Locator.SettingsViewModel":
+                userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SMS_UWP.ViewModels.VM_Locator");
                 xamlMember = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlMember(this, "SettingsViewModel", "SMS_UWP.ViewModels.SettingsViewModel");
-                xamlMember.Getter = get_0_ViewModelLocator_SettingsViewModel;
+                xamlMember.Getter = get_0_VM_Locator_SettingsViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "SMS_UWP.ViewModels.ViewModelLocator.MapViewModel":
-                userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SMS_UWP.ViewModels.ViewModelLocator");
+            case "SMS_UWP.ViewModels.VM_Locator.MapViewModel":
+                userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SMS_UWP.ViewModels.VM_Locator");
                 xamlMember = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlMember(this, "MapViewModel", "SMS_UWP.ViewModels.MapViewModel");
-                xamlMember.Getter = get_1_ViewModelLocator_MapViewModel;
+                xamlMember.Getter = get_1_VM_Locator_MapViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "SMS_UWP.ViewModels.ViewModelLocator.GridViewModel":
-                userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SMS_UWP.ViewModels.ViewModelLocator");
+            case "SMS_UWP.ViewModels.VM_Locator.GridViewModel":
+                userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SMS_UWP.ViewModels.VM_Locator");
                 xamlMember = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlMember(this, "GridViewModel", "SMS_UWP.ViewModels.GridViewModel");
-                xamlMember.Getter = get_2_ViewModelLocator_GridViewModel;
+                xamlMember.Getter = get_2_VM_Locator_GridViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "SMS_UWP.ViewModels.ViewModelLocator.ChartViewModel":
-                userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SMS_UWP.ViewModels.ViewModelLocator");
+            case "SMS_UWP.ViewModels.VM_Locator.ChartViewModel":
+                userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SMS_UWP.ViewModels.VM_Locator");
                 xamlMember = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlMember(this, "ChartViewModel", "SMS_UWP.ViewModels.ChartViewModel");
-                xamlMember.Getter = get_3_ViewModelLocator_ChartViewModel;
+                xamlMember.Getter = get_3_VM_Locator_ChartViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "SMS_UWP.ViewModels.ViewModelLocator.WebViewViewModel":
-                userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SMS_UWP.ViewModels.ViewModelLocator");
+            case "SMS_UWP.ViewModels.VM_Locator.WebViewViewModel":
+                userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SMS_UWP.ViewModels.VM_Locator");
                 xamlMember = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlMember(this, "WebViewViewModel", "SMS_UWP.ViewModels.WebViewViewModel");
-                xamlMember.Getter = get_4_ViewModelLocator_WebViewViewModel;
+                xamlMember.Getter = get_4_VM_Locator_WebViewViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "SMS_UWP.ViewModels.ViewModelLocator.MediaPlayerViewModel":
-                userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SMS_UWP.ViewModels.ViewModelLocator");
+            case "SMS_UWP.ViewModels.VM_Locator.MediaPlayerViewModel":
+                userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SMS_UWP.ViewModels.VM_Locator");
                 xamlMember = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlMember(this, "MediaPlayerViewModel", "SMS_UWP.ViewModels.MediaPlayerViewModel");
-                xamlMember.Getter = get_5_ViewModelLocator_MediaPlayerViewModel;
+                xamlMember.Getter = get_5_VM_Locator_MediaPlayerViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "SMS_UWP.ViewModels.ViewModelLocator.TabbedViewModel":
-                userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SMS_UWP.ViewModels.ViewModelLocator");
+            case "SMS_UWP.ViewModels.VM_Locator.TabbedViewModel":
+                userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SMS_UWP.ViewModels.VM_Locator");
                 xamlMember = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlMember(this, "TabbedViewModel", "SMS_UWP.ViewModels.TabbedViewModel");
-                xamlMember.Getter = get_6_ViewModelLocator_TabbedViewModel;
+                xamlMember.Getter = get_6_VM_Locator_TabbedViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "SMS_UWP.ViewModels.ViewModelLocator.ArduinoManageDetailViewModel":
-                userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SMS_UWP.ViewModels.ViewModelLocator");
+            case "SMS_UWP.ViewModels.VM_Locator.ArduinoManageDetailViewModel":
+                userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SMS_UWP.ViewModels.VM_Locator");
                 xamlMember = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlMember(this, "ArduinoManageDetailViewModel", "SMS_UWP.ViewModels.ArduinoManageDetailViewModel");
-                xamlMember.Getter = get_7_ViewModelLocator_ArduinoManageDetailViewModel;
+                xamlMember.Getter = get_7_VM_Locator_ArduinoManageDetailViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "SMS_UWP.ViewModels.ViewModelLocator.VM_AduMGMT":
-                userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SMS_UWP.ViewModels.ViewModelLocator");
+            case "SMS_UWP.ViewModels.VM_Locator.VM_AduMGMT":
+                userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SMS_UWP.ViewModels.VM_Locator");
                 xamlMember = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlMember(this, "VM_AduMGMT", "SMS_UWP.ViewModels.VM_AduMGMT");
-                xamlMember.Getter = get_8_ViewModelLocator_VM_AduMGMT;
+                xamlMember.Getter = get_8_VM_Locator_VM_AduMGMT;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "SMS_UWP.ViewModels.ViewModelLocator.MainViewModel":
-                userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SMS_UWP.ViewModels.ViewModelLocator");
+            case "SMS_UWP.ViewModels.VM_Locator.MainViewModel":
+                userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SMS_UWP.ViewModels.VM_Locator");
                 xamlMember = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlMember(this, "MainViewModel", "SMS_UWP.ViewModels.MainViewModel");
-                xamlMember.Getter = get_9_ViewModelLocator_MainViewModel;
+                xamlMember.Getter = get_9_VM_Locator_MainViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "SMS_UWP.ViewModels.ViewModelLocator.VM_Shell":
-                userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SMS_UWP.ViewModels.ViewModelLocator");
+            case "SMS_UWP.ViewModels.VM_Locator.VM_Shell":
+                userType = (global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SMS_UWP.ViewModels.VM_Locator");
                 xamlMember = new global::SMS_UWP.SMS_UWP_XamlTypeInfo.XamlMember(this, "VM_Shell", "SMS_UWP.ViewModels.VM_Shell");
-                xamlMember.Getter = get_10_ViewModelLocator_VM_Shell;
+                xamlMember.Getter = get_10_VM_Locator_VM_Shell;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Xaml.Interactivity.Interaction.Behaviors":

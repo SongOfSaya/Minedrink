@@ -8,6 +8,7 @@ using System.IO;
 using System.Diagnostics;
 using static SMS_UWP.Helpers.H_CommandCode;
 using SMS_UWP.Helpers;
+using Windows.System.Threading;
 
 namespace SMS_UWP.Services
 {
@@ -49,6 +50,8 @@ namespace SMS_UWP.Services
                 StreamReader reader = new StreamReader(streamIn);
                 //启动监听程序
                 Update(write, reader);
+                CheckIsConnect();
+
             }
             catch
             {
@@ -58,7 +61,69 @@ namespace SMS_UWP.Services
             Arduino.Port = port;
             return true;
         }
+        /// <summary>
+        /// 检查链接是否有效
+        /// </summary>
+        public async void CheckIsConnect()
+        {
+            if (Arduino.OutStream != null)
+            {
+                await Arduino.OutStream.WriteLineAsync(RXCCodeConvertToString(RXCommCode.TcpDone));
+                await Arduino.OutStream.FlushAsync();
+            }
+            else
+            {
+                Arduino.IsConnect = false;
+            }
+        }
+        /// <summary>
+        /// 连续多次发送验证命令
+        /// </summary>
+        /// <param name="times">执行次数</param>
+        public void CheckIsConnect(int times)
+        {
+            if (Arduino.OutStream != null)
+            {
+                int interval = 50;
+                //创建自动发信器
+                TimeSpan period = TimeSpan.FromMilliseconds(interval);
+                ThreadPoolTimer periodcTimer = null;
+                periodcTimer = ThreadPoolTimer.CreatePeriodicTimer(async (source) =>
+                {
+                    await Arduino.OutStream.WriteLineAsync(TXCCodeConverToString(TXCommCode.GetAllInfo));
+                    await Arduino.OutStream.FlushAsync();
+                    if (period.TotalMilliseconds > (interval * times))
+                    {
+                        periodcTimer.Cancel();
+                    }
+                    //Dispatcher.RunAsync(CoreDispatcherPriority.HIGH, () =>
+                    // {
+                    //     //UI components can be accessed within this scope.
+                    // });
+                }, period);
+            }
+            else
+            {
+                Arduino.IsConnect = false;
+            }
 
+        }
+        /// <summary>
+        /// 向目标Arduino发送字符串
+        /// </summary>
+        /// <param name="outStr">发送的字符串</param>
+        public async void SendCommand(string outStr)
+        {
+            if (outStr != null && Arduino.OutStream != null)
+            {
+                await Arduino.OutStream.WriteLineAsync(outStr);
+                await Arduino.OutStream.FlushAsync();
+            }
+            else
+            {
+                throw new NullReferenceException("错误调用");
+            }
+        }
         private async void Update(StreamWriter sw, StreamReader sr)
         {
             while (true)
@@ -80,6 +145,8 @@ namespace SMS_UWP.Services
                             //{
                             //    ReadAllInfo(json);
                             //}
+                            break;
+                        case RXCommCode.TcpDone:
                             break;
                         case RXCommCode.Update:
                             break;

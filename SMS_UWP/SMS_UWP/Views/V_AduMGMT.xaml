@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="SMS_UWP.Views.V_AduMGMT_P"
+    x:Class="SMS_UWP.Views.V_AduMGMT"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -74,7 +74,7 @@
             <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right"
                         Background="Wheat">
                 <AppBarButton Name="AddArduinoBtn" Content="新增" Command="{x:Bind ViewModel.AddAduBtnClickCommand}"></AppBarButton>
-                <AppBarButton Name="RefreshAduBtn" Content="刷新" Command="{x:Bind ViewModel.TestCommand}"></AppBarButton>
+                <AppBarButton Name="RefreshAduBtn" Content="刷新" ></AppBarButton>
             </StackPanel>
 
             <!--The SystemControlPageBackgroundChromeLowBrush background represents where you should place your master content.-->

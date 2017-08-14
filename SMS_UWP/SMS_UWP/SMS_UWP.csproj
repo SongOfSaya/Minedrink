@@ -156,8 +156,8 @@
     <Compile Include="Views\ArduinoManageDetailPage.xaml.cs">
       <DependentUpon>ArduinoManageDetailPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\V_AduMGMT_P.xaml.cs">
-      <DependentUpon>V_AduMGMT_P.xaml</DependentUpon>
+    <Compile Include="Views\V_AduMGMT.xaml.cs">
+      <DependentUpon>V_AduMGMT.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ChartPage.xaml.cs">
       <DependentUpon>ChartPage.xaml</DependentUpon>
@@ -177,8 +177,8 @@
     <Compile Include="Views\SettingsPage.xaml.cs">
       <DependentUpon>SettingsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\ShellPage.xaml.cs">
-      <DependentUpon>ShellPage.xaml</DependentUpon>
+    <Compile Include="Views\V_Shell.xaml.cs">
+      <DependentUpon>V_Shell.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\TabbedPage.xaml.cs">
       <DependentUpon>TabbedPage.xaml</DependentUpon>
@@ -226,7 +226,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\V_AduMGMT_P.xaml">
+    <Page Include="Views\V_AduMGMT.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -254,7 +254,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\ShellPage.xaml">
+    <Page Include="Views\V_Shell.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

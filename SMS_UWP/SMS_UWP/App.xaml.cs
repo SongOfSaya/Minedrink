@@ -56,7 +56,7 @@ namespace SMS_UWP
 
         private S_Activation CreateActivationService()
         {
-            return new S_Activation(this, typeof(ViewModels.MainViewModel), new Views.ShellPage());
+            return new S_Activation(this, typeof(ViewModels.MainViewModel), new Views.V_Shell());
         }
     }
 }

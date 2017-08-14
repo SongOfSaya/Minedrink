@@ -9,18 +9,18 @@ using SMS_UWP.Views;
 
 namespace SMS_UWP.ViewModels
 {
-    public class ViewModelLocator
+    public class VM_Locator
     {
         private S_NavigationEx _navigationService = new S_NavigationEx();
 
-        public ViewModelLocator()
+        public VM_Locator()
         {
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
 
             SimpleIoc.Default.Register(() => _navigationService);
             SimpleIoc.Default.Register<VM_Shell>();
             Register<MainViewModel, MainPage>();
-            Register<VM_AduMGMT, V_AduMGMT_P>();
+            Register<VM_AduMGMT, V_AduMGMT>();
             Register<ArduinoManageDetailViewModel, ArduinoManageDetailPage>();
             Register<TabbedViewModel, TabbedPage>();
             Register<MediaPlayerViewModel, MediaPlayerPage>();

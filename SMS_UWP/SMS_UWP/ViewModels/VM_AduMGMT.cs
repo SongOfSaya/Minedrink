@@ -29,7 +29,7 @@ namespace SMS_UWP.ViewModels
 
         private const string NarrowStateName = "NarrowState";
         private const string WideStateName = "WideState";
-
+        #region DataBind
         private VisualState _currentState;
 
         private Order _selected;
@@ -54,14 +54,14 @@ namespace SMS_UWP.ViewModels
             get { return _dialogIsOpen; }
             set { Set(ref _dialogIsOpen, value); }
         }
-        private string _ipTextBox;
+        private string _ipTextBox = "192.168.2.109";
         //输入的IP地址
         public string IPTextBox
         {
             get { return _ipTextBox; }
             set { Set(ref _ipTextBox, value); }
         }
-        private string _portTextBox;
+        private string _portTextBox = "1000";
         //用户输入的端口号
         public string PortTextBox
         {
@@ -75,6 +75,10 @@ namespace SMS_UWP.ViewModels
             get { return _connectInfo; }
             set { Set(ref _connectInfo, value); }
         }
+        public ObservableCollection<Order> ArduinoItems { get; private set; } = new ObservableCollection<Order>();
+        public ObservableCollection<S_ArduinoLink> ArduinoLinkItems { get; private set; } = new ObservableCollection<S_ArduinoLink>();
+        #endregion
+        #region Command
         //点击命令
         public ICommand ItemClickCommand { get; private set; }
         //状态改变命令
@@ -82,19 +86,19 @@ namespace SMS_UWP.ViewModels
         public ICommand AddAduBtnClickCommand { get; private set; }
         public ICommand DialogSubmitCommand { get; private set; }
         //用于测试的命令
-        public ICommand TestCommand { get; private set; }
+        public ICommand DialogCancelCommand { get; private set; }
         //用于测试的事件型命令
         public ICommand TestEvenCommand { get; private set; }
-        public ObservableCollection<Order> ArduinoItems { get; private set; } = new ObservableCollection<Order>();
-        public ObservableCollection<S_ArduinoLink> ArduinoLinkItems { get; private set; } = new ObservableCollection<S_ArduinoLink>();
+        #endregion
+        
 
         public VM_AduMGMT()
         {
             ItemClickCommand = new RelayCommand<ItemClickEventArgs>(OnItemClick);
             StateChangedCommand = new RelayCommand<VisualStateChangedEventArgs>(OnStateChanged);
             AddAduBtnClickCommand = new RelayCommand(OnAddBtnClick);
-            DialogSubmitCommand = new RelayCommand<M_AduHostName>(OnDialogSubmit);
-            TestCommand = new RelayCommand(OnTest);
+            DialogSubmitCommand = new RelayCommand<ContentDialogButtonClickEventArgs>(OnDialogSubmit);
+            DialogCancelCommand = new RelayCommand(OnDialogCancel);
             TestEvenCommand = new RelayCommand<ContentDialogButtonClickEventArgs>(OnTestEventCommandAsync);
         }
         /// <summary>
@@ -149,17 +153,29 @@ namespace SMS_UWP.ViewModels
                 ConnectInfo = "连接失败请重试";
             }
         }
-        private void OnTest()
+        private void OnDialogCancel()
         {
-            _testNum++;
-            Debug.WriteLine("TestCommand成功:" + _testNum);
+            
         }
-        private void OnDialogSubmit(M_AduHostName aduHostName)
+        private async void OnDialogSubmit(ContentDialogButtonClickEventArgs args)
         {
 
-            Debug.WriteLine("输出如下");
-            Debug.WriteLine(aduHostName.IP);
-            Debug.WriteLine(aduHostName.Port);
+            Debug.WriteLine("成功拦截到事件;IP:" + IPTextBox + " Port:" + PortTextBox);
+            //TODO:验证输入有效性
+            ConnectInfo = "正在连接中...";
+            S_ArduinoLink arduinoLink = new S_ArduinoLink();
+
+            bool isConnect = await arduinoLink.Connection(IPTextBox, PortTextBox);
+            if (isConnect)
+            {
+                ConnectInfo = "连接成功";
+                ArduinoLinkItems.Add(arduinoLink);
+            }
+            else
+            {
+                args.Cancel = true;
+                ConnectInfo = "连接失败请重试";
+            }
             // Ensure the user name and password fields aren't empty. If a required field
             // is empty, set args.Cancel = true to keep the dialog open.
             //if (string.IsNullOrEmpty(userNameTextBox.Text))
