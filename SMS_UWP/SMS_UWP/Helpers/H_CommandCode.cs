@@ -58,13 +58,16 @@ namespace SMS_UWP.Helpers
             switch (txCode)
             {
                 case TXCommCode.GetAllInfo:
-                    result = "#GETALLI";
+                    result = "#GETINFO";
                     break;
                 case TXCommCode.SetSensorsProp:
                     result = "#SETSENP";
                     break;
                 case TXCommCode.SetArduinoProp:
                     result = "#SETARDP";
+                    break;
+                case TXCommCode.TcpConn:
+                    result = "#TCPCONN";
                     break;
                 case TXCommCode.Error:
                     result = "#ERRORXX";
@@ -93,6 +96,7 @@ namespace SMS_UWP.Helpers
         /// </summary>
         public enum TXCommCode
         {
+            TcpConn,
             GetAllInfo,
             SetSensorsProp,
             SetArduinoProp,

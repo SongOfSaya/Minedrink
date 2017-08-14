@@ -68,7 +68,7 @@ namespace SMS_UWP.Services
         {
             if (Arduino.OutStream != null)
             {
-                await Arduino.OutStream.WriteLineAsync(RXCCodeConvertToString(RXCommCode.TcpDone));
+                await Arduino.OutStream.WriteLineAsync(TXCCodeConverToString(TXCommCode.TcpConn));
                 await Arduino.OutStream.FlushAsync();
             }
             else
@@ -90,7 +90,7 @@ namespace SMS_UWP.Services
                 ThreadPoolTimer periodcTimer = null;
                 periodcTimer = ThreadPoolTimer.CreatePeriodicTimer(async (source) =>
                 {
-                    await Arduino.OutStream.WriteLineAsync(TXCCodeConverToString(TXCommCode.GetAllInfo));
+                    await Arduino.OutStream.WriteLineAsync(TXCCodeConverToString(TXCommCode.TcpConn));
                     await Arduino.OutStream.FlushAsync();
                     if (period.TotalMilliseconds > (interval * times))
                     {
