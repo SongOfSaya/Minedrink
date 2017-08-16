@@ -1,0 +1,6 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.language-pt"
+"ResourceDimensions"		"language-pt-br"
+
+[Files]
+"C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\split.language-pt.pri"			"resources.pri"

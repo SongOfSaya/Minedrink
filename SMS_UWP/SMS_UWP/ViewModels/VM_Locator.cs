@@ -11,10 +11,16 @@ namespace SMS_UWP.ViewModels
 {
     public class VM_Locator
     {
+        private static bool _isInitialized;
         private S_NavigationEx _navigationService = new S_NavigationEx();
 
         public VM_Locator()
         {
+            if (_isInitialized)
+            {
+                return;
+            }
+            _isInitialized = true;
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
 
             SimpleIoc.Default.Register(() => _navigationService);

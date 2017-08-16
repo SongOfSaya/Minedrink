@@ -112,6 +112,9 @@
     <PackageReference Include="Newtonsoft.Json">
       <Version>10.0.2</Version>
     </PackageReference>
+    <PackageReference Include="Telerik.UI.for.UniversalWindowsPlatform">
+      <Version>1.0.0.5</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <PRIResource Include="Strings\en-us\Resources.resw" />

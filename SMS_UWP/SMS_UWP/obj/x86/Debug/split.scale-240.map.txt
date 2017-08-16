@@ -1,0 +1,14 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.scale-240"
+"ResourceDimensions"		"scale-240"
+
+[Files]
+"C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\split.scale-240.pri"			"resources.pri"
+"C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\PackageLayout\Telerik.UI.Xaml.Grid.UWP\Assets\Reorder\ic_reorder_light.scale-240.png"			"Telerik.UI.Xaml.Grid.UWP\Assets\Reorder\ic_reorder_light.scale-240.png"
+"C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\PackageLayout\Telerik.UI.Xaml.Grid.UWP\Assets\Reorder\ic_reorder_dark.scale-240.png"			"Telerik.UI.Xaml.Grid.UWP\Assets\Reorder\ic_reorder_dark.scale-240.png"
+"C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\PackageLayout\Telerik.UI.Xaml.Grid.UWP\Assets\Reorder\column_chooser_btn_blue.scale-240.png"			"Telerik.UI.Xaml.Grid.UWP\Assets\Reorder\column_chooser_btn_blue.scale-240.png"
+"C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\PackageLayout\Telerik.UI.Xaml.Grid.UWP\Assets\Reorder\column_chooser_btn.scale-240.png"			"Telerik.UI.Xaml.Grid.UWP\Assets\Reorder\column_chooser_btn.scale-240.png"
+"C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\PackageLayout\Telerik.UI.Xaml.Grid.UWP\Assets\Reorder\close_btn_blue.scale-240.png"			"Telerik.UI.Xaml.Grid.UWP\Assets\Reorder\close_btn_blue.scale-240.png"
+"C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\PackageLayout\Telerik.UI.Xaml.Grid.UWP\Assets\Reorder\close_btn.scale-240.png"			"Telerik.UI.Xaml.Grid.UWP\Assets\Reorder\close_btn.scale-240.png"
+"C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\PackageLayout\Telerik.UI.Xaml.Grid.UWP\Assets\FilterFlyout\ic_arrow_down_white.scale-240.png"			"Telerik.UI.Xaml.Grid.UWP\Assets\FilterFlyout\ic_arrow_down_white.scale-240.png"
+"C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\PackageLayout\Telerik.UI.Xaml.Grid.UWP\Assets\FilterFlyout\ic_arrow_down.scale-240.png"			"Telerik.UI.Xaml.Grid.UWP\Assets\FilterFlyout\ic_arrow_down.scale-240.png"

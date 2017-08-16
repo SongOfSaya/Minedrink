@@ -1,0 +1,6 @@
+MainPackage=C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\bin\x64\Debug\SMS_UWP_1.0.0.0_x64_Debug.appx
+SymbolPackage=C:\Users\liute\Desktop\SMS_UWP_1.0.0.0_Debug_Test\SMS_UWP_1.0.0.0_x64_Debug.appxsym
+ResourcePack=C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\bin\x64\Debug\SMS_UWP_1.0.0.0_language-zh-hans.appx
+ResourcePack=C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\bin\x64\Debug\SMS_UWP_1.0.0.0_scale-140.appx
+ResourcePack=C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\bin\x64\Debug\SMS_UWP_1.0.0.0_scale-180.appx
+ResourcePack=C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\bin\x64\Debug\SMS_UWP_1.0.0.0_scale-240.appx
