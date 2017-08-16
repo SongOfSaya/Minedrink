@@ -300,13 +300,13 @@ void replyTCPCONN() {
 }
 //回复指令:#GETINIT
 void replyGETINFO() {
-	//无\格式:{"AID":1001,"NM":"名称","MIS":1234567,"MOD":4,"CO":12,"SS":[{"DT:123,"OFF":134,"GV":1,"DT":41,"SCK":43},{"SID":"W02","OFF":12,"GV":44,"DT":1,"SCK":43}]}
+	//无\格式:{"ID":1001,"NM":"名称","MIS":1234567,"MOD":4,"CO":12,"SS":[{"DT:123,"OFF":134,"GV":1,"DT":41,"SCK":43},{"SID":"W02","OFF":12,"GV":44,"DT":1,"SCK":43}]}
 	String replyStr = "#ALLINFO={";
 	replyStr += "\"ID\":";
 	replyStr += ID;
-	replyStr += ",\"NM\":\"";
-	replyStr += name;
-	replyStr += "\",\"MIS\":";
+	/*replyStr += ",\"NM\":\"";
+	replyStr += name;*/
+	replyStr += ",\"MIS\":";
 	replyStr += millis();
 	replyStr += ",\"MOD\":";
 	replyStr += modeNumber;

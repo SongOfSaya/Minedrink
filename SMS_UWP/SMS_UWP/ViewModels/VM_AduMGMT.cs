@@ -33,7 +33,6 @@ namespace SMS_UWP.ViewModels
         private VisualState _currentState;
 
         private Order _selected;
-        private int _testNum = 0;
         //Master中的当前选项
         public Order Selected
         {
@@ -106,7 +105,7 @@ namespace SMS_UWP.ViewModels
         /// </summary>
         /// <param name="currentState"></param>
         /// <returns></returns>
-        public async Task LoadArduinoLinks(VisualState currentState)
+        public void LoadArduinoLinks(VisualState currentState)
         {
             _currentState = currentState;
             ArduinoLinkItems.Clear();

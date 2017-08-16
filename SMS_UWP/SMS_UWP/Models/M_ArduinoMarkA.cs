@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -18,10 +19,12 @@ namespace SMS_UWP.Models
         public long Mills { get; set; }
         public string IP { get; set; }
         public string Port { get; set; }
-        public Colors MarkColor { get; set; }
+        public int Mode { get; set; }
+        public int MarkColor { get; set; }
         public bool IsConnect { get; set; }
         public DateTime OrderDate { get; set; }
         public StreamWriter OutStream { get; set; }
         public StreamReader InStream { get; set; }
+        public ObservableCollection<M_WeightSensor> SensorColeection { get; set; }
     }
 }

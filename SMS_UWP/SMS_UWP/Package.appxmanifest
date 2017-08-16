@@ -4,7 +4,7 @@
   <mp:PhoneIdentity PhoneProductId="166C783C-F972-4DF8-A379-8C5368A4C70A" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>SMS_UWP</DisplayName>
-    <PublisherDisplayName>liute</PublisherDisplayName>
+    <PublisherDisplayName>SongOfSaya</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>

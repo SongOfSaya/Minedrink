@@ -9,6 +9,7 @@ using System.Diagnostics;
 using static SMS_UWP.Helpers.H_CommandCode;
 using SMS_UWP.Helpers;
 using Windows.System.Threading;
+using Windows.Data.Json;
 
 namespace SMS_UWP.Services
 {
@@ -49,7 +50,7 @@ namespace SMS_UWP.Services
                 Stream streamIn = clientSocket.InputStream.AsStreamForRead();
                 StreamReader reader = new StreamReader(streamIn);
                 //启动监听程序
-                Update(write, reader);
+                Update(reader);
                 CheckIsConnect();
 
             }
@@ -124,39 +125,76 @@ namespace SMS_UWP.Services
                 throw new NullReferenceException("错误调用");
             }
         }
-        private async void Update(StreamWriter sw, StreamReader sr)
+
+        /// <summary>
+        /// 监听来自Arduino的信息
+        /// </summary>
+        /// <param name="sw"></param>
+        /// <param name="sr"></param>
+        private async void Update(StreamReader sr)
         {
             while (true)
             {
-                string response = await sr.ReadLineAsync();
-                if (response.StartsWith("#"))
+                string str = await sr.ReadLineAsync();
+                if (str.StartsWith("#"))
                 {
-                    string codeStr = response.Substring(0, 8);
-                    RXCommCode code = H_CommandCode.StringConvertToEnum(codeStr);
+                    string command = str.Substring(0, 8);
+                    string detail = "";
+                    if (str.Length > 9)
+                        detail = str.Remove(0, 9);
+                    RXCommCode code = H_CommandCode.StringConvertToEnum(command);
 
                     switch (code)
                     {
                         case RXCommCode.ERROR:
-                            Debug.WriteLine("错误的指令:" + codeStr);
+                            Debug.WriteLine("错误的指令:" + command);
                             break;
                         case RXCommCode.AllInfo:
-                            string json = response.Remove(0, 9);
-                            //if (CheckJson())
-                            //{
-                            //    ReadAllInfo(json);
-                            //}
+                            RespondAllInfo(detail);
                             break;
                         case RXCommCode.TcpDone:
+                            RespondTcpDone();
                             break;
                         case RXCommCode.Update:
+                            RespondUpdate(detail);
                             break;
                         default:
 
                             break;
                     }
                 }
-                Debug.WriteLine("UPDATE:" + response);
+                Debug.WriteLine("UPDATE:" + str);
             }
+        }
+
+        private void RespondTcpDone()
+        {
+            throw new NotImplementedException();
+        }
+        /// <summary>
+        /// 响应指令:AllInfo
+        /// 无\格式:{"ID":1001,"NM":"名称","MIS":1234567,"MOD":4,"CO":12,"SS":[{"DT:123,"OFF":134,"GV":1,"DT":41,"SCK":43},{"SID":"W02","OFF":12,"GV":44,"DT":1,"SCK":43}]}
+        /// </summary>
+        /// <param name="detail"></param>
+        private void RespondAllInfo(string detail)
+        {
+            var rootObject = JsonObject.Parse(detail);
+            Arduino.ID = (int)(rootObject[H_Json.ID].GetNumber());
+            Arduino.Mills = (long)rootObject[H_Json.Mills].GetNumber();
+            Arduino.Mode = (int)rootObject[H_Json.Mode].GetNumber();
+            Arduino.MarkColor = (int)rootObject[H_Json.Color].GetNumber();
+            var sensors = rootObject[H_Json.SenSors].GetArray();
+            foreach (var item in sensors)
+            {
+                //Arduino.SensorColeection.Add(new M_WeightSensor{ PIN_DT = item.GET});
+            }
+
+            Debug.WriteLine(rootObject["ID"]);
+        }
+
+        private void RespondUpdate(string detail)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -19,10 +19,10 @@ namespace SMS_UWP.Views
             InitializeComponent();
         }
 
-        protected async override void OnNavigatedTo(NavigationEventArgs e)
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             //await ViewModel.LoadDataAsync(WindowStates.CurrentState);
-            await ViewModel.LoadArduinoLinks(WindowStates.CurrentState);
+            ViewModel.LoadArduinoLinks(WindowStates.CurrentState);
         }
         
     }

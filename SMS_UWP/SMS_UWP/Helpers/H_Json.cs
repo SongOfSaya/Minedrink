@@ -18,7 +18,7 @@ namespace SMS_UWP.Helpers
         //无\格式:{"ID":10, "Mills" : 1243, "Mode" : 1, "Sensors" : [{"ID":1085, "Result" : 123.44}, { "ID":1086,"Result" : 1234.4 }]}
         public const string UpdateSampleJson = "{\"ID\":10,\"Mills\":1243, \"Mode\":1,\"Sensors\":[{\"ID\":1085,\"Result\":123.44},{\"ID\":1086,\"Result\":1234.4}]}";
         //Arduino的ID
-        public const string AID = "ID";
+        public const string ID = "ID";
         //Arduino的名称
         public const string Name = "NM";
         //Arduino已运行时间
@@ -27,10 +27,10 @@ namespace SMS_UWP.Helpers
         public const string Mode = "MOD";
         //Arduino的传感器数组
         public const string SenSors = "SS";
-        //传感器的ID
-        public const string SID = "SID";
         //传感器读数
         public const string Result = "RES";
+        //传感器的标志色
+        public const string Color = "CO";
         //传感器DT_PIN口
         public const string DT = "DT";
         //传感器SCK_PIN口

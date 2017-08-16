@@ -3,7 +3,6 @@ C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\FxResources
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\FxResources.System.Collections.SR.resw
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\FxResources.System.IO.SR.resw
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\FxResources.System.Runtime.InteropServices.SR.resw
-C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\FxResources.System.Console.SR.resw
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\FxResources.System.Diagnostics.Debug.SR.resw
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\FxResources.System.IO.FileSystem.SR.resw
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\FxResources.System.Net.Primitives.SR.resw
@@ -17,8 +16,6 @@ C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\FxResources
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\FxResources.System.Collections.Specialized.SR.resw
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\FxResources.System.ComponentModel.Annotations.SR.resw
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\FxResources.System.ComponentModel.EventBasedAsync.SR.resw
-C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\FxResources.System.ComponentModel.Primitives.SR.resw
-C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\FxResources.System.ComponentModel.TypeConverter.SR.resw
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\FxResources.System.Data.Common.SR.resw
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\FxResources.System.Dynamic.Runtime.SR.resw
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\FxResources.System.Globalization.Extensions.SR.resw
@@ -43,9 +40,7 @@ C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\FxResources
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\FxResources.System.Private.ServiceModel.SR.resw
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\FxResources.System.Reflection.DispatchProxy.SR.resw
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\FxResources.System.Reflection.Metadata.SR.resw
-C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\FxResources.System.Runtime.InteropServices.RuntimeInformation.SR.resw
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\FxResources.System.Runtime.Numerics.SR.resw
-C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\FxResources.System.Runtime.Serialization.Formatters.SR.resw
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\FxResources.System.Runtime.Serialization.Primitives.SR.resw
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\FxResources.System.Runtime.WindowsRuntime.SR.resw
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\FxResources.System.Runtime.WindowsRuntime.UI.Xaml.SR.resw
@@ -66,7 +61,6 @@ C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\FxResources
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\FxResources.System.Xml.XmlDocument.SR.resw
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\FxResources.System.Xml.XmlSerializer.SR.resw
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\Microsoft.VisualStudio.TestPlatform.TestExecutor.Core\en-US\Microsoft.VisualStudio.TestPlatform.TestExecutor.Resources.resw
-C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\Microsoft.Practices.ServiceLocation\en-US\Microsoft.Practices.ServiceLocation.Properties.Resources.resw
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\Microsoft.VisualStudio.TestPlatform.Common\en-US\Microsoft.VisualStudio.TestPlatform.Common.Resources.resw
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\Microsoft.VisualStudio.TestPlatform.Core\en-US\Microsoft.VisualStudio.TestPlatform.Core.Resources.resw
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\UnitTest\obj\x86\Debug\Microsoft.VisualStudio.TestPlatform.ObjectModel\en-US\Microsoft.VisualStudio.TestPlatform.ObjectModel.CommonResources.resw
