@@ -51,7 +51,7 @@ namespace SMS_UWP.Views
             {
                 switch(connectionId)
                 {
-                    case 4:
+                    case 4: // Views\ArduinoManageDetailPage.xaml line 25
                         this.obj4 = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)target;
                         break;
                     default:
@@ -77,6 +77,11 @@ namespace SMS_UWP.Views
 
             public void StopTracking()
             {
+            }
+
+            public void DisconnectUnloadedObject(int connectionId)
+            {
+                throw new global::System.ArgumentException("No unloadable elements to disconnect.");
             }
 
             public bool SetDataRoot(global::System.Object newDataRoot)
@@ -119,6 +124,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
+                    // Views\ArduinoManageDetailPage.xaml line 25
                     XamlBindingSetters.Set_Microsoft_Xaml_Interactions_Core_InvokeCommandAction_Command(this.obj4, obj, null);
                 }
             }
@@ -132,22 +138,22 @@ namespace SMS_UWP.Views
         {
             switch(connectionId)
             {
-            case 2:
+            case 2: // Views\ArduinoManageDetailPage.xaml line 13
                 {
                     this.ContentArea = (global::Windows.UI.Xaml.Controls.Grid)(target);
                 }
                 break;
-            case 3:
+            case 3: // Views\ArduinoManageDetailPage.xaml line 22
                 {
                     this.WindowStates = (global::Windows.UI.Xaml.VisualStateGroup)(target);
                 }
                 break;
-            case 5:
+            case 5: // Views\ArduinoManageDetailPage.xaml line 28
                 {
                     this.WideState = (global::Windows.UI.Xaml.VisualState)(target);
                 }
                 break;
-            case 6:
+            case 6: // Views\ArduinoManageDetailPage.xaml line 33
                 {
                     this.NarrowState = (global::Windows.UI.Xaml.VisualState)(target);
                 }
@@ -158,6 +164,9 @@ namespace SMS_UWP.Views
             this._contentLoaded = true;
         }
 
+        /// <summary>
+        /// GetBindingConnector(int connectionId, object target)
+        /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public global::Windows.UI.Xaml.Markup.IComponentConnector GetBindingConnector(int connectionId, object target)
@@ -165,8 +174,8 @@ namespace SMS_UWP.Views
             global::Windows.UI.Xaml.Markup.IComponentConnector returnValue = null;
             switch(connectionId)
             {
-            case 1:
-                {
+            case 1: // Views\ArduinoManageDetailPage.xaml line 1
+                {                    
                     global::Windows.UI.Xaml.Controls.Page element1 = (global::Windows.UI.Xaml.Controls.Page)target;
                     ArduinoManageDetailPage_obj1_Bindings bindings = new ArduinoManageDetailPage_obj1_Bindings();
                     returnValue = bindings;

@@ -24,32 +24,32 @@ namespace SMS_UWP.Views
         {
             switch(connectionId)
             {
-            case 1:
+            case 1: // Views\MainPage.xaml line 9
                 {
                     this.ContentArea = (global::Windows.UI.Xaml.Controls.Grid)(target);
                 }
                 break;
-            case 2:
+            case 2: // Views\MainPage.xaml line 14
                 {
                     this.TitleRow = (global::Windows.UI.Xaml.Controls.RowDefinition)(target);
                 }
                 break;
-            case 3:
+            case 3: // Views\MainPage.xaml line 18
                 {
                     this.TitlePage = (global::Windows.UI.Xaml.Controls.TextBlock)(target);
                 }
                 break;
-            case 4:
+            case 4: // Views\MainPage.xaml line 31
                 {
                     this.WindowStates = (global::Windows.UI.Xaml.VisualStateGroup)(target);
                 }
                 break;
-            case 5:
+            case 5: // Views\MainPage.xaml line 32
                 {
                     this.WideState = (global::Windows.UI.Xaml.VisualState)(target);
                 }
                 break;
-            case 6:
+            case 6: // Views\MainPage.xaml line 37
                 {
                     this.NarrowState = (global::Windows.UI.Xaml.VisualState)(target);
                 }
@@ -60,6 +60,9 @@ namespace SMS_UWP.Views
             this._contentLoaded = true;
         }
 
+        /// <summary>
+        /// GetBindingConnector(int connectionId, object target)
+        /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public global::Windows.UI.Xaml.Markup.IComponentConnector GetBindingConnector(int connectionId, object target)

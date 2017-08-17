@@ -110,13 +110,13 @@ namespace SMS_UWP.Views
             {
                 switch(connectionId)
                 {
-                    case 3:
+                    case 3: // Views\V_Shell.xaml line 20
                         this.obj3 = (global::Windows.UI.Xaml.Shapes.Rectangle)target;
                         break;
-                    case 4:
+                    case 4: // Views\V_Shell.xaml line 27
                         this.obj4 = (global::Windows.UI.Xaml.Controls.Viewbox)target;
                         break;
-                    case 5:
+                    case 5: // Views\V_Shell.xaml line 31
                         this.obj5 = (global::Windows.UI.Xaml.Controls.TextBlock)target;
                         break;
                     default:
@@ -186,6 +186,11 @@ namespace SMS_UWP.Views
                 this.initialized = false;
             }
 
+            public void DisconnectUnloadedObject(int connectionId)
+            {
+                throw new global::System.ArgumentException("No unloadable elements to disconnect.");
+            }
+
             public bool SetDataRoot(global::System.Object newDataRoot)
             {
                 this.bindingsTracking.ReleaseAllListeners();
@@ -225,6 +230,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
+                    // Views\V_Shell.xaml line 20
                     XamlBindingSetters.Set_Windows_UI_Xaml_UIElement_Visibility(this.obj3, obj);
                 }
             }
@@ -232,6 +238,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
+                    // Views\V_Shell.xaml line 27
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Viewbox_Child(this.obj4, obj, null);
                 }
             }
@@ -239,6 +246,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
+                    // Views\V_Shell.xaml line 31
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_TextBlock_Foreground(this.obj5, obj, null);
                 }
             }
@@ -246,6 +254,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
+                    // Views\V_Shell.xaml line 31
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_TextBlock_Text(this.obj5, obj, null);
                 }
             }
@@ -253,11 +262,26 @@ namespace SMS_UWP.Views
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
             private class V_Shell_obj2_BindingsTracking
             {
-                private global::System.WeakReference<V_Shell_obj2_Bindings> WeakRefToBindingObj; 
+                private global::System.WeakReference<V_Shell_obj2_Bindings> weakRefToBindingObj; 
 
                 public V_Shell_obj2_BindingsTracking(V_Shell_obj2_Bindings obj)
                 {
-                    WeakRefToBindingObj = new global::System.WeakReference<V_Shell_obj2_Bindings>(obj);
+                    weakRefToBindingObj = new global::System.WeakReference<V_Shell_obj2_Bindings>(obj);
+                }
+
+                public V_Shell_obj2_Bindings TryGetBindingObject()
+                {
+                    V_Shell_obj2_Bindings bindingObject = null;
+                    if (weakRefToBindingObj != null)
+                    {
+                        weakRefToBindingObj.TryGetTarget(out bindingObject);
+                        if (bindingObject == null)
+                        {
+                            weakRefToBindingObj = null;
+                            ReleaseAllListeners();
+                        }
+                    }
+                    return bindingObject;
                 }
 
                 public void ReleaseAllListeners()
@@ -267,8 +291,8 @@ namespace SMS_UWP.Views
 
                 public void PropertyChanged_(object sender, global::System.ComponentModel.PropertyChangedEventArgs e)
                 {
-                    V_Shell_obj2_Bindings bindings;
-                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
+                    V_Shell_obj2_Bindings bindings = TryGetBindingObject();
+                    if (bindings != null)
                     {
                         string propName = e.PropertyName;
                         global::SMS_UWP.ViewModels.ShellNavigationItem obj = sender as global::SMS_UWP.ViewModels.ShellNavigationItem;
@@ -308,8 +332,8 @@ namespace SMS_UWP.Views
                 }
                 public void UpdateChildListeners_(global::SMS_UWP.ViewModels.ShellNavigationItem obj)
                 {
-                    V_Shell_obj2_Bindings bindings;
-                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
+                    V_Shell_obj2_Bindings bindings = TryGetBindingObject();
+                    if (bindings != null)
                     {
                         if (bindings.dataRoot != null)
                         {
@@ -354,25 +378,25 @@ namespace SMS_UWP.Views
             {
                 switch(connectionId)
                 {
-                    case 6:
+                    case 6: // Views\V_Shell.xaml line 96
                         this.obj6 = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)target;
                         (this.obj6).RegisterPropertyChangedCallback(global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.IsPaneOpenProperty,
                             (global::Windows.UI.Xaml.DependencyObject sender, global::Windows.UI.Xaml.DependencyProperty prop) =>
                             {
-                                if (this.initialized)
-                                {
-                                    // Update Two Way binding
-                                    this.dataRoot.ViewModel.IsPaneOpen = this.obj6.IsPaneOpen;
-                                }
-                            });
+                            if (this.initialized)
+                            {
+                                // Update Two Way binding
+                                this.dataRoot.ViewModel.IsPaneOpen = this.obj6.IsPaneOpen;
+                            }
+                        });
                         break;
-                    case 7:
+                    case 7: // Views\V_Shell.xaml line 112
                         this.obj7 = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)target;
                         break;
-                    case 8:
+                    case 8: // Views\V_Shell.xaml line 109
                         this.obj8 = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)target;
                         break;
-                    case 11:
+                    case 11: // Views\V_Shell.xaml line 122
                         this.obj11 = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)target;
                         break;
                     default:
@@ -400,6 +424,11 @@ namespace SMS_UWP.Views
             {
                 this.bindingsTracking.ReleaseAllListeners();
                 this.initialized = false;
+            }
+
+            public void DisconnectUnloadedObject(int connectionId)
+            {
+                throw new global::System.ArgumentException("No unloadable elements to disconnect.");
             }
 
             public bool SetDataRoot(global::System.Object newDataRoot)
@@ -452,6 +481,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
+                    // Views\V_Shell.xaml line 96
                     XamlBindingSetters.Set_Microsoft_Toolkit_Uwp_UI_Controls_HamburgerMenu_DisplayMode(this.obj6, obj);
                 }
             }
@@ -459,6 +489,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
+                    // Views\V_Shell.xaml line 96
                     XamlBindingSetters.Set_Microsoft_Toolkit_Uwp_UI_Controls_HamburgerMenu_IsPaneOpen(this.obj6, obj);
                 }
             }
@@ -466,6 +497,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
+                    // Views\V_Shell.xaml line 96
                     XamlBindingSetters.Set_Microsoft_Toolkit_Uwp_UI_Controls_HamburgerMenu_ItemsSource(this.obj6, obj, null);
                 }
             }
@@ -473,6 +505,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
+                    // Views\V_Shell.xaml line 96
                     XamlBindingSetters.Set_Microsoft_Toolkit_Uwp_UI_Controls_HamburgerMenu_OptionsItemsSource(this.obj6, obj, null);
                 }
             }
@@ -480,7 +513,9 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
+                    // Views\V_Shell.xaml line 112
                     XamlBindingSetters.Set_Microsoft_Xaml_Interactions_Core_InvokeCommandAction_Command(this.obj7, obj, null);
+                    // Views\V_Shell.xaml line 109
                     XamlBindingSetters.Set_Microsoft_Xaml_Interactions_Core_InvokeCommandAction_Command(this.obj8, obj, null);
                 }
             }
@@ -488,6 +523,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
+                    // Views\V_Shell.xaml line 122
                     XamlBindingSetters.Set_Microsoft_Xaml_Interactions_Core_InvokeCommandAction_Command(this.obj11, obj, null);
                 }
             }
@@ -495,11 +531,26 @@ namespace SMS_UWP.Views
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
             private class V_Shell_obj1_BindingsTracking
             {
-                private global::System.WeakReference<V_Shell_obj1_Bindings> WeakRefToBindingObj; 
+                private global::System.WeakReference<V_Shell_obj1_Bindings> weakRefToBindingObj; 
 
                 public V_Shell_obj1_BindingsTracking(V_Shell_obj1_Bindings obj)
                 {
-                    WeakRefToBindingObj = new global::System.WeakReference<V_Shell_obj1_Bindings>(obj);
+                    weakRefToBindingObj = new global::System.WeakReference<V_Shell_obj1_Bindings>(obj);
+                }
+
+                public V_Shell_obj1_Bindings TryGetBindingObject()
+                {
+                    V_Shell_obj1_Bindings bindingObject = null;
+                    if (weakRefToBindingObj != null)
+                    {
+                        weakRefToBindingObj.TryGetTarget(out bindingObject);
+                        if (bindingObject == null)
+                        {
+                            weakRefToBindingObj = null;
+                            ReleaseAllListeners();
+                        }
+                    }
+                    return bindingObject;
                 }
 
                 public void ReleaseAllListeners()
@@ -509,8 +560,8 @@ namespace SMS_UWP.Views
 
                 public void PropertyChanged_ViewModel(object sender, global::System.ComponentModel.PropertyChangedEventArgs e)
                 {
-                    V_Shell_obj1_Bindings bindings;
-                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
+                    V_Shell_obj1_Bindings bindings = TryGetBindingObject();
+                    if (bindings != null)
                     {
                         string propName = e.PropertyName;
                         global::SMS_UWP.ViewModels.VM_Shell obj = sender as global::SMS_UWP.ViewModels.VM_Shell;
@@ -576,32 +627,32 @@ namespace SMS_UWP.Views
         {
             switch(connectionId)
             {
-            case 6:
+            case 6: // Views\V_Shell.xaml line 96
                 {
                     this.NavigationMenu = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)(target);
                 }
                 break;
-            case 9:
+            case 9: // Views\V_Shell.xaml line 116
                 {
                     this.shellFrame = (global::Windows.UI.Xaml.Controls.Frame)(target);
                 }
                 break;
-            case 10:
+            case 10: // Views\V_Shell.xaml line 119
                 {
                     this.WindowStates = (global::Windows.UI.Xaml.VisualStateGroup)(target);
                 }
                 break;
-            case 12:
+            case 12: // Views\V_Shell.xaml line 125
                 {
                     this.PanoramicState = (global::Windows.UI.Xaml.VisualState)(target);
                 }
                 break;
-            case 13:
+            case 13: // Views\V_Shell.xaml line 130
                 {
                     this.WideState = (global::Windows.UI.Xaml.VisualState)(target);
                 }
                 break;
-            case 14:
+            case 14: // Views\V_Shell.xaml line 135
                 {
                     this.NarrowState = (global::Windows.UI.Xaml.VisualState)(target);
                 }
@@ -612,6 +663,9 @@ namespace SMS_UWP.Views
             this._contentLoaded = true;
         }
 
+        /// <summary>
+        /// GetBindingConnector(int connectionId, object target)
+        /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public global::Windows.UI.Xaml.Markup.IComponentConnector GetBindingConnector(int connectionId, object target)
@@ -619,8 +673,8 @@ namespace SMS_UWP.Views
             global::Windows.UI.Xaml.Markup.IComponentConnector returnValue = null;
             switch(connectionId)
             {
-            case 1:
-                {
+            case 1: // Views\V_Shell.xaml line 1
+                {                    
                     global::Windows.UI.Xaml.Controls.Page element1 = (global::Windows.UI.Xaml.Controls.Page)target;
                     V_Shell_obj1_Bindings bindings = new V_Shell_obj1_Bindings();
                     returnValue = bindings;
@@ -629,8 +683,8 @@ namespace SMS_UWP.Views
                     element1.Loading += bindings.Loading;
                 }
                 break;
-            case 2:
-                {
+            case 2: // Views\V_Shell.xaml line 15
+                {                    
                     global::Windows.UI.Xaml.Controls.Grid element2 = (global::Windows.UI.Xaml.Controls.Grid)target;
                     V_Shell_obj2_Bindings bindings = new V_Shell_obj2_Bindings();
                     returnValue = bindings;

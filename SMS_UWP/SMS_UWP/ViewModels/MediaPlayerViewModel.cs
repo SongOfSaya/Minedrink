@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.ObjectModel;
+﻿
 
 using GalaSoft.MvvmLight;
-
+using System;
 using Windows.Media.Core;
 using Windows.Media.Playback;
 

@@ -51,7 +51,7 @@ namespace SMS_UWP.Views
             {
                 switch(connectionId)
                 {
-                    case 5:
+                    case 5: // Views\ChartPage.xaml line 54
                         this.obj5 = (global::Telerik.UI.Xaml.Controls.Chart.BarSeries)target;
                         break;
                     default:
@@ -77,6 +77,11 @@ namespace SMS_UWP.Views
 
             public void StopTracking()
             {
+            }
+
+            public void DisconnectUnloadedObject(int connectionId)
+            {
+                throw new global::System.ArgumentException("No unloadable elements to disconnect.");
             }
 
             public bool SetDataRoot(global::System.Object newDataRoot)
@@ -119,6 +124,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
+                    // Views\ChartPage.xaml line 54
                     XamlBindingSetters.Set_Telerik_UI_Xaml_Controls_Chart_ChartSeries_ItemsSource(this.obj5, obj, null);
                 }
             }
@@ -132,32 +138,32 @@ namespace SMS_UWP.Views
         {
             switch(connectionId)
             {
-            case 2:
+            case 2: // Views\ChartPage.xaml line 10
                 {
                     this.ContentArea = (global::Windows.UI.Xaml.Controls.Grid)(target);
                 }
                 break;
-            case 3:
+            case 3: // Views\ChartPage.xaml line 15
                 {
                     this.TitleRow = (global::Windows.UI.Xaml.Controls.RowDefinition)(target);
                 }
                 break;
-            case 4:
+            case 4: // Views\ChartPage.xaml line 19
                 {
                     this.TitlePage = (global::Windows.UI.Xaml.Controls.TextBlock)(target);
                 }
                 break;
-            case 6:
+            case 6: // Views\ChartPage.xaml line 66
                 {
                     this.WindowStates = (global::Windows.UI.Xaml.VisualStateGroup)(target);
                 }
                 break;
-            case 7:
+            case 7: // Views\ChartPage.xaml line 67
                 {
                     this.WideState = (global::Windows.UI.Xaml.VisualState)(target);
                 }
                 break;
-            case 8:
+            case 8: // Views\ChartPage.xaml line 72
                 {
                     this.NarrowState = (global::Windows.UI.Xaml.VisualState)(target);
                 }
@@ -168,6 +174,9 @@ namespace SMS_UWP.Views
             this._contentLoaded = true;
         }
 
+        /// <summary>
+        /// GetBindingConnector(int connectionId, object target)
+        /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public global::Windows.UI.Xaml.Markup.IComponentConnector GetBindingConnector(int connectionId, object target)
@@ -175,8 +184,8 @@ namespace SMS_UWP.Views
             global::Windows.UI.Xaml.Markup.IComponentConnector returnValue = null;
             switch(connectionId)
             {
-            case 1:
-                {
+            case 1: // Views\ChartPage.xaml line 1
+                {                    
                     global::Windows.UI.Xaml.Controls.Page element1 = (global::Windows.UI.Xaml.Controls.Page)target;
                     ChartPage_obj1_Bindings bindings = new ChartPage_obj1_Bindings();
                     returnValue = bindings;

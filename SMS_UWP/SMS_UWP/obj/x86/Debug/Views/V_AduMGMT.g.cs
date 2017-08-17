@@ -94,10 +94,10 @@ namespace SMS_UWP.Views
             {
                 switch(connectionId)
                 {
-                    case 3:
+                    case 3: // Views\V_AduMGMT.xaml line 27
                         this.obj3 = (global::Windows.UI.Xaml.Controls.TextBlock)target;
                         break;
-                    case 4:
+                    case 4: // Views\V_AduMGMT.xaml line 31
                         this.obj4 = (global::Windows.UI.Xaml.Controls.TextBlock)target;
                         break;
                     default:
@@ -164,6 +164,11 @@ namespace SMS_UWP.Views
             {
             }
 
+            public void DisconnectUnloadedObject(int connectionId)
+            {
+                throw new global::System.ArgumentException("No unloadable elements to disconnect.");
+            }
+
             public bool SetDataRoot(global::System.Object newDataRoot)
             {
                 if (newDataRoot != null)
@@ -200,6 +205,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
+                    // Views\V_AduMGMT.xaml line 27
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_TextBlock_Text(this.obj3, obj.ToString(), null);
                 }
             }
@@ -207,6 +213,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
+                    // Views\V_AduMGMT.xaml line 31
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_TextBlock_Text(this.obj4, obj, null);
                 }
             }
@@ -242,19 +249,19 @@ namespace SMS_UWP.Views
             {
                 switch(connectionId)
                 {
-                    case 12:
+                    case 12: // Views\V_AduMGMT.xaml line 111
                         this.obj12 = (global::SMS_UWP.Views.V_AduMGMT_C)target;
                         break;
-                    case 16:
+                    case 16: // Views\V_AduMGMT.xaml line 81
                         this.obj16 = (global::Windows.UI.Xaml.Controls.ListView)target;
                         break;
-                    case 17:
+                    case 17: // Views\V_AduMGMT.xaml line 93
                         this.obj17 = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)target;
                         break;
-                    case 18:
+                    case 18: // Views\V_AduMGMT.xaml line 76
                         this.obj18 = (global::Windows.UI.Xaml.Controls.AppBarButton)target;
                         break;
-                    case 21:
+                    case 21: // Views\V_AduMGMT.xaml line 122
                         this.obj21 = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)target;
                         break;
                     default:
@@ -282,6 +289,11 @@ namespace SMS_UWP.Views
             {
                 this.bindingsTracking.ReleaseAllListeners();
                 this.initialized = false;
+            }
+
+            public void DisconnectUnloadedObject(int connectionId)
+            {
+                throw new global::System.ArgumentException("No unloadable elements to disconnect.");
             }
 
             public bool SetDataRoot(global::System.Object newDataRoot)
@@ -333,7 +345,9 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
+                    // Views\V_AduMGMT.xaml line 111
                     XamlBindingSetters.Set_SMS_UWP_Views_V_AduMGMT_C_MasterMenuItem(this.obj12, obj, null);
+                    // Views\V_AduMGMT.xaml line 81
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Primitives_Selector_SelectedItem(this.obj16, obj, null);
                 }
             }
@@ -342,6 +356,7 @@ namespace SMS_UWP.Views
                 this.bindingsTracking.UpdateChildListeners_ViewModel_ArduinoLinkItems(obj);
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
+                    // Views\V_AduMGMT.xaml line 81
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_ItemsControl_ItemsSource(this.obj16, obj, null);
                 }
             }
@@ -349,6 +364,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
+                    // Views\V_AduMGMT.xaml line 93
                     XamlBindingSetters.Set_Microsoft_Xaml_Interactions_Core_InvokeCommandAction_Command(this.obj17, obj, null);
                 }
             }
@@ -356,6 +372,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
+                    // Views\V_AduMGMT.xaml line 76
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Primitives_ButtonBase_Command(this.obj18, obj, null);
                 }
             }
@@ -363,6 +380,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
+                    // Views\V_AduMGMT.xaml line 122
                     XamlBindingSetters.Set_Microsoft_Xaml_Interactions_Core_InvokeCommandAction_Command(this.obj21, obj, null);
                 }
             }
@@ -370,11 +388,26 @@ namespace SMS_UWP.Views
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
             private class V_AduMGMT_obj1_BindingsTracking
             {
-                private global::System.WeakReference<V_AduMGMT_obj1_Bindings> WeakRefToBindingObj; 
+                private global::System.WeakReference<V_AduMGMT_obj1_Bindings> weakRefToBindingObj; 
 
                 public V_AduMGMT_obj1_BindingsTracking(V_AduMGMT_obj1_Bindings obj)
                 {
-                    WeakRefToBindingObj = new global::System.WeakReference<V_AduMGMT_obj1_Bindings>(obj);
+                    weakRefToBindingObj = new global::System.WeakReference<V_AduMGMT_obj1_Bindings>(obj);
+                }
+
+                public V_AduMGMT_obj1_Bindings TryGetBindingObject()
+                {
+                    V_AduMGMT_obj1_Bindings bindingObject = null;
+                    if (weakRefToBindingObj != null)
+                    {
+                        weakRefToBindingObj.TryGetTarget(out bindingObject);
+                        if (bindingObject == null)
+                        {
+                            weakRefToBindingObj = null;
+                            ReleaseAllListeners();
+                        }
+                    }
+                    return bindingObject;
                 }
 
                 public void ReleaseAllListeners()
@@ -385,8 +418,8 @@ namespace SMS_UWP.Views
 
                 public void PropertyChanged_ViewModel(object sender, global::System.ComponentModel.PropertyChangedEventArgs e)
                 {
-                    V_AduMGMT_obj1_Bindings bindings;
-                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
+                    V_AduMGMT_obj1_Bindings bindings = TryGetBindingObject();
+                    if (bindings != null)
                     {
                         string propName = e.PropertyName;
                         global::SMS_UWP.ViewModels.VM_AduMGMT obj = sender as global::SMS_UWP.ViewModels.VM_AduMGMT;
@@ -443,8 +476,8 @@ namespace SMS_UWP.Views
                 }
                 public void PropertyChanged_ViewModel_ArduinoLinkItems(object sender, global::System.ComponentModel.PropertyChangedEventArgs e)
                 {
-                    V_AduMGMT_obj1_Bindings bindings;
-                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
+                    V_AduMGMT_obj1_Bindings bindings = TryGetBindingObject();
+                    if (bindings != null)
                     {
                         string propName = e.PropertyName;
                         global::System.Collections.ObjectModel.ObservableCollection<global::SMS_UWP.Services.S_ArduinoLink> obj = sender as global::System.Collections.ObjectModel.ObservableCollection<global::SMS_UWP.Services.S_ArduinoLink>;
@@ -463,8 +496,8 @@ namespace SMS_UWP.Views
                 }
                 public void CollectionChanged_ViewModel_ArduinoLinkItems(object sender, global::System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
                 {
-                    V_AduMGMT_obj1_Bindings bindings;
-                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
+                    V_AduMGMT_obj1_Bindings bindings = TryGetBindingObject();
+                    if (bindings != null)
                     {
                         global::System.Collections.ObjectModel.ObservableCollection<global::SMS_UWP.Services.S_ArduinoLink> obj = sender as global::System.Collections.ObjectModel.ObservableCollection<global::SMS_UWP.Services.S_ArduinoLink>;
                     }
@@ -499,87 +532,87 @@ namespace SMS_UWP.Views
         {
             switch(connectionId)
             {
-            case 5:
+            case 5: // Views\V_AduMGMT.xaml line 39
                 {
                     this.ContentArea = (global::Windows.UI.Xaml.Controls.Grid)(target);
                 }
                 break;
-            case 6:
+            case 6: // Views\V_AduMGMT.xaml line 44
                 {
                     this.TitleRow = (global::Windows.UI.Xaml.Controls.RowDefinition)(target);
                 }
                 break;
-            case 7:
+            case 7: // Views\V_AduMGMT.xaml line 49
                 {
                     this.MasterColumn = (global::Windows.UI.Xaml.Controls.ColumnDefinition)(target);
                 }
                 break;
-            case 8:
+            case 8: // Views\V_AduMGMT.xaml line 50
                 {
                     this.DetailColumn = (global::Windows.UI.Xaml.Controls.ColumnDefinition)(target);
                 }
                 break;
-            case 9:
+            case 9: // Views\V_AduMGMT.xaml line 53
                 {
                     this.TitlePage = (global::Windows.UI.Xaml.Controls.TextBlock)(target);
                 }
                 break;
-            case 10:
+            case 10: // Views\V_AduMGMT.xaml line 60
                 {
                     this.MasterArea = (global::Windows.UI.Xaml.Controls.Grid)(target);
                 }
                 break;
-            case 11:
+            case 11: // Views\V_AduMGMT.xaml line 105
                 {
                     this.DetailContentPresenter = (global::Windows.UI.Xaml.Controls.Grid)(target);
                 }
                 break;
-            case 12:
+            case 12: // Views\V_AduMGMT.xaml line 111
                 {
                     this.DetailControl = (global::SMS_UWP.Views.V_AduMGMT_C)(target);
                 }
                 break;
-            case 13:
+            case 13: // Views\V_AduMGMT.xaml line 65
                 {
                     this.MasterRow = (global::Windows.UI.Xaml.Controls.RowDefinition)(target);
                 }
                 break;
-            case 14:
+            case 14: // Views\V_AduMGMT.xaml line 66
                 {
                     this.MasterBtnRow = (global::Windows.UI.Xaml.Controls.RowDefinition)(target);
                 }
                 break;
-            case 15:
+            case 15: // Views\V_AduMGMT.xaml line 70
                 {
                     this.Title = (global::Windows.UI.Xaml.Controls.TextBlock)(target);
                 }
                 break;
-            case 16:
+            case 16: // Views\V_AduMGMT.xaml line 81
                 {
                     this.MasterListView = (global::Windows.UI.Xaml.Controls.ListView)(target);
                 }
                 break;
-            case 18:
+            case 18: // Views\V_AduMGMT.xaml line 76
                 {
                     this.AddArduinoBtn = (global::Windows.UI.Xaml.Controls.AppBarButton)(target);
                 }
                 break;
-            case 19:
+            case 19: // Views\V_AduMGMT.xaml line 77
                 {
                     this.RefreshAduBtn = (global::Windows.UI.Xaml.Controls.AppBarButton)(target);
                 }
                 break;
-            case 20:
+            case 20: // Views\V_AduMGMT.xaml line 119
                 {
                     this.WindowStates = (global::Windows.UI.Xaml.VisualStateGroup)(target);
                 }
                 break;
-            case 22:
+            case 22: // Views\V_AduMGMT.xaml line 125
                 {
                     this.WideState = (global::Windows.UI.Xaml.VisualState)(target);
                 }
                 break;
-            case 23:
+            case 23: // Views\V_AduMGMT.xaml line 134
                 {
                     this.NarrowState = (global::Windows.UI.Xaml.VisualState)(target);
                 }
@@ -590,6 +623,9 @@ namespace SMS_UWP.Views
             this._contentLoaded = true;
         }
 
+        /// <summary>
+        /// GetBindingConnector(int connectionId, object target)
+        /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public global::Windows.UI.Xaml.Markup.IComponentConnector GetBindingConnector(int connectionId, object target)
@@ -597,8 +633,8 @@ namespace SMS_UWP.Views
             global::Windows.UI.Xaml.Markup.IComponentConnector returnValue = null;
             switch(connectionId)
             {
-            case 1:
-                {
+            case 1: // Views\V_AduMGMT.xaml line 1
+                {                    
                     global::Windows.UI.Xaml.Controls.Page element1 = (global::Windows.UI.Xaml.Controls.Page)target;
                     V_AduMGMT_obj1_Bindings bindings = new V_AduMGMT_obj1_Bindings();
                     returnValue = bindings;
@@ -607,8 +643,8 @@ namespace SMS_UWP.Views
                     element1.Loading += bindings.Loading;
                 }
                 break;
-            case 2:
-                {
+            case 2: // Views\V_AduMGMT.xaml line 21
+                {                    
                     global::Windows.UI.Xaml.Controls.Grid element2 = (global::Windows.UI.Xaml.Controls.Grid)target;
                     V_AduMGMT_obj2_Bindings bindings = new V_AduMGMT_obj2_Bindings();
                     returnValue = bindings;

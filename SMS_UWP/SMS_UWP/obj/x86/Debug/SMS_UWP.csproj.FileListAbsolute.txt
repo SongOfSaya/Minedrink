@@ -194,7 +194,6 @@ C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\bin\x86\Debug\Telerik.UI.D
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\bin\x86\Debug\Telerik.UI.Drawing.pdb
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\bin\x86\Debug\Telerik.UI.Drawing.xml
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\bin\x86\Debug\Telerik.UI.Drawing.pri
-C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\SMS_UWP.csprojResolveAssemblyReference.cache
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\App.g.i.cs
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\App.g.cs
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Views\V_AddAduDialog_C.g.i.cs
@@ -261,6 +260,7 @@ C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Views\V_Shel
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Views\TabbedPage.xbf
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Views\WebViewPage.xbf
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\XamlSaveStateFile.xml
+C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\SMS_UWP.csproj.CoreCompileInputs.cache
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\SMS_UWP.exe
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\SMS_UWP.pdb
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\ResourceHandlingTask.state
@@ -364,4 +364,4 @@ C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Telerik.UI.X
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Telerik.UI.Xaml.Input.UWP.pri.xml
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\Telerik.UI.Xaml.Primitives.UWP.pri.xml
 C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\ProjectArchitectures.txt
-C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\SMS_UWP.csproj.CoreCompileInputs.cache
+C:\Users\liute\Source\Repos\Minedrink\SMS_UWP\SMS_UWP\obj\x86\Debug\SMS_UWP.csprojResolveAssemblyReference.cache

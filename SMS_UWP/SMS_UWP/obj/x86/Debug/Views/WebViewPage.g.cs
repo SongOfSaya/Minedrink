@@ -88,37 +88,37 @@ namespace SMS_UWP.Views
             {
                 switch(connectionId)
                 {
-                    case 2:
+                    case 2: // Views\WebViewPage.xaml line 83
                         this.obj2 = (global::Windows.UI.Xaml.Controls.WebView)target;
                         break;
-                    case 3:
+                    case 3: // Views\WebViewPage.xaml line 94
                         this.obj3 = (global::Windows.UI.Xaml.Controls.StackPanel)target;
                         break;
-                    case 4:
+                    case 4: // Views\WebViewPage.xaml line 100
                         this.obj4 = (global::Windows.UI.Xaml.Controls.StackPanel)target;
                         break;
-                    case 5:
+                    case 5: // Views\WebViewPage.xaml line 117
                         this.obj5 = (global::Windows.UI.Xaml.Controls.Button)target;
                         break;
-                    case 6:
+                    case 6: // Views\WebViewPage.xaml line 120
                         this.obj6 = (global::Windows.UI.Xaml.Controls.Button)target;
                         break;
-                    case 7:
+                    case 7: // Views\WebViewPage.xaml line 109
                         this.obj7 = (global::Windows.UI.Xaml.Controls.Button)target;
                         break;
-                    case 8:
+                    case 8: // Views\WebViewPage.xaml line 112
                         this.obj8 = (global::Windows.UI.Xaml.Controls.Button)target;
                         break;
-                    case 9:
+                    case 9: // Views\WebViewPage.xaml line 104
                         this.obj9 = (global::Windows.UI.Xaml.Controls.HyperlinkButton)target;
                         break;
-                    case 10:
+                    case 10: // Views\WebViewPage.xaml line 97
                         this.obj10 = (global::Windows.UI.Xaml.Controls.ProgressRing)target;
                         break;
-                    case 11:
+                    case 11: // Views\WebViewPage.xaml line 89
                         this.obj11 = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)target;
                         break;
-                    case 12:
+                    case 12: // Views\WebViewPage.xaml line 86
                         this.obj12 = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)target;
                         break;
                     default:
@@ -146,6 +146,11 @@ namespace SMS_UWP.Views
             {
                 this.bindingsTracking.ReleaseAllListeners();
                 this.initialized = false;
+            }
+
+            public void DisconnectUnloadedObject(int connectionId)
+            {
+                throw new global::System.ArgumentException("No unloadable elements to disconnect.");
             }
 
             public bool SetDataRoot(global::System.Object newDataRoot)
@@ -215,6 +220,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
+                    // Views\WebViewPage.xaml line 83
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_WebView_Source(this.obj2, obj, null);
                 }
             }
@@ -222,6 +228,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
+                    // Views\WebViewPage.xaml line 94
                     XamlBindingSetters.Set_Windows_UI_Xaml_UIElement_Visibility(this.obj3, obj);
                 }
             }
@@ -229,6 +236,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
+                    // Views\WebViewPage.xaml line 100
                     XamlBindingSetters.Set_Windows_UI_Xaml_UIElement_Visibility(this.obj4, obj);
                 }
             }
@@ -236,6 +244,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
+                    // Views\WebViewPage.xaml line 117
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Primitives_ButtonBase_Command(this.obj5, obj, null);
                 }
             }
@@ -243,6 +252,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
+                    // Views\WebViewPage.xaml line 120
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Primitives_ButtonBase_Command(this.obj6, obj, null);
                 }
             }
@@ -250,6 +260,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
+                    // Views\WebViewPage.xaml line 109
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Primitives_ButtonBase_Command(this.obj7, obj, null);
                 }
             }
@@ -257,6 +268,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
+                    // Views\WebViewPage.xaml line 112
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Primitives_ButtonBase_Command(this.obj8, obj, null);
                 }
             }
@@ -264,6 +276,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
+                    // Views\WebViewPage.xaml line 104
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Primitives_ButtonBase_Command(this.obj9, obj, null);
                 }
             }
@@ -271,6 +284,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
+                    // Views\WebViewPage.xaml line 97
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_ProgressRing_IsActive(this.obj10, obj);
                 }
             }
@@ -278,6 +292,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
+                    // Views\WebViewPage.xaml line 89
                     XamlBindingSetters.Set_Microsoft_Xaml_Interactions_Core_InvokeCommandAction_Command(this.obj11, obj, null);
                 }
             }
@@ -285,6 +300,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
+                    // Views\WebViewPage.xaml line 86
                     XamlBindingSetters.Set_Microsoft_Xaml_Interactions_Core_InvokeCommandAction_Command(this.obj12, obj, null);
                 }
             }
@@ -292,11 +308,26 @@ namespace SMS_UWP.Views
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
             private class WebViewPage_obj1_BindingsTracking
             {
-                private global::System.WeakReference<WebViewPage_obj1_Bindings> WeakRefToBindingObj; 
+                private global::System.WeakReference<WebViewPage_obj1_Bindings> weakRefToBindingObj; 
 
                 public WebViewPage_obj1_BindingsTracking(WebViewPage_obj1_Bindings obj)
                 {
-                    WeakRefToBindingObj = new global::System.WeakReference<WebViewPage_obj1_Bindings>(obj);
+                    weakRefToBindingObj = new global::System.WeakReference<WebViewPage_obj1_Bindings>(obj);
+                }
+
+                public WebViewPage_obj1_Bindings TryGetBindingObject()
+                {
+                    WebViewPage_obj1_Bindings bindingObject = null;
+                    if (weakRefToBindingObj != null)
+                    {
+                        weakRefToBindingObj.TryGetTarget(out bindingObject);
+                        if (bindingObject == null)
+                        {
+                            weakRefToBindingObj = null;
+                            ReleaseAllListeners();
+                        }
+                    }
+                    return bindingObject;
                 }
 
                 public void ReleaseAllListeners()
@@ -306,8 +337,8 @@ namespace SMS_UWP.Views
 
                 public void PropertyChanged_ViewModel(object sender, global::System.ComponentModel.PropertyChangedEventArgs e)
                 {
-                    WebViewPage_obj1_Bindings bindings;
-                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
+                    WebViewPage_obj1_Bindings bindings = TryGetBindingObject();
+                    if (bindings != null)
                     {
                         string propName = e.PropertyName;
                         global::SMS_UWP.ViewModels.WebViewViewModel obj = sender as global::SMS_UWP.ViewModels.WebViewViewModel;
@@ -409,7 +440,7 @@ namespace SMS_UWP.Views
         {
             switch(connectionId)
             {
-            case 2:
+            case 2: // Views\WebViewPage.xaml line 83
                 {
                     this.webView = (global::Windows.UI.Xaml.Controls.WebView)(target);
                 }
@@ -420,6 +451,9 @@ namespace SMS_UWP.Views
             this._contentLoaded = true;
         }
 
+        /// <summary>
+        /// GetBindingConnector(int connectionId, object target)
+        /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public global::Windows.UI.Xaml.Markup.IComponentConnector GetBindingConnector(int connectionId, object target)
@@ -427,8 +461,8 @@ namespace SMS_UWP.Views
             global::Windows.UI.Xaml.Markup.IComponentConnector returnValue = null;
             switch(connectionId)
             {
-            case 1:
-                {
+            case 1: // Views\WebViewPage.xaml line 1
+                {                    
                     global::Windows.UI.Xaml.Controls.Page element1 = (global::Windows.UI.Xaml.Controls.Page)target;
                     WebViewPage_obj1_Bindings bindings = new WebViewPage_obj1_Bindings();
                     returnValue = bindings;

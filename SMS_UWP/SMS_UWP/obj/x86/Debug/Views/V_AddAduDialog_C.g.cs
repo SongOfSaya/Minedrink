@@ -82,45 +82,45 @@ namespace SMS_UWP.Views
             {
                 switch(connectionId)
                 {
-                    case 1:
+                    case 1: // Views\V_AddAduDialog_C.xaml line 1
                         this.obj1 = new global::System.WeakReference((global::Windows.UI.Xaml.Controls.ContentDialog)target);
                         break;
-                    case 2:
+                    case 2: // Views\V_AddAduDialog_C.xaml line 23
                         this.obj2 = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)target;
                         break;
-                    case 3:
+                    case 3: // Views\V_AddAduDialog_C.xaml line 33
                         this.obj3 = (global::Windows.UI.Xaml.Controls.TextBox)target;
                         (this.obj3).LostFocus += (global::System.Object sender, global::Windows.UI.Xaml.RoutedEventArgs e) =>
+                        {
+                            if (this.initialized)
                             {
-                                if (this.initialized)
-                                {
-                                    // Update Two Way binding
-                                    this.dataRoot.ViewModel.IPTextBox = this.obj3.Text;
-                                }
-                            };
+                                // Update Two Way binding
+                                this.dataRoot.ViewModel.IPTextBox = this.obj3.Text;
+                            }
+                        };
                         break;
-                    case 4:
+                    case 4: // Views\V_AddAduDialog_C.xaml line 34
                         this.obj4 = (global::Windows.UI.Xaml.Controls.TextBox)target;
                         (this.obj4).LostFocus += (global::System.Object sender, global::Windows.UI.Xaml.RoutedEventArgs e) =>
+                        {
+                            if (this.initialized)
                             {
-                                if (this.initialized)
-                                {
-                                    // Update Two Way binding
-                                    this.dataRoot.ViewModel.PortTextBox = this.obj4.Text;
-                                }
-                            };
+                                // Update Two Way binding
+                                this.dataRoot.ViewModel.PortTextBox = this.obj4.Text;
+                            }
+                        };
                         break;
-                    case 6:
+                    case 6: // Views\V_AddAduDialog_C.xaml line 37
                         this.obj6 = (global::Windows.UI.Xaml.Controls.TextBlock)target;
                         (this.obj6).RegisterPropertyChangedCallback(global::Windows.UI.Xaml.Controls.TextBlock.TextProperty,
                             (global::Windows.UI.Xaml.DependencyObject sender, global::Windows.UI.Xaml.DependencyProperty prop) =>
                             {
-                                if (this.initialized)
-                                {
-                                    // Update Two Way binding
-                                    this.dataRoot.ViewModel.ConnectInfo = this.obj6.Text;
-                                }
-                            });
+                            if (this.initialized)
+                            {
+                                // Update Two Way binding
+                                this.dataRoot.ViewModel.ConnectInfo = this.obj6.Text;
+                            }
+                        });
                         break;
                     default:
                         break;
@@ -147,6 +147,11 @@ namespace SMS_UWP.Views
             {
                 this.bindingsTracking.ReleaseAllListeners();
                 this.initialized = false;
+            }
+
+            public void DisconnectUnloadedObject(int connectionId)
+            {
+                throw new global::System.ArgumentException("No unloadable elements to disconnect.");
             }
 
             public bool SetDataRoot(global::System.Object newDataRoot)
@@ -198,6 +203,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
+                    // Views\V_AddAduDialog_C.xaml line 1
                     if ((this.obj1.Target as global::Windows.UI.Xaml.Controls.ContentDialog) != null)
                     {
                         XamlBindingSetters.Set_Windows_UI_Xaml_Controls_ContentDialog_SecondaryButtonCommand((this.obj1.Target as global::Windows.UI.Xaml.Controls.ContentDialog), obj, null);
@@ -208,6 +214,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
+                    // Views\V_AddAduDialog_C.xaml line 23
                     XamlBindingSetters.Set_Microsoft_Xaml_Interactions_Core_InvokeCommandAction_Command(this.obj2, obj, null);
                 }
             }
@@ -215,6 +222,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
+                    // Views\V_AddAduDialog_C.xaml line 33
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_TextBox_Text(this.obj3, obj, null);
                 }
             }
@@ -222,6 +230,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
+                    // Views\V_AddAduDialog_C.xaml line 34
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_TextBox_Text(this.obj4, obj, null);
                 }
             }
@@ -229,6 +238,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
+                    // Views\V_AddAduDialog_C.xaml line 37
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_TextBlock_Text(this.obj6, obj, null);
                 }
             }
@@ -236,11 +246,26 @@ namespace SMS_UWP.Views
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
             private class V_AddAduDialog_C_obj1_BindingsTracking
             {
-                private global::System.WeakReference<V_AddAduDialog_C_obj1_Bindings> WeakRefToBindingObj; 
+                private global::System.WeakReference<V_AddAduDialog_C_obj1_Bindings> weakRefToBindingObj; 
 
                 public V_AddAduDialog_C_obj1_BindingsTracking(V_AddAduDialog_C_obj1_Bindings obj)
                 {
-                    WeakRefToBindingObj = new global::System.WeakReference<V_AddAduDialog_C_obj1_Bindings>(obj);
+                    weakRefToBindingObj = new global::System.WeakReference<V_AddAduDialog_C_obj1_Bindings>(obj);
+                }
+
+                public V_AddAduDialog_C_obj1_Bindings TryGetBindingObject()
+                {
+                    V_AddAduDialog_C_obj1_Bindings bindingObject = null;
+                    if (weakRefToBindingObj != null)
+                    {
+                        weakRefToBindingObj.TryGetTarget(out bindingObject);
+                        if (bindingObject == null)
+                        {
+                            weakRefToBindingObj = null;
+                            ReleaseAllListeners();
+                        }
+                    }
+                    return bindingObject;
                 }
 
                 public void ReleaseAllListeners()
@@ -250,8 +275,8 @@ namespace SMS_UWP.Views
 
                 public void PropertyChanged_ViewModel(object sender, global::System.ComponentModel.PropertyChangedEventArgs e)
                 {
-                    V_AddAduDialog_C_obj1_Bindings bindings;
-                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
+                    V_AddAduDialog_C_obj1_Bindings bindings = TryGetBindingObject();
+                    if (bindings != null)
                     {
                         string propName = e.PropertyName;
                         global::SMS_UWP.ViewModels.VM_AduMGMT obj = sender as global::SMS_UWP.ViewModels.VM_AduMGMT;
@@ -326,27 +351,27 @@ namespace SMS_UWP.Views
         {
             switch(connectionId)
             {
-            case 1:
+            case 1: // Views\V_AddAduDialog_C.xaml line 1
                 {
                     this.AddAduDialog = (global::Windows.UI.Xaml.Controls.ContentDialog)(target);
                 }
                 break;
-            case 3:
+            case 3: // Views\V_AddAduDialog_C.xaml line 33
                 {
                     this.ArduinoIPTextBox = (global::Windows.UI.Xaml.Controls.TextBox)(target);
                 }
                 break;
-            case 4:
+            case 4: // Views\V_AddAduDialog_C.xaml line 34
                 {
                     this.ArduinoPortTextBox = (global::Windows.UI.Xaml.Controls.TextBox)(target);
                 }
                 break;
-            case 5:
+            case 5: // Views\V_AddAduDialog_C.xaml line 35
                 {
                     this.ArduinoSaveCheckBox = (global::Windows.UI.Xaml.Controls.CheckBox)(target);
                 }
                 break;
-            case 6:
+            case 6: // Views\V_AddAduDialog_C.xaml line 37
                 {
                     this.AddInfo = (global::Windows.UI.Xaml.Controls.TextBlock)(target);
                 }
@@ -357,6 +382,9 @@ namespace SMS_UWP.Views
             this._contentLoaded = true;
         }
 
+        /// <summary>
+        /// GetBindingConnector(int connectionId, object target)
+        /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public global::Windows.UI.Xaml.Markup.IComponentConnector GetBindingConnector(int connectionId, object target)
@@ -364,8 +392,8 @@ namespace SMS_UWP.Views
             global::Windows.UI.Xaml.Markup.IComponentConnector returnValue = null;
             switch(connectionId)
             {
-            case 1:
-                {
+            case 1: // Views\V_AddAduDialog_C.xaml line 1
+                {                    
                     global::Windows.UI.Xaml.Controls.ContentDialog element1 = (global::Windows.UI.Xaml.Controls.ContentDialog)target;
                     V_AddAduDialog_C_obj1_Bindings bindings = new V_AddAduDialog_C_obj1_Bindings();
                     returnValue = bindings;

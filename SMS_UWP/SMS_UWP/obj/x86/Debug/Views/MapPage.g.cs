@@ -58,7 +58,7 @@ namespace SMS_UWP.Views
             {
                 switch(connectionId)
                 {
-                    case 2:
+                    case 2: // Views\MapPage.xaml line 12
                         this.obj2 = (global::Windows.UI.Xaml.Controls.Maps.MapControl)target;
                         break;
                     default:
@@ -86,6 +86,11 @@ namespace SMS_UWP.Views
             {
                 this.bindingsTracking.ReleaseAllListeners();
                 this.initialized = false;
+            }
+
+            public void DisconnectUnloadedObject(int connectionId)
+            {
+                throw new global::System.ArgumentException("No unloadable elements to disconnect.");
             }
 
             public bool SetDataRoot(global::System.Object newDataRoot)
@@ -131,6 +136,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
+                    // Views\MapPage.xaml line 12
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Maps_MapControl_ZoomLevel(this.obj2, obj);
                 }
             }
@@ -138,6 +144,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
+                    // Views\MapPage.xaml line 12
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Maps_MapControl_Center(this.obj2, obj, null);
                 }
             }
@@ -145,11 +152,26 @@ namespace SMS_UWP.Views
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
             private class MapPage_obj1_BindingsTracking
             {
-                private global::System.WeakReference<MapPage_obj1_Bindings> WeakRefToBindingObj; 
+                private global::System.WeakReference<MapPage_obj1_Bindings> weakRefToBindingObj; 
 
                 public MapPage_obj1_BindingsTracking(MapPage_obj1_Bindings obj)
                 {
-                    WeakRefToBindingObj = new global::System.WeakReference<MapPage_obj1_Bindings>(obj);
+                    weakRefToBindingObj = new global::System.WeakReference<MapPage_obj1_Bindings>(obj);
+                }
+
+                public MapPage_obj1_Bindings TryGetBindingObject()
+                {
+                    MapPage_obj1_Bindings bindingObject = null;
+                    if (weakRefToBindingObj != null)
+                    {
+                        weakRefToBindingObj.TryGetTarget(out bindingObject);
+                        if (bindingObject == null)
+                        {
+                            weakRefToBindingObj = null;
+                            ReleaseAllListeners();
+                        }
+                    }
+                    return bindingObject;
                 }
 
                 public void ReleaseAllListeners()
@@ -159,8 +181,8 @@ namespace SMS_UWP.Views
 
                 public void PropertyChanged_ViewModel(object sender, global::System.ComponentModel.PropertyChangedEventArgs e)
                 {
-                    MapPage_obj1_Bindings bindings;
-                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
+                    MapPage_obj1_Bindings bindings = TryGetBindingObject();
+                    if (bindings != null)
                     {
                         string propName = e.PropertyName;
                         global::SMS_UWP.ViewModels.MapViewModel obj = sender as global::SMS_UWP.ViewModels.MapViewModel;
@@ -226,7 +248,7 @@ namespace SMS_UWP.Views
         {
             switch(connectionId)
             {
-            case 2:
+            case 2: // Views\MapPage.xaml line 12
                 {
                     this.mapControl = (global::Windows.UI.Xaml.Controls.Maps.MapControl)(target);
                 }
@@ -237,6 +259,9 @@ namespace SMS_UWP.Views
             this._contentLoaded = true;
         }
 
+        /// <summary>
+        /// GetBindingConnector(int connectionId, object target)
+        /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public global::Windows.UI.Xaml.Markup.IComponentConnector GetBindingConnector(int connectionId, object target)
@@ -244,8 +269,8 @@ namespace SMS_UWP.Views
             global::Windows.UI.Xaml.Markup.IComponentConnector returnValue = null;
             switch(connectionId)
             {
-            case 1:
-                {
+            case 1: // Views\MapPage.xaml line 1
+                {                    
                     global::Windows.UI.Xaml.Controls.Page element1 = (global::Windows.UI.Xaml.Controls.Page)target;
                     MapPage_obj1_Bindings bindings = new MapPage_obj1_Bindings();
                     returnValue = bindings;

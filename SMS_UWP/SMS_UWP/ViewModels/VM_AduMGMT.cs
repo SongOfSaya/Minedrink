@@ -99,6 +99,7 @@ namespace SMS_UWP.ViewModels
             DialogSubmitCommand = new RelayCommand<ContentDialogButtonClickEventArgs>(OnDialogSubmit);
             DialogCancelCommand = new RelayCommand(OnDialogCancel);
             TestEvenCommand = new RelayCommand<ContentDialogButtonClickEventArgs>(OnTestEventCommandAsync);
+            Debug.WriteLine("Debug输出");
         }
         /// <summary>
         /// 异步加载Marster所需数据,以及初始化动态数据

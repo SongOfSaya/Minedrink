@@ -62,7 +62,7 @@ namespace SMS_UWP.Views
             {
                 switch(connectionId)
                 {
-                    case 2:
+                    case 2: // Views\MediaPlayerPage.xaml line 10
                         this.obj2 = (global::Windows.UI.Xaml.Controls.MediaPlayerElement)target;
                         break;
                     default:
@@ -90,6 +90,11 @@ namespace SMS_UWP.Views
             {
                 this.bindingsTracking.ReleaseAllListeners();
                 this.initialized = false;
+            }
+
+            public void DisconnectUnloadedObject(int connectionId)
+            {
+                throw new global::System.ArgumentException("No unloadable elements to disconnect.");
             }
 
             public bool SetDataRoot(global::System.Object newDataRoot)
@@ -135,6 +140,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
+                    // Views\MediaPlayerPage.xaml line 10
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_MediaPlayerElement_PosterSource(this.obj2, (global::Windows.UI.Xaml.Media.ImageSource) global::Windows.UI.Xaml.Markup.XamlBindingHelper.ConvertValue(typeof(global::Windows.UI.Xaml.Media.ImageSource), obj), null);
                 }
             }
@@ -142,6 +148,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
+                    // Views\MediaPlayerPage.xaml line 10
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_MediaPlayerElement_Source(this.obj2, obj, null);
                 }
             }
@@ -149,11 +156,26 @@ namespace SMS_UWP.Views
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
             private class MediaPlayerPage_obj1_BindingsTracking
             {
-                private global::System.WeakReference<MediaPlayerPage_obj1_Bindings> WeakRefToBindingObj; 
+                private global::System.WeakReference<MediaPlayerPage_obj1_Bindings> weakRefToBindingObj; 
 
                 public MediaPlayerPage_obj1_BindingsTracking(MediaPlayerPage_obj1_Bindings obj)
                 {
-                    WeakRefToBindingObj = new global::System.WeakReference<MediaPlayerPage_obj1_Bindings>(obj);
+                    weakRefToBindingObj = new global::System.WeakReference<MediaPlayerPage_obj1_Bindings>(obj);
+                }
+
+                public MediaPlayerPage_obj1_Bindings TryGetBindingObject()
+                {
+                    MediaPlayerPage_obj1_Bindings bindingObject = null;
+                    if (weakRefToBindingObj != null)
+                    {
+                        weakRefToBindingObj.TryGetTarget(out bindingObject);
+                        if (bindingObject == null)
+                        {
+                            weakRefToBindingObj = null;
+                            ReleaseAllListeners();
+                        }
+                    }
+                    return bindingObject;
                 }
 
                 public void ReleaseAllListeners()
@@ -163,8 +185,8 @@ namespace SMS_UWP.Views
 
                 public void PropertyChanged_ViewModel(object sender, global::System.ComponentModel.PropertyChangedEventArgs e)
                 {
-                    MediaPlayerPage_obj1_Bindings bindings;
-                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
+                    MediaPlayerPage_obj1_Bindings bindings = TryGetBindingObject();
+                    if (bindings != null)
                     {
                         string propName = e.PropertyName;
                         global::SMS_UWP.ViewModels.MediaPlayerViewModel obj = sender as global::SMS_UWP.ViewModels.MediaPlayerViewModel;
@@ -230,7 +252,7 @@ namespace SMS_UWP.Views
         {
             switch(connectionId)
             {
-            case 2:
+            case 2: // Views\MediaPlayerPage.xaml line 10
                 {
                     this.mpe = (global::Windows.UI.Xaml.Controls.MediaPlayerElement)(target);
                 }
@@ -241,6 +263,9 @@ namespace SMS_UWP.Views
             this._contentLoaded = true;
         }
 
+        /// <summary>
+        /// GetBindingConnector(int connectionId, object target)
+        /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public global::Windows.UI.Xaml.Markup.IComponentConnector GetBindingConnector(int connectionId, object target)
@@ -248,8 +273,8 @@ namespace SMS_UWP.Views
             global::Windows.UI.Xaml.Markup.IComponentConnector returnValue = null;
             switch(connectionId)
             {
-            case 1:
-                {
+            case 1: // Views\MediaPlayerPage.xaml line 1
+                {                    
                     global::Windows.UI.Xaml.Controls.Page element1 = (global::Windows.UI.Xaml.Controls.Page)target;
                     MediaPlayerPage_obj1_Bindings bindings = new MediaPlayerPage_obj1_Bindings();
                     returnValue = bindings;

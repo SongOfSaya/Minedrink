@@ -92,65 +92,65 @@ namespace SMS_UWP.Views
             {
                 switch(connectionId)
                 {
-                    case 3:
+                    case 3: // Views\SettingsPage.xaml line 93
                         this.obj3 = (global::Windows.UI.Xaml.Controls.TextBlock)target;
                         (this.obj3).RegisterPropertyChangedCallback(global::Windows.UI.Xaml.Controls.TextBlock.TextProperty,
                             (global::Windows.UI.Xaml.DependencyObject sender, global::Windows.UI.Xaml.DependencyProperty prop) =>
                             {
-                                if (this.initialized)
-                                {
-                                    // Update Two Way binding
-                                    this.dataRoot.ViewModel.VersionDescription = this.obj3.Text;
-                                }
-                            });
+                            if (this.initialized)
+                            {
+                                // Update Two Way binding
+                                this.dataRoot.ViewModel.VersionDescription = this.obj3.Text;
+                            }
+                        });
                         break;
-                    case 4:
+                    case 4: // Views\SettingsPage.xaml line 38
                         this.obj4 = (global::Windows.UI.Xaml.Controls.RadioButton)target;
                         (this.obj4).RegisterPropertyChangedCallback(global::Windows.UI.Xaml.Controls.Primitives.ToggleButton.IsCheckedProperty,
                             (global::Windows.UI.Xaml.DependencyObject sender, global::Windows.UI.Xaml.DependencyProperty prop) =>
                             {
-                                if (this.initialized)
-                                {
-                                    // Update Two Way binding
-                                    this.dataRoot.ViewModel.ElementTheme = (global::Windows.UI.Xaml.ElementTheme)this.LookupConverter("EnumToBooleanConverter").ConvertBack(this.obj4.IsChecked, typeof(global::Windows.UI.Xaml.ElementTheme), "Light", null);
-                                }
-                            });
+                            if (this.initialized)
+                            {
+                                // Update Two Way binding
+                                this.dataRoot.ViewModel.ElementTheme = (global::Windows.UI.Xaml.ElementTheme)this.LookupConverter("EnumToBooleanConverter").ConvertBack(this.obj4.IsChecked, typeof(global::Windows.UI.Xaml.ElementTheme), "Light", null);
+                            }
+                        });
                         break;
-                    case 5:
+                    case 5: // Views\SettingsPage.xaml line 47
                         this.obj5 = (global::Windows.UI.Xaml.Controls.RadioButton)target;
                         (this.obj5).RegisterPropertyChangedCallback(global::Windows.UI.Xaml.Controls.Primitives.ToggleButton.IsCheckedProperty,
                             (global::Windows.UI.Xaml.DependencyObject sender, global::Windows.UI.Xaml.DependencyProperty prop) =>
                             {
-                                if (this.initialized)
-                                {
-                                    // Update Two Way binding
-                                    this.dataRoot.ViewModel.ElementTheme = (global::Windows.UI.Xaml.ElementTheme)this.LookupConverter("EnumToBooleanConverter").ConvertBack(this.obj5.IsChecked, typeof(global::Windows.UI.Xaml.ElementTheme), "Dark", null);
-                                }
-                            });
+                            if (this.initialized)
+                            {
+                                // Update Two Way binding
+                                this.dataRoot.ViewModel.ElementTheme = (global::Windows.UI.Xaml.ElementTheme)this.LookupConverter("EnumToBooleanConverter").ConvertBack(this.obj5.IsChecked, typeof(global::Windows.UI.Xaml.ElementTheme), "Dark", null);
+                            }
+                        });
                         break;
-                    case 6:
+                    case 6: // Views\SettingsPage.xaml line 56
                         this.obj6 = (global::Windows.UI.Xaml.Controls.RadioButton)target;
                         (this.obj6).RegisterPropertyChangedCallback(global::Windows.UI.Xaml.Controls.Primitives.ToggleButton.IsCheckedProperty,
                             (global::Windows.UI.Xaml.DependencyObject sender, global::Windows.UI.Xaml.DependencyProperty prop) =>
                             {
-                                if (this.initialized)
-                                {
-                                    // Update Two Way binding
-                                    this.dataRoot.ViewModel.ElementTheme = (global::Windows.UI.Xaml.ElementTheme)this.LookupConverter("EnumToBooleanConverter").ConvertBack(this.obj6.IsChecked, typeof(global::Windows.UI.Xaml.ElementTheme), "Default", null);
-                                }
-                            });
+                            if (this.initialized)
+                            {
+                                // Update Two Way binding
+                                this.dataRoot.ViewModel.ElementTheme = (global::Windows.UI.Xaml.ElementTheme)this.LookupConverter("EnumToBooleanConverter").ConvertBack(this.obj6.IsChecked, typeof(global::Windows.UI.Xaml.ElementTheme), "Default", null);
+                            }
+                        });
                         break;
-                    case 8:
+                    case 8: // Views\SettingsPage.xaml line 66
                         this.obj8 = (global::Windows.UI.Xaml.Controls.Button)target;
                         (this.obj8).RegisterPropertyChangedCallback(global::Windows.UI.Xaml.Controls.ContentControl.ContentProperty,
                             (global::Windows.UI.Xaml.DependencyObject sender, global::Windows.UI.Xaml.DependencyProperty prop) =>
                             {
-                                if (this.initialized)
-                                {
-                                    // Update Two Way binding
-                                    this.dataRoot.ViewModel.BtnContent = (global::System.String)this.obj8.Content;
-                                }
-                            });
+                            if (this.initialized)
+                            {
+                                // Update Two Way binding
+                                this.dataRoot.ViewModel.BtnContent = (global::System.String)this.obj8.Content;
+                            }
+                        });
                         break;
                     default:
                         break;
@@ -177,6 +177,11 @@ namespace SMS_UWP.Views
             {
                 this.bindingsTracking.ReleaseAllListeners();
                 this.initialized = false;
+            }
+
+            public void DisconnectUnloadedObject(int connectionId)
+            {
+                throw new global::System.ArgumentException("No unloadable elements to disconnect.");
             }
 
             public bool SetDataRoot(global::System.Object newDataRoot)
@@ -254,6 +259,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
+                    // Views\SettingsPage.xaml line 93
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_TextBlock_Text(this.obj3, obj, null);
                 }
             }
@@ -261,8 +267,11 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
+                    // Views\SettingsPage.xaml line 38
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Primitives_ToggleButton_IsChecked(this.obj4, (global::System.Nullable<global::System.Boolean>)this.LookupConverter("EnumToBooleanConverter").Convert(obj, typeof(global::System.Nullable<global::System.Boolean>), "Light", null), null);
+                    // Views\SettingsPage.xaml line 47
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Primitives_ToggleButton_IsChecked(this.obj5, (global::System.Nullable<global::System.Boolean>)this.LookupConverter("EnumToBooleanConverter").Convert(obj, typeof(global::System.Nullable<global::System.Boolean>), "Dark", null), null);
+                    // Views\SettingsPage.xaml line 56
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Primitives_ToggleButton_IsChecked(this.obj6, (global::System.Nullable<global::System.Boolean>)this.LookupConverter("EnumToBooleanConverter").Convert(obj, typeof(global::System.Nullable<global::System.Boolean>), "Default", null), null);
                 }
             }
@@ -270,8 +279,11 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
+                    // Views\SettingsPage.xaml line 38
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Primitives_ButtonBase_Command(this.obj4, obj, null);
+                    // Views\SettingsPage.xaml line 47
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Primitives_ButtonBase_Command(this.obj5, obj, null);
+                    // Views\SettingsPage.xaml line 56
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Primitives_ButtonBase_Command(this.obj6, obj, null);
                 }
             }
@@ -279,6 +291,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
+                    // Views\SettingsPage.xaml line 66
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_ContentControl_Content(this.obj8, obj, null);
                 }
             }
@@ -286,6 +299,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
+                    // Views\SettingsPage.xaml line 66
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Primitives_ButtonBase_Command(this.obj8, obj, null);
                 }
             }
@@ -303,6 +317,7 @@ namespace SMS_UWP.Views
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
+                    // Views\SettingsPage.xaml line 66
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Primitives_ButtonBase_CommandParameter(this.obj8, obj, null);
                 }
             }
@@ -310,11 +325,26 @@ namespace SMS_UWP.Views
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
             private class SettingsPage_obj1_BindingsTracking
             {
-                private global::System.WeakReference<SettingsPage_obj1_Bindings> WeakRefToBindingObj; 
+                private global::System.WeakReference<SettingsPage_obj1_Bindings> weakRefToBindingObj; 
 
                 public SettingsPage_obj1_BindingsTracking(SettingsPage_obj1_Bindings obj)
                 {
-                    WeakRefToBindingObj = new global::System.WeakReference<SettingsPage_obj1_Bindings>(obj);
+                    weakRefToBindingObj = new global::System.WeakReference<SettingsPage_obj1_Bindings>(obj);
+                }
+
+                public SettingsPage_obj1_Bindings TryGetBindingObject()
+                {
+                    SettingsPage_obj1_Bindings bindingObject = null;
+                    if (weakRefToBindingObj != null)
+                    {
+                        weakRefToBindingObj.TryGetTarget(out bindingObject);
+                        if (bindingObject == null)
+                        {
+                            weakRefToBindingObj = null;
+                            ReleaseAllListeners();
+                        }
+                    }
+                    return bindingObject;
                 }
 
                 public void ReleaseAllListeners()
@@ -324,8 +354,8 @@ namespace SMS_UWP.Views
 
                 public void PropertyChanged_ViewModel(object sender, global::System.ComponentModel.PropertyChangedEventArgs e)
                 {
-                    SettingsPage_obj1_Bindings bindings;
-                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
+                    SettingsPage_obj1_Bindings bindings = TryGetBindingObject();
+                    if (bindings != null)
                     {
                         string propName = e.PropertyName;
                         global::SMS_UWP.ViewModels.SettingsViewModel obj = sender as global::SMS_UWP.ViewModels.SettingsViewModel;
@@ -400,27 +430,27 @@ namespace SMS_UWP.Views
         {
             switch(connectionId)
             {
-            case 2:
+            case 2: // Views\SettingsPage.xaml line 21
                 {
                     this.TitlePage = (global::Windows.UI.Xaml.Controls.TextBlock)(target);
                 }
                 break;
-            case 7:
+            case 7: // Views\SettingsPage.xaml line 65
                 {
                     this.NameTextBlock = (global::Windows.UI.Xaml.Controls.TextBlock)(target);
                 }
                 break;
-            case 9:
+            case 9: // Views\SettingsPage.xaml line 107
                 {
                     this.WindowStates = (global::Windows.UI.Xaml.VisualStateGroup)(target);
                 }
                 break;
-            case 10:
+            case 10: // Views\SettingsPage.xaml line 108
                 {
                     this.WideState = (global::Windows.UI.Xaml.VisualState)(target);
                 }
                 break;
-            case 11:
+            case 11: // Views\SettingsPage.xaml line 113
                 {
                     this.NarrowState = (global::Windows.UI.Xaml.VisualState)(target);
                 }
@@ -431,6 +461,9 @@ namespace SMS_UWP.Views
             this._contentLoaded = true;
         }
 
+        /// <summary>
+        /// GetBindingConnector(int connectionId, object target)
+        /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public global::Windows.UI.Xaml.Markup.IComponentConnector GetBindingConnector(int connectionId, object target)
@@ -438,8 +471,8 @@ namespace SMS_UWP.Views
             global::Windows.UI.Xaml.Markup.IComponentConnector returnValue = null;
             switch(connectionId)
             {
-            case 1:
-                {
+            case 1: // Views\SettingsPage.xaml line 1
+                {                    
                     global::Windows.UI.Xaml.Controls.Page element1 = (global::Windows.UI.Xaml.Controls.Page)target;
                     SettingsPage_obj1_Bindings bindings = new SettingsPage_obj1_Bindings();
                     returnValue = bindings;

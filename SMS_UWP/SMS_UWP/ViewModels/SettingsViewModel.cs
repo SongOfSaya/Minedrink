@@ -1,4 +1,4 @@
-﻿using System;
+﻿
 using System.Windows.Input;
 
 using GalaSoft.MvvmLight;
@@ -8,7 +8,6 @@ using SMS_UWP.Services;
 
 using Windows.ApplicationModel;
 using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
 using System.Diagnostics;
 
 namespace SMS_UWP.ViewModels

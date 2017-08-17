@@ -1,0 +1,23 @@
+﻿<ContentDialog x:ConnectionId='1'
+    x:Class="Minedrink_UWP.Contorl.AddArduinoDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Minedrink_UWP.Contorl"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="新增Arduino"
+    PrimaryButtonText="确定"
+    SecondaryButtonText="取消"
+                                                         
+                                                             >
+
+    <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <TextBox x:ConnectionId='2' Name="arduinoNameTextBox" Header="名称" PlaceholderText="未命名Arduino"/>
+        <TextBox x:ConnectionId='3' Name="arduinoIPTextBox"  Header="IP"  Text="192.168.2.109" PlaceholderText="请输入目标IP"/>
+        <TextBox x:ConnectionId='4' Name="arduinoPortTextBox" Header="端口" Text="1000" PlaceholderText="请输入目标端口号"/>
+        <CheckBox x:ConnectionId='5' Name="arduinoSaveCheckBox" Content="保存此次配置信息" IsChecked="True" />
+        <TextBlock x:ConnectionId='6' x:Name="addInfo"/>
+    </StackPanel>
+</ContentDialog>
+
