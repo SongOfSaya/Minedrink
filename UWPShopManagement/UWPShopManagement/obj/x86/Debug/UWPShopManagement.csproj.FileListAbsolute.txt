@@ -3,8 +3,6 @@ C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x8
 C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\Styles\_FontSizes.xbf
 C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\Styles\_Thickness.xbf
 C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\Styles\TextBlock.xbf
-C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\Views\MainPage.xbf
-C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\Views\MasterDetailDetailControl.xbf
 C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\Views\MasterDetailDetailPage.xbf
 C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\Views\V_ArduinoManagement.xbf
 C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\Views\V_Setting.xbf
@@ -154,10 +152,6 @@ C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x8
 C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\Microsoft.Graphics.Canvas.winmd
 C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\App.g.i.cs
 C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\App.g.cs
-C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Views\MainPage.g.i.cs
-C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Views\MainPage.g.cs
-C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Views\MasterDetailDetailControl.g.i.cs
-C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Views\MasterDetailDetailControl.g.cs
 C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Views\MasterDetailDetailPage.g.i.cs
 C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Views\MasterDetailDetailPage.g.cs
 C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Views\V_ArduinoManagement.g.i.cs
@@ -172,8 +166,6 @@ C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x8
 C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Styles\_FontSizes.xaml
 C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Styles\_Thickness.xaml
 C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Styles\TextBlock.xaml
-C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Views\MainPage.xaml
-C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Views\MasterDetailDetailControl.xaml
 C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Views\MasterDetailDetailPage.xaml
 C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Views\V_ArduinoManagement.xaml
 C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Views\V_Setting.xaml
@@ -183,8 +175,6 @@ C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x8
 C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Styles\_FontSizes.xbf
 C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Styles\_Thickness.xbf
 C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Styles\TextBlock.xbf
-C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Views\MainPage.xbf
-C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Views\MasterDetailDetailControl.xbf
 C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Views\MasterDetailDetailPage.xbf
 C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Views\V_ArduinoManagement.xbf
 C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Views\V_Setting.xbf
@@ -281,3 +271,14 @@ C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x8
 C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Microsoft.Xaml.Interactions.pri.xml
 C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Microsoft.Xaml.Interactivity.pri.xml
 C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Views\V_Main.g.i.cs
+C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Views\V_Main.g.cs
+C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Views\V_ArduinoManagement_C.g.i.cs
+C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Views\V_ArduinoManagement_C.g.cs
+C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Views\V_Main.xaml
+C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Views\V_ArduinoManagement_C.xaml
+C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Views\V_Main.xbf
+C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\Views\V_ArduinoManagement_C.xbf
+C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\Views\V_Main.xbf
+C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\Views\V_ArduinoManagement_C.xbf
+C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\UWPShopManagement.csprojResolveAssemblyReference.cache

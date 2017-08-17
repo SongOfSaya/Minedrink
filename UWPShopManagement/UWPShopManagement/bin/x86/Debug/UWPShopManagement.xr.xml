@@ -75,7 +75,7 @@
     <RootType FullName="Windows.UI.Xaml.AdaptiveTrigger">
       <RootProperty Name="MinWindowWidth" />
     </RootType>
-    <RootType FullName="UWPShopManagement.Views.MainPage" />
+    <RootType FullName="UWPShopManagement.Views.V_Main" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
       <RootProperty Name="Content" />
     </RootType>
@@ -93,7 +93,7 @@
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
       <RootProperty Name="Mode" />
     </RootType>
-    <RootType FullName="UWPShopManagement.Views.MasterDetailDetailControl">
+    <RootType FullName="UWPShopManagement.Views.V_ArduinoManagement_C">
       <RootProperty Name="MasterMenuItem" />
       <RootProperty Name="Margin" />
     </RootType>

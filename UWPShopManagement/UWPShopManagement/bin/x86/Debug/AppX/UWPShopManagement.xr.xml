@@ -75,7 +75,7 @@
     <RootType FullName="Windows.UI.Xaml.AdaptiveTrigger">
       <RootProperty Name="MinWindowWidth" />
     </RootType>
-    <RootType FullName="UWPShopManagement.Views.MainPage" />
+    <RootType FullName="UWPShopManagement.Views.V_Main" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
       <RootProperty Name="Content" />
     </RootType>
@@ -93,7 +93,7 @@
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
       <RootProperty Name="Mode" />
     </RootType>
-    <RootType FullName="UWPShopManagement.Views.MasterDetailDetailControl">
+    <RootType FullName="UWPShopManagement.Views.V_ArduinoManagement_C">
       <RootProperty Name="MasterMenuItem" />
       <RootProperty Name="Margin" />
     </RootType>
@@ -132,7 +132,7 @@
       <RootProperty Name="HorizontalContentAlignment" />
       <RootProperty Name="Padding" />
     </RootType>
-    <RootType FullName="UWPShopManagement.Views.MasterDetailPage" />
+    <RootType FullName="UWPShopManagement.Views.V_ArduinoManagement" />
     <RootType FullName="Windows.UI.Xaml.Controls.HyperlinkButton">
       <RootProperty Name="Margin" />
     </RootType>
@@ -140,7 +140,7 @@
       <RootProperty Name="IsOn" />
       <RootProperty Name="Margin" />
     </RootType>
-    <RootType FullName="UWPShopManagement.Views.SettingsPage" />
+    <RootType FullName="UWPShopManagement.Views.V_Setting" />
     <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
@@ -188,6 +188,6 @@
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Frame" />
-    <RootType FullName="UWPShopManagement.Views.ShellPage" />
+    <RootType FullName="UWPShopManagement.Views.V_Shell" />
   </Roots.RootTypes>
 </Roots>

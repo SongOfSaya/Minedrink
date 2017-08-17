@@ -13,7 +13,7 @@
         x:Name="ContentArea"
         Background="{ThemeResource SystemControlBackgroundAltHighBrush}">
 
-        <views:MasterDetailDetailControl
+        <views:V_ArduinoManagement_C
             MasterMenuItem="{x:Bind ViewModel.Item}"
             Margin="{StaticResource MediumLeftRightMargin}" />
 

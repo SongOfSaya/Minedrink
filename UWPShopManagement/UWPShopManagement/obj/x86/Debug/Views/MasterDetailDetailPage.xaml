@@ -13,7 +13,7 @@
         x:Name="ContentArea"
         Background="{ThemeResource SystemControlBackgroundAltHighBrush}">
 
-        <views:MasterDetailDetailControl x:ConnectionId='3'
+        <views:V_ArduinoManagement_C x:ConnectionId='3'
                                                     
             Margin="{StaticResource MediumLeftRightMargin}" />
 
