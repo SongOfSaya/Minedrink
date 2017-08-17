@@ -1,0 +1,2 @@
+C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UnitTestProject\UnitTestProject.csproj;x86
+C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\UWPShopManagement.csproj;x86
