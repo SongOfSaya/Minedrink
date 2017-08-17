@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{19B9F119-74FE-4D1C-9E99-ECF7C59AB07C}</ProjectGuid>
+    <ProjectGuid>{834D9DD1-25B9-48F7-81EC-120ED465A0EC}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>UnitTestProject</RootNamespace>
@@ -136,7 +136,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\UWPShopManagement\UWPShopManagement.csproj">
-      <Project>{b2c4b70d-90f3-48f5-b56a-e811b6ba034d}</Project>
+      <Project>{3871fc31-3cf0-48a8-a056-e3748603423b}</Project>
       <Name>UWPShopManagement</Name>
     </ProjectReference>
   </ItemGroup>

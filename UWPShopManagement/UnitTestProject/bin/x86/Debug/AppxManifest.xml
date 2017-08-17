@@ -7,8 +7,8 @@
 
   有关程序包清单文件的详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=241727
  -->
-  <Identity Name="3a07c6b9-04b2-4468-a3c2-8eefee010608" Publisher="CN=liute" Version="1.0.0.0" ProcessorArchitecture="x86" />
-  <mp:PhoneIdentity PhoneProductId="3a07c6b9-04b2-4468-a3c2-8eefee010608" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="41d6b388-ccfc-4add-aa13-20e1229bff11" Publisher="CN=liute" Version="1.0.0.0" ProcessorArchitecture="x86" />
+  <mp:PhoneIdentity PhoneProductId="41d6b388-ccfc-4add-aa13-20e1229bff11" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>UnitTestProject</DisplayName>
     <PublisherDisplayName>liute</PublisherDisplayName>
@@ -159,7 +159,7 @@
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Enterprise 2017" />
     <build:Item Name="OperatingSystem" Version="10.0.15063.0 (WinBuild.160101.0800)" />
     <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="15.0.26720.2" />
-    <build:Item Name="ProjectGUID" Value="{19B9F119-74FE-4D1C-9E99-ECF7C59AB07C}" />
+    <build:Item Name="ProjectGUID" Value="{834D9DD1-25B9-48F7-81EC-120ED465A0EC}" />
     <build:Item Name="OptimizingToolset" Value="None" />
     <build:Item Name="TargetRuntime" Value="Managed" />
     <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="15.0.26720.2" />

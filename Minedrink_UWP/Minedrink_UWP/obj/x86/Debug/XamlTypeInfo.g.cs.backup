@@ -161,16 +161,16 @@ namespace Minedrink_UWP.Minedrink_UWP_XamlTypeInfo
             _typeNameTable[25] = "System.Collections.ObjectModel.Collection`1<Minedrink_UWP.Model.Arduino>";
             _typeNameTable[26] = "Minedrink_UWP.Model.Arduino";
             _typeNameTable[27] = "Int32";
-            _typeNameTable[28] = "System.IO.StreamWriter";
-            _typeNameTable[29] = "System.IO.TextWriter";
-            _typeNameTable[30] = "System.IO.StreamReader";
-            _typeNameTable[31] = "System.IO.TextReader";
-            _typeNameTable[32] = "Windows.Networking.Sockets.StreamSocket";
-            _typeNameTable[33] = "String";
-            _typeNameTable[34] = "System.Collections.Generic.List`1<Minedrink_UWP.Model.WeightSensor>";
-            _typeNameTable[35] = "Minedrink_UWP.Model.WeightSensor";
-            _typeNameTable[36] = "Single";
-            _typeNameTable[37] = "Windows.UI.Colors";
+            _typeNameTable[28] = "Windows.UI.Colors";
+            _typeNameTable[29] = "System.IO.StreamWriter";
+            _typeNameTable[30] = "System.IO.TextWriter";
+            _typeNameTable[31] = "System.IO.StreamReader";
+            _typeNameTable[32] = "System.IO.TextReader";
+            _typeNameTable[33] = "Windows.Networking.Sockets.StreamSocket";
+            _typeNameTable[34] = "String";
+            _typeNameTable[35] = "System.Collections.Generic.List`1<Minedrink_UWP.Model.WeightSensor>";
+            _typeNameTable[36] = "Minedrink_UWP.Model.WeightSensor";
+            _typeNameTable[37] = "Single";
             _typeNameTable[38] = "Minedrink_UWP.View.LandingPage";
             _typeNameTable[39] = "Minedrink_UWP.View.MonitorPage";
             _typeNameTable[40] = "Minedrink_UWP.View.OverviewPage";
@@ -204,16 +204,16 @@ namespace Minedrink_UWP.Minedrink_UWP_XamlTypeInfo
             _typeTable[25] = typeof(global::System.Collections.ObjectModel.Collection<global::Minedrink_UWP.Model.Arduino>);
             _typeTable[26] = typeof(global::Minedrink_UWP.Model.Arduino);
             _typeTable[27] = typeof(global::System.Int32);
-            _typeTable[28] = typeof(global::System.IO.StreamWriter);
-            _typeTable[29] = typeof(global::System.IO.TextWriter);
-            _typeTable[30] = typeof(global::System.IO.StreamReader);
-            _typeTable[31] = typeof(global::System.IO.TextReader);
-            _typeTable[32] = typeof(global::Windows.Networking.Sockets.StreamSocket);
-            _typeTable[33] = typeof(global::System.String);
-            _typeTable[34] = typeof(global::System.Collections.Generic.List<global::Minedrink_UWP.Model.WeightSensor>);
-            _typeTable[35] = typeof(global::Minedrink_UWP.Model.WeightSensor);
-            _typeTable[36] = typeof(global::System.Single);
-            _typeTable[37] = typeof(global::Windows.UI.Colors);
+            _typeTable[28] = typeof(global::Windows.UI.Colors);
+            _typeTable[29] = typeof(global::System.IO.StreamWriter);
+            _typeTable[30] = typeof(global::System.IO.TextWriter);
+            _typeTable[31] = typeof(global::System.IO.StreamReader);
+            _typeTable[32] = typeof(global::System.IO.TextReader);
+            _typeTable[33] = typeof(global::Windows.Networking.Sockets.StreamSocket);
+            _typeTable[34] = typeof(global::System.String);
+            _typeTable[35] = typeof(global::System.Collections.Generic.List<global::Minedrink_UWP.Model.WeightSensor>);
+            _typeTable[36] = typeof(global::Minedrink_UWP.Model.WeightSensor);
+            _typeTable[37] = typeof(global::System.Single);
             _typeTable[38] = typeof(global::Minedrink_UWP.View.LandingPage);
             _typeTable[39] = typeof(global::Minedrink_UWP.View.MonitorPage);
             _typeTable[40] = typeof(global::Minedrink_UWP.View.OverviewPage);
@@ -261,9 +261,9 @@ namespace Minedrink_UWP.Minedrink_UWP_XamlTypeInfo
         private object Activate_24_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Minedrink_UWP.Model.Arduino>(); }
         private object Activate_25_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Minedrink_UWP.Model.Arduino>(); }
         private object Activate_26_Arduino() { return new global::Minedrink_UWP.Model.Arduino(); }
-        private object Activate_32_StreamSocket() { return new global::Windows.Networking.Sockets.StreamSocket(); }
-        private object Activate_34_List() { return new global::System.Collections.Generic.List<global::Minedrink_UWP.Model.WeightSensor>(); }
-        private object Activate_35_WeightSensor() { return new global::Minedrink_UWP.Model.WeightSensor(); }
+        private object Activate_33_StreamSocket() { return new global::Windows.Networking.Sockets.StreamSocket(); }
+        private object Activate_35_List() { return new global::System.Collections.Generic.List<global::Minedrink_UWP.Model.WeightSensor>(); }
+        private object Activate_36_WeightSensor() { return new global::Minedrink_UWP.Model.WeightSensor(); }
         private object Activate_38_LandingPage() { return new global::Minedrink_UWP.View.LandingPage(); }
         private object Activate_39_MonitorPage() { return new global::Minedrink_UWP.View.MonitorPage(); }
         private object Activate_40_OverviewPage() { return new global::Minedrink_UWP.View.OverviewPage(); }
@@ -279,7 +279,7 @@ namespace Minedrink_UWP.Minedrink_UWP_XamlTypeInfo
             var newItem = (global::Minedrink_UWP.Model.Arduino)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_34_List(object instance, object item)
+        private void VectorAdd_35_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Minedrink_UWP.Model.WeightSensor>)instance;
             var newItem = (global::Minedrink_UWP.Model.WeightSensor)item;
@@ -452,6 +452,7 @@ namespace Minedrink_UWP.Minedrink_UWP_XamlTypeInfo
                 userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.Activator = Activate_26_Arduino;
                 userType.AddMemberName("ID");
+                userType.AddMemberName("DisplayColor");
                 userType.AddMemberName("OutStream");
                 userType.AddMemberName("InStream");
                 userType.AddMemberName("ClientSocket");
@@ -469,48 +470,54 @@ namespace Minedrink_UWP.Minedrink_UWP_XamlTypeInfo
                 xamlType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 28:   //  System.IO.StreamWriter
+            case 28:   //  Windows.UI.Colors
+                userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 29:   //  System.IO.StreamWriter
                 userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.IO.TextWriter"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 29:   //  System.IO.TextWriter
+            case 30:   //  System.IO.TextWriter
                 userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 30:   //  System.IO.StreamReader
+            case 31:   //  System.IO.StreamReader
                 userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.IO.TextReader"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 31:   //  System.IO.TextReader
+            case 32:   //  System.IO.TextReader
                 userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 32:   //  Windows.Networking.Sockets.StreamSocket
+            case 33:   //  Windows.Networking.Sockets.StreamSocket
                 userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 33:   //  String
+            case 34:   //  String
                 xamlType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 34:   //  System.Collections.Generic.List`1<Minedrink_UWP.Model.WeightSensor>
+            case 35:   //  System.Collections.Generic.List`1<Minedrink_UWP.Model.WeightSensor>
                 userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_34_List;
+                userType.CollectionAdd = VectorAdd_35_List;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 35:   //  Minedrink_UWP.Model.WeightSensor
+            case 36:   //  Minedrink_UWP.Model.WeightSensor
                 userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_35_WeightSensor;
+                userType.Activator = Activate_36_WeightSensor;
                 userType.AddMemberName("ID");
                 userType.AddMemberName("PIN_DT");
                 userType.AddMemberName("PIN_SCK");
@@ -521,14 +528,8 @@ namespace Minedrink_UWP.Minedrink_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 36:   //  Single
+            case 37:   //  Single
                 xamlType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 37:   //  Windows.UI.Colors
-                userType = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
                 break;
 
             case 38:   //  Minedrink_UWP.View.LandingPage
@@ -646,132 +647,142 @@ namespace Minedrink_UWP.Minedrink_UWP_XamlTypeInfo
             var that = (global::Minedrink_UWP.Model.Arduino)instance;
             that.ID = (global::System.Int32)Value;
         }
-        private object get_11_Arduino_OutStream(object instance)
+        private object get_11_Arduino_DisplayColor(object instance)
+        {
+            var that = (global::Minedrink_UWP.Model.Arduino)instance;
+            return that.DisplayColor;
+        }
+        private void set_11_Arduino_DisplayColor(object instance, object Value)
+        {
+            var that = (global::Minedrink_UWP.Model.Arduino)instance;
+            that.DisplayColor = (global::Windows.UI.Colors)Value;
+        }
+        private object get_12_Arduino_OutStream(object instance)
         {
             var that = (global::Minedrink_UWP.Model.Arduino)instance;
             return that.OutStream;
         }
-        private object get_12_Arduino_InStream(object instance)
+        private object get_13_Arduino_InStream(object instance)
         {
             var that = (global::Minedrink_UWP.Model.Arduino)instance;
             return that.InStream;
         }
-        private object get_13_Arduino_ClientSocket(object instance)
+        private object get_14_Arduino_ClientSocket(object instance)
         {
             var that = (global::Minedrink_UWP.Model.Arduino)instance;
             return that.ClientSocket;
         }
-        private object get_14_Arduino_Name(object instance)
+        private object get_15_Arduino_Name(object instance)
         {
             var that = (global::Minedrink_UWP.Model.Arduino)instance;
             return that.Name;
         }
-        private void set_14_Arduino_Name(object instance, object Value)
+        private void set_15_Arduino_Name(object instance, object Value)
         {
             var that = (global::Minedrink_UWP.Model.Arduino)instance;
             that.Name = (global::System.String)Value;
         }
-        private object get_15_Arduino_Mode(object instance)
+        private object get_16_Arduino_Mode(object instance)
         {
             var that = (global::Minedrink_UWP.Model.Arduino)instance;
             return that.Mode;
         }
-        private void set_15_Arduino_Mode(object instance, object Value)
+        private void set_16_Arduino_Mode(object instance, object Value)
         {
             var that = (global::Minedrink_UWP.Model.Arduino)instance;
             that.Mode = (global::System.String)Value;
         }
-        private object get_16_Arduino_SensorList(object instance)
+        private object get_17_Arduino_SensorList(object instance)
         {
             var that = (global::Minedrink_UWP.Model.Arduino)instance;
             return that.SensorList;
         }
-        private void set_16_Arduino_SensorList(object instance, object Value)
+        private void set_17_Arduino_SensorList(object instance, object Value)
         {
             var that = (global::Minedrink_UWP.Model.Arduino)instance;
             that.SensorList = (global::System.Collections.Generic.List<global::Minedrink_UWP.Model.WeightSensor>)Value;
         }
-        private object get_17_WeightSensor_ID(object instance)
+        private object get_18_WeightSensor_ID(object instance)
         {
             var that = (global::Minedrink_UWP.Model.WeightSensor)instance;
             return that.ID;
         }
-        private void set_17_WeightSensor_ID(object instance, object Value)
+        private void set_18_WeightSensor_ID(object instance, object Value)
         {
             var that = (global::Minedrink_UWP.Model.WeightSensor)instance;
             that.ID = (global::System.Int32)Value;
         }
-        private object get_18_WeightSensor_PIN_DT(object instance)
+        private object get_19_WeightSensor_PIN_DT(object instance)
         {
             var that = (global::Minedrink_UWP.Model.WeightSensor)instance;
             return that.PIN_DT;
         }
-        private void set_18_WeightSensor_PIN_DT(object instance, object Value)
+        private void set_19_WeightSensor_PIN_DT(object instance, object Value)
         {
             var that = (global::Minedrink_UWP.Model.WeightSensor)instance;
             that.PIN_DT = (global::System.Int32)Value;
         }
-        private object get_19_WeightSensor_PIN_SCK(object instance)
+        private object get_20_WeightSensor_PIN_SCK(object instance)
         {
             var that = (global::Minedrink_UWP.Model.WeightSensor)instance;
             return that.PIN_SCK;
         }
-        private void set_19_WeightSensor_PIN_SCK(object instance, object Value)
+        private void set_20_WeightSensor_PIN_SCK(object instance, object Value)
         {
             var that = (global::Minedrink_UWP.Model.WeightSensor)instance;
             that.PIN_SCK = (global::System.Int32)Value;
         }
-        private object get_20_WeightSensor_Result(object instance)
+        private object get_21_WeightSensor_Result(object instance)
         {
             var that = (global::Minedrink_UWP.Model.WeightSensor)instance;
             return that.Result;
         }
-        private void set_20_WeightSensor_Result(object instance, object Value)
+        private void set_21_WeightSensor_Result(object instance, object Value)
         {
             var that = (global::Minedrink_UWP.Model.WeightSensor)instance;
             that.Result = (global::System.Single)Value;
         }
-        private object get_21_WeightSensor_OffSet(object instance)
+        private object get_22_WeightSensor_OffSet(object instance)
         {
             var that = (global::Minedrink_UWP.Model.WeightSensor)instance;
             return that.OffSet;
         }
-        private void set_21_WeightSensor_OffSet(object instance, object Value)
+        private void set_22_WeightSensor_OffSet(object instance, object Value)
         {
             var that = (global::Minedrink_UWP.Model.WeightSensor)instance;
             that.OffSet = (global::System.Single)Value;
         }
-        private object get_22_WeightSensor_GapValue(object instance)
+        private object get_23_WeightSensor_GapValue(object instance)
         {
             var that = (global::Minedrink_UWP.Model.WeightSensor)instance;
             return that.GapValue;
         }
-        private void set_22_WeightSensor_GapValue(object instance, object Value)
+        private void set_23_WeightSensor_GapValue(object instance, object Value)
         {
             var that = (global::Minedrink_UWP.Model.WeightSensor)instance;
             that.GapValue = (global::System.Single)Value;
         }
-        private object get_23_Arduino_Color(object instance)
+        private object get_24_Arduino_Color(object instance)
         {
             var that = (global::Minedrink_UWP.Model.Arduino)instance;
             return that.Color;
         }
-        private void set_23_Arduino_Color(object instance, object Value)
+        private void set_24_Arduino_Color(object instance, object Value)
         {
             var that = (global::Minedrink_UWP.Model.Arduino)instance;
             that.Color = (global::Windows.UI.Colors)Value;
         }
-        private object get_24_Arduino_IP(object instance)
+        private object get_25_Arduino_IP(object instance)
         {
             var that = (global::Minedrink_UWP.Model.Arduino)instance;
             return that.IP;
         }
-        private void set_24_Arduino_IP(object instance, object Value)
+        private void set_25_Arduino_IP(object instance, object Value)
         {
             var that = (global::Minedrink_UWP.Model.Arduino)instance;
             that.IP = (global::System.String)Value;
         }
-        private object get_25_Arduino_Arduinos(object instance)
+        private object get_26_Arduino_Arduinos(object instance)
         {
             return global::Minedrink_UWP.Model.Arduino.GetArduinos((global::System.Int32)instance);
         }
@@ -850,96 +861,102 @@ namespace Minedrink_UWP.Minedrink_UWP_XamlTypeInfo
                 xamlMember.Getter = get_10_Arduino_ID;
                 xamlMember.Setter = set_10_Arduino_ID;
                 break;
+            case "Minedrink_UWP.Model.Arduino.DisplayColor":
+                userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.Model.Arduino");
+                xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "DisplayColor", "Windows.UI.Colors");
+                xamlMember.Getter = get_11_Arduino_DisplayColor;
+                xamlMember.Setter = set_11_Arduino_DisplayColor;
+                break;
             case "Minedrink_UWP.Model.Arduino.OutStream":
                 userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.Model.Arduino");
                 xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "OutStream", "System.IO.StreamWriter");
-                xamlMember.Getter = get_11_Arduino_OutStream;
+                xamlMember.Getter = get_12_Arduino_OutStream;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Minedrink_UWP.Model.Arduino.InStream":
                 userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.Model.Arduino");
                 xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "InStream", "System.IO.StreamReader");
-                xamlMember.Getter = get_12_Arduino_InStream;
+                xamlMember.Getter = get_13_Arduino_InStream;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Minedrink_UWP.Model.Arduino.ClientSocket":
                 userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.Model.Arduino");
                 xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "ClientSocket", "Windows.Networking.Sockets.StreamSocket");
-                xamlMember.Getter = get_13_Arduino_ClientSocket;
+                xamlMember.Getter = get_14_Arduino_ClientSocket;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Minedrink_UWP.Model.Arduino.Name":
                 userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.Model.Arduino");
                 xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "Name", "String");
-                xamlMember.Getter = get_14_Arduino_Name;
-                xamlMember.Setter = set_14_Arduino_Name;
+                xamlMember.Getter = get_15_Arduino_Name;
+                xamlMember.Setter = set_15_Arduino_Name;
                 break;
             case "Minedrink_UWP.Model.Arduino.Mode":
                 userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.Model.Arduino");
                 xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "Mode", "String");
-                xamlMember.Getter = get_15_Arduino_Mode;
-                xamlMember.Setter = set_15_Arduino_Mode;
+                xamlMember.Getter = get_16_Arduino_Mode;
+                xamlMember.Setter = set_16_Arduino_Mode;
                 break;
             case "Minedrink_UWP.Model.Arduino.SensorList":
                 userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.Model.Arduino");
                 xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "SensorList", "System.Collections.Generic.List`1<Minedrink_UWP.Model.WeightSensor>");
-                xamlMember.Getter = get_16_Arduino_SensorList;
-                xamlMember.Setter = set_16_Arduino_SensorList;
+                xamlMember.Getter = get_17_Arduino_SensorList;
+                xamlMember.Setter = set_17_Arduino_SensorList;
                 break;
             case "Minedrink_UWP.Model.WeightSensor.ID":
                 userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.Model.WeightSensor");
                 xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "ID", "Int32");
-                xamlMember.Getter = get_17_WeightSensor_ID;
-                xamlMember.Setter = set_17_WeightSensor_ID;
+                xamlMember.Getter = get_18_WeightSensor_ID;
+                xamlMember.Setter = set_18_WeightSensor_ID;
                 break;
             case "Minedrink_UWP.Model.WeightSensor.PIN_DT":
                 userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.Model.WeightSensor");
                 xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "PIN_DT", "Int32");
-                xamlMember.Getter = get_18_WeightSensor_PIN_DT;
-                xamlMember.Setter = set_18_WeightSensor_PIN_DT;
+                xamlMember.Getter = get_19_WeightSensor_PIN_DT;
+                xamlMember.Setter = set_19_WeightSensor_PIN_DT;
                 break;
             case "Minedrink_UWP.Model.WeightSensor.PIN_SCK":
                 userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.Model.WeightSensor");
                 xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "PIN_SCK", "Int32");
-                xamlMember.Getter = get_19_WeightSensor_PIN_SCK;
-                xamlMember.Setter = set_19_WeightSensor_PIN_SCK;
+                xamlMember.Getter = get_20_WeightSensor_PIN_SCK;
+                xamlMember.Setter = set_20_WeightSensor_PIN_SCK;
                 break;
             case "Minedrink_UWP.Model.WeightSensor.Result":
                 userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.Model.WeightSensor");
                 xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "Result", "Single");
-                xamlMember.Getter = get_20_WeightSensor_Result;
-                xamlMember.Setter = set_20_WeightSensor_Result;
+                xamlMember.Getter = get_21_WeightSensor_Result;
+                xamlMember.Setter = set_21_WeightSensor_Result;
                 break;
             case "Minedrink_UWP.Model.WeightSensor.OffSet":
                 userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.Model.WeightSensor");
                 xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "OffSet", "Single");
-                xamlMember.Getter = get_21_WeightSensor_OffSet;
-                xamlMember.Setter = set_21_WeightSensor_OffSet;
+                xamlMember.Getter = get_22_WeightSensor_OffSet;
+                xamlMember.Setter = set_22_WeightSensor_OffSet;
                 break;
             case "Minedrink_UWP.Model.WeightSensor.GapValue":
                 userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.Model.WeightSensor");
                 xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "GapValue", "Single");
-                xamlMember.Getter = get_22_WeightSensor_GapValue;
-                xamlMember.Setter = set_22_WeightSensor_GapValue;
+                xamlMember.Getter = get_23_WeightSensor_GapValue;
+                xamlMember.Setter = set_23_WeightSensor_GapValue;
                 break;
             case "Minedrink_UWP.Model.Arduino.Color":
                 userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.Model.Arduino");
                 xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "Color", "Windows.UI.Colors");
-                xamlMember.Getter = get_23_Arduino_Color;
-                xamlMember.Setter = set_23_Arduino_Color;
+                xamlMember.Getter = get_24_Arduino_Color;
+                xamlMember.Setter = set_24_Arduino_Color;
                 break;
             case "Minedrink_UWP.Model.Arduino.IP":
                 userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.Model.Arduino");
                 xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "IP", "String");
-                xamlMember.Getter = get_24_Arduino_IP;
-                xamlMember.Setter = set_24_Arduino_IP;
+                xamlMember.Getter = get_25_Arduino_IP;
+                xamlMember.Setter = set_25_Arduino_IP;
                 break;
             case "Minedrink_UWP.Model.Arduino.Arduinos":
                 userType = (global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Minedrink_UWP.Model.Arduino");
                 xamlMember = new global::Minedrink_UWP.Minedrink_UWP_XamlTypeInfo.XamlMember(this, "Arduinos", "System.Collections.ObjectModel.ObservableCollection`1<Minedrink_UWP.Model.Arduino>");
                 xamlMember.SetTargetTypeName("Int32");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_25_Arduino_Arduinos;
+                xamlMember.Getter = get_26_Arduino_Arduinos;
                 xamlMember.SetIsReadOnly();
                 break;
             }

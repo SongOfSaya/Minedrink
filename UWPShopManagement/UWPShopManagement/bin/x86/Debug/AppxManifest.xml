@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp build" xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build">
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:genTemplate="http://schemas.microsoft.com/appx/developer/windowsTemplateStudio" IgnorableNamespaces="uap mp genTemplate build" xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build">
   <!--
   此包清单文件由生成过程生成。
 
@@ -7,18 +7,18 @@
 
   有关程序包清单文件的详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=241727
  -->
-  <Identity Name="7b1743dc-0a5a-4489-a500-6225472ae698" Publisher="CN=liute" Version="1.0.0.0" ProcessorArchitecture="x86" />
-  <mp:PhoneIdentity PhoneProductId="7b1743dc-0a5a-4489-a500-6225472ae698" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="97C4C030-6C7E-4C1C-AF98-AD85160E914E" Publisher="CN=liute" Version="1.0.0.0" ProcessorArchitecture="x86" />
+  <mp:PhoneIdentity PhoneProductId="97C4C030-6C7E-4C1C-AF98-AD85160E914E" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>UWPShopManagement</DisplayName>
     <PublisherDisplayName>liute</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
-    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.15063.0" MaxVersionTested="10.0.15063.0" />
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10586.0" MaxVersionTested="10.0.15063.0" />
   </Dependencies>
   <Resources>
-    <Resource Language="ZH-CN" />
+    <Resource Language="EN-US" />
   </Resources>
   <Applications>
     <Application Id="App" Executable="UWPShopManagement.exe" EntryPoint="UWPShopManagement.App">
@@ -31,6 +31,13 @@
   <Capabilities>
     <Capability Name="internetClient" />
   </Capabilities>
+  <genTemplate:Metadata>
+    <genTemplate:Item Name="generator" Value="Windows Template Studio" />
+    <genTemplate:Item Name="wizardVersion" Version="1.2.17198.1" />
+    <genTemplate:Item Name="templatesVersion" Version="1.2.17202.1" />
+    <genTemplate:Item Name="projectType" Value="SplitView" />
+    <genTemplate:Item Name="framework" Value="MVVMBasic" />
+  </genTemplate:Metadata>
   <Extensions>
     <Extension Category="windows.activatableClass.inProcessServer">
       <InProcessServer>
@@ -151,7 +158,7 @@
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Enterprise 2017" />
     <build:Item Name="OperatingSystem" Version="10.0.15063.0 (WinBuild.160101.0800)" />
     <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="15.0.26720.2" />
-    <build:Item Name="ProjectGUID" Value="{B2C4B70D-90F3-48F5-B56A-E811B6BA034D}" />
+    <build:Item Name="ProjectGUID" Value="{3871FC31-3CF0-48A8-A056-E3748603423B}" />
     <build:Item Name="OptimizingToolset" Value="None" />
     <build:Item Name="TargetRuntime" Value="Managed" />
     <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="15.0.26720.2" />
