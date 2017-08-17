@@ -4,7 +4,7 @@
     <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
   </Roots.Interfaces>
   <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="ArduinoManageViewModel" />
+    <RootPropertyPathName Name="VM_AduMGMT" />
     <RootPropertyPathName Name="ArduinoManageDetailViewModel" />
     <RootPropertyPathName Name="ChartViewModel" />
     <RootPropertyPathName Name="GridViewModel" />
@@ -13,7 +13,7 @@
     <RootPropertyPathName Name="MediaPlayerViewModel" />
     <RootPropertyPathName Name="SettingsViewModel" />
     <RootPropertyPathName Name="Text" />
-    <RootPropertyPathName Name="ShellViewModel" />
+    <RootPropertyPathName Name="VM_Shell" />
     <RootPropertyPathName Name="TabbedViewModel" />
     <RootPropertyPathName Name="WebViewViewModel" />
   </Roots.PropertyPathNames>
@@ -25,7 +25,7 @@
       <RootProperty Name="MergedDictionaries" />
       <RootProperty Name="Source" />
     </RootType>
-    <RootType FullName="SMS_UWP.ViewModels.ViewModelLocator" />
+    <RootType FullName="SMS_UWP.ViewModels.VM_Locator" />
     <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
       <RootProperty Name="Color" />
     </RootType>
@@ -160,9 +160,9 @@
     <RootType FullName="Windows.UI.Xaml.AdaptiveTrigger">
       <RootProperty Name="MinWindowWidth" />
     </RootType>
-    <RootType FullName="SMS_UWP.Views.ArduinoManageDetailControl">
-      <RootProperty Name="MasterMenuItem" />
+    <RootType FullName="SMS_UWP.Views.V_AduMGMT_C">
       <RootProperty Name="Margin" />
+      <RootProperty Name="MasterMenuItem" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="DataContext" />
@@ -208,7 +208,7 @@
       <RootProperty Name="Content" />
       <RootProperty Name="Command" />
     </RootType>
-    <RootType FullName="SMS_UWP.Views.V_AduMGMT_P" />
+    <RootType FullName="SMS_UWP.Views.V_AduMGMT" />
     <RootType FullName="Telerik.UI.Xaml.Controls.Chart.RadCartesianChart">
       <RootProperty Name="HorizontalAxis" />
       <RootProperty Name="VerticalAxis" />
@@ -331,7 +331,7 @@
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Frame" />
-    <RootType FullName="SMS_UWP.Views.ShellPage" />
+    <RootType FullName="SMS_UWP.Views.V_Shell" />
     <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
       <RootProperty Name="Items" />
     </RootType>

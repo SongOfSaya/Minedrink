@@ -253,3 +253,4 @@ C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\
 C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\resources.en-us.resfiles.intermediate
 C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\Minedrink_UWP.csprojResolveAssemblyReference.cache
+C:\Users\liute\Source\Repos\Minedrink\Minedrink_UWP\Minedrink_UWP\obj\x86\Debug\Minedrink_UWP.csproj.CoreCompileInputs.cache

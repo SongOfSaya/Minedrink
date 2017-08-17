@@ -14,8 +14,7 @@
         x:Name="ContentArea"
         Background="{ThemeResource SystemControlBackgroundAltHighBrush}">
 
-        <views:ArduinoManageDetailControl
-            MasterMenuItem="{x:Bind ViewModel.Item}"
+        <views:V_AduMGMT_C
             Margin="{StaticResource MediumLeftRightMargin}" />
 
         <!--  Adaptive triggers  -->

@@ -8,22 +8,21 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:ic="using:Microsoft.Xaml.Interactions.Core"
     xmlns:i="using:Microsoft.Xaml.Interactivity"
-    DataContext="{Binding  ArduinoManageViewModel, Source={StaticResource Locator}}"
+    DataContext="{Binding VM_AduMGMT, Source={StaticResource Locator}}"
     mc:Ignorable="d"
     Title="新增Arduino"
     Name="AddAduDialog"
     PrimaryButtonText="确定"
     ExitDisplayModeOnAccessKeyInvoked="False"
     SecondaryButtonText="取消"
-    SecondaryButtonCommand="{x:Bind ViewModel.TestCommand}"
+    SecondaryButtonCommand="{x:Bind ViewModel.DialogCancelCommand}"
     Height="355" Width="320">
     <!--PrimaryButtonCommand="{x:Bind ViewModel.DialogSubmitCommand}"-->
     <i:Interaction.Behaviors>
         <ic:EventTriggerBehavior EventName="PrimaryButtonClick"  >
-            <ic:InvokeCommandAction Command="{x:Bind ViewModel.TestEvenCommand}">
+            <ic:InvokeCommandAction Command="{x:Bind ViewModel.DialogSubmitCommand}">
             </ic:InvokeCommandAction>
             <ic:CallMethodAction>
-                
             </ic:CallMethodAction>
         </ic:EventTriggerBehavior>
     </i:Interaction.Behaviors>

@@ -1,0 +1,11 @@
+App.xbf
+Styles\_Colors.xbf
+Styles\_FontSizes.xbf
+Styles\_Thickness.xbf
+Styles\TextBlock.xbf
+Views\MainPage.xbf
+Views\MasterDetailDetailControl.xbf
+Views\MasterDetailDetailPage.xbf
+Views\V_ArduinoManagement.xbf
+Views\V_Setting.xbf
+Views\V_Shell.xbf

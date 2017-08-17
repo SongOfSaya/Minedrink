@@ -4,28 +4,36 @@ Created:	2017/7/30 20:22:00
 Author:	Sora
 Email:	Liutengfei833@hotmail.com
 */
+#include <Metro.h>
 #include <HX711.h>
 #include <IRremote.h>
-const int ID = 10;
+const int ID = 1001;	//此台Arduino的ID
 int latchPin = 8;       //D8连接74HC595芯片的使能引脚
 int clockPin = 3;       //D3连接时钟引脚
 int dataPin = 9;        //D9连接数据引脚
 int RECV_Pin = 2;       //D2链接红外接收器
-int steelyardPinA_1 = 41;//
-int steelyardPinA_2 = 42;
+const int colorNum = 12;//此Arduino的标志色
 IRrecv irrecv(RECV_Pin);
-decode_results results;
+boolean blinkState = false;	//LED灯是否亮起
+decode_results results;		//接收到的红外指令
+
+int modeNumber = 2;			//Arduino的状态值
+float Weight_1 = 0;			//一号秤的读数
+boolean isConn = false;		//是否成功建立TCP链接
+int connTryNum = 0;			//TCP呼叫计数;
+int weightSensorsLenth = 1;	//重量传感器的可用数量
+String commStr = "";		//通过WIFI接受到的指令
+const String name = "主料区";//此Arduino的名称
+boolean commStrComplete = false;	//Wifi指令接收是否结束
+Metro measureMetro = Metro(500);	//测量计时器,间隔500; 所有计时器应独立使用,单位ms
+Metro listerenMetro = Metro(5);		//监听计时器,间隔5
+Metro blink1000Metro = Metro(1000);	//LED计时器,间隔1000
+Metro interval5Metro = Metro(5);	//泛用型计时器,间隔5
+Metro blink250Metro = Metro(250);	//Led计时器,间隔250	
 //代表数字0~9
 byte Tab[] = { 0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90 };
-int modeNumber = 1;		//Arduino的状态值
-float Weight_1 = 0;		//一号秤的读数
-bool isConn = false;    //是否成功建立TCP链接
-int connTryNum = 0;     //TCP呼叫计数;
-String commStr = "";		//通过WIFI接受到的指令
-int weightSensorsLenth = 1;	//重量传感器的可用数量
-
 //重量传感器参数,分别为SCK,DT,GapValue,resualt, offset
-Hx711_Senor weightSensors[15] =  {
+Hx711_Senor weightSensors[15] = {
 	{ 41,43,430,0,8422741 },
 	{ 0,0,0,0,0 },
 	{ 0,0,0,0,0 },
@@ -41,10 +49,8 @@ Hx711_Senor weightSensors[15] =  {
 	{ 0,0,0,0,0 },
 	{ 0,0,0,0,0 },
 	{ 0,0,0,0,0 } };
-int ints[5] = { 1,2,3,4,5 };
 enum IRCommands         //红外指令对照表
 {
-
 	IR_Zero = 0xFD30CF,
 	IR_One = 0xFD08F7,
 	IR_TWO = 0xFD8877,
@@ -55,9 +61,9 @@ void setup()
 	Serial.begin(115200);
 	Serial1.begin(115200);
 	while (!Serial);
-	delay(100);
+	//delay(100);
 	//initSensors();
-	Serial.print("XXDT=");
+	Serial.print("毛皮质量=");
 	Serial.println(weightSensors[0].dt);
 	Init_Hx711();
 	irrecv.enableIRIn();
@@ -67,28 +73,60 @@ void setup()
 	pinMode(LED_BUILTIN, OUTPUT);
 	delay(100);
 	Get_Maopi(0);
-	digitalWrite(LED_BUILTIN, HIGH);
-	Serial.write("Welcome to use!");
+	commStr.reserve(200);
+	Serial.write("欢迎使用");
 }
 
 void loop()
 {
-	SerialListener();
+	parseCommStr();
 	checkState();
 	switch (modeNumber)
 	{
 	case 0:
-		state_One();
+		state_Zero();
+		blinkModelZero();
 		break;
 	case 1:
-		state_One();
+		if (measureMetro.check())
+			state_One();
 		break;
 	case 2:
 		state_Two();
 		break;
 	case 3:
-		state_Three();
+		if (interval5Metro.check())
+			state_Three();
 		break;
+	}
+}
+//处理接收到的wifi指令
+void parseCommStr() {
+	if (commStrComplete) {
+		//是否是有效指令
+		if (commStr.startsWith("#"))
+		{
+			String command = commStr.substring(0, 8);
+			String detial = "";
+			Serial.println("Command=" + command);
+			if (commStr.length() > 8)
+			{
+				detial = commStr.substring(9, commStr.length());
+				Serial.println("Detail=" + detial);
+			}
+			if (command.equals("#TCPCONN"))
+			{
+				replyTCPCONN();
+			}
+			else if (command == "#GETINFO")
+			{
+				replyGETINFO();
+			}
+		}
+		// clear the string
+		commStr = "";
+		commStrComplete = false;
+
 	}
 }
 //接收并处理红外指令
@@ -99,16 +137,20 @@ void checkState() {
 		switch (results.value)
 		{
 		case IR_Zero:
-			changeNumber(0);
+			if (modeNumber != 0)
+				changeNumber(0);
 			break;
 		case IR_One:
-			changeNumber(1);
+			if (modeNumber != 1)
+				changeNumber(1);
 			break;
 		case IR_TWO:
-			changeNumber(2);
+			if (modeNumber != 2)
+				changeNumber(2);
 			break;
 		case IR_Three:
-			changeNumber(3);
+			if (modeNumber != 3)
+				changeNumber(3);
 			break;
 		default:
 			showNumber(modeNumber);
@@ -122,16 +164,16 @@ void state_Zero() {
 	while (Serial.available()) {
 		Serial1.write(Serial.read());
 	}
-		
+
 	while (Serial1.available()) {
 		Serial.write(Serial1.read());
 	}
-		
+
 }
 //模式1:称重模式
 void state_One() {
 	//{"ID":10, "Mills" : 1243, "Mode" : 1, "Sensors" : [{"ID":1085, "Result" : 123.44}, { "ID":1086,"Result" : 1234.4 }]}
-	String resualtStr = "{\"ID\":";
+	String resualtStr = "#UPDATEX={\"ID\":";
 	resualtStr += ID;
 	resualtStr += ",\"Mills\":";
 	resualtStr += millis();
@@ -155,22 +197,12 @@ void state_One() {
 		}
 	}
 	Serial.println(resualtStr);
-	Serial.flush();
-	delay(500);
-	//原始版
-	//Weight_1 = Get_Weight(0);	//计算放在传感器上的重物重量
-	//float w1 = Weight_1 * 4.44444;
-	//Serial.print(float(Weight_1 / 1000)*4.44444, 3);	//串口显示重量
-	//Serial.print(" kg\n");	//显示单位
-	//Serial.print("\n");		//显示单位
-	//Serial1.print(w1);
-	//Serial1.print(" g\n");
-	//Serial1.println("**********************");
-	//delay(1000);				//延时1s
+	blinkState = !blinkState;
+	digitalWrite(LED_BUILTIN, blinkState);
 }
 //模式2:主动与TCP Server建立连接
 void state_Two() {
-	
+
 	//Serial.flush();
 	//Serial1.flush();
 	//if (!isConn)//如果未执行过AT指令则执行
@@ -250,35 +282,67 @@ void state_Three() {
 	//	Serial1.flush();
 	//}
 }
-void SerialListener() {
+void serialEvent() {
 	while (Serial.available())
 	{
-		
-		int charNum = Serial.read();
-		if (charNum == '#')	//接收到指令
+		char charNum = (char)Serial.read();
+		commStr += charNum;
+		//收到换行符则本条命令接收结束
+		if (charNum == '\n')
 		{
-			commStr = "#";
-			for (size_t i = 0; i < 7; i++)
+			commStrComplete = true;
+		}
+	}
+}
+//回复指令:#TCPCONN
+void replyTCPCONN() {
+	Serial.println("#TCPDONE");
+}
+//回复指令:#GETINIT
+void replyGETINFO() {
+	//无\格式:{"ID":1001,"NM":"名称","MIS":1234567,"MOD":4,"CO":12,"SS":[{"DT:123,"OFF":134,"GV":1,"DT":41,"SCK":43},{"SID":"W02","OFF":12,"GV":44,"DT":1,"SCK":43}]}
+	String replyStr = "#ALLINFO={";
+	replyStr += "\"ID\":";
+	replyStr += ID;
+	/*replyStr += ",\"NM\":\"";
+	replyStr += name;*/
+	replyStr += ",\"MIS\":";
+	replyStr += millis();
+	replyStr += ",\"MOD\":";
+	replyStr += modeNumber;
+	replyStr += ",\"CO\":";
+	replyStr += colorNum;
+	if (weightSensorsLenth > 0)
+	{
+		replyStr += ",\"SS\":[";
+		for (size_t i = 0; i < weightSensorsLenth; i++)
+		{
+			replyStr += "{\"DT\":";
+			replyStr += weightSensors[i].dt;
+			replyStr += ",\"SCK\":";
+			replyStr += weightSensors[i].sck;
+			replyStr += ",\"OFF\":";
+			replyStr += weightSensors[i].offset;
+			replyStr += ",\"GV\":";
+			replyStr += weightSensors[i].gapValue;
+			replyStr += ",\"RES\":";
+			replyStr += weightSensors[i].result;
+			//如果尚未遍历完所有Sensors
+			if (weightSensorsLenth - i > 1)
 			{
-				
-				charNum = Serial.read();
-				commStr += (char)charNum;
-			}
-			
-			if (commStr == "#TCPCONN")
-			{
-				Serial.println("#TCPDONE");
-				String rightmassage = "A:RIGHTCOMM=" + commStr;
-				Serial.println(rightmassage);
+				replyStr += ",";
 			}
 			else
 			{
-				String errmassage = "A:ERRORCOMM=" + commStr;
-				Serial.print(errmassage);
+				replyStr += "}]}";
 			}
 		}
 	}
-	delay(5);
+	else
+	{
+		replyStr += "}";
+	}
+	Serial.println(replyStr);
 }
 //记录并改变显示数值
 void changeNumber(int nummber) {
@@ -287,22 +351,36 @@ void changeNumber(int nummber) {
 	Serial.println(str);
 	modeNumber = nummber;
 	showNumber(modeNumber);
+	resetAllMetro();
+}
+//重置所有计时器
+void resetAllMetro() {
+	measureMetro.reset();
+	blink1000Metro.reset();
+	blink250Metro.reset();
+	listerenMetro.reset();
+	interval5Metro.reset();
 }
 //控制LED显示指定数字一定时间
 void showNumber(int number) {
 	digitalWrite(latchPin, LOW);
 	shiftOut(dataPin, clockPin, MSBFIRST, Tab[number]);
 	digitalWrite(latchPin, HIGH);
-	delay(80);
+	//delay(80);
 }
 //初始化所有传感器的数据
 void initSensors() {
 	weightSensorsLenth = 1;
 	weightSensors[0].sck = 41;
 	weightSensors[0].dt = 43;
-	
-}
 
+}
+void blinkModelZero() {
+	if (blink1000Metro.check()) {
+		blinkState = !blinkState;
+		digitalWrite(LED_BUILTIN, blinkState);
+	}
+}
 //}
 //红色按钮    0xff00|FD00FF
 //VOL +       0xfe01|FD807F
@@ -325,3 +403,4 @@ void initSensors() {
 //7           0xe718|FD18E7
 //8           0xe619|FD9867
 //9           0xe51a|FD58A7
+

@@ -6,9 +6,17 @@ using System.Threading.Tasks;
 
 namespace SMS_UWP.Helpers
 {
+    /// <summary>
+    ///与Arduino之间的指令及其处理工具 
+    ///▶ 每行指令数≤1。
+    ///▶ 含有指令的行必须以"#"开头，"\n"结尾。
+    ///▶ 指令格式固定为:# + 7个字符（数字或大小写字母或*）。 如：#Abc123*
+    ///▶ #为指令关键字，勿作他用。
+    /// </summary>
     public class H_CommandCode
     {
         /// <summary>
+        /// 接收指令
         ///▶ 每行指令数≤1。
         ///▶ 含有指令的行必须以"#"开头，"\n"结尾。
         ///▶ 指令格式固定为:# + 7个字符（数字或大小写字母或*）。 如：#Abc123*
@@ -35,6 +43,11 @@ namespace SMS_UWP.Helpers
             }
             return commCode;
         }
+        /// <summary>
+        /// RX指令转换为字符串
+        /// </summary>
+        /// <param name="rxCode">接收到的指令</param>
+        /// <returns></returns>
         public static string RXCCodeConvertToString(RXCommCode rxCode)
         {
             string result = null;
@@ -58,13 +71,16 @@ namespace SMS_UWP.Helpers
             switch (txCode)
             {
                 case TXCommCode.GetAllInfo:
-                    result = "#GETALLI";
+                    result = "#GETINFO";
                     break;
                 case TXCommCode.SetSensorsProp:
                     result = "#SETSENP";
                     break;
                 case TXCommCode.SetArduinoProp:
                     result = "#SETARDP";
+                    break;
+                case TXCommCode.TcpConn:
+                    result = "#TCPCONN";
                     break;
                 case TXCommCode.Error:
                     result = "#ERRORXX";
@@ -93,6 +109,7 @@ namespace SMS_UWP.Helpers
         /// </summary>
         public enum TXCommCode
         {
+            TcpConn,
             GetAllInfo,
             SetSensorsProp,
             SetArduinoProp,

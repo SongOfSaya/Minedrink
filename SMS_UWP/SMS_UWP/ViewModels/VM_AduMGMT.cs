@@ -29,31 +29,38 @@ namespace SMS_UWP.ViewModels
 
         private const string NarrowStateName = "NarrowState";
         private const string WideStateName = "WideState";
-
+        #region DataBind
         private VisualState _currentState;
 
         private Order _selected;
-        private int _testNum = 0;
         //Master中的当前选项
         public Order Selected
         {
             get { return _selected; }
             set { Set(ref _selected, value); }
         }
+        private S_ArduinoLink _selectedArduinoLink;
+
+        public S_ArduinoLink SelectedArduinoLink
+        {
+            get { return _selectedArduinoLink; }
+            set { Set(ref _selectedArduinoLink, value); }
+        }
+
         private bool _dialogIsOpen;
         public bool DialogIsOpen
         {
             get { return _dialogIsOpen; }
             set { Set(ref _dialogIsOpen, value); }
         }
-        private string _ipTextBox;
+        private string _ipTextBox = "192.168.2.109";
         //输入的IP地址
         public string IPTextBox
         {
             get { return _ipTextBox; }
             set { Set(ref _ipTextBox, value); }
         }
-        private string _portTextBox;
+        private string _portTextBox = "1000";
         //用户输入的端口号
         public string PortTextBox
         {
@@ -67,27 +74,54 @@ namespace SMS_UWP.ViewModels
             get { return _connectInfo; }
             set { Set(ref _connectInfo, value); }
         }
+        public ObservableCollection<Order> ArduinoItems { get; private set; } = new ObservableCollection<Order>();
+        public ObservableCollection<S_ArduinoLink> ArduinoLinkItems { get; private set; } = new ObservableCollection<S_ArduinoLink>();
+        #endregion
+        #region Command
+        //点击命令
         public ICommand ItemClickCommand { get; private set; }
-
+        //状态改变命令
         public ICommand StateChangedCommand { get; private set; }
         public ICommand AddAduBtnClickCommand { get; private set; }
         public ICommand DialogSubmitCommand { get; private set; }
-        public ICommand TestCommand { get; private set; }
+        //用于测试的命令
+        public ICommand DialogCancelCommand { get; private set; }
+        //用于测试的事件型命令
         public ICommand TestEvenCommand { get; private set; }
-        public ObservableCollection<Order> ArduinoItems { get; private set; } = new ObservableCollection<Order>();
+        #endregion
+        
 
         public VM_AduMGMT()
         {
             ItemClickCommand = new RelayCommand<ItemClickEventArgs>(OnItemClick);
             StateChangedCommand = new RelayCommand<VisualStateChangedEventArgs>(OnStateChanged);
             AddAduBtnClickCommand = new RelayCommand(OnAddBtnClick);
-            DialogSubmitCommand = new RelayCommand<M_AduHostName>(OnDialogSubmit);
-            TestCommand = new RelayCommand(OnTest);
+            DialogSubmitCommand = new RelayCommand<ContentDialogButtonClickEventArgs>(OnDialogSubmit);
+            DialogCancelCommand = new RelayCommand(OnDialogCancel);
             TestEvenCommand = new RelayCommand<ContentDialogButtonClickEventArgs>(OnTestEventCommandAsync);
+            Debug.WriteLine("Debug输出");
         }
-
-
-
+        /// <summary>
+        /// 异步加载Marster所需数据,以及初始化动态数据
+        /// </summary>
+        /// <param name="currentState"></param>
+        /// <returns></returns>
+        public void LoadArduinoLinks(VisualState currentState)
+        {
+            _currentState = currentState;
+            ArduinoLinkItems.Clear();
+            var data = S_SampleData.AllObservableArduinoLinks();
+            foreach (var item in data)
+            {
+                ArduinoLinkItems.Add(item);
+            }
+            SelectedArduinoLink = ArduinoLinkItems.First();
+        }
+        /// <summary>
+        /// 异步加载测试用数据,同时为currentState赋初值
+        /// </summary>
+        /// <param name="currentState"></param>
+        /// <returns></returns>
         public async Task LoadDataAsync(VisualState currentState)
         {
             _currentState = currentState;
@@ -104,9 +138,7 @@ namespace SMS_UWP.ViewModels
         private async void OnTestEventCommandAsync(ContentDialogButtonClickEventArgs obj)
         {
             Debug.WriteLine("成功拦截到事件;IP:" + IPTextBox + " Port:" + PortTextBox);
-
-            obj.Cancel = true;
-            //TODO:验证输入有效
+            //TODO:验证输入有效性
             ConnectInfo = "正在连接中...";
             S_ArduinoLink arduinoLink = new S_ArduinoLink();
 
@@ -120,19 +152,30 @@ namespace SMS_UWP.ViewModels
                 obj.Cancel = true;
                 ConnectInfo = "连接失败请重试";
             }
-
         }
-        private void OnTest()
+        private void OnDialogCancel()
         {
-            _testNum++;
-            Debug.WriteLine("TestCommand成功:" + _testNum);
+            
         }
-        private void OnDialogSubmit(M_AduHostName aduHostName)
+        private async void OnDialogSubmit(ContentDialogButtonClickEventArgs args)
         {
 
-            Debug.WriteLine("输出如下");
-            Debug.WriteLine(aduHostName.IP);
-            Debug.WriteLine(aduHostName.Port);
+            Debug.WriteLine("成功拦截到事件;IP:" + IPTextBox + " Port:" + PortTextBox);
+            //TODO:验证输入有效性
+            ConnectInfo = "正在连接中...";
+            S_ArduinoLink arduinoLink = new S_ArduinoLink();
+
+            bool isConnect = await arduinoLink.Connection(IPTextBox, PortTextBox);
+            if (isConnect)
+            {
+                ConnectInfo = "连接成功";
+                ArduinoLinkItems.Add(arduinoLink);
+            }
+            else
+            {
+                args.Cancel = true;
+                ConnectInfo = "连接失败请重试";
+            }
             // Ensure the user name and password fields aren't empty. If a required field
             // is empty, set args.Cancel = true to keep the dialog open.
             //if (string.IsNullOrEmpty(userNameTextBox.Text))

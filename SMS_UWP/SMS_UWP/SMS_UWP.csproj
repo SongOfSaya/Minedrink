@@ -12,12 +12,16 @@
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.15063.0</TargetPlatformVersion>
-    <TargetPlatformMinVersion>10.0.14393.0</TargetPlatformMinVersion>
+    <TargetPlatformMinVersion>10.0.15063.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
     <PackageCertificateKeyFile>SMS_UWP_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxPackageDir>C:\Users\liute\Desktop\</AppxPackageDir>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>x86|x64</AppxBundlePlatforms>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -93,7 +97,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
-      <Version>5.2.3</Version>
+      <Version>5.4.0</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.Xaml.Behaviors.Uwp.Managed">
       <Version>2.0.0</Version>
@@ -109,7 +113,7 @@
       <Version>10.0.2</Version>
     </PackageReference>
     <PackageReference Include="Telerik.UI.for.UniversalWindowsPlatform">
-      <Version>1.0.0.4</Version>
+      <Version>1.0.0.5</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
@@ -142,22 +146,22 @@
     <Compile Include="ViewModels\MediaPlayerViewModel.cs" />
     <Compile Include="ViewModels\SettingsViewModel.cs" />
     <Compile Include="ViewModels\ShellNavigationItem.cs" />
-    <Compile Include="ViewModels\ShellViewModel.cs" />
+    <Compile Include="ViewModels\VM_Shell.cs" />
     <Compile Include="ViewModels\TabbedViewModel.cs" />
-    <Compile Include="ViewModels\ViewModelLocator.cs" />
+    <Compile Include="ViewModels\VM_Locator.cs" />
     <Compile Include="ViewModels\WebViewViewModel.cs" />
     <Compile Include="Models\M_AduHostName.cs" />
     <Compile Include="Views\V_AddAduDialog_C.xaml.cs">
       <DependentUpon>V_AddAduDialog_C.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\ArduinoManageDetailControl.xaml.cs">
-      <DependentUpon>ArduinoManageDetailControl.xaml</DependentUpon>
+    <Compile Include="Views\V_AduMGMT_C.xaml.cs">
+      <DependentUpon>V_AduMGMT_C.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ArduinoManageDetailPage.xaml.cs">
       <DependentUpon>ArduinoManageDetailPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\V_AduMGMT_P.xaml.cs">
-      <DependentUpon>V_AduMGMT_P.xaml</DependentUpon>
+    <Compile Include="Views\V_AduMGMT.xaml.cs">
+      <DependentUpon>V_AduMGMT.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ChartPage.xaml.cs">
       <DependentUpon>ChartPage.xaml</DependentUpon>
@@ -177,8 +181,8 @@
     <Compile Include="Views\SettingsPage.xaml.cs">
       <DependentUpon>SettingsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\ShellPage.xaml.cs">
-      <DependentUpon>ShellPage.xaml</DependentUpon>
+    <Compile Include="Views\V_Shell.xaml.cs">
+      <DependentUpon>V_Shell.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\TabbedPage.xaml.cs">
       <DependentUpon>TabbedPage.xaml</DependentUpon>
@@ -218,7 +222,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\ArduinoManageDetailControl.xaml">
+    <Page Include="Views\V_AduMGMT_C.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -226,7 +230,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\V_AduMGMT_P.xaml">
+    <Page Include="Views\V_AduMGMT.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -254,7 +258,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\ShellPage.xaml">
+    <Page Include="Views\V_Shell.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -276,7 +280,6 @@
     <Compile Include="Helpers\ResourceExtensions.cs" />
     <Compile Include="Helpers\Singleton.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="Assets\map.png" />
     <Content Include="Properties\Default.rd.xml" />

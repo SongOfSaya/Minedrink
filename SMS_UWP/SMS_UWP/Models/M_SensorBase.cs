@@ -8,6 +8,6 @@ namespace SMS_UWP.Models
 {
     public class M_SensorBase
     {
-        public int ID { get; set; }
+        
     }
 }
