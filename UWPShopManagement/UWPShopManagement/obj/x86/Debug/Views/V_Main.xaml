@@ -18,12 +18,13 @@
             x:Name="TitlePage"
             x:Uid="Main_Title"
             Style="{StaticResource PageTitleStyle}" />
-
+        
         <Grid 
             Grid.Row="1" 
             Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
             <!--The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content. 
                 Place your content here.-->
+            <Button Content="中文测试"></Button>
         </Grid>
         <!--  Adaptive triggers  -->
         <VisualStateManager.VisualStateGroups>

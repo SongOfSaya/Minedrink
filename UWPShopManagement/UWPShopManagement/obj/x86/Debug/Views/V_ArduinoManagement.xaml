@@ -8,6 +8,7 @@
     xmlns:views="using:UWPShopManagement.Views"
     xmlns:ic="using:Microsoft.Xaml.Interactions.Core"
     xmlns:i="using:Microsoft.Xaml.Interactivity"
+    xmlns:s="using:UWPShopManagement.Services"
     mc:Ignorable="d">
     <Page.Transitions>
         <TransitionCollection>
@@ -15,7 +16,7 @@
         </TransitionCollection>
     </Page.Transitions>
     <Page.Resources>
-        <DataTemplate x:Key="MasterListViewItemTemplate"                         >
+        <DataTemplate x:Key="MasterListViewItemTemplate"                             >
             <Grid x:ConnectionId='2' Margin="{StaticResource MediumLeftTopRightBottomMargin}">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
@@ -23,12 +24,12 @@
                 </Grid.RowDefinitions>
 
                 <TextBlock x:ConnectionId='3' 
-                                            
+                                               
                     Style="{StaticResource ListTitleStyle}" />
 
                 <TextBlock x:ConnectionId='4'
                     Grid.Row="1"
-                                           
+                                                
                     Style="{StaticResource ListSubTitleStyle}" />
             </Grid>
         </DataTemplate>
@@ -61,19 +62,24 @@
             Grid.Column="0">
             <Grid.RowDefinitions>
                 <RowDefinition x:ConnectionId='13' x:Name="MasterRow" Height="48"/>
+                <RowDefinition x:ConnectionId='14' x:Name="MasterBtnRow" Height="48"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <TextBlock x:ConnectionId='14'
+            <TextBlock x:ConnectionId='15'
                 x:Name="Title"
                 x:Uid="MasterDetailPage_Title"
                 Style="{StaticResource PageTitleStyle}" />
-
+            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right"
+                        Background="Wheat">
+                <AppBarButton x:ConnectionId='18' Name="AddArduinoBtn" Content="中文不行么"  ></AppBarButton>
+                <AppBarButton x:ConnectionId='19' Name="RefreshAduBtn" Content="ABC" ></AppBarButton>
+            </StackPanel>
             <!--The SystemControlPageBackgroundChromeLowBrush background represents where you should place your master content.-->
-            <ListView x:ConnectionId='15'
+            <ListView x:ConnectionId='16'
                 x:Name="MasterListView"
-                Grid.Row="1"
-                                                                         
+                Grid.Row="2"
+                                                                              
                                                                        
                 ItemContainerTransitions="{x:Null}"
                 ItemTemplate="{StaticResource MasterListViewItemTemplate}"
@@ -81,7 +87,7 @@
                 Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
                 <i:Interaction.Behaviors>
                     <ic:EventTriggerBehavior EventName="ItemClick">
-                        <ic:InvokeCommandAction x:ConnectionId='16'                                               />
+                        <ic:InvokeCommandAction x:ConnectionId='17'                                               />
                     </ic:EventTriggerBehavior>
                 </i:Interaction.Behaviors>
                 <ListView.ItemContainerStyle>
@@ -106,13 +112,13 @@
 
         <!--  Adaptive triggers  -->
         <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:ConnectionId='17' x:Name="WindowStates">
+            <VisualStateGroup x:ConnectionId='20' x:Name="WindowStates">
                 <i:Interaction.Behaviors>
                     <ic:EventTriggerBehavior EventName="CurrentStateChanged">
-                        <ic:InvokeCommandAction x:ConnectionId='18'                                                 />
+                        <ic:InvokeCommandAction x:ConnectionId='21'                                                 />
                     </ic:EventTriggerBehavior>
                 </i:Interaction.Behaviors>
-                <VisualState x:ConnectionId='19' x:Name="WideState">
+                <VisualState x:ConnectionId='22' x:Name="WideState">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="640"/>
                     </VisualState.StateTriggers>
@@ -121,7 +127,7 @@
                         <Setter Target="MasterColumn.Width" Value="296" />
                     </VisualState.Setters>
                 </VisualState>
-                <VisualState x:ConnectionId='20' x:Name="NarrowState">
+                <VisualState x:ConnectionId='23' x:Name="NarrowState">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="0"/>
                     </VisualState.StateTriggers>

@@ -2596,7 +2596,7 @@
       },
       "UWPShopManagement/1.0.0": {
         "type": "project",
-        "framework": "UAP,Version=v10.0.10586",
+        "framework": "UAP,Version=v10.0.15063",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
           "Microsoft.Toolkit.Uwp.UI.Controls": "1.5.0",
@@ -5203,7 +5203,7 @@
       },
       "UWPShopManagement/1.0.0": {
         "type": "project",
-        "framework": "UAP,Version=v10.0.10586",
+        "framework": "UAP,Version=v10.0.15063",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
           "Microsoft.Toolkit.Uwp.UI.Controls": "1.5.0",
@@ -7846,7 +7846,7 @@
       },
       "UWPShopManagement/1.0.0": {
         "type": "project",
-        "framework": "UAP,Version=v10.0.10586",
+        "framework": "UAP,Version=v10.0.15063",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
           "Microsoft.Toolkit.Uwp.UI.Controls": "1.5.0",
@@ -10462,7 +10462,7 @@
       },
       "UWPShopManagement/1.0.0": {
         "type": "project",
-        "framework": "UAP,Version=v10.0.10586",
+        "framework": "UAP,Version=v10.0.15063",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
           "Microsoft.Toolkit.Uwp.UI.Controls": "1.5.0",
@@ -13114,7 +13114,7 @@
       },
       "UWPShopManagement/1.0.0": {
         "type": "project",
-        "framework": "UAP,Version=v10.0.10586",
+        "framework": "UAP,Version=v10.0.15063",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
           "Microsoft.Toolkit.Uwp.UI.Controls": "1.5.0",
@@ -15730,7 +15730,7 @@
       },
       "UWPShopManagement/1.0.0": {
         "type": "project",
-        "framework": "UAP,Version=v10.0.10586",
+        "framework": "UAP,Version=v10.0.15063",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
           "Microsoft.Toolkit.Uwp.UI.Controls": "1.5.0",
@@ -18382,7 +18382,7 @@
       },
       "UWPShopManagement/1.0.0": {
         "type": "project",
-        "framework": "UAP,Version=v10.0.10586",
+        "framework": "UAP,Version=v10.0.15063",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
           "Microsoft.Toolkit.Uwp.UI.Controls": "1.5.0",

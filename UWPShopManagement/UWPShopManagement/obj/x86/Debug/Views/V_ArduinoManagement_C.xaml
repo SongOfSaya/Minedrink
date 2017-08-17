@@ -15,7 +15,7 @@
 
         <TextBlock x:ConnectionId='2'
             x:Name="TitlePage"
-                                                               
+                                                            
             Style="{StaticResource PageTitleStyle}" />
 
         <ScrollViewer
@@ -30,15 +30,15 @@
                 <!--Replate this StackPanel with your detail content.-->
                 <StackPanel Orientation="Vertical" Margin="{StaticResource MediumLeftTopRightBottomMargin}">
                     <TextBlock Text="Order Date" Style="{StaticResource CaptionTextBlockStyle}" />
-                    <TextBlock x:ConnectionId='3'                                                       Style="{StaticResource BodyTextStyle}" />
+                    <TextBlock x:ConnectionId='3'                                                  Style="{StaticResource BodyTextStyle}" />
                     <TextBlock Text="Company" Style="{StaticResource CaptionTextBlockStyle}" />
-                    <TextBlock x:ConnectionId='4'                                                     Style="{StaticResource BodyTextStyle}" />
+                    <TextBlock x:ConnectionId='4'                                                Style="{StaticResource BodyTextStyle}" />
                     <TextBlock Text="Ship to" Style="{StaticResource CaptionTextBlockStyle}" />
-                    <TextBlock x:ConnectionId='5'                                                    Style="{StaticResource BodyTextStyle}" />
+                    <TextBlock x:ConnectionId='5'                                                  Style="{StaticResource BodyTextStyle}" />
                     <TextBlock Text="Order Total" Style="{StaticResource CaptionTextBlockStyle}" />
-                    <TextBlock x:ConnectionId='6'                                                        Style="{StaticResource BodyTextStyle}" />
+                    <TextBlock x:ConnectionId='6'                                                Style="{StaticResource BodyTextStyle}" />
                     <TextBlock Text="Status" Style="{StaticResource CaptionTextBlockStyle}" />
-                    <TextBlock x:ConnectionId='7'                                                    Style="{StaticResource BodyTextStyle}" />
+                    <TextBlock x:ConnectionId='7'                                                  Style="{StaticResource BodyTextStyle}" />
                 </StackPanel>
             </Grid>
         </ScrollViewer>

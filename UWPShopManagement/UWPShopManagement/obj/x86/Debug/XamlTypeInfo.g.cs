@@ -156,91 +156,97 @@ namespace UWPShopManagement.UWPShopManagement_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[41];
-            _typeNameTable[0] = "UWPShopManagement.Views.V_Main";
-            _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "UWPShopManagement.ViewModels.VM_Main";
-            _typeNameTable[4] = "UWPShopManagement.Helpers.Observable";
-            _typeNameTable[5] = "Object";
-            _typeNameTable[6] = "UWPShopManagement.Views.V_ArduinoManagement_C";
-            _typeNameTable[7] = "UWPShopManagement.Models.Order";
-            _typeNameTable[8] = "Microsoft.Xaml.Interactivity.Interaction";
-            _typeNameTable[9] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
-            _typeNameTable[10] = "Windows.UI.Xaml.DependencyObjectCollection";
-            _typeNameTable[11] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[12] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
-            _typeNameTable[13] = "Microsoft.Xaml.Interactivity.Trigger";
-            _typeNameTable[14] = "Microsoft.Xaml.Interactivity.Behavior";
-            _typeNameTable[15] = "Microsoft.Xaml.Interactivity.ActionCollection";
-            _typeNameTable[16] = "String";
-            _typeNameTable[17] = "Microsoft.Xaml.Interactions.Core.InvokeCommandAction";
-            _typeNameTable[18] = "System.Windows.Input.ICommand";
-            _typeNameTable[19] = "Windows.UI.Xaml.Data.IValueConverter";
-            _typeNameTable[20] = "UWPShopManagement.Views.MasterDetailDetailPage";
-            _typeNameTable[21] = "UWPShopManagement.ViewModels.MasterDetailDetailViewModel";
-            _typeNameTable[22] = "UWPShopManagement.Views.V_ArduinoManagement";
-            _typeNameTable[23] = "UWPShopManagement.ViewModels.VM_ArdinoManagement";
-            _typeNameTable[24] = "UWPShopManagement.Views.V_Setting";
-            _typeNameTable[25] = "UWPShopManagement.ViewModels.VM_Setting";
-            _typeNameTable[26] = "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu";
-            _typeNameTable[27] = "Windows.UI.Xaml.Controls.ContentControl";
-            _typeNameTable[28] = "Windows.UI.Xaml.Controls.SplitViewDisplayMode";
-            _typeNameTable[29] = "Boolean";
-            _typeNameTable[30] = "Windows.UI.Xaml.DataTemplate";
-            _typeNameTable[31] = "Windows.UI.Xaml.Media.Brush";
-            _typeNameTable[32] = "Windows.UI.Xaml.Controls.DataTemplateSelector";
-            _typeNameTable[33] = "Windows.UI.Xaml.Controls.ItemCollection";
-            _typeNameTable[34] = "Windows.UI.Xaml.Visibility";
-            _typeNameTable[35] = "Int32";
-            _typeNameTable[36] = "Double";
-            _typeNameTable[37] = "Windows.UI.Xaml.Thickness";
-            _typeNameTable[38] = "Windows.UI.Xaml.Controls.SplitViewPanePlacement";
-            _typeNameTable[39] = "UWPShopManagement.Views.V_Shell";
-            _typeNameTable[40] = "UWPShopManagement.ViewModels.VM_Shell";
+            _typeNameTable = new string[44];
+            _typeNameTable[0] = "Microsoft.Xaml.Interactivity.Interaction";
+            _typeNameTable[1] = "Object";
+            _typeNameTable[2] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
+            _typeNameTable[3] = "Windows.UI.Xaml.DependencyObjectCollection";
+            _typeNameTable[4] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[5] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
+            _typeNameTable[6] = "Microsoft.Xaml.Interactivity.Trigger";
+            _typeNameTable[7] = "Microsoft.Xaml.Interactivity.Behavior";
+            _typeNameTable[8] = "Microsoft.Xaml.Interactivity.ActionCollection";
+            _typeNameTable[9] = "String";
+            _typeNameTable[10] = "Microsoft.Xaml.Interactions.Core.InvokeCommandAction";
+            _typeNameTable[11] = "System.Windows.Input.ICommand";
+            _typeNameTable[12] = "Windows.UI.Xaml.Data.IValueConverter";
+            _typeNameTable[13] = "Microsoft.Xaml.Interactions.Core.CallMethodAction";
+            _typeNameTable[14] = "UWPShopManagement.Views.V_AddArduinoDialog";
+            _typeNameTable[15] = "Windows.UI.Xaml.Controls.ContentDialog";
+            _typeNameTable[16] = "Windows.UI.Xaml.Controls.ContentControl";
+            _typeNameTable[17] = "UWPShopManagement.ViewModels.VM_ArduinoManagement";
+            _typeNameTable[18] = "UWPShopManagement.Helpers.Observable";
+            _typeNameTable[19] = "UWPShopManagement.Views.V_Main";
+            _typeNameTable[20] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[21] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[22] = "UWPShopManagement.ViewModels.VM_Main";
+            _typeNameTable[23] = "UWPShopManagement.Views.V_ArduinoManagement_C";
+            _typeNameTable[24] = "UWPShopManagement.Services.S_ArduinoLink";
+            _typeNameTable[25] = "UWPShopManagement.Views.V_ArduinoManagement_S";
+            _typeNameTable[26] = "UWPShopManagement.ViewModels.VM_ArduinoManagement_S";
+            _typeNameTable[27] = "UWPShopManagement.Views.V_ArduinoManagement";
+            _typeNameTable[28] = "UWPShopManagement.Views.V_Setting";
+            _typeNameTable[29] = "UWPShopManagement.ViewModels.VM_Setting";
+            _typeNameTable[30] = "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu";
+            _typeNameTable[31] = "Windows.UI.Xaml.Controls.SplitViewDisplayMode";
+            _typeNameTable[32] = "Boolean";
+            _typeNameTable[33] = "Windows.UI.Xaml.DataTemplate";
+            _typeNameTable[34] = "Windows.UI.Xaml.Media.Brush";
+            _typeNameTable[35] = "Windows.UI.Xaml.Controls.DataTemplateSelector";
+            _typeNameTable[36] = "Windows.UI.Xaml.Controls.ItemCollection";
+            _typeNameTable[37] = "Windows.UI.Xaml.Visibility";
+            _typeNameTable[38] = "Int32";
+            _typeNameTable[39] = "Double";
+            _typeNameTable[40] = "Windows.UI.Xaml.Thickness";
+            _typeNameTable[41] = "Windows.UI.Xaml.Controls.SplitViewPanePlacement";
+            _typeNameTable[42] = "UWPShopManagement.Views.V_Shell";
+            _typeNameTable[43] = "UWPShopManagement.ViewModels.VM_Shell";
 
-            _typeTable = new global::System.Type[41];
-            _typeTable[0] = typeof(global::UWPShopManagement.Views.V_Main);
-            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::UWPShopManagement.ViewModels.VM_Main);
-            _typeTable[4] = typeof(global::UWPShopManagement.Helpers.Observable);
-            _typeTable[5] = typeof(global::System.Object);
-            _typeTable[6] = typeof(global::UWPShopManagement.Views.V_ArduinoManagement_C);
-            _typeTable[7] = typeof(global::UWPShopManagement.Models.Order);
-            _typeTable[8] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
-            _typeTable[9] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
-            _typeTable[10] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
-            _typeTable[11] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[12] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
-            _typeTable[13] = typeof(global::Microsoft.Xaml.Interactivity.Trigger);
-            _typeTable[14] = typeof(global::Microsoft.Xaml.Interactivity.Behavior);
-            _typeTable[15] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
-            _typeTable[16] = typeof(global::System.String);
-            _typeTable[17] = typeof(global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction);
-            _typeTable[18] = typeof(global::System.Windows.Input.ICommand);
-            _typeTable[19] = typeof(global::Windows.UI.Xaml.Data.IValueConverter);
-            _typeTable[20] = typeof(global::UWPShopManagement.Views.MasterDetailDetailPage);
-            _typeTable[21] = typeof(global::UWPShopManagement.ViewModels.MasterDetailDetailViewModel);
-            _typeTable[22] = typeof(global::UWPShopManagement.Views.V_ArduinoManagement);
-            _typeTable[23] = typeof(global::UWPShopManagement.ViewModels.VM_ArdinoManagement);
-            _typeTable[24] = typeof(global::UWPShopManagement.Views.V_Setting);
-            _typeTable[25] = typeof(global::UWPShopManagement.ViewModels.VM_Setting);
-            _typeTable[26] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu);
-            _typeTable[27] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
-            _typeTable[28] = typeof(global::Windows.UI.Xaml.Controls.SplitViewDisplayMode);
-            _typeTable[29] = typeof(global::System.Boolean);
-            _typeTable[30] = typeof(global::Windows.UI.Xaml.DataTemplate);
-            _typeTable[31] = typeof(global::Windows.UI.Xaml.Media.Brush);
-            _typeTable[32] = typeof(global::Windows.UI.Xaml.Controls.DataTemplateSelector);
-            _typeTable[33] = typeof(global::Windows.UI.Xaml.Controls.ItemCollection);
-            _typeTable[34] = typeof(global::Windows.UI.Xaml.Visibility);
-            _typeTable[35] = typeof(global::System.Int32);
-            _typeTable[36] = typeof(global::System.Double);
-            _typeTable[37] = typeof(global::Windows.UI.Xaml.Thickness);
-            _typeTable[38] = typeof(global::Windows.UI.Xaml.Controls.SplitViewPanePlacement);
-            _typeTable[39] = typeof(global::UWPShopManagement.Views.V_Shell);
-            _typeTable[40] = typeof(global::UWPShopManagement.ViewModels.VM_Shell);
+            _typeTable = new global::System.Type[44];
+            _typeTable[0] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
+            _typeTable[1] = typeof(global::System.Object);
+            _typeTable[2] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
+            _typeTable[3] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
+            _typeTable[4] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[5] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
+            _typeTable[6] = typeof(global::Microsoft.Xaml.Interactivity.Trigger);
+            _typeTable[7] = typeof(global::Microsoft.Xaml.Interactivity.Behavior);
+            _typeTable[8] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
+            _typeTable[9] = typeof(global::System.String);
+            _typeTable[10] = typeof(global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction);
+            _typeTable[11] = typeof(global::System.Windows.Input.ICommand);
+            _typeTable[12] = typeof(global::Windows.UI.Xaml.Data.IValueConverter);
+            _typeTable[13] = typeof(global::Microsoft.Xaml.Interactions.Core.CallMethodAction);
+            _typeTable[14] = typeof(global::UWPShopManagement.Views.V_AddArduinoDialog);
+            _typeTable[15] = typeof(global::Windows.UI.Xaml.Controls.ContentDialog);
+            _typeTable[16] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
+            _typeTable[17] = typeof(global::UWPShopManagement.ViewModels.VM_ArduinoManagement);
+            _typeTable[18] = typeof(global::UWPShopManagement.Helpers.Observable);
+            _typeTable[19] = typeof(global::UWPShopManagement.Views.V_Main);
+            _typeTable[20] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[21] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[22] = typeof(global::UWPShopManagement.ViewModels.VM_Main);
+            _typeTable[23] = typeof(global::UWPShopManagement.Views.V_ArduinoManagement_C);
+            _typeTable[24] = typeof(global::UWPShopManagement.Services.S_ArduinoLink);
+            _typeTable[25] = typeof(global::UWPShopManagement.Views.V_ArduinoManagement_S);
+            _typeTable[26] = typeof(global::UWPShopManagement.ViewModels.VM_ArduinoManagement_S);
+            _typeTable[27] = typeof(global::UWPShopManagement.Views.V_ArduinoManagement);
+            _typeTable[28] = typeof(global::UWPShopManagement.Views.V_Setting);
+            _typeTable[29] = typeof(global::UWPShopManagement.ViewModels.VM_Setting);
+            _typeTable[30] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu);
+            _typeTable[31] = typeof(global::Windows.UI.Xaml.Controls.SplitViewDisplayMode);
+            _typeTable[32] = typeof(global::System.Boolean);
+            _typeTable[33] = typeof(global::Windows.UI.Xaml.DataTemplate);
+            _typeTable[34] = typeof(global::Windows.UI.Xaml.Media.Brush);
+            _typeTable[35] = typeof(global::Windows.UI.Xaml.Controls.DataTemplateSelector);
+            _typeTable[36] = typeof(global::Windows.UI.Xaml.Controls.ItemCollection);
+            _typeTable[37] = typeof(global::Windows.UI.Xaml.Visibility);
+            _typeTable[38] = typeof(global::System.Int32);
+            _typeTable[39] = typeof(global::System.Double);
+            _typeTable[40] = typeof(global::Windows.UI.Xaml.Thickness);
+            _typeTable[41] = typeof(global::Windows.UI.Xaml.Controls.SplitViewPanePlacement);
+            _typeTable[42] = typeof(global::UWPShopManagement.Views.V_Shell);
+            _typeTable[43] = typeof(global::UWPShopManagement.ViewModels.VM_Shell);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -275,31 +281,33 @@ namespace UWPShopManagement.UWPShopManagement_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_V_Main() { return new global::UWPShopManagement.Views.V_Main(); }
-        private object Activate_3_VM_Main() { return new global::UWPShopManagement.ViewModels.VM_Main(); }
-        private object Activate_4_Observable() { return new global::UWPShopManagement.Helpers.Observable(); }
-        private object Activate_6_V_ArduinoManagement_C() { return new global::UWPShopManagement.Views.V_ArduinoManagement_C(); }
-        private object Activate_7_Order() { return new global::UWPShopManagement.Models.Order(); }
-        private object Activate_9_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
-        private object Activate_12_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
-        private object Activate_15_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
-        private object Activate_17_InvokeCommandAction() { return new global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction(); }
-        private object Activate_20_MasterDetailDetailPage() { return new global::UWPShopManagement.Views.MasterDetailDetailPage(); }
-        private object Activate_21_MasterDetailDetailViewModel() { return new global::UWPShopManagement.ViewModels.MasterDetailDetailViewModel(); }
-        private object Activate_22_V_ArduinoManagement() { return new global::UWPShopManagement.Views.V_ArduinoManagement(); }
-        private object Activate_23_VM_ArdinoManagement() { return new global::UWPShopManagement.ViewModels.VM_ArdinoManagement(); }
-        private object Activate_24_V_Setting() { return new global::UWPShopManagement.Views.V_Setting(); }
-        private object Activate_25_VM_Setting() { return new global::UWPShopManagement.ViewModels.VM_Setting(); }
-        private object Activate_26_HamburgerMenu() { return new global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu(); }
-        private object Activate_39_V_Shell() { return new global::UWPShopManagement.Views.V_Shell(); }
-        private object Activate_40_VM_Shell() { return new global::UWPShopManagement.ViewModels.VM_Shell(); }
-        private void VectorAdd_9_BehaviorCollection(object instance, object item)
+        private object Activate_2_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
+        private object Activate_5_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
+        private object Activate_8_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
+        private object Activate_10_InvokeCommandAction() { return new global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction(); }
+        private object Activate_13_CallMethodAction() { return new global::Microsoft.Xaml.Interactions.Core.CallMethodAction(); }
+        private object Activate_14_V_AddArduinoDialog() { return new global::UWPShopManagement.Views.V_AddArduinoDialog(); }
+        private object Activate_17_VM_ArduinoManagement() { return new global::UWPShopManagement.ViewModels.VM_ArduinoManagement(); }
+        private object Activate_18_Observable() { return new global::UWPShopManagement.Helpers.Observable(); }
+        private object Activate_19_V_Main() { return new global::UWPShopManagement.Views.V_Main(); }
+        private object Activate_22_VM_Main() { return new global::UWPShopManagement.ViewModels.VM_Main(); }
+        private object Activate_23_V_ArduinoManagement_C() { return new global::UWPShopManagement.Views.V_ArduinoManagement_C(); }
+        private object Activate_24_S_ArduinoLink() { return new global::UWPShopManagement.Services.S_ArduinoLink(); }
+        private object Activate_25_V_ArduinoManagement_S() { return new global::UWPShopManagement.Views.V_ArduinoManagement_S(); }
+        private object Activate_26_VM_ArduinoManagement_S() { return new global::UWPShopManagement.ViewModels.VM_ArduinoManagement_S(); }
+        private object Activate_27_V_ArduinoManagement() { return new global::UWPShopManagement.Views.V_ArduinoManagement(); }
+        private object Activate_28_V_Setting() { return new global::UWPShopManagement.Views.V_Setting(); }
+        private object Activate_29_VM_Setting() { return new global::UWPShopManagement.ViewModels.VM_Setting(); }
+        private object Activate_30_HamburgerMenu() { return new global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu(); }
+        private object Activate_42_V_Shell() { return new global::UWPShopManagement.Views.V_Shell(); }
+        private object Activate_43_VM_Shell() { return new global::UWPShopManagement.ViewModels.VM_Shell(); }
+        private void VectorAdd_2_BehaviorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_15_ActionCollection(object instance, object item)
+        private void VectorAdd_8_ActionCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
@@ -316,112 +324,67 @@ namespace UWPShopManagement.UWPShopManagement_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  UWPShopManagement.Views.V_Main
-                userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_V_Main;
-                userType.AddMemberName("ViewModel");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 1:   //  Windows.UI.Xaml.Controls.Page
-                xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 2:   //  Windows.UI.Xaml.Controls.UserControl
-                xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 3:   //  UWPShopManagement.ViewModels.VM_Main
-                userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("UWPShopManagement.Helpers.Observable"));
-                userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 4:   //  UWPShopManagement.Helpers.Observable
-                userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_4_Observable;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 5:   //  Object
-                xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 6:   //  UWPShopManagement.Views.V_ArduinoManagement_C
-                userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_6_V_ArduinoManagement_C;
-                userType.AddMemberName("MasterMenuItem");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 7:   //  UWPShopManagement.Models.Order
-                userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 8:   //  Microsoft.Xaml.Interactivity.Interaction
+            case 0:   //  Microsoft.Xaml.Interactivity.Interaction
                 userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("Behaviors");
                 xamlType = userType;
                 break;
 
-            case 9:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
+            case 1:   //  Object
+                xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 2:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
                 userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_9_BehaviorCollection;
+                userType.CollectionAdd = VectorAdd_2_BehaviorCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 10:   //  Windows.UI.Xaml.DependencyObjectCollection
+            case 3:   //  Windows.UI.Xaml.DependencyObjectCollection
                 xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 11:   //  Windows.UI.Xaml.DependencyObject
+            case 4:   //  Windows.UI.Xaml.DependencyObject
                 xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 12:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
+            case 5:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
                 userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Trigger"));
-                userType.Activator = Activate_12_EventTriggerBehavior;
+                userType.Activator = Activate_5_EventTriggerBehavior;
                 userType.SetContentPropertyName("Microsoft.Xaml.Interactivity.Trigger.Actions");
                 userType.AddMemberName("EventName");
                 userType.AddMemberName("SourceObject");
                 xamlType = userType;
                 break;
 
-            case 13:   //  Microsoft.Xaml.Interactivity.Trigger
+            case 6:   //  Microsoft.Xaml.Interactivity.Trigger
                 userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior"));
                 userType.SetContentPropertyName("Microsoft.Xaml.Interactivity.Trigger.Actions");
                 userType.AddMemberName("Actions");
                 xamlType = userType;
                 break;
 
-            case 14:   //  Microsoft.Xaml.Interactivity.Behavior
+            case 7:   //  Microsoft.Xaml.Interactivity.Behavior
                 userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.AddMemberName("AssociatedObject");
                 xamlType = userType;
                 break;
 
-            case 15:   //  Microsoft.Xaml.Interactivity.ActionCollection
+            case 8:   //  Microsoft.Xaml.Interactivity.ActionCollection
                 userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_15_ActionCollection;
+                userType.CollectionAdd = VectorAdd_8_ActionCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 16:   //  String
+            case 9:   //  String
                 xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 17:   //  Microsoft.Xaml.Interactions.Core.InvokeCommandAction
+            case 10:   //  Microsoft.Xaml.Interactions.Core.InvokeCommandAction
                 userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_17_InvokeCommandAction;
+                userType.Activator = Activate_10_InvokeCommandAction;
                 userType.AddMemberName("Command");
                 userType.AddMemberName("CommandParameter");
                 userType.AddMemberName("InputConverter");
@@ -430,64 +393,133 @@ namespace UWPShopManagement.UWPShopManagement_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 18:   //  System.Windows.Input.ICommand
+            case 11:   //  System.Windows.Input.ICommand
                 userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 19:   //  Windows.UI.Xaml.Data.IValueConverter
+            case 12:   //  Windows.UI.Xaml.Data.IValueConverter
                 xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 20:   //  UWPShopManagement.Views.MasterDetailDetailPage
-                userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_20_MasterDetailDetailPage;
+            case 13:   //  Microsoft.Xaml.Interactions.Core.CallMethodAction
+                userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_13_CallMethodAction;
+                userType.AddMemberName("MethodName");
+                userType.AddMemberName("TargetObject");
+                xamlType = userType;
+                break;
+
+            case 14:   //  UWPShopManagement.Views.V_AddArduinoDialog
+                userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ContentDialog"));
+                userType.Activator = Activate_14_V_AddArduinoDialog;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 21:   //  UWPShopManagement.ViewModels.MasterDetailDetailViewModel
+            case 15:   //  Windows.UI.Xaml.Controls.ContentDialog
+                xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 16:   //  Windows.UI.Xaml.Controls.ContentControl
+                xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 17:   //  UWPShopManagement.ViewModels.VM_ArduinoManagement
                 userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("UWPShopManagement.Helpers.Observable"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 22:   //  UWPShopManagement.Views.V_ArduinoManagement
+            case 18:   //  UWPShopManagement.Helpers.Observable
+                userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_18_Observable;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 19:   //  UWPShopManagement.Views.V_Main
                 userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_22_V_ArduinoManagement;
+                userType.Activator = Activate_19_V_Main;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 23:   //  UWPShopManagement.ViewModels.VM_ArdinoManagement
+            case 20:   //  Windows.UI.Xaml.Controls.Page
+                xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 21:   //  Windows.UI.Xaml.Controls.UserControl
+                xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 22:   //  UWPShopManagement.ViewModels.VM_Main
                 userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("UWPShopManagement.Helpers.Observable"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 24:   //  UWPShopManagement.Views.V_Setting
+            case 23:   //  UWPShopManagement.Views.V_ArduinoManagement_C
+                userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_23_V_ArduinoManagement_C;
+                userType.AddMemberName("MasterMenuItem");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 24:   //  UWPShopManagement.Services.S_ArduinoLink
+                userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 25:   //  UWPShopManagement.Views.V_ArduinoManagement_S
                 userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_24_V_Setting;
+                userType.Activator = Activate_25_V_ArduinoManagement_S;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 25:   //  UWPShopManagement.ViewModels.VM_Setting
+            case 26:   //  UWPShopManagement.ViewModels.VM_ArduinoManagement_S
                 userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("UWPShopManagement.Helpers.Observable"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 26:   //  Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu
+            case 27:   //  UWPShopManagement.Views.V_ArduinoManagement
+                userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_27_V_ArduinoManagement;
+                userType.AddMemberName("ViewModel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 28:   //  UWPShopManagement.Views.V_Setting
+                userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_28_V_Setting;
+                userType.AddMemberName("ViewModel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 29:   //  UWPShopManagement.ViewModels.VM_Setting
+                userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("UWPShopManagement.Helpers.Observable"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 30:   //  Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu
                 userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ContentControl"));
-                userType.Activator = Activate_26_HamburgerMenu;
+                userType.Activator = Activate_30_HamburgerMenu;
                 userType.AddMemberName("DisplayMode");
                 userType.AddMemberName("IsPaneOpen");
                 userType.AddMemberName("ItemTemplate");
@@ -516,63 +548,59 @@ namespace UWPShopManagement.UWPShopManagement_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 27:   //  Windows.UI.Xaml.Controls.ContentControl
+            case 31:   //  Windows.UI.Xaml.Controls.SplitViewDisplayMode
                 xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 28:   //  Windows.UI.Xaml.Controls.SplitViewDisplayMode
+            case 32:   //  Boolean
                 xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 29:   //  Boolean
+            case 33:   //  Windows.UI.Xaml.DataTemplate
                 xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 30:   //  Windows.UI.Xaml.DataTemplate
+            case 34:   //  Windows.UI.Xaml.Media.Brush
                 xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 31:   //  Windows.UI.Xaml.Media.Brush
+            case 35:   //  Windows.UI.Xaml.Controls.DataTemplateSelector
                 xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 32:   //  Windows.UI.Xaml.Controls.DataTemplateSelector
+            case 36:   //  Windows.UI.Xaml.Controls.ItemCollection
                 xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 33:   //  Windows.UI.Xaml.Controls.ItemCollection
+            case 37:   //  Windows.UI.Xaml.Visibility
                 xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 34:   //  Windows.UI.Xaml.Visibility
+            case 38:   //  Int32
                 xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 35:   //  Int32
+            case 39:   //  Double
                 xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 36:   //  Double
+            case 40:   //  Windows.UI.Xaml.Thickness
                 xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 37:   //  Windows.UI.Xaml.Thickness
+            case 41:   //  Windows.UI.Xaml.Controls.SplitViewPanePlacement
                 xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 38:   //  Windows.UI.Xaml.Controls.SplitViewPanePlacement
-                xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 39:   //  UWPShopManagement.Views.V_Shell
+            case 42:   //  UWPShopManagement.Views.V_Shell
                 userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_39_V_Shell;
+                userType.Activator = Activate_42_V_Shell;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 40:   //  UWPShopManagement.ViewModels.VM_Shell
+            case 43:   //  UWPShopManagement.ViewModels.VM_Shell
                 userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("UWPShopManagement.Helpers.Observable"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
@@ -637,365 +665,390 @@ namespace UWPShopManagement.UWPShopManagement_XamlTypeInfo
             return foundXamlType;
         }
 
-        private object get_0_V_Main_ViewModel(object instance)
-        {
-            var that = (global::UWPShopManagement.Views.V_Main)instance;
-            return that.ViewModel;
-        }
-        private object get_1_V_ArduinoManagement_C_MasterMenuItem(object instance)
-        {
-            var that = (global::UWPShopManagement.Views.V_ArduinoManagement_C)instance;
-            return that.MasterMenuItem;
-        }
-        private void set_1_V_ArduinoManagement_C_MasterMenuItem(object instance, object Value)
-        {
-            var that = (global::UWPShopManagement.Views.V_ArduinoManagement_C)instance;
-            that.MasterMenuItem = (global::UWPShopManagement.Models.Order)Value;
-        }
-        private object get_2_Interaction_Behaviors(object instance)
+        private object get_0_Interaction_Behaviors(object instance)
         {
             return global::Microsoft.Xaml.Interactivity.Interaction.GetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance);
         }
-        private void set_2_Interaction_Behaviors(object instance, object Value)
+        private void set_0_Interaction_Behaviors(object instance, object Value)
         {
             global::Microsoft.Xaml.Interactivity.Interaction.SetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance, (global::Microsoft.Xaml.Interactivity.BehaviorCollection)Value);
         }
-        private object get_3_Trigger_Actions(object instance)
+        private object get_1_Trigger_Actions(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactivity.Trigger)instance;
             return that.Actions;
         }
-        private object get_4_EventTriggerBehavior_EventName(object instance)
+        private object get_2_EventTriggerBehavior_EventName(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             return that.EventName;
         }
-        private void set_4_EventTriggerBehavior_EventName(object instance, object Value)
+        private void set_2_EventTriggerBehavior_EventName(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             that.EventName = (global::System.String)Value;
         }
-        private object get_5_EventTriggerBehavior_SourceObject(object instance)
+        private object get_3_EventTriggerBehavior_SourceObject(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             return that.SourceObject;
         }
-        private void set_5_EventTriggerBehavior_SourceObject(object instance, object Value)
+        private void set_3_EventTriggerBehavior_SourceObject(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             that.SourceObject = (global::System.Object)Value;
         }
-        private object get_6_Behavior_AssociatedObject(object instance)
+        private object get_4_Behavior_AssociatedObject(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactivity.Behavior)instance;
             return that.AssociatedObject;
         }
-        private object get_7_InvokeCommandAction_Command(object instance)
+        private object get_5_InvokeCommandAction_Command(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             return that.Command;
         }
-        private void set_7_InvokeCommandAction_Command(object instance, object Value)
+        private void set_5_InvokeCommandAction_Command(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             that.Command = (global::System.Windows.Input.ICommand)Value;
         }
-        private object get_8_InvokeCommandAction_CommandParameter(object instance)
+        private object get_6_InvokeCommandAction_CommandParameter(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             return that.CommandParameter;
         }
-        private void set_8_InvokeCommandAction_CommandParameter(object instance, object Value)
+        private void set_6_InvokeCommandAction_CommandParameter(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             that.CommandParameter = (global::System.Object)Value;
         }
-        private object get_9_InvokeCommandAction_InputConverter(object instance)
+        private object get_7_InvokeCommandAction_InputConverter(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             return that.InputConverter;
         }
-        private void set_9_InvokeCommandAction_InputConverter(object instance, object Value)
+        private void set_7_InvokeCommandAction_InputConverter(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             that.InputConverter = (global::Windows.UI.Xaml.Data.IValueConverter)Value;
         }
-        private object get_10_InvokeCommandAction_InputConverterParameter(object instance)
+        private object get_8_InvokeCommandAction_InputConverterParameter(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             return that.InputConverterParameter;
         }
-        private void set_10_InvokeCommandAction_InputConverterParameter(object instance, object Value)
+        private void set_8_InvokeCommandAction_InputConverterParameter(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             that.InputConverterParameter = (global::System.Object)Value;
         }
-        private object get_11_InvokeCommandAction_InputConverterLanguage(object instance)
+        private object get_9_InvokeCommandAction_InputConverterLanguage(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             return that.InputConverterLanguage;
         }
-        private void set_11_InvokeCommandAction_InputConverterLanguage(object instance, object Value)
+        private void set_9_InvokeCommandAction_InputConverterLanguage(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             that.InputConverterLanguage = (global::System.String)Value;
         }
-        private object get_12_MasterDetailDetailPage_ViewModel(object instance)
+        private object get_10_CallMethodAction_MethodName(object instance)
         {
-            var that = (global::UWPShopManagement.Views.MasterDetailDetailPage)instance;
+            var that = (global::Microsoft.Xaml.Interactions.Core.CallMethodAction)instance;
+            return that.MethodName;
+        }
+        private void set_10_CallMethodAction_MethodName(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.CallMethodAction)instance;
+            that.MethodName = (global::System.String)Value;
+        }
+        private object get_11_CallMethodAction_TargetObject(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.CallMethodAction)instance;
+            return that.TargetObject;
+        }
+        private void set_11_CallMethodAction_TargetObject(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.CallMethodAction)instance;
+            that.TargetObject = (global::System.Object)Value;
+        }
+        private object get_12_V_AddArduinoDialog_ViewModel(object instance)
+        {
+            var that = (global::UWPShopManagement.Views.V_AddArduinoDialog)instance;
             return that.ViewModel;
         }
-        private object get_13_V_ArduinoManagement_ViewModel(object instance)
+        private object get_13_V_Main_ViewModel(object instance)
+        {
+            var that = (global::UWPShopManagement.Views.V_Main)instance;
+            return that.ViewModel;
+        }
+        private object get_14_V_ArduinoManagement_C_MasterMenuItem(object instance)
+        {
+            var that = (global::UWPShopManagement.Views.V_ArduinoManagement_C)instance;
+            return that.MasterMenuItem;
+        }
+        private void set_14_V_ArduinoManagement_C_MasterMenuItem(object instance, object Value)
+        {
+            var that = (global::UWPShopManagement.Views.V_ArduinoManagement_C)instance;
+            that.MasterMenuItem = (global::UWPShopManagement.Services.S_ArduinoLink)Value;
+        }
+        private object get_15_V_ArduinoManagement_S_ViewModel(object instance)
+        {
+            var that = (global::UWPShopManagement.Views.V_ArduinoManagement_S)instance;
+            return that.ViewModel;
+        }
+        private object get_16_V_ArduinoManagement_ViewModel(object instance)
         {
             var that = (global::UWPShopManagement.Views.V_ArduinoManagement)instance;
             return that.ViewModel;
         }
-        private object get_14_V_Setting_ViewModel(object instance)
+        private object get_17_V_Setting_ViewModel(object instance)
         {
             var that = (global::UWPShopManagement.Views.V_Setting)instance;
             return that.ViewModel;
         }
-        private object get_15_HamburgerMenu_DisplayMode(object instance)
+        private object get_18_HamburgerMenu_DisplayMode(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.DisplayMode;
         }
-        private void set_15_HamburgerMenu_DisplayMode(object instance, object Value)
+        private void set_18_HamburgerMenu_DisplayMode(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.DisplayMode = (global::Windows.UI.Xaml.Controls.SplitViewDisplayMode)Value;
         }
-        private object get_16_HamburgerMenu_IsPaneOpen(object instance)
+        private object get_19_HamburgerMenu_IsPaneOpen(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.IsPaneOpen;
         }
-        private void set_16_HamburgerMenu_IsPaneOpen(object instance, object Value)
+        private void set_19_HamburgerMenu_IsPaneOpen(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.IsPaneOpen = (global::System.Boolean)Value;
         }
-        private object get_17_HamburgerMenu_ItemTemplate(object instance)
+        private object get_20_HamburgerMenu_ItemTemplate(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.ItemTemplate;
         }
-        private void set_17_HamburgerMenu_ItemTemplate(object instance, object Value)
+        private void set_20_HamburgerMenu_ItemTemplate(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.ItemTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_18_HamburgerMenu_ItemsSource(object instance)
+        private object get_21_HamburgerMenu_ItemsSource(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.ItemsSource;
         }
-        private void set_18_HamburgerMenu_ItemsSource(object instance, object Value)
+        private void set_21_HamburgerMenu_ItemsSource(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.ItemsSource = (global::System.Object)Value;
         }
-        private object get_19_HamburgerMenu_OptionsItemTemplate(object instance)
+        private object get_22_HamburgerMenu_OptionsItemTemplate(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.OptionsItemTemplate;
         }
-        private void set_19_HamburgerMenu_OptionsItemTemplate(object instance, object Value)
+        private void set_22_HamburgerMenu_OptionsItemTemplate(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.OptionsItemTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_20_HamburgerMenu_OptionsItemsSource(object instance)
+        private object get_23_HamburgerMenu_OptionsItemsSource(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.OptionsItemsSource;
         }
-        private void set_20_HamburgerMenu_OptionsItemsSource(object instance, object Value)
+        private void set_23_HamburgerMenu_OptionsItemsSource(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.OptionsItemsSource = (global::System.Object)Value;
         }
-        private object get_21_HamburgerMenu_PaneBackground(object instance)
+        private object get_24_HamburgerMenu_PaneBackground(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.PaneBackground;
         }
-        private void set_21_HamburgerMenu_PaneBackground(object instance, object Value)
+        private void set_24_HamburgerMenu_PaneBackground(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.PaneBackground = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_22_HamburgerMenu_PaneForeground(object instance)
+        private object get_25_HamburgerMenu_PaneForeground(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.PaneForeground;
         }
-        private void set_22_HamburgerMenu_PaneForeground(object instance, object Value)
+        private void set_25_HamburgerMenu_PaneForeground(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.PaneForeground = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_23_HamburgerMenu_OptionsItemTemplateSelector(object instance)
+        private object get_26_HamburgerMenu_OptionsItemTemplateSelector(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.OptionsItemTemplateSelector;
         }
-        private void set_23_HamburgerMenu_OptionsItemTemplateSelector(object instance, object Value)
+        private void set_26_HamburgerMenu_OptionsItemTemplateSelector(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.OptionsItemTemplateSelector = (global::Windows.UI.Xaml.Controls.DataTemplateSelector)Value;
         }
-        private object get_24_HamburgerMenu_OptionsItems(object instance)
+        private object get_27_HamburgerMenu_OptionsItems(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.OptionsItems;
         }
-        private object get_25_HamburgerMenu_OptionsVisibility(object instance)
+        private object get_28_HamburgerMenu_OptionsVisibility(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.OptionsVisibility;
         }
-        private void set_25_HamburgerMenu_OptionsVisibility(object instance, object Value)
+        private void set_28_HamburgerMenu_OptionsVisibility(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.OptionsVisibility = (global::Windows.UI.Xaml.Visibility)Value;
         }
-        private object get_26_HamburgerMenu_SelectedOptionsItem(object instance)
+        private object get_29_HamburgerMenu_SelectedOptionsItem(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.SelectedOptionsItem;
         }
-        private void set_26_HamburgerMenu_SelectedOptionsItem(object instance, object Value)
+        private void set_29_HamburgerMenu_SelectedOptionsItem(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.SelectedOptionsItem = (global::System.Object)Value;
         }
-        private object get_27_HamburgerMenu_SelectedOptionsIndex(object instance)
+        private object get_30_HamburgerMenu_SelectedOptionsIndex(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.SelectedOptionsIndex;
         }
-        private void set_27_HamburgerMenu_SelectedOptionsIndex(object instance, object Value)
+        private void set_30_HamburgerMenu_SelectedOptionsIndex(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.SelectedOptionsIndex = (global::System.Int32)Value;
         }
-        private object get_28_HamburgerMenu_HamburgerMenuTemplate(object instance)
+        private object get_31_HamburgerMenu_HamburgerMenuTemplate(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.HamburgerMenuTemplate;
         }
-        private void set_28_HamburgerMenu_HamburgerMenuTemplate(object instance, object Value)
+        private void set_31_HamburgerMenu_HamburgerMenuTemplate(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.HamburgerMenuTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_29_HamburgerMenu_HamburgerWidth(object instance)
+        private object get_32_HamburgerMenu_HamburgerWidth(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.HamburgerWidth;
         }
-        private void set_29_HamburgerMenu_HamburgerWidth(object instance, object Value)
+        private void set_32_HamburgerMenu_HamburgerWidth(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.HamburgerWidth = (global::System.Double)Value;
         }
-        private object get_30_HamburgerMenu_HamburgerHeight(object instance)
+        private object get_33_HamburgerMenu_HamburgerHeight(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.HamburgerHeight;
         }
-        private void set_30_HamburgerMenu_HamburgerHeight(object instance, object Value)
+        private void set_33_HamburgerMenu_HamburgerHeight(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.HamburgerHeight = (global::System.Double)Value;
         }
-        private object get_31_HamburgerMenu_HamburgerMargin(object instance)
+        private object get_34_HamburgerMenu_HamburgerMargin(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.HamburgerMargin;
         }
-        private void set_31_HamburgerMenu_HamburgerMargin(object instance, object Value)
+        private void set_34_HamburgerMenu_HamburgerMargin(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.HamburgerMargin = (global::Windows.UI.Xaml.Thickness)Value;
         }
-        private object get_32_HamburgerMenu_HamburgerVisibility(object instance)
+        private object get_35_HamburgerMenu_HamburgerVisibility(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.HamburgerVisibility;
         }
-        private void set_32_HamburgerMenu_HamburgerVisibility(object instance, object Value)
+        private void set_35_HamburgerMenu_HamburgerVisibility(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.HamburgerVisibility = (global::Windows.UI.Xaml.Visibility)Value;
         }
-        private object get_33_HamburgerMenu_OpenPaneLength(object instance)
+        private object get_36_HamburgerMenu_OpenPaneLength(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.OpenPaneLength;
         }
-        private void set_33_HamburgerMenu_OpenPaneLength(object instance, object Value)
+        private void set_36_HamburgerMenu_OpenPaneLength(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.OpenPaneLength = (global::System.Double)Value;
         }
-        private object get_34_HamburgerMenu_PanePlacement(object instance)
+        private object get_37_HamburgerMenu_PanePlacement(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.PanePlacement;
         }
-        private void set_34_HamburgerMenu_PanePlacement(object instance, object Value)
+        private void set_37_HamburgerMenu_PanePlacement(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.PanePlacement = (global::Windows.UI.Xaml.Controls.SplitViewPanePlacement)Value;
         }
-        private object get_35_HamburgerMenu_CompactPaneLength(object instance)
+        private object get_38_HamburgerMenu_CompactPaneLength(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.CompactPaneLength;
         }
-        private void set_35_HamburgerMenu_CompactPaneLength(object instance, object Value)
+        private void set_38_HamburgerMenu_CompactPaneLength(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.CompactPaneLength = (global::System.Double)Value;
         }
-        private object get_36_HamburgerMenu_ItemTemplateSelector(object instance)
+        private object get_39_HamburgerMenu_ItemTemplateSelector(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.ItemTemplateSelector;
         }
-        private void set_36_HamburgerMenu_ItemTemplateSelector(object instance, object Value)
+        private void set_39_HamburgerMenu_ItemTemplateSelector(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.ItemTemplateSelector = (global::Windows.UI.Xaml.Controls.DataTemplateSelector)Value;
         }
-        private object get_37_HamburgerMenu_Items(object instance)
+        private object get_40_HamburgerMenu_Items(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.Items;
         }
-        private object get_38_HamburgerMenu_SelectedItem(object instance)
+        private object get_41_HamburgerMenu_SelectedItem(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.SelectedItem;
         }
-        private void set_38_HamburgerMenu_SelectedItem(object instance, object Value)
+        private void set_41_HamburgerMenu_SelectedItem(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.SelectedItem = (global::System.Object)Value;
         }
-        private object get_39_HamburgerMenu_SelectedIndex(object instance)
+        private object get_42_HamburgerMenu_SelectedIndex(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.SelectedIndex;
         }
-        private void set_39_HamburgerMenu_SelectedIndex(object instance, object Value)
+        private void set_42_HamburgerMenu_SelectedIndex(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.SelectedIndex = (global::System.Int32)Value;
         }
-        private object get_40_V_Shell_ViewModel(object instance)
+        private object get_43_V_Shell_ViewModel(object instance)
         {
             var that = (global::UWPShopManagement.Views.V_Shell)instance;
             return that.ViewModel;
@@ -1008,284 +1061,304 @@ namespace UWPShopManagement.UWPShopManagement_XamlTypeInfo
 
             switch (longMemberName)
             {
-            case "UWPShopManagement.Views.V_Main.ViewModel":
-                userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("UWPShopManagement.Views.V_Main");
-                xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "ViewModel", "UWPShopManagement.ViewModels.VM_Main");
-                xamlMember.Getter = get_0_V_Main_ViewModel;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "UWPShopManagement.Views.V_ArduinoManagement_C.MasterMenuItem":
-                userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("UWPShopManagement.Views.V_ArduinoManagement_C");
-                xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "MasterMenuItem", "UWPShopManagement.Models.Order");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_1_V_ArduinoManagement_C_MasterMenuItem;
-                xamlMember.Setter = set_1_V_ArduinoManagement_C_MasterMenuItem;
-                break;
             case "Microsoft.Xaml.Interactivity.Interaction.Behaviors":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Interaction");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "Behaviors", "Microsoft.Xaml.Interactivity.BehaviorCollection");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_2_Interaction_Behaviors;
-                xamlMember.Setter = set_2_Interaction_Behaviors;
+                xamlMember.Getter = get_0_Interaction_Behaviors;
+                xamlMember.Setter = set_0_Interaction_Behaviors;
                 break;
             case "Microsoft.Xaml.Interactivity.Trigger.Actions":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Trigger");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "Actions", "Microsoft.Xaml.Interactivity.ActionCollection");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_3_Trigger_Actions;
+                xamlMember.Getter = get_1_Trigger_Actions;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.EventName":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "EventName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_4_EventTriggerBehavior_EventName;
-                xamlMember.Setter = set_4_EventTriggerBehavior_EventName;
+                xamlMember.Getter = get_2_EventTriggerBehavior_EventName;
+                xamlMember.Setter = set_2_EventTriggerBehavior_EventName;
                 break;
             case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.SourceObject":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "SourceObject", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_5_EventTriggerBehavior_SourceObject;
-                xamlMember.Setter = set_5_EventTriggerBehavior_SourceObject;
+                xamlMember.Getter = get_3_EventTriggerBehavior_SourceObject;
+                xamlMember.Setter = set_3_EventTriggerBehavior_SourceObject;
                 break;
             case "Microsoft.Xaml.Interactivity.Behavior.AssociatedObject":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
-                xamlMember.Getter = get_6_Behavior_AssociatedObject;
+                xamlMember.Getter = get_4_Behavior_AssociatedObject;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.Command":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "Command", "System.Windows.Input.ICommand");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_7_InvokeCommandAction_Command;
-                xamlMember.Setter = set_7_InvokeCommandAction_Command;
+                xamlMember.Getter = get_5_InvokeCommandAction_Command;
+                xamlMember.Setter = set_5_InvokeCommandAction_Command;
                 break;
             case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.CommandParameter":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "CommandParameter", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_8_InvokeCommandAction_CommandParameter;
-                xamlMember.Setter = set_8_InvokeCommandAction_CommandParameter;
+                xamlMember.Getter = get_6_InvokeCommandAction_CommandParameter;
+                xamlMember.Setter = set_6_InvokeCommandAction_CommandParameter;
                 break;
             case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.InputConverter":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "InputConverter", "Windows.UI.Xaml.Data.IValueConverter");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_9_InvokeCommandAction_InputConverter;
-                xamlMember.Setter = set_9_InvokeCommandAction_InputConverter;
+                xamlMember.Getter = get_7_InvokeCommandAction_InputConverter;
+                xamlMember.Setter = set_7_InvokeCommandAction_InputConverter;
                 break;
             case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.InputConverterParameter":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "InputConverterParameter", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_10_InvokeCommandAction_InputConverterParameter;
-                xamlMember.Setter = set_10_InvokeCommandAction_InputConverterParameter;
+                xamlMember.Getter = get_8_InvokeCommandAction_InputConverterParameter;
+                xamlMember.Setter = set_8_InvokeCommandAction_InputConverterParameter;
                 break;
             case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.InputConverterLanguage":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "InputConverterLanguage", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_11_InvokeCommandAction_InputConverterLanguage;
-                xamlMember.Setter = set_11_InvokeCommandAction_InputConverterLanguage;
+                xamlMember.Getter = get_9_InvokeCommandAction_InputConverterLanguage;
+                xamlMember.Setter = set_9_InvokeCommandAction_InputConverterLanguage;
                 break;
-            case "UWPShopManagement.Views.MasterDetailDetailPage.ViewModel":
-                userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("UWPShopManagement.Views.MasterDetailDetailPage");
-                xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "ViewModel", "UWPShopManagement.ViewModels.MasterDetailDetailViewModel");
-                xamlMember.Getter = get_12_MasterDetailDetailPage_ViewModel;
+            case "Microsoft.Xaml.Interactions.Core.CallMethodAction.MethodName":
+                userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.CallMethodAction");
+                xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "MethodName", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_10_CallMethodAction_MethodName;
+                xamlMember.Setter = set_10_CallMethodAction_MethodName;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.CallMethodAction.TargetObject":
+                userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.CallMethodAction");
+                xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "TargetObject", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_11_CallMethodAction_TargetObject;
+                xamlMember.Setter = set_11_CallMethodAction_TargetObject;
+                break;
+            case "UWPShopManagement.Views.V_AddArduinoDialog.ViewModel":
+                userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("UWPShopManagement.Views.V_AddArduinoDialog");
+                xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "ViewModel", "UWPShopManagement.ViewModels.VM_ArduinoManagement");
+                xamlMember.Getter = get_12_V_AddArduinoDialog_ViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "UWPShopManagement.Views.V_Main.ViewModel":
+                userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("UWPShopManagement.Views.V_Main");
+                xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "ViewModel", "UWPShopManagement.ViewModels.VM_Main");
+                xamlMember.Getter = get_13_V_Main_ViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "UWPShopManagement.Views.V_ArduinoManagement_C.MasterMenuItem":
+                userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("UWPShopManagement.Views.V_ArduinoManagement_C");
+                xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "MasterMenuItem", "UWPShopManagement.Services.S_ArduinoLink");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_14_V_ArduinoManagement_C_MasterMenuItem;
+                xamlMember.Setter = set_14_V_ArduinoManagement_C_MasterMenuItem;
+                break;
+            case "UWPShopManagement.Views.V_ArduinoManagement_S.ViewModel":
+                userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("UWPShopManagement.Views.V_ArduinoManagement_S");
+                xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "ViewModel", "UWPShopManagement.ViewModels.VM_ArduinoManagement_S");
+                xamlMember.Getter = get_15_V_ArduinoManagement_S_ViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "UWPShopManagement.Views.V_ArduinoManagement.ViewModel":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("UWPShopManagement.Views.V_ArduinoManagement");
-                xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "ViewModel", "UWPShopManagement.ViewModels.VM_ArdinoManagement");
-                xamlMember.Getter = get_13_V_ArduinoManagement_ViewModel;
+                xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "ViewModel", "UWPShopManagement.ViewModels.VM_ArduinoManagement");
+                xamlMember.Getter = get_16_V_ArduinoManagement_ViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "UWPShopManagement.Views.V_Setting.ViewModel":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("UWPShopManagement.Views.V_Setting");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "ViewModel", "UWPShopManagement.ViewModels.VM_Setting");
-                xamlMember.Getter = get_14_V_Setting_ViewModel;
+                xamlMember.Getter = get_17_V_Setting_ViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.DisplayMode":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "DisplayMode", "Windows.UI.Xaml.Controls.SplitViewDisplayMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_15_HamburgerMenu_DisplayMode;
-                xamlMember.Setter = set_15_HamburgerMenu_DisplayMode;
+                xamlMember.Getter = get_18_HamburgerMenu_DisplayMode;
+                xamlMember.Setter = set_18_HamburgerMenu_DisplayMode;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.IsPaneOpen":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "IsPaneOpen", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_16_HamburgerMenu_IsPaneOpen;
-                xamlMember.Setter = set_16_HamburgerMenu_IsPaneOpen;
+                xamlMember.Getter = get_19_HamburgerMenu_IsPaneOpen;
+                xamlMember.Setter = set_19_HamburgerMenu_IsPaneOpen;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.ItemTemplate":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "ItemTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_17_HamburgerMenu_ItemTemplate;
-                xamlMember.Setter = set_17_HamburgerMenu_ItemTemplate;
+                xamlMember.Getter = get_20_HamburgerMenu_ItemTemplate;
+                xamlMember.Setter = set_20_HamburgerMenu_ItemTemplate;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.ItemsSource":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "ItemsSource", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_18_HamburgerMenu_ItemsSource;
-                xamlMember.Setter = set_18_HamburgerMenu_ItemsSource;
+                xamlMember.Getter = get_21_HamburgerMenu_ItemsSource;
+                xamlMember.Setter = set_21_HamburgerMenu_ItemsSource;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.OptionsItemTemplate":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "OptionsItemTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_19_HamburgerMenu_OptionsItemTemplate;
-                xamlMember.Setter = set_19_HamburgerMenu_OptionsItemTemplate;
+                xamlMember.Getter = get_22_HamburgerMenu_OptionsItemTemplate;
+                xamlMember.Setter = set_22_HamburgerMenu_OptionsItemTemplate;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.OptionsItemsSource":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "OptionsItemsSource", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_20_HamburgerMenu_OptionsItemsSource;
-                xamlMember.Setter = set_20_HamburgerMenu_OptionsItemsSource;
+                xamlMember.Getter = get_23_HamburgerMenu_OptionsItemsSource;
+                xamlMember.Setter = set_23_HamburgerMenu_OptionsItemsSource;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.PaneBackground":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "PaneBackground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_21_HamburgerMenu_PaneBackground;
-                xamlMember.Setter = set_21_HamburgerMenu_PaneBackground;
+                xamlMember.Getter = get_24_HamburgerMenu_PaneBackground;
+                xamlMember.Setter = set_24_HamburgerMenu_PaneBackground;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.PaneForeground":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "PaneForeground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_22_HamburgerMenu_PaneForeground;
-                xamlMember.Setter = set_22_HamburgerMenu_PaneForeground;
+                xamlMember.Getter = get_25_HamburgerMenu_PaneForeground;
+                xamlMember.Setter = set_25_HamburgerMenu_PaneForeground;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.OptionsItemTemplateSelector":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "OptionsItemTemplateSelector", "Windows.UI.Xaml.Controls.DataTemplateSelector");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_23_HamburgerMenu_OptionsItemTemplateSelector;
-                xamlMember.Setter = set_23_HamburgerMenu_OptionsItemTemplateSelector;
+                xamlMember.Getter = get_26_HamburgerMenu_OptionsItemTemplateSelector;
+                xamlMember.Setter = set_26_HamburgerMenu_OptionsItemTemplateSelector;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.OptionsItems":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "OptionsItems", "Windows.UI.Xaml.Controls.ItemCollection");
-                xamlMember.Getter = get_24_HamburgerMenu_OptionsItems;
+                xamlMember.Getter = get_27_HamburgerMenu_OptionsItems;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.OptionsVisibility":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "OptionsVisibility", "Windows.UI.Xaml.Visibility");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_25_HamburgerMenu_OptionsVisibility;
-                xamlMember.Setter = set_25_HamburgerMenu_OptionsVisibility;
+                xamlMember.Getter = get_28_HamburgerMenu_OptionsVisibility;
+                xamlMember.Setter = set_28_HamburgerMenu_OptionsVisibility;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.SelectedOptionsItem":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "SelectedOptionsItem", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_26_HamburgerMenu_SelectedOptionsItem;
-                xamlMember.Setter = set_26_HamburgerMenu_SelectedOptionsItem;
+                xamlMember.Getter = get_29_HamburgerMenu_SelectedOptionsItem;
+                xamlMember.Setter = set_29_HamburgerMenu_SelectedOptionsItem;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.SelectedOptionsIndex":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "SelectedOptionsIndex", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_27_HamburgerMenu_SelectedOptionsIndex;
-                xamlMember.Setter = set_27_HamburgerMenu_SelectedOptionsIndex;
+                xamlMember.Getter = get_30_HamburgerMenu_SelectedOptionsIndex;
+                xamlMember.Setter = set_30_HamburgerMenu_SelectedOptionsIndex;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.HamburgerMenuTemplate":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "HamburgerMenuTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_28_HamburgerMenu_HamburgerMenuTemplate;
-                xamlMember.Setter = set_28_HamburgerMenu_HamburgerMenuTemplate;
+                xamlMember.Getter = get_31_HamburgerMenu_HamburgerMenuTemplate;
+                xamlMember.Setter = set_31_HamburgerMenu_HamburgerMenuTemplate;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.HamburgerWidth":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "HamburgerWidth", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_29_HamburgerMenu_HamburgerWidth;
-                xamlMember.Setter = set_29_HamburgerMenu_HamburgerWidth;
+                xamlMember.Getter = get_32_HamburgerMenu_HamburgerWidth;
+                xamlMember.Setter = set_32_HamburgerMenu_HamburgerWidth;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.HamburgerHeight":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "HamburgerHeight", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_30_HamburgerMenu_HamburgerHeight;
-                xamlMember.Setter = set_30_HamburgerMenu_HamburgerHeight;
+                xamlMember.Getter = get_33_HamburgerMenu_HamburgerHeight;
+                xamlMember.Setter = set_33_HamburgerMenu_HamburgerHeight;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.HamburgerMargin":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "HamburgerMargin", "Windows.UI.Xaml.Thickness");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_31_HamburgerMenu_HamburgerMargin;
-                xamlMember.Setter = set_31_HamburgerMenu_HamburgerMargin;
+                xamlMember.Getter = get_34_HamburgerMenu_HamburgerMargin;
+                xamlMember.Setter = set_34_HamburgerMenu_HamburgerMargin;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.HamburgerVisibility":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "HamburgerVisibility", "Windows.UI.Xaml.Visibility");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_32_HamburgerMenu_HamburgerVisibility;
-                xamlMember.Setter = set_32_HamburgerMenu_HamburgerVisibility;
+                xamlMember.Getter = get_35_HamburgerMenu_HamburgerVisibility;
+                xamlMember.Setter = set_35_HamburgerMenu_HamburgerVisibility;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.OpenPaneLength":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "OpenPaneLength", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_33_HamburgerMenu_OpenPaneLength;
-                xamlMember.Setter = set_33_HamburgerMenu_OpenPaneLength;
+                xamlMember.Getter = get_36_HamburgerMenu_OpenPaneLength;
+                xamlMember.Setter = set_36_HamburgerMenu_OpenPaneLength;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.PanePlacement":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "PanePlacement", "Windows.UI.Xaml.Controls.SplitViewPanePlacement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_34_HamburgerMenu_PanePlacement;
-                xamlMember.Setter = set_34_HamburgerMenu_PanePlacement;
+                xamlMember.Getter = get_37_HamburgerMenu_PanePlacement;
+                xamlMember.Setter = set_37_HamburgerMenu_PanePlacement;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.CompactPaneLength":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "CompactPaneLength", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_35_HamburgerMenu_CompactPaneLength;
-                xamlMember.Setter = set_35_HamburgerMenu_CompactPaneLength;
+                xamlMember.Getter = get_38_HamburgerMenu_CompactPaneLength;
+                xamlMember.Setter = set_38_HamburgerMenu_CompactPaneLength;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.ItemTemplateSelector":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "ItemTemplateSelector", "Windows.UI.Xaml.Controls.DataTemplateSelector");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_36_HamburgerMenu_ItemTemplateSelector;
-                xamlMember.Setter = set_36_HamburgerMenu_ItemTemplateSelector;
+                xamlMember.Getter = get_39_HamburgerMenu_ItemTemplateSelector;
+                xamlMember.Setter = set_39_HamburgerMenu_ItemTemplateSelector;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.Items":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "Items", "Windows.UI.Xaml.Controls.ItemCollection");
-                xamlMember.Getter = get_37_HamburgerMenu_Items;
+                xamlMember.Getter = get_40_HamburgerMenu_Items;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.SelectedItem":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "SelectedItem", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_38_HamburgerMenu_SelectedItem;
-                xamlMember.Setter = set_38_HamburgerMenu_SelectedItem;
+                xamlMember.Getter = get_41_HamburgerMenu_SelectedItem;
+                xamlMember.Setter = set_41_HamburgerMenu_SelectedItem;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.SelectedIndex":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "SelectedIndex", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_39_HamburgerMenu_SelectedIndex;
-                xamlMember.Setter = set_39_HamburgerMenu_SelectedIndex;
+                xamlMember.Getter = get_42_HamburgerMenu_SelectedIndex;
+                xamlMember.Setter = set_42_HamburgerMenu_SelectedIndex;
                 break;
             case "UWPShopManagement.Views.V_Shell.ViewModel":
                 userType = (global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType)GetXamlTypeByName("UWPShopManagement.Views.V_Shell");
                 xamlMember = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlMember(this, "ViewModel", "UWPShopManagement.ViewModels.VM_Shell");
-                xamlMember.Getter = get_40_V_Shell_ViewModel;
+                xamlMember.Getter = get_43_V_Shell_ViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             }
@@ -1339,6 +1412,7 @@ namespace UWPShopManagement.UWPShopManagement_XamlTypeInfo
     internal delegate object Activator();
     internal delegate void AddToCollection(object instance, object item);
     internal delegate void AddToDictionary(object instance, object key, object item);
+    internal delegate object CreateFromStringMethod(string args);
 
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1423,12 +1497,16 @@ namespace UWPShopManagement.UWPShopManagement_XamlTypeInfo
 
         override public void RunInitializer() 
         {
-            System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(UnderlyingType.TypeHandle);
+            global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(UnderlyingType.TypeHandle);
         }
 
         override public object CreateFromString(string input)
         {
-            if (_enumValues != null)
+            if (CreateFromStringMethod != null)
+            {
+                return this.CreateFromStringMethod(input);
+            }
+            else if (_enumValues != null)
             {
                 int value = 0;
 
@@ -1483,6 +1561,7 @@ namespace UWPShopManagement.UWPShopManagement_XamlTypeInfo
         public Activator Activator { get; set; }
         public AddToCollection CollectionAdd { get; set; }
         public AddToDictionary DictionaryAdd { get; set; }
+        public CreateFromStringMethod CreateFromStringMethod {get; set; }
 
         public void SetContentPropertyName(string contentPropertyName)
         {

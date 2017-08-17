@@ -1,4 +1,5 @@
 using UWPShopManagement.Models;
+using UWPShopManagement.Services;
 using UWPShopManagement.ViewModels;
 
 using Windows.UI.Xaml.Controls;
@@ -6,10 +7,10 @@ using Windows.UI.Xaml.Navigation;
 
 namespace UWPShopManagement.Views
 {
-    public sealed partial class MasterDetailDetailPage : Page
+    public sealed partial class V_ArduinoManagement_S : Page
     {
-        public MasterDetailDetailViewModel ViewModel { get; } = new MasterDetailDetailViewModel();
-        public MasterDetailDetailPage()
+        public VM_ArduinoManagement_S ViewModel { get; } = new VM_ArduinoManagement_S();
+        public V_ArduinoManagement_S()
         {
             InitializeComponent();
         }
@@ -17,7 +18,7 @@ namespace UWPShopManagement.Views
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            ViewModel.Item = e.Parameter as Order;
+            ViewModel.Item = e.Parameter as S_ArduinoLink;
         }
     }
 }

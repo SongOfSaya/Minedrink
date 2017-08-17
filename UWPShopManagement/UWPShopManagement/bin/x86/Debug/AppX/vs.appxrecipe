@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>3E1FDA31DFA455F249BB28E057291D1F2688A343BF776D4FEE6903A902E71A75</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>266EA2C9F1F7445C0D03B954146E80B9C017A108F1B093322E6BA661EACAE109</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>97C4C030-6C7E-4C1C-AF98-AD85160E914E_1.0.0.0_x86__0h33tvaeqxmgp</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>97C4C030-6C7E-4C1C-AF98-AD85160E914E_0h33tvaeqxmgp!App</RegisteredUserModeAppID>
     <RegisteredPackageID>97C4C030-6C7E-4C1C-AF98-AD85160E914E</RegisteredPackageID>
@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-17T16:58:09.198</Modified>
+      <Modified>2017-08-17T23:37:43.327</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\UWPShopManagement.exe">
       <PackagePath>entrypoint\UWPShopManagement.exe</PackagePath>
-      <Modified>2017-08-17T16:58:08.315</Modified>
+      <Modified>2017-08-17T23:37:42.236</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.CSharp\4.3.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -599,7 +599,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\UWPShopManagement.xr.xml">
       <PackagePath>UWPShopManagement.xr.xml</PackagePath>
-      <Modified>2017-08-17T16:56:34.621</Modified>
+      <Modified>2017-08-17T23:37:41.797</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -704,11 +704,11 @@
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-17T16:58:08.745</Modified>
+      <Modified>2017-08-17T23:37:42.797</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\Core\UWPShopManagement.exe">
       <PackagePath>UWPShopManagement.exe</PackagePath>
-      <Modified>2017-08-17T16:58:09.187</Modified>
+      <Modified>2017-08-17T23:37:43.318</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Windows.Input;
 
 using UWPShopManagement.Helpers;
@@ -9,21 +9,21 @@ using Windows.UI.Xaml;
 
 namespace UWPShopManagement.ViewModels
 {
-    public class MasterDetailDetailViewModel : Observable
+    public class VM_ArduinoManagement_S : Observable
     {
         const string NarrowStateName = "NarrowState";
         const string WideStateName = "WideState";
 
         public ICommand StateChangedCommand { get; private set; }
 
-        private Order _item;
-        public Order Item
+        private S_ArduinoLink _item;
+        public S_ArduinoLink Item
         {
             get { return _item; }
             set { Set(ref _item, value); }
         }
 
-        public MasterDetailDetailViewModel()
+        public VM_ArduinoManagement_S()
         {
             StateChangedCommand = new RelayCommand<VisualStateChangedEventArgs>(OnStateChanged);
         }

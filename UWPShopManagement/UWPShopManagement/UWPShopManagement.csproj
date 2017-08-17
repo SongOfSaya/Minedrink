@@ -9,10 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>UWPShopManagement</RootNamespace>
     <AssemblyName>UWPShopManagement</AssemblyName>
-    <DefaultLanguage>en-US</DefaultLanguage>
+    <DefaultLanguage>zh-cn</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.15063.0</TargetPlatformVersion>
-    <TargetPlatformMinVersion>10.0.10586.0</TargetPlatformMinVersion>
+    <TargetPlatformMinVersion>10.0.15063.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -111,30 +111,40 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activation\ActivationHandler.cs" />
-    <Compile Include="Helpers\Json.cs" />
+    <Compile Include="Helpers\H_CommandCode.cs" />
+    <Compile Include="Helpers\H_Json.cs" />
     <Compile Include="Helpers\Observable.cs" />
     <Compile Include="Helpers\RelayCommand.cs" />
     <Compile Include="Helpers\SettingsStorageExtensions.cs" />
+    <Compile Include="Models\M_AduHostName.cs" />
+    <Compile Include="Models\M_ArduinoMarkA.cs" />
+    <Compile Include="Models\M_SensorBase.cs" />
+    <Compile Include="Models\M_WeightSensor.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Services\ActivationService.cs" />
     <Compile Include="Activation\DefaultLaunchActivationHandler.cs" />
     <Compile Include="Services\NavigationService.cs" />
     <Compile Include="Services\SampleDataService.cs" />
+    <Compile Include="Services\S_ArduinoLink.cs" />
+    <Compile Include="Services\S_SampleData.cs" />
     <Compile Include="Services\ThemeSelectorService.cs" />
     <Compile Include="ViewModels\VM_Main.cs" />
-    <Compile Include="ViewModels\MasterDetailDetailViewModel.cs" />
-    <Compile Include="ViewModels\VM_ArdinoManagement.cs" />
+    <Compile Include="ViewModels\VM_ArduinoManagement_S.cs" />
+    <Compile Include="ViewModels\VM_ArduinoManagement.cs" />
     <Compile Include="ViewModels\VM_Setting.cs" />
     <Compile Include="ViewModels\ShellNavigationItem.cs" />
     <Compile Include="ViewModels\VM_Shell.cs" />
+    <Compile Include="Views\V_AddArduinoDialog.xaml.cs">
+      <DependentUpon>V_AddArduinoDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\V_Main.xaml.cs">
       <DependentUpon>V_Main.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\V_ArduinoManagement_C.xaml.cs">
       <DependentUpon>V_ArduinoManagement_C.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\MasterDetailDetailPage.xaml.cs">
-      <DependentUpon>MasterDetailDetailPage.xaml</DependentUpon>
+    <Compile Include="Views\V_ArduinoManagement_S.xaml.cs">
+      <DependentUpon>V_ArduinoManagement_S.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\V_ArduinoManagement.xaml.cs">
       <DependentUpon>V_ArduinoManagement.xaml</DependentUpon>
@@ -173,6 +183,10 @@
       <Generator>MSBuild:Compile</Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Page>
+    <Page Include="Views\V_AddArduinoDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\V_Main.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -181,7 +195,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\MasterDetailDetailPage.xaml">
+    <Page Include="Views\V_ArduinoManagement_S.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
