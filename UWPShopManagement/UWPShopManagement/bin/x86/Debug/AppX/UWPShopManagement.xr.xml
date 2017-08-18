@@ -167,6 +167,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
       <RootProperty Name="Name" />
       <RootProperty Name="Content" />
+      <RootProperty Name="Command" />
     </RootType>
     <RootType FullName="UWPShopManagement.Views.V_ArduinoManagement" />
     <RootType FullName="Windows.UI.Xaml.Controls.HyperlinkButton">

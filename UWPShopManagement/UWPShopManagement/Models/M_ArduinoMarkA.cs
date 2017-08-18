@@ -22,9 +22,9 @@ namespace UWPShopManagement.Models
         public int Mode { get; set; }
         public int MarkColor { get; set; }
         public bool IsConnect { get; set; }
-        public DateTime OrderDate { get; set; }
         public StreamWriter OutStream { get; set; }
         public StreamReader InStream { get; set; }
-        public ObservableCollection<M_WeightSensor> SensorColeection { get; set; }
+        public ObservableCollection<M_WeightSensor> SensorCollection { get; set; }
     }
+    
 }

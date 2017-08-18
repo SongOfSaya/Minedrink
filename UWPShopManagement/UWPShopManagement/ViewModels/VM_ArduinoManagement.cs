@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -57,33 +58,59 @@ namespace UWPShopManagement.ViewModels
         public ICommand ItemClickCommand { get; private set; }
         public ICommand StateChangedCommand { get; private set; }
         public ICommand AddAduBtnCommand { get; private set; }
+        public ICommand RefreshBtnCommand { get; private set; }
 
-        public ObservableCollection<Order> ArduinoItems { get; private set; } = new ObservableCollection<Order>();
         public ObservableCollection<S_ArduinoLink> ArduinoLinkItems { get; private set; } = new ObservableCollection<S_ArduinoLink>();
         #endregion
         public VM_ArduinoManagement()
         {
             ItemClickCommand = new RelayCommand<ItemClickEventArgs>(OnItemClick);
             StateChangedCommand = new RelayCommand<VisualStateChangedEventArgs>(OnStateChanged);
-            AddAduBtnCommand = new RelayCommand(OnAddArduino);
-            DialogCancelCommand = new RelayCommand(OnAddDialogConcel);
-            DialogSubmitCommand = new RelayCommand(OnAddDialogSubmit);
+            AddAduBtnCommand = new RelayCommand(OnAddArduinoAsync);
+            DialogCancelCommand = new RelayCommand(OnAddDialogCancel);
+            DialogSubmitCommand = new RelayCommand<ContentDialogButtonClickEventArgs>(OnAddDialogSubmit);
+            RefreshBtnCommand = new RelayCommand(OnRefreshBtnCommand);
         }
 
-        private void OnAddDialogSubmit()
+        private async void OnRefreshBtnCommand()
         {
-            throw new NotImplementedException();
+            await Task.CompletedTask;
+            ArduinoLinkItems.Add(new S_ArduinoLink() { ID = 119 });
+#if DEBUG
+            Debug.WriteLine("当前ArduinoLink数量:" + ArduinoLinkItems.Count);
+#endif
         }
 
-        private void OnAddDialogConcel()
+        private async void OnAddDialogSubmit(ContentDialogButtonClickEventArgs args)
         {
-            throw new NotImplementedException();
+            Debug.WriteLine("成功拦截到事件;IP:" + IPTextBox + " Port:" + PortTextBox);
+            //TODO:验证输入有效性
+            ConnectInfo = "正在连接中...";
+            S_ArduinoLink arduinoLink = new S_ArduinoLink();
+            bool isConnect = await arduinoLink.Connection(IPTextBox, PortTextBox);
+            if (isConnect)
+            {
+                ConnectInfo = "连接成功";
+                ArduinoLinkItems.Add(arduinoLink);
+#if DEBUG
+                Debug.WriteLine("添加成功");
+#endif
+            }
+            else
+            {
+                args.Cancel = true;
+                ConnectInfo = "连接失败请重试";
+            }
         }
 
-        private void OnAddArduino()
+        private void OnAddDialogCancel()
+        {
+        }
+
+        private async void OnAddArduinoAsync()
         {
             V_AddArduinoDialog dialog = new V_AddArduinoDialog();
-            //ContentDialogResult result = await dialog.ShowAsync();
+            ContentDialogResult result = await dialog.ShowAsync();
         }
 
         public void LoadDataAsync(VisualState currentState)

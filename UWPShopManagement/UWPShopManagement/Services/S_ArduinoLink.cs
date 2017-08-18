@@ -10,6 +10,7 @@ using UWPShopManagement.Helpers;
 using Windows.System.Threading;
 using Windows.Data.Json;
 using static UWPShopManagement.Helpers.H_CommandCode;
+using System.Collections.ObjectModel;
 
 namespace UWPShopManagement.Services
 {
@@ -28,7 +29,10 @@ namespace UWPShopManagement.Services
         }
         public S_ArduinoLink()
         {
-            Arduino = new M_ArduinoMarkA();
+            Arduino = new M_ArduinoMarkA
+            {
+                SensorCollection = new ObservableCollection<M_WeightSensor>()
+            };
         }
         public S_ArduinoLink(M_ArduinoMarkA arduinoMarkA)
         {
@@ -56,7 +60,9 @@ namespace UWPShopManagement.Services
                 //启动监听程序
                 Update(reader);
                 CheckIsConnect();
-
+#if DEBUG
+                Debug.WriteLine("TCP成功建立");
+#endif
             }
             catch
             {
@@ -129,6 +135,12 @@ namespace UWPShopManagement.Services
                 throw new NullReferenceException("错误调用");
             }
         }
+        public async void SendCommand(TXCommCode commCode)
+        {
+            string outStr = TXCCodeConverToString(commCode);
+            SendCommand(outStr);
+            await Task.CompletedTask;
+        }
 
         /// <summary>
         /// 监听来自Arduino的信息
@@ -173,14 +185,14 @@ namespace UWPShopManagement.Services
 
         private void RespondTcpDone()
         {
-            throw new NotImplementedException();
+            SendCommand(TXCommCode.GetAllInfo);
         }
         /// <summary>
         /// 响应指令:AllInfo
         /// 无\格式:{"ID":1001,"NM":"名称","MIS":1234567,"MOD":4,"CO":12,"SS":[{"DT:123,"OFF":134,"GV":1,"DT":41,"SCK":43},{"SID":"W02","OFF":12,"GV":44,"DT":1,"SCK":43}]}
         /// </summary>
         /// <param name="detail"></param>
-        private void RespondAllInfo(string detail)
+        public void RespondAllInfo(string detail)
         {
             var rootObject = JsonObject.Parse(detail);
             Arduino.ID = (int)(rootObject[H_Json.ID].GetNumber());
@@ -190,7 +202,16 @@ namespace UWPShopManagement.Services
             var sensors = rootObject[H_Json.SenSors].GetArray();
             foreach (var item in sensors)
             {
-                //Arduino.SensorColeection.Add(new M_WeightSensor{ PIN_DT = item.GET});
+                JsonObject sensorObject = item.GetObject();
+                Arduino.SensorCollection.Add(new M_WeightSensor
+                {
+                    PIN_DT = (int)sensorObject[H_Json.DT].GetNumber(),
+                    PIN_SCK = (int)sensorObject[H_Json.SCK].GetNumber(),
+                    OffSet = (float)sensorObject[H_Json.Offset].GetNumber(),
+                    GapValue = (float)sensorObject[H_Json.GapValue].GetNumber(),
+                    Result = (float)sensorObject[H_Json.Result].GetNumber()
+                });
+
             }
 
             Debug.WriteLine(rootObject["ID"]);

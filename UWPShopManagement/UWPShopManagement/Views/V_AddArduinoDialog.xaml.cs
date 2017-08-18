@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using UWPShopManagement.Helpers;
 using UWPShopManagement.ViewModels;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -23,7 +24,7 @@ namespace UWPShopManagement.Views
     /// </summary>
     public sealed partial class V_AddArduinoDialog : ContentDialog
     {
-        public VM_ArduinoManagement ViewModel { get; } = new VM_ArduinoManagement();
+        public VM_ArduinoManagement ViewModel { get; } = Singleton<VM_ArduinoManagement>.Instance;
         public V_AddArduinoDialog()
         {
             this.InitializeComponent();

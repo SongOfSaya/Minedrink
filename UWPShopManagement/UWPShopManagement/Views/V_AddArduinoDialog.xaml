@@ -33,6 +33,6 @@
         <TextBox Name="ArduinoPortTextBox" Header="端口" Text="{x:Bind ViewModel.PortTextBox, Mode=TwoWay}" PlaceholderText="请输入目标端口号"/>
         <CheckBox Name="ArduinoSaveCheckBox" Content="保存此次配置信息" IsChecked="True" />
 
-        <TextBlock x:Name="AddInfo" Text="{x:Bind ViewModel.ConnectInfo, Mode=TwoWay}"/>
+        <TextBlock x:Name="AddInfo" Text="{x:Bind ViewModel.ConnectInfo, Mode=OneWay}"/>
     </StackPanel>
 </ContentDialog>

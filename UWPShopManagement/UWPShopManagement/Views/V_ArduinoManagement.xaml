@@ -72,8 +72,8 @@
                 Style="{StaticResource PageTitleStyle}" />
             <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right"
                         Background="Wheat">
-                <AppBarButton Name="AddArduinoBtn" Content="中文不行么"  ></AppBarButton>
-                <AppBarButton Name="RefreshAduBtn" Content="ABC" ></AppBarButton>
+                <AppBarButton Name="AddArduinoBtn" Content="新增" Command="{x:Bind ViewModel.AddAduBtnCommand}"></AppBarButton>
+                <AppBarButton Name="RefreshAduBtn" Content="刷新" Command="{x:Bind ViewModel.RefreshBtnCommand}"></AppBarButton>
             </StackPanel>
             <!--The SystemControlPageBackgroundChromeLowBrush background represents where you should place your master content.-->
             <ListView

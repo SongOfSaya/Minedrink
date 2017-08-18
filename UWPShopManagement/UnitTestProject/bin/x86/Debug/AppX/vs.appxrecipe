@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UnitTestProject\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>29EE9AD0B60D7614BC053A50DFFFEE78FFEEC589EE21FB7683F8A87463D7BCA7</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>452E8DB91855A82B4A061E2E54938B416D033A9D9A59F4438AEEAC434BF0BBD2</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>41d6b388-ccfc-4add-aa13-20e1229bff11_1.0.0.0_x86__0h33tvaeqxmgp</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>41d6b388-ccfc-4add-aa13-20e1229bff11_0h33tvaeqxmgp!vstest.executionengine.universal.App</RegisteredUserModeAppID>
     <RegisteredPackageID>41d6b388-ccfc-4add-aa13-20e1229bff11</RegisteredPackageID>
@@ -31,17 +31,17 @@
     <AppXManifest Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UnitTestProject\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-17T14:37:15.179</Modified>
+      <Modified>2017-08-18T09:33:55.659</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UnitTestProject\bin\x86\Debug\UnitTestProject.exe">
       <PackagePath>entrypoint\UnitTestProject.exe</PackagePath>
-      <Modified>2017-08-17T14:37:11.631</Modified>
+      <Modified>2017-08-18T09:33:54.549</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\UWPShopManagement.exe">
       <PackagePath>UWPShopManagement.exe</PackagePath>
-      <Modified>2017-08-17T14:37:07.905</Modified>
+      <Modified>2017-08-18T09:33:51.228</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\TestPlatform.Universal\15.0\References\CommonConfiguration\neutral\Microsoft.VisualStudio.TestPlatform.TestExecutor.Core.dll">
       <PackagePath>Microsoft.VisualStudio.TestPlatform.TestExecutor.Core.dll</PackagePath>
@@ -613,53 +613,53 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UnitTestProject\Properties\UnitTestApp.rd.xml">
       <PackagePath>Properties\UnitTestApp.rd.xml</PackagePath>
-      <Modified>2017-08-17T14:35:11.352</Modified>
+      <Modified>2017-08-17T16:52:33.673</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2017-08-17T14:33:18.749</Modified>
+      <Modified>2017-08-17T16:52:32.418</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UnitTestProject\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2017-08-16T17:28:56.075</Modified>
+      <Modified>2017-08-17T16:52:33.655</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UnitTestProject\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-16T17:28:56.075</Modified>
+      <Modified>2017-08-17T16:52:33.657</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UnitTestProject\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-16T17:28:56.075</Modified>
+      <Modified>2017-08-17T16:52:33.658</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UnitTestProject\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-16T17:28:56.075</Modified>
+      <Modified>2017-08-17T16:52:33.659</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UnitTestProject\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-16T17:28:56.075</Modified>
+      <Modified>2017-08-17T16:52:33.661</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UnitTestProject\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-16T17:28:56.075</Modified>
+      <Modified>2017-08-17T16:52:33.662</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UnitTestProject\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-16T17:28:56.075</Modified>
+      <Modified>2017-08-17T16:52:33.663</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UnitTestProject\bin\x86\Debug\UnitTestProject.xr.xml">
       <PackagePath>UnitTestProject.xr.xml</PackagePath>
-      <Modified>2017-08-17T14:37:11.478</Modified>
+      <Modified>2017-08-17T16:52:34.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\UWPShopManagement.xr.xml">
       <PackagePath>UWPShopManagement.xr.xml</PackagePath>
-      <Modified>2017-08-17T14:36:13.187</Modified>
+      <Modified>2017-08-18T07:09:03.806</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -764,11 +764,11 @@
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UnitTestProject\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-17T14:37:13.107</Modified>
+      <Modified>2017-08-18T09:33:55.158</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UnitTestProject\bin\x86\Debug\Core\UnitTestProject.exe">
       <PackagePath>UnitTestProject.exe</PackagePath>
-      <Modified>2017-08-17T14:37:15.169</Modified>
+      <Modified>2017-08-18T09:33:55.652</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
