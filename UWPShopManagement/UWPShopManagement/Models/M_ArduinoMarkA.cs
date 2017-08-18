@@ -21,9 +21,8 @@ namespace UWPShopManagement.Models
         public string Port { get; set; }
         public int Mode { get; set; }
         public int MarkColor { get; set; }
+        //此Arduino是否在线
         public bool IsConnect { get; set; }
-        public StreamWriter OutStream { get; set; }
-        public StreamReader InStream { get; set; }
         public ObservableCollection<M_WeightSensor> SensorCollection { get; set; }
     }
     

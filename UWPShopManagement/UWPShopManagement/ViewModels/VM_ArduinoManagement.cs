@@ -21,7 +21,7 @@ namespace UWPShopManagement.ViewModels
         const string WideStateName = "WideState";
 
         private VisualState _currentState;
-
+        private ContentDialog _addArduinoDialog;
 
 
         private S_ArduinoLink _selected;
@@ -70,35 +70,49 @@ namespace UWPShopManagement.ViewModels
             DialogCancelCommand = new RelayCommand(OnAddDialogCancel);
             DialogSubmitCommand = new RelayCommand<ContentDialogButtonClickEventArgs>(OnAddDialogSubmit);
             RefreshBtnCommand = new RelayCommand(OnRefreshBtnCommand);
+            //this.PropertyChanged += VM_ArduinoManagement_PropertyChanged;
         }
+
+      
 
         private async void OnRefreshBtnCommand()
         {
             await Task.CompletedTask;
-            ArduinoLinkItems.Add(new S_ArduinoLink() { ID = 119 });
+            Selected.Arduino.ID++;
 #if DEBUG
-            Debug.WriteLine("当前ArduinoLink数量:" + ArduinoLinkItems.Count);
+            Debug.WriteLine("当前ID:" + Selected.Arduino.ID);
 #endif
         }
 
         private async void OnAddDialogSubmit(ContentDialogButtonClickEventArgs args)
         {
             Debug.WriteLine("成功拦截到事件;IP:" + IPTextBox + " Port:" + PortTextBox);
+            args.Cancel = true;
             //TODO:验证输入有效性
+            if (ArduinoLinkItems.Any(p => p.Arduino.IP == IPTextBox))
+            {
+                ConnectInfo = "已存在使用此IP地址的Arduino";
+                return;
+            }
+            
             ConnectInfo = "正在连接中...";
             S_ArduinoLink arduinoLink = new S_ArduinoLink();
             bool isConnect = await arduinoLink.Connection(IPTextBox, PortTextBox);
             if (isConnect)
             {
-                ConnectInfo = "连接成功";
+                ConnectInfo = "连接成功，正在初始化...";
+                
+                await Task.Delay(1000);
+                _addArduinoDialog.Hide();
+                arduinoLink.Arduino.IsConnect = true;
                 ArduinoLinkItems.Add(arduinoLink);
 #if DEBUG
                 Debug.WriteLine("添加成功");
 #endif
+                
             }
             else
             {
-                args.Cancel = true;
                 ConnectInfo = "连接失败请重试";
             }
         }
@@ -106,11 +120,13 @@ namespace UWPShopManagement.ViewModels
         private void OnAddDialogCancel()
         {
         }
-
+        /// <summary>
+        /// 点击新增按钮,出现新增Arduous对话框
+        /// </summary>
         private async void OnAddArduinoAsync()
         {
-            V_AddArduinoDialog dialog = new V_AddArduinoDialog();
-            ContentDialogResult result = await dialog.ShowAsync();
+            _addArduinoDialog = new V_AddArduinoDialog();
+            ContentDialogResult result = await _addArduinoDialog.ShowAsync();
         }
 
         public void LoadDataAsync(VisualState currentState)

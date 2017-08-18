@@ -16,6 +16,9 @@ namespace UWPShopManagement.Services
 {
     public class S_ArduinoLink
     {
+        #region Properties
+
+        
         public M_ArduinoMarkA Arduino { get; private set; }
         public int ID
         {
@@ -38,6 +41,11 @@ namespace UWPShopManagement.Services
         {
             Arduino = arduinoMarkA;
         }
+        //输出流
+        public StreamWriter OutStream { get; private set; }
+        //输入流
+        public StreamReader InStream { get; private set; }
+        #endregion
         /// <summary>
         /// 和远程Arduino的TCPServer建立连接
         /// </summary>
@@ -53,34 +61,35 @@ namespace UWPShopManagement.Services
                 await clientSocket.ConnectAsync(serverHost, port);
 
                 Stream streamOut = clientSocket.OutputStream.AsStreamForWrite();
-                StreamWriter write = new StreamWriter(streamOut);
+                OutStream = new StreamWriter(streamOut);
 
                 Stream streamIn = clientSocket.InputStream.AsStreamForRead();
-                StreamReader reader = new StreamReader(streamIn);
+                InStream = new StreamReader(streamIn);
                 //启动监听程序
-                Update(reader);
+                Arduino.IP = ip;
+                Arduino.Port = port;
+                
+                Update();
                 CheckIsConnect();
-#if DEBUG
-                Debug.WriteLine("TCP成功建立");
-#endif
+                
+                SendCommand(TXCommCode.GetAllInfo);
+                return true;
             }
             catch
             {
                 return false;
             }
-            Arduino.IP = ip;
-            Arduino.Port = port;
-            return true;
+            
         }
         /// <summary>
         /// 检查链接是否有效
         /// </summary>
         public async void CheckIsConnect()
         {
-            if (Arduino.OutStream != null)
+            if (OutStream != null)
             {
-                await Arduino.OutStream.WriteLineAsync(TXCCodeConverToString(TXCommCode.TcpConn));
-                await Arduino.OutStream.FlushAsync();
+                await OutStream.WriteLineAsync(TXCCodeConverToString(TXCommCode.TcpConn));
+                await OutStream.FlushAsync();
             }
             else
             {
@@ -93,7 +102,7 @@ namespace UWPShopManagement.Services
         /// <param name="times">执行次数</param>
         public void CheckIsConnect(int times)
         {
-            if (Arduino.OutStream != null)
+            if (OutStream != null)
             {
                 int interval = 50;
                 //创建自动发信器
@@ -101,8 +110,8 @@ namespace UWPShopManagement.Services
                 ThreadPoolTimer periodcTimer = null;
                 periodcTimer = ThreadPoolTimer.CreatePeriodicTimer(async (source) =>
                 {
-                    await Arduino.OutStream.WriteLineAsync(TXCCodeConverToString(TXCommCode.TcpConn));
-                    await Arduino.OutStream.FlushAsync();
+                    await OutStream.WriteLineAsync(TXCCodeConverToString(TXCommCode.TcpConn));
+                    await OutStream.FlushAsync();
                     if (period.TotalMilliseconds > (interval * times))
                     {
                         periodcTimer.Cancel();
@@ -125,10 +134,10 @@ namespace UWPShopManagement.Services
         /// <param name="outStr">发送的字符串</param>
         public async void SendCommand(string outStr)
         {
-            if (outStr != null && Arduino.OutStream != null)
+            if (outStr != null && OutStream != null)
             {
-                await Arduino.OutStream.WriteLineAsync(outStr);
-                await Arduino.OutStream.FlushAsync();
+                await OutStream.WriteLineAsync(outStr);
+                await OutStream.FlushAsync();
             }
             else
             {
@@ -145,13 +154,11 @@ namespace UWPShopManagement.Services
         /// <summary>
         /// 监听来自Arduino的信息
         /// </summary>
-        /// <param name="sw"></param>
-        /// <param name="sr"></param>
-        private async void Update(StreamReader sr)
+        private async void Update()
         {
             while (true)
             {
-                string str = await sr.ReadLineAsync();
+                string str = await InStream.ReadLineAsync();
                 if (str.StartsWith("#"))
                 {
                     string command = str.Substring(0, 8);

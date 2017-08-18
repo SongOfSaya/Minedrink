@@ -5,6 +5,7 @@ using System.Diagnostics;
 using UWPShopManagement.Helpers;
 using UWPShopManagement.Services;
 using System.Threading.Tasks;
+using Windows.System.Threading;
 
 namespace UnitTest.Services
 {
@@ -20,7 +21,7 @@ namespace UnitTest.Services
             Debug.WriteLine(jo);
             var actual = (int)jo[H_Json.ID].GetNumber();
             Assert.AreEqual(1001, actual);
-            
+
         }
         [TestMethod]
         public void RespondAllInfoTest()
@@ -39,7 +40,15 @@ namespace UnitTest.Services
         {
             S_ArduinoLink arduinoLink = new S_ArduinoLink();
             bool except = await arduinoLink.Connection("192.168.2.109", "1000");
-            Assert.AreEqual(except, true,"连接是否成功");
+            Assert.AreEqual(except, true, "连接是否成功");
+            await Task.Delay(1000);
+            Assert.AreEqual(1001, arduinoLink.Arduino.ID);
+            //TimeSpan delay = TimeSpan.FromSeconds(1);
+            //ThreadPoolTimer delayTimer = ThreadPoolTimer.CreateTimer((source) =>
+            //{
+            //    Assert.AreEqual(1002, arduinoLink.Arduino.ID);
+            //    Assert.AreEqual(2, 1);
+            //}, delay);
         }
     }
 }

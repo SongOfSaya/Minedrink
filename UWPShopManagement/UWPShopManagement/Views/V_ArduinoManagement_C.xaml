@@ -26,20 +26,40 @@
 
             <!--The SystemControlPageBackgroundChromeLowBrush background represents where you should place your detail content.-->
             <Grid Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
-            
-                <!--Replate this StackPanel with your detail content.-->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="64" />
+                    <RowDefinition Height="64"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
                 <StackPanel Orientation="Vertical" Margin="{StaticResource MediumLeftTopRightBottomMargin}">
                     <TextBlock Text="ID" Style="{StaticResource CaptionTextBlockStyle}" />
                     <TextBlock Text="{x:Bind MasterMenuItem.Arduino.ID, Mode=OneWay}" Style="{StaticResource BodyTextStyle}" />
-                    <TextBlock Text="Mills" Style="{StaticResource CaptionTextBlockStyle}" />
-                    <TextBlock Text="{x:Bind MasterMenuItem.Arduino.Mills, Mode=OneWay}" Style="{StaticResource BodyTextStyle}" />
-                    <TextBlock Text="Mode" Style="{StaticResource CaptionTextBlockStyle}" />
+                </StackPanel>
+                <StackPanel Grid.Column="1" Orientation="Vertical" Margin="{StaticResource MediumLeftTopRightBottomMargin}">
+                    <TextBlock Text="运行模式" Style="{StaticResource CaptionTextBlockStyle}" />
                     <TextBlock Text="{x:Bind MasterMenuItem.Arduino.Mode, Mode=OneWay}" Style="{StaticResource BodyTextStyle}" />
-                    <TextBlock Text="MarkColor" Style="{StaticResource CaptionTextBlockStyle}" />
-                    <TextBlock Text="{x:Bind MasterMenuItem.Arduino.MarkColor, Mode=OneWay}" Style="{StaticResource BodyTextStyle}" />
-                    <TextBlock Text="IsConnect" Style="{StaticResource CaptionTextBlockStyle}" />
+                </StackPanel>
+                <StackPanel Grid.Column="2" Orientation="Vertical" Margin="{StaticResource MediumLeftTopRightBottomMargin}">
+                    <TextBlock Text="已运行时间" Style="{StaticResource CaptionTextBlockStyle}" />
+                    <TextBlock Text="{x:Bind MasterMenuItem.Arduino.Mills, Mode=OneWay}" Style="{StaticResource BodyTextStyle}" />
+                </StackPanel>
+                <StackPanel Grid.Row="1" Orientation="Vertical" Margin="{StaticResource MediumLeftTopRightBottomMargin}">
+                    <TextBlock Text="是否在线" Style="{StaticResource CaptionTextBlockStyle}" />
                     <TextBlock Text="{x:Bind MasterMenuItem.Arduino.IsConnect, Mode=OneWay}" Style="{StaticResource BodyTextStyle}" />
                 </StackPanel>
+                <!--Replate this StackPanel with your detail content.-->
+                <!--<StackPanel Orientation="Vertical" Margin="{StaticResource MediumLeftTopRightBottomMargin}">
+                   
+                    
+                    <TextBlock Text="MarkColor" Style="{StaticResource CaptionTextBlockStyle}" />
+                    <TextBlock Text="{x:Bind MasterMenuItem.Arduino.MarkColor, Mode=OneWay}" Style="{StaticResource BodyTextStyle}" />
+                    
+                </StackPanel>-->
             </Grid>
         </ScrollViewer>
         <!--  Adaptive triggers  -->
