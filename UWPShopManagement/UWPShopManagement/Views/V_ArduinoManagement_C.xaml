@@ -1,73 +1,110 @@
-﻿<UserControl
-    x:Class="UWPShopManagement.Views.V_ArduinoManagement_C"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    d:DesignHeight="300"
-    d:DesignWidth="400">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="48"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-
-        <TextBlock
-            x:Name="TitlePage"
-            Text="{x:Bind MasterMenuItem.Name, Mode=OneWay}"
-            Style="{StaticResource PageTitleStyle}" />
-
-        <ScrollViewer
-            Grid.Row="1"
-            ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-            ScrollViewer.VerticalScrollBarVisibility="Auto"
-            ScrollViewer.VerticalScrollMode="Auto">
-
-            <!--The SystemControlPageBackgroundChromeLowBrush background represents where you should place your detail content.-->
-            <Grid Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="64" />
-                    <RowDefinition Height="64"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
+﻿<UserControl x:Class="UWPShopManagement.Views.V_ArduinoManagement_C"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:m="using:UWPShopManagement.Models"
+             mc:Ignorable="d"
+             d:DesignHeight="300"
+             d:DesignWidth="400">
+    <UserControl.Resources>
+        <DataTemplate x:Key="MasterListViewItemTemplate"
+                      x:DataType="m:M_WeightSensor">
+            <Grid Margin="{StaticResource MediumLeftTopRightBottomMargin}">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <StackPanel Orientation="Vertical" Margin="{StaticResource MediumLeftTopRightBottomMargin}">
-                    <TextBlock Text="ID" Style="{StaticResource CaptionTextBlockStyle}" />
-                    <TextBlock Text="{x:Bind MasterMenuItem.Arduino.ID, Mode=OneWay}" Style="{StaticResource BodyTextStyle}" />
-                </StackPanel>
-                <StackPanel Grid.Column="1" Orientation="Vertical" Margin="{StaticResource MediumLeftTopRightBottomMargin}">
-                    <TextBlock Text="运行模式" Style="{StaticResource CaptionTextBlockStyle}" />
-                    <TextBlock Text="{x:Bind MasterMenuItem.Arduino.Mode, Mode=OneWay}" Style="{StaticResource BodyTextStyle}" />
-                </StackPanel>
-                <StackPanel Grid.Column="2" Orientation="Vertical" Margin="{StaticResource MediumLeftTopRightBottomMargin}">
-                    <TextBlock Text="已运行时间" Style="{StaticResource CaptionTextBlockStyle}" />
-                    <TextBlock Text="{x:Bind MasterMenuItem.Arduino.Mills, Mode=OneWay}" Style="{StaticResource BodyTextStyle}" />
-                </StackPanel>
-                <StackPanel Grid.Row="1" Orientation="Vertical" Margin="{StaticResource MediumLeftTopRightBottomMargin}">
-                    <TextBlock Text="是否在线" Style="{StaticResource CaptionTextBlockStyle}" />
-                    <TextBlock Text="{x:Bind MasterMenuItem.Arduino.IsConnect, Mode=OneWay}" Style="{StaticResource BodyTextStyle}" />
-                </StackPanel>
-                <!--Replate this StackPanel with your detail content.-->
-                <!--<StackPanel Orientation="Vertical" Margin="{StaticResource MediumLeftTopRightBottomMargin}">
+
+                <TextBlock Text="{x:Bind PIN_DT}"
+                           Style="{StaticResource ListTitleStyle}" />
+
+                <TextBlock Grid.Column="1"
+                           Text="{x:Bind PIN_SCK}"
+                           Style="{StaticResource ListSubTitleStyle}" />
+            </Grid>
+        </DataTemplate>
+    </UserControl.Resources>
+    <!--The SystemControlPageBackgroundChromeLowBrush background represents where you should place your detail content.-->
+    <Grid Grid.Row="1"
+          Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="48" />
+            <RowDefinition Height="64" />
+            <RowDefinition Height="64" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.ColumnSpan="3"
+                   x:Name="TitlePage"
+                   Text="{x:Bind MasterMenuItem.Name, Mode=OneWay}"
+                   Style="{StaticResource PageTitleStyle}" />
+        <StackPanel Grid.Row="1"
+                    Orientation="Vertical"
+                    Margin="{StaticResource MediumLeftTopRightBottomMargin}">
+            <TextBlock Text="ID"
+                       Style="{StaticResource CaptionTextBlockStyle}" />
+            <TextBlock Text="{x:Bind MasterMenuItem.Arduino.ID, Mode=OneWay}"
+                       Style="{StaticResource BodyTextStyle}" />
+        </StackPanel>
+        <StackPanel Grid.Row="1"
+                    Grid.Column="1"
+                    Orientation="Vertical"
+                    Margin="{StaticResource MediumLeftTopRightBottomMargin}">
+            <TextBlock Text="运行模式"
+                       Style="{StaticResource CaptionTextBlockStyle}" />
+            <TextBlock Text="{x:Bind MasterMenuItem.Arduino.Mode, Mode=OneWay}"
+                       Style="{StaticResource BodyTextStyle}" />
+        </StackPanel>
+        <StackPanel  Grid.Row="1"
+                     Grid.Column="2"
+                     Orientation="Vertical"
+                     Margin="{StaticResource MediumLeftTopRightBottomMargin}">
+            <TextBlock Text="已运行时间"
+                       Style="{StaticResource CaptionTextBlockStyle}" />
+            <TextBlock Text="{x:Bind MasterMenuItem.Arduino.Mills, Mode=OneWay}"
+                       Style="{StaticResource BodyTextStyle}" />
+        </StackPanel>
+        <StackPanel Grid.Row="2"
+                    Orientation="Vertical"
+                    Margin="{StaticResource MediumLeftTopRightBottomMargin}">
+            <TextBlock Text="是否在线"
+                       Style="{StaticResource CaptionTextBlockStyle}" />
+            <TextBlock Text="{x:Bind MasterMenuItem.Arduino.IsConnect, Mode=OneWay}"
+                       Style="{StaticResource BodyTextStyle}" />
+        </StackPanel>
+        <!--Replate this StackPanel with your detail content.-->
+        <!--<StackPanel Orientation="Vertical" Margin="{StaticResource MediumLeftTopRightBottomMargin}">
                    
                     
                     <TextBlock Text="MarkColor" Style="{StaticResource CaptionTextBlockStyle}" />
                     <TextBlock Text="{x:Bind MasterMenuItem.Arduino.MarkColor, Mode=OneWay}" Style="{StaticResource BodyTextStyle}" />
                     
                 </StackPanel>-->
-            </Grid>
+        <ScrollViewer Grid.Row="3"
+                      Grid.ColumnSpan="3"
+                      ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                      ScrollViewer.VerticalScrollBarVisibility="Auto"
+                      ScrollViewer.VerticalScrollMode="Auto">
+            <ListView Name="SensorsListView"
+                      ItemsSource="{x:Bind MasterMenuItem.Arduino.SensorCollection}"
+                      IsItemClickEnabled="True">
+            </ListView>
         </ScrollViewer>
+
+
         <!--  Adaptive triggers  -->
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup x:Name="WindowStates">
                 <VisualState x:Name="WideState">
                     <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="640"/>
+                        <AdaptiveTrigger MinWindowWidth="640" />
                     </VisualState.StateTriggers>
                 </VisualState>
                 <VisualState x:Name="NarrowState">
@@ -75,7 +112,8 @@
                         <AdaptiveTrigger MinWindowWidth="0" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="TitlePage.Margin" Value="48,0,12,7"/>
+                        <Setter Target="TitlePage.Margin"
+                                Value="48,0,12,7" />
                     </VisualState.Setters>
                 </VisualState>
             </VisualStateGroup>
