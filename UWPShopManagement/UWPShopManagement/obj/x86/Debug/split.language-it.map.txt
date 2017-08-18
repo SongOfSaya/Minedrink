@@ -1,0 +1,6 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.language-it"
+"ResourceDimensions"		"language-it-it"
+
+[Files]
+"C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\obj\x86\Debug\split.language-it.pri"			"resources.pri"

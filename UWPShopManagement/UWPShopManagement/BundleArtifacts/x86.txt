@@ -1,0 +1,4 @@
+MainPackage=C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\UWPShopManagement_1.0.0.0_x86_Debug.appx
+SymbolPackage=C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\AppPackages\UWPShopManagement_1.0.0.0_Debug_Test\UWPShopManagement_1.0.0.0_x86_Debug.appxsym
+ResourcePack=C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\UWPShopManagement_1.0.0.0_language-en.appx
+ResourcePack=C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\UWPShopManagement_1.0.0.0_language-zh-hans.appx

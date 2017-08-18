@@ -117,7 +117,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Main_Title.Text" xml:space="preserve">
+    <value>首页</value>
+  </data>
   <data name="MasterDetailPage_Title.Text" xml:space="preserve">
     <value>Arduino管理</value>
+  </data>
+  <data name="Settings_About.Text" xml:space="preserve">
+    <value>关于本App</value>
+  </data>
+  <data name="Settings_AboutDescription.Text" xml:space="preserve">
+    <value>联系方式:18668706967@163.com</value>
+  </data>
+  <data name="Settings_PrivacyTermsLink.Content" xml:space="preserve">
+    <value>隐私声明</value>
+  </data>
+  <data name="Settings_PrivacyTermsLink.NavigateUri" xml:space="preserve">
+    <value>www.baidu.com</value>
+  </data>
+  <data name="Settings_Theme.Text" xml:space="preserve">
+    <value>主题</value>
+  </data>
+  <data name="Settings_ThemeToggle.OffContent" xml:space="preserve">
+    <value>深色</value>
+  </data>
+  <data name="Settings_ThemeToggle.OnContent" xml:space="preserve">
+    <value>浅色</value>
+  </data>
+  <data name="Settings_Title.Text" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="Shell_Main" xml:space="preserve">
+    <value>主页Shell</value>
+  </data>
+  <data name="Shell_MasterDetail" xml:space="preserve">
+    <value>Arduino管理Shell</value>
+  </data>
+  <data name="Shell_Settings" xml:space="preserve">
+    <value>设置Shell</value>
   </data>
 </root>

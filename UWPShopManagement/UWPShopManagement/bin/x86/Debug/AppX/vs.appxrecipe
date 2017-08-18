@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-17T23:37:43.327</Modified>
+      <Modified>2017-08-17T23:43:22.398</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\UWPShopManagement.exe">
       <PackagePath>entrypoint\UWPShopManagement.exe</PackagePath>
-      <Modified>2017-08-17T23:37:42.236</Modified>
+      <Modified>2017-08-17T23:43:21.189</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.CSharp\4.3.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -704,11 +704,11 @@
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-17T23:37:42.797</Modified>
+      <Modified>2017-08-17T23:43:21.819</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\Core\UWPShopManagement.exe">
       <PackagePath>UWPShopManagement.exe</PackagePath>
-      <Modified>2017-08-17T23:37:43.318</Modified>
+      <Modified>2017-08-17T23:43:22.385</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
