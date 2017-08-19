@@ -13,5 +13,6 @@ namespace UWPShopManagement.Models
         public float Result { get; set; }
         public float OffSet { get; set; }
         public float GapValue { get; set; }
+        
     }
 }

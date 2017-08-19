@@ -4,11 +4,14 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:m="using:UWPShopManagement.Models"
+             xmlns:ic="using:Microsoft.Xaml.Interactions.Core"
+             xmlns:i="using:Microsoft.Xaml.Interactivity"
              mc:Ignorable="d"
              d:DesignHeight="300"
              d:DesignWidth="400">
+
     <UserControl.Resources>
-        <DataTemplate x:Key="MasterListViewItemTemplate"
+        <DataTemplate x:Key="SensorsListViewItemTemplate"
                       x:DataType="m:M_WeightSensor">
             <Grid Margin="{StaticResource MediumLeftTopRightBottomMargin}">
                 <Grid.ColumnDefinitions>
@@ -17,13 +20,24 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
+                <TextBlock Name="SensorNameTextBlock"
+                           Text="{x:Bind PIN_DT}"
+                           Style="{StaticResource ListTitleStyle}"
+                           Margin="12,12,12,12"/>
 
-                <TextBlock Text="{x:Bind PIN_DT}"
-                           Style="{StaticResource ListTitleStyle}" />
-
-                <TextBlock Grid.Column="1"
+                <TextBlock Name="SensorReadingTextBlock"
+                           Grid.Column="1"
                            Text="{x:Bind PIN_SCK}"
-                           Style="{StaticResource ListSubTitleStyle}" />
+                           Style="{StaticResource ListSubTitleStyle}"
+                           Margin="12,12,12,12"/>
+                <TextBlock Name="SensorDeltaTextBlock"
+                           Grid.Column="2"
+                           Text="{x:Bind Result}"
+                           Margin="12,12,12,12"/>
+                <AppBarButton Name="SensorMoreInfoBtn"
+                              Grid.Column="3"
+                              Content="更多"
+                              Margin="12,12,12,12"/>
             </Grid>
         </DataTemplate>
     </UserControl.Resources>
@@ -32,6 +46,7 @@
           Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="48" />
+            <RowDefinition Height="64" />
             <RowDefinition Height="64" />
             <RowDefinition Height="64" />
             <RowDefinition Height="Auto" />
@@ -43,7 +58,7 @@
         </Grid.ColumnDefinitions>
         <TextBlock Grid.ColumnSpan="3"
                    x:Name="TitlePage"
-                   Text="{x:Bind MasterMenuItem.Name, Mode=OneWay}"
+                   Text="{x:Bind MasterMenuItem.Arduino.Name, Mode=OneWay}"
                    Style="{StaticResource PageTitleStyle}" />
         <StackPanel Grid.Row="1"
                     Orientation="Vertical"
@@ -87,14 +102,41 @@
                     <TextBlock Text="{x:Bind MasterMenuItem.Arduino.MarkColor, Mode=OneWay}" Style="{StaticResource BodyTextStyle}" />
                     
                 </StackPanel>-->
-        <ScrollViewer Grid.Row="3"
+        <Grid Grid.Row="3"
+              Grid.ColumnSpan="3"
+              VerticalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="200" />
+                <ColumnDefinition Width="200" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="名称"
+                       Style="{StaticResource CaptionTextBlockStyle}"
+                       Margin="12,12,12,12" />
+            <TextBlock Text="当前值"
+                       Grid.Column="1"
+                       Style="{StaticResource CaptionTextBlockStyle}"
+                       Margin=" 12,12,12,12" />
+            <TextBlock Text="变化量"
+                       Grid.Column="2"
+                       Margin="12,12,12,12"
+                       Style="{StaticResource CaptionTextBlockStyle}" />
+        </Grid>
+        <ScrollViewer Grid.Row="4"
                       Grid.ColumnSpan="3"
                       ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                       ScrollViewer.VerticalScrollBarVisibility="Auto"
                       ScrollViewer.VerticalScrollMode="Auto">
             <ListView Name="SensorsListView"
-                      ItemsSource="{x:Bind MasterMenuItem.Arduino.SensorCollection}"
-                      IsItemClickEnabled="True">
+                      ItemsSource="{x:Bind ViewModel.SensorItems, Mode=OneWay}"
+                      IsItemClickEnabled="True"
+                      ItemTemplate="{StaticResource SensorsListViewItemTemplate}"
+                      SelectedItem="{x:Bind ViewModel.SelectedSensor, Mode=OneWay}">
+                <i:Interaction.Behaviors>
+                    <ic:EventTriggerBehavior EventName="ItemClick">
+                        <ic:InvokeCommandAction Command="{x:Bind ViewModel.SensorItemClickCommand}" />
+                    </ic:EventTriggerBehavior>
+                </i:Interaction.Behaviors>
             </ListView>
         </ScrollViewer>
 

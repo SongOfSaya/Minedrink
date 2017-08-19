@@ -127,7 +127,6 @@
     <Compile Include="Services\ActivationService.cs" />
     <Compile Include="Activation\DefaultLaunchActivationHandler.cs" />
     <Compile Include="Services\NavigationService.cs" />
-    <Compile Include="Services\SampleDataService.cs" />
     <Compile Include="Services\S_ArduinoLink.cs" />
     <Compile Include="Services\S_SampleData.cs" />
     <Compile Include="Services\ThemeSelectorService.cs" />

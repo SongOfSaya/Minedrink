@@ -18,8 +18,8 @@ namespace UWPShopManagement.Services
     {
         #region Properties
 
-        
-        public M_ArduinoMarkA Arduino { get; private set; }
+
+        public M_ArduinoMarkA Arduino { get; set; }
         public int ID
         {
             get { return Arduino.ID; }
@@ -68,10 +68,10 @@ namespace UWPShopManagement.Services
                 //启动监听程序
                 Arduino.IP = ip;
                 Arduino.Port = port;
-                
+
                 Update();
                 CheckIsConnect();
-                
+
                 SendCommand(TXCommCode.GetAllInfo);
                 return true;
             }
@@ -79,7 +79,7 @@ namespace UWPShopManagement.Services
             {
                 return false;
             }
-            
+
         }
         /// <summary>
         /// 检查链接是否有效
@@ -186,7 +186,9 @@ namespace UWPShopManagement.Services
                             break;
                     }
                 }
-                Debug.WriteLine("UPDATE:" + str);
+#if DEBUG
+                Debug.WriteLine("IN:" + str);
+#endif
             }
         }
 
@@ -201,12 +203,15 @@ namespace UWPShopManagement.Services
         /// <param name="detail"></param>
         public void RespondAllInfo(string detail)
         {
+
             var rootObject = JsonObject.Parse(detail);
             Arduino.ID = (int)(rootObject[H_Json.ID].GetNumber());
-            Arduino.Mills = (long)rootObject[H_Json.Mills].GetNumber();
+            Arduino.Mills = M_ArduinoMarkA.MillsConverter((long)rootObject[H_Json.Mills].GetNumber());
             Arduino.Mode = (int)rootObject[H_Json.Mode].GetNumber();
             Arduino.MarkColor = (int)rootObject[H_Json.Color].GetNumber();
             var sensors = rootObject[H_Json.SenSors].GetArray();
+            Arduino.SensorCollection.Clear();
+            
             foreach (var item in sensors)
             {
                 JsonObject sensorObject = item.GetObject();
@@ -220,8 +225,6 @@ namespace UWPShopManagement.Services
                 });
 
             }
-
-            Debug.WriteLine(rootObject["ID"]);
         }
 
         private void RespondUpdate(string detail)

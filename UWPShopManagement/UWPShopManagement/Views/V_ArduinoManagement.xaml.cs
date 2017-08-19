@@ -19,5 +19,10 @@ namespace UWPShopManagement.Views
         {
             ViewModel.LoadDataAsync(WindowStates.CurrentState);
         }
+
+        private void RefreshAduBtn_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        {
+            //MasterListView
+        }
     }
 }

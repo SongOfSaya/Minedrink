@@ -35,20 +35,20 @@ namespace UnitTest.Services
             Assert.AreEqual(arduinoLink.Arduino.Mills, 2510, "Mills正确");
             Assert.AreEqual(arduinoLink.Arduino.SensorCollection[0].PIN_DT, 43, "DT正确");
         }
-        [TestMethod]
-        public async Task CanLink()
-        {
-            S_ArduinoLink arduinoLink = new S_ArduinoLink();
-            bool except = await arduinoLink.Connection("192.168.2.109", "1000");
-            Assert.AreEqual(except, true, "连接是否成功");
-            await Task.Delay(1000);
-            Assert.AreEqual(1001, arduinoLink.Arduino.ID);
-            //TimeSpan delay = TimeSpan.FromSeconds(1);
-            //ThreadPoolTimer delayTimer = ThreadPoolTimer.CreateTimer((source) =>
-            //{
-            //    Assert.AreEqual(1002, arduinoLink.Arduino.ID);
-            //    Assert.AreEqual(2, 1);
-            //}, delay);
-        }
+        //[TestMethod]
+        //public async Task CanLink()
+        //{
+        //    S_ArduinoLink arduinoLink = new S_ArduinoLink();
+        //    bool except = await arduinoLink.Connection("192.168.2.109", "1000");
+        //    Assert.AreEqual(except, true, "连接是否成功");
+        //    await Task.Delay(1000);
+        //    Assert.AreEqual(1001, arduinoLink.Arduino.ID);
+        //    //TimeSpan delay = TimeSpan.FromSeconds(1);
+        //    //ThreadPoolTimer delayTimer = ThreadPoolTimer.CreateTimer((source) =>
+        //    //{
+        //    //    Assert.AreEqual(1002, arduinoLink.Arduino.ID);
+        //    //    Assert.AreEqual(2, 1);
+        //    //}, delay);
+        //}
     }
 }

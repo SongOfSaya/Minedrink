@@ -50,9 +50,39 @@ namespace UWPShopManagement.Services
                 new S_ArduinoLink
                 {
                     ID = 0003,
-                    Name = "不知道干嘛的"
+                    Name = "不知道干嘛的",
                 }
             };
+            M_WeightSensor sensor1 = new M_WeightSensor()
+            {
+                PIN_DT = 5,
+                PIN_SCK = 6,
+                Result = 1234,
+                GapValue = 430,
+                OffSet = 434343
+            };
+            M_WeightSensor sensor2 = new M_WeightSensor()
+            {
+                PIN_DT = 7,
+                PIN_SCK = 8,
+                Result = 1234,
+                GapValue = 430,
+                OffSet = 434343
+            };
+            M_WeightSensor sensor3 = new M_WeightSensor()
+            {
+                PIN_DT = 9,
+                PIN_SCK = 10,
+                Result = 1234,
+                GapValue = 430,
+                OffSet = 434343
+            };
+            data.First().Arduino.SensorCollection.Add(sensor1);
+            data.First().Arduino.SensorCollection.Add(sensor2);
+            data.First().Arduino.SensorCollection.Add(sensor3);
+            data[1].Arduino.SensorCollection.Add(sensor1);
+            data[1].Arduino.SensorCollection.Add(sensor2);
+            data[2].Arduino.SensorCollection.Add(sensor3);
             return data;
         }
         private static IEnumerable<Order> AllOrders()
