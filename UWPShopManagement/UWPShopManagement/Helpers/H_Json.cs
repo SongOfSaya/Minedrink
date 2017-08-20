@@ -15,7 +15,7 @@ namespace UWPShopManagement.Helpers
         //无\格式:{"AID":1001,"NM":"主料区","MIS":61464,"MOD":2,"CO":12,"SS":[{"DT":43,"SCK":41,"OFF":8422741.00,"GV":430.00,"RES":36.00}]}
         public const string AllInfoSampleJson = "{\"ID\":\"M01\",\"MIS\":1234567,\"MOD\":4,\"CO\":12,\"SS\":[{\"SID\":\"W01\",\"OFF\":134,\"GV\":1,\"DT\":41,\"SCK\":43},{\"SID\":\"W02\",\"OFF\":12,\"GV\":44,\"DT\":1,\"SCK\":43}]}";
         //Arduino周期性发给SMS的json模板 
-        //无\格式:{"ID":10, "Mills" : 1243, "Mode" : 1, "Sensors" : [{"ID":1085, "Result" : 123.44}, { "ID":1086,"Result" : 1234.4 }]}
+        //无\格式:
         public const string UpdateSampleJson = "{\"ID\":10,\"Mills\":1243, \"Mode\":1,\"Sensors\":[{\"ID\":1085,\"Result\":123.44},{\"ID\":1086,\"Result\":1234.4}]}";
         //Arduino的ID
         public const string ID = "ID";
@@ -28,7 +28,7 @@ namespace UWPShopManagement.Helpers
         //Arduino的传感器数组
         public const string SenSors = "SS";
         //传感器读数
-        public const string Result = "RES";
+        public const string Reading = "READ";
         //传感器的标志色
         public const string Color = "CO";
         //传感器DT_PIN口

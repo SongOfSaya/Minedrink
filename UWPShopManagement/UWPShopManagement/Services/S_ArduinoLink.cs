@@ -11,6 +11,7 @@ using Windows.System.Threading;
 using Windows.Data.Json;
 using static UWPShopManagement.Helpers.H_CommandCode;
 using System.Collections.ObjectModel;
+using System.Runtime.InteropServices;
 
 namespace UWPShopManagement.Services
 {
@@ -221,15 +222,52 @@ namespace UWPShopManagement.Services
                     PIN_SCK = (int)sensorObject[H_Json.SCK].GetNumber(),
                     OffSet = (float)sensorObject[H_Json.Offset].GetNumber(),
                     GapValue = (float)sensorObject[H_Json.GapValue].GetNumber(),
-                    Result = (float)sensorObject[H_Json.Result].GetNumber()
+                    Reading = (float)sensorObject[H_Json.Reading].GetNumber()
                 });
 
             }
         }
-
+        /// <summary>
+        /// 响应UPDATE指令
+        /// #UPDATEX="{\"ID\":1001,\"MIS\":192105,\"MOD\":1,\"SS\":[{\"DT\":43,\"READ\":3}]}"
+        /// </summary>
+        /// <param name="detail">指令的数据</param>
         private void RespondUpdate(string detail)
         {
-            throw new NotImplementedException();
+#if DEBUG
+            Debug.WriteLine("接收到字符串:" + detail);
+#endif
+            try
+            {
+                var rootObject = JsonObject.Parse(detail);
+                Arduino.Mills = M_ArduinoMarkA.MillsConverter((long)rootObject[H_Json.Mills].GetNumber());
+                Arduino.Mode = (int)rootObject[H_Json.Mode].GetNumber();
+                var sensors = rootObject[H_Json.SenSors].GetArray();
+                foreach (var item in sensors)
+                {
+                    JsonObject sensorObject = item.GetObject();
+                    int DT = (int)sensorObject[H_Json.DT].GetNumber();
+                    //是否有匹配的sensor
+                    if (Arduino.SensorCollection.Any(p => p.PIN_DT == DT))
+                    {
+                        M_WeightSensor m_WeightSensor = Arduino.SensorCollection.Single(p => p.PIN_DT == DT);
+                        float lastReading = m_WeightSensor.Reading;
+                        m_WeightSensor.Reading = (float)sensorObject[H_Json.Reading].GetNumber();
+                        //TODO:平稳后取delta
+                        int delta = (int)(m_WeightSensor.Reading - lastReading);
+                    }
+                    else
+                    {
+                        //TODO:如果没有的话是否要自动新增
+                    }
+
+            }
+            }
+            catch (COMException e)
+            {
+                Debug.WriteLine("无效JSON:" + detail);
+            }
+            
         }
     }
 }

@@ -32,7 +32,7 @@
                            Margin="12,12,12,12"/>
                 <TextBlock x:ConnectionId='5' Name="SensorDeltaTextBlock"
                            Grid.Column="2"
-                                                 
+                                                  
                            Margin="12,12,12,12"/>
                 <AppBarButton Name="SensorMoreInfoBtn"
                               Grid.Column="3"

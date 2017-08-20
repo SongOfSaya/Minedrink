@@ -32,7 +32,7 @@
                            Margin="12,12,12,12"/>
                 <TextBlock Name="SensorDeltaTextBlock"
                            Grid.Column="2"
-                           Text="{x:Bind Result}"
+                           Text="{x:Bind Reading}"
                            Margin="12,12,12,12"/>
                 <AppBarButton Name="SensorMoreInfoBtn"
                               Grid.Column="3"

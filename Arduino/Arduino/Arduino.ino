@@ -172,21 +172,21 @@ void state_Zero() {
 }
 //模式1:称重模式
 void state_One() {
-	//{"ID":10, "Mills" : 1243, "Mode" : 1, "Sensors" : [{"ID":1085, "Result" : 123.44}, { "ID":1086,"Result" : 1234.4 }]}
+	//无\格式:#UPDATEX={"ID":1001,"MIS":1234567,"MOD":4,"SS":[{"DT:123,"READ":4313},{"ID":23,"READ":4343}]}
 	String resualtStr = "#UPDATEX={\"ID\":";
 	resualtStr += ID;
-	resualtStr += ",\"Mills\":";
+	resualtStr += ",\"MIS\":";
 	resualtStr += millis();
-	resualtStr += ",\"Mode\":";
+	resualtStr += ",\"MOD\":";
 	resualtStr += modeNumber;
-	resualtStr += ",\"Sensors\":[";
+	resualtStr += ",\"SS\":[";
 	for (size_t i = 0; i < weightSensorsLenth; i++)
 	{
 		Get_Weight(i);
-		resualtStr += "{\"ID\":";
-		resualtStr += weightSensors[i].sck;
-		resualtStr += ",\"Result\":";
-		resualtStr += weightSensors[i].result;
+		resualtStr += "{\"DT\":";
+		resualtStr += weightSensors[i].dt;
+		resualtStr += ",\"READ\":";
+		resualtStr += weightSensors[i].reading;
 		if ((weightSensorsLenth - i) > 1)
 		{
 			resualtStr += "},";
@@ -325,8 +325,8 @@ void replyGETINFO() {
 			replyStr += weightSensors[i].offset;
 			replyStr += ",\"GV\":";
 			replyStr += weightSensors[i].gapValue;
-			replyStr += ",\"RES\":";
-			replyStr += weightSensors[i].result;
+			replyStr += ",\"READ\":";
+			replyStr += weightSensors[i].reading;
 			//如果尚未遍历完所有Sensors
 			if (weightSensorsLenth - i > 1)
 			{

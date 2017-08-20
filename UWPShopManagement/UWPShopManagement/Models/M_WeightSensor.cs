@@ -10,9 +10,9 @@ namespace UWPShopManagement.Models
     {
         public int PIN_DT { get; set; }
         public int PIN_SCK { get; set; }
-        public float Result { get; set; }
+        public float Reading { get; set; }
         public float OffSet { get; set; }
         public float GapValue { get; set; }
-        
+        public List<int> Delta { get; set; } = new List<int>();
     }
 }

@@ -57,7 +57,7 @@ namespace UWPShopManagement.Services
             {
                 PIN_DT = 5,
                 PIN_SCK = 6,
-                Result = 1234,
+                Reading = 1234,
                 GapValue = 430,
                 OffSet = 434343
             };
@@ -65,7 +65,7 @@ namespace UWPShopManagement.Services
             {
                 PIN_DT = 7,
                 PIN_SCK = 8,
-                Result = 1234,
+                Reading = 1234,
                 GapValue = 430,
                 OffSet = 434343
             };
@@ -73,7 +73,7 @@ namespace UWPShopManagement.Services
             {
                 PIN_DT = 9,
                 PIN_SCK = 10,
-                Result = 1234,
+                Reading = 1234,
                 GapValue = 430,
                 OffSet = 434343
             };
