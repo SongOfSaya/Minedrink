@@ -23,11 +23,11 @@
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
 
-                <TextBlock Text="{x:Bind Arduino.ID}"
+                <TextBlock Text="{x:Bind Arduino.ID,Mode=OneWay}"
                            Style="{StaticResource ListTitleStyle}" />
 
                 <TextBlock Grid.Row="1"
-                           Text="{x:Bind Arduino.Name}"
+                           Text="{x:Bind Arduino.Name, Mode=OneWay}"
                            Style="{StaticResource ListSubTitleStyle}" />
             </Grid>
         </DataTemplate>
@@ -73,6 +73,8 @@
                         Orientation="Horizontal"
                         HorizontalAlignment="Right"
                         Background="Wheat">
+                <TextBlock Text="{x:Bind ViewModel.TestNum,Mode=OneWay}"
+                           Margin="12,12,12,12"/>
                 <AppBarButton Name="AddArduinoBtn"
                               Content="新增"
                               Command="{x:Bind ViewModel.AddAduBtnCommand}"></AppBarButton>

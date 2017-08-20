@@ -21,23 +21,23 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 <TextBlock x:ConnectionId='3' Name="SensorNameTextBlock"
-                                                 
+                                                             
                            Style="{StaticResource ListTitleStyle}"
-                           Margin="12,12,12,12"/>
+                           Margin="12,12,12,12" />
 
                 <TextBlock x:ConnectionId='4' Name="SensorReadingTextBlock"
                            Grid.Column="1"
-                                                  
+                                                              
                            Style="{StaticResource ListSubTitleStyle}"
-                           Margin="12,12,12,12"/>
+                           Margin="12,12,12,12" />
                 <TextBlock x:ConnectionId='5' Name="SensorDeltaTextBlock"
                            Grid.Column="2"
-                                                  
-                           Margin="12,12,12,12"/>
+                                                              
+                           Margin="12,12,12,12" />
                 <AppBarButton Name="SensorMoreInfoBtn"
                               Grid.Column="3"
                               Content="更多"
-                              Margin="12,12,12,12"/>
+                              Margin="12,12,12,12" />
             </Grid>
         </DataTemplate>
     </UserControl.Resources>

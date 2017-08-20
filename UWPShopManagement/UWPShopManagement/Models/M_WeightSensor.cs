@@ -8,11 +8,41 @@ namespace UWPShopManagement.Models
 {
     public class M_WeightSensor : M_SensorBase
     {
-        public int PIN_DT { get; set; }
-        public int PIN_SCK { get; set; }
-        public float Reading { get; set; }
-        public float OffSet { get; set; }
-        public float GapValue { get; set; }
+        private int _pin_dt;
+
+        public int PIN_DT
+        {
+            get { return _pin_dt; }
+            set { Set(ref _pin_dt, value); }
+        }
+        private int _pin_sck;
+
+        public int PIN_SCK
+        {
+            get { return _pin_sck; }
+            set { Set(ref _pin_sck, value); }
+        }
+        private int _reading;
+
+        public int Reading
+        {
+            get { return _reading; }
+            set { Set(ref _reading, value); }
+        }
+        private int _offset;
+
+        public int Offset
+        {
+            get { return _offset; }
+            set { Set(ref _offset, value); }
+        }
+        private int _gapValue;
+
+        public int GapValue
+        {
+            get { return _gapValue; }
+            set { Set(ref _gapValue, value); }
+        }
         public List<int> Delta { get; set; } = new List<int>();
     }
 }

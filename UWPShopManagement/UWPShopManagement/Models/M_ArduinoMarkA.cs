@@ -1,43 +1,86 @@
 ﻿
 using System;
 using System.Collections.ObjectModel;
-
+using UWPShopManagement.Helpers;
 namespace UWPShopManagement.Models
 {
     /// <summary>
     /// 不知道是否需要Observeable
     /// </summary>
-    public class M_ArduinoMarkA
-    {
-        public string Name { get; set; }
+    public class M_ArduinoMarkA : Observable
+    {        
+        private string _name;
+
+        public string Name
+        {
+            get { return _name; }
+            set { Set(ref _name, value); }
+        }
+
         private int _id;
         public int ID
         {
             get { return _id; }
             set
             {
-                _id = value;
+                Set(ref _id, value);
                 Name = NameConverter(_id);
             }
         }
-        public TimeSpan Mills { get; set; }
-        public string IP { get; set; }
-        public string Port { get; set; }
+        private TimeSpan _mills;
+
+        public TimeSpan Mills
+        {
+            get { return _mills; }
+            set { Set(ref _mills, value); }
+        }
+        private string _ip;
+
+        public string IP
+        {
+            get { return _ip; }
+            set { Set(ref _ip, value); }
+        }
+        private string _prot;
+
+        public string Port
+        {
+            get { return _prot; }
+            set { Set(ref _prot, value); }
+        }
+
         private int _mode;
         public int Mode
         {
             get { return _mode; }
             set
             {
-                _mode = value;
+                Set(ref _mode, value);
                 ModeName = ModeConverter(_mode);
             }
         }
-        public string ModeName { get; set; }
-        public int MarkColor { get; set; }
-        //此Arduino是否在线
-        public bool IsConnect { get; set; }
+        private string _modeName;
 
+        public string ModeName
+        {
+            get { return _modeName; }
+            set { Set(ref _modeName, value); }
+        }
+        private int _markColor;
+
+        public int MarkColor
+        {
+            get { return _markColor; }
+            set { Set(ref _markColor, value); }
+        }
+        private bool _isConnect;
+
+        public bool IsConnect
+        {
+            get { return _isConnect; }
+            set { Set(ref _isConnect, value); }
+        }
+        //此Arduino是否在线
         public ObservableCollection<M_WeightSensor> SensorCollection { get; set; }
         public static string NameConverter(int ID)
         {

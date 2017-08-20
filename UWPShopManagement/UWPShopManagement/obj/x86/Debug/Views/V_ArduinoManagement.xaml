@@ -23,11 +23,11 @@
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
 
-                <TextBlock x:ConnectionId='3'                           
+                <TextBlock x:ConnectionId='3'                                       
                            Style="{StaticResource ListTitleStyle}" />
 
                 <TextBlock x:ConnectionId='4' Grid.Row="1"
-                                                       
+                                                                    
                            Style="{StaticResource ListSubTitleStyle}" />
             </Grid>
         </DataTemplate>
@@ -73,10 +73,12 @@
                         Orientation="Horizontal"
                         HorizontalAlignment="Right"
                         Background="Wheat">
-                <AppBarButton x:ConnectionId='18' Name="AddArduinoBtn"
+                <TextBlock x:ConnectionId='18'                                              
+                           Margin="12,12,12,12"/>
+                <AppBarButton x:ConnectionId='19' Name="AddArduinoBtn"
                               Content="新增"
                                                                            ></AppBarButton>
-                <AppBarButton x:ConnectionId='19' Name="RefreshAduBtn"
+                <AppBarButton x:ConnectionId='20' Name="RefreshAduBtn"
                                                          
                               Content="刷新"
                                                                             ></AppBarButton>
@@ -120,13 +122,13 @@
 
         <!--  Adaptive triggers  -->
         <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:ConnectionId='20' x:Name="WindowStates">
+            <VisualStateGroup x:ConnectionId='21' x:Name="WindowStates">
                 <i:Interaction.Behaviors>
                     <ic:EventTriggerBehavior EventName="CurrentStateChanged">
-                        <ic:InvokeCommandAction x:ConnectionId='21'                                                  />
+                        <ic:InvokeCommandAction x:ConnectionId='22'                                                  />
                     </ic:EventTriggerBehavior>
                 </i:Interaction.Behaviors>
-                <VisualState x:ConnectionId='22' x:Name="WideState">
+                <VisualState x:ConnectionId='23' x:Name="WideState">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="640" />
                     </VisualState.StateTriggers>
@@ -137,7 +139,7 @@
                                 Value="296" />
                     </VisualState.Setters>
                 </VisualState>
-                <VisualState x:ConnectionId='23' x:Name="NarrowState">
+                <VisualState x:ConnectionId='24' x:Name="NarrowState">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="0" />
                     </VisualState.StateTriggers>

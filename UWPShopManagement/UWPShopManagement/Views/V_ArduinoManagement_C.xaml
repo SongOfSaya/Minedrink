@@ -21,23 +21,23 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 <TextBlock Name="SensorNameTextBlock"
-                           Text="{x:Bind PIN_DT}"
+                           Text="{x:Bind PIN_DT,Mode=OneWay}"
                            Style="{StaticResource ListTitleStyle}"
-                           Margin="12,12,12,12"/>
+                           Margin="12,12,12,12" />
 
                 <TextBlock Name="SensorReadingTextBlock"
                            Grid.Column="1"
-                           Text="{x:Bind PIN_SCK}"
+                           Text="{x:Bind PIN_SCK,Mode=OneWay}"
                            Style="{StaticResource ListSubTitleStyle}"
-                           Margin="12,12,12,12"/>
+                           Margin="12,12,12,12" />
                 <TextBlock Name="SensorDeltaTextBlock"
                            Grid.Column="2"
-                           Text="{x:Bind Reading}"
-                           Margin="12,12,12,12"/>
+                           Text="{x:Bind Reading,Mode=OneWay}"
+                           Margin="12,12,12,12" />
                 <AppBarButton Name="SensorMoreInfoBtn"
                               Grid.Column="3"
                               Content="更多"
-                              Margin="12,12,12,12"/>
+                              Margin="12,12,12,12" />
             </Grid>
         </DataTemplate>
     </UserControl.Resources>

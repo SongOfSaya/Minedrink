@@ -474,7 +474,7 @@ namespace UWPShopManagement.UWPShopManagement_XamlTypeInfo
                 break;
 
             case 24:   //  UWPShopManagement.Services.S_ArduinoLink
-                userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("UWPShopManagement.Helpers.Observable"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;

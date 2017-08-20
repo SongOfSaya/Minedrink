@@ -13,53 +13,33 @@ namespace UWPShopManagement.Services
     {
         public static ObservableCollection<S_ArduinoLink> AllObservableArduinoLinks()
         {
-            var data = new ObservableCollection<S_ArduinoLink>
+            var data = new ObservableCollection<S_ArduinoLink>();
+            for (int i = 0; i < 3; i++)
             {
-                new S_ArduinoLink
-                {
-                    ID = 0001,
-                    Name = "主料区"
-                },
-                new S_ArduinoLink
-                {
-                    ID = 0002,
-                    Name = "辅料区"
-                },
-                new S_ArduinoLink
-                {
-                    ID = 0003,
-                    Name = "不知道干嘛的"
-                }
-            };
+                S_ArduinoLink s_ArduinoLink = new S_ArduinoLink();
+                s_ArduinoLink.Arduino.ID = new Random().Next(100);
+                s_ArduinoLink.Arduino.Name = "虚拟Arudino";
+                data.Add(s_ArduinoLink);
+            }
             return data;
         }
         public static IEnumerable<S_ArduinoLink> GetAllArduinoLinkAsync()
         {
-            var data = new ObservableCollection<S_ArduinoLink>
+            var data = new ObservableCollection<S_ArduinoLink>();
+            for (int i = 0; i < 3; i++)
             {
-                new S_ArduinoLink
-                {
-                    ID = 0001,
-                    Name = "主料区"
-                },
-                new S_ArduinoLink
-                {
-                    ID = 0002,
-                    Name = "辅料区"
-                },
-                new S_ArduinoLink
-                {
-                    ID = 0003,
-                    Name = "不知道干嘛的",
-                }
-            };
+                S_ArduinoLink s_ArduinoLink = new S_ArduinoLink();
+                s_ArduinoLink.Arduino.ID = new Random().Next(100);
+                s_ArduinoLink.Arduino.Name = "虚拟Arudino";
+                data.Add(s_ArduinoLink);
+            }
             M_WeightSensor sensor1 = new M_WeightSensor()
             {
                 PIN_DT = 5,
                 PIN_SCK = 6,
                 Reading = 1234,
                 GapValue = 430,
-                OffSet = 434343
+                Offset = 434343
             };
             M_WeightSensor sensor2 = new M_WeightSensor()
             {
@@ -67,7 +47,7 @@ namespace UWPShopManagement.Services
                 PIN_SCK = 8,
                 Reading = 1234,
                 GapValue = 430,
-                OffSet = 434343
+                Offset = 434343
             };
             M_WeightSensor sensor3 = new M_WeightSensor()
             {
@@ -75,7 +55,7 @@ namespace UWPShopManagement.Services
                 PIN_SCK = 10,
                 Reading = 1234,
                 GapValue = 430,
-                OffSet = 434343
+                Offset = 434343
             };
             data.First().Arduino.SensorCollection.Add(sensor1);
             data.First().Arduino.SensorCollection.Add(sensor2);

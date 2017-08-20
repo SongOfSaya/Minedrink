@@ -80,16 +80,24 @@ namespace UWPShopManagement.ViewModels
             get { return _connectInfo; }
             set { Set(ref _connectInfo, value); }
         }
+        private int _testNum;
 
-        private ObservableCollection<S_ArduinoLink> arduinoLinkItems;
+        public int TestNum
+        {
+            get { return _testNum; }
+            set { Set(ref _testNum, value); }
+        }
+
+        //private ObservableCollection<S_ArduinoLink> arduinoLinkItems;
         /// <summary>
         /// 与Arduino管理的Arduino列表绑定
         /// </summary>
-        public ObservableCollection<S_ArduinoLink> ArduinoLinkItems
-        {
-            get { return arduinoLinkItems; }
-            set { Set(ref arduinoLinkItems, value); }
-        }
+        //public ObservableCollection<S_ArduinoLink> ArduinoLinkItems
+        //{
+        //    get { return arduinoLinkItems; }
+        //    set { Set(ref arduinoLinkItems, value); }
+        //}
+        public ObservableCollection<S_ArduinoLink> ArduinoLinkItems { get; set; }
         private ObservableCollection<M_WeightSensor> sensorsItems;
         /// <summary>
         /// 与单个Arduino下的SensorsListView绑定
@@ -137,7 +145,13 @@ namespace UWPShopManagement.ViewModels
             DialogSubmitCommand = new RelayCommand<ContentDialogButtonClickEventArgs>(OnAddDialogSubmit);
             RefreshBtnCommand = new RelayCommand(OnRefreshBtnCommand);
             SensorItemClickCommand = new RelayCommand<ItemClickEventArgs>(OnSensorItemClick);
+            ArduinoLinkItems.CollectionChanged += ArduinoLinkItems_CollectionChanged;
             //this.PropertyChanged += VM_ArduinoManagement_PropertyChanged;
+        }
+
+        private void ArduinoLinkItems_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+        {
+            Debug.WriteLine("检测到列表改变");
         }
 
         private void OnSensorItemClick(ItemClickEventArgs obj)
@@ -151,6 +165,7 @@ namespace UWPShopManagement.ViewModels
         private void OnRefreshBtnCommand()
         {
             Selected.Arduino.ID++;
+            TestNum++;
             
         }
 
@@ -209,7 +224,6 @@ namespace UWPShopManagement.ViewModels
                 ArduinoLinkItems.Add(item);
             }
             Selected = data.First();
-            SensorItems = data.First().Arduino.SensorCollection;
         }
 
         private void OnStateChanged(VisualStateChangedEventArgs args)
@@ -233,12 +247,7 @@ namespace UWPShopManagement.ViewModels
                 }
             }
         }
-        private void ReFresh()
-        {
-            
-            Selected = ArduinoLinkItems.Last();
-            SensorItems = ArduinoLinkItems.Last().Arduino.SensorCollection;
-        }
+        
 
             //get
             //{

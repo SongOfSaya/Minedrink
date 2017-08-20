@@ -11,6 +11,10 @@ namespace UnitTestProject.ViewModels
     [TestClass]
     public class VM_ArduinoManagementTest
     {
-       
+        [TestMethod]
+        public void ChangeCheck()
+        {
+            
+        }
     }
 }

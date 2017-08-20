@@ -15,22 +15,13 @@ using System.Runtime.InteropServices;
 
 namespace UWPShopManagement.Services
 {
-    public class S_ArduinoLink
+    public class S_ArduinoLink : Observable
     {
         #region Properties
 
 
         public M_ArduinoMarkA Arduino { get; set; }
-        public int ID
-        {
-            get { return Arduino.ID; }
-            set { Arduino.ID = value; }
-        }
-        public string Name
-        {
-            get { return Arduino.Name; }
-            set { Arduino.Name = value; }
-        }
+        
         public S_ArduinoLink()
         {
             Arduino = new M_ArduinoMarkA
@@ -212,7 +203,7 @@ namespace UWPShopManagement.Services
             Arduino.MarkColor = (int)rootObject[H_Json.Color].GetNumber();
             var sensors = rootObject[H_Json.SenSors].GetArray();
             Arduino.SensorCollection.Clear();
-            
+
             foreach (var item in sensors)
             {
                 JsonObject sensorObject = item.GetObject();
@@ -220,9 +211,9 @@ namespace UWPShopManagement.Services
                 {
                     PIN_DT = (int)sensorObject[H_Json.DT].GetNumber(),
                     PIN_SCK = (int)sensorObject[H_Json.SCK].GetNumber(),
-                    OffSet = (float)sensorObject[H_Json.Offset].GetNumber(),
-                    GapValue = (float)sensorObject[H_Json.GapValue].GetNumber(),
-                    Reading = (float)sensorObject[H_Json.Reading].GetNumber()
+                    Offset = (int)sensorObject[H_Json.Offset].GetNumber(),
+                    GapValue = (int)sensorObject[H_Json.GapValue].GetNumber(),
+                    Reading = (int)sensorObject[H_Json.Reading].GetNumber()
                 });
 
             }
@@ -252,7 +243,7 @@ namespace UWPShopManagement.Services
                     {
                         M_WeightSensor m_WeightSensor = Arduino.SensorCollection.Single(p => p.PIN_DT == DT);
                         float lastReading = m_WeightSensor.Reading;
-                        m_WeightSensor.Reading = (float)sensorObject[H_Json.Reading].GetNumber();
+                        m_WeightSensor.Reading = (int)sensorObject[H_Json.Reading].GetNumber();
                         //TODO:平稳后取delta
                         int delta = (int)(m_WeightSensor.Reading - lastReading);
                     }
@@ -261,13 +252,13 @@ namespace UWPShopManagement.Services
                         //TODO:如果没有的话是否要自动新增
                     }
 
+                }
             }
-            }
-            catch (COMException e)
+            catch (COMException)
             {
                 Debug.WriteLine("无效JSON:" + detail);
             }
-            
+
         }
     }
 }
