@@ -1,4 +1,5 @@
-﻿<UserControl x:Class="UWPShopManagement.Views.V_ArduinoManagement_C"
+﻿<UserControl x:Name="userControl"
+             x:Class="UWPShopManagement.Views.V_ArduinoManagement_C"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -6,19 +7,21 @@
              xmlns:m="using:UWPShopManagement.Models"
              xmlns:ic="using:Microsoft.Xaml.Interactions.Core"
              xmlns:i="using:Microsoft.Xaml.Interactivity"
-             mc:Ignorable="d"
-             d:DesignHeight="300"
-             d:DesignWidth="400">
+             xmlns:h="using:UWPShopManagement.Helpers"
+             mc:Ignorable="d">
 
     <UserControl.Resources>
+        <h:IntToGarmConverter x:Key="IntToGarmConverter" />
         <DataTemplate x:Key="SensorsListViewItemTemplate"
                       x:DataType="m:M_WeightSensor">
-            <Grid Margin="{StaticResource MediumLeftTopRightBottomMargin}">
+            <Grid Width="{Binding Width, ElementName=grid}"
+                  MinWidth="400"
+                  Height="48">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="48" />
                 </Grid.ColumnDefinitions>
                 <TextBlock Name="SensorNameTextBlock"
                            Text="{x:Bind PIN_DT,Mode=OneWay}"
@@ -27,22 +30,25 @@
 
                 <TextBlock Name="SensorReadingTextBlock"
                            Grid.Column="1"
-                           Text="{x:Bind PIN_SCK,Mode=OneWay}"
-                           Style="{StaticResource ListSubTitleStyle}"
-                           Margin="12,12,12,12" />
+                           Margin="12,12,12,12"
+                           Text="{x:Bind Reading,Mode=OneWay,Converter={StaticResource IntToGarmConverter}}"
+                           Style="{StaticResource ListSubTitleStyle}" />
                 <TextBlock Name="SensorDeltaTextBlock"
                            Grid.Column="2"
-                           Text="{x:Bind Reading,Mode=OneWay}"
-                           Margin="12,12,12,12" />
+                           Margin="12,12,12,12"
+                           Text="{x:Bind Delta,Mode=OneWay}" />
+
                 <AppBarButton Name="SensorMoreInfoBtn"
                               Grid.Column="3"
                               Content="更多"
-                              Margin="12,12,12,12" />
+                              Width="48"
+                              Height="48" />
             </Grid>
+
         </DataTemplate>
     </UserControl.Resources>
     <!--The SystemControlPageBackgroundChromeLowBrush background represents where you should place your detail content.-->
-    <Grid Grid.Row="1"
+    <Grid x:Name="grid"
           Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="48" />
@@ -106,9 +112,9 @@
               Grid.ColumnSpan="3"
               VerticalAlignment="Center">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="100" />
-                <ColumnDefinition Width="200" />
-                <ColumnDefinition Width="200" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="2*" />
             </Grid.ColumnDefinitions>
             <TextBlock Text="名称"
                        Style="{StaticResource CaptionTextBlockStyle}"
@@ -131,7 +137,9 @@
                       ItemsSource="{x:Bind ViewModel.SensorItems, Mode=OneWay}"
                       IsItemClickEnabled="True"
                       ItemTemplate="{StaticResource SensorsListViewItemTemplate}"
-                      SelectedItem="{x:Bind ViewModel.SelectedSensor, Mode=OneWay}">
+                      SelectedItem="{x:Bind ViewModel.SelectedSensor, Mode=OneWay}"
+                      HorizontalContentAlignment="Stretch"
+                      HorizontalAlignment="Stretch">
                 <i:Interaction.Behaviors>
                     <ic:EventTriggerBehavior EventName="ItemClick">
                         <ic:InvokeCommandAction Command="{x:Bind ViewModel.SensorItemClickCommand}" />

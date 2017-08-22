@@ -21,7 +21,7 @@ namespace UWPShopManagement.Services
 
 
         public M_ArduinoMarkA Arduino { get; set; }
-        
+
         public S_ArduinoLink()
         {
             Arduino = new M_ArduinoMarkA
@@ -37,6 +37,8 @@ namespace UWPShopManagement.Services
         public StreamWriter OutStream { get; private set; }
         //输入流
         public StreamReader InStream { get; private set; }
+        private int _tempDelta;
+        private int _stableReading;
         #endregion
         /// <summary>
         /// 和远程Arduino的TCPServer建立连接
@@ -242,10 +244,13 @@ namespace UWPShopManagement.Services
                     if (Arduino.SensorCollection.Any(p => p.PIN_DT == DT))
                     {
                         M_WeightSensor m_WeightSensor = Arduino.SensorCollection.Single(p => p.PIN_DT == DT);
-                        float lastReading = m_WeightSensor.Reading;
+                        int lastReading = m_WeightSensor.Reading;
                         m_WeightSensor.Reading = (int)sensorObject[H_Json.Reading].GetNumber();
                         //TODO:平稳后取delta
-                        int delta = (int)(m_WeightSensor.Reading - lastReading);
+                        int delta = 0;
+                        bool isValid = SetDelta(lastReading, m_WeightSensor.Reading, ref delta);
+                        if (isValid)
+                            m_WeightSensor.Delta = new M_SensorDelta { Timing = DateTime.Now.TimeOfDay, Delta = delta };
                     }
                     else
                     {
@@ -260,40 +265,33 @@ namespace UWPShopManagement.Services
             }
 
         }
+        /// <summary>
+        /// 确定被拿走了多少
+        /// </summary>
+        /// <param name="lastReading"></param>
+        /// <param name="nowReading"></param>
+        /// <param name="delta"></param>
+        /// <returns></returns>
+        private bool SetDelta(int lastReading, int nowReading, ref int delta)
+        {
+            int tempDelta = lastReading - nowReading;
+            //两次读数接近则视为稳定
+            if (Math.Abs(delta) < 5)
+            {
+                tempDelta = _stableReading - nowReading;
+                _stableReading = nowReading;
+                //大于阈值才有效
+                if (tempDelta > 5)
+                {
+                    delta = tempDelta;
+                    return true;
+                }
+                else if (delta < 0)
+                {
+                    Debug.WriteLine("检测到小于0的delta");
+                }
+            }
+            return false;
+        }
     }
 }
-//string inStr = "";
-//string outStr = "#TCPCONN";
-//;
-//                bool tcpDone = false;
-//                while (!tcpDone)
-//                {
-//                    if (outStr!=null)
-//                    {
-//                        await write.WriteLineAsync(outStr);
-//await write.FlushAsync();
-//                    }
-
-
-//                    inStr = await reader.ReadLineAsync();
-//Debug.WriteLine("IN:" + inStr);
-//                    if (inStr.StartsWith("#"))
-//                    {
-//                        string codeStr = inStr.Substring(0, 8);
-//RXCommCode code = CommHandle.StringConvertToEnum(codeStr);
-
-//                        switch (code)
-//                        {
-//                            case RXCommCode.TcpDone:
-//                                Arduino arduino = new Arduino(clientSocket, write, reader);
-//ConfigPage.Current.Ardu inos.Add(arduino);
-//                                tcpDone = true;
-//                                break;
-//                            case RXCommCode.ERROR:
-//                                Debug.WriteLine("错误的指令:" + codeStr);
-//                                break;
-//                            default:
-//                                break;
-//                        }
-//                    }
-//                }

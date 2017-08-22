@@ -43,6 +43,12 @@ namespace UWPShopManagement.Models
             get { return _gapValue; }
             set { Set(ref _gapValue, value); }
         }
-        public List<int> Delta { get; set; } = new List<int>();
-    }
+        private M_SensorDelta _delta;
+
+        public M_SensorDelta Delta
+        {
+            get { return _delta; }
+            set { Set(ref _delta, value); }
+        }
+    }       
 }

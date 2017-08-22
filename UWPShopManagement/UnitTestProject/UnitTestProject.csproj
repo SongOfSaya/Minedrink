@@ -95,6 +95,7 @@
     <SDKReference Include="TestPlatform.Universal, Version=$(UnitTestPlatformVersion)" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\IntToGramConverterTest.cs" />
     <Compile Include="Models\M_ArduinoMarkATest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\S_ArduinoLinkTest.cs" />

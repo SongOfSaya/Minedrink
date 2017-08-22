@@ -17,7 +17,7 @@ IRrecv irrecv(RECV_Pin);
 boolean blinkState = false;	//LED灯是否亮起
 decode_results results;		//接收到的红外指令
 
-int modeNumber = 2;			//Arduino的状态值
+int modeNumber = 1;			//Arduino的状态值
 float Weight_1 = 0;			//一号秤的读数
 boolean isConn = false;		//是否成功建立TCP链接
 int connTryNum = 0;			//TCP呼叫计数;
@@ -34,7 +34,7 @@ Metro blink250Metro = Metro(250);	//Led计时器,间隔250
 byte Tab[] = { 0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90 };
 //重量传感器参数,分别为SCK,DT,GapValue,resualt, offset
 Hx711_Senor weightSensors[15] = {
-	{ 41,43,430,0,8422741 },
+	{ 41,43,97,0,0},
 	{ 0,0,0,0,0 },
 	{ 0,0,0,0,0 },
 	{ 0,0,0,0,0 },
@@ -71,7 +71,7 @@ void setup()
 	pinMode(dataPin, OUTPUT);
 	pinMode(clockPin, OUTPUT);
 	pinMode(LED_BUILTIN, OUTPUT);
-	delay(100);
+	delay(1000);
 	Get_Maopi(0);
 	commStr.reserve(200);
 	Serial.write("欢迎使用");
@@ -200,7 +200,7 @@ void state_One() {
 	blinkState = !blinkState;
 	digitalWrite(LED_BUILTIN, blinkState);
 }
-//模式2:主动与TCP Server建立连接
+//模式2:校准归零
 void state_Two() {
 
 	//Serial.flush();

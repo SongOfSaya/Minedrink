@@ -6,4 +6,14 @@
     <AppxBuildConfigurationSelection>x86</AppxBuildConfigurationSelection>
     <PackageOptionalProjectsInIdeBuilds>False</PackageOptionalProjectsInIdeBuilds>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <UseSimulator>false</UseSimulator>
+    <RemoteDebugMachine>DESKTOP-89MLRS5</RemoteDebugMachine>
+    <AuthenticationMode>Windows</AuthenticationMode>
+    <RemoteDebugEnabled>false</RemoteDebugEnabled>
+    <DeploymentType>CopyToDevice</DeploymentType>
+    <DeviceId>4577C6BF-825C-434D-8B81-7CA0857E1F9F</DeviceId>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <UseEmulator>false</UseEmulator>
+  </PropertyGroup>
 </Project>
