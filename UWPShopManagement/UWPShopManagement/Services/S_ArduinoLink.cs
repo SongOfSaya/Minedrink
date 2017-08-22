@@ -37,8 +37,13 @@ namespace UWPShopManagement.Services
         public StreamWriter OutStream { get; private set; }
         //输入流
         public StreamReader InStream { get; private set; }
-        private int _tempDelta;
-        private int _stableReading;
+
+        //X次变化小于阈值,可认定为已经稳定
+        private int _checkTimes = 2;
+        //变化大于X,视为有效变动
+        private int _threshold = 5;
+        //变化小于此,视为传感器波动
+        private int _minChange = 2;
         #endregion
         /// <summary>
         /// 和远程Arduino的TCPServer建立连接
@@ -215,7 +220,8 @@ namespace UWPShopManagement.Services
                     PIN_SCK = (int)sensorObject[H_Json.SCK].GetNumber(),
                     Offset = (int)sensorObject[H_Json.Offset].GetNumber(),
                     GapValue = (int)sensorObject[H_Json.GapValue].GetNumber(),
-                    Reading = (int)sensorObject[H_Json.Reading].GetNumber()
+                    Reading = (int)sensorObject[H_Json.Reading].GetNumber(),
+                    SteadyReading = (int)sensorObject[H_Json.Reading].GetNumber()
                 });
 
             }
@@ -245,12 +251,34 @@ namespace UWPShopManagement.Services
                     {
                         M_WeightSensor m_WeightSensor = Arduino.SensorCollection.Single(p => p.PIN_DT == DT);
                         int lastReading = m_WeightSensor.Reading;
-                        m_WeightSensor.Reading = (int)sensorObject[H_Json.Reading].GetNumber();
-                        //TODO:平稳后取delta
-                        int delta = 0;
-                        bool isValid = SetDelta(lastReading, m_WeightSensor.Reading, ref delta);
-                        if (isValid)
-                            m_WeightSensor.Delta = new M_SensorDelta { Timing = DateTime.Now.TimeOfDay, Delta = delta };
+                        int nowReading = (int)sensorObject[H_Json.Reading].GetNumber();
+                        int deltaReadingAbs = Math.Abs(lastReading - nowReading);
+                        m_WeightSensor.Reading = nowReading;
+                        if (deltaReadingAbs > 2000)             //可能出现的异常情况
+                        {
+                            Debug.WriteLine("一次变化2公斤,请注意");
+                            m_WeightSensor.CheckTimes = 0;
+                        }
+                        else if (deltaReadingAbs > _threshold)  //大于阈值为有效变动
+                        {
+                            m_WeightSensor.CheckTimes = 0;
+                        }
+                        else                                //视为稳定状态
+                        {
+                            if (m_WeightSensor.CheckTimes < _checkTimes + 1)
+                                m_WeightSensor.CheckTimes++;
+                            //else
+                            //    m_WeightSensor.SteadyReading = nowReading;
+                        }
+                        if (m_WeightSensor.CheckTimes == _checkTimes)   //变化后连续数次稳定,确定产生了差值
+                        {
+                            m_WeightSensor.Delta = new M_SensorDelta
+                            {
+                                Timing = DateTime.Now.TimeOfDay,
+                                Delta = m_WeightSensor.SteadyReading - nowReading
+                            };
+                            m_WeightSensor.SteadyReading = nowReading;
+                        }
                     }
                     else
                     {
@@ -265,33 +293,6 @@ namespace UWPShopManagement.Services
             }
 
         }
-        /// <summary>
-        /// 确定被拿走了多少
-        /// </summary>
-        /// <param name="lastReading"></param>
-        /// <param name="nowReading"></param>
-        /// <param name="delta"></param>
-        /// <returns></returns>
-        private bool SetDelta(int lastReading, int nowReading, ref int delta)
-        {
-            int tempDelta = lastReading - nowReading;
-            //两次读数接近则视为稳定
-            if (Math.Abs(delta) < 5)
-            {
-                tempDelta = _stableReading - nowReading;
-                _stableReading = nowReading;
-                //大于阈值才有效
-                if (tempDelta > 5)
-                {
-                    delta = tempDelta;
-                    return true;
-                }
-                else if (delta < 0)
-                {
-                    Debug.WriteLine("检测到小于0的delta");
-                }
-            }
-            return false;
-        }
+
     }
 }

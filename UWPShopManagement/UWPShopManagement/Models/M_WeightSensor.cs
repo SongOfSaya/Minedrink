@@ -29,6 +29,14 @@ namespace UWPShopManagement.Models
             get { return _reading; }
             set { Set(ref _reading, value); }
         }
+        private int _steadyReading;
+
+        public int SteadyReading
+        {
+            get { return _steadyReading; }
+            set { Set(ref _steadyReading, value); }
+        }
+
         private int _offset;
 
         public int Offset
@@ -50,5 +58,13 @@ namespace UWPShopManagement.Models
             get { return _delta; }
             set { Set(ref _delta, value); }
         }
+        private int _checkTimes;
+
+        public int CheckTimes
+        {
+            get { return _checkTimes; }
+            set { Set(ref _checkTimes, value); }
+        }
+
     }       
 }

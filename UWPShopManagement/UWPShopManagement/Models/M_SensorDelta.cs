@@ -25,9 +25,14 @@ namespace UWPShopManagement.Models
         }
         public override string ToString()
         {
-            string result = "↓ " + Delta + " g";
-            TimeSpan deltaT = DateTime.Now.TimeOfDay - Timing;
-            result += "|" + deltaT + "之前";
+            string result;
+
+            if (Delta >= 0)
+                result = "↓ " + Delta + " g";
+            else
+                result = "↑ " + Math.Abs(Delta) + " g";
+            //TimeSpan deltaT = DateTime.Now.TimeOfDay - Timing;
+            //result += "|" + deltaT + "之前";
             return result;
         }
     }
