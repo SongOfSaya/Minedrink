@@ -4,7 +4,6 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
-
 using UWPShopManagement.Helpers;
 using UWPShopManagement.Models;
 using UWPShopManagement.Services;

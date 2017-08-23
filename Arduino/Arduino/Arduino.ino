@@ -4,8 +4,8 @@ Created:	2017/7/30 20:22:00
 Author:	Sora
 Email:	Liutengfei833@hotmail.com
 */
+#include <HX711M1.h>
 #include <Metro.h>
-#include <HX711.h>
 #include <IRremote.h>
 const int ID = 1001;	//此台Arduino的ID
 int latchPin = 8;       //D8连接74HC595芯片的使能引脚
