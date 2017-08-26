@@ -67,16 +67,16 @@
     <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.2\lib\netcore50\System.dll">
       <PackagePath>System.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp\1.5.0\lib\uap10.0\Microsoft.Toolkit.Uwp.dll">
+    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp\1.5.1\lib\uap10.0\Microsoft.Toolkit.Uwp.dll">
       <PackagePath>Microsoft.Toolkit.Uwp.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI\1.5.0\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.dll">
+    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI\1.5.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.dll">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Animations\1.5.0\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Animations.dll">
+    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Animations\1.5.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Animations.dll">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Animations.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.0\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls.dll">
+    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls.dll">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.VisualBasic\10.0.1\lib\netcore50\Microsoft.VisualBasic.dll">
@@ -88,7 +88,7 @@
     <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Xaml.Behaviors.Uwp.Managed\2.0.0\lib\uap10.0\Microsoft.Xaml.Interactivity.dll">
       <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Newtonsoft.Json\10.0.2\lib\netstandard1.3\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Newtonsoft.Json\10.0.3\lib\netstandard1.3\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Robmikh.CompositionSurfaceFactory\0.7.1\runtimes\win10-x86\native\Robmikh.CompositionSurfaceFactory.dll">
@@ -454,76 +454,76 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.0\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\Microsoft.Toolkit.Uwp.UI.Controls.xr.xml">
+    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\Microsoft.Toolkit.Uwp.UI.Controls.xr.xml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Microsoft.Toolkit.Uwp.UI.Controls.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.0\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\BladeView\BladeView.xaml">
+    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\BladeView\BladeView.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\BladeView\BladeView.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.0\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\Carousel\Carousel.xaml">
+    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\Carousel\Carousel.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Carousel\Carousel.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.0\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\DropShadowPanel\DropShadowPanel.xaml">
+    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\DropShadowPanel\DropShadowPanel.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\DropShadowPanel\DropShadowPanel.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.0\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\Expander\Expander.xaml">
+    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\Expander\Expander.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Expander\Expander.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.0\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\GridSplitter\GridSplitter.xaml">
+    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\GridSplitter\GridSplitter.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\GridSplitter\GridSplitter.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.0\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\HamburgerMenu\HamburgerMenu.xaml">
+    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\HamburgerMenu\HamburgerMenu.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\HamburgerMenu\HamburgerMenu.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.0\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\HeaderedTextBlock\HeaderedTextBlock.xaml">
+    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\HeaderedTextBlock\HeaderedTextBlock.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\HeaderedTextBlock\HeaderedTextBlock.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.0\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\ImageEx\ImageEx.xaml">
+    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\ImageEx\ImageEx.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\ImageEx\ImageEx.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.0\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\ImageEx\RoundImageEx.xaml">
+    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\ImageEx\RoundImageEx.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\ImageEx\RoundImageEx.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.0\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\Loading\Loading.xaml">
+    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\Loading\Loading.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Loading\Loading.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.0\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\MarkdownTextBlock\MarkdownTextBlock.xaml">
+    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\MarkdownTextBlock\MarkdownTextBlock.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\MarkdownTextBlock\MarkdownTextBlock.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.0\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\MasterDetailsView\MasterDetailsView.xaml">
+    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\MasterDetailsView\MasterDetailsView.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\MasterDetailsView\MasterDetailsView.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.0\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\Menu\Menu.xaml">
+    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\Menu\Menu.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Menu\Menu.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.0\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\OrbitView\OrbitView.xaml">
+    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\OrbitView\OrbitView.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\OrbitView\OrbitView.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.0\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\PullToRefreshListView\PullToRefreshListView.xaml">
+    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\PullToRefreshListView\PullToRefreshListView.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\PullToRefreshListView\PullToRefreshListView.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.0\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\RadialGauge\RadialGauge.xaml">
+    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\RadialGauge\RadialGauge.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\RadialGauge\RadialGauge.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.0\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\RadialProgressBar\RadialProgressBar.xaml">
+    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\RadialProgressBar\RadialProgressBar.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\RadialProgressBar\RadialProgressBar.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.0\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\RangeSelector\RangeSelector.xaml">
+    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\RangeSelector\RangeSelector.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\RangeSelector\RangeSelector.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.0\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\RotatorTile\RotatorTile.xaml">
+    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\RotatorTile\RotatorTile.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\RotatorTile\RotatorTile.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.0\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\ScrollHeader\ScrollHeader.xaml">
+    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\ScrollHeader\ScrollHeader.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\ScrollHeader\ScrollHeader.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.0\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\SlidableListItem\SlidableListItem.xaml">
+    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\SlidableListItem\SlidableListItem.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\SlidableListItem\SlidableListItem.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.0\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\Themes\Generic.xaml">
+    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\Themes\Generic.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Themes\Generic.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.0\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\TileControl\TileControl.xaml">
+    <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.5.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\TileControl\TileControl.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\TileControl\TileControl.xaml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\resources.pri">
@@ -561,25 +561,25 @@
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.25506.0</Version>
+      <Version>14.0.25507.1</Version>
       <Architecture>ARM</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25506.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25507.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.25506.0</Version>
+      <Version>14.0.25507.1</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25506.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25507.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.25506.0</Version>
+      <Version>14.0.25507.1</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25506.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25507.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>

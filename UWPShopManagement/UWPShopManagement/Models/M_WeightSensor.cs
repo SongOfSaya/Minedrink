@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Collections.Generic;
 namespace UWPShopManagement.Models
 {
     public class M_WeightSensor : M_SensorBase

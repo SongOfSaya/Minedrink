@@ -169,13 +169,13 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="Text" />
-      <RootProperty Name="FontSize" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="SelectionHighlightColor" />
       <RootProperty Name="TextTrimming" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="TextLineBounds" />
       <RootProperty Name="OpticalMarginAlignment" />
+      <RootProperty Name="FontSize" />
       <RootProperty Name="FontWeight" />
       <RootProperty Name="LineHeight" />
       <RootProperty Name="Style" />
@@ -191,6 +191,7 @@
       <RootProperty Name="FontFamily" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="BorderBrush" />
+      <RootProperty Name="ContentTemplate" />
       <RootProperty Name="IsTabStop" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
@@ -304,8 +305,6 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.RotateTransform" />
     <RootType FullName="Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter" />
-    <RootType FullName="Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenuGlyphItem" />
-    <RootType FullName="Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenuImageItem" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListViewItem" />
     <RootType FullName="Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu">
       <RootProperty Name="HamburgerMenuTemplate" />
@@ -349,8 +348,6 @@
       <RootProperty Name="FontFamily" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="Glyph" />
-      <RootProperty Name="Foreground" />
-      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
       <RootProperty Name="Fill" />
@@ -364,16 +361,6 @@
       <RootProperty Name="Stroke" />
       <RootProperty Name="StrokeThickness" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Image">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Source" />
-      <RootProperty Name="Stretch" />
-      <RootProperty Name="Name" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Opacity" />
-      <RootProperty Name="NineGrid" />
-    </RootType>
     <RootType FullName="Microsoft.Toolkit.Uwp.UI.Controls.HeaderedTextBlock">
       <RootProperty Name="Orientation" />
       <RootProperty Name="TextStyle" />
@@ -386,6 +373,15 @@
       <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Microsoft.Toolkit.Uwp.UI.Controls.ImageEx" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Name" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="Source" />
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="NineGrid" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ProgressRing">
       <RootProperty Name="Name" />
       <RootProperty Name="Margin" />

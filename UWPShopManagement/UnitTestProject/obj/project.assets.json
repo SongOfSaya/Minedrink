@@ -284,7 +284,7 @@
       "Microsoft.NETCore.Windows.ApiSets/1.0.1": {
         "type": "package"
       },
-      "Microsoft.Toolkit.Uwp/1.5.0": {
+      "Microsoft.Toolkit.Uwp/1.5.1": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "9.0.1"
@@ -296,10 +296,10 @@
           "lib/uap10.0/Microsoft.Toolkit.Uwp.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI/1.5.0": {
+      "Microsoft.Toolkit.Uwp.UI/1.5.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp": "1.5.0"
+          "Microsoft.Toolkit.Uwp": "1.5.1"
         },
         "compile": {
           "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll": {}
@@ -308,11 +308,11 @@
           "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Animations/1.5.0": {
+      "Microsoft.Toolkit.Uwp.UI.Animations/1.5.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp": "1.5.0",
-          "Microsoft.Toolkit.Uwp.UI": "1.5.0",
+          "Microsoft.Toolkit.Uwp": "1.5.1",
+          "Microsoft.Toolkit.Uwp.UI": "1.5.1",
           "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
           "Win2D.uwp": "1.19.0"
         },
@@ -323,12 +323,12 @@
           "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.Animations.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Controls/1.5.0": {
+      "Microsoft.Toolkit.Uwp.UI.Controls/1.5.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp": "1.5.0",
-          "Microsoft.Toolkit.Uwp.UI": "1.5.0",
-          "Microsoft.Toolkit.Uwp.UI.Animations": "1.5.0",
+          "Microsoft.Toolkit.Uwp": "1.5.1",
+          "Microsoft.Toolkit.Uwp.UI": "1.5.1",
+          "Microsoft.Toolkit.Uwp.UI.Animations": "1.5.1",
           "Robmikh.CompositionSurfaceFactory": "0.7.1"
         },
         "compile": {
@@ -454,7 +454,7 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/10.0.2": {
+      "Newtonsoft.Json/10.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.3.0",
@@ -2598,10 +2598,10 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.15063",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
-          "Microsoft.Toolkit.Uwp.UI.Controls": "1.5.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0",
+          "Microsoft.Toolkit.Uwp.UI.Controls": "1.5.1",
           "Microsoft.Xaml.Behaviors.Uwp.Managed": "2.0.0",
-          "Newtonsoft.Json": "10.0.2"
+          "Newtonsoft.Json": "10.0.3"
         },
         "compile": {
           "bin/placeholder/UWPShopManagement.dll": {}
@@ -2841,7 +2841,7 @@
       "Microsoft.NETCore.Windows.ApiSets/1.0.1": {
         "type": "package"
       },
-      "Microsoft.Toolkit.Uwp/1.5.0": {
+      "Microsoft.Toolkit.Uwp/1.5.1": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "9.0.1"
@@ -2853,10 +2853,10 @@
           "lib/uap10.0/Microsoft.Toolkit.Uwp.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI/1.5.0": {
+      "Microsoft.Toolkit.Uwp.UI/1.5.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp": "1.5.0"
+          "Microsoft.Toolkit.Uwp": "1.5.1"
         },
         "compile": {
           "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll": {}
@@ -2865,11 +2865,11 @@
           "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Animations/1.5.0": {
+      "Microsoft.Toolkit.Uwp.UI.Animations/1.5.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp": "1.5.0",
-          "Microsoft.Toolkit.Uwp.UI": "1.5.0",
+          "Microsoft.Toolkit.Uwp": "1.5.1",
+          "Microsoft.Toolkit.Uwp.UI": "1.5.1",
           "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
           "Win2D.uwp": "1.19.0"
         },
@@ -2880,12 +2880,12 @@
           "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.Animations.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Controls/1.5.0": {
+      "Microsoft.Toolkit.Uwp.UI.Controls/1.5.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp": "1.5.0",
-          "Microsoft.Toolkit.Uwp.UI": "1.5.0",
-          "Microsoft.Toolkit.Uwp.UI.Animations": "1.5.0",
+          "Microsoft.Toolkit.Uwp": "1.5.1",
+          "Microsoft.Toolkit.Uwp.UI": "1.5.1",
+          "Microsoft.Toolkit.Uwp.UI.Animations": "1.5.1",
           "Robmikh.CompositionSurfaceFactory": "0.7.1"
         },
         "compile": {
@@ -3012,7 +3012,7 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/10.0.2": {
+      "Newtonsoft.Json/10.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.3.0",
@@ -5205,10 +5205,10 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.15063",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
-          "Microsoft.Toolkit.Uwp.UI.Controls": "1.5.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0",
+          "Microsoft.Toolkit.Uwp.UI.Controls": "1.5.1",
           "Microsoft.Xaml.Behaviors.Uwp.Managed": "2.0.0",
-          "Newtonsoft.Json": "10.0.2"
+          "Newtonsoft.Json": "10.0.3"
         },
         "compile": {
           "bin/placeholder/UWPShopManagement.dll": {}
@@ -5449,7 +5449,7 @@
       "Microsoft.NETCore.Windows.ApiSets/1.0.1": {
         "type": "package"
       },
-      "Microsoft.Toolkit.Uwp/1.5.0": {
+      "Microsoft.Toolkit.Uwp/1.5.1": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "9.0.1"
@@ -5461,10 +5461,10 @@
           "lib/uap10.0/Microsoft.Toolkit.Uwp.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI/1.5.0": {
+      "Microsoft.Toolkit.Uwp.UI/1.5.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp": "1.5.0"
+          "Microsoft.Toolkit.Uwp": "1.5.1"
         },
         "compile": {
           "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll": {}
@@ -5473,11 +5473,11 @@
           "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Animations/1.5.0": {
+      "Microsoft.Toolkit.Uwp.UI.Animations/1.5.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp": "1.5.0",
-          "Microsoft.Toolkit.Uwp.UI": "1.5.0",
+          "Microsoft.Toolkit.Uwp": "1.5.1",
+          "Microsoft.Toolkit.Uwp.UI": "1.5.1",
           "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
           "Win2D.uwp": "1.19.0"
         },
@@ -5488,12 +5488,12 @@
           "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.Animations.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Controls/1.5.0": {
+      "Microsoft.Toolkit.Uwp.UI.Controls/1.5.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp": "1.5.0",
-          "Microsoft.Toolkit.Uwp.UI": "1.5.0",
-          "Microsoft.Toolkit.Uwp.UI.Animations": "1.5.0",
+          "Microsoft.Toolkit.Uwp": "1.5.1",
+          "Microsoft.Toolkit.Uwp.UI": "1.5.1",
+          "Microsoft.Toolkit.Uwp.UI.Animations": "1.5.1",
           "Robmikh.CompositionSurfaceFactory": "0.7.1"
         },
         "compile": {
@@ -5620,7 +5620,7 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/10.0.2": {
+      "Newtonsoft.Json/10.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.3.0",
@@ -7848,10 +7848,10 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.15063",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
-          "Microsoft.Toolkit.Uwp.UI.Controls": "1.5.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0",
+          "Microsoft.Toolkit.Uwp.UI.Controls": "1.5.1",
           "Microsoft.Xaml.Behaviors.Uwp.Managed": "2.0.0",
-          "Newtonsoft.Json": "10.0.2"
+          "Newtonsoft.Json": "10.0.3"
         },
         "compile": {
           "bin/placeholder/UWPShopManagement.dll": {}
@@ -8094,7 +8094,7 @@
       "Microsoft.NETCore.Windows.ApiSets/1.0.1": {
         "type": "package"
       },
-      "Microsoft.Toolkit.Uwp/1.5.0": {
+      "Microsoft.Toolkit.Uwp/1.5.1": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "9.0.1"
@@ -8106,10 +8106,10 @@
           "lib/uap10.0/Microsoft.Toolkit.Uwp.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI/1.5.0": {
+      "Microsoft.Toolkit.Uwp.UI/1.5.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp": "1.5.0"
+          "Microsoft.Toolkit.Uwp": "1.5.1"
         },
         "compile": {
           "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll": {}
@@ -8118,11 +8118,11 @@
           "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Animations/1.5.0": {
+      "Microsoft.Toolkit.Uwp.UI.Animations/1.5.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp": "1.5.0",
-          "Microsoft.Toolkit.Uwp.UI": "1.5.0",
+          "Microsoft.Toolkit.Uwp": "1.5.1",
+          "Microsoft.Toolkit.Uwp.UI": "1.5.1",
           "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
           "Win2D.uwp": "1.19.0"
         },
@@ -8133,12 +8133,12 @@
           "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.Animations.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Controls/1.5.0": {
+      "Microsoft.Toolkit.Uwp.UI.Controls/1.5.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp": "1.5.0",
-          "Microsoft.Toolkit.Uwp.UI": "1.5.0",
-          "Microsoft.Toolkit.Uwp.UI.Animations": "1.5.0",
+          "Microsoft.Toolkit.Uwp": "1.5.1",
+          "Microsoft.Toolkit.Uwp.UI": "1.5.1",
+          "Microsoft.Toolkit.Uwp.UI.Animations": "1.5.1",
           "Robmikh.CompositionSurfaceFactory": "0.7.1"
         },
         "compile": {
@@ -8265,7 +8265,7 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/10.0.2": {
+      "Newtonsoft.Json/10.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.3.0",
@@ -10464,10 +10464,10 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.15063",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
-          "Microsoft.Toolkit.Uwp.UI.Controls": "1.5.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0",
+          "Microsoft.Toolkit.Uwp.UI.Controls": "1.5.1",
           "Microsoft.Xaml.Behaviors.Uwp.Managed": "2.0.0",
-          "Newtonsoft.Json": "10.0.2"
+          "Newtonsoft.Json": "10.0.3"
         },
         "compile": {
           "bin/placeholder/UWPShopManagement.dll": {}
@@ -10711,7 +10711,7 @@
       "Microsoft.NETCore.Windows.ApiSets/1.0.1": {
         "type": "package"
       },
-      "Microsoft.Toolkit.Uwp/1.5.0": {
+      "Microsoft.Toolkit.Uwp/1.5.1": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "9.0.1"
@@ -10723,10 +10723,10 @@
           "lib/uap10.0/Microsoft.Toolkit.Uwp.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI/1.5.0": {
+      "Microsoft.Toolkit.Uwp.UI/1.5.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp": "1.5.0"
+          "Microsoft.Toolkit.Uwp": "1.5.1"
         },
         "compile": {
           "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll": {}
@@ -10735,11 +10735,11 @@
           "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Animations/1.5.0": {
+      "Microsoft.Toolkit.Uwp.UI.Animations/1.5.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp": "1.5.0",
-          "Microsoft.Toolkit.Uwp.UI": "1.5.0",
+          "Microsoft.Toolkit.Uwp": "1.5.1",
+          "Microsoft.Toolkit.Uwp.UI": "1.5.1",
           "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
           "Win2D.uwp": "1.19.0"
         },
@@ -10750,12 +10750,12 @@
           "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.Animations.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Controls/1.5.0": {
+      "Microsoft.Toolkit.Uwp.UI.Controls/1.5.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp": "1.5.0",
-          "Microsoft.Toolkit.Uwp.UI": "1.5.0",
-          "Microsoft.Toolkit.Uwp.UI.Animations": "1.5.0",
+          "Microsoft.Toolkit.Uwp": "1.5.1",
+          "Microsoft.Toolkit.Uwp.UI": "1.5.1",
+          "Microsoft.Toolkit.Uwp.UI.Animations": "1.5.1",
           "Robmikh.CompositionSurfaceFactory": "0.7.1"
         },
         "compile": {
@@ -10882,7 +10882,7 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/10.0.2": {
+      "Newtonsoft.Json/10.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.3.0",
@@ -13116,10 +13116,10 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.15063",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
-          "Microsoft.Toolkit.Uwp.UI.Controls": "1.5.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0",
+          "Microsoft.Toolkit.Uwp.UI.Controls": "1.5.1",
           "Microsoft.Xaml.Behaviors.Uwp.Managed": "2.0.0",
-          "Newtonsoft.Json": "10.0.2"
+          "Newtonsoft.Json": "10.0.3"
         },
         "compile": {
           "bin/placeholder/UWPShopManagement.dll": {}
@@ -13362,7 +13362,7 @@
       "Microsoft.NETCore.Windows.ApiSets/1.0.1": {
         "type": "package"
       },
-      "Microsoft.Toolkit.Uwp/1.5.0": {
+      "Microsoft.Toolkit.Uwp/1.5.1": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "9.0.1"
@@ -13374,10 +13374,10 @@
           "lib/uap10.0/Microsoft.Toolkit.Uwp.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI/1.5.0": {
+      "Microsoft.Toolkit.Uwp.UI/1.5.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp": "1.5.0"
+          "Microsoft.Toolkit.Uwp": "1.5.1"
         },
         "compile": {
           "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll": {}
@@ -13386,11 +13386,11 @@
           "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Animations/1.5.0": {
+      "Microsoft.Toolkit.Uwp.UI.Animations/1.5.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp": "1.5.0",
-          "Microsoft.Toolkit.Uwp.UI": "1.5.0",
+          "Microsoft.Toolkit.Uwp": "1.5.1",
+          "Microsoft.Toolkit.Uwp.UI": "1.5.1",
           "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
           "Win2D.uwp": "1.19.0"
         },
@@ -13401,12 +13401,12 @@
           "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.Animations.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Controls/1.5.0": {
+      "Microsoft.Toolkit.Uwp.UI.Controls/1.5.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp": "1.5.0",
-          "Microsoft.Toolkit.Uwp.UI": "1.5.0",
-          "Microsoft.Toolkit.Uwp.UI.Animations": "1.5.0",
+          "Microsoft.Toolkit.Uwp": "1.5.1",
+          "Microsoft.Toolkit.Uwp.UI": "1.5.1",
+          "Microsoft.Toolkit.Uwp.UI.Animations": "1.5.1",
           "Robmikh.CompositionSurfaceFactory": "0.7.1"
         },
         "compile": {
@@ -13533,7 +13533,7 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/10.0.2": {
+      "Newtonsoft.Json/10.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.3.0",
@@ -15732,10 +15732,10 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.15063",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
-          "Microsoft.Toolkit.Uwp.UI.Controls": "1.5.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0",
+          "Microsoft.Toolkit.Uwp.UI.Controls": "1.5.1",
           "Microsoft.Xaml.Behaviors.Uwp.Managed": "2.0.0",
-          "Newtonsoft.Json": "10.0.2"
+          "Newtonsoft.Json": "10.0.3"
         },
         "compile": {
           "bin/placeholder/UWPShopManagement.dll": {}
@@ -15979,7 +15979,7 @@
       "Microsoft.NETCore.Windows.ApiSets/1.0.1": {
         "type": "package"
       },
-      "Microsoft.Toolkit.Uwp/1.5.0": {
+      "Microsoft.Toolkit.Uwp/1.5.1": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "9.0.1"
@@ -15991,10 +15991,10 @@
           "lib/uap10.0/Microsoft.Toolkit.Uwp.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI/1.5.0": {
+      "Microsoft.Toolkit.Uwp.UI/1.5.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp": "1.5.0"
+          "Microsoft.Toolkit.Uwp": "1.5.1"
         },
         "compile": {
           "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll": {}
@@ -16003,11 +16003,11 @@
           "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Animations/1.5.0": {
+      "Microsoft.Toolkit.Uwp.UI.Animations/1.5.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp": "1.5.0",
-          "Microsoft.Toolkit.Uwp.UI": "1.5.0",
+          "Microsoft.Toolkit.Uwp": "1.5.1",
+          "Microsoft.Toolkit.Uwp.UI": "1.5.1",
           "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
           "Win2D.uwp": "1.19.0"
         },
@@ -16018,12 +16018,12 @@
           "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.Animations.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Controls/1.5.0": {
+      "Microsoft.Toolkit.Uwp.UI.Controls/1.5.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp": "1.5.0",
-          "Microsoft.Toolkit.Uwp.UI": "1.5.0",
-          "Microsoft.Toolkit.Uwp.UI.Animations": "1.5.0",
+          "Microsoft.Toolkit.Uwp": "1.5.1",
+          "Microsoft.Toolkit.Uwp.UI": "1.5.1",
+          "Microsoft.Toolkit.Uwp.UI.Animations": "1.5.1",
           "Robmikh.CompositionSurfaceFactory": "0.7.1"
         },
         "compile": {
@@ -16150,7 +16150,7 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/10.0.2": {
+      "Newtonsoft.Json/10.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.3.0",
@@ -18384,10 +18384,10 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.15063",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
-          "Microsoft.Toolkit.Uwp.UI.Controls": "1.5.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0",
+          "Microsoft.Toolkit.Uwp.UI.Controls": "1.5.1",
           "Microsoft.Xaml.Behaviors.Uwp.Managed": "2.0.0",
-          "Newtonsoft.Json": "10.0.2"
+          "Newtonsoft.Json": "10.0.3"
         },
         "compile": {
           "bin/placeholder/UWPShopManagement.dll": {}
@@ -20714,49 +20714,49 @@
         "runtime.json"
       ]
     },
-    "Microsoft.Toolkit.Uwp/1.5.0": {
-      "sha512": "/Q8T2vWRMhpI86u0w60GdTr3K4geiT9kG2VQUu/oR+d6Dn6P9whpUqWZXDzVojDakDQOQZofxMfZVOkt5Nre0w==",
+    "Microsoft.Toolkit.Uwp/1.5.1": {
+      "sha512": "ModoeoxleTFEOFZiwYzDSSO0ItGDt6/ANcZzwlgTKEtkdQQdV1s9iIUwiO8q8iTULgYyj37WhduJEczifhNouw==",
       "type": "package",
-      "path": "microsoft.toolkit.uwp/1.5.0",
+      "path": "microsoft.toolkit.uwp/1.5.1",
       "files": [
         "lib/uap10.0/Microsoft.Toolkit.Uwp.dll",
         "lib/uap10.0/Microsoft.Toolkit.Uwp.pdb",
         "lib/uap10.0/Microsoft.Toolkit.Uwp.pri",
         "lib/uap10.0/Microsoft.Toolkit.Uwp.xml",
-        "microsoft.toolkit.uwp.1.5.0.nupkg.sha512",
+        "microsoft.toolkit.uwp.1.5.1.nupkg.sha512",
         "microsoft.toolkit.uwp.nuspec"
       ]
     },
-    "Microsoft.Toolkit.Uwp.UI/1.5.0": {
-      "sha512": "EgCTwv6Eg2EjkK8bI3f3pXXAsbjxA6ZxQ3d54msBzj4i4+/uxg+3prPbGuLb9EXi08eU+AKsgbgY57MAsCvW/A==",
+    "Microsoft.Toolkit.Uwp.UI/1.5.1": {
+      "sha512": "bKy5j/YdoDPkQ1ybuDY0JSMqCie68kYWyYQHCfGfmKjqbM2SY+88wBVD+boGY1xIGzGhJuEQIR4WpHYMNTCvCA==",
       "type": "package",
-      "path": "microsoft.toolkit.uwp.ui/1.5.0",
+      "path": "microsoft.toolkit.uwp.ui/1.5.1",
       "files": [
         "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.XML",
         "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll",
         "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.pdb",
         "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.pri",
-        "microsoft.toolkit.uwp.ui.1.5.0.nupkg.sha512",
+        "microsoft.toolkit.uwp.ui.1.5.1.nupkg.sha512",
         "microsoft.toolkit.uwp.ui.nuspec"
       ]
     },
-    "Microsoft.Toolkit.Uwp.UI.Animations/1.5.0": {
-      "sha512": "LDAYisJBXEiwez4xm2+wH7OZKhGQs5d9pWmK1/WoYRwgVMKQH4p8Wet2YzaorPRvyQTI/bTBRf5ngDL1qqokQA==",
+    "Microsoft.Toolkit.Uwp.UI.Animations/1.5.1": {
+      "sha512": "kyG7c/Y5JFgslP/jXd7FKb09NvH9AT+EAOqY1TI8VxtZAjhO1PCm4w7YVXKFtizxyUhdkLl7efj3eQeD9aRvOA==",
       "type": "package",
-      "path": "microsoft.toolkit.uwp.ui.animations/1.5.0",
+      "path": "microsoft.toolkit.uwp.ui.animations/1.5.1",
       "files": [
         "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.Animations.dll",
         "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.Animations.pdb",
         "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.Animations.pri",
         "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.Animations.xml",
-        "microsoft.toolkit.uwp.ui.animations.1.5.0.nupkg.sha512",
+        "microsoft.toolkit.uwp.ui.animations.1.5.1.nupkg.sha512",
         "microsoft.toolkit.uwp.ui.animations.nuspec"
       ]
     },
-    "Microsoft.Toolkit.Uwp.UI.Controls/1.5.0": {
-      "sha512": "zMLBUhe/cAvoDojzYRWthBTXhxhHfHODk8ULrnWJg9bRmLj/hO10NZLlTg8VzjQO4uipmcfTulGYPZWbarSpyw==",
+    "Microsoft.Toolkit.Uwp.UI.Controls/1.5.1": {
+      "sha512": "CTJf330A14FrsW/+IUKs5tyFjusIJYMlDCX2eWnB9qr3Lnv5ZBioqKq74w4E9Fu7bXWRZvK0ztezq97K5aNPmA==",
       "type": "package",
-      "path": "microsoft.toolkit.uwp.ui.controls/1.5.0",
+      "path": "microsoft.toolkit.uwp.ui.controls/1.5.1",
       "files": [
         "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.Controls.dll",
         "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.Controls.pdb",
@@ -20786,7 +20786,7 @@
         "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.Controls/SlidableListItem/SlidableListItem.xaml",
         "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.Controls/Themes/Generic.xaml",
         "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.Controls/TileControl/TileControl.xaml",
-        "microsoft.toolkit.uwp.ui.controls.1.5.0.nupkg.sha512",
+        "microsoft.toolkit.uwp.ui.controls.1.5.1.nupkg.sha512",
         "microsoft.toolkit.uwp.ui.controls.nuspec"
       ]
     },
@@ -21055,10 +21055,10 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/10.0.2": {
-      "sha512": "iwElSU2IXmwGvytJsezyDML2ZWDkG2JzTYzlU/BNlmzMdlmRvbnwITsGGY74gwVEpDli1UdOLkMT7/3jxWvXzA==",
+    "Newtonsoft.Json/10.0.3": {
+      "sha512": "wBM7i7i3U2WX0ecor4zdVGvgrwFUjuigBoHKiL+nH39fCOpCPjBY3RDqJM32edvdyTAVdjzlccHsg41+/+zpSA==",
       "type": "package",
-      "path": "newtonsoft.json/10.0.2",
+      "path": "newtonsoft.json/10.0.3",
       "files": [
         "LICENSE.md",
         "lib/net20/Newtonsoft.Json.dll",
@@ -21073,11 +21073,11 @@
         "lib/netstandard1.0/Newtonsoft.Json.xml",
         "lib/netstandard1.3/Newtonsoft.Json.dll",
         "lib/netstandard1.3/Newtonsoft.Json.xml",
-        "lib/portable-net40+sl5+win8+wpa81+wp8/Newtonsoft.Json.dll",
-        "lib/portable-net40+sl5+win8+wpa81+wp8/Newtonsoft.Json.xml",
-        "lib/portable-net45+win8+wpa81+wp8/Newtonsoft.Json.dll",
-        "lib/portable-net45+win8+wpa81+wp8/Newtonsoft.Json.xml",
-        "newtonsoft.json.10.0.2.nupkg.sha512",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.10.0.3.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "tools/install.ps1"
       ]
