@@ -18,23 +18,28 @@
             x:Name="TitlePage"
             x:Uid="Main_Title"
             Style="{StaticResource PageTitleStyle}" />
-        
-        <Grid 
+
+        <StackPanel Orientation="Vertical"
             Grid.Row="1" 
             Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
             <!--The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content. 
                 Place your content here.-->
-            <Button Content="中文测试"></Button>
-        </Grid>
+            <Button x:ConnectionId='4' Content="中文测试"
+                    Margin="12,12,12,12"
+                                        />
+            <TextBlock x:ConnectionId='5' Text="测试返回值:"
+                       Name="TestTextBlock"
+                       Margin="12,12,12,12"/>
+        </StackPanel>
         <!--  Adaptive triggers  -->
         <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:ConnectionId='4' x:Name="WindowStates">
-                <VisualState x:ConnectionId='5' x:Name="WideState">
+            <VisualStateGroup x:ConnectionId='6' x:Name="WindowStates">
+                <VisualState x:ConnectionId='7' x:Name="WideState">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="640"/>
                     </VisualState.StateTriggers>
                 </VisualState>
-                <VisualState x:ConnectionId='6' x:Name="NarrowState">
+                <VisualState x:ConnectionId='8' x:Name="NarrowState">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="0"/>
                     </VisualState.StateTriggers>

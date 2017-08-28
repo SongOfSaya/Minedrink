@@ -77,8 +77,8 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Children" />
       <RootProperty Name="Orientation" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="Background" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Name" />
@@ -101,11 +101,11 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="Children" />
-      <RootProperty Name="Background" />
       <RootProperty Name="Width" />
       <RootProperty Name="MinWidth" />
       <RootProperty Name="Height" />
       <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="Background" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Padding" />
       <RootMethod Name="GetRow" />
@@ -124,6 +124,8 @@
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />
+      <RootProperty Name="Margin" />
+      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.VisualStateGroup">
       <RootProperty Name="States" />

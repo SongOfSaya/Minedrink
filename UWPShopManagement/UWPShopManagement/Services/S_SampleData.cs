@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using UWPShopManagement.Models;
@@ -11,13 +12,38 @@ namespace UWPShopManagement.Services
     // TODO WTS: Delete this file once your app is using real data.
     public static class S_SampleData
     {
+        public static M_ArduinoMarkA ServerArduinoDemo()
+        {
+            M_ArduinoMarkA arduino = new M_ArduinoMarkA();
+            arduino.ID = "MCU1234";
+            arduino.IP = "192.168.0.1";
+            arduino.Port = "1000";
+            arduino.Name = "主料区";
+            arduino.Shop = "一号店";
+            arduino.Type = "ArduinoMega2560";
+            arduino.MarkColor = 123;
+            arduino.SensorCollection = new ObservableCollection<M_WeightSensor>
+            {
+                new M_WeightSensor()
+                {
+                    PIN_DT = 53,
+                    Name = "西瓜"
+                },
+                new M_WeightSensor() {
+                    PIN_DT = 12,
+                    Name = "苹果"
+                }
+            };
+            return arduino;
+        }
         public static ObservableCollection<S_ArduinoLink> AllObservableArduinoLinks()
         {
             var data = new ObservableCollection<S_ArduinoLink>();
             for (int i = 0; i < 3; i++)
             {
                 S_ArduinoLink s_ArduinoLink = new S_ArduinoLink();
-                s_ArduinoLink.Arduino.ID = new Random().Next(100);
+                s_ArduinoLink.Arduino.ID = new Random().Next(100).ToString();
+                ;
                 s_ArduinoLink.Arduino.Name = "虚拟Arudino";
                 data.Add(s_ArduinoLink);
             }
@@ -29,7 +55,7 @@ namespace UWPShopManagement.Services
             for (int i = 0; i < 3; i++)
             {
                 S_ArduinoLink s_ArduinoLink = new S_ArduinoLink();
-                s_ArduinoLink.Arduino.ID = new Random().Next(100);
+                s_ArduinoLink.Arduino.ID = new Random().Next(100).ToString();
                 s_ArduinoLink.Arduino.Name = "虚拟Arudino";
                 data.Add(s_ArduinoLink);
             }

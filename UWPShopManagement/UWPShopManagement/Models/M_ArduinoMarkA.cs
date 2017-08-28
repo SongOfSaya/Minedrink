@@ -5,50 +5,74 @@ using UWPShopManagement.Helpers;
 namespace UWPShopManagement.Models
 {
     /// <summary>
-    /// 不知道是否需要Observeable
+    /// 
     /// </summary>
     public class M_ArduinoMarkA : Observable
-    {        
+    {
+        #region Init
+        //名称
         private string _name;
-
         public string Name
         {
             get { return _name; }
             set { Set(ref _name, value); }
         }
-
-        private int _id;
-        public int ID
+        //唯一标识符
+        private string _id;
+        public string ID
         {
             get { return _id; }
             set
             {
                 Set(ref _id, value);
-                Name = NameConverter(_id);
+                //Name = NameConverter(_id);
             }
         }
-        private TimeSpan _mills;
-
-        public TimeSpan Mills
-        {
-            get { return _mills; }
-            set { Set(ref _mills, value); }
-        }
+        //IP地址
         private string _ip;
-
         public string IP
         {
             get { return _ip; }
             set { Set(ref _ip, value); }
         }
+        //端口号
         private string _prot;
-
         public string Port
         {
             get { return _prot; }
             set { Set(ref _prot, value); }
         }
-
+        //所在店铺
+        private string _shop;
+        public string Shop
+        {
+            get { return _shop; }
+            set { Set(ref _shop, value); }
+        }
+        //标识颜色
+        private int _markColor;
+        public int MarkColor
+        {
+            get { return _markColor; }
+            set { Set(ref _markColor, value); }
+        }
+        //Arduino的型号
+        private string _typoe;
+        public string Type
+        {
+            get { return _typoe; }
+            set { Set(ref _typoe, value); }
+        }
+        #endregion
+        #region RunTime
+        //已运行时间
+        private TimeSpan _mills;
+        public TimeSpan Mills
+        {
+            get { return _mills; }
+            set { Set(ref _mills, value); }
+        }
+        //运行模式的数值
         private int _mode;
         public int Mode
         {
@@ -59,28 +83,29 @@ namespace UWPShopManagement.Models
                 ModeName = ModeConverter(_mode);
             }
         }
+        //运行模式的名称
         private string _modeName;
-
         public string ModeName
         {
             get { return _modeName; }
             set { Set(ref _modeName, value); }
         }
-        private int _markColor;
-
-        public int MarkColor
-        {
-            get { return _markColor; }
-            set { Set(ref _markColor, value); }
-        }
+        //是否除在连接状态
         private bool _isConnect;
-
         public bool IsConnect
         {
             get { return _isConnect; }
             set { Set(ref _isConnect, value); }
         }
-        //此Arduino是否在线
+        #endregion
+
+
+
+
+
+
+        
+
         public ObservableCollection<M_WeightSensor> SensorCollection { get; set; }
         public static string NameConverter(int ID)
         {

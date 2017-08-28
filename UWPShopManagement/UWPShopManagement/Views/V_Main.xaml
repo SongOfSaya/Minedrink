@@ -18,14 +18,19 @@
             x:Name="TitlePage"
             x:Uid="Main_Title"
             Style="{StaticResource PageTitleStyle}" />
-        
-        <Grid 
+
+        <StackPanel Orientation="Vertical"
             Grid.Row="1" 
             Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
             <!--The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content. 
                 Place your content here.-->
-            <Button Content="中文测试"></Button>
-        </Grid>
+            <Button Content="中文测试"
+                    Margin="12,12,12,12"
+                    Click="Button_Click"/>
+            <TextBlock Text="测试返回值:"
+                       Name="TestTextBlock"
+                       Margin="12,12,12,12"/>
+        </StackPanel>
         <!--  Adaptive triggers  -->
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup x:Name="WindowStates">

@@ -210,12 +210,12 @@ namespace UWPShopManagement.Views
                     }
                 }
             }
-            private void Update_Arduino_ID(global::System.Int32 obj, int phase)
+            private void Update_Arduino_ID(global::System.String obj, int phase)
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
                     // Views\V_ArduinoManagement.xaml line 26
-                    XamlBindingSetters.Set_Windows_UI_Xaml_Controls_TextBlock_Text(this.obj3, obj.ToString(), null);
+                    XamlBindingSetters.Set_Windows_UI_Xaml_Controls_TextBlock_Text(this.obj3, obj, null);
                 }
             }
             private void Update_Arduino_Name(global::System.String obj, int phase)

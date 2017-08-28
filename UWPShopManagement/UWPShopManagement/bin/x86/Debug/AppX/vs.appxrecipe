@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-26T22:10:56.604</Modified>
+      <Modified>2017-08-28T14:22:13.708</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\UWPShopManagement.exe">
       <PackagePath>entrypoint\UWPShopManagement.exe</PackagePath>
-      <Modified>2017-08-26T22:10:52.912</Modified>
+      <Modified>2017-08-28T14:20:32.925</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\.nuget\packages\Microsoft.CSharp\4.3.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -599,7 +599,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\UWPShopManagement.xr.xml">
       <PackagePath>UWPShopManagement.xr.xml</PackagePath>
-      <Modified>2017-08-23T01:29:28.521</Modified>
+      <Modified>2017-08-26T23:22:04.620</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -704,11 +704,11 @@
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-26T22:10:54.454</Modified>
+      <Modified>2017-08-28T14:22:13.204</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Debug\Core\UWPShopManagement.exe">
       <PackagePath>UWPShopManagement.exe</PackagePath>
-      <Modified>2017-08-26T22:10:56.591</Modified>
+      <Modified>2017-08-28T14:22:13.698</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

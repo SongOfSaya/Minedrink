@@ -49,7 +49,7 @@ namespace UWPShopManagement.ViewModels
             get { return _selected; }
             set { Set(ref _selected, value); }
         }
-        
+
         private M_WeightSensor _selectedSensor;
         //被选中的传感器
         public M_WeightSensor SelectedSensor
@@ -130,7 +130,7 @@ namespace UWPShopManagement.ViewModels
         /// 点击SensorsListView中的一项
         /// </summary>
         public ICommand SensorItemClickCommand { get; private set; }
-        
+
 
         #endregion
         public VM_ArduinoManagement()
@@ -144,13 +144,7 @@ namespace UWPShopManagement.ViewModels
             DialogSubmitCommand = new RelayCommand<ContentDialogButtonClickEventArgs>(OnAddDialogSubmit);
             RefreshBtnCommand = new RelayCommand(OnRefreshBtnCommand);
             SensorItemClickCommand = new RelayCommand<ItemClickEventArgs>(OnSensorItemClick);
-            ArduinoLinkItems.CollectionChanged += ArduinoLinkItems_CollectionChanged;
             //this.PropertyChanged += VM_ArduinoManagement_PropertyChanged;
-        }
-
-        private void ArduinoLinkItems_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
-        {
-            Debug.WriteLine("检测到列表改变");
         }
 
         private void OnSensorItemClick(ItemClickEventArgs obj)
@@ -161,11 +155,16 @@ namespace UWPShopManagement.ViewModels
             }
         }
 
-        private void OnRefreshBtnCommand()
+        private async void OnRefreshBtnCommand()
         {
-            Selected.Arduino.ID++;
-            TestNum++;
+            //Selected.Arduino.ID += "1";
+            //TestNum++;
+            //string str = await H_Json.StringifyAsync(ArduinoLinkItems.First());
+            //string strTest = "{ \"Arduino\":{ \"name\":\"虚打的Arudino\",\"ID\":999,\"Mills\":\"00:00:00\",\"IP\":null,\"Port\":null,\"ode\":5,\"ModeName\":null,\"MarkColor\":0,\"IsConnect\":false}}";
+            //S_ArduinoLink s = await H_Json.ToObjectAsync<S_ArduinoLink>(strTest);
+            //ArduinoLinkItems.Add(s);
             
+           
         }
 
         private async void OnAddDialogSubmit(ContentDialogButtonClickEventArgs args)
@@ -178,14 +177,14 @@ namespace UWPShopManagement.ViewModels
                 ConnectInfo = "已存在使用此IP地址的Arduino";
                 return;
             }
-            
+
             ConnectInfo = "正在连接中...";
             S_ArduinoLink arduinoLink = new S_ArduinoLink();
             bool isConnect = await arduinoLink.Connection(IPTextBox, PortTextBox);
             if (isConnect)
             {
                 ConnectInfo = "连接成功，正在初始化...";
-                
+
                 await Task.Delay(1000);
                 _addArduinoDialog.Hide();
                 arduinoLink.Arduino.IsConnect = true;
@@ -193,7 +192,7 @@ namespace UWPShopManagement.ViewModels
 #if DEBUG
                 Debug.WriteLine("添加成功");
 #endif
-                
+
             }
             else
             {
@@ -246,37 +245,37 @@ namespace UWPShopManagement.ViewModels
                 }
             }
         }
-        
 
-            //get
-            //{
-            //    return _incrementCommand
-            //        ?? (_incrementCommand = new RelayCommand(
-            //        () =>
-            //        {
-            //            WelcomeTitle = string.Format("Counter clicked {0} times", ++_counter);
-            //        }));
-            //}
-            //_runClock = true;
 
-            //Task.Run(async () =>
-            //{
-            //    while (_runClock)
-            //    {
-            //        try
-            //        {
-            //            DispatcherHelper.CheckBeginInvokeOnUI(() =>
-            //            {
-            //                Clock = DateTime.Now.ToString("HH:mm:ss");
-            //            });
+        //get
+        //{
+        //    return _incrementCommand
+        //        ?? (_incrementCommand = new RelayCommand(
+        //        () =>
+        //        {
+        //            WelcomeTitle = string.Format("Counter clicked {0} times", ++_counter);
+        //        }));
+        //}
+        //_runClock = true;
 
-            //            await Task.Delay(1000);
-            //        }
-            //        catch (Exception)
-            //        {
-            //        }
-            //    }
-            //});
-            //}
-        }
+        //Task.Run(async () =>
+        //{
+        //    while (_runClock)
+        //    {
+        //        try
+        //        {
+        //            DispatcherHelper.CheckBeginInvokeOnUI(() =>
+        //            {
+        //                Clock = DateTime.Now.ToString("HH:mm:ss");
+        //            });
+
+        //            await Task.Delay(1000);
+        //        }
+        //        catch (Exception)
+        //        {
+        //        }
+        //    }
+        //});
+        //}
+    }
 }

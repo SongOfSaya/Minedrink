@@ -583,12 +583,12 @@ namespace UWPShopManagement.Views
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_TextBlock_Text(this.obj12, obj.ToString(), null);
                 }
             }
-            private void Update_MasterMenuItem_Arduino_ID(global::System.Int32 obj, int phase)
+            private void Update_MasterMenuItem_Arduino_ID(global::System.String obj, int phase)
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
                     // Views\V_ArduinoManagement_C.xaml line 74
-                    XamlBindingSetters.Set_Windows_UI_Xaml_Controls_TextBlock_Text(this.obj13, obj.ToString(), null);
+                    XamlBindingSetters.Set_Windows_UI_Xaml_Controls_TextBlock_Text(this.obj13, obj, null);
                 }
             }
 

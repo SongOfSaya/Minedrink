@@ -43,7 +43,7 @@ namespace UWPShopManagement.Services
         //变化大于X,视为有效变动
         private int _threshold = 5;
         //变化小于此,视为传感器波动
-        private int _minChange = 2;
+        //private int _minChange = 2;
         #endregion
         /// <summary>
         /// 和远程Arduino的TCPServer建立连接
@@ -204,7 +204,7 @@ namespace UWPShopManagement.Services
         {
 
             var rootObject = JsonObject.Parse(detail);
-            Arduino.ID = (int)(rootObject[H_Json.ID].GetNumber());
+            Arduino.ID = (rootObject[H_Json.ID].GetString());
             Arduino.Mills = M_ArduinoMarkA.MillsConverter((long)rootObject[H_Json.Mills].GetNumber());
             Arduino.Mode = (int)rootObject[H_Json.Mode].GetNumber();
             Arduino.MarkColor = (int)rootObject[H_Json.Color].GetNumber();

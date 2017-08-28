@@ -39,6 +39,12 @@ namespace UWPShopManagement.Helpers
         public const string Offset = "OFF";
         //重量传感器的GapValue(应变系数)
         public const string GapValue = "GV";
+        /// <summary>
+        /// 执行反序列化时,属性配置不区分大小写
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="value"></param>
+        /// <returns></returns>
         public static async Task<T> ToObjectAsync<T>(string value)
         {
             return await Task.Run<T>(() =>
@@ -46,7 +52,7 @@ namespace UWPShopManagement.Helpers
                 return JsonConvert.DeserializeObject<T>(value);
             });
         }
-
+        
         public static async Task<string> StringifyAsync(object value)
         {
             return await Task.Run<string>(() =>
