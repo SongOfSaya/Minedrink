@@ -120,6 +120,8 @@
     <Compile Include="Helpers\Observable.cs" />
     <Compile Include="Helpers\RelayCommand.cs" />
     <Compile Include="Helpers\SettingsStorageExtensions.cs" />
+    <Compile Include="Helpers\StatusToImageConverter.cs" />
+    <Compile Include="Helpers\StatusToStringConverter.cs" />
     <Compile Include="Models\M_AduHostName.cs" />
     <Compile Include="Models\M_ArduinoMarkA.cs" />
     <Compile Include="Models\M_SensorBase.cs" />
@@ -228,6 +230,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Assets\AllRight.png" />
+    <Content Include="Assets\Warning.png" />
+    <Content Include="Assets\Error.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

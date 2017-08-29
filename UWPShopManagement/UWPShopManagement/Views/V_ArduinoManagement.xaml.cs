@@ -13,13 +13,13 @@ namespace UWPShopManagement.Views
         public V_ArduinoManagement()
         {
             InitializeComponent();
+            
         }
-        //此函数内不宜耗时过长,推荐多用异步
+        
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            ViewModel.LoadDataAsync(WindowStates.CurrentState);
+            //
         }
-
         private void RefreshAduBtn_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
         {
             //MasterListView

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Linq;
@@ -145,6 +146,7 @@ namespace UWPShopManagement.ViewModels
             RefreshBtnCommand = new RelayCommand(OnRefreshBtnCommand);
             SensorItemClickCommand = new RelayCommand<ItemClickEventArgs>(OnSensorItemClick);
             //this.PropertyChanged += VM_ArduinoManagement_PropertyChanged;
+            LoadDataAsync();
         }
 
         private void OnSensorItemClick(ItemClickEventArgs obj)
@@ -155,7 +157,7 @@ namespace UWPShopManagement.ViewModels
             }
         }
 
-        private async void OnRefreshBtnCommand()
+        private void OnRefreshBtnCommand()
         {
             //Selected.Arduino.ID += "1";
             //TestNum++;
@@ -163,8 +165,8 @@ namespace UWPShopManagement.ViewModels
             //string strTest = "{ \"Arduino\":{ \"name\":\"虚打的Arudino\",\"ID\":999,\"Mills\":\"00:00:00\",\"IP\":null,\"Port\":null,\"ode\":5,\"ModeName\":null,\"MarkColor\":0,\"IsConnect\":false}}";
             //S_ArduinoLink s = await H_Json.ToObjectAsync<S_ArduinoLink>(strTest);
             //ArduinoLinkItems.Add(s);
-            
-           
+
+
         }
 
         private async void OnAddDialogSubmit(ContentDialogButtonClickEventArgs args)
@@ -211,38 +213,33 @@ namespace UWPShopManagement.ViewModels
             _addArduinoDialog = new V_AddArduinoDialog();
             ContentDialogResult result = await _addArduinoDialog.ShowAsync();
         }
-
-        public void LoadDataAsync(VisualState currentState)
+        /// <summary>
+        /// 从服务器获得初始化的数据
+        /// </summary>
+        public async void LoadDataAsync()
         {
-            _currentState = currentState;
             ArduinoLinkItems.Clear();
-            var data = S_SampleData.GetAllArduinoLinkAsync();
-            foreach (var item in data)
+            S_HttpConnect s_HttpConnect = Singleton<S_HttpConnect>.Instance;
+            List<M_ArduinoMarkA> arduinoList = await s_HttpConnect.GetAllMCUWithShop("一号店");
+            foreach (var item in arduinoList)
             {
-                ArduinoLinkItems.Add(item);
+                ArduinoLinkItems.Add(new S_ArduinoLink(item));
             }
-            Selected = data.First();
+
+            Selected = ArduinoLinkItems.First();
         }
 
         private void OnStateChanged(VisualStateChangedEventArgs args)
         {
-            _currentState = args.NewState;
+            //_currentState = args.NewState;
         }
 
         private void OnItemClick(ItemClickEventArgs args)
         {
             if (args?.ClickedItem is S_ArduinoLink item)
             {
-                if (_currentState.Name == NarrowStateName)
-                {
-                    NavigationService.Navigate<Views.V_ArduinoManagement_S>(item);
-                }
-                else
-                {
-                    Selected = item;
-                    SensorItems = Selected.Arduino.SensorCollection;
-                    //Selected.Arduino;
-                }
+                Selected = item;
+                SensorItems = Selected.Arduino.SensorCollection;
             }
         }
 

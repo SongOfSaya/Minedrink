@@ -1,0 +1,12 @@
+App.xbf
+Styles\_Colors.xbf
+Styles\_FontSizes.xbf
+Styles\_Thickness.xbf
+Styles\TextBlock.xbf
+Views\V_AddArduinoDialog.xbf
+Views\V_ArduinoManagement.xbf
+Views\V_ArduinoManagement_C.xbf
+Views\V_ArduinoManagement_S.xbf
+Views\V_Main.xbf
+Views\V_Setting.xbf
+Views\V_Shell.xbf

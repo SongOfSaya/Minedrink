@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Threading.Tasks;
 using UWPShopManagement.Helpers;
 using UWPShopManagement.Models;
 using UWPShopManagement.Services;
@@ -30,9 +31,11 @@ namespace UWPShopManagement.Views
             //var httpResponse = await connect.ConnectToServer();
             //TestTextBlock.Text = await httpResponse.Content.ReadAsStringAsync();
             //TestA();
-            TestB();
+            TestBtn.IsEnabled = false;
+            await TestB();
+            TestBtn.IsEnabled = true;
         }
-        private async void TestA()
+        private async Task TestA()
         {
             M_ArduinoMarkA m_ArduinoMarkA = S_SampleData.ServerArduinoDemo();
             string str = await H_Json.StringifyAsync(m_ArduinoMarkA);
@@ -42,11 +45,11 @@ namespace UWPShopManagement.Views
             Debug.WriteLine(m_Arduino);
             TestTextBlock.Text = m_Arduino.ToString();
         }
-        private async void TestB()
+        private async Task TestB()
         {
             
             S_HttpConnect s_HttpConnect = new S_HttpConnect();
-            List<M_ArduinoMarkA> arduinoList = await s_HttpConnect.GetAllMCUWithShop("Ò»ºÅµê");
+            List<M_ArduinoMarkA> arduinoList = await s_HttpConnect.GetAllMCUWithShop("¶þºÅµê");
             foreach (var item in arduinoList)
             {
                 Debug.WriteLine(item.ToString());

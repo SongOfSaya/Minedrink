@@ -1,0 +1,190 @@
+﻿<Page x:ConnectionId='1' x:Class="UWPShopManagement.Views.V_ArduinoManagement"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:model="using:UWPShopManagement.Models"
+      xmlns:views="using:UWPShopManagement.Views"
+      xmlns:ic="using:Microsoft.Xaml.Interactions.Core"
+      xmlns:i="using:Microsoft.Xaml.Interactivity"
+      xmlns:s="using:UWPShopManagement.Services"
+      xmlns:h="using:UWPShopManagement.Helpers"
+      mc:Ignorable="d">
+    <Page.Transitions>
+        <TransitionCollection>
+            <NavigationThemeTransition />
+        </TransitionCollection>
+    </Page.Transitions>
+    <Page.Resources>
+        <h:StatusToImageConverter x:Key="StatusToImageConverter"/>
+        <h:StatusToStringConverter x:Key="StatusToStringConverter" />
+        <DataTemplate x:Key="MasterListViewItemTemplate"
+                                                  >
+            <Grid x:ConnectionId='2' Margin="{StaticResource MediumLeftTopRightBottomMargin}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <TextBlock x:ConnectionId='3'                                         
+                           Style="{StaticResource ListTitleStyle}" />
+
+                <!--<TextBlock Grid.Row="1"
+                           Text="{x:Bind Arduino.Name, Mode=OneWay}"
+                           Style="{StaticResource ListSubTitleStyle}" />-->
+                <TextBlock x:ConnectionId='4'                                        
+                           HorizontalAlignment="Right"
+                           Style="{StaticResource ListSubTitleStyle}"/>
+                <StackPanel Grid.Row="1">
+                    <Image x:ConnectionId='5'                                                                                        
+                           Stretch="Fill"
+                           HorizontalAlignment="Left" Width="24" Height="23" Margin="0,4,0,0"/>
+                    <TextBlock x:ConnectionId='6'                                                                                         
+                               Style="{StaticResource ListSubTitleStyle}"/>
+                </StackPanel>
+
+
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+
+    <Grid x:ConnectionId='7' x:Name="ContentArea"
+          Padding="12,0,12,0">
+
+        <Grid.RowDefinitions>
+            <RowDefinition x:ConnectionId='8' x:Name="TitleRow"
+                           Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:ConnectionId='9' x:Name="MasterColumn"
+                              Width="296" />
+            <ColumnDefinition x:ConnectionId='10' x:Name="DetailColumn"
+                              Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock x:ConnectionId='11' x:Name="TitlePage"
+                   x:Uid="MasterDetailPage_Title"
+                   Grid.ColumnSpan="2"
+                   Style="{StaticResource PageTitleStyle}"
+                   Visibility="Collapsed" />
+
+        <Grid x:ConnectionId='12' x:Name="MasterArea"
+              Grid.Row="1"
+              Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition x:ConnectionId='15' x:Name="MasterRow"
+                               Height="48" />
+                <RowDefinition x:ConnectionId='16' x:Name="MasterBtnRow"
+                               Height="48" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <TextBlock x:ConnectionId='17' x:Name="Title"
+                       x:Uid="MasterDetailPage_Title"
+                       Style="{StaticResource PageTitleStyle}" />
+            <StackPanel Grid.Row="1"
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Right"
+                        Background="Wheat">
+                <TextBlock x:ConnectionId='20'                                              
+                           Margin="12,12,12,12"/>
+                <AppBarButton x:ConnectionId='21' Name="AddArduinoBtn"
+                              Content="新增"
+                                                                           ></AppBarButton>
+                <AppBarButton x:ConnectionId='22' Name="RefreshAduBtn"
+                                                         
+                              Content="刷新"
+                                                                            ></AppBarButton>
+            </StackPanel>
+            <!--The SystemControlPageBackgroundChromeLowBrush background represents where you should place your master content.-->
+            <ListView x:ConnectionId='18' x:Name="MasterListView"
+                      Grid.Row="2"
+                                                                                    
+                                                                             
+                      ItemContainerTransitions="{x:Null}"
+                      ItemTemplate="{StaticResource MasterListViewItemTemplate}"
+                      IsItemClickEnabled="True"
+                      Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
+                <i:Interaction.Behaviors>
+                    <ic:EventTriggerBehavior EventName="ItemClick">
+                        <ic:InvokeCommandAction x:ConnectionId='19'                                               />
+                    </ic:EventTriggerBehavior>
+                </i:Interaction.Behaviors>
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="HorizontalContentAlignment"
+                                Value="Stretch" />
+                        <Setter Property="Padding"
+                                Value="0" />
+                    </Style>
+                </ListView.ItemContainerStyle>
+            </ListView>
+            <ContentPresenter>
+
+            </ContentPresenter>
+        </Grid>
+
+        <Grid x:ConnectionId='13' x:Name="DetailContentPresenter"
+              Grid.Row="1"
+              Grid.Column="1"
+              Padding="24,0,0,0">
+
+            <views:V_ArduinoManagement_C x:ConnectionId='14' x:Name="DetailControl"
+                                                                                                   />
+        </Grid>
+
+        <!--  Adaptive triggers  -->
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:ConnectionId='23' x:Name="WindowStates">
+                <i:Interaction.Behaviors>
+                    <ic:EventTriggerBehavior EventName="CurrentStateChanged">
+                        <ic:InvokeCommandAction x:ConnectionId='24'                                                  />
+                    </ic:EventTriggerBehavior>
+                </i:Interaction.Behaviors>
+                <VisualState x:ConnectionId='25' x:Name="WideState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="640" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="ContentArea.Padding"
+                                Value="12,0,12,0" />
+                        <Setter Target="MasterColumn.Width"
+                                Value="296" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:ConnectionId='26' x:Name="NarrowState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="TitlePage.Margin"
+                                Value="48,0,12,7" />
+                        <Setter Target="TitleRow.Height"
+                                Value="48" />
+                        <Setter Target="MasterRow.Height"
+                                Value="Auto" />
+                        <Setter Target="TitlePage.Visibility"
+                                Value="Visible" />
+                        <Setter Target="Title.Visibility"
+                                Value="Collapsed" />
+                        <Setter Target="ContentArea.Padding"
+                                Value="12,0,12,0" />
+                        <Setter Target="MasterColumn.Width"
+                                Value="*" />
+                        <Setter Target="DetailColumn.Width"
+                                Value="0" />
+                        <Setter Target="MasterListView.SelectionMode"
+                                Value="None" />
+                        <Setter Target="MasterArea.Background"
+                                Value="{ThemeResource SystemControlBackgroundAltHighBrush}" />
+                        <Setter Target="MasterListView.Margin"
+                                Value="-12,0" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+    </Grid>
+</Page>
+

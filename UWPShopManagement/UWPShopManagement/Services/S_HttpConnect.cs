@@ -64,14 +64,13 @@ namespace UWPShopManagement.Services
             //string newstr = str.Replace(@"\", string.Empty);
 
             //string newStr = str.Replace("\\r", string.Empty).Replace("\\n", string.Empty);
-            JsonArray jsonArray;
-            if (JsonArray.TryParse(str,out jsonArray))
+            if (JsonArray.TryParse(str, out JsonArray jsonArray))
             {
                 Debug.WriteLine("转为JSON成功");
             }
             else
             {
-                Debug.WriteLine("转为JSON失败");
+                throw new Exception("获取的数据无法转为JsonArray");
             }
             return jsonArray;
             

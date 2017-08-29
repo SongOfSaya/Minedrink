@@ -1,0 +1,173 @@
+﻿<UserControl x:ConnectionId='1' x:Name="userControl"
+             x:Class="UWPShopManagement.Views.V_ArduinoManagement_C"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:m="using:UWPShopManagement.Models"
+             xmlns:ic="using:Microsoft.Xaml.Interactions.Core"
+             xmlns:i="using:Microsoft.Xaml.Interactivity"
+             xmlns:h="using:UWPShopManagement.Helpers"
+             mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <h:IntToGarmConverter x:Key="IntToGarmConverter" />
+        <DataTemplate x:Key="SensorsListViewItemTemplate"
+                                                   >
+            <Grid x:ConnectionId='2' Width="{Binding Width, ElementName=grid}"
+                  MinWidth="400"
+                  Height="48">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="48" />
+                </Grid.ColumnDefinitions>
+                <TextBlock x:ConnectionId='3' Name="SensorNameTextBlock"
+                                                             
+                           Style="{StaticResource ListTitleStyle}"
+                           Margin="12,12,12,12" />
+
+                <TextBlock x:ConnectionId='4' Name="SensorReadingTextBlock"
+                           Grid.Column="1"
+                           Margin="12,12,12,12"
+                                                                                                            
+                           Style="{StaticResource ListSubTitleStyle}" />
+                <TextBlock x:ConnectionId='5' Name="SensorDeltaTextBlock"
+                           Grid.Column="2"
+                           Margin="12,12,12,12"
+                                                             />
+
+                <AppBarButton Name="SensorMoreInfoBtn"
+                              Grid.Column="3"
+                              Content="更多"
+                              Width="48"
+                              Height="48" />
+            </Grid>
+
+        </DataTemplate>
+    </UserControl.Resources>
+    <!--The SystemControlPageBackgroundChromeLowBrush background represents where you should place your detail content.-->
+    <Grid x:ConnectionId='6' x:Name="grid"
+          Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="48" />
+            <RowDefinition Height="64" />
+            <RowDefinition Height="64" />
+            <RowDefinition Height="64" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <TextBlock x:ConnectionId='7' Grid.ColumnSpan="3"
+                   x:Name="TitlePage"
+                                                                           
+                   Style="{StaticResource PageTitleStyle}" />
+        <StackPanel Grid.Row="1"
+                    Orientation="Vertical"
+                    Margin="{StaticResource MediumLeftTopRightBottomMargin}">
+            <TextBlock Text="ID"
+                       Style="{StaticResource CaptionTextBlockStyle}" />
+            <TextBlock x:ConnectionId='13'                                                       
+                       Style="{StaticResource BodyTextStyle}" />
+        </StackPanel>
+        <StackPanel Grid.Row="1"
+                    Grid.Column="1"
+                    Orientation="Vertical"
+                    Margin="{StaticResource MediumLeftTopRightBottomMargin}">
+            <TextBlock Text="运行模式"
+                       Style="{StaticResource CaptionTextBlockStyle}" />
+            <TextBlock x:ConnectionId='12'                                                         
+                       Style="{StaticResource BodyTextStyle}" />
+        </StackPanel>
+        <StackPanel  Grid.Row="1"
+                     Grid.Column="2"
+                     Orientation="Vertical"
+                     Margin="{StaticResource MediumLeftTopRightBottomMargin}">
+            <TextBlock Text="已运行时间"
+                       Style="{StaticResource CaptionTextBlockStyle}" />
+            <TextBlock x:ConnectionId='11'                                                          
+                       Style="{StaticResource BodyTextStyle}" />
+        </StackPanel>
+        <StackPanel Grid.Row="2"
+                    Orientation="Vertical"
+                    Margin="{StaticResource MediumLeftTopRightBottomMargin}">
+            <TextBlock Text="是否在线"
+                       Style="{StaticResource CaptionTextBlockStyle}" />
+            <TextBlock x:ConnectionId='10'                                                              
+                       Style="{StaticResource BodyTextStyle}" />
+        </StackPanel>
+        <!--Replate this StackPanel with your detail content.-->
+        <!--<StackPanel Orientation="Vertical" Margin="{StaticResource MediumLeftTopRightBottomMargin}">
+                   
+                    
+                    <TextBlock Text="MarkColor" Style="{StaticResource CaptionTextBlockStyle}" />
+                    <TextBlock Text="{x:Bind MasterMenuItem.Arduino.MarkColor, Mode=OneWay}" Style="{StaticResource BodyTextStyle}" />
+                    
+                </StackPanel>-->
+        <Grid Grid.Row="3"
+              Grid.ColumnSpan="3"
+              VerticalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="名称"
+                       Style="{StaticResource CaptionTextBlockStyle}"
+                       Margin="12,12,12,12" />
+            <TextBlock Text="当前值"
+                       Grid.Column="1"
+                       Style="{StaticResource CaptionTextBlockStyle}"
+                       Margin=" 12,12,12,12" />
+            <TextBlock Text="变化量"
+                       Grid.Column="2"
+                       Margin="12,12,12,12"
+                       Style="{StaticResource CaptionTextBlockStyle}" />
+        </Grid>
+        <ScrollViewer Grid.Row="4"
+                      Grid.ColumnSpan="3"
+                      ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                      ScrollViewer.VerticalScrollBarVisibility="Auto"
+                      ScrollViewer.VerticalScrollMode="Auto">
+            <ListView x:ConnectionId='8' Name="SensorsListView"
+                                                                               
+                      IsItemClickEnabled="True"
+                      ItemTemplate="{StaticResource SensorsListViewItemTemplate}"
+                                                                                   
+                      HorizontalContentAlignment="Stretch"
+                      HorizontalAlignment="Stretch">
+                <i:Interaction.Behaviors>
+                    <ic:EventTriggerBehavior EventName="ItemClick">
+                        <ic:InvokeCommandAction x:ConnectionId='9'                                                     />
+                    </ic:EventTriggerBehavior>
+                </i:Interaction.Behaviors>
+            </ListView>
+        </ScrollViewer>
+
+
+        <!--  Adaptive triggers  -->
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:ConnectionId='14' x:Name="WindowStates">
+                <VisualState x:ConnectionId='15' x:Name="WideState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="640" />
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:ConnectionId='16' x:Name="NarrowState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="TitlePage.Margin"
+                                Value="48,0,12,7" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+    </Grid>
+</UserControl>
+

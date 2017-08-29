@@ -14,15 +14,16 @@ namespace UWPShopManagement.Services
     {
         public static M_ArduinoMarkA ServerArduinoDemo()
         {
-            M_ArduinoMarkA arduino = new M_ArduinoMarkA();
-            arduino.ID = "MCU1234";
-            arduino.IP = "192.168.0.1";
-            arduino.Port = "1000";
-            arduino.Name = "主料区";
-            arduino.Shop = "一号店";
-            arduino.Type = "ArduinoMega2560";
-            arduino.MarkColor = 123;
-            arduino.SensorCollection = new ObservableCollection<M_WeightSensor>
+            M_ArduinoMarkA arduino = new M_ArduinoMarkA
+            {
+                ID = "MCU1234",
+                IP = "192.168.0.1",
+                Port = "1000",
+                Name = "主料区",
+                Shop = "一号店",
+                Type = "ArduinoMega2560",
+                MarkColor = 123,
+                SensorCollection = new ObservableCollection<M_WeightSensor>
             {
                 new M_WeightSensor()
                 {
@@ -33,6 +34,7 @@ namespace UWPShopManagement.Services
                     PIN_DT = 12,
                     Name = "苹果"
                 }
+            }
             };
             return arduino;
         }
