@@ -127,6 +127,7 @@
       <RootProperty Name="Name" />
       <RootProperty Name="Content" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Command" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.VisualStateGroup">
@@ -146,6 +147,7 @@
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="UWPShopManagement.Helpers.IntToGarmConverter" />
+    <RootType FullName="UWPShopManagement.Helpers.ModeToStringConverter" />
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
     </RootType>
@@ -189,6 +191,7 @@
     <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.NavigationThemeTransition" />
     <RootType FullName="UWPShopManagement.Helpers.StatusToImageConverter" />
+    <RootType FullName="UWPShopManagement.Helpers.StatusToStringConverter" />
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Source" />
       <RootProperty Name="Stretch" />

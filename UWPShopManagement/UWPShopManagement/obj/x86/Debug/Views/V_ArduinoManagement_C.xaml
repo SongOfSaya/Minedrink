@@ -12,6 +12,7 @@
 
     <UserControl.Resources>
         <h:IntToGarmConverter x:Key="IntToGarmConverter" />
+        <h:ModeToStringConverter x:Key="ModeToStringConverter" />
         <DataTemplate x:Key="SensorsListViewItemTemplate"
                                                    >
             <Grid x:ConnectionId='2' Width="{Binding Width, ElementName=grid}"
@@ -93,12 +94,12 @@
                        Style="{StaticResource BodyTextStyle}" />
         </StackPanel>
         <StackPanel Grid.Row="2"
+                    Grid.ColumnSpan="3"
                     Orientation="Vertical"
                     Margin="{StaticResource MediumLeftTopRightBottomMargin}">
-            <TextBlock Text="是否在线"
-                       Style="{StaticResource CaptionTextBlockStyle}" />
-            <TextBlock x:ConnectionId='10'                                                              
-                       Style="{StaticResource BodyTextStyle}" />
+            <Button x:ConnectionId='10'                                                                                                            
+                                                                       />
+
         </StackPanel>
         <!--Replate this StackPanel with your detail content.-->
         <!--<StackPanel Orientation="Vertical" Margin="{StaticResource MediumLeftTopRightBottomMargin}">

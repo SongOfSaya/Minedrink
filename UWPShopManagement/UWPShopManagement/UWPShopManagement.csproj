@@ -114,6 +114,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activation\ActivationHandler.cs" />
+    <Compile Include="Helpers\ModeToStringConverter.cs" />
     <Compile Include="Helpers\H_CommandCode.cs" />
     <Compile Include="Helpers\H_Json.cs" />
     <Compile Include="Helpers\IntToGarmConverter.cs" />

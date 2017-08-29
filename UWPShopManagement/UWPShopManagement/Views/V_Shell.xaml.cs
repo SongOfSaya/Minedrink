@@ -1,3 +1,4 @@
+using UWPShopManagement.Helpers;
 using UWPShopManagement.ViewModels;
 
 using Windows.UI.Xaml.Controls;
@@ -13,6 +14,7 @@ namespace UWPShopManagement.Views
             InitializeComponent();
             DataContext = ViewModel;
             ViewModel.Initialize(shellFrame);
+            VM_ArduinoManagement vM_ArduinoManagement = Singleton<VM_ArduinoManagement>.Instance;
         }
     }
 }

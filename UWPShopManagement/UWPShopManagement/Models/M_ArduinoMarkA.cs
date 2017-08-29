@@ -72,7 +72,7 @@ namespace UWPShopManagement.Models
             get { return _mills; }
             set { Set(ref _mills, value); }
         }
-        //运行模式的数值
+        //运行状态的数值   0:待机   1:工作 2: 调试   10:未连接 11:连接中 
         private int _mode;
         public int Mode
         {
@@ -150,5 +150,12 @@ namespace UWPShopManagement.Models
             return modeStr;
         }
     }
-
+    public enum ModeEnum
+    {
+        Awaiting = 0,
+        Working = 1,
+        Debug = 2,
+        NoConnect = 10,
+        Connecing = 11
+    }
 }

@@ -31,7 +31,7 @@
     <AppXManifest Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-29T01:07:38.494</Modified>
+      <Modified>2017-08-29T08:01:49.308</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -188,7 +188,7 @@
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-29T01:06:40.835</Modified>
+      <Modified>2017-08-29T08:00:55.454</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Release\ilc\Robmikh.CompositionSurfaceFactory.dll">
       <PackagePath>Robmikh.CompositionSurfaceFactory.dll</PackagePath>
@@ -200,15 +200,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Release\ilc\UWPShopManagement.dll">
       <PackagePath>UWPShopManagement.dll</PackagePath>
-      <Modified>2017-08-29T01:07:37.461</Modified>
+      <Modified>2017-08-29T08:01:48.305</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Release\ilc\UWPShopManagement.exe">
       <PackagePath>UWPShopManagement.exe</PackagePath>
-      <Modified>2017-08-29T01:07:38.466</Modified>
+      <Modified>2017-08-29T08:01:49.282</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liute\Source\Repos\Minedrink\UWPShopManagement\UWPShopManagement\bin\x86\Release\ilc\UWPShopManagement.pdb">
       <PackagePath>UWPShopManagement.pdb</PackagePath>
-      <Modified>2017-08-29T01:07:38.455</Modified>
+      <Modified>2017-08-29T08:01:49.253</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

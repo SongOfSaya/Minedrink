@@ -32,6 +32,7 @@ namespace UWPShopManagement.Services
         public S_ArduinoLink(M_ArduinoMarkA arduinoMarkA)
         {
             Arduino = arduinoMarkA;
+            Arduino.Mode = 10;
         }
         //输出流
         public StreamWriter OutStream { get; private set; }
@@ -45,6 +46,10 @@ namespace UWPShopManagement.Services
         //变化小于此,视为传感器波动
         //private int _minChange = 2;
         #endregion
+        public async Task<bool> Connection()
+        {
+            return await Connection(Arduino.IP, Arduino.Port);
+        }
         /// <summary>
         /// 和远程Arduino的TCPServer建立连接
         /// </summary>
@@ -80,6 +85,7 @@ namespace UWPShopManagement.Services
             }
 
         }
+
         /// <summary>
         /// 检查链接是否有效
         /// </summary>

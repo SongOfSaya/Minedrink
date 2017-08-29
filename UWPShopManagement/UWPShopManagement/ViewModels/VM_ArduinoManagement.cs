@@ -11,7 +11,6 @@ using UWPShopManagement.Services;
 using UWPShopManagement.Views;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-
 namespace UWPShopManagement.ViewModels
 {
     public class VM_ArduinoManagement : Observable
@@ -20,7 +19,6 @@ namespace UWPShopManagement.ViewModels
         const string NarrowStateName = "NarrowState";
         const string WideStateName = "WideState";
 
-        private VisualState _currentState;
         private ContentDialog _addArduinoDialog;
 
         private ListView _arduinoListView;
@@ -74,12 +72,21 @@ namespace UWPShopManagement.ViewModels
             set { Set(ref _portTextBox, value); }
         }
         private string _connectInfo;
-        //连接状态的提示信息
+        //新增Arduino对话框中连接状态的提示信息
         public string ConnectInfo
         {
             get { return _connectInfo; }
             set { Set(ref _connectInfo, value); }
         }
+        //Arduino连接按钮的提示信息
+        private string _connectBtnContent;
+
+        public string ConnectBtnContent
+        {
+            get { return _connectBtnContent; }
+            set { Set(ref _connectBtnContent, value); }
+        }
+
         private int _testNum;
 
         public int TestNum
@@ -131,7 +138,8 @@ namespace UWPShopManagement.ViewModels
         /// 点击SensorsListView中的一项
         /// </summary>
         public ICommand SensorItemClickCommand { get; private set; }
-
+        //控制单个Arduino建立或断开连接
+        public ICommand ConnectBtnClickCommand { get; private set; }
 
         #endregion
         public VM_ArduinoManagement()
@@ -145,8 +153,31 @@ namespace UWPShopManagement.ViewModels
             DialogSubmitCommand = new RelayCommand<ContentDialogButtonClickEventArgs>(OnAddDialogSubmit);
             RefreshBtnCommand = new RelayCommand(OnRefreshBtnCommand);
             SensorItemClickCommand = new RelayCommand<ItemClickEventArgs>(OnSensorItemClick);
+            ConnectBtnClickCommand = new RelayCommand(OnConnectBtnClickAsync);
             //this.PropertyChanged += VM_ArduinoManagement_PropertyChanged;
             LoadDataAsync();
+        }
+        //为已初始化的Arduino建立连接
+        private async void OnConnectBtnClickAsync()
+        {
+            //if (ArduinoLinkItems.Any(p => p.Arduino.IP == Selected.Arduino.IP))
+            //{
+            //    ConnectInfo = "已存在使用此IP地址的Arduino";
+            //    throw new Exception("Arduino IP 冲突");
+            //}
+            if ((ModeEnum)Selected.Arduino.Mode == ModeEnum.NoConnect)
+            {
+                Selected.Arduino.Mode = Convert.ToInt32(ModeEnum.Connecing);
+            }
+            if (await Selected.Connection())
+            {
+                Debug.WriteLine("连接成功");
+            }
+            else
+            {
+                Debug.WriteLine("连接失败");
+                Selected.Arduino.Mode = Convert.ToInt32(ModeEnum.NoConnect);
+            }
         }
 
         private void OnSensorItemClick(ItemClickEventArgs obj)

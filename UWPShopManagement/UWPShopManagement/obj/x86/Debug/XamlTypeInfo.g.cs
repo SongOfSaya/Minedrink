@@ -156,7 +156,7 @@ namespace UWPShopManagement.UWPShopManagement_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[46];
+            _typeNameTable = new string[48];
             _typeNameTable[0] = "Microsoft.Xaml.Interactivity.Interaction";
             _typeNameTable[1] = "Object";
             _typeNameTable[2] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
@@ -181,30 +181,32 @@ namespace UWPShopManagement.UWPShopManagement_XamlTypeInfo
             _typeNameTable[21] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[22] = "UWPShopManagement.ViewModels.VM_Main";
             _typeNameTable[23] = "UWPShopManagement.Helpers.IntToGarmConverter";
-            _typeNameTable[24] = "UWPShopManagement.Views.V_ArduinoManagement_C";
-            _typeNameTable[25] = "UWPShopManagement.Services.S_ArduinoLink";
-            _typeNameTable[26] = "UWPShopManagement.Views.V_ArduinoManagement_S";
-            _typeNameTable[27] = "UWPShopManagement.ViewModels.VM_ArduinoManagement_S";
-            _typeNameTable[28] = "UWPShopManagement.Helpers.StatusToImageConverter";
-            _typeNameTable[29] = "UWPShopManagement.Views.V_ArduinoManagement";
-            _typeNameTable[30] = "UWPShopManagement.Views.V_Setting";
-            _typeNameTable[31] = "UWPShopManagement.ViewModels.VM_Setting";
-            _typeNameTable[32] = "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu";
-            _typeNameTable[33] = "Windows.UI.Xaml.Controls.SplitViewDisplayMode";
-            _typeNameTable[34] = "Boolean";
-            _typeNameTable[35] = "Windows.UI.Xaml.DataTemplate";
-            _typeNameTable[36] = "Windows.UI.Xaml.Media.Brush";
-            _typeNameTable[37] = "Windows.UI.Xaml.Controls.DataTemplateSelector";
-            _typeNameTable[38] = "Windows.UI.Xaml.Controls.ItemCollection";
-            _typeNameTable[39] = "Windows.UI.Xaml.Visibility";
-            _typeNameTable[40] = "Int32";
-            _typeNameTable[41] = "Double";
-            _typeNameTable[42] = "Windows.UI.Xaml.Thickness";
-            _typeNameTable[43] = "Windows.UI.Xaml.Controls.SplitViewPanePlacement";
-            _typeNameTable[44] = "UWPShopManagement.Views.V_Shell";
-            _typeNameTable[45] = "UWPShopManagement.ViewModels.VM_Shell";
+            _typeNameTable[24] = "UWPShopManagement.Helpers.ModeToStringConverter";
+            _typeNameTable[25] = "UWPShopManagement.Views.V_ArduinoManagement_C";
+            _typeNameTable[26] = "UWPShopManagement.Services.S_ArduinoLink";
+            _typeNameTable[27] = "UWPShopManagement.Views.V_ArduinoManagement_S";
+            _typeNameTable[28] = "UWPShopManagement.ViewModels.VM_ArduinoManagement_S";
+            _typeNameTable[29] = "UWPShopManagement.Helpers.StatusToImageConverter";
+            _typeNameTable[30] = "UWPShopManagement.Helpers.StatusToStringConverter";
+            _typeNameTable[31] = "UWPShopManagement.Views.V_ArduinoManagement";
+            _typeNameTable[32] = "UWPShopManagement.Views.V_Setting";
+            _typeNameTable[33] = "UWPShopManagement.ViewModels.VM_Setting";
+            _typeNameTable[34] = "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu";
+            _typeNameTable[35] = "Windows.UI.Xaml.Controls.SplitViewDisplayMode";
+            _typeNameTable[36] = "Boolean";
+            _typeNameTable[37] = "Windows.UI.Xaml.DataTemplate";
+            _typeNameTable[38] = "Windows.UI.Xaml.Media.Brush";
+            _typeNameTable[39] = "Windows.UI.Xaml.Controls.DataTemplateSelector";
+            _typeNameTable[40] = "Windows.UI.Xaml.Controls.ItemCollection";
+            _typeNameTable[41] = "Windows.UI.Xaml.Visibility";
+            _typeNameTable[42] = "Int32";
+            _typeNameTable[43] = "Double";
+            _typeNameTable[44] = "Windows.UI.Xaml.Thickness";
+            _typeNameTable[45] = "Windows.UI.Xaml.Controls.SplitViewPanePlacement";
+            _typeNameTable[46] = "UWPShopManagement.Views.V_Shell";
+            _typeNameTable[47] = "UWPShopManagement.ViewModels.VM_Shell";
 
-            _typeTable = new global::System.Type[46];
+            _typeTable = new global::System.Type[48];
             _typeTable[0] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
             _typeTable[1] = typeof(global::System.Object);
             _typeTable[2] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
@@ -229,28 +231,30 @@ namespace UWPShopManagement.UWPShopManagement_XamlTypeInfo
             _typeTable[21] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[22] = typeof(global::UWPShopManagement.ViewModels.VM_Main);
             _typeTable[23] = typeof(global::UWPShopManagement.Helpers.IntToGarmConverter);
-            _typeTable[24] = typeof(global::UWPShopManagement.Views.V_ArduinoManagement_C);
-            _typeTable[25] = typeof(global::UWPShopManagement.Services.S_ArduinoLink);
-            _typeTable[26] = typeof(global::UWPShopManagement.Views.V_ArduinoManagement_S);
-            _typeTable[27] = typeof(global::UWPShopManagement.ViewModels.VM_ArduinoManagement_S);
-            _typeTable[28] = typeof(global::UWPShopManagement.Helpers.StatusToImageConverter);
-            _typeTable[29] = typeof(global::UWPShopManagement.Views.V_ArduinoManagement);
-            _typeTable[30] = typeof(global::UWPShopManagement.Views.V_Setting);
-            _typeTable[31] = typeof(global::UWPShopManagement.ViewModels.VM_Setting);
-            _typeTable[32] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu);
-            _typeTable[33] = typeof(global::Windows.UI.Xaml.Controls.SplitViewDisplayMode);
-            _typeTable[34] = typeof(global::System.Boolean);
-            _typeTable[35] = typeof(global::Windows.UI.Xaml.DataTemplate);
-            _typeTable[36] = typeof(global::Windows.UI.Xaml.Media.Brush);
-            _typeTable[37] = typeof(global::Windows.UI.Xaml.Controls.DataTemplateSelector);
-            _typeTable[38] = typeof(global::Windows.UI.Xaml.Controls.ItemCollection);
-            _typeTable[39] = typeof(global::Windows.UI.Xaml.Visibility);
-            _typeTable[40] = typeof(global::System.Int32);
-            _typeTable[41] = typeof(global::System.Double);
-            _typeTable[42] = typeof(global::Windows.UI.Xaml.Thickness);
-            _typeTable[43] = typeof(global::Windows.UI.Xaml.Controls.SplitViewPanePlacement);
-            _typeTable[44] = typeof(global::UWPShopManagement.Views.V_Shell);
-            _typeTable[45] = typeof(global::UWPShopManagement.ViewModels.VM_Shell);
+            _typeTable[24] = typeof(global::UWPShopManagement.Helpers.ModeToStringConverter);
+            _typeTable[25] = typeof(global::UWPShopManagement.Views.V_ArduinoManagement_C);
+            _typeTable[26] = typeof(global::UWPShopManagement.Services.S_ArduinoLink);
+            _typeTable[27] = typeof(global::UWPShopManagement.Views.V_ArduinoManagement_S);
+            _typeTable[28] = typeof(global::UWPShopManagement.ViewModels.VM_ArduinoManagement_S);
+            _typeTable[29] = typeof(global::UWPShopManagement.Helpers.StatusToImageConverter);
+            _typeTable[30] = typeof(global::UWPShopManagement.Helpers.StatusToStringConverter);
+            _typeTable[31] = typeof(global::UWPShopManagement.Views.V_ArduinoManagement);
+            _typeTable[32] = typeof(global::UWPShopManagement.Views.V_Setting);
+            _typeTable[33] = typeof(global::UWPShopManagement.ViewModels.VM_Setting);
+            _typeTable[34] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu);
+            _typeTable[35] = typeof(global::Windows.UI.Xaml.Controls.SplitViewDisplayMode);
+            _typeTable[36] = typeof(global::System.Boolean);
+            _typeTable[37] = typeof(global::Windows.UI.Xaml.DataTemplate);
+            _typeTable[38] = typeof(global::Windows.UI.Xaml.Media.Brush);
+            _typeTable[39] = typeof(global::Windows.UI.Xaml.Controls.DataTemplateSelector);
+            _typeTable[40] = typeof(global::Windows.UI.Xaml.Controls.ItemCollection);
+            _typeTable[41] = typeof(global::Windows.UI.Xaml.Visibility);
+            _typeTable[42] = typeof(global::System.Int32);
+            _typeTable[43] = typeof(global::System.Double);
+            _typeTable[44] = typeof(global::Windows.UI.Xaml.Thickness);
+            _typeTable[45] = typeof(global::Windows.UI.Xaml.Controls.SplitViewPanePlacement);
+            _typeTable[46] = typeof(global::UWPShopManagement.Views.V_Shell);
+            _typeTable[47] = typeof(global::UWPShopManagement.ViewModels.VM_Shell);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -296,17 +300,19 @@ namespace UWPShopManagement.UWPShopManagement_XamlTypeInfo
         private object Activate_19_V_Main() { return new global::UWPShopManagement.Views.V_Main(); }
         private object Activate_22_VM_Main() { return new global::UWPShopManagement.ViewModels.VM_Main(); }
         private object Activate_23_IntToGarmConverter() { return new global::UWPShopManagement.Helpers.IntToGarmConverter(); }
-        private object Activate_24_V_ArduinoManagement_C() { return new global::UWPShopManagement.Views.V_ArduinoManagement_C(); }
-        private object Activate_25_S_ArduinoLink() { return new global::UWPShopManagement.Services.S_ArduinoLink(); }
-        private object Activate_26_V_ArduinoManagement_S() { return new global::UWPShopManagement.Views.V_ArduinoManagement_S(); }
-        private object Activate_27_VM_ArduinoManagement_S() { return new global::UWPShopManagement.ViewModels.VM_ArduinoManagement_S(); }
-        private object Activate_28_StatusToImageConverter() { return new global::UWPShopManagement.Helpers.StatusToImageConverter(); }
-        private object Activate_29_V_ArduinoManagement() { return new global::UWPShopManagement.Views.V_ArduinoManagement(); }
-        private object Activate_30_V_Setting() { return new global::UWPShopManagement.Views.V_Setting(); }
-        private object Activate_31_VM_Setting() { return new global::UWPShopManagement.ViewModels.VM_Setting(); }
-        private object Activate_32_HamburgerMenu() { return new global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu(); }
-        private object Activate_44_V_Shell() { return new global::UWPShopManagement.Views.V_Shell(); }
-        private object Activate_45_VM_Shell() { return new global::UWPShopManagement.ViewModels.VM_Shell(); }
+        private object Activate_24_ModeToStringConverter() { return new global::UWPShopManagement.Helpers.ModeToStringConverter(); }
+        private object Activate_25_V_ArduinoManagement_C() { return new global::UWPShopManagement.Views.V_ArduinoManagement_C(); }
+        private object Activate_26_S_ArduinoLink() { return new global::UWPShopManagement.Services.S_ArduinoLink(); }
+        private object Activate_27_V_ArduinoManagement_S() { return new global::UWPShopManagement.Views.V_ArduinoManagement_S(); }
+        private object Activate_28_VM_ArduinoManagement_S() { return new global::UWPShopManagement.ViewModels.VM_ArduinoManagement_S(); }
+        private object Activate_29_StatusToImageConverter() { return new global::UWPShopManagement.Helpers.StatusToImageConverter(); }
+        private object Activate_30_StatusToStringConverter() { return new global::UWPShopManagement.Helpers.StatusToStringConverter(); }
+        private object Activate_31_V_ArduinoManagement() { return new global::UWPShopManagement.Views.V_ArduinoManagement(); }
+        private object Activate_32_V_Setting() { return new global::UWPShopManagement.Views.V_Setting(); }
+        private object Activate_33_VM_Setting() { return new global::UWPShopManagement.ViewModels.VM_Setting(); }
+        private object Activate_34_HamburgerMenu() { return new global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu(); }
+        private object Activate_46_V_Shell() { return new global::UWPShopManagement.Views.V_Shell(); }
+        private object Activate_47_VM_Shell() { return new global::UWPShopManagement.ViewModels.VM_Shell(); }
         private void VectorAdd_2_BehaviorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
@@ -477,70 +483,84 @@ namespace UWPShopManagement.UWPShopManagement_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 24:   //  UWPShopManagement.Views.V_ArduinoManagement_C
+            case 24:   //  UWPShopManagement.Helpers.ModeToStringConverter
+                userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_24_ModeToStringConverter;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 25:   //  UWPShopManagement.Views.V_ArduinoManagement_C
                 userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_24_V_ArduinoManagement_C;
+                userType.Activator = Activate_25_V_ArduinoManagement_C;
                 userType.AddMemberName("ViewModel");
                 userType.AddMemberName("MasterMenuItem");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 25:   //  UWPShopManagement.Services.S_ArduinoLink
+            case 26:   //  UWPShopManagement.Services.S_ArduinoLink
                 userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("UWPShopManagement.Helpers.Observable"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 26:   //  UWPShopManagement.Views.V_ArduinoManagement_S
+            case 27:   //  UWPShopManagement.Views.V_ArduinoManagement_S
                 userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_26_V_ArduinoManagement_S;
+                userType.Activator = Activate_27_V_ArduinoManagement_S;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 27:   //  UWPShopManagement.ViewModels.VM_ArduinoManagement_S
+            case 28:   //  UWPShopManagement.ViewModels.VM_ArduinoManagement_S
                 userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("UWPShopManagement.Helpers.Observable"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 28:   //  UWPShopManagement.Helpers.StatusToImageConverter
+            case 29:   //  UWPShopManagement.Helpers.StatusToImageConverter
                 userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_28_StatusToImageConverter;
+                userType.Activator = Activate_29_StatusToImageConverter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 29:   //  UWPShopManagement.Views.V_ArduinoManagement
+            case 30:   //  UWPShopManagement.Helpers.StatusToStringConverter
+                userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_30_StatusToStringConverter;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 31:   //  UWPShopManagement.Views.V_ArduinoManagement
                 userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_29_V_ArduinoManagement;
+                userType.Activator = Activate_31_V_ArduinoManagement;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 30:   //  UWPShopManagement.Views.V_Setting
+            case 32:   //  UWPShopManagement.Views.V_Setting
                 userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_30_V_Setting;
+                userType.Activator = Activate_32_V_Setting;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 31:   //  UWPShopManagement.ViewModels.VM_Setting
+            case 33:   //  UWPShopManagement.ViewModels.VM_Setting
                 userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("UWPShopManagement.Helpers.Observable"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 32:   //  Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu
+            case 34:   //  Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu
                 userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ContentControl"));
-                userType.Activator = Activate_32_HamburgerMenu;
+                userType.Activator = Activate_34_HamburgerMenu;
                 userType.AddMemberName("DisplayMode");
                 userType.AddMemberName("IsPaneOpen");
                 userType.AddMemberName("ItemTemplate");
@@ -569,59 +589,59 @@ namespace UWPShopManagement.UWPShopManagement_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 33:   //  Windows.UI.Xaml.Controls.SplitViewDisplayMode
+            case 35:   //  Windows.UI.Xaml.Controls.SplitViewDisplayMode
                 xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 34:   //  Boolean
+            case 36:   //  Boolean
                 xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 35:   //  Windows.UI.Xaml.DataTemplate
+            case 37:   //  Windows.UI.Xaml.DataTemplate
                 xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 36:   //  Windows.UI.Xaml.Media.Brush
+            case 38:   //  Windows.UI.Xaml.Media.Brush
                 xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 37:   //  Windows.UI.Xaml.Controls.DataTemplateSelector
+            case 39:   //  Windows.UI.Xaml.Controls.DataTemplateSelector
                 xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 38:   //  Windows.UI.Xaml.Controls.ItemCollection
+            case 40:   //  Windows.UI.Xaml.Controls.ItemCollection
                 xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 39:   //  Windows.UI.Xaml.Visibility
+            case 41:   //  Windows.UI.Xaml.Visibility
                 xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 40:   //  Int32
+            case 42:   //  Int32
                 xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 41:   //  Double
+            case 43:   //  Double
                 xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 42:   //  Windows.UI.Xaml.Thickness
+            case 44:   //  Windows.UI.Xaml.Thickness
                 xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 43:   //  Windows.UI.Xaml.Controls.SplitViewPanePlacement
+            case 45:   //  Windows.UI.Xaml.Controls.SplitViewPanePlacement
                 xamlType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 44:   //  UWPShopManagement.Views.V_Shell
+            case 46:   //  UWPShopManagement.Views.V_Shell
                 userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_44_V_Shell;
+                userType.Activator = Activate_46_V_Shell;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 45:   //  UWPShopManagement.ViewModels.VM_Shell
+            case 47:   //  UWPShopManagement.ViewModels.VM_Shell
                 userType = new global::UWPShopManagement.UWPShopManagement_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("UWPShopManagement.Helpers.Observable"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();

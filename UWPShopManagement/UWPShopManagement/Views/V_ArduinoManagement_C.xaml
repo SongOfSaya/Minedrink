@@ -12,6 +12,7 @@
 
     <UserControl.Resources>
         <h:IntToGarmConverter x:Key="IntToGarmConverter" />
+        <h:ModeToStringConverter x:Key="ModeToStringConverter" />
         <DataTemplate x:Key="SensorsListViewItemTemplate"
                       x:DataType="m:M_WeightSensor">
             <Grid Width="{Binding Width, ElementName=grid}"
@@ -93,12 +94,12 @@
                        Style="{StaticResource BodyTextStyle}" />
         </StackPanel>
         <StackPanel Grid.Row="2"
+                    Grid.ColumnSpan="3"
                     Orientation="Vertical"
                     Margin="{StaticResource MediumLeftTopRightBottomMargin}">
-            <TextBlock Text="是否在线"
-                       Style="{StaticResource CaptionTextBlockStyle}" />
-            <TextBlock Text="{x:Bind MasterMenuItem.Arduino.IsConnect, Mode=OneWay}"
-                       Style="{StaticResource BodyTextStyle}" />
+            <Button Content="{x:Bind MasterMenuItem.Arduino.Mode,Mode=OneWay,Converter={StaticResource ModeToStringConverter}}"
+                    Command="{x:Bind ViewModel.ConnectBtnClickCommand}"/>
+
         </StackPanel>
         <!--Replate this StackPanel with your detail content.-->
         <!--<StackPanel Orientation="Vertical" Margin="{StaticResource MediumLeftTopRightBottomMargin}">
